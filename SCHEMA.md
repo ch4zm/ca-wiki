@@ -1,7 +1,7 @@
 # Wiki Schema
 
 ## Identity
-- **Path:** /Users/creid/golly/wiki/ca-wiki
+- **Path:** `.` (the directory containing this SCHEMA.md)
 - **Domain:** Cellular automata
 - **Source types:** papers (PDF/arXiv), web pages / URLs, books / transcripts
 - **Created:** 2026-09-24
