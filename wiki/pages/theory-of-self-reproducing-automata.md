@@ -3,7 +3,7 @@ title: Theory of Self-Reproducing Automata
 category: Sources
 summary: Von Neumann's posthumous book (ed. Burks, 1966) — the 1949 Illinois lectures plus the unfinished manuscript designing a 29-state self-reproducing cellular automaton
 tags: [book, von-neumann, self-reproduction, cellular-automata, foundational]
-sources: [theory-of-self-reproducing-automata, tsra-editors-introduction, tsra-lecture-1]
+sources: [theory-of-self-reproducing-automata, tsra-editors-introduction, tsra-lecture-1, tsra-lecture-2]
 created: 2026-09-24
 updated: 2026-09-24
 ---
@@ -50,7 +50,8 @@ Each unit gets its own source page as it is ingested. Printed pages:
 |---|---|---|
 | Preface + Editor's Introduction (Burks) | xv–28 | [[tsra-editors-introduction](pages/tsra-editors-introduction.md)] |
 | Part I, Lecture 1 Computing Machines in General | 31–41 | [[tsra-lecture-1](pages/tsra-lecture-1.md)] |
-| Part I, Lectures 2–5 | 42–87 | *not yet ingested* |
+| Part I, Lecture 2 Rigorous Theories of Control and Information | 42–56 | [[tsra-lecture-2](pages/tsra-lecture-2.md)] |
+| Part I, Lectures 3–5 | 57–87 | *not yet ingested* |
 | Part II, Ch. 1 General Considerations | 91–131 | *not yet ingested* |
 | Part II, Ch. 2 A System of 29 States with a General Transition Rule | 132–156 | *not yet ingested* |
 | Part II, Ch. 3 Design of Some Basic Organs | 157–200 | *not yet ingested* |
@@ -73,6 +74,7 @@ Each unit gets its own source page as it is ingested. Printed pages:
 - [[complexity-threshold](pages/complexity-threshold.md)]
 - [[mcculloch-pitts-neuron](pages/mcculloch-pitts-neuron.md)]
 - [[universal-turing-machine](pages/universal-turing-machine.md)]
+- [[description-vs-object-complexity](pages/description-vs-object-complexity.md)]
 
 ## Relation to Other Wiki Pages
 

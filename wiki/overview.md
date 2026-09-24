@@ -1,7 +1,7 @@
 ---
 title: Overview
 tags: [overview, synthesis]
-sources: [theory-of-self-reproducing-automata, tsra-editors-introduction]
+sources: [theory-of-self-reproducing-automata, tsra-editors-introduction, tsra-lecture-2]
 updated: 2026-09-24
 ---
 
@@ -24,7 +24,10 @@ Two logical ingredients underlie the construction: finite networks of threshold 
 [[universal-turing-machine](pages/universal-turing-machine.md)], which von Neumann carried
 over from computation to construction. The theory's organizing concept is complexity.
 Von Neumann claimed a [[complexity-threshold](pages/complexity-threshold.md)] exists,
-below which automata can only build simpler automata.
+below which automata can only build simpler automata. Universality has a threshold of
+the same kind: above a minimum complexity, a single automaton can do anything any
+automaton can do. That same automaton cannot predict arbitrary behavior, which suggests
+that complex automata may be simpler than any description of what they do ([[description-vs-object-complexity](pages/description-vs-object-complexity.md)]).
 
 ## Open Questions
 
@@ -40,3 +43,4 @@ below which automata can only build simpler automata.
 - [[complexity-threshold](pages/complexity-threshold.md)]
 - [[mcculloch-pitts-neuron](pages/mcculloch-pitts-neuron.md)]
 - [[universal-turing-machine](pages/universal-turing-machine.md)]
+- [[description-vs-object-complexity](pages/description-vs-object-complexity.md)]
