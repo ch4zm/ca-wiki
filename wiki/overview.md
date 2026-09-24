@@ -1,7 +1,7 @@
 ---
 title: Overview
 tags: [overview, synthesis]
-sources: []
+sources: [theory-of-self-reproducing-automata, tsra-editors-introduction]
 updated: 2026-09-24
 ---
 
@@ -11,12 +11,32 @@ updated: 2026-09-24
 
 ## Current Understanding
 
-*No sources ingested yet.*
+Cellular automata begin with von Neumann's [[theory-of-automata](pages/theory-of-automata.md)].
+He intended it as a logical and mathematical theory of how automata, natural and
+artificial, are organized. Its founding question was
+[[self-reproduction](pages/self-reproduction.md)]: what logical organization is enough
+for an automaton to build a copy of itself? He answered it first with a kinematic model,
+and then as a cellular automaton
+([[theory-of-self-reproducing-automata](pages/theory-of-self-reproducing-automata.md)]).
+
+Two logical ingredients underlie the construction: finite networks of threshold elements
+([[mcculloch-pitts-neuron](pages/mcculloch-pitts-neuron.md)]), and Turing's
+[[universal-turing-machine](pages/universal-turing-machine.md)], which von Neumann carried
+over from computation to construction. The theory's organizing concept is complexity.
+Von Neumann claimed a [[complexity-threshold](pages/complexity-threshold.md)] exists,
+below which automata can only build simpler automata.
 
 ## Open Questions
 
-*Add questions here as they arise.*
+- What exactly is von Neumann's complexity threshold, and does the 29-state construction
+  make it precise? (Primary statement expected in Part I, Lectures 4–5.)
+- How do the kinematic (Part I) and cellular (Part II) models of self-reproduction differ
+  in what they assume?
 
 ## Key Entities / Concepts
 
-*Populated as pages are created.*
+- [[theory-of-automata](pages/theory-of-automata.md)]
+- [[self-reproduction](pages/self-reproduction.md)]
+- [[complexity-threshold](pages/complexity-threshold.md)]
+- [[mcculloch-pitts-neuron](pages/mcculloch-pitts-neuron.md)]
+- [[universal-turing-machine](pages/universal-turing-machine.md)]
