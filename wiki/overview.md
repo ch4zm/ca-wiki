@@ -1,7 +1,7 @@
 ---
 title: Overview
 tags: [overview, synthesis]
-sources: [theory-of-self-reproducing-automata, tsra-editors-introduction, tsra-lecture-2, tsra-lecture-3, tsra-lecture-4]
+sources: [theory-of-self-reproducing-automata, tsra-editors-introduction, tsra-lecture-2, tsra-lecture-3, tsra-lecture-4, tsra-lecture-5]
 updated: 2026-09-24
 ---
 
@@ -24,7 +24,9 @@ Two logical ingredients underlie the construction: finite networks of threshold 
 [[universal-turing-machine](pages/universal-turing-machine.md)], which von Neumann carried
 over from computation to construction. The theory's organizing concept is complexity.
 Von Neumann claimed a [[complexity-threshold](pages/complexity-threshold.md)] exists,
-below which automata can only build simpler automata. Universality has a threshold of
+below which automata can only build simpler automata. Above it, self-reproduction works
+through the [[universal-constructor](pages/universal-constructor.md)] scheme: build from a description, copy the description, attach it. This
+was first set out in the [[kinematic-self-reproduction](pages/kinematic-self-reproduction.md)] model. Universality has a threshold of
 the same kind: above a minimum complexity, a single automaton can do anything any
 automaton can do. That same automaton cannot predict arbitrary behavior, which suggests
 that complex automata may be simpler than any description of what they do ([[description-vs-object-complexity](pages/description-vs-object-complexity.md)]).
@@ -38,7 +40,7 @@ halting on the first one.
 ## Open Questions
 
 - What exactly is von Neumann's complexity threshold, and does the 29-state construction
-  make it precise? (Primary statement expected in Part I, Lecture 5.)
+  make it precise? Von Neumann guessed millions of parts for the kinematic model.
 - How do the kinematic (Part I) and cellular (Part II) models of self-reproduction differ
   in what they assume?
 
@@ -53,3 +55,5 @@ halting on the first one.
 - [[probabilistic-logic](pages/probabilistic-logic.md)]
 - [[maxwells-demon](pages/maxwells-demon.md)]
 - [[self-repair](pages/self-repair.md)]
+- [[universal-constructor](pages/universal-constructor.md)]
+- [[kinematic-self-reproduction](pages/kinematic-self-reproduction.md)]

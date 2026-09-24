@@ -49,6 +49,8 @@ shows that the 29-state cellular system of Part II realizes neuron-like function
 
 ## Related Concepts
 
+- [[kinematic-self-reproduction](pages/kinematic-self-reproduction.md)] — its logic organs are neuron-like elements
+
 - [[theory-of-automata](pages/theory-of-automata.md)] — idealized elements as its basic vocabulary
 - [[probabilistic-logic](pages/probabilistic-logic.md)] — generalizes these all-or-none elements to unreliable ones
 - [[universal-turing-machine](pages/universal-turing-machine.md)] — the other half of the logical base: finite control plus unbounded tape

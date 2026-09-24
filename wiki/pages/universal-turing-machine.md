@@ -51,6 +51,8 @@ structure" and "The Universal Constructor".[^7]
 
 ## Related Concepts
 
+- [[universal-constructor](pages/universal-constructor.md)] — the construction analogue: builds any automaton from its description
+
 - [[self-reproduction](pages/self-reproduction.md)] — von Neumann's construction-universality analogue
 - [[theory-of-automata](pages/theory-of-automata.md)] — Turing machines belong to its strict part
 - [[mcculloch-pitts-neuron](pages/mcculloch-pitts-neuron.md)] — the finite-automaton building block
