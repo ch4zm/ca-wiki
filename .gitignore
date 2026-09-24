@@ -4,6 +4,3 @@ wiki/pages/audit-*.md
 # index.md is generated from page frontmatter by bin/generate-index.py — a runtime
 # artifact, regenerated on demand. The source of truth is each page's frontmatter.
 wiki/index.md
-
-# Local-only symlinks to the wiki-skills fork on this machine
-.claude/skills/
