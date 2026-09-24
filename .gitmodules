@@ -1,0 +1,3 @@
+[submodule ".claude/wiki-skills"]
+	path = .claude/wiki-skills
+	url = git@git.charlesreid1.com:eeggwall/wiki-skills.git
