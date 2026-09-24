@@ -73,7 +73,7 @@ a continuous one.[^8]
 This is the framing unit of [[theory-of-self-reproducing-automata](pages/theory-of-self-reproducing-automata.md)].
 It names the questions that Part I, Lecture 5 (the kinematic model) and Part II (the
 cellular model) answer. Its account of the complexity threshold is second-hand (Burks
-summarizing von Neumann); the primary statement is in Part I, Lectures 4–5.
+summarizing von Neumann). Von Neumann states the general principle of complexity minima in Part I, Lecture 4, and the self-reproduction case in Lecture 5.
 
 [^1]: [[tsra-editors-introduction](pages/tsra-editors-introduction.md)] p.xv — "He envisaged a systematic theory which would be mathematical and logical in form and which would contribute in an essential way to our understanding of natural systems (natural automata) as well as to our understanding of both analog and digital computers (artificial automata)."
 [^2]: [[tsra-editors-introduction](pages/tsra-editors-introduction.md)] pp.9-10 — "When designing the ENIAC, we developed logical design rules, but these were inextricably tied in with rules governing circuit design. With idealized computing elements one can distinguish the purely logical (memory and truth-functional) requirements for a computer from the requirements imposed by the state of technology ... Second, the use of idealized computing elements is a step in the direction of a theory of automata."

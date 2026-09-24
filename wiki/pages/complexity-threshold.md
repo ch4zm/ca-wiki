@@ -3,7 +3,7 @@ title: Complexity Threshold
 category: Concepts
 summary: Von Neumann's claim that below a critical level of complexity automata can only build simpler things, while above it self-reproduction and growth of complexity become possible
 tags: [concept, complexity, self-reproduction, von-neumann]
-sources: [tsra-editors-introduction, tsra-lecture-1, tsra-lecture-2, tsra-lecture-3]
+sources: [tsra-editors-introduction, tsra-lecture-1, tsra-lecture-2, tsra-lecture-3, tsra-lecture-4]
 created: 2026-09-24
 updated: 2026-09-24
 ---
@@ -12,37 +12,45 @@ updated: 2026-09-24
 
 ## Description
 
-Von Neumann held that complexity has a critical level.
+Von Neumann's general principle is that capability depends on minima: "Below a certain
+minimum level of complexity you cannot do a certain thing, but above this minimum level
+of complexity you can do it." Capability also grows faster than size, because the
+interrelationships between components grow with the square of their number.[^1]
+
+Applied to construction, complexity has a critical level.
 Below it, complexity is *degenerative*: an automaton can only produce automata less
 complicated than itself, so [[self-reproduction](pages/self-reproduction.md)] is
-impossible.[^1] Above it, complexity and organization are no longer degenerative and can
+impossible.[^2] Above it, complexity and organization are no longer degenerative and can
 even increase. Burks calls this an analogue of
-thermodynamic degeneration within the theory of self-reproducing automata.[^2] The
+thermodynamic degeneration within the theory of self-reproducing automata.[^3] The
 analogy rests on von Neumann's view that information behaves like entropy, so that
 degenerative processes of entropy have parallels in information processing (see
-[[maxwells-demon](pages/maxwells-demon.md)]).[^3]
+[[maxwells-demon](pages/maxwells-demon.md)]).[^4]
 
 A related claim concerns descriptions: at high complexity, the automaton is simpler than
-any description of its behavior. See [[description-vs-object-complexity](pages/description-vs-object-complexity.md)].[^4]
+any description of its behavior. See [[description-vs-object-complexity](pages/description-vs-object-complexity.md)].[^5]
 
 **Threshold for universality.** Turing's universal machine shows the same pattern in
 computation. Below a certain minimum complexity, no instructions let an automaton
 perform certain operations. At a definite finite point, an automaton given suitable
-instructions can do anything any automaton can do.[^5] The self-reproduction threshold
+instructions can do anything any automaton can do.[^6] The self-reproduction threshold
 is the counterpart of this for construction.
 
 As a working measure of complexity, von Neumann counts an automaton's basic switching
 elements. On that measure the computing machines of 1949 were of order 10⁴, while the
 human nervous system is estimated at 10¹⁰ neurons, a size for which "we have absolutely
-no experience."[^6]
+no experience."[^7] He put the nervous system at about a million times more complicated
+than the largest machines, and added that "even measuring complexity on a logarithmic
+scale ... we have not yet come half the way."[^8] As complexity grows, errors also stop
+being negligible, which is why [[self-repair](pages/self-repair.md)] matters for highly complex automata.[^9]
 
 In von Neumann's view, complexity is the organizing concept of the whole
 [[theory-of-automata](pages/theory-of-automata.md)], and it still needed a rigorous
-definition.[^7]
+definition.[^10]
 
-The degeneration threshold for self-reproduction is so far reported only second-hand, in
-the Editor's Introduction. Von Neumann's own statement is expected in Part I, Lectures 4–5
-of [[theory-of-self-reproducing-automata](pages/theory-of-self-reproducing-automata.md)].
+The general principle of minima is von Neumann's own (Lecture 4). The specific
+degeneration threshold for self-reproduction is so far reported only second-hand, in the
+Editor's Introduction. Von Neumann's own statement is expected in Part I, Lecture 5 of [[theory-of-self-reproducing-automata](pages/theory-of-self-reproducing-automata.md)].
 
 ## Appearances in Sources
 
@@ -50,6 +58,7 @@ of [[theory-of-self-reproducing-automata](pages/theory-of-self-reproducing-autom
 - [[tsra-lecture-1](pages/tsra-lecture-1.md)] — element count as the working measure of complexity
 - [[tsra-lecture-2](pages/tsra-lecture-2.md)] — the minimum complexity for universality
 - [[tsra-lecture-3](pages/tsra-lecture-3.md)] — the entropy analogy behind "degeneration"
+- [[tsra-lecture-4](pages/tsra-lecture-4.md)] — the general principle of minima, and square-law growth of interrelationships
 
 ## Related Concepts
 
@@ -58,12 +67,16 @@ of [[theory-of-self-reproducing-automata](pages/theory-of-self-reproducing-autom
 - [[description-vs-object-complexity](pages/description-vs-object-complexity.md)] — the description-side claim about high complexity
 - [[universal-turing-machine](pages/universal-turing-machine.md)] — universality also needs a minimum complexity
 - [[maxwells-demon](pages/maxwells-demon.md)] — the entropy–information link behind the degeneration analogy
+- [[self-repair](pages/self-repair.md)] — how highly complex automata survive the errors complexity brings
 - [[probabilistic-logic](pages/probabilistic-logic.md)] — complexity also raises the odds of lethal failure
 
-[^1]: [[tsra-editors-introduction](pages/tsra-editors-introduction.md)] p.23 — "He thought, for example, that below a certain level, complexity is degenerative, and self-reproduction is impossible."
-[^2]: [[tsra-editors-introduction](pages/tsra-editors-introduction.md)] p.28 — "he found an analog of thermodynamic degeneration in the theory of self-reproducing automata: below a certain minimum level, complexity and degree of organization are degenerative, but above that level they are not degenerative and may even increase."
-[^3]: [[tsra-lecture-3](pages/tsra-lecture-3.md)] p.62 — "There are strong indications that information is similar to entropy and that degenerative processes of entropy are paralleled by degenerative processes in the processing of information."
-[^4]: [[tsra-editors-introduction](pages/tsra-editors-introduction.md)] p.23 — "in the case of simple automata a symbolic description of the behavior of an automaton is simpler than the automaton itself, but that in the case of exceedingly complex automata the automaton is simpler than a symbolic description of its behavior. See the Second Lecture of Part I."
-[^5]: [[tsra-lecture-2](pages/tsra-lecture-2.md)] p.50 — "... a simpler thing will never perform certain operations, no matter what instructions you give it; but there is a very definite finite point where an automaton of this complexity can, when given suitable instructions, do anything that can be done by automata at all."
-[^6]: [[tsra-lecture-1](pages/tsra-lecture-1.md)] pp.36-37 [synthesis] — "It is not completely obvious how to measure the complexity of an automaton. For computing machines, probably the reasonable way is to count how many vacuum tubes are involved"; complexity of current machines of order "10 thousand"; human nervous system "estimated to be 10 billion", and "we have absolutely no experience with such orders of magnitude"
-[^7]: [[tsra-editors-introduction](pages/tsra-editors-introduction.md)] p.23 — "Von Neumann thought that the chief problems of automata theory center around the concept of complexity. This very concept needs rigorous definition."
+[^1]: [[tsra-lecture-4](pages/tsra-lecture-4.md)] pp.65-66 — "an n-fold increase in size brings much more than an n-fold increase in what can be done. What can be done is a matter of the interrelationships between the components, and the number of interrelationships increases with the square of the number of components. And apart from this, what can be done depends on certain minima. Below a certain minimum level of complexity you cannot do a certain thing, but above this minimum level of complexity you can do it."
+[^2]: [[tsra-editors-introduction](pages/tsra-editors-introduction.md)] p.23 — "He thought, for example, that below a certain level, complexity is degenerative, and self-reproduction is impossible."
+[^3]: [[tsra-editors-introduction](pages/tsra-editors-introduction.md)] p.28 — "he found an analog of thermodynamic degeneration in the theory of self-reproducing automata: below a certain minimum level, complexity and degree of organization are degenerative, but above that level they are not degenerative and may even increase."
+[^4]: [[tsra-lecture-3](pages/tsra-lecture-3.md)] p.62 — "There are strong indications that information is similar to entropy and that degenerative processes of entropy are paralleled by degenerative processes in the processing of information."
+[^5]: [[tsra-editors-introduction](pages/tsra-editors-introduction.md)] p.23 — "in the case of simple automata a symbolic description of the behavior of an automaton is simpler than the automaton itself, but that in the case of exceedingly complex automata the automaton is simpler than a symbolic description of its behavior. See the Second Lecture of Part I."
+[^6]: [[tsra-lecture-2](pages/tsra-lecture-2.md)] p.50 — "... a simpler thing will never perform certain operations, no matter what instructions you give it; but there is a very definite finite point where an automaton of this complexity can, when given suitable instructions, do anything that can be done by automata at all."
+[^7]: [[tsra-lecture-1](pages/tsra-lecture-1.md)] pp.36-37 [synthesis] — "It is not completely obvious how to measure the complexity of an automaton. For computing machines, probably the reasonable way is to count how many vacuum tubes are involved"; complexity of current machines of order "10 thousand"; human nervous system "estimated to be 10 billion", and "we have absolutely no experience with such orders of magnitude"
+[^8]: [[tsra-lecture-4](pages/tsra-lecture-4.md)] p.65 — "So the human nervous system is roughly a million times more complicated than these large computing machines. ... Even measuring complexity on a logarithmic scale, which is highly generous, we have not yet come half the way."
+[^9]: [[tsra-lecture-4](pages/tsra-lecture-4.md)] p.70 — "Thus error considerations become more important as the system becomes more complex."
+[^10]: [[tsra-editors-introduction](pages/tsra-editors-introduction.md)] p.23 — "Von Neumann thought that the chief problems of automata theory center around the concept of complexity. This very concept needs rigorous definition."

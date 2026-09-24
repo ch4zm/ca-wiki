@@ -1,7 +1,7 @@
 ---
 title: Overview
 tags: [overview, synthesis]
-sources: [theory-of-self-reproducing-automata, tsra-editors-introduction, tsra-lecture-2, tsra-lecture-3]
+sources: [theory-of-self-reproducing-automata, tsra-editors-introduction, tsra-lecture-2, tsra-lecture-3, tsra-lecture-4]
 updated: 2026-09-24
 ---
 
@@ -31,12 +31,14 @@ that complex automata may be simpler than any description of what they do ([[des
 
 The second central problem is reliability. Von Neumann proposed a
 [[probabilistic-logic](pages/probabilistic-logic.md)] in which failure is part of the axioms, bringing the theory closer to analysis
-and thermodynamics. It rests on the entropy–information link illustrated by [[maxwells-demon](pages/maxwells-demon.md)].
+and thermodynamics. It rests on the entropy–information link illustrated by [[maxwells-demon](pages/maxwells-demon.md)]. In practice, natural
+automata survive unreliable parts through [[self-repair](pages/self-repair.md)]: they operate across errors instead of
+halting on the first one.
 
 ## Open Questions
 
 - What exactly is von Neumann's complexity threshold, and does the 29-state construction
-  make it precise? (Primary statement expected in Part I, Lectures 4–5.)
+  make it precise? (Primary statement expected in Part I, Lecture 5.)
 - How do the kinematic (Part I) and cellular (Part II) models of self-reproduction differ
   in what they assume?
 
@@ -50,3 +52,4 @@ and thermodynamics. It rests on the entropy–information link illustrated by [[
 - [[description-vs-object-complexity](pages/description-vs-object-complexity.md)]
 - [[probabilistic-logic](pages/probabilistic-logic.md)]
 - [[maxwells-demon](pages/maxwells-demon.md)]
+- [[self-repair](pages/self-repair.md)]

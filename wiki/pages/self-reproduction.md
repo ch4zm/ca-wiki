@@ -30,7 +30,7 @@ Von Neumann produced two discrete models:
   cellular structure.[^4]
 
 He hoped to follow these with a continuous model of self-reproduction.[^5] Burks also
-notes that self-reproduction is closely related to self-repair, so results on one were
+notes that self-reproduction is closely related to [[self-repair](pages/self-repair.md)], so results on one were
 expected to help with reliability.[^6]
 
 ## Appearances in Sources
@@ -43,6 +43,7 @@ expected to help with reliability.[^6]
 - [[theory-of-automata](pages/theory-of-automata.md)] — the broader program
 - [[universal-turing-machine](pages/universal-turing-machine.md)] — the model for von Neumann's universal constructor
 - [[probabilistic-logic](pages/probabilistic-logic.md)] — the other central problem; self-repair links the two
+- [[self-repair](pages/self-repair.md)] — the closely related capacity to maintain oneself
 
 [^1]: [[tsra-editors-introduction](pages/tsra-editors-introduction.md)] p.19 — "What kind of logical organization is sufficient for an automaton to be able to reproduce itself?"
 [^2]: [[tsra-editors-introduction](pages/tsra-editors-introduction.md)] p.xvi — "The reliability of components limits the complexity of the automata we can build, and self-reproduction requires an automaton of considerable complexity."
