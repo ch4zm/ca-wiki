@@ -50,6 +50,7 @@ shows that the 29-state cellular system of Part II realizes neuron-like function
 ## Related Concepts
 
 - [[theory-of-automata](pages/theory-of-automata.md)] — idealized elements as its basic vocabulary
+- [[probabilistic-logic](pages/probabilistic-logic.md)] — generalizes these all-or-none elements to unreliable ones
 - [[universal-turing-machine](pages/universal-turing-machine.md)] — the other half of the logical base: finite control plus unbounded tape
 - [[description-vs-object-complexity](pages/description-vs-object-complexity.md)] — limits the usefulness of the equivalence theorem at high complexity
 

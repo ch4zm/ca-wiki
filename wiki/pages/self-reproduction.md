@@ -15,7 +15,7 @@ updated: 2026-09-24
 The self-reproduction problem, as von Neumann posed
 it, asks: "What kind of logical organization is sufficient for an automaton to be able to
 reproduce itself?"[^1] It is one of the two central problems of his
-[[theory-of-automata](pages/theory-of-automata.md)]. The other is reliability. Both are
+[[theory-of-automata](pages/theory-of-automata.md)]. The other is reliability ([[probabilistic-logic](pages/probabilistic-logic.md)]). Both are
 tied to complexity, because "self-reproduction requires an automaton of considerable
 complexity."[^2] The question depends on the
 [[complexity-threshold](pages/complexity-threshold.md)]: below a minimum level of
@@ -42,6 +42,7 @@ expected to help with reliability.[^6]
 - [[complexity-threshold](pages/complexity-threshold.md)] — the level of complexity at which self-reproduction becomes possible
 - [[theory-of-automata](pages/theory-of-automata.md)] — the broader program
 - [[universal-turing-machine](pages/universal-turing-machine.md)] — the model for von Neumann's universal constructor
+- [[probabilistic-logic](pages/probabilistic-logic.md)] — the other central problem; self-repair links the two
 
 [^1]: [[tsra-editors-introduction](pages/tsra-editors-introduction.md)] p.19 — "What kind of logical organization is sufficient for an automaton to be able to reproduce itself?"
 [^2]: [[tsra-editors-introduction](pages/tsra-editors-introduction.md)] p.xvi — "The reliability of components limits the complexity of the automata we can build, and self-reproduction requires an automaton of considerable complexity."

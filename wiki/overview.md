@@ -1,7 +1,7 @@
 ---
 title: Overview
 tags: [overview, synthesis]
-sources: [theory-of-self-reproducing-automata, tsra-editors-introduction, tsra-lecture-2]
+sources: [theory-of-self-reproducing-automata, tsra-editors-introduction, tsra-lecture-2, tsra-lecture-3]
 updated: 2026-09-24
 ---
 
@@ -29,6 +29,10 @@ the same kind: above a minimum complexity, a single automaton can do anything an
 automaton can do. That same automaton cannot predict arbitrary behavior, which suggests
 that complex automata may be simpler than any description of what they do ([[description-vs-object-complexity](pages/description-vs-object-complexity.md)]).
 
+The second central problem is reliability. Von Neumann proposed a
+[[probabilistic-logic](pages/probabilistic-logic.md)] in which failure is part of the axioms, bringing the theory closer to analysis
+and thermodynamics. It rests on the entropy–information link illustrated by [[maxwells-demon](pages/maxwells-demon.md)].
+
 ## Open Questions
 
 - What exactly is von Neumann's complexity threshold, and does the 29-state construction
@@ -44,3 +48,5 @@ that complex automata may be simpler than any description of what they do ([[des
 - [[mcculloch-pitts-neuron](pages/mcculloch-pitts-neuron.md)]
 - [[universal-turing-machine](pages/universal-turing-machine.md)]
 - [[description-vs-object-complexity](pages/description-vs-object-complexity.md)]
+- [[probabilistic-logic](pages/probabilistic-logic.md)]
+- [[maxwells-demon](pages/maxwells-demon.md)]
