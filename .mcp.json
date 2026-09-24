@@ -1,0 +1,17 @@
+{
+  "mcpServers": {
+    "mediawiki-mcp-server": {
+      "type": "stdio",
+      "command": "npx",
+      "args": ["-y", "@professional-wiki/mediawiki-mcp-server"],
+      "env": {
+        "CONFIG": "/absolute/path/to/mediawiki-mcp/config.json"
+      }
+    },
+    "pdf-reader": {
+      "type": "stdio",
+      "command": "npx",
+      "args": ["-y", "@sylphx/pdf-reader-mcp"]
+    }
+  }
+}
