@@ -119,6 +119,7 @@ and how many predecessors a configuration has.[^23]
 ## Related Concepts
 
 - [[garden-of-eden](pages/garden-of-eden.md)] — configurations with no predecessor
+- [[garden-of-eden-theorem](pages/garden-of-eden-theorem.md)] — Garden-of-Eden patterns exist exactly when erasure does
 - [[erasable-configuration](pages/erasable-configuration.md)] — local information loss, which forces Garden-of-Eden patterns
 - [[moore-neighbourhood](pages/moore-neighbourhood.md)] — the nine-cell neighbourhood
 - [[curtis-hedlund-lyndon-theorem](pages/curtis-hedlund-lyndon-theorem.md)] — 1D global maps = continuous shift-commuting maps

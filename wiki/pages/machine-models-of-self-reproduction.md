@@ -16,7 +16,7 @@ updated: 2026-09-24
 
 ## Summary
 
-Moore, at Bell Telephone Laboratories, writes before von Neumann's cellular manuscript was
+[[edward-f-moore](pages/edward-f-moore.md)], at Bell Telephone Laboratories, writes before von Neumann's cellular manuscript was
 published. He knows it from one lecture series he attended, from reading, and from
 hearsay.[^1] He first surveys *kinematic* models that had actually been built. Jacobson
 built a model railroad whose trains assemble copies of themselves from cars. Penrose made
@@ -42,7 +42,9 @@ can occur only at time 0. The proof is a counting argument. Erasures lose states
 proportion to the area of a large block, while information leaking across the boundary
 grows only with its perimeter, so some pattern of the block can never be reached.[^7] No
 self-reproducing configuration can contain a Garden-of-Eden pattern, so the theorem is a
-limit on what machines can build.[^8]
+limit on what machines can build.[^8] [[john-myhill](pages/john-myhill.md)] later proved the
+converse, completing the [[garden-of-eden-theorem](pages/garden-of-eden-theorem.md)]
+([[converse-of-moores-garden-of-eden-theorem](pages/converse-of-moores-garden-of-eden-theorem.md)]).
 
 ## Key Takeaways
 
@@ -73,6 +75,8 @@ limit on what machines can build.[^8]
 ## Entities & Concepts
 
 - [[garden-of-eden](pages/garden-of-eden.md)]
+- [[garden-of-eden-theorem](pages/garden-of-eden-theorem.md)]
+- [[edward-f-moore](pages/edward-f-moore.md)]
 - [[erasable-configuration](pages/erasable-configuration.md)]
 - [[moore-neighbourhood](pages/moore-neighbourhood.md)]
 - [[cellular-automaton](pages/cellular-automaton.md)]

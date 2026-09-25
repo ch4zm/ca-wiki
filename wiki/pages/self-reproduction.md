@@ -97,6 +97,7 @@ possible without erasable configurations is one of Moore's open problems.[^18]
 
 - [[initially-quiescent-automaton](pages/initially-quiescent-automaton.md)] — the form every offspring is built in
 - [[garden-of-eden](pages/garden-of-eden.md)] — patterns no self-reproducer can contain
+- [[garden-of-eden-theorem](pages/garden-of-eden-theorem.md)] — when such patterns exist
 - [[erasable-configuration](pages/erasable-configuration.md)] — whether self-reproduction needs it is open
 - [[von-neumann-29-state-ca](pages/von-neumann-29-state-ca.md)] — the rule of the cellular model
 - [[cellular-automaton](pages/cellular-automaton.md)] — the medium of the second model

@@ -1,9 +1,9 @@
 ---
 title: Garden-of-Eden Configuration
 category: Concepts
-summary: A cellular-automaton configuration with no predecessor, which can occur only at time zero; Moore (1962) proved they exist in any structure with erasable configurations
+summary: A cellular-automaton configuration with no predecessor, which can occur only at time zero; they exist exactly when erasable configurations do (Moore 1962, Myhill 1963)
 tags: [concept, garden-of-eden, moore, myhill, surjectivity]
-sources: [machine-models-of-self-reproduction, tsra-part2-ch5, endomorphisms-and-automorphisms-of-the-shift-dynamical-system]
+sources: [machine-models-of-self-reproduction, tsra-part2-ch5, converse-of-moores-garden-of-eden-theorem, endomorphisms-and-automorphisms-of-the-shift-dynamical-system]
 created: 2026-09-24
 updated: 2026-09-24
 ---
@@ -14,7 +14,7 @@ updated: 2026-09-24
 
 A **Garden-of-Eden configuration** is a pattern that no configuration at time T − 1 can
 turn into at time T. It can therefore occur only at time 0, where initial conditions are
-set by hand. Moore named it in 1962, on a suggestion from John W. Tukey, after the account
+set by hand. [[edward-f-moore](pages/edward-f-moore.md)] named it in 1962, on a suggestion from John W. Tukey, after the account
 in Genesis.[^1]
 
 **Moore's theorem.** Moore's Theorem 2: "For a tessellation structure for which there
@@ -52,10 +52,12 @@ cannot be built: a 3 × 3 block of sensitized S₀ in C₀₀
 **Size.** Moore's proof gives very large Garden-of-Eden patterns. In every structure he
 examined in detail, one of size 5 × 5 or smaller existed.[^10]
 
-**The converse.** Burks, in a footnote to TSRA Ch. 5, says Myhill proved the converse
-condition, and that the condition amounts to the structure not being "backwards
-deterministic" in the sense of Burks and Wang.[^8] Myhill (1963), "The converse of Moore's
-Garden-of-Eden theorem", has not been ingested yet.
+**The converse.** [[john-myhill](pages/john-myhill.md)] proved that the condition is also
+necessary: if a structure has Garden-of-Eden configurations, it has two configurations that
+no environment can tell apart, which is equivalent to Moore's mutual erasability.[^11]
+Together the two results are the [[garden-of-eden-theorem](pages/garden-of-eden-theorem.md)]. Burks, in a footnote to
+TSRA Ch. 5, says the condition amounts to the structure not being "backwards
+deterministic" in the sense of Burks and Wang.[^8]
 
 **One dimension (own reasoning, from Hedlund's theorems).** Hedlund (1969) studies the
 global maps of 1D cellular automata as continuous shift-commuting maps of the space of
@@ -65,7 +67,7 @@ translate directly:
 - A 1D global map fails to be onto iff some *finite* block has no preimage block
   (Thm 5.1). A 1D Garden-of-Eden configuration therefore always contains a finite
   Garden-of-Eden pattern, which cannot occur in any configuration that has a
-  predecessor.[^11]
+  predecessor.[^12]
 - If the map is onto, two distinct configurations that differ on only finitely many
   cells never have the same image (Cor 9.4). If the map is not onto, the proof of
   Thm 5.12 builds two distinct blocks P ≠ P* with a common border A that give the same
@@ -74,26 +76,28 @@ translate directly:
   Garden-of-Eden configuration exists iff two finitely-different configurations
   collide" for 1D rules. Two colliding finitely-different configurations are an
   [[erasable-configuration](pages/erasable-configuration.md)], so one direction is the 1D
-  case of Moore's theorem (own reasoning). The other direction is presumably Myhill's
-  converse, not yet checked against his paper.[^12][^13]
+  case of Moore's theorem, and the other is the 1D case of Myhill's converse (own
+  reasoning).[^13][^14]
 - A one-to-one global map is onto (Thm 5.14), so an invertible rule has no
-  Garden-of-Eden configurations.[^14]
+  Garden-of-Eden configurations.[^15]
 - For a rule that is not onto, some *periodic* configuration has uncountably many
   predecessors (Thm 5.12). This is the opposite extreme: too many predecessors rather
-  than none.[^13]
+  than none.[^14]
 - For onto rules the count is tightly controlled: every length-m pattern has exactly
   S^(n−1) predecessor patterns (Thm 5.4). See
-  [[surjective-shift-endomorphism](pages/surjective-shift-endomorphism.md)].[^15]
+  [[surjective-shift-endomorphism](pages/surjective-shift-endomorphism.md)].[^16]
 
 ## Appearances in Sources
 
 - [[machine-models-of-self-reproduction](pages/machine-models-of-self-reproduction.md)] - the definition, the name, Theorem 2 and its proof, the six assumptions
+- [[converse-of-moores-garden-of-eden-theorem](pages/converse-of-moores-garden-of-eden-theorem.md)] - the converse: Garden-of-Eden configurations require indistinguishable pairs
 - [[tsra-part2-ch5](pages/tsra-part2-ch5.md)] - footnote 12 to §5.3.1, relating non-constructibility to Moore and Myhill
 - [[endomorphisms-and-automorphisms-of-the-shift-dynamical-system](pages/endomorphisms-and-automorphisms-of-the-shift-dynamical-system.md)] - the 1D theory of onto and non-onto global maps, without the term (connection is own reasoning)
 
 ## Related Concepts
 
-- [[erasable-configuration](pages/erasable-configuration.md)] - the condition that forces Garden-of-Eden configurations
+- [[garden-of-eden-theorem](pages/garden-of-eden-theorem.md)] - the if-and-only-if result
+- [[erasable-configuration](pages/erasable-configuration.md)] - the condition equivalent to Garden-of-Eden configurations existing
 - [[moore-neighbourhood](pages/moore-neighbourhood.md)] - the radius-1 neighbourhood behind the boundary-layer count
 - [[initially-quiescent-automaton](pages/initially-quiescent-automaton.md)] - the class a constructor can build; Garden-of-Eden patterns lie wholly outside it
 - [[universal-constructor](pages/universal-constructor.md)] - no constructor can build a Garden-of-Eden pattern
@@ -112,8 +116,9 @@ translate directly:
 [^8]: [[tsra-part2-ch5](pages/tsra-part2-ch5.md)] p.291 n.12 [synthesis] - every Garden-of-Eden configuration is non-constructible, not conversely; Moore established a condition for their existence where information needs at least 1 unit of time to pass between neighbours; Myhill showed the converse; the condition is essentially non-backwards-determinism (Burks and Wang)
 [^9]: [[tsra-part2-ch5](pages/tsra-part2-ch5.md)] p.291 [synthesis] - the 3 × 3 configuration of sensitized S₀ surrounded by C₀₀ is not constructible
 [^10]: [[machine-models-of-self-reproduction](pages/machine-models-of-self-reproduction.md)] p.30 [synthesis] - the proof of Theorem 2 gives a very large array; 5 × 5 or smaller sufficed in every structure Moore examined in detail
-[^11]: [[endomorphisms-and-automorphisms-of-the-shift-dynamical-system](pages/endomorphisms-and-automorphisms-of-the-shift-dynamical-system.md)] pp.326-327 [synthesis] — Thm 5.1: f∞ is onto iff every f_m: 𝔅_(m+n−1)(S) → 𝔅_m(S) is onto
-[^12]: [[endomorphisms-and-automorphisms-of-the-shift-dynamical-system](pages/endomorphisms-and-automorphisms-of-the-shift-dynamical-system.md)] p.346 [synthesis] — Cor 9.4: if distinct doubly asymptotic y, z have f∞(y) = f∞(z), then f∞ is not onto
-[^13]: [[endomorphisms-and-automorphisms-of-the-shift-dynamical-system](pages/endomorphisms-and-automorphisms-of-the-shift-dynamical-system.md)] pp.330-331 [synthesis] — Lemma 5.11: blocks P ≠ P* and an (n − 1)-block A with f(APA) = f(AP*A); Thm 5.12: if f∞ is not onto, some periodic x has uncountable preimage
-[^14]: [[endomorphisms-and-automorphisms-of-the-shift-dynamical-system](pages/endomorphisms-and-automorphisms-of-the-shift-dynamical-system.md)] pp.331-332 [synthesis] — Thm 5.14: A(S) = H(S); a one-to-one endomorphism is onto
-[^15]: [[endomorphisms-and-automorphisms-of-the-shift-dynamical-system](pages/endomorphisms-and-automorphisms-of-the-shift-dynamical-system.md)] pp.327-328 [synthesis] — Thm 5.4: f∞ onto iff card f_m⁻¹(B) = S^(n−1) for every m-block B
+[^11]: [[converse-of-moores-garden-of-eden-theorem](pages/converse-of-moores-garden-of-eden-theorem.md)] p.686 - "the existence of two indistinguishable configurations is a necessary as well as a sufficient condition for the existence of Garden-of-Eden configurations."
+[^12]: [[endomorphisms-and-automorphisms-of-the-shift-dynamical-system](pages/endomorphisms-and-automorphisms-of-the-shift-dynamical-system.md)] pp.326-327 [synthesis] — Thm 5.1: f∞ is onto iff every f_m: 𝔅_(m+n−1)(S) → 𝔅_m(S) is onto
+[^13]: [[endomorphisms-and-automorphisms-of-the-shift-dynamical-system](pages/endomorphisms-and-automorphisms-of-the-shift-dynamical-system.md)] p.346 [synthesis] — Cor 9.4: if distinct doubly asymptotic y, z have f∞(y) = f∞(z), then f∞ is not onto
+[^14]: [[endomorphisms-and-automorphisms-of-the-shift-dynamical-system](pages/endomorphisms-and-automorphisms-of-the-shift-dynamical-system.md)] pp.330-331 [synthesis] — Lemma 5.11: blocks P ≠ P* and an (n − 1)-block A with f(APA) = f(AP*A); Thm 5.12: if f∞ is not onto, some periodic x has uncountable preimage
+[^15]: [[endomorphisms-and-automorphisms-of-the-shift-dynamical-system](pages/endomorphisms-and-automorphisms-of-the-shift-dynamical-system.md)] pp.331-332 [synthesis] — Thm 5.14: A(S) = H(S); a one-to-one endomorphism is onto
+[^16]: [[endomorphisms-and-automorphisms-of-the-shift-dynamical-system](pages/endomorphisms-and-automorphisms-of-the-shift-dynamical-system.md)] pp.327-328 [synthesis] — Thm 5.4: f∞ onto iff card f_m⁻¹(B) = S^(n−1) for every m-block B

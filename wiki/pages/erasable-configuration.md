@@ -1,9 +1,9 @@
 ---
 title: Erasable Configuration
 category: Concepts
-summary: Moore's term for a finite pattern that has a different "twin" with identical surroundings and an identical next step - local information loss; its existence forces Garden-of-Eden configurations
+summary: Moore's term for a finite pattern that has a different "twin" with identical surroundings and an identical next step - local information loss; it exists exactly when Garden-of-Eden configurations do
 tags: [concept, erasable-configuration, moore, garden-of-eden, irreversibility]
-sources: [machine-models-of-self-reproduction]
+sources: [machine-models-of-self-reproduction, converse-of-moores-garden-of-eden-theorem]
 created: 2026-09-24
 updated: 2026-09-24
 ---
@@ -41,24 +41,33 @@ possible.[^6]
 
 **Garden-of-Eden theorem.** Moore's Theorem 2: if a tessellation structure has erasable
 configurations, it has [[garden-of-eden](pages/garden-of-eden.md)]
-configurations.[^7] In modern terms, erasability is the failure of the global rule to be
-injective on finite patterns, and a Garden-of-Eden configuration is a failure of
-surjectivity. Myhill (1963), "The converse of Moore's Garden-of-Eden theorem", is on the
-reading list but has not been ingested; the modern framing here is the wiki's own summary,
-not Moore's wording.
+configurations.[^7] [[john-myhill](pages/john-myhill.md)] proved the converse, so the two
+conditions are equivalent (the [[garden-of-eden-theorem](pages/garden-of-eden-theorem.md)]).[^8]
+
+**Indistinguishable configurations.** Myhill restates erasability using *environments*. An
+environment fixes every cell except a square hole, and two configurations of the same size
+are *distinguished* by it if inserting each into the hole gives different states one step
+later. His referee noted that a mutually erasable pair exists exactly when some two
+configurations are distinguished by no environment. If every pair can be told apart by some
+environment, every pair can be told apart by every environment of the right size, including
+the all-quiescent one.[^9] In modern terms, erasability is the failure of the global rule to
+be injective on finite patterns, and a Garden-of-Eden configuration is a failure of
+surjectivity. That framing is the wiki's own summary, not the papers' wording.
 
 **Open questions from Moore.** Can a structure have a self-reproducing configuration and
 no erasable one? Does the fraction of n-state structures with erasable configurations tend
 to 1 as n grows? In every structure Moore examined, the inner block of an erasable pair
-could be a single cell. Is that always possible?[^8]
+could be a single cell. Is that always possible?[^10]
 
 ## Appearances in Sources
 
 - [[machine-models-of-self-reproduction](pages/machine-models-of-self-reproduction.md)] - definition, role in Theorem 2, and open problems
+- [[converse-of-moores-garden-of-eden-theorem](pages/converse-of-moores-garden-of-eden-theorem.md)] - the equivalent notion of indistinguishable configurations, and the converse
 
 ## Related Concepts
 
-- [[garden-of-eden](pages/garden-of-eden.md)] - what erasability forces to exist
+- [[garden-of-eden](pages/garden-of-eden.md)] - exist exactly when erasable configurations do
+- [[garden-of-eden-theorem](pages/garden-of-eden-theorem.md)] - the equivalence
 - [[cellular-automaton](pages/cellular-automaton.md)] - the setting
 - [[self-reproduction](pages/self-reproduction.md)] - whether it needs erasability is open
 
@@ -69,4 +78,6 @@ could be a single cell. Is that always possible?[^8]
 [^5]: [[machine-models-of-self-reproduction](pages/machine-models-of-self-reproduction.md)] p.25 [synthesis] - configurations fall into equivalence classes of copies or mutually erasable patterns; if c contains a copy of an erasable configuration then c is erasable, so an erasable configuration can be associated with a square array
 [^6]: [[machine-models-of-self-reproduction](pages/machine-models-of-self-reproduction.md)] p.26 - "If the function f defining the transitions and the states has the property that such irreversible transitions cannot take place, then only a restricted class of methods of construction and computation can take place."
 [^7]: [[machine-models-of-self-reproduction](pages/machine-models-of-self-reproduction.md)] p.26 - "THEOREM 2. For a tessellation structure for which there exist erasable configurations, there exist Garden-of-Eden configurations."
-[^8]: [[machine-models-of-self-reproduction](pages/machine-models-of-self-reproduction.md)] p.30 [synthesis] - open problems: self-reproduction without erasable configurations; fraction of n-state structures with erasable configurations approaching 1; one-cell inner arrays in every structure examined
+[^8]: [[converse-of-moores-garden-of-eden-theorem](pages/converse-of-moores-garden-of-eden-theorem.md)] p.686 - "the existence of two indistinguishable configurations is a necessary as well as a sufficient condition for the existence of Garden-of-Eden configurations."
+[^9]: [[converse-of-moores-garden-of-eden-theorem](pages/converse-of-moores-garden-of-eden-theorem.md)] p.685 and n.2, p.686 [synthesis] - environment, insertion, sequent, and distinguishing environments defined; the referee's equivalence of mutual erasability with indistinguishability; the strengthened Lemma that distinguishability by some environment implies by every environment; the Lemma for the all-passive environment E₀
+[^10]: [[machine-models-of-self-reproduction](pages/machine-models-of-self-reproduction.md)] p.30 [synthesis] - open problems: self-reproduction without erasable configurations; fraction of n-state structures with erasable configurations approaching 1; one-cell inner arrays in every structure examined

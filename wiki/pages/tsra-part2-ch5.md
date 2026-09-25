@@ -230,7 +230,8 @@ The chapter completes what [[tsra-part2-ch4](pages/tsra-part2-ch4.md)] leaves un
 and carries out the scheme that [[tsra-part2-ch1](pages/tsra-part2-ch1.md)] and
 [[tsra-lecture-5](pages/tsra-lecture-5.md)] outline. It also points ahead to later work:
 Thatcher's and Codd's designs, and Moore and Myhill on Garden-of-Eden configurations
-(Moore's paper is [[machine-models-of-self-reproduction](pages/machine-models-of-self-reproduction.md)]).
+(Moore's paper is [[machine-models-of-self-reproduction](pages/machine-models-of-self-reproduction.md)], Myhill's
+[[converse-of-moores-garden-of-eden-theorem](pages/converse-of-moores-garden-of-eden-theorem.md)]; see [[garden-of-eden-theorem](pages/garden-of-eden-theorem.md)]).
 
 [^1]: [[tsra-part2-ch5](pages/tsra-part2-ch5.md)] p.251 [synthesis] — the manuscript continues for six further sections and abruptly terminates; mainly delay calculations, most wrong owing to Ch. 3 errors; summarized, not reproduced
 [^2]: [[tsra-part2-ch5](pages/tsra-part2-ch5.md)] pp.265-266, 270-271, 286, 293-296 [synthesis] — the tape-unit, logical-universality, universal-constructor, and self-reproduction results stated in italics at the end of each stage
