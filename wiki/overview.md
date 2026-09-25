@@ -263,7 +263,6 @@ language recognizers
 - [[decidability-in-cellular-automata](pages/decidability-in-cellular-automata.md)]
 - [[tag-system](pages/tag-system.md)]
 - [[collatz-function](pages/collatz-function.md)]
-- [[maurice-margenstern](pages/maurice-margenstern.md)]
 - [[reversible-turing-machine](pages/reversible-turing-machine.md)]
 - [[reversible-logic-element-with-memory](pages/reversible-logic-element-with-memory.md)]
 - [[billiard-ball-model](pages/billiard-ball-model.md)]

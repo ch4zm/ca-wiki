@@ -19,6 +19,7 @@
 - [x] Kari, J. (2005). Theory of cellular automata: A survey. *Theoretical Computer Science, 334*(1–3), 3–33.
 - [ ] Frisch, U., Hasslacher, B., & Pomeau, Y. (1986). Lattice-gas automata for the Navier–Stokes equation. *Physical Review Letters, 56*(14), 1505–1508.
 - [ ] Wolfram, S. (2002). *A new kind of science*. Wolfram Media.
+- [x] Adamatzky, A. (Ed.). (2015). *Automata, universality, computation: Tribute to Maurice Margenstern* (Emergence, Complexity and Computation, Vol. 12). Springer. https://doi.org/10.1007/978-3-319-09039-9 (Chs. 5, 6, 12–16)
 - [ ] Aggarwal, S. (1973). *Local and global Garden of Eden theorems* (Technical Report No. 147). University of Michigan, Department of Computer and Communication Sciences.
 
 ## Von Neumann - TSRA

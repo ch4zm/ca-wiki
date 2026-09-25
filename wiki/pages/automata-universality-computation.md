@@ -21,7 +21,7 @@ updated: 2026-09-24
 
 ## Summary
 
-The volume is a tribute to [[maurice-margenstern](pages/maurice-margenstern.md)]. Its
+The volume is a tribute to Maurice Margenstern. Its
 preface, by Serge Grigorieff, singles out two of his themes. The first is the frontier
 between small machines with a decidable halting problem and small universal ones. The
 second is computation with cellular automata in hyperbolic space.[^2] The seventeen
@@ -29,6 +29,26 @@ chapters range well beyond both. They cover combinatorics of curves, logic, the 
 of computer-assisted mathematics, two-way automata, small and reversible Turing machines,
 the grossone methodology, P systems, splicing, cellular automata, and optimization in
 bioinformatics.[^3]
+
+## The honoree
+
+Margenstern was born in Paris on 6 June 1947. He started out in constructive mathematics,
+studying in Leningrad with N. A. Shanin. His interests then moved to computability. In the
+late 1980s he joined the LITP computer-science laboratory in Paris, and there he began
+studying the simplest machines with an undecidable halting problem and the most complex
+ones with a decidable one. His 1994 habilitation was on that frontier. He then became a
+professor at the University of Lorraine at Metz, where he founded the LITA laboratory. By
+2015 he was emeritus there.[^4] The preface credits him with putting small machines
+forward as one of the important themes in computability. He did it through his own results
+and through the conference series *Machines, Computations and Universality*, which he set
+up in 1995.[^5] His small-machine results are surveyed in Ch. 5
+([[aucm-ch5-small-universal-turing-machines](pages/aucm-ch5-small-universal-turing-machines.md)]).
+
+In the early 2000s he developed computation with cellular automata in the hyperbolic plane
+and in hyperbolic spaces of dimension 3 and 4, and solved long-open tiling problems. The
+usual tool in hyperbolic geometry is group theory, but he invented combinatorial tools
+instead. The preface also says he proved that hyperbolic computation gets around some
+infeasibility results that hold in the Euclidean setting.[^6]
 
 ## Chapters covered in the wiki
 
@@ -57,41 +77,40 @@ DC programming in bioinformatics).[^3]
   universal Turing machines and the largest decidable ones. They survey Margenstern's
   Collatz-iterating machines inside that gap, his exact frontiers for colours and
   laterality, and his 2-tag simulations with very few left moves
-  ([[aucm-ch5-small-universal-turing-machines](pages/aucm-ch5-small-universal-turing-machines.md)]).[^4]
+  ([[aucm-ch5-small-universal-turing-machines](pages/aucm-ch5-small-universal-turing-machines.md)]).[^7]
 - **Reversible Turing machines from one element (Ch. 6).** Morita builds any reversible
   Turing machine as an infinite circuit of rotary elements, and realizes the rotary element
   in the billiard ball model without synchronizing the balls. Every non-degenerate 2-state
   element with three or more symbols is universal
-  ([[aucm-ch6-reversible-turing-machines-by-rlem](pages/aucm-ch6-reversible-turing-machines-by-rlem.md)]).[^5]
+  ([[aucm-ch6-reversible-turing-machines-by-rlem](pages/aucm-ch6-reversible-turing-machines-by-rlem.md)]).[^8]
 - **Where decidability ends in 1D (Ch. 12).** Sutner shows that every first-order property
   of a 1D rule's one-step relation is decidable by automata on the de Bruijn graph, while
   orbit questions are undecidable at graded levels. Reachability can have any r.e. degree,
   and testing universality is Σ⁰₄-complete
-  ([[aucm-ch12-linear-cellular-automata-and-decidability](pages/aucm-ch12-linear-cellular-automata-and-decidability.md)]).[^6]
+  ([[aucm-ch12-linear-cellular-automata-and-decidability](pages/aucm-ch12-linear-cellular-automata-and-decidability.md)]).[^9]
 - **Cells that write (Ch. 13).** Hoffmann's CA-w lets active cells write to a chosen
   neighbour and switch it on or off, which makes agents and particles easy to describe. It
   is shown on the traffic rule 184, Pascal's triangle, Fibonacci numbers, sorting on a
   ring, and leader election
-  ([[aucm-ch13-cellular-automata-with-write-access](pages/aucm-ch13-cellular-automata-with-write-access.md)]).[^7]
+  ([[aucm-ch13-cellular-automata-with-write-access](pages/aucm-ch13-cellular-automata-with-write-access.md)]).[^10]
 - **Waves of variable radius (Ch. 14).** Nickson and Potapov's broadcasting automata send
   messages to everyone within a state-dependent Euclidean radius. The waves trace discrete
   discs that generalize the von Neumann and Moore neighbourhoods. Composing discs can never
   produce some gradients or any non-convex shape, while aggregating two wave trains can
-  ([[aucm-ch14-broadcasting-automata](pages/aucm-ch14-broadcasting-automata.md)]).[^8]
+  ([[aucm-ch14-broadcasting-automata](pages/aucm-ch14-broadcasting-automata.md)]).[^11]
 - **Primes on a clock (Ch. 15).** Umeo, Miyamoto and Abe give the smallest known real-time
   prime generators: an 8-state ordinary CA and a 25-state CA whose cells exchange one bit
   per step. Both run a signal-based sieve of Eratosthenes and fire the end cell at exactly
   2, 3, 5, 7, 11, …
-  ([[aucm-ch15-real-time-prime-generators](pages/aucm-ch15-real-time-prime-generators.md)]).[^9]
+  ([[aucm-ch15-real-time-prime-generators](pages/aucm-ch15-real-time-prime-generators.md)]).[^12]
 - **Life on a silicate sheet (Ch. 16).** Adamatzky's phyllosilicate automata give each of
   two node types its own totalistic rule. A 100,000-rule survey is classified by pattern
   shape and interior. Three Life-like rules have gliders, oscillators, eaters, a still life
   and a glider gun
-  ([[aucm-ch16-phyllosilicate-automata](pages/aucm-ch16-phyllosilicate-automata.md)]).[^10]
+  ([[aucm-ch16-phyllosilicate-automata](pages/aucm-ch16-phyllosilicate-automata.md)]).[^13]
 
 ## Entities & Concepts
 
-- [[maurice-margenstern](pages/maurice-margenstern.md)]
 - [[universal-turing-machine](pages/universal-turing-machine.md)]
 - [[tag-system](pages/tag-system.md)]
 - [[collatz-function](pages/collatz-function.md)]
@@ -122,10 +141,13 @@ the shape of the 1D column of
 [^1]: [[automata-universality-computation](pages/automata-universality-computation.md)] copyright page [synthesis] — Andrew Adamatzky (ed.), Emergence, Complexity and Computation 12, Springer International Publishing Switzerland 2015, DOI 10.1007/978-3-319-09039-9
 [^2]: [[automata-universality-computation](pages/automata-universality-computation.md)] pp.V-VI (Preface, signed Serge Grigorieff) [synthesis] — Margenstern's "investigation of the simplest (resp. most complex) machines with an undecidable (resp. decidable) halting problem"; "In the early 2000's Maurice developed the subject of computation with cellular automata in the hyperbolic world"; "the two themes presented above do not exhaust the subjects Maurice investigated"
 [^3]: [[automata-universality-computation](pages/automata-universality-computation.md)] pp.VII-XI (Contents) [synthesis] — chapter titles and authors, Ch. 1-17
-[^4]: [[aucm-ch5-small-universal-turing-machines](pages/aucm-ch5-small-universal-turing-machines.md)] pp.117-124 [synthesis] — universal and non-universal curves with 39 open pairs, Collatz simulators, colour and laterality frontiers, 2-tag simulation with 6 and 3 left-move instructions
-[^5]: [[aucm-ch6-reversible-turing-machines-by-rlem](pages/aucm-ch6-reversible-turing-machines-by-rlem.md)] pp.129-137 [synthesis] — any RTM as an infinite circuit of REs; RE realized in BBM with a stationary state ball, no input synchronization; every non-degenerate 2-state k-symbol RLEM with k > 2 is universal
-[^6]: [[aucm-ch12-linear-cellular-automata-and-decidability](pages/aucm-ch12-linear-cellular-automata-and-decidability.md)] pp.259-273 [synthesis] — Theorems 1, 3, 5 (first-order decidability), Theorem 8 (Reachability any r.e. degree), universality testing Σ⁰₄-complete
-[^7]: [[aucm-ch13-cellular-automata-with-write-access](pages/aucm-ch13-cellular-automata-with-write-access.md)] p.277 (Abstract) [synthesis] — CA-w lets an active cell send data to a neighbouring cell, activate or deactivate it; demonstrated on the traffic rule, Pascal's triangle, Fibonacci numbers, sorting on the ring, leader election
-[^8]: [[aucm-ch14-broadcasting-automata](pages/aucm-ch14-broadcasting-automata.md)] pp.297-334 [synthesis] — Broadcasting Automata with state-dependent radius; discrete discs with r² = 1, 2 as von Neumann and Moore; gradients that cannot be produced (Proposition 6); closure under composition (Corollary 2); non-convex shapes by moiré aggregation
-[^9]: [[aucm-ch15-real-time-prime-generators](pages/aucm-ch15-real-time-prime-generators.md)] pp.341-350 [synthesis] — Theorem 2 (25 states, 86 rules, CA1−bit), Theorem 3 (8 states, 305 rules); sieve of Eratosthenes via signals; C₁ in state 1 at the prime times (Figs. 15.4, 15.8)
-[^10]: [[aucm-ch16-phyllosilicate-automata](pages/aucm-ch16-phyllosilicate-automata.md)] pp.353-378 [synthesis] — silicon (3 neighbours) and oxygen (6 neighbours) automata; 100K random rules classified C1-C5 and M1-M5; rules R65, R68, R72 with gliders, oscillators, still life and glider gun
+[^4]: [[automata-universality-computation](pages/automata-universality-computation.md)] pp.V-VI (Preface) [synthesis] — "Maurice was born in Paris on June 6, 1947"; constructive mathematics in Leningrad with Nicolaï A. Shanin; "In the late 80's he joined the computer science laboratory LITP (now LIAFA) in Paris and started his amazing investigation of the simplest (resp. most complex) machines with an undecidable (resp. decidable) halting problem"; Habilitation 1994; professor at the university of Lorraine at Metz, created the LITA laboratory; "now emeritus professor at the university of Lorraine"
+[^5]: [[automata-universality-computation](pages/automata-universality-computation.md)] pp.V-VI (Preface) — "Maurice is to be credited for putting it up as one of the important themes in computability. He did so via his own contributions and via a triennial international conference Machines, Computations and Universality he set up in 1995"
+[^6]: [[automata-universality-computation](pages/automata-universality-computation.md)] p.VI (Preface) — "In the early 2000's Maurice developed the subject of computation with cellular automata in the hyperbolic world (dimension 2, 3 or 4) and brought solutions to long open difficult tiling problems. Besides these technical achievements, Maurice proved that hyperbolic computability allows to overcome known unfeasibility results of the Euclidean world. The classical tool in hyperbolic geometry is the theory of groups but Maurice invented completely new tools: combinatorial ones."
+[^7]: [[aucm-ch5-small-universal-turing-machines](pages/aucm-ch5-small-universal-turing-machines.md)] pp.117-124 [synthesis] — universal and non-universal curves with 39 open pairs, Collatz simulators, colour and laterality frontiers, 2-tag simulation with 6 and 3 left-move instructions
+[^8]: [[aucm-ch6-reversible-turing-machines-by-rlem](pages/aucm-ch6-reversible-turing-machines-by-rlem.md)] pp.129-137 [synthesis] — any RTM as an infinite circuit of REs; RE realized in BBM with a stationary state ball, no input synchronization; every non-degenerate 2-state k-symbol RLEM with k > 2 is universal
+[^9]: [[aucm-ch12-linear-cellular-automata-and-decidability](pages/aucm-ch12-linear-cellular-automata-and-decidability.md)] pp.259-273 [synthesis] — Theorems 1, 3, 5 (first-order decidability), Theorem 8 (Reachability any r.e. degree), universality testing Σ⁰₄-complete
+[^10]: [[aucm-ch13-cellular-automata-with-write-access](pages/aucm-ch13-cellular-automata-with-write-access.md)] p.277 (Abstract) [synthesis] — CA-w lets an active cell send data to a neighbouring cell, activate or deactivate it; demonstrated on the traffic rule, Pascal's triangle, Fibonacci numbers, sorting on the ring, leader election
+[^11]: [[aucm-ch14-broadcasting-automata](pages/aucm-ch14-broadcasting-automata.md)] pp.297-334 [synthesis] — Broadcasting Automata with state-dependent radius; discrete discs with r² = 1, 2 as von Neumann and Moore; gradients that cannot be produced (Proposition 6); closure under composition (Corollary 2); non-convex shapes by moiré aggregation
+[^12]: [[aucm-ch15-real-time-prime-generators](pages/aucm-ch15-real-time-prime-generators.md)] pp.341-350 [synthesis] — Theorem 2 (25 states, 86 rules, CA1−bit), Theorem 3 (8 states, 305 rules); sieve of Eratosthenes via signals; C₁ in state 1 at the prime times (Figs. 15.4, 15.8)
+[^13]: [[aucm-ch16-phyllosilicate-automata](pages/aucm-ch16-phyllosilicate-automata.md)] pp.353-378 [synthesis] — silicon (3 neighbours) and oxygen (6 neighbours) automata; 100K random rules classified C1-C5 and M1-M5; rules R65, R68, R72 with gliders, oscillators, still life and glider gun

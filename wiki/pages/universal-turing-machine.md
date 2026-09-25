@@ -93,7 +93,7 @@ That leaves 39 state-symbol pairs whose status is open.[^20] Many of these small
 simulate 2-tag systems ([[tag-system](pages/tag-system.md)]), following Minsky's 7-state,
 4-symbol machine. That size matches the machine Wolfram calls the simplest known in 1983
 (own reasoning: Wolfram does not name it).[^21]
-[[maurice-margenstern](pages/maurice-margenstern.md)] placed machines that iterate the
+Margenstern placed machines that iterate the
 [[collatz-function](pages/collatz-function.md)] inside the open gap. Deciding reachability
 for machines of that size is therefore at least as hard as the Collatz conjecture.[^22]
 For some properties other than size, the threshold is known exactly (Margenstern calls
@@ -133,7 +133,6 @@ left-move and right-move instruction counts), the thresholds are 2 and 3
 - [[decidability-in-cellular-automata](pages/decidability-in-cellular-automata.md)] - halting-problem reductions give undecidable CA questions
 - [[tag-system](pages/tag-system.md)] - the model most small universal machines simulate
 - [[collatz-function](pages/collatz-function.md)] - iterated by machines in the open size gap
-- [[maurice-margenstern](pages/maurice-margenstern.md)] - frontiers between decidable and universal small machines
 - [[reversible-turing-machine](pages/reversible-turing-machine.md)] - the reversible special case, also universal
 
 [^1]: [[tsra-editors-introduction](pages/tsra-editors-introduction.md)] p.14 — "A Turing machine is a finite automaton with an indefinitely expandable tape. ... Turing's universal computer U has this property: for any Turing machine M there is a finite program P such that machine U, operating under the direction of P, will compute the same results as M."
