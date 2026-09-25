@@ -1,7 +1,7 @@
 ---
 title: Overview
 tags: [overview, synthesis]
-sources: [theory-of-self-reproducing-automata, tsra-editors-introduction, tsra-lecture-2, tsra-lecture-3, tsra-lecture-4, tsra-lecture-5, tsra-part2-ch1, tsra-part2-ch2, tsra-part2-ch3, tsra-part2-ch4, tsra-part2-ch5, endomorphisms-and-automorphisms-of-the-shift-dynamical-system, machine-models-of-self-reproduction, converse-of-moores-garden-of-eden-theorem, statistical-mechanics-of-cellular-automata, planetmath-garden-of-eden-theorem, computation-at-the-edge-of-chaos, theory-of-cellular-automata-a-survey, automata-universality-computation, aucm-ch5-small-universal-turing-machines, aucm-ch6-reversible-turing-machines-by-rlem]
+sources: [theory-of-self-reproducing-automata, tsra-editors-introduction, tsra-lecture-2, tsra-lecture-3, tsra-lecture-4, tsra-lecture-5, tsra-part2-ch1, tsra-part2-ch2, tsra-part2-ch3, tsra-part2-ch4, tsra-part2-ch5, endomorphisms-and-automorphisms-of-the-shift-dynamical-system, machine-models-of-self-reproduction, converse-of-moores-garden-of-eden-theorem, statistical-mechanics-of-cellular-automata, planetmath-garden-of-eden-theorem, computation-at-the-edge-of-chaos, theory-of-cellular-automata-a-survey, automata-universality-computation, aucm-ch5-small-universal-turing-machines, aucm-ch6-reversible-turing-machines-by-rlem, aucm-ch12-linear-cellular-automata-and-decidability]
 updated: 2026-09-24
 ---
 
@@ -125,6 +125,12 @@ injective on finite configurations" in this setting, and injective, bijective an
 Hedlund's automorphisms are exactly the reversible CA. The dividing line is
 dimension. 1D injectivity and surjectivity are decidable. In 2D both are undecidable,
 because [[wang-tiles](pages/wang-tiles.md)] and the tiling problem can be encoded in them.
+Within 1D the line falls between short and long term. Every first-order property of the
+one-step relation is decidable by automata on the
+[[de-bruijn-graph](pages/de-bruijn-graph.md)]
+([[first-order-theory-of-cellular-automata](pages/first-order-theory-of-cellular-automata.md)]),
+while orbit questions are undecidable at graded levels
+([[reachability-in-cellular-automata](pages/reachability-in-cellular-automata.md)]).
 Nilpotency is undecidable even in 1D, and so is every non-trivial property of the
 [[limit-set](pages/limit-set.md)] when the state set may vary. Physics motivates block-permutation rules that are
 reversible by construction ([[margolus-neighbourhood](pages/margolus-neighbourhood.md)])
@@ -149,6 +155,9 @@ language recognizers
   other under short encodings. Is that the whole story?
 - Rule 110 is universal (Cook and Wolfram, reported by Kari). Is it intrinsically universal?
   Is rule 54 universal at all? Cook (2004), on the reading list, gives the proof.
+- What is the degree of the full first-order theory of a CA with its orbit relation? Sutner
+  suspects every level of the arithmetic hierarchy is expressible as an orbit assertion.
+- Could pseudo-random rule 30 ever carry an undecidability proof?
 - Which of the 39 open (states, symbols) pairs admit a universal Turing machine? Machines
   of Collatz-simulator size are already at least as hard to analyse as the Collatz
   conjecture.
@@ -240,3 +249,6 @@ language recognizers
 - [[reversible-turing-machine](pages/reversible-turing-machine.md)]
 - [[reversible-logic-element-with-memory](pages/reversible-logic-element-with-memory.md)]
 - [[billiard-ball-model](pages/billiard-ball-model.md)]
+- [[first-order-theory-of-cellular-automata](pages/first-order-theory-of-cellular-automata.md)]
+- [[de-bruijn-graph](pages/de-bruijn-graph.md)]
+- [[reachability-in-cellular-automata](pages/reachability-in-cellular-automata.md)]

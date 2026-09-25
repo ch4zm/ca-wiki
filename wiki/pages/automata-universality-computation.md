@@ -3,7 +3,7 @@ title: "Automata, Universality, Computation: Tribute to Maurice Margenstern"
 category: Sources
 summary: Adamatzky (ed.), Springer ECC vol. 12 (2015) - 17 chapters honouring Margenstern on small universal machines, reversible computing, P systems, splicing, and cellular automata; the wiki covers the automata-theoretic and cellular-automata chapters one at a time
 tags: [book, festschrift, margenstern, universality, turing-machines, cellular-automata]
-sources: [automata-universality-computation, aucm-ch5-small-universal-turing-machines, aucm-ch6-reversible-turing-machines-by-rlem]
+sources: [automata-universality-computation, aucm-ch5-small-universal-turing-machines, aucm-ch6-reversible-turing-machines-by-rlem, aucm-ch12-linear-cellular-automata-and-decidability]
 created: 2026-09-24
 updated: 2026-09-24
 ---
@@ -15,8 +15,8 @@ updated: 2026-09-24
 **Type:** book (edited volume)
 **Editor:** Andrew Adamatzky (Springer, Emergence, Complexity and Computation vol. 12, 2015; DOI 10.1007/978-3-319-09039-9)[^1]
 
-> **Locators.** Printed page numbers are used throughout. PDF page = printed page + 9 in
-> the main text (p. 117 = PDF p. 126).
+> **Locators.** Printed page numbers are used throughout. PDF page = printed page + 9 for
+> Chs. 5-6 (p. 117 = PDF p. 126) and printed page + 5 from Ch. 12 on (p. 259 = PDF p. 264).
 
 ## Summary
 
@@ -38,7 +38,7 @@ automata:
 |---|---|---|---|
 | 5 | Maurice Margenstern's Contributions to the Field of Small Universal Turing Machines | Neary, Woods | [[aucm-ch5-small-universal-turing-machines](pages/aucm-ch5-small-universal-turing-machines.md)] |
 | 6 | Constructing Reversible Turing Machines by Reversible Logic Element with Memory | Morita | [[aucm-ch6-reversible-turing-machines-by-rlem](pages/aucm-ch6-reversible-turing-machines-by-rlem.md)] |
-| 12 | Linear Cellular Automata and Decidability | Sutner | pending |
+| 12 | Linear Cellular Automata and Decidability | Sutner | [[aucm-ch12-linear-cellular-automata-and-decidability](pages/aucm-ch12-linear-cellular-automata-and-decidability.md)] |
 | 13 | Algorithms with Active Cells Modeled by Cellular Automata with Write-Access (CA-w) | Hoffmann | pending |
 | 14 | Broadcasting Automata and Patterns on Z² | Nickson, Potapov | pending |
 | 15 | Real-Time Prime Generators Implemented on Small-State Cellular Automata | Umeo, Miyamoto, Abe | pending |
@@ -62,6 +62,11 @@ DC programming in bioinformatics).[^3]
   in the billiard ball model without synchronizing the balls. Every non-degenerate 2-state
   element with three or more symbols is universal
   ([[aucm-ch6-reversible-turing-machines-by-rlem](pages/aucm-ch6-reversible-turing-machines-by-rlem.md)]).[^5]
+- **Where decidability ends in 1D (Ch. 12).** Sutner shows that every first-order property
+  of a 1D rule's one-step relation is decidable by automata on the de Bruijn graph, while
+  orbit questions are undecidable at graded levels. Reachability can have any r.e. degree,
+  and testing universality is Σ⁰₄-complete
+  ([aucm-ch12-linear-cellular-automata-and-decidability](pages/aucm-ch12-linear-cellular-automata-and-decidability.md)]).[^6]
 
 ## Entities & Concepts
 
@@ -72,6 +77,9 @@ DC programming in bioinformatics).[^3]
 - [[reversible-turing-machine](pages/reversible-turing-machine.md)]
 - [[reversible-logic-element-with-memory](pages/reversible-logic-element-with-memory.md)]
 - [[billiard-ball-model](pages/billiard-ball-model.md)]
+- [[first-order-theory-of-cellular-automata](pages/first-order-theory-of-cellular-automata.md)]
+- [[de-bruijn-graph](pages/de-bruijn-graph.md)]
+- [[reachability-in-cellular-automata](pages/reachability-in-cellular-automata.md)]
 
 ## Relation to Other Wiki Pages
 
@@ -79,10 +87,13 @@ Ch. 5 extends the wiki's account of universality
 ([[universal-turing-machine](pages/universal-turing-machine.md)]) from "which systems are
 universal" to "how small a universal system can be". Ch. 6 does the same for reversible
 computing, which the wiki otherwise meets through
-[[reversible-cellular-automaton](pages/reversible-cellular-automaton.md)]s.
+[[reversible-cellular-automaton](pages/reversible-cellular-automaton.md)]s. Ch. 12 explains
+the shape of the 1D column of
+[[decidability-in-cellular-automata](pages/decidability-in-cellular-automata.md)].
 
 [^1]: [[automata-universality-computation](pages/automata-universality-computation.md)] copyright page [synthesis] — Andrew Adamatzky (ed.), Emergence, Complexity and Computation 12, Springer International Publishing Switzerland 2015, DOI 10.1007/978-3-319-09039-9
 [^2]: [[automata-universality-computation](pages/automata-universality-computation.md)] pp.V-VI (Preface, signed Serge Grigorieff) [synthesis] — Margenstern's "investigation of the simplest (resp. most complex) machines with an undecidable (resp. decidable) halting problem"; "In the early 2000's Maurice developed the subject of computation with cellular automata in the hyperbolic world"; "the two themes presented above do not exhaust the subjects Maurice investigated"
 [^3]: [[automata-universality-computation](pages/automata-universality-computation.md)] pp.VII-XI (Contents) [synthesis] — chapter titles and authors, Ch. 1-17
 [^4]: [[aucm-ch5-small-universal-turing-machines](pages/aucm-ch5-small-universal-turing-machines.md)] pp.117-124 [synthesis] — universal and non-universal curves with 39 open pairs, Collatz simulators, colour and laterality frontiers, 2-tag simulation with 6 and 3 left-move instructions
 [^5]: [[aucm-ch6-reversible-turing-machines-by-rlem](pages/aucm-ch6-reversible-turing-machines-by-rlem.md)] pp.129-137 [synthesis] — any RTM as an infinite circuit of REs; RE realized in BBM with a stationary state ball, no input synchronization; every non-degenerate 2-state k-symbol RLEM with k > 2 is universal
+[^6]: [[aucm-ch12-linear-cellular-automata-and-decidability](pages/aucm-ch12-linear-cellular-automata-and-decidability.md)] pp.259-273 [synthesis] — Theorems 1, 3, 5 (first-order decidability), Theorem 8 (Reachability any r.e. degree), universality testing Σ⁰₄-complete

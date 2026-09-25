@@ -98,7 +98,7 @@ Y ⊂ X(S) with φ(Y) = X(S) must be all of X(S) (Thm 13.2).[^24]
 
 Kari (2005) reports that Amoroso and Patt (1972) gave algorithms deciding whether a 1D CA
 is surjective or injective, and that Sutner later gave cleaner ones based on de Bruijn
-graphs. In two dimensions no such algorithm exists (Kari).[^25] Two more facts from the
+graphs ([[de-bruijn-graph](pages/de-bruijn-graph.md)]). In two dimensions no such algorithm exists (Kari).[^25] Two more facts from the
 survey link surjectivity to other properties. In 1D, a surjective G is also surjective on
 spatially periodic configurations ([[garden-of-eden-theorem](pages/garden-of-eden-theorem.md)]).[^26]
 In any dimension, every transitive CA is surjective

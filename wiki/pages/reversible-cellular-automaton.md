@@ -49,7 +49,8 @@ The tape is an infinite row of identical memory cells, much like a CA row, thoug
 cells pass signals asynchronously rather than updating in lockstep (own reasoning).[^10]
 
 **Deciding reversibility.** For 1D rules, Amoroso and Patt (1972) gave algorithms for both
-injectivity and surjectivity. Sutner later gave cleaner ones using de Bruijn graphs. For
+injectivity and surjectivity. Sutner later gave cleaner ones using de Bruijn graphs
+([[de-bruijn-graph](pages/de-bruijn-graph.md)]). For
 2D rules neither is decidable (Kari).[^11] The injectivity proof reduces the tiling problem.
 Given a tile set T, build a CA with a control layer that holds a T-tile and a SNAKES tile
 ([[wang-tiles](pages/wang-tiles.md)]), and an XOR layer. A cell is active when both tilings
@@ -99,6 +100,7 @@ block rule really needs a cycle as long as d + 1.[^16]
 - [[reversible-turing-machine](pages/reversible-turing-machine.md)] - simulated to get universal 1D reversible CA
 - [[reversible-logic-element-with-memory](pages/reversible-logic-element-with-memory.md)] - a gate-level primitive for reversible computing
 - [[billiard-ball-model](pages/billiard-ball-model.md)] - the physical model behind the billiard-ball computer
+- [[de-bruijn-graph](pages/de-bruijn-graph.md)] - the 1D injectivity test
 
 [^1]: [[theory-of-cellular-automata-a-survey](pages/theory-of-cellular-automata-a-survey.md)] pp.7-8 [synthesis] - G₁ ∘ G₂ = G₂ ∘ G₁ = id defines reversible and inverse automata; "One can effectively decide whether two given CA are inverses of each other", from the effectiveness of composition and decidability of equivalence
 [^2]: [[theory-of-cellular-automata-a-survey](pages/theory-of-cellular-automata-a-survey.md)] pp.12-13 [synthesis] - the inverse of a bijective CA commutes with the shift and is continuous because C is compact, "and therefore it is a CA function"; Corollary 1 (Hedlund): "A CA G is reversible if and only if it is a bijection."
