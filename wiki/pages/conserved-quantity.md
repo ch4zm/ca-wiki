@@ -68,6 +68,8 @@ conserved quantity iff a non-trivial valid finite tiling exists.[^11]
 - [[wang-tiles](pages/wang-tiles.md)] - the 2D undecidability
 - [[decidability-in-cellular-automata](pages/decidability-in-cellular-automata.md)] - the other decision problems
 - [[irreversibility-and-entropy](pages/irreversibility-and-entropy.md)] - the statistical-physics side of CA modelling
+- [[rule-184](pages/rule-184.md)] - the traffic rule conserves the number of particles
+
 [^1]: [[theory-of-cellular-automata-a-survey](pages/theory-of-cellular-automata-a-survey.md)] p.21 [synthesis] - "Reversible CA preserve information. There are also other conservation laws in physics that CA may obey, e.g. conservation of energy, momentum, etc. The Margolus neighborhood is a particularly useful tool in programming conservation laws into CA."
 [^2]: [[theory-of-cellular-automata-a-survey](pages/theory-of-cellular-automata-a-survey.md)] p.18 [synthesis] - "the number of black cells in finite configurations is automatically preserved if the permutations are such that they conserve black states"
 [^3]: [[theory-of-cellular-automata-a-survey](pages/theory-of-cellular-automata-a-survey.md)] p.21 [synthesis] - Hattori and Takesue [32] introduced additive conserved quantities, "invariants of the CA evolution that are obtained as sums of locally computed numerical values"; discovered independently, e.g. [9]; number conservation introduced in [8]

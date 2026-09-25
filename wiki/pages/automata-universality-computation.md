@@ -3,7 +3,7 @@ title: "Automata, Universality, Computation: Tribute to Maurice Margenstern"
 category: Sources
 summary: Adamatzky (ed.), Springer ECC vol. 12 (2015) - 17 chapters honouring Margenstern on small universal machines, reversible computing, P systems, splicing, and cellular automata; the wiki covers the automata-theoretic and cellular-automata chapters one at a time
 tags: [book, festschrift, margenstern, universality, turing-machines, cellular-automata]
-sources: [automata-universality-computation, aucm-ch5-small-universal-turing-machines, aucm-ch6-reversible-turing-machines-by-rlem, aucm-ch12-linear-cellular-automata-and-decidability]
+sources: [automata-universality-computation, aucm-ch5-small-universal-turing-machines, aucm-ch6-reversible-turing-machines-by-rlem, aucm-ch12-linear-cellular-automata-and-decidability, aucm-ch13-cellular-automata-with-write-access]
 created: 2026-09-24
 updated: 2026-09-24
 ---
@@ -39,7 +39,7 @@ automata:
 | 5 | Maurice Margenstern's Contributions to the Field of Small Universal Turing Machines | Neary, Woods | [[aucm-ch5-small-universal-turing-machines](pages/aucm-ch5-small-universal-turing-machines.md)] |
 | 6 | Constructing Reversible Turing Machines by Reversible Logic Element with Memory | Morita | [[aucm-ch6-reversible-turing-machines-by-rlem](pages/aucm-ch6-reversible-turing-machines-by-rlem.md)] |
 | 12 | Linear Cellular Automata and Decidability | Sutner | [[aucm-ch12-linear-cellular-automata-and-decidability](pages/aucm-ch12-linear-cellular-automata-and-decidability.md)] |
-| 13 | Algorithms with Active Cells Modeled by Cellular Automata with Write-Access (CA-w) | Hoffmann | pending |
+| 13 | Algorithms with Active Cells Modeled by Cellular Automata with Write-Access (CA-w) | Hoffmann | [[aucm-ch13-cellular-automata-with-write-access](pages/aucm-ch13-cellular-automata-with-write-access.md)] |
 | 14 | Broadcasting Automata and Patterns on Z² | Nickson, Potapov | pending |
 | 15 | Real-Time Prime Generators Implemented on Small-State Cellular Automata | Umeo, Miyamoto, Abe | pending |
 | 16 | Phyllosilicate Automata | Adamatzky | pending |
@@ -66,7 +66,12 @@ DC programming in bioinformatics).[^3]
   of a 1D rule's one-step relation is decidable by automata on the de Bruijn graph, while
   orbit questions are undecidable at graded levels. Reachability can have any r.e. degree,
   and testing universality is Σ⁰₄-complete
-  ([aucm-ch12-linear-cellular-automata-and-decidability](pages/aucm-ch12-linear-cellular-automata-and-decidability.md)]).[^6]
+  ([[aucm-ch12-linear-cellular-automata-and-decidability](pages/aucm-ch12-linear-cellular-automata-and-decidability.md)]).[^6]
+- **Cells that write (Ch. 13).** Hoffmann's CA-w lets active cells write to a chosen
+  neighbour and switch it on or off, which makes agents and particles easy to describe. It
+  is shown on the traffic rule 184, Pascal's triangle, Fibonacci numbers, sorting on a
+  ring, and leader election
+  ([[aucm-ch13-cellular-automata-with-write-access](pages/aucm-ch13-cellular-automata-with-write-access.md)]).[^7]
 
 ## Entities & Concepts
 
@@ -80,6 +85,8 @@ DC programming in bioinformatics).[^3]
 - [[first-order-theory-of-cellular-automata](pages/first-order-theory-of-cellular-automata.md)]
 - [[de-bruijn-graph](pages/de-bruijn-graph.md)]
 - [[reachability-in-cellular-automata](pages/reachability-in-cellular-automata.md)]
+- [[cellular-automaton-with-write-access](pages/cellular-automaton-with-write-access.md)]
+- [[rule-184](pages/rule-184.md)]
 
 ## Relation to Other Wiki Pages
 
@@ -97,3 +104,4 @@ the shape of the 1D column of
 [^4]: [[aucm-ch5-small-universal-turing-machines](pages/aucm-ch5-small-universal-turing-machines.md)] pp.117-124 [synthesis] — universal and non-universal curves with 39 open pairs, Collatz simulators, colour and laterality frontiers, 2-tag simulation with 6 and 3 left-move instructions
 [^5]: [[aucm-ch6-reversible-turing-machines-by-rlem](pages/aucm-ch6-reversible-turing-machines-by-rlem.md)] pp.129-137 [synthesis] — any RTM as an infinite circuit of REs; RE realized in BBM with a stationary state ball, no input synchronization; every non-degenerate 2-state k-symbol RLEM with k > 2 is universal
 [^6]: [[aucm-ch12-linear-cellular-automata-and-decidability](pages/aucm-ch12-linear-cellular-automata-and-decidability.md)] pp.259-273 [synthesis] — Theorems 1, 3, 5 (first-order decidability), Theorem 8 (Reachability any r.e. degree), universality testing Σ⁰₄-complete
+[^7]: [[aucm-ch13-cellular-automata-with-write-access](pages/aucm-ch13-cellular-automata-with-write-access.md)] p.277 (Abstract) [synthesis] — CA-w lets an active cell send data to a neighbouring cell, activate or deactivate it; demonstrated on the traffic rule, Pascal's triangle, Fibonacci numbers, sorting on the ring, leader election

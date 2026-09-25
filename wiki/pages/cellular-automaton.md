@@ -3,7 +3,7 @@ title: Cellular Automaton
 category: Concepts
 summary: A homogeneous lattice of identical finite-state cells, each updating in discrete time from its own state and its neighbours' states under one shared rule; introduced by von Neumann (after Ulam) as a medium for self-reproduction
 tags: [concept, cellular-automata, foundations, homogeneity, lattice]
-sources: [tsra-part2-ch1, tsra-part2-ch2, tsra-part2-ch3, machine-models-of-self-reproduction, endomorphisms-and-automorphisms-of-the-shift-dynamical-system, statistical-mechanics-of-cellular-automata, computation-at-the-edge-of-chaos, theory-of-cellular-automata-a-survey]
+sources: [tsra-part2-ch1, tsra-part2-ch2, tsra-part2-ch3, machine-models-of-self-reproduction, endomorphisms-and-automorphisms-of-the-shift-dynamical-system, statistical-mechanics-of-cellular-automata, computation-at-the-edge-of-chaos, theory-of-cellular-automata-a-survey, aucm-ch13-cellular-automata-with-write-access]
 created: 2026-09-24
 updated: 2026-09-24
 ---
@@ -157,8 +157,15 @@ steps ([[limit-set](pages/limit-set.md)]).[^31] Composing two CA gives a CA, and
 CA are equal is decidable.[^32] Which other properties can be decided is the subject of
 [[decidability-in-cellular-automata](pages/decidability-in-cellular-automata.md)].
 
+**Read-only cells, and a write-access variant.** In the standard model a cell reads its
+neighbours but only ever changes itself, so no two updates can conflict. Hoffmann's
+[[cellular-automaton-with-write-access](pages/cellular-automaton-with-write-access.md)]
+drops this restriction to make moving agents easier to describe. A radius-1 version can
+still be emulated by an ordinary CA of radius 2.[^33]
+
 ## Appearances in Sources
 
+- [[aucm-ch13-cellular-automata-with-write-access](pages/aucm-ch13-cellular-automata-with-write-access.md)] - the read-only principle, and the write-access variant that relaxes it
 - [[computation-at-the-edge-of-chaos](pages/computation-at-the-edge-of-chaos.md)] - two views of computation; the size of rule space and an ordering for it
 - [[theory-of-cellular-automata-a-survey](pages/theory-of-cellular-automata-a-survey.md)] - the formal triple (S, N, f); finite and periodic configurations; composition, equivalence, nilpotency
 - [[statistical-mechanics-of-cellular-automata](pages/statistical-mechanics-of-cellular-automata.md)] — the physicist's view, alternative names, applications, type-I/type-II neighbourhoods, rule counts
@@ -197,6 +204,8 @@ CA are equal is decidable.[^32] Which other properties can be decided is the sub
 - [[decidability-in-cellular-automata](pages/decidability-in-cellular-automata.md)] - which properties of a rule are decidable, by dimension
 - [[chaos-in-cellular-automata](pages/chaos-in-cellular-automata.md)] - CA as topological dynamical systems
 - [[classification-of-cellular-automata](pages/classification-of-cellular-automata.md)] - Wolfram, Culik-Yu and Kurka classes
+- [[cellular-automaton-with-write-access](pages/cellular-automaton-with-write-access.md)] - a variant in which cells may write to neighbours
+
 [^1]: [[tsra-part2-ch1](pages/tsra-part2-ch1.md)] pp.94, 103, 106 [synthesis] — each cell contains the same finite automaton; functional homogeneity means every cell is connected to its neighbours in the same way and obeys the same rules
 [^2]: [[tsra-part2-ch1](pages/tsra-part2-ch1.md)] pp.102-103, 109 [synthesis] — avoidance of geometry and kinematics; stationarity with quiescent vs. active states; discrete medium; growth as the transformation of unexcitable cells into excitable ones; the "structure of the vacuum"
 [^3]: [[tsra-part2-ch1](pages/tsra-part2-ch1.md)] p.94 [synthesis] — editor: Ulam suggested the cellular model; von Neumann's terms "crystalline regularity," "crystalline medium," "granular structure," "cellular structure"; Moore's "tessellation model"
@@ -229,3 +238,4 @@ CA are equal is decidable.[^32] Which other properties can be decided is the sub
 [^30]: [[theory-of-cellular-automata-a-survey](pages/theory-of-cellular-automata-a-survey.md)] pp.6-7 [synthesis] - quiescent state stable, f(q, q, …, q) = q; finite configurations C_F and G_F; periodic configurations invariant under d linearly independent translations, C_P and G_P; "experiments done with periodic boundary conditions may be misleading"
 [^31]: [[theory-of-cellular-automata-a-survey](pages/theory-of-cellular-automata-a-survey.md)] p.7 [synthesis] - temporally periodic configurations; every CA has a homogeneous temporally periodic configuration; eventually periodic iff the forward orbit is finite; "Every spatially periodic configuration is eventually periodic"; phase space as a directed graph; nilpotent if Gⁿ(C) is a singleton
 [^32]: [[theory-of-cellular-automata-a-survey](pages/theory-of-cellular-automata-a-survey.md)] p.7 [synthesis] - "The composition G₁ ∘ G₂ is also a CA function, and the composition can be formed effectively"; "The equivalence of two given CA G₁ and G₂ is decidable"
+[^33]: [[aucm-ch13-cellular-automata-with-write-access](pages/aucm-ch13-cellular-automata-with-write-access.md)] pp.278, 283 [synthesis] — "CA and GCA do not allow to modify the state of a neighbor. Therefore no write-conflict can occur"; CA-w allows a cell to write to its neighbours; "the CA-w model with radius 1 can be emulated by a CA model with radius 2"
