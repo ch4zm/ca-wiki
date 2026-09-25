@@ -18,6 +18,9 @@ updated: 2026-09-24
 > **Locators.** The PDF is an image-only scan (no text layer). Printed page numbers are
 > used throughout; PDF page = printed page + 16 (Preface p. xv = PDF p. 12)
 > up to about printed p. 236, and printed page + 15 from there on (p. 251 = PDF p. 266).
+>
+> **Notation.** The book's lettering changes from unit to unit. See [[notation-map](pages/notation-map.md)]
+> for how each unit's symbols map onto the wiki's.
 
 ## Summary
 

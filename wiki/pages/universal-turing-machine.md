@@ -14,7 +14,7 @@ updated: 2026-09-24
 
 A Turing machine is a finite automaton with an indefinitely expandable tape. Turing
 proved that there is a universal machine *U* with this property: for any Turing machine
-*M* there is a finite program *P* such that *U*, directed by *P*, computes the same
+*M* there is a finite program *π* such that *U*, directed by *π*, computes the same
 results as *M*.[^1]
 
 In von Neumann's

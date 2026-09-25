@@ -19,7 +19,7 @@ updated: 2026-09-24
 > notation (see [[universal-constructor](pages/universal-constructor.md)]): his D(M) is
 > φ(M); his universal constructor M_c is the constructor A; his modified constructor
 > M_c*, which also copies the tape, is A + B + C in one unit; his universal Turing
-> machine M_u, when attached, plays the payload P.
+> machine M_u, when attached, plays the payload P. Full crosswalk: [[notation-map](pages/notation-map.md)].
 
 ## Summary
 

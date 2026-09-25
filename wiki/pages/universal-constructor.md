@@ -16,7 +16,8 @@ updated: 2026-09-24
 > copier, **C** = controller, **P** = optional payload (an extra product), **φ(X)** = the
 > description of X (a tape of cells in the cellular model). A self-reproducer is
 > (A + B + C) + φ(A + B + C), or (A + B + C + P) + φ(A + B + C + P) with a payload. The
-> source uses different and inconsistent letters; the wiki does not follow them.
+> source uses different and inconsistent letters; the wiki does not follow them. The
+> source-by-source crosswalk is in [[notation-map](pages/notation-map.md)].
 
 A universal constructor is an automaton A with this property: given a description φ(X) of
 any automaton X, it builds X, using up the description in the process. It is the
