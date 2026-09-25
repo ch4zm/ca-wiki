@@ -84,6 +84,7 @@ reads an external description, rather than one that stores its own construction 
 
 ## Related Concepts
 
+- [[signal-coding-organs](pages/signal-coding-organs.md)] — the components its control is built from
 - [[construction-arm](pages/construction-arm.md)] — the mechanism by which it places cells
 - [[von-neumann-29-state-ca](pages/von-neumann-29-state-ca.md)] — the rule it is designed in
 - [[descriptions-vs-originals](pages/descriptions-vs-originals.md)] — why the copier copies the description

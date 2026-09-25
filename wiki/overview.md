@@ -1,7 +1,7 @@
 ---
 title: Overview
 tags: [overview, synthesis]
-sources: [theory-of-self-reproducing-automata, tsra-editors-introduction, tsra-lecture-2, tsra-lecture-3, tsra-lecture-4, tsra-lecture-5, tsra-part2-ch1, tsra-part2-ch2]
+sources: [theory-of-self-reproducing-automata, tsra-editors-introduction, tsra-lecture-2, tsra-lecture-3, tsra-lecture-4, tsra-lecture-5, tsra-part2-ch1, tsra-part2-ch2, tsra-part2-ch3]
 updated: 2026-09-24
 ---
 
@@ -11,36 +11,37 @@ updated: 2026-09-24
 
 ## Current Understanding
 
-Cellular automata begin with von Neumann's [[theory-of-automata](pages/theory-of-automata.md)].
-He intended it as a logical and mathematical theory of how automata, natural and
-artificial, are organized. Its founding question was
-[[self-reproduction](pages/self-reproduction.md)]: what logical organization is enough
-for an automaton to build a copy of itself? He answered it first with a kinematic model,
-and then as a cellular automaton
-([[theory-of-self-reproducing-automata](pages/theory-of-self-reproducing-automata.md)]).
+Cellular automata begin with von Neumann's [[theory-of-automata](pages/theory-of-automata.md)], a logical and
+mathematical theory of how automata, natural and artificial, are organized. Its organizing
+concept is complexity, and its two central problems are
+[[self-reproduction](pages/self-reproduction.md)] and reliability.
 
-Two logical ingredients underlie the construction: finite networks of threshold elements
-([[mcculloch-pitts-neuron](pages/mcculloch-pitts-neuron.md)]), and Turing's
-[[universal-turing-machine](pages/universal-turing-machine.md)], which von Neumann carried
-over from computation to construction. The theory's organizing concept is complexity.
-Von Neumann claimed a [[complexity-threshold](pages/complexity-threshold.md)] exists,
-below which automata can only build simpler automata. Above it, self-reproduction works
-through the [[universal-constructor](pages/universal-constructor.md)] scheme: build from a description, copy the description, attach it. This
-was first set out in the [[kinematic-self-reproduction](pages/kinematic-self-reproduction.md)] model. Von Neumann then
-abstracted it into a [[cellular-automaton](pages/cellular-automaton.md)], a homogeneous lattice of identical finite-state cells, where
-construction becomes changing cell states. The key move is to copy a quiescent
-description rather than the live automaton ([[descriptions-vs-originals](pages/descriptions-vs-originals.md)]). The concrete
-medium is [[von-neumann-29-state-ca](pages/von-neumann-29-state-ca.md)]: ordinary stimuli do logic, special stimuli build and destroy, and a
-[[construction-arm](pages/construction-arm.md)] places cells at a distance. Universality has a threshold of
-the same kind: above a minimum complexity, a single automaton can do anything any
-automaton can do. That same automaton cannot predict arbitrary behavior, which suggests
-that complex automata may be simpler than any description of what they do ([[description-vs-object-complexity](pages/description-vs-object-complexity.md)]).
+**Foundations.** Two logical ingredients underlie everything: networks of idealized
+threshold elements ([[mcculloch-pitts-neuron](pages/mcculloch-pitts-neuron.md)]) and Turing's
+[[universal-turing-machine](pages/universal-turing-machine.md)]. Universality has a threshold: above a minimum complexity,
+one automaton can do anything any automaton can do. It still cannot predict arbitrary
+behavior, which suggests that complex automata may be simpler than any description of what
+they do ([[description-vs-object-complexity](pages/description-vs-object-complexity.md)]).
 
-The second central problem is reliability. Von Neumann proposed a
-[[probabilistic-logic](pages/probabilistic-logic.md)] in which failure is part of the axioms, bringing the theory closer to analysis
-and thermodynamics. It rests on the entropy–information link illustrated by [[maxwells-demon](pages/maxwells-demon.md)]. In practice, natural
-automata survive unreliable parts through [[self-repair](pages/self-repair.md)]: they operate across errors instead of
-halting on the first one.
+**Self-reproduction.** Below a [[complexity-threshold](pages/complexity-threshold.md)], automata can only build simpler
+automata. Above it, self-reproduction works through the [[universal-constructor](pages/universal-constructor.md)]
+scheme: build from a description, copy the description, attach the copy. Von Neumann first
+set this out in a [[kinematic-self-reproduction](pages/kinematic-self-reproduction.md)] model. He then abstracted it into a
+[[cellular-automaton](pages/cellular-automaton.md)], a homogeneous lattice of identical finite-state cells where
+construction means changing cell states. The key move is to copy a quiescent description
+rather than the live automaton ([[descriptions-vs-originals](pages/descriptions-vs-originals.md)]).
+
+**The cellular machine.** The concrete medium is [[von-neumann-29-state-ca](pages/von-neumann-29-state-ca.md)]. Ordinary
+stimuli do logic, special stimuli build and destroy, and a [[construction-arm](pages/construction-arm.md)] places
+cells at a distance. From the rule von Neumann builds a library of organs:
+[[signal-coding-organs](pages/signal-coding-organs.md)] for timed bit patterns and one-bit memory, and a
+[[coded-channel](pages/coded-channel.md)] that gets around wire-crossing in 2D.
+
+**Reliability.** Von Neumann proposed a [[probabilistic-logic](pages/probabilistic-logic.md)] in which failure is part
+of the axioms, bringing the theory closer to analysis and thermodynamics, via the
+entropy–information link illustrated by [[maxwells-demon](pages/maxwells-demon.md)]. Natural automata survive
+unreliable parts through [[self-repair](pages/self-repair.md)]: they operate across errors instead of halting
+on the first one.
 
 ## Open Questions
 
@@ -66,3 +67,5 @@ halting on the first one.
 - [[descriptions-vs-originals](pages/descriptions-vs-originals.md)]
 - [[von-neumann-29-state-ca](pages/von-neumann-29-state-ca.md)]
 - [[construction-arm](pages/construction-arm.md)]
+- [[signal-coding-organs](pages/signal-coding-organs.md)]
+- [[coded-channel](pages/coded-channel.md)]

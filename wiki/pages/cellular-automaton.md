@@ -3,7 +3,7 @@ title: Cellular Automaton
 category: Concepts
 summary: A homogeneous lattice of identical finite-state cells, each updating in discrete time from its own state and its neighbours' states under one shared rule; introduced by von Neumann (after Ulam) as a medium for self-reproduction
 tags: [concept, cellular-automata, foundations, homogeneity, lattice]
-sources: [tsra-part2-ch1, tsra-part2-ch2]
+sources: [tsra-part2-ch1, tsra-part2-ch2, tsra-part2-ch3]
 created: 2026-09-24
 updated: 2026-09-24
 ---
@@ -70,13 +70,21 @@ removing kinematics is that moving a structure across the lattice is about as ha
 reproducing it. Structures are therefore tied to their locations, and conflicts between
 them are conflicts over space.[^12]
 
+**Parallel medium, serial machines.** A cellular automaton updates every cell at once, so
+it allows unlimited parallelism. Von Neumann's self-reproducing machine nonetheless works
+like a serial computer, with most of its organs dormant at any moment.[^13] Two
+dimensions also force a problem that three do not: signal lines must sometimes cross,
+which von Neumann solves by coding ([[coded-channel](pages/coded-channel.md)]).[^14]
+
 ## Appearances in Sources
 
+- [[tsra-part2-ch3](pages/tsra-part2-ch3.md)] — serial operation and wire-crossing in 2D
 - [[tsra-part2-ch2](pages/tsra-part2-ch2.md)] — the neighbourhood and the size of the rule space
 - [[tsra-part2-ch1](pages/tsra-part2-ch1.md)] — the derivation of the cellular model and its general properties
 
 ## Related Concepts
 
+- [[coded-channel](pages/coded-channel.md)] — the 2D wire-crossing problem and its solution
 - [[von-neumann-29-state-ca](pages/von-neumann-29-state-ca.md)] — the first concrete rule
 - [[construction-arm](pages/construction-arm.md)] — how construction works without moving parts
 - [[self-reproduction](pages/self-reproduction.md)] — the problem the cellular model was built to solve
@@ -97,3 +105,5 @@ them are conflicts over space.[^12]
 [^10]: [[tsra-part2-ch2](pages/tsra-part2-ch2.md)] pp.133-134, 149 [synthesis] — nearest four neighbours chosen over eight as simpler; the transition rule is a function of five states; N^(N⁵) possible rules, 29^(29⁵) ≈ 10^(59,000,000) for N = 29
 [^11]: [[tsra-part2-ch1](pages/tsra-part2-ch1.md)] pp.105-106 [synthesis] — the same general possibilities in both settings; the continuous case is mathematically much harder but more satisfactory once analytic methods exist; attention primarily on the crystalline case
 [^12]: [[tsra-part2-ch1](pages/tsra-part2-ch1.md)] pp.129-130 [synthesis] — in the crystal, moving a structure is about as complex as reproducing it; structures are tied to location and conflicts are conflicts in location
+[^13]: [[tsra-part2-ch3](pages/tsra-part2-ch3.md)] pp.157-158 [synthesis] — editor: the cellular structure allows an indefinite amount of parallelism, but the self-reproducing automaton works like a serial digital computer with most organs normally quiescent
+[^14]: [[tsra-part2-ch3](pages/tsra-part2-ch3.md)] pp.190-191 [synthesis] — in 2D, communication channels must sometimes intersect; solved by the coded channel

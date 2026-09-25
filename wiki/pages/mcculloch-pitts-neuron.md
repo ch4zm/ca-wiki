@@ -3,7 +3,7 @@ title: McCulloch–Pitts Neuron
 category: Concepts
 summary: Idealized threshold element with excitatory/inhibitory inputs and unit delay — von Neumann's basic logical building block, later echoed in his cellular automaton's states
 tags: [concept, logic-element, threshold, neuron, von-neumann]
-sources: [tsra-editors-introduction, tsra-lecture-2, tsra-part2-ch2]
+sources: [tsra-editors-introduction, tsra-lecture-2, tsra-part2-ch2, tsra-part2-ch3]
 created: 2026-09-24
 updated: 2026-09-24
 ---
@@ -41,16 +41,19 @@ standard way to specify an automaton's logical organization.[^9] In [[von-neuman
 built from cell states. A transmission cell fed from several sides is an OR ("+ neuron"),
 and a confluent cell that fires only when all its inputs fire is an AND ("· neuron").
 Negation ("− neuron") has no state of its own and is done by destroying a signal path
-and rebuilding it.[^10]
+and rebuilding it. Larger logical organs are built from these: a decoder detects a pattern
+by delaying pulses into coincidence at a chain of AND cells ([[signal-coding-organs](pages/signal-coding-organs.md)]).[^10][^11]
 
 ## Appearances in Sources
 
+- [[tsra-part2-ch3](pages/tsra-part2-ch3.md)] — neuron-like logic assembled into decoders and pulsers
 - [[tsra-part2-ch2](pages/tsra-part2-ch2.md)] — neurons realized as cell states in the 29-state rule
 - [[tsra-editors-introduction](pages/tsra-editors-introduction.md)] — definition as used in von Neumann's EDVAC logical design
 - [[tsra-lecture-2](pages/tsra-lecture-2.md)] — the synthetic method and the equivalence of nets with logic
 
 ## Related Concepts
 
+- [[signal-coding-organs](pages/signal-coding-organs.md)] — composite organs built from these elements
 - [[von-neumann-29-state-ca](pages/von-neumann-29-state-ca.md)] — the cellular rule whose states implement these neurons
 - [[kinematic-self-reproduction](pages/kinematic-self-reproduction.md)] — its logic organs are neuron-like elements
 
@@ -68,4 +71,5 @@ and rebuilding it.[^10]
 [^7]: [[tsra-lecture-2](pages/tsra-lecture-2.md)] p.46 — "It does not prove that any circuit you are designing in this manner really occurs in nature."
 [^8]: [[tsra-lecture-2](pages/tsra-lecture-2.md)] p.47 — "simplifies matters enormously at low complication levels. It is by no means certain that it is a simplification on high complication levels."
 [^9]: [[tsra-editors-introduction](pages/tsra-editors-introduction.md)] p.25 — "The logical organization of an automaton can be represented by a structure of idealized switch-delay elements and then translated into logical symbolism."
-[^10]: [[tsra-part2-ch2](pages/tsra-part2-ch2.md)] pp.136-138 [synthesis] — transmission cells with several inputs act as + neurons; confluent cells act as · neurons; the − neuron is not given a state but synthesized from the reverse and direct processes
+[^10]: [[tsra-part2-ch3](pages/tsra-part2-ch3.md)] pp.175-177 [synthesis] — decoders bring delayed stimuli into coincidence at confluent (AND) cells, taken pairwise since one confluent cell handles at most three inputs
+[^11]: [[tsra-part2-ch2](pages/tsra-part2-ch2.md)] pp.136-138 [synthesis] — transmission cells with several inputs act as + neurons; confluent cells act as · neurons; the − neuron is not given a state but synthesized from the reverse and direct processes
