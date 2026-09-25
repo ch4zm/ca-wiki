@@ -1,7 +1,7 @@
 ---
 title: Overview
 tags: [overview, synthesis]
-sources: [theory-of-self-reproducing-automata, tsra-editors-introduction, tsra-lecture-2, tsra-lecture-3, tsra-lecture-4, tsra-lecture-5, tsra-part2-ch1, tsra-part2-ch2, tsra-part2-ch3, tsra-part2-ch4, tsra-part2-ch5, endomorphisms-and-automorphisms-of-the-shift-dynamical-system, machine-models-of-self-reproduction, converse-of-moores-garden-of-eden-theorem, statistical-mechanics-of-cellular-automata, planetmath-garden-of-eden-theorem, computation-at-the-edge-of-chaos, theory-of-cellular-automata-a-survey, automata-universality-computation, aucm-ch5-small-universal-turing-machines, aucm-ch6-reversible-turing-machines-by-rlem, aucm-ch12-linear-cellular-automata-and-decidability, aucm-ch13-cellular-automata-with-write-access, aucm-ch14-broadcasting-automata]
+sources: [theory-of-self-reproducing-automata, tsra-editors-introduction, tsra-lecture-2, tsra-lecture-3, tsra-lecture-4, tsra-lecture-5, tsra-part2-ch1, tsra-part2-ch2, tsra-part2-ch3, tsra-part2-ch4, tsra-part2-ch5, endomorphisms-and-automorphisms-of-the-shift-dynamical-system, machine-models-of-self-reproduction, converse-of-moores-garden-of-eden-theorem, statistical-mechanics-of-cellular-automata, planetmath-garden-of-eden-theorem, computation-at-the-edge-of-chaos, theory-of-cellular-automata-a-survey, automata-universality-computation, aucm-ch5-small-universal-turing-machines, aucm-ch6-reversible-turing-machines-by-rlem, aucm-ch12-linear-cellular-automata-and-decidability, aucm-ch13-cellular-automata-with-write-access, aucm-ch14-broadcasting-automata, aucm-ch15-real-time-prime-generators]
 updated: 2026-09-24
 ---
 
@@ -152,7 +152,11 @@ traffic [[rule-184](pages/rule-184.md)], without adding power at bounded radius.
 [[broadcasting-automaton](pages/broadcasting-automaton.md)] each state sets a Euclidean
 transmission radius. Its waves trace discrete discs, which generalize the von Neumann and
 Moore neighbourhoods ([[neighbourhood-sequence](pages/neighbourhood-sequence.md)]). Composing
-discs yields only convex shapes, and aggregating two wave trains escapes that limit. Bounded-space 1D CA also serve as
+discs yields only convex shapes, and aggregating two wave trains escapes that limit. Signals, straight-line information flows limited to one cell per step, let a 1D CA act as
+a clock: an 8-state rule fires its end cell at exactly the prime times
+([[sequence-generation-by-cellular-automata](pages/sequence-generation-by-cellular-automata.md)]),
+and 25 states suffice even when neighbours exchange only one bit per step
+([[one-bit-communication-cellular-automaton](pages/one-bit-communication-cellular-automaton.md)]). Bounded-space 1D CA also serve as
 language recognizers
 ([[language-recognition-by-cellular-automata](pages/language-recognition-by-cellular-automata.md)]).
 
@@ -165,6 +169,8 @@ language recognizers
 - What is the degree of the full first-order theory of a CA with its orbit relation? Sutner
   suspects every level of the arithmetic hierarchy is expressible as an orbit assertion.
 - Could pseudo-random rule 30 ever carry an undecidability proof?
+- What is the fewest states a real-time prime generator can have? The record is 8 for an
+  ordinary CA and 25 with one-bit links, and the source gives no lower bound.
 - Which of the 39 open (states, symbols) pairs admit a universal Turing machine? Machines
   of Collatz-simulator size are already at least as hard to analyse as the Collatz
   conjecture.
@@ -263,3 +269,5 @@ language recognizers
 - [[rule-184](pages/rule-184.md)]
 - [[broadcasting-automaton](pages/broadcasting-automaton.md)]
 - [[neighbourhood-sequence](pages/neighbourhood-sequence.md)]
+- [[sequence-generation-by-cellular-automata](pages/sequence-generation-by-cellular-automata.md)]
+- [[one-bit-communication-cellular-automaton](pages/one-bit-communication-cellular-automaton.md)]

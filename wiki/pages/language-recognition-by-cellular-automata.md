@@ -3,7 +3,7 @@ title: Language Recognition by Cellular Automata
 category: Concepts
 summary: One-dimensional cellular automata as space-bounded language acceptors - CA recognize exactly the deterministic context-sensitive languages, one-way CA all context-free ones; real-time vs linear-time inclusions, closure properties, and Smith's 1972 open question whether real time equals linear time
 tags: [concept, language-recognition, formal-languages, real-time, one-way-ca, smith, complexity]
-sources: [theory-of-cellular-automata-a-survey]
+sources: [theory-of-cellular-automata-a-survey, aucm-ch15-real-time-prime-generators]
 created: 2026-09-24
 updated: 2026-09-24
 ---
@@ -47,8 +47,17 @@ and L(LCA) are closed under reversal. L(ROCA) is not closed under concatenation.
 that is, iff real time is as strong as linear time. Smith posed it in 1972. It is not even
 known whether L(RCA) differs from L(CA).[^8]
 
+**The output side.** CA can also *generate* sequences. A half-line CA, started from its end
+cell alone, fires that cell at exactly the times t₁, t₂, …. Primes, powers of two, squares
+and Fibonacci numbers can all be generated in real time, and the smallest known real-time
+prime generator has 8 states
+([[sequence-generation-by-cellular-automata](pages/sequence-generation-by-cellular-automata.md)]).[^9]
+"Real time" there means hitting each tₙ exactly, not answering by time n − 1 (own
+comparison).
+
 ## Appearances in Sources
 
+- [[aucm-ch15-real-time-prime-generators](pages/aucm-ch15-real-time-prime-generators.md)] - sequence generation, the output-side counterpart
 - [[theory-of-cellular-automata-a-survey](pages/theory-of-cellular-automata-a-survey.md)] - §10, Fig. 9, Open problem 9
 
 ## Related Concepts
@@ -57,6 +66,8 @@ known whether L(RCA) differs from L(CA).[^8]
 - [[moore-neighbourhood](pages/moore-neighbourhood.md)] - neighbourhoods, including the one-way (0, 1)
 - [[universal-turing-machine](pages/universal-turing-machine.md)] - the unbounded-space counterpart
 - [[decidability-in-cellular-automata](pages/decidability-in-cellular-automata.md)] - the other open computational questions
+- [[sequence-generation-by-cellular-automata](pages/sequence-generation-by-cellular-automata.md)] - generating sequences rather than recognizing words
+
 [^1]: [[theory-of-cellular-automata-a-survey](pages/theory-of-cellular-automata-a-survey.md)] p.29 - "Language recognition by space-bounded one-dimensional CA is among the classical research topics in CA theory. ... Some problems posed in the early 1970s remain unsolved even today."
 [^2]: [[theory-of-cellular-automata-a-survey](pages/theory-of-cellular-automata-a-survey.md)] p.29 [synthesis] - nearest-neighbour neighbourhood; one-way if equivalent to a CA with neighbourhood (0, 1); boundary symbol # with f(a, b, c) = # iff b = #, "This guarantees that the active part of the CA cannot grow"; initial configuration c_w; accepting states A; acceptance when cell 1 is in an accepting state
 [^3]: [[theory-of-cellular-automata-a-survey](pages/theory-of-cellular-automata-a-survey.md)] p.29 - "It is not known whether L(CA) and L(OCA) are the same language family. What is known is that L(CA) is exactly the family of deterministic context-sensitive languages and that L(OCA) contains all context-free languages [47]."
@@ -65,3 +76,4 @@ known whether L(RCA) differs from L(CA).[^8]
 [^6]: [[theory-of-cellular-automata-a-survey](pages/theory-of-cellular-automata-a-survey.md)] p.30 - "even the most restricted family L(ROCA) contains non-context-free languages, e.g. language {aⁿbⁿcⁿ | n ⩾ 1} [25], while it does not contain all context-free languages [64]."
 [^7]: [[theory-of-cellular-automata-a-survey](pages/theory-of-cellular-automata-a-survey.md)] p.30 [synthesis] - L(RCA) and L(ROCA) closed under boolean operations [61]; L(ROCA) and L(LCA) closed under reversal [12,61]; L(ROCA) not closed under concatenation [64]
 [^8]: [[theory-of-cellular-automata-a-survey](pages/theory-of-cellular-automata-a-survey.md)] p.30 [synthesis] - closure of L(RCA) under reversal "is true if and only if L(RCA) = L(LCA). This is an intriguing open problem, already posed in 1972"; Open problem 9 (Smith [61]); "it is not even know whether L(RCA) and L(CA) are different"
+[^9]: [[aucm-ch15-real-time-prime-generators](pages/aucm-ch15-real-time-prime-generators.md)] pp.341, 343 [synthesis] — the leftmost cell "falls into a special state '1' (one) in Q at time t = ktₙ", real-time when k = 1; {2ⁿ}, {n²}, Fibonacci and primes generated in real time; an eight-state real-time prime generator
