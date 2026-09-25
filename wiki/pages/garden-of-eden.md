@@ -1,9 +1,9 @@
 ---
 title: Garden-of-Eden Configuration
 category: Concepts
-summary: A cellular-automaton configuration with no predecessor, which can occur only at time zero; Moore (1962) proved they exist in any structure with erasable configurations
+summary: A cellular-automaton configuration with no predecessor, which can occur only at time zero; they exist exactly when erasable configurations do (Moore 1962, Myhill 1963)
 tags: [concept, garden-of-eden, moore, myhill, surjectivity]
-sources: [machine-models-of-self-reproduction, tsra-part2-ch5]
+sources: [machine-models-of-self-reproduction, tsra-part2-ch5, converse-of-moores-garden-of-eden-theorem]
 created: 2026-09-24
 updated: 2026-09-24
 ---
@@ -14,7 +14,7 @@ updated: 2026-09-24
 
 A **Garden-of-Eden configuration** is a pattern that no configuration at time T − 1 can
 turn into at time T. It can therefore occur only at time 0, where initial conditions are
-set by hand. Moore named it in 1962, on a suggestion from John W. Tukey, after the account
+set by hand. [[edward-f-moore](pages/edward-f-moore.md)] named it in 1962, on a suggestion from John W. Tukey, after the account
 in Genesis.[^1]
 
 **Moore's theorem.** Moore's Theorem 2: "For a tessellation structure for which there
@@ -52,19 +52,23 @@ cannot be built: a 3 × 3 block of sensitized S₀ in C₀₀
 **Size.** Moore's proof gives very large Garden-of-Eden patterns. In every structure he
 examined in detail, one of size 5 × 5 or smaller existed.[^10]
 
-**The converse.** Burks, in a footnote to TSRA Ch. 5, says Myhill proved the converse
-condition, and that the condition amounts to the structure not being "backwards
-deterministic" in the sense of Burks and Wang.[^8] Myhill (1963), "The converse of Moore's
-Garden-of-Eden theorem", has not been ingested yet.
+**The converse.** [[john-myhill](pages/john-myhill.md)] proved that the condition is also
+necessary: if a structure has Garden-of-Eden configurations, it has two configurations that
+no environment can tell apart, which is equivalent to Moore's mutual erasability.[^11]
+Together the two results are the [[garden-of-eden-theorem](pages/garden-of-eden-theorem.md)]. Burks, in a footnote to
+TSRA Ch. 5, says the condition amounts to the structure not being "backwards
+deterministic" in the sense of Burks and Wang.[^8]
 
 ## Appearances in Sources
 
 - [[machine-models-of-self-reproduction](pages/machine-models-of-self-reproduction.md)] - the definition, the name, Theorem 2 and its proof, the six assumptions
+- [[converse-of-moores-garden-of-eden-theorem](pages/converse-of-moores-garden-of-eden-theorem.md)] - the converse: Garden-of-Eden configurations require indistinguishable pairs
 - [[tsra-part2-ch5](pages/tsra-part2-ch5.md)] - footnote 12 to §5.3.1, relating non-constructibility to Moore and Myhill
 
 ## Related Concepts
 
-- [[erasable-configuration](pages/erasable-configuration.md)] - the condition that forces Garden-of-Eden configurations
+- [[garden-of-eden-theorem](pages/garden-of-eden-theorem.md)] - the if-and-only-if result
+- [[erasable-configuration](pages/erasable-configuration.md)] - the condition equivalent to Garden-of-Eden configurations existing
 - [[moore-neighbourhood](pages/moore-neighbourhood.md)] - the radius-1 neighbourhood behind the boundary-layer count
 - [[initially-quiescent-automaton](pages/initially-quiescent-automaton.md)] - the class a constructor can build; Garden-of-Eden patterns lie wholly outside it
 - [[universal-constructor](pages/universal-constructor.md)] - no constructor can build a Garden-of-Eden pattern
@@ -81,3 +85,4 @@ Garden-of-Eden theorem", has not been ingested yet.
 [^8]: [[tsra-part2-ch5](pages/tsra-part2-ch5.md)] p.291 n.12 [synthesis] - every Garden-of-Eden configuration is non-constructible, not conversely; Moore established a condition for their existence where information needs at least 1 unit of time to pass between neighbours; Myhill showed the converse; the condition is essentially non-backwards-determinism (Burks and Wang)
 [^9]: [[tsra-part2-ch5](pages/tsra-part2-ch5.md)] p.291 [synthesis] - the 3 × 3 configuration of sensitized S₀ surrounded by C₀₀ is not constructible
 [^10]: [[machine-models-of-self-reproduction](pages/machine-models-of-self-reproduction.md)] p.30 [synthesis] - the proof of Theorem 2 gives a very large array; 5 × 5 or smaller sufficed in every structure Moore examined in detail
+[^11]: [[converse-of-moores-garden-of-eden-theorem](pages/converse-of-moores-garden-of-eden-theorem.md)] p.686 - "the existence of two indistinguishable configurations is a necessary as well as a sufficient condition for the existence of Garden-of-Eden configurations."

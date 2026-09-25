@@ -13,7 +13,7 @@ updated: 2026-09-24
 ## Description
 
 The Moore neighbourhood of a cell on the square lattice is the 3 × 3 block centred on it:
-the cell itself and every cell whose coordinates each differ from it by at most 1. Moore
+the cell itself and every cell whose coordinates each differ from it by at most 1. [[edward-f-moore](pages/edward-f-moore.md)]
 uses this definition in his 1962 paper, where all nine cells of his Fig. 2 count as
 neighbours of the centre cell. The name "Moore neighbourhood" is later usage.[^1]
 
