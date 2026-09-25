@@ -1,7 +1,7 @@
 ---
 title: Overview
 tags: [overview, synthesis]
-sources: [theory-of-self-reproducing-automata, tsra-editors-introduction, tsra-lecture-2, tsra-lecture-3, tsra-lecture-4, tsra-lecture-5, tsra-part2-ch1]
+sources: [theory-of-self-reproducing-automata, tsra-editors-introduction, tsra-lecture-2, tsra-lecture-3, tsra-lecture-4, tsra-lecture-5, tsra-part2-ch1, tsra-part2-ch2]
 updated: 2026-09-24
 ---
 
@@ -29,7 +29,9 @@ through the [[universal-constructor](pages/universal-constructor.md)] scheme: bu
 was first set out in the [[kinematic-self-reproduction](pages/kinematic-self-reproduction.md)] model. Von Neumann then
 abstracted it into a [[cellular-automaton](pages/cellular-automaton.md)], a homogeneous lattice of identical finite-state cells, where
 construction becomes changing cell states. The key move is to copy a quiescent
-description rather than the live automaton ([[descriptions-vs-originals](pages/descriptions-vs-originals.md)]). Universality has a threshold of
+description rather than the live automaton ([[descriptions-vs-originals](pages/descriptions-vs-originals.md)]). The concrete
+medium is [[von-neumann-29-state-ca](pages/von-neumann-29-state-ca.md)]: ordinary stimuli do logic, special stimuli build and destroy, and a
+[[construction-arm](pages/construction-arm.md)] places cells at a distance. Universality has a threshold of
 the same kind: above a minimum complexity, a single automaton can do anything any
 automaton can do. That same automaton cannot predict arbitrary behavior, which suggests
 that complex automata may be simpler than any description of what they do ([[description-vs-object-complexity](pages/description-vs-object-complexity.md)]).
@@ -62,3 +64,5 @@ halting on the first one.
 - [[kinematic-self-reproduction](pages/kinematic-self-reproduction.md)]
 - [[cellular-automaton](pages/cellular-automaton.md)]
 - [[descriptions-vs-originals](pages/descriptions-vs-originals.md)]
+- [[von-neumann-29-state-ca](pages/von-neumann-29-state-ca.md)]
+- [[construction-arm](pages/construction-arm.md)]

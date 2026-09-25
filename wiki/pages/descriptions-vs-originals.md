@@ -63,6 +63,7 @@ strain.[^8]
 
 ## Related Concepts
 
+- [[construction-arm](pages/construction-arm.md)] — a fixed builder is larger than what it builds
 - [[universal-constructor](pages/universal-constructor.md)] — builds from the description
 - [[self-reproduction](pages/self-reproduction.md)] — made possible by this separation
 - [[description-vs-object-complexity](pages/description-vs-object-complexity.md)] — the related claim about describing complex automata

@@ -3,7 +3,7 @@ title: Cellular Automaton
 category: Concepts
 summary: A homogeneous lattice of identical finite-state cells, each updating in discrete time from its own state and its neighbours' states under one shared rule; introduced by von Neumann (after Ulam) as a medium for self-reproduction
 tags: [concept, cellular-automata, foundations, homogeneity, lattice]
-sources: [tsra-part2-ch1]
+sources: [tsra-part2-ch1, tsra-part2-ch2]
 created: 2026-09-24
 updated: 2026-09-24
 ---
@@ -57,22 +57,28 @@ at time 0 appears again, cell for cell, in another region at a later time.[^8]
 **Dimension and lattice.** Von Neumann expected three dimensions to be usable, found that
 two also suffice, and judged one unlikely to work. He used the most regular lattice: the
 square lattice in two dimensions, with each cell connected to its four orthogonal
-neighbours.[^9]
+neighbours.[^9] Using the four orthogonal neighbours rather than all eight keeps the rule
+simpler. A rule is then a function of five cells (the cell and its four neighbours), so
+with N states there are N^(N⁵) possible rules. For von Neumann's own rule,
+[[von-neumann-29-state-ca](pages/von-neumann-29-state-ca.md)], that is roughly 10^(59,000,000).[^10]
 
 **Why a discrete model.** The crystalline and continuous (Euclidean) settings offer broadly
 the same possibilities. The continuous one is much harder mathematically, and would need
 nonlinear partial differential equations, but would be more satisfying if it could be
-handled. Von Neumann therefore worked mainly with the crystalline setting.[^10] One cost of
+handled. Von Neumann therefore worked mainly with the crystalline setting.[^11] One cost of
 removing kinematics is that moving a structure across the lattice is about as hard as
 reproducing it. Structures are therefore tied to their locations, and conflicts between
-them are conflicts over space.[^11]
+them are conflicts over space.[^12]
 
 ## Appearances in Sources
 
+- [[tsra-part2-ch2](pages/tsra-part2-ch2.md)] — the neighbourhood and the size of the rule space
 - [[tsra-part2-ch1](pages/tsra-part2-ch1.md)] — the derivation of the cellular model and its general properties
 
 ## Related Concepts
 
+- [[von-neumann-29-state-ca](pages/von-neumann-29-state-ca.md)] — the first concrete rule
+- [[construction-arm](pages/construction-arm.md)] — how construction works without moving parts
 - [[self-reproduction](pages/self-reproduction.md)] — the problem the cellular model was built to solve
 - [[kinematic-self-reproduction](pages/kinematic-self-reproduction.md)] — the physical model it abstracts
 - [[universal-constructor](pages/universal-constructor.md)] — realized inside a cellular automaton in Part II
@@ -88,5 +94,6 @@ them are conflicts over space.[^11]
 [^7]: [[tsra-part2-ch1](pages/tsra-part2-ch1.md)] p.107 [synthesis] — editor: the unexcitable state U is utterly quiescent; only finitely many cells are ever in another state; U is analogous to a blank square on a Turing tape
 [^8]: [[tsra-part2-ch1](pages/tsra-part2-ch1.md)] p.108 [synthesis] — editor: initial cell assignment; "infinite cellular automaton"; self-reproduction as a later copy of an embedded automaton in another area
 [^9]: [[tsra-part2-ch1](pages/tsra-part2-ch1.md)] pp.105-106 [synthesis] — questions of dimensionality, isotropy, and crystal class; 2D usable, 1D unlikely; maximum regularity chosen; editor: square cells with four neighbours
-[^10]: [[tsra-part2-ch1](pages/tsra-part2-ch1.md)] pp.105-106 [synthesis] — the same general possibilities in both settings; the continuous case is mathematically much harder but more satisfactory once analytic methods exist; attention primarily on the crystalline case
-[^11]: [[tsra-part2-ch1](pages/tsra-part2-ch1.md)] pp.129-130 [synthesis] — in the crystal, moving a structure is about as complex as reproducing it; structures are tied to location and conflicts are conflicts in location
+[^10]: [[tsra-part2-ch2](pages/tsra-part2-ch2.md)] pp.133-134, 149 [synthesis] — nearest four neighbours chosen over eight as simpler; the transition rule is a function of five states; N^(N⁵) possible rules, 29^(29⁵) ≈ 10^(59,000,000) for N = 29
+[^11]: [[tsra-part2-ch1](pages/tsra-part2-ch1.md)] pp.105-106 [synthesis] — the same general possibilities in both settings; the continuous case is mathematically much harder but more satisfactory once analytic methods exist; attention primarily on the crystalline case
+[^12]: [[tsra-part2-ch1](pages/tsra-part2-ch1.md)] pp.129-130 [synthesis] — in the crystal, moving a structure is about as complex as reproducing it; structures are tied to location and conflicts are conflicts in location

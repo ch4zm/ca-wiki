@@ -3,7 +3,7 @@ title: McCulloch–Pitts Neuron
 category: Concepts
 summary: Idealized threshold element with excitatory/inhibitory inputs and unit delay — von Neumann's basic logical building block, later echoed in his cellular automaton's states
 tags: [concept, logic-element, threshold, neuron, von-neumann]
-sources: [tsra-editors-introduction, tsra-lecture-2]
+sources: [tsra-editors-introduction, tsra-lecture-2, tsra-part2-ch2]
 created: 2026-09-24
 updated: 2026-09-24
 ---
@@ -37,18 +37,21 @@ doubted that it helps at high complication, where a network may be simpler than 
 description of its behavior (see [[description-vs-object-complexity](pages/description-vs-object-complexity.md)]).[^8]
 
 In the [[theory-of-automata](pages/theory-of-automata.md)], these elements are the
-standard way to specify an automaton's logical organization.[^9] The TOC of
-[[theory-of-self-reproducing-automata](pages/theory-of-self-reproducing-automata.md)]
-shows that the 29-state cellular system of Part II realizes neuron-like functions
-("+ neuron", "· neuron", "− neuron") through its transmission and confluent states.[^10]
+standard way to specify an automaton's logical organization.[^9] In [[von-neumann-29-state-ca](pages/von-neumann-29-state-ca.md)], these neurons are
+built from cell states. A transmission cell fed from several sides is an OR ("+ neuron"),
+and a confluent cell that fires only when all its inputs fire is an AND ("· neuron").
+Negation ("− neuron") has no state of its own and is done by destroying a signal path
+and rebuilding it.[^10]
 
 ## Appearances in Sources
 
+- [[tsra-part2-ch2](pages/tsra-part2-ch2.md)] — neurons realized as cell states in the 29-state rule
 - [[tsra-editors-introduction](pages/tsra-editors-introduction.md)] — definition as used in von Neumann's EDVAC logical design
 - [[tsra-lecture-2](pages/tsra-lecture-2.md)] — the synthetic method and the equivalence of nets with logic
 
 ## Related Concepts
 
+- [[von-neumann-29-state-ca](pages/von-neumann-29-state-ca.md)] — the cellular rule whose states implement these neurons
 - [[kinematic-self-reproduction](pages/kinematic-self-reproduction.md)] — its logic organs are neuron-like elements
 
 - [[theory-of-automata](pages/theory-of-automata.md)] — idealized elements as its basic vocabulary
@@ -65,4 +68,4 @@ shows that the 29-state cellular system of Part II realizes neuron-like function
 [^7]: [[tsra-lecture-2](pages/tsra-lecture-2.md)] p.46 — "It does not prove that any circuit you are designing in this manner really occurs in nature."
 [^8]: [[tsra-lecture-2](pages/tsra-lecture-2.md)] p.47 — "simplifies matters enormously at low complication levels. It is by no means certain that it is a simplification on high complication levels."
 [^9]: [[tsra-editors-introduction](pages/tsra-editors-introduction.md)] p.25 — "The logical organization of an automaton can be represented by a structure of idealized switch-delay elements and then translated into logical symbolism."
-[^10]: raw/von-neumann-theory-of-self-reproducing-automata.pdf p.vii (Contents) [synthesis] — Ch. 2 §2.3 "Neurons—Confluent States": 2.3.1 "The + neuron", 2.3.2 "Confluent states: the · neuron", 2.3.3 "The − neuron"
+[^10]: [[tsra-part2-ch2](pages/tsra-part2-ch2.md)] pp.136-138 [synthesis] — transmission cells with several inputs act as + neurons; confluent cells act as · neurons; the − neuron is not given a state but synthesized from the reverse and direct processes

@@ -3,7 +3,7 @@ title: Universal Constructor
 category: Concepts
 summary: Von Neumann's automaton that builds any automaton from its description; combined with a description copier and a controller it yields self-reproduction via A + B + C + φ(A + B + C)
 tags: [concept, universal-constructor, self-reproduction, von-neumann]
-sources: [tsra-lecture-5, tsra-part2-ch1]
+sources: [tsra-lecture-5, tsra-part2-ch1, tsra-part2-ch2]
 created: 2026-09-24
 updated: 2026-09-24
 ---
@@ -71,14 +71,21 @@ built in a quiescent state, so that partly built parts do not react, and are the
 by a single starting stimulus. Successive offspring are placed at shifted coordinates so
 that descendants never collide.[^9] Why the copier copies the description rather than the
 original is explained in [[descriptions-vs-originals](pages/descriptions-vs-originals.md)].
+The constructor places cells with a [[construction-arm](pages/construction-arm.md)]: extend a path, write a cell, retract. A fixed
+device can build any finite pattern this way from two stimulus strings, but it is always
+larger than what it builds. This is exactly why self-reproduction needs a constructor that
+reads an external description, rather than one that stores its own construction program.[^10] The rule itself is [[von-neumann-29-state-ca](pages/von-neumann-29-state-ca.md)].
 
 ## Appearances in Sources
 
+- [[tsra-part2-ch2](pages/tsra-part2-ch2.md)] — the rule and the construct-and-retract technique it uses
 - [[tsra-part2-ch1](pages/tsra-part2-ch1.md)] — the cellular version: description tape, universal plan, and activation
 - [[tsra-lecture-5](pages/tsra-lecture-5.md)] — the A + B + C scheme in the kinematic model
 
 ## Related Concepts
 
+- [[construction-arm](pages/construction-arm.md)] — the mechanism by which it places cells
+- [[von-neumann-29-state-ca](pages/von-neumann-29-state-ca.md)] — the rule it is designed in
 - [[descriptions-vs-originals](pages/descriptions-vs-originals.md)] — why the copier copies the description
 - [[cellular-automaton](pages/cellular-automaton.md)] — the medium of the cellular version
 - [[self-reproduction](pages/self-reproduction.md)] — what the scheme achieves
@@ -95,3 +102,4 @@ original is explained in [[descriptions-vs-originals](pages/descriptions-vs-orig
 [^7]: raw/von-neumann-theory-of-self-reproducing-automata.pdf p.ix (Contents) — §5.2 "The Universal Constructor"
 [^8]: [[tsra-part2-ch1](pages/tsra-part2-ch1.md)] pp.113-118 [synthesis] — description tape with digit, comma, and period states; the universal plan (bounding rectangle plus every cell's state) encoded on it gives construction-universality; the tape also closes the gap to logical universality
 [^9]: [[tsra-part2-ch1](pages/tsra-part2-ch1.md)] pp.126-129 [synthesis] — secondaries are built quasi-quiescent and started by a single stimulus; successive descendants are shifted so they don't interfere
+[^10]: [[tsra-part2-ch2](pages/tsra-part2-ch2.md)] pp.155-156 [synthesis] — editor: construct-and-retract builds any finite quiescent array from two binary sequences; the constructing array is always larger, circumvented by a universal constructor with attached self-description
