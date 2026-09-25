@@ -3,7 +3,7 @@ title: Kinematic Self-Reproduction
 category: Concepts
 summary: Von Neumann's first model of self-reproduction — an automaton assembling copies of itself from a sea of discrete parts (girders, logic organs, fusing/cutting organs, muscles), abstracted from energy and physics; precursor of the cellular model
 tags: [concept, kinematic-model, self-reproduction, von-neumann]
-sources: [tsra-lecture-5, tsra-part2-ch1]
+sources: [tsra-lecture-5, tsra-part2-ch1, machine-models-of-self-reproduction]
 created: 2026-09-24
 updated: 2026-09-24
 ---
@@ -53,8 +53,22 @@ construction becomes changing the states of neighboring cells.[^2] Von Neumann g
 removing motion, making the medium discrete and homogeneous, and treating growth as the
 conversion of unexcitable cells into excitable ones.[^7]
 
+**Built kinematic models.** By 1962 several kinematic self-reproducers had actually been
+built. Jacobson used a model railroad: the machine is a train of different kinds of cars,
+with relay logic aboard and sidetracks for rearranging parts. Penrose's basic model uses two
+kinds of rigid units, A and B, cut with hooks and interlocks. Shaken in a box with loose
+units, an AB machine makes more AB machines and a BA machine more BA machines, by mechanical
+force, friction, and gravity alone. Without a seed nothing forms, except under unusually
+violent shaking.[^8] Moore built a copy of Penrose's model and used it in talks. He stresses
+that A and B are not male and female: one AB machine is an individual, and the units
+correspond to the molecules of a single chromosome, so reproduction is asexual.[^9] Morowitz
+proposed a model of electromagnets and electrets floating in a liquid, which was not
+built.[^10] Moore's open problems include measuring how trivial such a model is and making
+reproduction run in parallel.[^11]
+
 ## Appearances in Sources
 
+- [[machine-models-of-self-reproduction](pages/machine-models-of-self-reproduction.md)] — Jacobson's, Penrose's, and Morowitz's models
 - [[tsra-part2-ch1](pages/tsra-part2-ch1.md)] — why and how the kinematic model is replaced by the cellular one
 - [[tsra-lecture-5](pages/tsra-lecture-5.md)] — the model, its parts, and the self-reproducing scheme
 
@@ -73,3 +87,7 @@ conversion of unexcitable cells into excitable ones.[^7]
 [^5]: [[tsra-lecture-5](pages/tsra-lecture-5.md)] p.82 [synthesis] — the constructor contains a description, picks up parts, and identifies them by tests, e.g. a muscle contracts when stimulated
 [^6]: [[tsra-lecture-5](pages/tsra-lecture-5.md)] p.82 [synthesis] — von Neumann suspected three dimensions (or a Riemann surface) were needed; Part II shows two suffice for the cellular model, strongly suggesting two suffice for the kinematic one
 [^7]: [[tsra-part2-ch1](pages/tsra-part2-ch1.md)] pp.102-103, 109 [synthesis] — avoiding geometry and kinematics: stationary quiescent/active cells, discrete homogeneous medium, growth as transformation of unexcitable into excitable cells
+[^8]: [[machine-models-of-self-reproduction](pages/machine-models-of-self-reproduction.md)] pp.18-19 [synthesis] - Jacobson's model railroad layout and cars with relay circuits; Penrose's basic model of A and B units that build more AB or BA machines when shaken; no "spontaneous generation" without a seed except by shaking with unusual force
+[^9]: [[machine-models-of-self-reproduction](pages/machine-models-of-self-reproduction.md)] p.19 [synthesis] - Moore built an exact copy of Penrose's basic model; the units are not male and female; an AB or BA machine is an individual, the units are molecules of one chromosome, the reproduction asexual
+[^10]: [[machine-models-of-self-reproduction](pages/machine-models-of-self-reproduction.md)] p.20 [synthesis] - Morowitz's proposed model of electromagnets and electrets floating in a liquid, apparently not designed in detail or built
+[^11]: [[machine-models-of-self-reproduction](pages/machine-models-of-self-reproduction.md)] pp.29-30 [synthesis] - making "more general or less trivial" precise; parallel rather than serial reproduction in the machines of Penrose, von Neumann, and Jacobson

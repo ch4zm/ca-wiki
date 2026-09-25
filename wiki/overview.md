@@ -1,7 +1,7 @@
 ---
 title: Overview
 tags: [overview, synthesis]
-sources: [theory-of-self-reproducing-automata, tsra-editors-introduction, tsra-lecture-2, tsra-lecture-3, tsra-lecture-4, tsra-lecture-5, tsra-part2-ch1, tsra-part2-ch2, tsra-part2-ch3, tsra-part2-ch4, tsra-part2-ch5, endomorphisms-and-automorphisms-of-the-shift-dynamical-system]
+sources: [theory-of-self-reproducing-automata, tsra-editors-introduction, tsra-lecture-2, tsra-lecture-3, tsra-lecture-4, tsra-lecture-5, tsra-part2-ch1, tsra-part2-ch2, tsra-part2-ch3, tsra-part2-ch4, tsra-part2-ch5, endomorphisms-and-automorphisms-of-the-shift-dynamical-system, machine-models-of-self-reproduction]
 updated: 2026-09-24
 ---
 
@@ -48,6 +48,14 @@ machine as payload. Construction and computation turn out to be the same kind of
 Some patterns can never be built, the extreme case being [[garden-of-eden](pages/garden-of-eden.md)]
 configurations, which have no predecessor.
 
+**Moore's formalization.** Moore recasts the cellular model as a *tessellation structure*
+on the nine-cell [[moore-neighbourhood](pages/moore-neighbourhood.md)] and gives
+self-reproduction a formal definition, which admits trivial crystal-like cases. Locality
+caps offspring at quadratic growth in time. His Garden-of-Eden theorem says that wherever
+an [[erasable-configuration](pages/erasable-configuration.md)] exists, so do patterns with
+no predecessor, and no self-reproducer can contain one. He also surveys working kinematic
+reproducers (Penrose's shaken blocks, Jacobson's model trains).
+
 **One dimension, all rules at once.** Hedlund's symbolic dynamics takes the opposite
 approach to von Neumann's. It builds no single machine and asks global questions about
 every 1D rule. Configurations are points of the
@@ -78,6 +86,11 @@ on the first one.
   in what they assume?
 - Von Neumann's design is serial and ignores the medium's parallelism. How much smaller could
   a parallel self-reproducer be?
+- Moore shows erasable configurations force Garden-of-Eden configurations. Does the
+  converse hold (Myhill, next on the list)? How small can the smallest Garden-of-Eden
+  pattern be? Moore always found one within 5 × 5.
+- Can self-reproduction happen in a structure with no erasable configurations?
+- How can "less trivial" self-reproduction be made precise?
 - Which cellular structures have Garden-of-Eden configurations? In 1D, Hedlund's theorems
   give "Garden of Eden ⇔ finitely-different configurations collide" (own reading). Does
   the same hold in 2D, and is that what Moore and Myhill prove?
@@ -107,6 +120,8 @@ on the first one.
 - [[initially-quiescent-automaton](pages/initially-quiescent-automaton.md)]
 - [[crossing-organ](pages/crossing-organ.md)]
 - [[garden-of-eden](pages/garden-of-eden.md)]
+- [[erasable-configuration](pages/erasable-configuration.md)]
+- [[moore-neighbourhood](pages/moore-neighbourhood.md)]
 - [[shift-dynamical-system](pages/shift-dynamical-system.md)]
 - [[curtis-hedlund-lyndon-theorem](pages/curtis-hedlund-lyndon-theorem.md)]
 - [[surjective-shift-endomorphism](pages/surjective-shift-endomorphism.md)]
