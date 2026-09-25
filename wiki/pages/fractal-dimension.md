@@ -5,7 +5,7 @@ summary: The Hausdorff-Besicovitch dimension of the self-similar patterns cellul
 tags: [concept, fractal, self-similarity, scale-invariance, wolfram]
 sources: [statistical-mechanics-of-cellular-automata]
 created: 2026-09-24
-updated: 2026-09-24
+updated: 2026-09-25
 ---
 
 # Fractal Dimension (self-similar CA patterns)
@@ -29,7 +29,7 @@ self-similar fractals.[^2]
 
 | Rule(s) | Recurrence for triangle density T | Dimension |
 |---|---|---|
-| [[rule-90](pages/rule-90.md)] and every other complex rule except 150 | T(n/2) = 3T(n) | log₂3 ≈ 1.59 |
+| [[rule-90](pages/rule-90.md)] and every other complex rule that grows a non-trivial pattern from a seed, except 150 | T(n/2) = 3T(n) | log₂3 ≈ 1.59 |
 | rule 150 | two-term, Fibonacci-like | log₂(2φ) = 1 + log₂φ ≈ 1.69, φ the golden ratio |
 
 At each stage of the rule-90 construction the triangles halve in size and triple in
@@ -40,7 +40,8 @@ a measure-zero set of times such as τ = 2ᵏ.[^4]
 
 **Robust to the seed.** If the seed is any finite pattern of size n₀, the pattern depends
 on the seed only at scales up to about n₀. Above that it takes the same self-similar form,
-with dimension log₂3 for every complex rule except 150.[^5] Random, infinite starts are
+with dimension log₂3 for every complex rule that grows a non-trivial pattern from a seed,
+except 150.[^5] Random, infinite starts are
 different. They give structure at all scales, but the pattern is *not* self-similar,
 because it depends on the absolute scale of the cell spacing
 ([[self-organization](pages/self-organization.md)]).[^6]

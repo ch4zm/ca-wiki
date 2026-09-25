@@ -5,7 +5,7 @@ summary: The orbit problem - does configuration Y appear in the orbit of X? - wh
 tags: [concept, reachability, orbit, undecidability, arithmetic-hierarchy, re-degrees, sutner]
 sources: [aucm-ch12-linear-cellular-automata-and-decidability]
 created: 2026-09-24
-updated: 2026-09-24
+updated: 2026-09-25
 ---
 
 # Reachability in Cellular Automata
@@ -39,7 +39,7 @@ a self-verifying Turing machine.[^9]
 **Classifying by reachability degree.** Sutner suggests classifying CA by the degree of
 their reachability problem when computation is the interest. This classification is
 itself highly undecidable. Deciding whether the degree is d is Σ₃^d-complete, and deciding
-computational universality is Σ⁰₄-complete. *Confluence* (two orbits meet) adds nothing:
+computational universality is Σ⁰₄-complete. *Confluence* (two orbits meet) is independent of reachability:
 any pair of r.e. degrees can be realized as a CA's reachability and confluence degrees.[^10]
 The r.e. degrees themselves have a complicated structure. They are dense (Sacks), and
 their first-order theory is highly undecidable, so a classification by degree inherits

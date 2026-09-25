@@ -5,7 +5,7 @@ summary: Burks's preface and introduction to von Neumann's automata book — the
 tags: [von-neumann, burks, theory-of-automata, self-reproduction, complexity]
 sources: [tsra-editors-introduction]
 created: 2026-09-24
-updated: 2026-09-24
+updated: 2026-09-25
 ---
 
 # Theory of Self-Reproducing Automata — Preface and Editor's Introduction
@@ -39,7 +39,7 @@ presents this as the automata analogue of thermodynamic degeneration (see
 The introduction also sets out what kind of mathematics von Neumann wanted. The logic
 of automata was to be close to logic and to Turing's theory of computability. The
 [[universal-turing-machine](pages/universal-turing-machine.md)] is the model behind his
-later universal constructor.[^6] But he found all-or-none formal logic inadequate and
+later [[universal-constructor](pages/universal-constructor.md)].[^6] But he found all-or-none formal logic inadequate and
 wanted a theory that would lean on probability, thermodynamics, and analysis.[^7] In line
 with this, his self-reproduction models were discrete, but he hoped eventually to build
 a continuous one.[^8]

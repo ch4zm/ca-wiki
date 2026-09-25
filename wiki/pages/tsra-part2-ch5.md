@@ -5,7 +5,7 @@ summary: Burks's completion of von Neumann's design — the memory control finis
 tags: [von-neumann, burks, 29-state, self-reproduction, universal-constructor, turing-machine, engineering]
 sources: [tsra-part2-ch5]
 created: 2026-09-24
-updated: 2026-09-24
+updated: 2026-09-25
 ---
 
 # Theory of Self-Reproducing Automata — Part II, Ch. 5: Automata Self-Reproduction
@@ -46,7 +46,7 @@ Six more sections of the manuscript survive and then break off. They are mostly 
 calculations, and most of them are wrong because of von Neumann's Ch. 3
 ([[tsra-part2-ch3](pages/tsra-part2-ch3.md)]) sizing errors.
 Burks summarizes them instead of reproducing them.[^1] The finished memory control is
-547 × 87 cells. It has a read-write-erase unit (320 × 31), that unit's control
+87 cells wide and 547 high. It has a read-write-erase unit (320 × 31), that unit's control
 (545 × 22), and a [[coded-channel](pages/coded-channel.md)]. The channel codes are 9-bit
 sequences that start with a one and contain exactly three more ones, which gives 56
 codes.[^4]
@@ -74,7 +74,7 @@ code and trigger the wrong decoder, so von Neumann's memory control fails for ce
 lengths.[^8] Burks gives two solutions:
 
 1. **Avoid those lengths.** Never use tape cells below x₂₅₀. This widens the memory control
-   by 250 cells to 337 × 547, and about 99% of the added area is blank. It works but is
+   by 250 cells, to 337 wide and 547 high, and about 99% of the added area is blank. It works but is
    inelegant.[^9]
 2. **Cross the wires.** The interference comes from serial design. Von Neumann's machine
    does one thing at a time, like his EDVAC, and does not use the medium's capacity for

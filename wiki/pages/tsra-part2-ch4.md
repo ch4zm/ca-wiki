@@ -5,7 +5,7 @@ summary: Von Neumann's design of an unbounded tape inside the 29-state CA — bi
 tags: [von-neumann, 29-state, tape, memory-control, turing-machine, engineering]
 sources: [tsra-part2-ch4]
 created: 2026-09-24
-updated: 2026-09-24
+updated: 2026-09-25
 ---
 
 # Theory of Self-Reproducing Automata — Part II, Ch. 4: Design of a Tape and Its Control
@@ -97,10 +97,10 @@ has three main parts:[^10]
 A delay area supplies the roughly 2000-step waits needed while a signal travels the full
 round trip before a periodic pulser can be switched off.[^10]
 
-**Corrections.** Von Neumann sized the coded channel with 9-bit codes containing 5 ones
-(70 codes), but underestimated how tall the decoders for such codes are. He gave one
+**Corrections.** Von Neumann sized the coded channel with 9-bit codes that start with a one and
+contain 5 ones (70 codes), but underestimated how tall the decoders for such codes are. He gave one
 section of the channel a height of 239 cells when it actually needs over 300. The editor switches to 9-bit
-codes with 4 ones (56 codes, still enough) and recomputes the dimensions. The editor also
+codes that start with a one and contain 4 ones (56 codes, still enough) and recomputes the dimensions. The editor also
 corrects the control-organ design in four respects, including a case where a flip-flop
 would be damaged by a stop signal arriving while it is inactive.[^11]
 

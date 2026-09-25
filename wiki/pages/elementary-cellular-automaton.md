@@ -5,7 +5,7 @@ summary: Wolfram's name for the simplest nontrivial cellular automata - a line o
 tags: [concept, elementary-ca, wolfram, rule-numbering, one-dimensional]
 sources: [statistical-mechanics-of-cellular-automata, computation-at-the-edge-of-chaos, theory-of-cellular-automata-a-survey, aucm-ch13-cellular-automata-with-write-access]
 created: 2026-09-24
-updated: 2026-09-24
+updated: 2026-09-25
 ---
 
 # Elementary Cellular Automaton
@@ -62,8 +62,11 @@ ahead is empty.[^7]
 Wolfram calls the first two groups **simple** and the third **complex**. From random
 starts, simple rules settle to fixed points or short cycles, like the limit points and
 limit cycles of dynamical systems. Complex rules behave more like strange attractors.[^9]
-The complex rules are 18, 22, 122, 126, 146 and 182, which are non-additive, and the
-additive rules 90 and 150.[^10] Their statistics are covered on
+From random starts, the complex rules are 18, 22, 122, 126, 146 and 182, which are
+non-additive, and the
+additive rules 90 and 150.[^10] (Own check by simulation: from a single 1, rule 122 grows
+only the uniform block listed above, so it is complex from random starts but simple from
+a seed.) Their statistics are covered on
 [[self-organization](pages/self-organization.md)] and
 [[irreversibility-and-entropy](pages/irreversibility-and-entropy.md)].
 

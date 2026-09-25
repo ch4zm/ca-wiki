@@ -5,7 +5,7 @@ summary: Crosswalk from the symbols each source uses (von Neumann's lectures and
 tags: [notation, reference, von-neumann, burks, hedlund, kari, self-reproduction, 29-state, symbolic-dynamics]
 sources: [tsra-editors-introduction, tsra-lecture-5, tsra-part2-ch1, tsra-part2-ch2, tsra-part2-ch3, tsra-part2-ch4, tsra-part2-ch5, endomorphisms-and-automorphisms-of-the-shift-dynamical-system, planetmath-garden-of-eden-theorem, statistical-mechanics-of-cellular-automata, computation-at-the-edge-of-chaos, theory-of-cellular-automata-a-survey]
 created: 2026-09-24
-updated: 2026-09-24
+updated: 2026-09-25
 ---
 
 # Notation Map
@@ -183,14 +183,13 @@ Letters that change meaning between (or within) sources:
   is the program of Turing's universal machine, which the wiki writes π. In Hedlund, P(𝒮)
   is the set of periodic points.[^14][^22][^17]
 - **S**: the secondary built in Ch. 1; S_Σ is a sensitized state. In Hedlund, S is the
-  number of symbols.[^2][^11][^15]
+  number of symbols. In Kari, S is the state set itself.[^2][^11][^15][^20]
 - **k, n**: in Moore and Myhill, n is the side of the small block and k the number of
   blocks per side; PlanetMath reverses them. In Ch. 1, k is the tape's number base, and
   xₙ, n index the tape cells.[^18][^19][^5]
 - **λ**: in Ch. 1, λᵢⱼ is the state wanted in target cell (i, j). In Wolfram (1983), λ is
   the decay rate of triangle and sequence spectra, T(n) ~ λ⁻ⁿ. In Langton (1990), λ is the
   fraction of rule-table entries not leading to the quiescent state ([[lambda-parameter](pages/lambda-parameter.md)]).[^8][^23][^24]
-  number of symbols. In Kari, S is the state set itself.[^2][^11][^15][^20]
 - **M**: in Ch. 5, an arbitrary machine (M_c, M_u). In Hedlund, M(f) is the number of
   preimages of a bilaterally transitive point.[^3][^17]
 - **Φ, Σ**: in Ch. 3, Φ is the triple-return counter. In Hedlund, Φ(𝒮) is the set of all

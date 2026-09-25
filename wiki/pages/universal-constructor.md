@@ -5,7 +5,7 @@ summary: Von Neumann's automaton that builds any automaton from its description;
 tags: [concept, universal-constructor, self-reproduction, von-neumann]
 sources: [tsra-lecture-5, tsra-part2-ch1, tsra-part2-ch2, tsra-part2-ch4, tsra-part2-ch5]
 created: 2026-09-24
-updated: 2026-09-24
+updated: 2026-09-25
 ---
 
 # Universal Constructor
@@ -80,7 +80,7 @@ reads an external description, rather than one that stores its own construction 
 **Anatomy of the cellular version.** Concretely, von Neumann's universal constructor is a
 finite *constructing unit* driving a *memory control*, which operates the description tape
 through a connecting loop and a timing loop ([[cellular-tape](pages/cellular-tape.md)]). The memory control alone is about
-547 × 87 cells.[^11]
+87 cells wide and 547 high.[^11]
 
 **The completed design.** Burks finishes the design in Ch. 5. The constructing unit reads
 the tape (a period, the position x₁, y₁ and size α, β of the target rectangle in tally
@@ -96,6 +96,7 @@ offspring can also compute.[^13]
 
 ## Appearances in Sources
 
+- [[tsra-editors-introduction](pages/tsra-editors-introduction.md)] - Burks on the Turing machine as the model behind the constructor
 - [[tsra-part2-ch5](pages/tsra-part2-ch5.md)] — the finished constructor and the self-reproducing automaton
 - [[tsra-part2-ch4](pages/tsra-part2-ch4.md)] — the tape and memory control
 - [[tsra-part2-ch2](pages/tsra-part2-ch2.md)] — the rule and the construct-and-retract technique it uses
@@ -115,6 +116,7 @@ offspring can also compute.[^13]
 - [[universal-turing-machine](pages/universal-turing-machine.md)] — the computational model it generalizes
 - [[kinematic-self-reproduction](pages/kinematic-self-reproduction.md)] — the setting of the first version
 - [[complexity-threshold](pages/complexity-threshold.md)] — the constructor exists only above the threshold
+- [[theory-of-automata](pages/theory-of-automata.md)] - poses the self-reproduction problem the constructor answers
 
 [^1]: [[tsra-lecture-5](pages/tsra-lecture-5.md)] pp.83-84 [synthesis] — the approach is modeled on Turing's universal automata; given a description chain φ(X), the constructing automaton consumes it and builds X from free parts
 [^2]: [[tsra-lecture-5](pages/tsra-lecture-5.md)] pp.83-84 [synthesis] — building from a logical description is simpler than copying an object; an existing automaton's parts connect in all directions, while a linear chain is easy to copy

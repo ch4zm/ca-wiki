@@ -5,7 +5,7 @@ summary: Which properties of a cellular automaton can be decided from its rule t
 tags: [analysis, decidability, undecidability, tiling, dimension, kari]
 sources: [theory-of-cellular-automata-a-survey, aucm-ch12-linear-cellular-automata-and-decidability]
 created: 2026-09-24
-updated: 2026-09-24
+updated: 2026-09-25
 ---
 
 # Decidability in Cellular Automata
@@ -57,7 +57,7 @@ CONTROLLED-XOR to higher dimensions.)[^10]
 tracked with finite structures. Sutner makes this precise: the one-step relation is
 recognized by an automaton on the [[de-bruijn-graph](pages/de-bruijn-graph.md)], so every
 first-order property of it is decidable
-([[first-order-theory-of-cellular-automata](pages/first-order-theory-of-cellular-automata.md)]).[^{n+1}]
+([[first-order-theory-of-cellular-automata](pages/first-order-theory-of-cellular-automata.md)]).[^14]
 What stays undecidable in 1D is long-term behaviour, which needs the orbit relation
 ([[reachability-in-cellular-automata](pages/reachability-in-cellular-automata.md)]). The
 examples are Sutner's de Bruijn graph algorithms for injectivity and surjectivity, and

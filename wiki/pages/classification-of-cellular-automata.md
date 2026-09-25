@@ -5,7 +5,7 @@ summary: Schemes for sorting rules by behaviour - Wolfram's simple/complex split
 tags: [concept, classification, wolfram-classes, culik-yu, kurka, undecidability]
 sources: [theory-of-cellular-automata-a-survey, statistical-mechanics-of-cellular-automata, aucm-ch12-linear-cellular-automata-and-decidability, aucm-ch16-phyllosilicate-automata]
 created: 2026-09-24
-updated: 2026-09-24
+updated: 2026-09-25
 ---
 
 # Classification of Cellular Automata
@@ -102,6 +102,9 @@ All the formal versions are undecidable, so none can be computed from a rule tab
 - [[self-organization](pages/self-organization.md)] - Wolfram's statistical classes from random starts
 - [[reachability-in-cellular-automata](pages/reachability-in-cellular-automata.md)] - the degree of the orbit problem as a classification
 - [[phyllosilicate-automaton](pages/phyllosilicate-automaton.md)] - classified by pattern shape and interior
+- [[edge-of-chaos](pages/edge-of-chaos.md)] - Wolfram's classes placed on Langton's order-chaos axis, class IV at the transition
+- [[computation-at-the-edge-of-chaos](pages/computation-at-the-edge-of-chaos.md)] - Langton's paper relating the classes to the λ sweep
+- [[lambda-parameter](pages/lambda-parameter.md)] - the parameter along which the classes line up
 
 [^1]: [[statistical-mechanics-of-cellular-automata](pages/statistical-mechanics-of-cellular-automata.md)] pp.604, 607 [synthesis] - from a single site, a 1 erased or maintained, or a uniform expanding structure: "These two classes of rules will be termed 'simple'"; "complex" rules give self-similar patterns; "simple rules exhibit simple limit points or limit cycles, while complex rules exhibit phenomena analogous to strange attractors"
 [^2]: [[theory-of-cellular-automata-a-survey](pages/theory-of-cellular-automata-a-survey.md)] p.8 [synthesis] - in [74] Wolfram experimented from random initial configurations and classified by space-time diagrams into (W1)-(W4); "Wolfram conjectured that class 4 CA are computationally universal"

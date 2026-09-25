@@ -5,7 +5,7 @@ summary: Langton's phase transition between ordered and chaotic cellular-automat
 tags: [concept, langton, edge-of-chaos, phase-transition, criticality, entropy, mutual-information, emergent-computation, wolfram-classes]
 sources: [computation-at-the-edge-of-chaos]
 created: 2026-09-24
-updated: 2026-09-24
+updated: 2026-09-25
 ---
 
 # Edge of Chaos
@@ -148,6 +148,7 @@ data.[^20]
 - [[self-organization](pages/self-organization.md)] - Wolfram's noise experiments found no phase transition, on a different axis
 - [[irreversibility-and-entropy](pages/irreversibility-and-entropy.md)] - Wolfram's entropy view of CA evolution
 - [[chris-langton](pages/chris-langton.md)] - proposed it
+- [[classification-of-cellular-automata](pages/classification-of-cellular-automata.md)] - Wolfram's four classes and their formal successors
 
 [^1]: [[computation-at-the-edge-of-chaos](pages/computation-at-the-edge-of-chaos.md)] p.13 [synthesis] - Sec. 1.2: "a phase transition between highly ordered and highly disordered dynamics, analogous to the phase transition between the solid and fluid states of matter"; most complex behaviour and greatest potential for information storage, transmission and modification in the transition region; hypothesis that computation "may emerge spontaneously" near the transition, "especially in the vicinity of a second-order or 'critical' transition"
 [^2]: [[computation-at-the-edge-of-chaos](pages/computation-at-the-edge-of-chaos.md)] p.16 [synthesis] - Sec. 2.5: universality proofs embed a computer in the CA; three fundamental features; "arbitrarily large correlation lengths in space and time"; Codd: "unbounded in principle but boundable in practice"

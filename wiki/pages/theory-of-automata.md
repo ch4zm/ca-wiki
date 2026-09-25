@@ -5,7 +5,7 @@ summary: Von Neumann's program for a mathematical-logical theory of the structur
 tags: [concept, theory-of-automata, von-neumann, foundations]
 sources: [tsra-editors-introduction, tsra-lecture-1, tsra-lecture-3, tsra-lecture-4]
 created: 2026-09-24
-updated: 2026-09-24
+updated: 2026-09-25
 ---
 
 # Theory of Automata (von Neumann)
@@ -70,6 +70,7 @@ also have much in common with thermodynamics.[^11]
 - [[probabilistic-logic](pages/probabilistic-logic.md)] — the logic of the reliability problem
 - [[maxwells-demon](pages/maxwells-demon.md)] — the entropy–information link
 - [[self-repair](pages/self-repair.md)] — natural automata's answer to unreliable parts
+- [[universal-constructor](pages/universal-constructor.md)] - von Neumann's answer to what organization suffices for self-reproduction
 
 [^1]: [[tsra-editors-introduction](pages/tsra-editors-introduction.md)] p.18 — "This theory of automata was to be a coherent body of concepts and principles concerning the structure and organization of both natural and artificial systems, the role of language and information in such systems, and the programming and control of such systems."
 [^2]: [[tsra-editors-introduction](pages/tsra-editors-introduction.md)] p.21 [synthesis] — natural automata "include nervous systems, self-reproductive and self-repairing systems, and the evolutionary and adaptive aspects of organisms"; automata theory "seeks general principles of organization, structure, language, information, and control" applicable to both kinds
