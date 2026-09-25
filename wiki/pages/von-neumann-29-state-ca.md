@@ -3,7 +3,7 @@ title: Von Neumann's 29-State Cellular Automaton
 category: Rules
 summary: The first cellular automaton designed for universal construction and self-reproduction — a 2D, 5-cell (von Neumann) neighbourhood rule with 29 states split between signal transmission/logic and construction/destruction
 tags: [rule, von-neumann, 29-state, self-reproduction, universal-construction]
-sources: [tsra-part2-ch2, tsra-part2-ch1, tsra-part2-ch3, tsra-part2-ch4]
+sources: [tsra-part2-ch2, tsra-part2-ch1, tsra-part2-ch3, tsra-part2-ch4, tsra-part2-ch5]
 created: 2026-09-24
 updated: 2026-09-24
 ---
@@ -76,6 +76,8 @@ stimulated.[^7]
 - **Remote construction.** With the [[construction-arm](pages/construction-arm.md)]
   technique, a fixed device fed two binary input strings can build any finite quiescent
   pattern at a distance.[^8]
+- **Universality.** The rule is computation-universal, construction-universal, and self-reproductive. It holds an initially quiescent universal Turing machine, a universal constructor, and a self-reproducer.[^11]
+- **Non-constructible patterns.** Some configurations cannot be built, for example a 3 × 3 block of sensitized S₀ surrounded by C₀₀ cells ([[garden-of-eden](pages/garden-of-eden.md)]).[^12]
 
 ## Organs built from the rule
 
@@ -83,11 +85,12 @@ Von Neumann assembles a library of named components from these states. [[signal-
 pulses into timed bit patterns and back, and repeating loops act as flip-flops. Since the
 rule has no inhibitory state, a loop is stopped by killing one of its cells and
 rebuilding it. The rule also has no wire-crossing state, and signals that must cross
-share one line by coding instead ([[coded-channel](pages/coded-channel.md)]).[^9] These organs
+share one line by coding instead ([[coded-channel](pages/coded-channel.md)]), or pass through a [[crossing-organ](pages/crossing-organ.md)] built from existing states.[^9] These organs
 are assembled into an unbounded [[cellular-tape](pages/cellular-tape.md)] with its memory control.[^10]
 
 ## Appearances in Sources
 
+- [[tsra-part2-ch5](pages/tsra-part2-ch5.md)] — the finished constructor, universality results, and self-reproduction
 - [[tsra-part2-ch4](pages/tsra-part2-ch4.md)] — the tape and memory control built in the rule
 - [[tsra-part2-ch3](pages/tsra-part2-ch3.md)] — the basic organs built from the rule
 - [[tsra-part2-ch2](pages/tsra-part2-ch2.md)] — derivation of the states and the full transition rule
@@ -95,6 +98,8 @@ are assembled into an unbounded [[cellular-tape](pages/cellular-tape.md)] with i
 
 ## Related Concepts
 
+- [[initially-quiescent-automaton](pages/initially-quiescent-automaton.md)] — patterns of its 10 quiescent states
+- [[crossing-organ](pages/crossing-organ.md)] — a wire crossing synthesized in the rule
 - [[cellular-tape](pages/cellular-tape.md)] — unbounded memory in the rule
 - [[signal-coding-organs](pages/signal-coding-organs.md)] — pulsers, decoders, flip-flops
 - [[coded-channel](pages/coded-channel.md)] — wire-crossing by coding
@@ -114,3 +119,5 @@ are assembled into an unbounded [[cellular-tape](pages/cellular-tape.md)] with i
 [^8]: [[tsra-part2-ch2](pages/tsra-part2-ch2.md)] pp.153-156 [synthesis] — editor: a storage loop feeding a construction code produces an ever-lengthening line, the first pattern that grows indefinitely; construct-and-retract builds any finite quiescent array from two binary sequences
 [^9]: [[tsra-part2-ch3](pages/tsra-part2-ch3.md)] pp.158-200 [synthesis] — pulsers, decoders, periodic pulsers, counter, discriminator, and coded channel, each built from transmission and confluent states; stopping via kill-and-rebuild; the coded channel avoids a wire-crossing primitive
 [^10]: [[tsra-part2-ch4](pages/tsra-part2-ch4.md)] pp.201-250 [synthesis] — design of the tape, connecting and timing loops, and memory control from the basic organs
+[^11]: [[tsra-part2-ch5](pages/tsra-part2-ch5.md)] p.296 — "His 29-state cellular structure is computation-universal, construction-universal, and self-reproductive."
+[^12]: [[tsra-part2-ch5](pages/tsra-part2-ch5.md)] p.291 [synthesis] — not all automata specifiable at time zero can be constructed; the 3 × 3 configuration of sensitized S₀ surrounded by C₀₀

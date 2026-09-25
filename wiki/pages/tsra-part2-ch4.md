@@ -129,7 +129,7 @@ would be damaged by a stop signal arriving while it is inactive.[^11]
 
 The chapter assembles the organs of [[tsra-part2-ch3](pages/tsra-part2-ch3.md)] into a
 working memory. The manuscript stops a little later, before the constructing unit is
-designed. Ch. 5 completes the design.
+designed. [[tsra-part2-ch5](pages/tsra-part2-ch5.md)] completes the design.
 
 [^1]: [[tsra-part2-ch4](pages/tsra-part2-ch4.md)] pp.201-202 [synthesis] — editor's abstract: tape, connecting loop, timing loop, memory control, constructing unit; the universal constructor is the constructing unit plus memory control, tape, and both loops
 [^2]: [[tsra-part2-ch4](pages/tsra-part2-ch4.md)] pp.202-203 [synthesis] — a general logical automaton = a network for propositional functions plus an arbitrarily large external memory and its control; the first part is easy, the second is the tape

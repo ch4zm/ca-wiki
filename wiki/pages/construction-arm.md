@@ -3,7 +3,7 @@ title: Construction Arm
 category: Concepts
 summary: Technique for building structures at a distance in a cellular automaton — extend a signal path out to the target site, write a cell there, then retract (erase) the path; the basic mechanism of cellular construction
 tags: [concept, construction, von-neumann, universal-constructor]
-sources: [tsra-part2-ch2]
+sources: [tsra-part2-ch2, tsra-part2-ch5]
 created: 2026-09-24
 updated: 2026-09-24
 ---
@@ -48,8 +48,19 @@ that lies on the constructing path itself requires first building the other cell
 converting the path cell last. Destruction is what makes that possible, which is why
 construction needs the reverse process as well as the forward one.[^5]
 
+**The two-path arm.** Von Neumann's tape design uses one path. Whenever the tip needs the
+other kind of stimulus, the whole path is converted between ordinary and special
+transmission, which costs a sequence proportional to the path's length. His rough notes
+describe a better arm, worked out by Burks: an ordinary path and a special path side by
+side, joined at a head, so both kinds are always available at the tip.[^6] It has five
+operations: advance horizontally, advance vertically, retreat horizontally, retreat
+vertically, and inject a starting stimulus. A retreat leaves the two vacated cells in
+chosen quiescent states, which is how the target gets built. Each operation is a fixed
+sequence of at most 47 pulses, whatever the arm's length.[^7]
+
 ## Appearances in Sources
 
+- [[tsra-part2-ch5](pages/tsra-part2-ch5.md)] — the two-path arm and its five operations
 - [[tsra-part2-ch2](pages/tsra-part2-ch2.md)] — the construct-and-retract example and the general building result
 
 ## Related Concepts
@@ -65,3 +76,5 @@ construction needs the reverse process as well as the forward one.[^5]
 [^3]: [[tsra-part2-ch2](pages/tsra-part2-ch2.md)] p.156 [synthesis] — editor: for any quiescent finite array there are two binary stimulus sequences that construct it; the constructed array can be given a starting stimulus before the path retracts
 [^4]: [[tsra-part2-ch2](pages/tsra-part2-ch2.md)] p.156 [synthesis] — editor: the constructing array is always larger than the constructed one; von Neumann circumvents this with a universal constructor and an attached self-description
 [^5]: [[tsra-part2-ch2](pages/tsra-part2-ch2.md)] p.143 [synthesis] — organizing a cell on the constructing path (Fig. 7) requires the reverse process: the path must be removed and replaced after the surrounding cells are built
+[^6]: [[tsra-part2-ch5](pages/tsra-part2-ch5.md)] pp.272-274 [synthesis] — single path construction procedure changes the whole path between ordinary and special with a sequence proportional to its length; von Neumann's notes: two adjacent parallel paths, ordinary and special, terminating at a head
+[^7]: [[tsra-part2-ch5](pages/tsra-part2-ch5.md)] pp.275-277 [synthesis] — five operations, retreats leaving vacated cells in quiescent states γ and δ; longest sequence 47, independent of the arm's length

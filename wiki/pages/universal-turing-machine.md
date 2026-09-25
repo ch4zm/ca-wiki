@@ -3,7 +3,7 @@ title: Universal Turing Machine
 category: Concepts
 summary: Turing's finite automaton with an unbounded tape that can simulate any other Turing machine — the logical model von Neumann generalized from computation to construction
 tags: [concept, turing, universality, computation]
-sources: [tsra-editors-introduction, tsra-lecture-2, tsra-part2-ch4]
+sources: [tsra-editors-introduction, tsra-lecture-2, tsra-part2-ch4, tsra-part2-ch5]
 created: 2026-09-24
 updated: 2026-09-24
 ---
@@ -47,10 +47,11 @@ structure" and "The Universal Constructor".[^7]
 **Embedded in a cellular automaton.** Von Neumann builds a Turing machine inside his
 29-state CA. A finite-state controller plus a [[cellular-tape](pages/cellular-tape.md)] (a row of cells reached by an
 extendible wire loop) behaves exactly like finite control plus tape. The head moves ±1
-cell per step, because a finite control cannot store an unbounded address.[^8]
+cell per step, because a finite control cannot store an unbounded address.[^8] Burks completes the construction in Ch. 5. Any finite automaton is built as one state organ per state, joined by a coded channel. Adding the tape gives an [[initially-quiescent-automaton](pages/initially-quiescent-automaton.md)] that performs a universal Turing machine's computations, so the rule is logically universal. The embedded machine gets the same results, only much more slowly.[^9] The universal constructor has the same shape, a finite automaton plus a tape unit. Its output is a construction rather than a computation.[^10]
 
 ## Appearances in Sources
 
+- [[tsra-part2-ch5](pages/tsra-part2-ch5.md)] — an initially quiescent universal Turing machine in the 29-state CA
 - [[tsra-part2-ch4](pages/tsra-part2-ch4.md)] — a Turing machine realized in the 29-state CA
 - [[tsra-editors-introduction](pages/tsra-editors-introduction.md)] — definition of the universal machine, and its role in the logic of automata
 - [[tsra-lecture-2](pages/tsra-lecture-2.md)] — integral method, universality threshold, doing vs. predicting
@@ -74,3 +75,5 @@ cell per step, because a finite control cannot store an unbounded address.[^8]
 [^6]: [[tsra-lecture-2](pages/tsra-lecture-2.md)] p.51 — "you can build an organ which can do anything that can be done, but you cannot build an organ which tells you whether it can be done."
 [^7]: raw/von-neumann-theory-of-self-reproducing-automata.pdf pp.vii, ix (Contents) [synthesis] — §1.6.3.2 "The Richard paradox and Turing machines"; §5.1.3 "Logical universality of the cellular structure"; §5.2 "The Universal Constructor"
 [^8]: [[tsra-part2-ch4](pages/tsra-part2-ch4.md)] pp.204-206 [synthesis] — relative addressing by ±1 steps following Turing; the constructing unit specified as a finite automaton with next-state, write, and move functions operating the tape
+[^9]: [[tsra-part2-ch5](pages/tsra-part2-ch5.md)] pp.267-270 [synthesis] — FA embedded as state organs interconnected by a coded channel; an initially quiescent universal Turing machine can be embedded, so the structure is logically universal; embedded devices operate slowly relative to the cellular time frame
+[^10]: [[tsra-part2-ch5](pages/tsra-part2-ch5.md)] pp.285-286 [synthesis] — both M_u and M_c are a finite automaton plus MC + L; the output of M_u is a computation, of M_c a construction

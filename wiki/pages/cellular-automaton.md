@@ -84,6 +84,7 @@ which von Neumann solves by coding ([[coded-channel](pages/coded-channel.md)]).[
 
 ## Related Concepts
 
+- [[garden-of-eden](pages/garden-of-eden.md)] — configurations with no predecessor
 - [[coded-channel](pages/coded-channel.md)] — the 2D wire-crossing problem and its solution
 - [[von-neumann-29-state-ca](pages/von-neumann-29-state-ca.md)] — the first concrete rule
 - [[construction-arm](pages/construction-arm.md)] — how construction works without moving parts

@@ -63,6 +63,7 @@ strain.[^8]
 
 ## Related Concepts
 
+- [[initially-quiescent-automaton](pages/initially-quiescent-automaton.md)] — the quiescent form offspring are built in
 - [[construction-arm](pages/construction-arm.md)] — a fixed builder is larger than what it builds
 - [[universal-constructor](pages/universal-constructor.md)] — builds from the description
 - [[self-reproduction](pages/self-reproduction.md)] — made possible by this separation

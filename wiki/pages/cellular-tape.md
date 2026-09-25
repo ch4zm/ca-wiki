@@ -3,7 +3,7 @@ title: Cellular Tape
 category: Concepts
 summary: An unbounded Turing-style tape embedded in a cellular automaton, read and written through an extendible wire loop, with position and timing both measured relative to the tape — von Neumann's mechanism for unbounded memory in the 29-state CA
 tags: [concept, tape, memory, turing-machine, engineering, von-neumann]
-sources: [tsra-part2-ch4, tsra-part2-ch1]
+sources: [tsra-part2-ch4, tsra-part2-ch1, tsra-part2-ch5]
 created: 2026-09-24
 updated: 2026-09-24
 ---
@@ -63,6 +63,14 @@ measures its own length**, so both position and duration are handled relative to
 **Cost.** The memory control that runs all this is about 547 × 87 cells. Internally it is
 wired through a [[coded-channel](pages/coded-channel.md)].[^10]
 
+**Completion.** Burks finishes the memory control in Ch. 5. At a position of about 200, a
+start code and a stop code collide in the shared channel. Burks gives two fixes: never use
+the first 250 cells, or add four [[crossing-organ](pages/crossing-organ.md)]s. One
+lengthening step then takes about 36n + 13,000 time units.[^11] He also shows that a
+two-path [[construction-arm](pages/construction-arm.md)] could run the tape with fixed
+sequences independent of n. That would remove all the 6n timing machinery and reduce the
+memory control to a small read-write-erase unit and a coded channel.[^12]
+
 ## Why it matters
 
 - It gives the cellular model **logical universality**. Purely logical automata lack only
@@ -74,11 +82,13 @@ wired through a [[coded-channel](pages/coded-channel.md)].[^10]
 
 ## Appearances in Sources
 
+- [[tsra-part2-ch5](pages/tsra-part2-ch5.md)] — completion, the interference fix, and the two-path redesign
 - [[tsra-part2-ch4](pages/tsra-part2-ch4.md)] — the full design: encoding, loops, read/write/move, timing, and layout
 - [[tsra-part2-ch1](pages/tsra-part2-ch1.md)] — the tape as unbounded memory and as the carrier of the universal plan
 
 ## Related Concepts
 
+- [[crossing-organ](pages/crossing-organ.md)] — used to fix the memory control's interference problem
 - [[universal-turing-machine](pages/universal-turing-machine.md)] — controller plus cellular tape is a Turing machine
 - [[universal-constructor](pages/universal-constructor.md)] — reads its description from this tape
 - [[construction-arm](pages/construction-arm.md)] — the same extend-and-retract idea applied to building
@@ -96,3 +106,5 @@ wired through a [[coded-channel](pages/coded-channel.md)].[^10]
 [^8]: [[tsra-part2-ch4](pages/tsra-part2-ch4.md)] p.204 [synthesis] — n is not stored; each step changes n by ±1, following Turing
 [^9]: [[tsra-part2-ch4](pages/tsra-part2-ch4.md)] pp.213-214 [synthesis] — the timing loop of length about 2n parallel to the tape; with a triple-return counter it provides a delay of about 6n + 6 for the periodic pulsers
 [^10]: [[tsra-part2-ch4](pages/tsra-part2-ch4.md)] p.243 [synthesis] — editor: memory control 547 cells high and 87 wide, built around a coded channel
+[^11]: [[tsra-part2-ch5](pages/tsra-part2-ch5.md)] pp.258-264 [synthesis] — lengthening about 36nˢ + 13,000 and shortening about 48nˢ + 20,000; interference for nˢ about 200; solutions: skip cells below x₂₅₀, or four crossing organs
+[^12]: [[tsra-part2-ch5](pages/tsra-part2-ch5.md)] pp.277-279 [synthesis] — Fig. 51; lengthening and shortening by sequences independent of n; the 6n delay machinery unnecessary; MC reduces to a simplified RWE and a coded channel

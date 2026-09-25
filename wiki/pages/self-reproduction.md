@@ -3,7 +3,7 @@ title: Self-Reproduction (automata)
 category: Concepts
 summary: The problem of what logical organization lets an automaton construct a copy of itself — von Neumann's founding question for cellular automata
 tags: [concept, self-reproduction, von-neumann, construction]
-sources: [tsra-editors-introduction, tsra-lecture-5, tsra-part2-ch1, tsra-part2-ch2]
+sources: [tsra-editors-introduction, tsra-lecture-5, tsra-part2-ch1, tsra-part2-ch2, tsra-part2-ch5]
 created: 2026-09-24
 updated: 2026-09-24
 ---
@@ -42,6 +42,15 @@ descriptions, and a controller C coordinates them. Supplied with its own descrip
 A + B + C produces a copy of itself together with a copy of the description. None of the
 three parts reproduces on its own.[^8]
 
+**Carried out.** Burks completes the cellular model in Ch. 5. The universal constructor is
+extended to give each offspring a tape holding a copy of the description, and to start it.
+Fed its own description, it builds a copy of itself with that tape. "Hence, a
+self-reproducing automaton can be embedded in von Neumann's 29-state cellular
+structure."[^12] With a universal Turing machine as the payload, the offspring can compute
+as well. Burks's closing line: "self-reproduction is a special case of construction, and
+construction and computation are similar activities."[^13] Everything built this way
+starts as an [[initially-quiescent-automaton](pages/initially-quiescent-automaton.md)].
+
 **Copying the description.** The copier works on a quiescent description, never on the
 live automaton, which could not be probed without disturbing it. This separation is what
 makes non-degenerating reproduction possible ([[descriptions-vs-originals](pages/descriptions-vs-originals.md)]).[^9]
@@ -60,6 +69,7 @@ selection, though von Neumann leaves evolution open.[^11]
 
 ## Appearances in Sources
 
+- [[tsra-part2-ch5](pages/tsra-part2-ch5.md)] — the self-reproducing automaton completed in the 29-state rule
 - [[tsra-part2-ch2](pages/tsra-part2-ch2.md)] — the rule in which the cellular model is built
 - [[tsra-part2-ch1](pages/tsra-part2-ch1.md)] — the cellular setting, copying descriptions, mutation classes
 - [[tsra-editors-introduction](pages/tsra-editors-introduction.md)] — states the problem and places it in von Neumann's program
@@ -67,6 +77,7 @@ selection, though von Neumann leaves evolution open.[^11]
 
 ## Related Concepts
 
+- [[initially-quiescent-automaton](pages/initially-quiescent-automaton.md)] — the form every offspring is built in
 - [[von-neumann-29-state-ca](pages/von-neumann-29-state-ca.md)] — the rule of the cellular model
 - [[cellular-automaton](pages/cellular-automaton.md)] — the medium of the second model
 - [[descriptions-vs-originals](pages/descriptions-vs-originals.md)] — why reproduction copies a description
@@ -89,3 +100,5 @@ selection, though von Neumann leaves evolution open.[^11]
 [^9]: [[tsra-part2-ch1](pages/tsra-part2-ch1.md)] pp.121-122 [synthesis] — copying requires exploration; quiescent descriptions can be explored without disturbance; this is the decisive step making reproduction without degeneration possible
 [^10]: [[tsra-lecture-5](pages/tsra-lecture-5.md)] pp.86-87 [synthesis] — self-reproduction is hard to define since crystals qualify naively; requiring inheritable mutation resolves this; mutations in the payload part are inherited, those in A, B, or C usually lethal or sterilizing
 [^11]: [[tsra-part2-ch1](pages/tsra-part2-ch1.md)] pp.130-131 [synthesis] — mutation classes by location in the self-reproducer with payload; conflicts between independent organisms and natural selection; evolution left open
+[^12]: [[tsra-part2-ch5](pages/tsra-part2-ch5.md)] pp.294-295 — "Hence, a self-reproducing automaton can be embedded in von Neumann's 29-state cellular structure."
+[^13]: [[tsra-part2-ch5](pages/tsra-part2-ch5.md)] pp.295-296 — "In this cellular structure, self-reproduction is a special case of construction, and construction and computation are similar activities."

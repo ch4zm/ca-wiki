@@ -3,7 +3,7 @@ title: Universal Constructor
 category: Concepts
 summary: Von Neumann's automaton that builds any automaton from its description; combined with a description copier and a controller it yields self-reproduction via A + B + C + φ(A + B + C)
 tags: [concept, universal-constructor, self-reproduction, von-neumann]
-sources: [tsra-lecture-5, tsra-part2-ch1, tsra-part2-ch2, tsra-part2-ch4]
+sources: [tsra-lecture-5, tsra-part2-ch1, tsra-part2-ch2, tsra-part2-ch4, tsra-part2-ch5]
 created: 2026-09-24
 updated: 2026-09-24
 ---
@@ -81,8 +81,21 @@ finite *constructing unit* driving a *memory control*, which operates the descri
 through a connecting loop and a timing loop ([[cellular-tape](pages/cellular-tape.md)]). The memory control alone is about
 547 × 87 cells.[^11]
 
+**The completed design.** Burks finishes the design in Ch. 5. The constructing unit reads
+the tape (a period, the position x₁, y₁ and size α, β of the target rectangle in tally
+form, every cell state, a closing period) and drives a two-path construction arm through a
+fixed algorithm. The constructor is universal for
+[[initially-quiescent-automaton](pages/initially-quiescent-automaton.md)]s: for every such
+M there is a description φ(M) from which it builds M.[^12] Self-reproduction needs one
+change. On its own, A + φ(A) builds a bare A with no tape. So the constructor is extended
+to also give its offspring a tape, copying φ(M) onto it when no other contents are
+specified, and then start it. That puts B and C into the same unit, and (A + B + C) + φ(A
++ B + C) reproduces itself. With a universal Turing machine as the payload P, the
+offspring can also compute.[^13]
+
 ## Appearances in Sources
 
+- [[tsra-part2-ch5](pages/tsra-part2-ch5.md)] — the finished constructor and the self-reproducing automaton
 - [[tsra-part2-ch4](pages/tsra-part2-ch4.md)] — the tape and memory control
 - [[tsra-part2-ch2](pages/tsra-part2-ch2.md)] — the rule and the construct-and-retract technique it uses
 - [[tsra-part2-ch1](pages/tsra-part2-ch1.md)] — the cellular version: description tape, universal plan, and activation
@@ -90,6 +103,7 @@ through a connecting loop and a timing loop ([[cellular-tape](pages/cellular-tap
 
 ## Related Concepts
 
+- [[initially-quiescent-automaton](pages/initially-quiescent-automaton.md)] — the class it is universal for
 - [[cellular-tape](pages/cellular-tape.md)] — how the description tape is read and written
 - [[signal-coding-organs](pages/signal-coding-organs.md)] — the components its control is built from
 - [[construction-arm](pages/construction-arm.md)] — the mechanism by which it places cells
@@ -112,3 +126,5 @@ through a connecting loop and a timing loop ([[cellular-tape](pages/cellular-tap
 [^9]: [[tsra-part2-ch1](pages/tsra-part2-ch1.md)] pp.126-129 [synthesis] — secondaries are built quasi-quiescent and started by a single stimulus; successive descendants are shifted so they don't interfere
 [^10]: [[tsra-part2-ch2](pages/tsra-part2-ch2.md)] pp.155-156 [synthesis] — editor: construct-and-retract builds any finite quiescent array from two binary sequences; the constructing array is always larger, circumvented by a universal constructor with attached self-description
 [^11]: [[tsra-part2-ch4](pages/tsra-part2-ch4.md)] pp.201-202, 243 [synthesis] — editor: the universal constructor consists of the constructing unit plus the memory control, tape, connecting loop, and timing loop; memory control 547 × 87 cells
+[^12]: [[tsra-part2-ch5](pages/tsra-part2-ch5.md)] pp.280-286 [synthesis] — tape format of 14 five-bit characters; the construction algorithm driving the two-path arm; M_c constructs every initially quiescent M from D(M)
+[^13]: [[tsra-part2-ch5](pages/tsra-part2-ch5.md)] pp.294-296 [synthesis] — M_c + D(M_c) is not self-reproduction since the offspring lacks a tape; M_c* also produces the offspring's tape, copying D(M) when no tape content is given, and starts it; M_c* + D(M_c*) and (M_u + M_c*) + D(M_u + M_c*) reproduce themselves
