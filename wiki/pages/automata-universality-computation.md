@@ -3,7 +3,7 @@ title: "Automata, Universality, Computation: Tribute to Maurice Margenstern"
 category: Sources
 summary: Adamatzky (ed.), Springer ECC vol. 12 (2015) - 17 chapters honouring Margenstern on small universal machines, reversible computing, P systems, splicing, and cellular automata; the wiki covers the automata-theoretic and cellular-automata chapters one at a time
 tags: [book, festschrift, margenstern, universality, turing-machines, cellular-automata]
-sources: [automata-universality-computation, aucm-ch5-small-universal-turing-machines]
+sources: [automata-universality-computation, aucm-ch5-small-universal-turing-machines, aucm-ch6-reversible-turing-machines-by-rlem]
 created: 2026-09-24
 updated: 2026-09-24
 ---
@@ -37,7 +37,7 @@ automata:
 | Ch. | Title | Authors | Page |
 |---|---|---|---|
 | 5 | Maurice Margenstern's Contributions to the Field of Small Universal Turing Machines | Neary, Woods | [[aucm-ch5-small-universal-turing-machines](pages/aucm-ch5-small-universal-turing-machines.md)] |
-| 6 | Constructing Reversible Turing Machines by Reversible Logic Element with Memory | Morita | pending |
+| 6 | Constructing Reversible Turing Machines by Reversible Logic Element with Memory | Morita | [[aucm-ch6-reversible-turing-machines-by-rlem](pages/aucm-ch6-reversible-turing-machines-by-rlem.md)] |
 | 12 | Linear Cellular Automata and Decidability | Sutner | pending |
 | 13 | Algorithms with Active Cells Modeled by Cellular Automata with Write-Access (CA-w) | Hoffmann | pending |
 | 14 | Broadcasting Automata and Patterns on Z² | Nickson, Potapov | pending |
@@ -57,6 +57,11 @@ DC programming in bioinformatics).[^3]
   Collatz-iterating machines inside that gap, his exact frontiers for colours and
   laterality, and his 2-tag simulations with very few left moves
   ([[aucm-ch5-small-universal-turing-machines](pages/aucm-ch5-small-universal-turing-machines.md)]).[^4]
+- **Reversible Turing machines from one element (Ch. 6).** Morita builds any reversible
+  Turing machine as an infinite circuit of rotary elements, and realizes the rotary element
+  in the billiard ball model without synchronizing the balls. Every non-degenerate 2-state
+  element with three or more symbols is universal
+  ([[aucm-ch6-reversible-turing-machines-by-rlem](pages/aucm-ch6-reversible-turing-machines-by-rlem.md)]).[^5]
 
 ## Entities & Concepts
 
@@ -64,14 +69,20 @@ DC programming in bioinformatics).[^3]
 - [[universal-turing-machine](pages/universal-turing-machine.md)]
 - [[tag-system](pages/tag-system.md)]
 - [[collatz-function](pages/collatz-function.md)]
+- [[reversible-turing-machine](pages/reversible-turing-machine.md)]
+- [[reversible-logic-element-with-memory](pages/reversible-logic-element-with-memory.md)]
+- [[billiard-ball-model](pages/billiard-ball-model.md)]
 
 ## Relation to Other Wiki Pages
 
 Ch. 5 extends the wiki's account of universality
 ([[universal-turing-machine](pages/universal-turing-machine.md)]) from "which systems are
-universal" to "how small a universal system can be".
+universal" to "how small a universal system can be". Ch. 6 does the same for reversible
+computing, which the wiki otherwise meets through
+[[reversible-cellular-automaton](pages/reversible-cellular-automaton.md)]s.
 
 [^1]: [[automata-universality-computation](pages/automata-universality-computation.md)] copyright page [synthesis] — Andrew Adamatzky (ed.), Emergence, Complexity and Computation 12, Springer International Publishing Switzerland 2015, DOI 10.1007/978-3-319-09039-9
 [^2]: [[automata-universality-computation](pages/automata-universality-computation.md)] pp.V-VI (Preface, signed Serge Grigorieff) [synthesis] — Margenstern's "investigation of the simplest (resp. most complex) machines with an undecidable (resp. decidable) halting problem"; "In the early 2000's Maurice developed the subject of computation with cellular automata in the hyperbolic world"; "the two themes presented above do not exhaust the subjects Maurice investigated"
 [^3]: [[automata-universality-computation](pages/automata-universality-computation.md)] pp.VII-XI (Contents) [synthesis] — chapter titles and authors, Ch. 1-17
 [^4]: [[aucm-ch5-small-universal-turing-machines](pages/aucm-ch5-small-universal-turing-machines.md)] pp.117-124 [synthesis] — universal and non-universal curves with 39 open pairs, Collatz simulators, colour and laterality frontiers, 2-tag simulation with 6 and 3 left-move instructions
+[^5]: [[aucm-ch6-reversible-turing-machines-by-rlem](pages/aucm-ch6-reversible-turing-machines-by-rlem.md)] pp.129-137 [synthesis] — any RTM as an infinite circuit of REs; RE realized in BBM with a stationary state ball, no input synchronization; every non-degenerate 2-state k-symbol RLEM with k > 2 is universal

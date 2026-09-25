@@ -1,7 +1,7 @@
 ---
 title: Overview
 tags: [overview, synthesis]
-sources: [theory-of-self-reproducing-automata, tsra-editors-introduction, tsra-lecture-2, tsra-lecture-3, tsra-lecture-4, tsra-lecture-5, tsra-part2-ch1, tsra-part2-ch2, tsra-part2-ch3, tsra-part2-ch4, tsra-part2-ch5, endomorphisms-and-automorphisms-of-the-shift-dynamical-system, machine-models-of-self-reproduction, converse-of-moores-garden-of-eden-theorem, statistical-mechanics-of-cellular-automata, planetmath-garden-of-eden-theorem, computation-at-the-edge-of-chaos, theory-of-cellular-automata-a-survey, automata-universality-computation, aucm-ch5-small-universal-turing-machines]
+sources: [theory-of-self-reproducing-automata, tsra-editors-introduction, tsra-lecture-2, tsra-lecture-3, tsra-lecture-4, tsra-lecture-5, tsra-part2-ch1, tsra-part2-ch2, tsra-part2-ch3, tsra-part2-ch4, tsra-part2-ch5, endomorphisms-and-automorphisms-of-the-shift-dynamical-system, machine-models-of-self-reproduction, converse-of-moores-garden-of-eden-theorem, statistical-mechanics-of-cellular-automata, planetmath-garden-of-eden-theorem, computation-at-the-edge-of-chaos, theory-of-cellular-automata-a-survey, automata-universality-computation, aucm-ch5-small-universal-turing-machines, aucm-ch6-reversible-turing-machines-by-rlem]
 updated: 2026-09-24
 ---
 
@@ -128,7 +128,11 @@ because [[wang-tiles](pages/wang-tiles.md)] and the tiling problem can be encode
 Nilpotency is undecidable even in 1D, and so is every non-trivial property of the
 [[limit-set](pages/limit-set.md)] when the state set may vary. Physics motivates block-permutation rules that are
 reversible by construction ([[margolus-neighbourhood](pages/margolus-neighbourhood.md)])
-and additive [[conserved-quantity](pages/conserved-quantity.md)]s. Universality splits
+and additive [[conserved-quantity](pages/conserved-quantity.md)]s. Reversible Turing machines are universal (Bennett), and any of them can be built from a
+single one-bit reversible element, the rotary element
+([[reversible-logic-element-with-memory](pages/reversible-logic-element-with-memory.md)]),
+realizable in the frictionless [[billiard-ball-model](pages/billiard-ball-model.md)]
+([[reversible-turing-machine](pages/reversible-turing-machine.md)]). Universality splits
 into the Turing kind, which Life and [[rule-110](pages/rule-110.md)] have, and the
 stronger [[intrinsic-universality](pages/intrinsic-universality.md)]. Wolfram's classes
 get formal, and undecidable, successors
@@ -148,6 +152,8 @@ language recognizers
 - Which of the 39 open (states, symbols) pairs admit a universal Turing machine? Machines
   of Collatz-simulator size are already at least as hard to analyse as the Collatz
   conjecture.
+- Is the one remaining non-degenerate 2-state, 2-symbol reversible logic element
+  universal? The other three are not, and every one with more symbols is.
 - In two or more dimensions, which of the three open Garden-of-Eden implications between
   G, G_F and G_P hold?
 - Is positive expansivity of 1D rules decidable? Can one decide whether a 1D rule has any
@@ -231,3 +237,6 @@ language recognizers
 - [[tag-system](pages/tag-system.md)]
 - [[collatz-function](pages/collatz-function.md)]
 - [[maurice-margenstern](pages/maurice-margenstern.md)]
+- [[reversible-turing-machine](pages/reversible-turing-machine.md)]
+- [[reversible-logic-element-with-memory](pages/reversible-logic-element-with-memory.md)]
+- [[billiard-ball-model](pages/billiard-ball-model.md)]
