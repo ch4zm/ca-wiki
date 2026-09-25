@@ -3,7 +3,7 @@ title: Coded Channel
 category: Concepts
 summary: Von Neumann's solution to wire-crossing in a 2D cellular automaton — all signals share one line, each sender injects a distinct code and each receiver decodes only its own, with codes chosen so none contains another
 tags: [concept, wire-crossing, coded-channel, signal-coding, von-neumann]
-sources: [tsra-part2-ch3]
+sources: [tsra-part2-ch3, tsra-part2-ch4]
 created: 2026-09-24
 updated: 2026-09-24
 ---
@@ -53,12 +53,19 @@ topological obstacle is removed by coding, without adding states. The same trade
 throughout von Neumann's design, where missing primitives are synthesized from available
 ones rather than added to the rule.
 
+**In practice.** The memory control of the cellular tape needs about 30 crossing lines
+between its read-write-erase unit and that unit's control. Von Neumann chose 9-bit codes
+with 5 ones (70 codes). The editor found that the decoders for those codes were taller than
+von Neumann had allowed, and switched to 9-bit codes with 4 ones (56 codes), which fit.[^7]
+
 ## Appearances in Sources
 
+- [[tsra-part2-ch4](pages/tsra-part2-ch4.md)] — the coded channel inside the memory control
 - [[tsra-part2-ch3](pages/tsra-part2-ch3.md)] — the wire-crossing problem and the construction of the coded channel
 
 ## Related Concepts
 
+- [[cellular-tape](pages/cellular-tape.md)] — its main application
 - [[signal-coding-organs](pages/signal-coding-organs.md)] — the pulsers and decoders it is built from
 - [[cellular-automaton](pages/cellular-automaton.md)] — 2D media force the crossing problem
 - [[von-neumann-29-state-ca](pages/von-neumann-29-state-ca.md)] — the rule it keeps unchanged
@@ -69,3 +76,4 @@ ones rather than added to the rule.
 [^4]: [[tsra-part2-ch3](pages/tsra-part2-ch3.md)] p.194 [synthesis] — sequences of length m beginning with 1 with exactly k ones; C(m−1, k−1) ≥ n required; k ≈ m/2 is the practical choice
 [^5]: [[tsra-part2-ch3](pages/tsra-part2-ch3.md)] pp.196-198 [synthesis] — corruption by superposition of shifted sequences; rule of minimum delays between stimulations depending on the distance between tie-in points
 [^6]: [[tsra-part2-ch3](pages/tsra-part2-ch3.md)] pp.198-200 [synthesis] — cyclic coded channel; editor: von Neumann gave no corruption rule for the cyclic version and later used a non-cyclic coded channel in the control organ
+[^7]: [[tsra-part2-ch4](pages/tsra-part2-ch4.md)] pp.239-243 [synthesis] — about 30 connections require a coded channel; von Neumann chose m = 9, k = 5; editor finds the decoder heights underestimated and uses m = 9, k = 4

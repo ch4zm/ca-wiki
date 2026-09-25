@@ -3,7 +3,7 @@ title: Universal Constructor
 category: Concepts
 summary: Von Neumann's automaton that builds any automaton from its description; combined with a description copier and a controller it yields self-reproduction via A + B + C + φ(A + B + C)
 tags: [concept, universal-constructor, self-reproduction, von-neumann]
-sources: [tsra-lecture-5, tsra-part2-ch1, tsra-part2-ch2]
+sources: [tsra-lecture-5, tsra-part2-ch1, tsra-part2-ch2, tsra-part2-ch4]
 created: 2026-09-24
 updated: 2026-09-24
 ---
@@ -76,14 +76,21 @@ device can build any finite pattern this way from two stimulus strings, but it i
 larger than what it builds. This is exactly why self-reproduction needs a constructor that
 reads an external description, rather than one that stores its own construction program.[^10] The rule itself is [[von-neumann-29-state-ca](pages/von-neumann-29-state-ca.md)].
 
+**Anatomy of the cellular version.** Concretely, von Neumann's universal constructor is a
+finite *constructing unit* driving a *memory control*, which operates the description tape
+through a connecting loop and a timing loop ([[cellular-tape](pages/cellular-tape.md)]). The memory control alone is about
+547 × 87 cells.[^11]
+
 ## Appearances in Sources
 
+- [[tsra-part2-ch4](pages/tsra-part2-ch4.md)] — the tape and memory control
 - [[tsra-part2-ch2](pages/tsra-part2-ch2.md)] — the rule and the construct-and-retract technique it uses
 - [[tsra-part2-ch1](pages/tsra-part2-ch1.md)] — the cellular version: description tape, universal plan, and activation
 - [[tsra-lecture-5](pages/tsra-lecture-5.md)] — the A + B + C scheme in the kinematic model
 
 ## Related Concepts
 
+- [[cellular-tape](pages/cellular-tape.md)] — how the description tape is read and written
 - [[signal-coding-organs](pages/signal-coding-organs.md)] — the components its control is built from
 - [[construction-arm](pages/construction-arm.md)] — the mechanism by which it places cells
 - [[von-neumann-29-state-ca](pages/von-neumann-29-state-ca.md)] — the rule it is designed in
@@ -104,3 +111,4 @@ reads an external description, rather than one that stores its own construction 
 [^8]: [[tsra-part2-ch1](pages/tsra-part2-ch1.md)] pp.113-118 [synthesis] — description tape with digit, comma, and period states; the universal plan (bounding rectangle plus every cell's state) encoded on it gives construction-universality; the tape also closes the gap to logical universality
 [^9]: [[tsra-part2-ch1](pages/tsra-part2-ch1.md)] pp.126-129 [synthesis] — secondaries are built quasi-quiescent and started by a single stimulus; successive descendants are shifted so they don't interfere
 [^10]: [[tsra-part2-ch2](pages/tsra-part2-ch2.md)] pp.155-156 [synthesis] — editor: construct-and-retract builds any finite quiescent array from two binary sequences; the constructing array is always larger, circumvented by a universal constructor with attached self-description
+[^11]: [[tsra-part2-ch4](pages/tsra-part2-ch4.md)] pp.201-202, 243 [synthesis] — editor: the universal constructor consists of the constructing unit plus the memory control, tape, connecting loop, and timing loop; memory control 547 × 87 cells

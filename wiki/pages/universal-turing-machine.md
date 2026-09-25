@@ -3,7 +3,7 @@ title: Universal Turing Machine
 category: Concepts
 summary: Turing's finite automaton with an unbounded tape that can simulate any other Turing machine — the logical model von Neumann generalized from computation to construction
 tags: [concept, turing, universality, computation]
-sources: [tsra-editors-introduction, tsra-lecture-2]
+sources: [tsra-editors-introduction, tsra-lecture-2, tsra-part2-ch4]
 created: 2026-09-24
 updated: 2026-09-24
 ---
@@ -44,13 +44,20 @@ shows that von Neumann takes up Turing machines directly in his account of
 paradox and Turing machines". Ch. 5 closes with "Logical universality of the cellular
 structure" and "The Universal Constructor".[^7]
 
+**Embedded in a cellular automaton.** Von Neumann builds a Turing machine inside his
+29-state CA. A finite-state controller plus a [[cellular-tape](pages/cellular-tape.md)] (a row of cells reached by an
+extendible wire loop) behaves exactly like finite control plus tape. The head moves ±1
+cell per step, because a finite control cannot store an unbounded address.[^8]
+
 ## Appearances in Sources
 
+- [[tsra-part2-ch4](pages/tsra-part2-ch4.md)] — a Turing machine realized in the 29-state CA
 - [[tsra-editors-introduction](pages/tsra-editors-introduction.md)] — definition of the universal machine, and its role in the logic of automata
 - [[tsra-lecture-2](pages/tsra-lecture-2.md)] — integral method, universality threshold, doing vs. predicting
 
 ## Related Concepts
 
+- [[cellular-tape](pages/cellular-tape.md)] — the cellular realization of the tape
 - [[descriptions-vs-originals](pages/descriptions-vs-originals.md)] — the halting problem and Richard's paradox motivate passive self-description
 - [[universal-constructor](pages/universal-constructor.md)] — the construction analogue: builds any automaton from its description
 
@@ -66,3 +73,4 @@ structure" and "The Universal Constructor".[^7]
 [^5]: [[tsra-lecture-2](pages/tsra-lecture-2.md)] p.50 — "here, for the first time, one deals with something which has the attribute of universality, which has the ability to do anything that anybody can do. You also see that there is no vicious circle in it, because of the manner in which the extra complexity is brought in (by giving more elaborate instructions)."
 [^6]: [[tsra-lecture-2](pages/tsra-lecture-2.md)] p.51 — "you can build an organ which can do anything that can be done, but you cannot build an organ which tells you whether it can be done."
 [^7]: raw/von-neumann-theory-of-self-reproducing-automata.pdf pp.vii, ix (Contents) [synthesis] — §1.6.3.2 "The Richard paradox and Turing machines"; §5.1.3 "Logical universality of the cellular structure"; §5.2 "The Universal Constructor"
+[^8]: [[tsra-part2-ch4](pages/tsra-part2-ch4.md)] pp.204-206 [synthesis] — relative addressing by ±1 steps following Turing; the constructing unit specified as a finite automaton with next-state, write, and move functions operating the tape

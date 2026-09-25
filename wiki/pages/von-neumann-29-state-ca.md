@@ -3,7 +3,7 @@ title: Von Neumann's 29-State Cellular Automaton
 category: Rules
 summary: The first cellular automaton designed for universal construction and self-reproduction — a 2D, 5-cell (von Neumann) neighbourhood rule with 29 states split between signal transmission/logic and construction/destruction
 tags: [rule, von-neumann, 29-state, self-reproduction, universal-construction]
-sources: [tsra-part2-ch2, tsra-part2-ch1, tsra-part2-ch3]
+sources: [tsra-part2-ch2, tsra-part2-ch1, tsra-part2-ch3, tsra-part2-ch4]
 created: 2026-09-24
 updated: 2026-09-24
 ---
@@ -83,16 +83,19 @@ Von Neumann assembles a library of named components from these states. [[signal-
 pulses into timed bit patterns and back, and repeating loops act as flip-flops. Since the
 rule has no inhibitory state, a loop is stopped by killing one of its cells and
 rebuilding it. The rule also has no wire-crossing state, and signals that must cross
-share one line by coding instead ([[coded-channel](pages/coded-channel.md)]).[^9]
+share one line by coding instead ([[coded-channel](pages/coded-channel.md)]).[^9] These organs
+are assembled into an unbounded [[cellular-tape](pages/cellular-tape.md)] with its memory control.[^10]
 
 ## Appearances in Sources
 
+- [[tsra-part2-ch4](pages/tsra-part2-ch4.md)] — the tape and memory control built in the rule
 - [[tsra-part2-ch3](pages/tsra-part2-ch3.md)] — the basic organs built from the rule
 - [[tsra-part2-ch2](pages/tsra-part2-ch2.md)] — derivation of the states and the full transition rule
 - [[tsra-part2-ch1](pages/tsra-part2-ch1.md)] — the editor's preview of the state set and the direct/reverse processes
 
 ## Related Concepts
 
+- [[cellular-tape](pages/cellular-tape.md)] — unbounded memory in the rule
 - [[signal-coding-organs](pages/signal-coding-organs.md)] — pulsers, decoders, flip-flops
 - [[coded-channel](pages/coded-channel.md)] — wire-crossing by coding
 - [[cellular-automaton](pages/cellular-automaton.md)] — the general model
@@ -110,3 +113,4 @@ share one line by coding instead ([[coded-channel](pages/coded-channel.md)]).[^9
 [^7]: [[tsra-part2-ch1](pages/tsra-part2-ch1.md)] p.107 [synthesis] — editor: if every cell is in one of the ten quiescent states nothing changes; a quiescent finite automaton can be embedded and later stimulated
 [^8]: [[tsra-part2-ch2](pages/tsra-part2-ch2.md)] pp.153-156 [synthesis] — editor: a storage loop feeding a construction code produces an ever-lengthening line, the first pattern that grows indefinitely; construct-and-retract builds any finite quiescent array from two binary sequences
 [^9]: [[tsra-part2-ch3](pages/tsra-part2-ch3.md)] pp.158-200 [synthesis] — pulsers, decoders, periodic pulsers, counter, discriminator, and coded channel, each built from transmission and confluent states; stopping via kill-and-rebuild; the coded channel avoids a wire-crossing primitive
+[^10]: [[tsra-part2-ch4](pages/tsra-part2-ch4.md)] pp.201-250 [synthesis] — design of the tape, connecting and timing loops, and memory control from the basic organs

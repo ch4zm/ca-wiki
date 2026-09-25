@@ -54,6 +54,7 @@ construction needs the reverse process as well as the forward one.[^5]
 
 ## Related Concepts
 
+- [[cellular-tape](pages/cellular-tape.md)] — the same extend-and-retract idea used for memory access
 - [[von-neumann-29-state-ca](pages/von-neumann-29-state-ca.md)] — the rule whose direct and reverse processes implement it
 - [[universal-constructor](pages/universal-constructor.md)] — drives an arm from a description tape
 - [[cellular-automaton](pages/cellular-automaton.md)] — construction by changing cell states rather than moving parts

@@ -1,7 +1,7 @@
 ---
 title: Overview
 tags: [overview, synthesis]
-sources: [theory-of-self-reproducing-automata, tsra-editors-introduction, tsra-lecture-2, tsra-lecture-3, tsra-lecture-4, tsra-lecture-5, tsra-part2-ch1, tsra-part2-ch2, tsra-part2-ch3]
+sources: [theory-of-self-reproducing-automata, tsra-editors-introduction, tsra-lecture-2, tsra-lecture-3, tsra-lecture-4, tsra-lecture-5, tsra-part2-ch1, tsra-part2-ch2, tsra-part2-ch3, tsra-part2-ch4]
 updated: 2026-09-24
 ---
 
@@ -35,7 +35,9 @@ rather than the live automaton ([[descriptions-vs-originals](pages/descriptions-
 stimuli do logic, special stimuli build and destroy, and a [[construction-arm](pages/construction-arm.md)] places
 cells at a distance. From the rule von Neumann builds a library of organs:
 [[signal-coding-organs](pages/signal-coding-organs.md)] for timed bit patterns and one-bit memory, and a
-[[coded-channel](pages/coded-channel.md)] that gets around wire-crossing in 2D.
+[[coded-channel](pages/coded-channel.md)] that gets around wire-crossing in 2D. These are assembled into a
+[[cellular-tape](pages/cellular-tape.md)]: unbounded memory reached by an extendible wire loop, with position and timing
+both measured relative to the tape. Controller plus tape is a Turing machine inside the CA.
 
 **Reliability.** Von Neumann proposed a [[probabilistic-logic](pages/probabilistic-logic.md)] in which failure is part
 of the axioms, bringing the theory closer to analysis and thermodynamics, via the
@@ -69,3 +71,4 @@ on the first one.
 - [[construction-arm](pages/construction-arm.md)]
 - [[signal-coding-organs](pages/signal-coding-organs.md)]
 - [[coded-channel](pages/coded-channel.md)]
+- [[cellular-tape](pages/cellular-tape.md)]

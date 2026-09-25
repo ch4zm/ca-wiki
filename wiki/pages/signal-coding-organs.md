@@ -56,6 +56,7 @@ detection is AND, merging is OR, and memory is a recirculating loop.
 
 ## Related Concepts
 
+- [[cellular-tape](pages/cellular-tape.md)] — where the counter and discriminator are used
 - [[coded-channel](pages/coded-channel.md)] — built from pulsers and decoders
 - [[von-neumann-29-state-ca](pages/von-neumann-29-state-ca.md)] — the rule these organs are built in
 - [[mcculloch-pitts-neuron](pages/mcculloch-pitts-neuron.md)] — the logical elements they realize
