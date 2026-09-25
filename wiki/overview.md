@@ -1,7 +1,7 @@
 ---
 title: Overview
 tags: [overview, synthesis]
-sources: [theory-of-self-reproducing-automata, tsra-editors-introduction, tsra-lecture-2, tsra-lecture-3, tsra-lecture-4, tsra-lecture-5, tsra-part2-ch1, tsra-part2-ch2, tsra-part2-ch3, tsra-part2-ch4, tsra-part2-ch5]
+sources: [theory-of-self-reproducing-automata, tsra-editors-introduction, tsra-lecture-2, tsra-lecture-3, tsra-lecture-4, tsra-lecture-5, tsra-part2-ch1, tsra-part2-ch2, tsra-part2-ch3, tsra-part2-ch4, tsra-part2-ch5, statistical-mechanics-of-cellular-automata]
 updated: 2026-09-24
 ---
 
@@ -54,8 +54,30 @@ entropy–information link illustrated by [[maxwells-demon](pages/maxwells-demon
 unreliable parts through [[self-repair](pages/self-repair.md)]: they operate across errors instead of halting
 on the first one.
 
+**The statistical turn.** Wolfram (1983) reverses von Neumann's approach. Instead of
+designing one huge rule for a purpose, he surveys every rule in the smallest family, the
+[[elementary-cellular-automaton](pages/elementary-cellular-automaton.md)], and asks what
+the rules do statistically, as models of [[self-organization](pages/self-organization.md)].
+The rules split into simple and complex. From a single seed, complex rules grow
+self-similar patterns ([[fractal-dimension](pages/fractal-dimension.md)] log₂3 ≈ 1.59,
+with [[rule-90](pages/rule-90.md)] the canonical case). From random noise they reach
+equilibria whose densities and structure spectra do not depend on the start. These fall
+into two universality classes: the
+[[additive-cellular-automaton](pages/additive-cellular-automaton.md)] rules, which are
+exactly solvable, and all the others. The mechanism is
+[[irreversibility-and-entropy](pages/irreversibility-and-entropy.md)]. Trajectories
+merge, entropy falls, and [[garden-of-eden](pages/garden-of-eden.md)] configurations
+become the typical case. Von Neumann's expectation that a theory of automata would
+resemble thermodynamics becomes something measurable. The
+[[game-of-life](pages/game-of-life.md)] enters as a universal two-state rule built from
+glider-stream circuits.
+
 ## Open Questions
 
+- Why exactly two universality classes? Wolfram conjectures it is because rules simulate each
+  other under short encodings. Is that the whole story?
+- Wolfram judged elementary rules too simple for universal computation. Rule 110 is outside
+  his 32 legal rules, and Cook (2004), on the reading list, is the test of this claim.
 - What exactly is von Neumann's complexity threshold, and does the 29-state construction
   make it precise? Von Neumann guessed millions of parts for the kinematic model.
 - How do the kinematic (Part I) and cellular (Part II) models of self-reproduction differ
@@ -87,3 +109,10 @@ on the first one.
 - [[initially-quiescent-automaton](pages/initially-quiescent-automaton.md)]
 - [[crossing-organ](pages/crossing-organ.md)]
 - [[garden-of-eden](pages/garden-of-eden.md)]
+- [[elementary-cellular-automaton](pages/elementary-cellular-automaton.md)]
+- [[additive-cellular-automaton](pages/additive-cellular-automaton.md)]
+- [[rule-90](pages/rule-90.md)]
+- [[fractal-dimension](pages/fractal-dimension.md)]
+- [[self-organization](pages/self-organization.md)]
+- [[irreversibility-and-entropy](pages/irreversibility-and-entropy.md)]
+- [[game-of-life](pages/game-of-life.md)]

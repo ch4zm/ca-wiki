@@ -3,7 +3,7 @@ title: Probabilistic Logic (automata)
 category: Concepts
 summary: Von Neumann's logic of unreliable automata — failure treated as a logical entity, with axioms giving probabilities of outcomes rather than certainties; the framework for the reliability problem
 tags: [concept, probabilistic-logic, reliability, von-neumann]
-sources: [tsra-lecture-3, tsra-editors-introduction, tsra-lecture-4]
+sources: [tsra-lecture-3, tsra-editors-introduction, tsra-lecture-4, statistical-mechanics-of-cellular-automata]
 created: 2026-09-24
 updated: 2026-09-24
 ---
@@ -41,14 +41,25 @@ as a matter of frequencies.[^10] He developed the framework fully in the separat
 "Probabilistic Logics and the Synthesis of Reliable Organisms from Unreliable Components,"
 which this wiki has not ingested.[^11]
 
+**Noise in cellular automata.** Wolfram studies a simple case of unreliable components.
+Each cell's rule output is flipped independently with probability κ at every step, which
+corresponds to a finite-temperature heat bath. Under the complex rule 126, the structure it
+builds fades continuously as κ grows, with no phase transition. The global behaviour
+changes abruptly, though. Any κ > 0 lets a finite system eventually visit every
+configuration, while the noiseless system stays in a short cycle.[^12] Wolfram's
+three-state rules add a feature relevant to reliability: "membranes" that shield the
+region inside them from outside noise.[^13]
+
 ## Appearances in Sources
 
+- [[statistical-mechanics-of-cellular-automata](pages/statistical-mechanics-of-cellular-automata.md)] — noise as random site flips in cellular automata: continuous local degradation, abrupt global change, protective membranes
 - [[tsra-lecture-3](pages/tsra-lecture-3.md)] — motivation and the form of the probabilistic axioms
 - [[tsra-editors-introduction](pages/tsra-editors-introduction.md)] — reliability as one of the two central problems
 - [[tsra-lecture-4](pages/tsra-lecture-4.md)] — reliability as the limit on artificial complexity; milieu-relativity
 
 ## Related Concepts
 
+- [[self-organization](pages/self-organization.md)] — how noise degrades cellular-automaton structure
 - [[theory-of-automata](pages/theory-of-automata.md)] — reliability is one of its two central problems
 - [[self-reproduction](pages/self-reproduction.md)] — the other central problem; self-repair links the two
 - [[complexity-threshold](pages/complexity-threshold.md)] — complexity drives both problems
@@ -67,3 +78,5 @@ which this wiki has not ingested.[^11]
 [^9]: [[tsra-lecture-3](pages/tsra-lecture-3.md)] p.62 [synthesis] — the new theory of information "is likely to have a lot in common with thermodynamics" and "will be closer to analysis, because all axioms are likely to be of a probabilistic and not of a rigorous character"
 [^10]: [[tsra-lecture-3](pages/tsra-lecture-3.md)] p.58 — "Now this inclines one to view probability as a branch of logics, or rather, to view logics affected with probability as an extension of ordinary rigorous logics."
 [^11]: [[tsra-lecture-3](pages/tsra-lecture-3.md)] p.58 fn1 — "See von Neumann's 'Probabilistic Logics and the Synthesis of Reliable Organs from Unreliable Components' for a detailed treatment of automata from this point of view."
+[^12]: [[statistical-mechanics-of-cellular-automata](pages/statistical-mechanics-of-cellular-automata.md)] pp.620, 629 [synthesis] — value reversed with probability κ, the Boltzmann factor of a finite-temperature heat bath; rule 126 structure "progressively destroyed" with "no phenomenon analogous to a 'phase transition'"; global properties "change discontinuously": with κ > 0 all configurations are eventually visited, with κ = 0 a cycle after six (Fig. 27)
+[^13]: [[statistical-mechanics-of-cellular-automata](pages/statistical-mechanics-of-cellular-automata.md)] p.631 [synthesis] — membranes that "protect" sites within them from the effects of noise outside; only when two membranes meet is the enclosed structure potentially destroyed

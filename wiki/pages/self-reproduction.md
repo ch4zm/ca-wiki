@@ -3,7 +3,7 @@ title: Self-Reproduction (automata)
 category: Concepts
 summary: The problem of what logical organization lets an automaton construct a copy of itself — von Neumann's founding question for cellular automata
 tags: [concept, self-reproduction, von-neumann, construction]
-sources: [tsra-editors-introduction, tsra-lecture-5, tsra-part2-ch1, tsra-part2-ch2, tsra-part2-ch5]
+sources: [tsra-editors-introduction, tsra-lecture-5, tsra-part2-ch1, tsra-part2-ch2, tsra-part2-ch5, statistical-mechanics-of-cellular-automata]
 created: 2026-09-24
 updated: 2026-09-24
 ---
@@ -67,8 +67,20 @@ payload P give viable offspring making P′, a change of hereditary strain. Conf
 space between independently reproducing organisms are a possible route to natural
 selection, though von Neumann leaves evolution open.[^11]
 
+**Trivial replication by superposition.** Wolfram gives a "very simple form of
+self-reproduction" in the additive [[rule-90](pages/rule-90.md)]. After 2^j steps a single
+cell becomes exactly two cells, so by superposition *any* finite pattern becomes two exact
+copies of itself. There are four copies 2^(j−1) steps later. Then the inner pair collide
+and annihilate. Wolfram argues that exact copies cannot multiply exponentially in any d
+dimensions. A pattern grows at most like (2τ)ᵈ, which is too slow to hold exponentially
+many copies. Exponential self-reproduction therefore needs copies that are not exactly
+identical and that vary, for example by drifting under noise or carrying a counter.[^14]
+The mechanism uses no description and no constructor. By the inheritable-mutation
+criterion above, it counts as a trivial case.[^10]
+
 ## Appearances in Sources
 
+- [[statistical-mechanics-of-cellular-automata](pages/statistical-mechanics-of-cellular-automata.md)] — trivial self-reproduction of any pattern by superposition in rule 90, and the overcrowding limit
 - [[tsra-part2-ch5](pages/tsra-part2-ch5.md)] — the self-reproducing automaton completed in the 29-state rule
 - [[tsra-part2-ch2](pages/tsra-part2-ch2.md)] — the rule in which the cellular model is built
 - [[tsra-part2-ch1](pages/tsra-part2-ch1.md)] — the cellular setting, copying descriptions, mutation classes
@@ -77,6 +89,7 @@ selection, though von Neumann leaves evolution open.[^11]
 
 ## Related Concepts
 
+- [[rule-90](pages/rule-90.md)] — self-reproduction without a description, by superposition
 - [[initially-quiescent-automaton](pages/initially-quiescent-automaton.md)] — the form every offspring is built in
 - [[von-neumann-29-state-ca](pages/von-neumann-29-state-ca.md)] — the rule of the cellular model
 - [[cellular-automaton](pages/cellular-automaton.md)] — the medium of the second model
@@ -102,3 +115,4 @@ selection, though von Neumann leaves evolution open.[^11]
 [^11]: [[tsra-part2-ch1](pages/tsra-part2-ch1.md)] pp.130-131 [synthesis] — mutation classes by location in the self-reproducer with payload; conflicts between independent organisms and natural selection; evolution left open
 [^12]: [[tsra-part2-ch5](pages/tsra-part2-ch5.md)] pp.294-295 — "Hence, a self-reproducing automaton can be embedded in von Neumann's 29-state cellular structure."
 [^13]: [[tsra-part2-ch5](pages/tsra-part2-ch5.md)] pp.295-296 — "In this cellular structure, self-reproduction is a special case of construction, and construction and computation are similar activities."
+[^14]: [[statistical-mechanics-of-cellular-automata](pages/statistical-mechanics-of-cellular-automata.md)] p.639 [synthesis] — "a very simple form of self-reproduction with the elementary modulo-two rule" (Fig. 33); two exact copies of any initial sequence after τ = 2^j, four after a further 2^(j−1), the inner pair annihilate; "Purely geometrical 'overcrowding' thus prevents exponential multiplication"; pattern size grows at most as (2τ)ᵈ, slower than required; exponential self-reproduction only if copies "exhibit variability", e.g. a random walk in response to noise or a "counter"
