@@ -1,7 +1,7 @@
 ---
 title: Overview
 tags: [overview, synthesis]
-sources: [theory-of-self-reproducing-automata, tsra-editors-introduction, tsra-lecture-2, tsra-lecture-3, tsra-lecture-4, tsra-lecture-5, tsra-part2-ch1, tsra-part2-ch2, tsra-part2-ch3, tsra-part2-ch4, tsra-part2-ch5, endomorphisms-and-automorphisms-of-the-shift-dynamical-system, machine-models-of-self-reproduction, converse-of-moores-garden-of-eden-theorem, statistical-mechanics-of-cellular-automata, planetmath-garden-of-eden-theorem, computation-at-the-edge-of-chaos, theory-of-cellular-automata-a-survey]
+sources: [theory-of-self-reproducing-automata, tsra-editors-introduction, tsra-lecture-2, tsra-lecture-3, tsra-lecture-4, tsra-lecture-5, tsra-part2-ch1, tsra-part2-ch2, tsra-part2-ch3, tsra-part2-ch4, tsra-part2-ch5, endomorphisms-and-automorphisms-of-the-shift-dynamical-system, machine-models-of-self-reproduction, converse-of-moores-garden-of-eden-theorem, statistical-mechanics-of-cellular-automata, planetmath-garden-of-eden-theorem, computation-at-the-edge-of-chaos, theory-of-cellular-automata-a-survey, automata-universality-computation, aucm-ch5-small-universal-turing-machines]
 updated: 2026-09-24
 ---
 
@@ -19,7 +19,11 @@ concept is complexity, and its two central problems are
 **Foundations.** Two logical ingredients underlie everything: networks of idealized
 threshold elements ([[mcculloch-pitts-neuron](pages/mcculloch-pitts-neuron.md)]) and Turing's
 [[universal-turing-machine](pages/universal-turing-machine.md)]. Universality has a threshold: above a minimum complexity,
-one automaton can do anything any automaton can do. It still cannot predict arbitrary
+one automaton can do anything any automaton can do. The threshold is partly mapped for
+program size. The smallest known universal Turing machines, many of them simulators of a
+[[tag-system](pages/tag-system.md)], sit a few (states, symbols) pairs above the sizes
+where halting is decidable. Machines in the gap already iterate the
+[[collatz-function](pages/collatz-function.md)]. A universal automaton still cannot predict arbitrary
 behavior, which suggests that complex automata may be simpler than any description of what
 they do ([[description-vs-object-complexity](pages/description-vs-object-complexity.md)]).
 
@@ -141,6 +145,9 @@ language recognizers
   other under short encodings. Is that the whole story?
 - Rule 110 is universal (Cook and Wolfram, reported by Kari). Is it intrinsically universal?
   Is rule 54 universal at all? Cook (2004), on the reading list, gives the proof.
+- Which of the 39 open (states, symbols) pairs admit a universal Turing machine? Machines
+  of Collatz-simulator size are already at least as hard to analyse as the Collatz
+  conjecture.
 - In two or more dimensions, which of the three open Garden-of-Eden implications between
   G, G_F and G_P hold?
 - Is positive expansivity of 1D rules decidable? Can one decide whether a 1D rule has any
@@ -221,3 +228,6 @@ language recognizers
 - [[chaos-in-cellular-automata](pages/chaos-in-cellular-automata.md)]
 - [[language-recognition-by-cellular-automata](pages/language-recognition-by-cellular-automata.md)]
 - [[decidability-in-cellular-automata](pages/decidability-in-cellular-automata.md)]
+- [[tag-system](pages/tag-system.md)]
+- [[collatz-function](pages/collatz-function.md)]
+- [[maurice-margenstern](pages/maurice-margenstern.md)]

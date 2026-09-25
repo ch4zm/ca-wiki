@@ -1,0 +1,77 @@
+---
+title: "Automata, Universality, Computation: Tribute to Maurice Margenstern"
+category: Sources
+summary: Adamatzky (ed.), Springer ECC vol. 12 (2015) - 17 chapters honouring Margenstern on small universal machines, reversible computing, P systems, splicing, and cellular automata; the wiki covers the automata-theoretic and cellular-automata chapters one at a time
+tags: [book, festschrift, margenstern, universality, turing-machines, cellular-automata]
+sources: [automata-universality-computation, aucm-ch5-small-universal-turing-machines]
+created: 2026-09-24
+updated: 2026-09-24
+---
+
+# Automata, Universality, Computation: Tribute to Maurice Margenstern
+
+**Source:** assets/adamatzky-2015-automata-universality-computation.pdf
+**Date ingested:** 2026-09-24 (one chapter at a time)
+**Type:** book (edited volume)
+**Editor:** Andrew Adamatzky (Springer, Emergence, Complexity and Computation vol. 12, 2015; DOI 10.1007/978-3-319-09039-9)[^1]
+
+> **Locators.** Printed page numbers are used throughout. PDF page = printed page + 9 in
+> the main text (p. 117 = PDF p. 126).
+
+## Summary
+
+The volume is a tribute to [[maurice-margenstern](pages/maurice-margenstern.md)]. Its
+preface, by Serge Grigorieff, singles out two of his themes. The first is the frontier
+between small machines with a decidable halting problem and small universal ones. The
+second is computation with cellular automata in hyperbolic space.[^2] The seventeen
+chapters range well beyond both. They cover combinatorics of curves, logic, the philosophy
+of computer-assisted mathematics, two-way automata, small and reversible Turing machines,
+the grossone methodology, P systems, splicing, cellular automata, and optimization in
+bioinformatics.[^3]
+
+## Chapters covered in the wiki
+
+The wiki takes the chapters on automata and universality and the chapters on cellular
+automata:
+
+| Ch. | Title | Authors | Page |
+|---|---|---|---|
+| 5 | Maurice Margenstern's Contributions to the Field of Small Universal Turing Machines | Neary, Woods | [[aucm-ch5-small-universal-turing-machines](pages/aucm-ch5-small-universal-turing-machines.md)] |
+| 6 | Constructing Reversible Turing Machines by Reversible Logic Element with Memory | Morita | pending |
+| 12 | Linear Cellular Automata and Decidability | Sutner | pending |
+| 13 | Algorithms with Active Cells Modeled by Cellular Automata with Write-Access (CA-w) | Hoffmann | pending |
+| 14 | Broadcasting Automata and Patterns on Z² | Nickson, Potapov | pending |
+| 15 | Real-Time Prime Generators Implemented on Small-State Cellular Automata | Umeo, Miyamoto, Abe | pending |
+| 16 | Phyllosilicate Automata | Adamatzky | pending |
+
+The rest are outside the wiki's scope: Ch. 1 (Courcelle, Gauss words), 2 (Choffrut and
+Grigorieff, the additive monoid of subsets of ℕ), 3 (De Mol, mathematics and computer
+science), 4 (Dang, Ibarra and Li, sampling two-way finite automata), 7 (Sergeyev and
+Garro, grossone), 8-10 (P systems), 11 (Rogozhin and Verlan, splicing) and 17 (Le Thi,
+DC programming in bioinformatics).[^3]
+
+## Key Takeaways
+
+- **Small universal machines (Ch. 5).** Neary and Woods map the gap between the smallest
+  universal Turing machines and the largest decidable ones. They survey Margenstern's
+  Collatz-iterating machines inside that gap, his exact frontiers for colours and
+  laterality, and his 2-tag simulations with very few left moves
+  ([[aucm-ch5-small-universal-turing-machines](pages/aucm-ch5-small-universal-turing-machines.md)]).[^4]
+
+## Entities & Concepts
+
+- [[maurice-margenstern](pages/maurice-margenstern.md)]
+- [[universal-turing-machine](pages/universal-turing-machine.md)]
+- [[tag-system](pages/tag-system.md)]
+- [[collatz-function](pages/collatz-function.md)]
+
+## Relation to Other Wiki Pages
+
+Ch. 5 extends the wiki's account of universality
+([[universal-turing-machine](pages/universal-turing-machine.md)]) from "which systems are
+universal" to "how small a universal system can be".
+
+[^1]: [[automata-universality-computation](pages/automata-universality-computation.md)] copyright page [synthesis] — Andrew Adamatzky (ed.), Emergence, Complexity and Computation 12, Springer International Publishing Switzerland 2015, DOI 10.1007/978-3-319-09039-9
+[^2]: [[automata-universality-computation](pages/automata-universality-computation.md)] pp.V-VI (Preface, signed Serge Grigorieff) [synthesis] — Margenstern's "investigation of the simplest (resp. most complex) machines with an undecidable (resp. decidable) halting problem"; "In the early 2000's Maurice developed the subject of computation with cellular automata in the hyperbolic world"; "the two themes presented above do not exhaust the subjects Maurice investigated"
+[^3]: [[automata-universality-computation](pages/automata-universality-computation.md)] pp.VII-XI (Contents) [synthesis] — chapter titles and authors, Ch. 1-17
+[^4]: [[aucm-ch5-small-universal-turing-machines](pages/aucm-ch5-small-universal-turing-machines.md)] pp.117-124 [synthesis] — universal and non-universal curves with 39 open pairs, Collatz simulators, colour and laterality frontiers, 2-tag simulation with 6 and 3 left-move instructions

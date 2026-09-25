@@ -1,9 +1,9 @@
 ---
 title: Universal Turing Machine
 category: Concepts
-summary: Turing's finite automaton with an unbounded tape that can simulate any other Turing machine — the logical model von Neumann generalized from computation to construction
+summary: Turing's finite automaton with an unbounded tape that can simulate any other Turing machine — the logical model von Neumann generalized from computation to construction; the smallest known universal machines, the decidable sizes below them, and the open gap between
 tags: [concept, turing, universality, computation]
-sources: [tsra-editors-introduction, tsra-lecture-2, tsra-part2-ch4, tsra-part2-ch5, statistical-mechanics-of-cellular-automata, computation-at-the-edge-of-chaos, theory-of-cellular-automata-a-survey]
+sources: [tsra-editors-introduction, tsra-lecture-2, tsra-part2-ch4, tsra-part2-ch5, statistical-mechanics-of-cellular-automata, computation-at-the-edge-of-chaos, theory-of-cellular-automata-a-survey, aucm-ch5-small-universal-turing-machines]
 created: 2026-09-24
 updated: 2026-09-24
 ---
@@ -83,8 +83,26 @@ Kari separates this Turing-machine universality from
 [[intrinsic-universality](pages/intrinsic-universality.md)], the ability to simulate
 every CA on infinite configurations.[^18]
 
+**How small can a universal machine be?** A standard Turing machine's size is its
+(states, symbols) pair. The smallest known universal machines are Rogozhin's (2, 18),
+(4, 6) and (5, 5), Kudlek and Rogozhin's (3, 9), and Neary and Woods' (5, 5), (6, 4),
+(9, 3) and (15, 2). Halting is decidable for (2, 2), (3, 2), (2, 3), (1, n) and (n, 1).
+That leaves 39 state-symbol pairs whose status is open.[^19] Many of these small machines
+simulate 2-tag systems ([[tag-system](pages/tag-system.md)]), following Minsky's 7-state,
+4-symbol machine. That size matches the machine Wolfram calls the simplest known in 1983
+(own reasoning: Wolfram does not name it).[^20]
+[[maurice-margenstern](pages/maurice-margenstern.md)] placed machines that iterate the
+[[collatz-function](pages/collatz-function.md)] inside the open gap. Deciding reachability
+for machines of that size is therefore at least as hard as the Collatz conjecture.[^21]
+For some properties other than size, the threshold is known exactly (Margenstern calls
+these *frontiers*). Standard 2-symbol universal machines need 3 "colours" (distinct
+read/move/write triples) and non-erasing ones need 5. For laterality (the smaller of the
+left-move and right-move instruction counts), the thresholds are 2 and 3
+([[aucm-ch5-small-universal-turing-machines](pages/aucm-ch5-small-universal-turing-machines.md)]).[^22]
+
 ## Appearances in Sources
 
+- [[aucm-ch5-small-universal-turing-machines](pages/aucm-ch5-small-universal-turing-machines.md)] - smallest known universal machines, the decidable sizes, the 39-pair gap, Collatz machines, frontiers
 - [[computation-at-the-edge-of-chaos](pages/computation-at-the-edge-of-chaos.md)] - the freezing problem; class IV and universal computation at the phase transition
 - [[theory-of-cellular-automata-a-survey](pages/theory-of-cellular-automata-a-survey.md)] - universality of Life and rule 110; universal reversible CA; Turing vs intrinsic universality
 - [[statistical-mechanics-of-cellular-automata](pages/statistical-mechanics-of-cellular-automata.md)] — universality across cellular automata: Smith's 18-state 1D rule, Life, Banks, and simulation by encoding
@@ -110,6 +128,10 @@ every CA on infinite configurations.[^18]
 - [[intrinsic-universality](pages/intrinsic-universality.md)] - the CA-native, stronger notion
 - [[reversible-cellular-automaton](pages/reversible-cellular-automaton.md)] - universal reversible rules
 - [[decidability-in-cellular-automata](pages/decidability-in-cellular-automata.md)] - halting-problem reductions give undecidable CA questions
+- [[tag-system](pages/tag-system.md)] - the model most small universal machines simulate
+- [[collatz-function](pages/collatz-function.md)] - iterated by machines in the open size gap
+- [[maurice-margenstern](pages/maurice-margenstern.md)] - frontiers between decidable and universal small machines
+
 [^1]: [[tsra-editors-introduction](pages/tsra-editors-introduction.md)] p.14 — "A Turing machine is a finite automaton with an indefinitely expandable tape. ... Turing's universal computer U has this property: for any Turing machine M there is a finite program P such that machine U, operating under the direction of P, will compute the same results as M."
 [^2]: [[tsra-editors-introduction](pages/tsra-editors-introduction.md)] pp.25, 27 [synthesis] — "Recursive functions are those functions which can be computed on Turing machines, and so mathematical logic may be treated from the point of view of automata"; the strict part "includes mathematical logic as extended to cover finite automata and Turing machines"
 [^3]: [[tsra-lecture-2](pages/tsra-lecture-2.md)] p.43 — "Turing started by axiomatically describing what the whole automaton is supposed to do, without telling what its elements are, just by describing how it's supposed to function."
@@ -128,3 +150,7 @@ every CA on infinite configurations.[^18]
 [^16]: [[theory-of-cellular-automata-a-survey](pages/theory-of-cellular-automata-a-survey.md)] p.11 [synthesis] - Theorem 1 (Berlekamp et al.): Life universal, death of a finite configuration undecidable; Wolfram's 1980s conjecture [74] and its proof by "him and Cook [76]"; Theorem 2: rule 110 universal
 [^17]: [[theory-of-cellular-automata-a-survey](pages/theory-of-cellular-automata-a-survey.md)] p.18 [synthesis] - Toffoli [65]: any d-dimensional CA simulated by a (d + 1)-dimensional reversible CA; Morita and Harao [54]; "reversible Turing machines can be computationally universal [4]"; Theorem 8
 [^18]: [[theory-of-cellular-automata-a-survey](pages/theory-of-cellular-automata-a-survey.md)] p.23 [synthesis] - "The universality of GOL and rule 110 is based on performing Turing machine simulations in the CA. But also a stronger form of universality exists that is inherent to CA"
+[^19]: [[aucm-ch5-small-universal-turing-machines](pages/aucm-ch5-small-universal-turing-machines.md)] pp.118-119 [synthesis] — Rogozhin (2, 18), (4, 6), (5, 5); Kudlek and Rogozhin (3, 9); Neary and Woods (5, 5), (6, 4), (9, 3), (15, 2); halting decidable for (2, 2), (3, 2), (2, 3), (1, n), (n, 1); "39 state-symbols pairs for which the universality/non-universality question remains open"
+[^20]: [[aucm-ch5-small-universal-turing-machines](pages/aucm-ch5-small-universal-turing-machines.md)] p.121 — "Minsky [28] constructed a 7-state, 4-symbol universal Turing machine that simulates 2-tag systems and his machine's simulation algorithm was the inspiration for many of the small universal machines to follow"
+[^21]: [[aucm-ch5-small-universal-turing-machines](pages/aucm-ch5-small-universal-turing-machines.md)] p.119 [synthesis] — Margenstern's Collatz simulators with state-symbol pairs (11, 2), (5, 3), (4, 4), (3, 6), (2, 10); reachability for machines of at least that size "is at least as difficult as solving the Collatz conjecture"
+[^22]: [[aucm-ch5-small-universal-turing-machines](pages/aucm-ch5-small-universal-turing-machines.md)] p.120 [synthesis] — frontiers: 3 colours (standard, Pavlotskaya) and 5 (non-erasing, Margenstern); laterality 2 (standard, Margenstern and Pavlotskaya) and 3 (non-erasing, Margenstern)
