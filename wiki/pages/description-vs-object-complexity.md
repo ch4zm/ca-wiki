@@ -3,7 +3,7 @@ title: Description vs. Object Complexity
 category: Concepts
 summary: Von Neumann's conjecture that simple automata are easier to describe than to build, but sufficiently complex automata are simpler than any description of their behavior — with Gödel's type-theoretic reading
 tags: [concept, complexity, description, godel, von-neumann]
-sources: [tsra-lecture-2, tsra-editors-introduction]
+sources: [tsra-lecture-2, tsra-editors-introduction, universality-and-complexity-in-cellular-automata]
 created: 2026-09-24
 updated: 2026-09-24
 ---
@@ -51,13 +51,23 @@ logical type than the feasible operations themselves.[^7] See
 [[complexity-threshold](pages/complexity-threshold.md)] for the related claim that
 self-reproduction becomes possible only above a critical complexity.
 
+**A cellular-automaton echo (own reasoning).** Wolfram (1984) makes a similar claim about
+class 4 rules ([[wolfram-classes](pages/wolfram-classes.md)]). If such a rule is universal,
+the value of a cell after many steps "cannot in general be determined by any 'short-cut'
+procedure much simpler than explicit simulation", so the behaviour "may essentially be
+found only by explicitly running it".[^8] In von Neumann's terms, the rule itself is the
+shortest usable description of what it does. Wolfram does not cite von Neumann on this
+point.
+
 ## Appearances in Sources
 
+- [[universality-and-complexity-in-cellular-automata](pages/universality-and-complexity-in-cellular-automata.md)] - class 4 rules can be predicted only by running them (the link to this conjecture is own reasoning)
 - [[tsra-lecture-2](pages/tsra-lecture-2.md)] — von Neumann's primary statement, and Gödel's reply
 - [[tsra-editors-introduction](pages/tsra-editors-introduction.md)] — the editor's summary of the conjecture
 
 ## Related Concepts
 
+- [[wolfram-classes](pages/wolfram-classes.md)] - class 4 behaviour has no shortcut description
 - [[descriptions-vs-originals](pages/descriptions-vs-originals.md)] — why self-reproducers carry a passive self-description
 - [[complexity-threshold](pages/complexity-threshold.md)] — the other claim about behavior changing above a critical complexity
 - [[universal-turing-machine](pages/universal-turing-machine.md)] — Gödel's reconstruction runs through undecidability of its behavior
@@ -70,4 +80,4 @@ self-reproduction becomes possible only above a critical complexity.
 [^5]: [[tsra-lecture-2](pages/tsra-lecture-2.md)] p.47 — "I am twisting a logical theorem a little, but it's a perfectly good logical theorem. It's a theorem of Gödel that the next logical step, the description of an object, is one class type higher than the object and is therefore asymptotically (?) infinitely longer to describe."
 [^6]: [[tsra-lecture-2](pages/tsra-lecture-2.md)] pp.55-56 [synthesis] — Gödel's letter: the relevant theorem is that "a complete epistemological description of a language A cannot be given in the same language A"; it shows the description needs "higher types. However, this implies nothing as to the number of symbols necessary"; more likely meaning: for the universal Turing machine "the complete description of its behavior is infinite because, in view of the non-existence of a decision procedure predicting its behavior, the complete description could be given only by an enumeration of all instances"
 [^7]: [[tsra-lecture-2](pages/tsra-lecture-2.md)] p.51 — "you can perform within the logical type that's involved everything that's feasible, but the question of whether something is feasible in a type belongs to a higher logical type."
-
+[^8]: [[universality-and-complexity-in-cellular-automata](pages/universality-and-complexity-in-cellular-automata.md)] p.32 - "the value cannot in general be determined by any 'short-cut' procedure much simpler than explicit simulation of the evolution. The behaviour of a class 4 cellular automaton is thus essentially unpredictable, even given complete initial information: the behaviour of the system may essentially be found only by explicitly running it."

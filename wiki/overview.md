@@ -1,7 +1,7 @@
 ---
 title: Overview
 tags: [overview, synthesis]
-sources: [theory-of-self-reproducing-automata, tsra-editors-introduction, tsra-lecture-2, tsra-lecture-3, tsra-lecture-4, tsra-lecture-5, tsra-part2-ch1, tsra-part2-ch2, tsra-part2-ch3, tsra-part2-ch4, tsra-part2-ch5, endomorphisms-and-automorphisms-of-the-shift-dynamical-system, machine-models-of-self-reproduction, converse-of-moores-garden-of-eden-theorem, statistical-mechanics-of-cellular-automata]
+sources: [theory-of-self-reproducing-automata, tsra-editors-introduction, tsra-lecture-2, tsra-lecture-3, tsra-lecture-4, tsra-lecture-5, tsra-part2-ch1, tsra-part2-ch2, tsra-part2-ch3, tsra-part2-ch4, tsra-part2-ch5, endomorphisms-and-automorphisms-of-the-shift-dynamical-system, machine-models-of-self-reproduction, converse-of-moores-garden-of-eden-theorem, statistical-mechanics-of-cellular-automata, universality-and-complexity-in-cellular-automata]
 updated: 2026-09-24
 ---
 
@@ -98,10 +98,31 @@ resemble thermodynamics becomes something measurable. The
 [[game-of-life](pages/game-of-life.md)] enters as a universal two-state rule built from
 glider-stream circuits.
 
+**Four classes.** Wolfram (1984) widens the survey to more values per cell and larger
+neighbourhoods, sampling mostly
+[[totalistic-cellular-automaton](pages/totalistic-cellular-automaton.md)] rules. Every rule
+he tried falls into one of four [[wolfram-classes](pages/wolfram-classes.md)]: uniform,
+separate periodic structures, chaos, and complex localized structures. The first three
+match limit points, limit cycles and strange attractors. Class 4 is absent among the
+elementary rules, is conjectured to be exactly the rules capable of universal computation,
+and so behaves in ways that can be found only by running the rule. Set and measure
+entropies, dimensions and propagation speeds
+([[set-and-measure-entropy](pages/set-and-measure-entropy.md)]) separate the classes. A
+cellular automaton can never produce a random space-time pattern. A finite
+predecessor-building procedure decides whether a 1D rule reaches every block, which makes
+[[garden-of-eden](pages/garden-of-eden.md)] patterns decidable in one dimension. Two of
+Wolfram's reachability results are Hedlund's theorems on
+[[permutive-map](pages/permutive-map.md)]s and balanced preimages, reached independently.
+
 ## Open Questions
 
-- Why exactly two universality classes? Wolfram conjectures it is because rules simulate each
-  other under short encodings. Is that the whole story?
+- Why exactly two universality classes among the elementary rules, when range-2 class 3 rules
+  show a continuous range of clearing exponents? Wolfram conjectures the elementary classes
+  come from rules simulating each other under short encodings. Is that the whole story?
+- Do the four classes really cover every 1D rule, and is class 4 exactly the universal
+  rules? Code 20 lacked only a glider gun. Is it universal?
+- Is there a necessary condition on a rule for it to reach every block? Wolfram knew none;
+  Hedlund's balanced-preimage theorem gives one in terms of block counts.
 - Wolfram judged elementary rules too simple for universal computation. Rule 110 is outside
   his 32 legal rules, and Cook (2004), on the reading list, is the test of this claim.
 - What exactly is von Neumann's complexity threshold, and does the 29-state construction
@@ -157,3 +178,7 @@ glider-stream circuits.
 - [[self-organization](pages/self-organization.md)]
 - [[irreversibility-and-entropy](pages/irreversibility-and-entropy.md)]
 - [[game-of-life](pages/game-of-life.md)]
+- [[wolfram-classes](pages/wolfram-classes.md)]
+- [[set-and-measure-entropy](pages/set-and-measure-entropy.md)]
+- [[totalistic-cellular-automaton](pages/totalistic-cellular-automaton.md)]
+- [[stephen-wolfram](pages/stephen-wolfram.md)]

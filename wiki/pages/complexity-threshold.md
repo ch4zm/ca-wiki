@@ -3,7 +3,7 @@ title: Complexity Threshold
 category: Concepts
 summary: Von Neumann's claim that below a critical level of complexity automata can only build simpler things, while above it self-reproduction and growth of complexity become possible
 tags: [concept, complexity, self-reproduction, von-neumann]
-sources: [tsra-editors-introduction, tsra-lecture-1, tsra-lecture-2, tsra-lecture-3, tsra-lecture-4, tsra-lecture-5]
+sources: [tsra-editors-introduction, tsra-lecture-1, tsra-lecture-2, tsra-lecture-3, tsra-lecture-4, tsra-lecture-5, universality-and-complexity-in-cellular-automata]
 created: 2026-09-24
 updated: 2026-09-24
 ---
@@ -60,8 +60,16 @@ examples like this are worked out, much as energy and entropy were abstracted fr
 simple systems.[^12] The [[universal-constructor](pages/universal-constructor.md)] scheme shows how self-reproduction works above the
 threshold.
 
+**A threshold in rule space (own reasoning).** Wolfram's survey gives a small-scale
+version of the universality threshold. No rule with two values and nearest neighbours
+(k = 2, r = 1) shows class 4 behaviour, and he judges them too simple for universal
+computation. Class 4 appears once the range is 2 or the values are 3, in about 6-7% of
+totalistic rules, and he conjectures that those rules are universal
+([[wolfram-classes](pages/wolfram-classes.md)]).[^13]
+
 ## Appearances in Sources
 
+- [[universality-and-complexity-in-cellular-automata](pages/universality-and-complexity-in-cellular-automata.md)] - class 4, conjectured universal, is absent for k = 2, r = 1 and appears for slightly larger rules (link is own reasoning)
 - [[tsra-editors-introduction](pages/tsra-editors-introduction.md)] — Burks's summary, with the thermodynamic analogy
 - [[tsra-lecture-1](pages/tsra-lecture-1.md)] — element count as the working measure of complexity
 - [[tsra-lecture-2](pages/tsra-lecture-2.md)] — the minimum complexity for universality
@@ -71,6 +79,7 @@ threshold.
 
 ## Related Concepts
 
+- [[wolfram-classes](pages/wolfram-classes.md)] - where class 4 first appears in rule space
 - [[self-reproduction](pages/self-reproduction.md)] — becomes possible above the threshold
 - [[universal-constructor](pages/universal-constructor.md)] — the mechanism of self-reproduction above the threshold
 - [[theory-of-automata](pages/theory-of-automata.md)] — complexity is its central concept
@@ -92,3 +101,4 @@ threshold.
 [^10]: [[tsra-lecture-4](pages/tsra-lecture-4.md)] p.70 — "Thus error considerations become more important as the system becomes more complex."
 [^11]: [[tsra-editors-introduction](pages/tsra-editors-introduction.md)] p.23 — "Von Neumann thought that the chief problems of automata theory center around the concept of complexity. This very concept needs rigorous definition."
 [^12]: [[tsra-lecture-5](pages/tsra-lecture-5.md)] pp.79-80 [synthesis] — complication is degenerative below a minimum number of parts, probably in the millions for his parts; above it synthesis "can become explosive"; complication cannot be defined correctly until critical examples are studied, as with energy and entropy
+[^13]: [[universality-and-complexity-in-cellular-automata](pages/universality-and-complexity-in-cellular-automata.md)] pp.5, 31 [synthesis] - Table I: class 4 fraction 0 for k = 2, r = 1; 0.06 for k = 2, r = 2 and r = 3; 0.07 for k = 3, r = 1; "k = 2, r = 1 cellular automata are too simple to support universal computation"; class 4 rules with k = 2, r = 2 and k = 3, r = 1 suggest "even such apparently simple systems may be capable of universal computation"

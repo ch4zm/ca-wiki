@@ -3,7 +3,7 @@ title: Shift Dynamical System
 category: Concepts
 summary: The full shift - all two-way infinite sequences over a finite alphabet, with the product (Cantor) topology and the left shift σ; its closed invariant subsets are subshifts; the phase space on which one-dimensional cellular automata act
 tags: [concept, symbolic-dynamics, shift, subshift, cantor-set, one-dimensional]
-sources: [endomorphisms-and-automorphisms-of-the-shift-dynamical-system]
+sources: [endomorphisms-and-automorphisms-of-the-shift-dynamical-system, universality-and-complexity-in-cellular-automata]
 created: 2026-09-24
 updated: 2026-09-24
 ---
@@ -57,12 +57,24 @@ continuous map of X(S) commuting with σ. By the
 arises this way. Von Neumann's cellular setting keeps only finitely many non-blank cells.
 X(S) instead allows arbitrary infinite configurations.
 
+**The physicist's version.** Wolfram (1984) uses the same space. He identifies infinite
+configurations with points of a Cantor set, which differ from real numbers because
+.1111… and 1.0000… are different points. Rules act on it as continuous maps that commute
+with shifts.[^5] He measures subsets of it by block counts and entropies, and the limit
+gives the set dimension of a rule's attractor
+([[set-and-measure-entropy](pages/set-and-measure-entropy.md)]). The configurations a rule
+can produce after finitely many steps form a *regular language*, a set of strings a
+finite automaton recognizes. Wolfram notes this is the same idea as a *sofic system*, a
+kind of subshift (Weiss 1973, cited via Wolfram and not read).[^6]
+
 ## Appearances in Sources
 
+- [[universality-and-complexity-in-cellular-automata](pages/universality-and-complexity-in-cellular-automata.md)] - configurations as a Cantor set, continuous shift-invariant rules, and the regular-language (sofic) description of reachable configurations
 - [[endomorphisms-and-automorphisms-of-the-shift-dynamical-system](pages/endomorphisms-and-automorphisms-of-the-shift-dynamical-system.md)] — §§1-2, 7 define the space, its subsystems, and the classes of points
 
 ## Related Concepts
 
+- [[set-and-measure-entropy](pages/set-and-measure-entropy.md)] - entropies and dimensions of subsets of the configuration space
 - [[curtis-hedlund-lyndon-theorem](pages/curtis-hedlund-lyndon-theorem.md)] — the continuous maps commuting with σ
 - [[surjective-shift-endomorphism](pages/surjective-shift-endomorphism.md)] — onto maps of X(S) and their preimages
 - [[automorphism-group-of-the-shift](pages/automorphism-group-of-the-shift.md)] — the invertible ones
@@ -72,3 +84,5 @@ X(S) instead allows arbitrary infinite configurations.
 [^2]: [[endomorphisms-and-automorphisms-of-the-shift-dynamical-system](pages/endomorphisms-and-automorphisms-of-the-shift-dynamical-system.md)] pp.322-323 [synthesis] — definition of expansive; (X(S), σ) is expansive; closed invariant Y gives a subdynamical system; Thm 2.1: for Z compact, totally disconnected, metric and φ a homeomorphism, (Z, φ) expansive ⇔ isomorphic to some (Y, σ)
 [^3]: [[endomorphisms-and-automorphisms-of-the-shift-dynamical-system](pages/endomorphisms-and-automorphisms-of-the-shift-dynamical-system.md)] p.320 [synthesis] — subdynamical systems as models of minimal sets; geodesic flows on compact manifolds of negative curvature characterized by symbolic bisequences; "Recent work of Smale [27] shows that the shift dynamical system is ubiquitous."
 [^4]: [[endomorphisms-and-automorphisms-of-the-shift-dynamical-system](pages/endomorphisms-and-automorphisms-of-the-shift-dynamical-system.md)] pp.338-341 [synthesis] — Remarks 7.1, 7.4, 7.12, 7.14 give block characterizations of periodic, almost periodic, recurrent, and transitive points; Remark 7.6 (periodic points countable and dense); Remark 7.15 (BT(S) invariant residual G_δ); Remark 7.17 (mixing)
+[^5]: [[universality-and-complexity-in-cellular-automata](pages/universality-and-complexity-in-cellular-automata.md)] p.4 [synthesis] - configurations "naturally identified as elements of a Cantor set (e.g. [3])", differing from real numbers "through the inequivalence of configurations such as .111111... and 1.0000..."; the mappings are "invariant under shifts" and "also continuous"
+[^6]: [[universality-and-complexity-in-cellular-automata](pages/universality-and-complexity-in-cellular-automata.md)] pp.22-23 [synthesis] - "A regular grammar [15-18] (or 'sofic system' [19])"; [19] Weiss (1973), Coven and Paul (1975); configurations generated after one step "may always be specified by a regular grammar"

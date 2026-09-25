@@ -3,7 +3,7 @@ title: Self-Reproduction (automata)
 category: Concepts
 summary: The problem of what logical organization lets an automaton construct a copy of itself — von Neumann's founding question for cellular automata
 tags: [concept, self-reproduction, von-neumann, construction]
-sources: [tsra-editors-introduction, tsra-lecture-5, tsra-part2-ch1, tsra-part2-ch2, tsra-part2-ch5, machine-models-of-self-reproduction, statistical-mechanics-of-cellular-automata]
+sources: [tsra-editors-introduction, tsra-lecture-5, tsra-part2-ch1, tsra-part2-ch2, tsra-part2-ch5, machine-models-of-self-reproduction, statistical-mechanics-of-cellular-automata, universality-and-complexity-in-cellular-automata]
 created: 2026-09-24
 updated: 2026-09-24
 ---
@@ -95,8 +95,18 @@ identical and that vary, for example by drifting under noise or carrying a count
 The mechanism uses no description and no constructor. By the inheritable-mutation
 criterion above, it counts as a trivial case.[^12]
 
+**Reproducers hidden in noise.** Wolfram (1984) speculates in the other direction, about
+class 4 rules ([[wolfram-classes](pages/wolfram-classes.md)]). A long enough random initial
+state should contain, somewhere, a stretch that evolves into a self-reproducing
+"organism" able to take over its surroundings. Such rare stretches must occur in a truly
+infinite random start, and they would dominate its long-run statistics.[^20] He frames
+this with an *evolutionary probability*, the chance that a structure has appeared after t
+steps from a random start. For a self-reproducing structure it may start small and later
+grow large.[^21]
+
 ## Appearances in Sources
 
+- [[universality-and-complexity-in-cellular-automata](pages/universality-and-complexity-in-cellular-automata.md)] - speculation that long random starts in class 4 rules contain self-reproducing organisms
 - [[statistical-mechanics-of-cellular-automata](pages/statistical-mechanics-of-cellular-automata.md)] — trivial self-reproduction of any pattern by superposition in rule 90, and the overcrowding limit
 - [[machine-models-of-self-reproduction](pages/machine-models-of-self-reproduction.md)] — formal definition, trivial cases, the quadratic bound, Garden-of-Eden limits, kinematic models
 - [[tsra-part2-ch5](pages/tsra-part2-ch5.md)] — the self-reproducing automaton completed in the 29-state rule
@@ -107,6 +117,7 @@ criterion above, it counts as a trivial case.[^12]
 
 ## Related Concepts
 
+- [[wolfram-classes](pages/wolfram-classes.md)] - class 4 rules may hide self-reproducers in random starts
 - [[rule-90](pages/rule-90.md)] — self-reproduction without a description, by superposition
 - [[initially-quiescent-automaton](pages/initially-quiescent-automaton.md)] — the form every offspring is built in
 - [[garden-of-eden](pages/garden-of-eden.md)] — patterns no self-reproducer can contain
@@ -142,3 +153,5 @@ criterion above, it counts as a trivial case.[^12]
 [^17]: [[machine-models-of-self-reproduction](pages/machine-models-of-self-reproduction.md)] pp.23-24, 26 [synthesis] - a self-reproducing configuration containing a copy of any given configuration is impossible by Theorem 2; no self-reproducing configuration can contain a Garden-of-Eden configuration
 [^18]: [[machine-models-of-self-reproduction](pages/machine-models-of-self-reproduction.md)] p.30 - "Can a tessellation structure have a self-reproducing configuration without having an erasable configuration ?"
 [^19]: [[statistical-mechanics-of-cellular-automata](pages/statistical-mechanics-of-cellular-automata.md)] p.639 [synthesis] — "a very simple form of self-reproduction with the elementary modulo-two rule" (Fig. 33); two exact copies of any initial sequence after τ = 2^j, four after a further 2^(j−1), the inner pair annihilate; "Purely geometrical 'overcrowding' thus prevents exponential multiplication"; pattern size grows at most as (2τ)ᵈ, slower than required; exponential self-reproduction only if copies "exhibit variability", e.g. a random walk in response to noise or a "counter"
+[^20]: [[universality-and-complexity-in-cellular-automata](pages/universality-and-complexity-in-cellular-automata.md)] p.33 [synthesis] - "it seems likely that a sufficiently long (but finite) initial sequence should evolve to behave as a self-reproducing 'organism', capable of eventually taking over its environment"; such sequences "must appear in a truly infinite (typical) initial configuration" and may "come to dominate the statistical properties of the system"
+[^21]: [[universality-and-complexity-in-cellular-automata](pages/universality-and-complexity-in-cellular-automata.md)] p.34 [synthesis] - "evolutionary probability" p_E(t) for a structure to evolve after t steps from a random initial state; "one may imagine that the probability for a self-reproducing structure begins small, but later increases to a substantial value"

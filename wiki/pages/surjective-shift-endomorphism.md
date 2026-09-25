@@ -3,7 +3,7 @@ title: Surjective Shift Endomorphism
 category: Concepts
 summary: Onto block maps of the full shift - onto iff no finite block is missing iff every block has exactly S^(n-1) preimages; bounded fibers, no finite collisions, a constant degree M on transitive points, Welch's L·M·R = S^(n-1), and Rothaus's cross-section theorem
 tags: [concept, surjectivity, block-map, preimage, welch-indices, symbolic-dynamics, one-dimensional]
-sources: [endomorphisms-and-automorphisms-of-the-shift-dynamical-system]
+sources: [endomorphisms-and-automorphisms-of-the-shift-dynamical-system, universality-and-complexity-in-cellular-automata]
 created: 2026-09-24
 updated: 2026-09-24
 ---
@@ -104,12 +104,23 @@ on finitely many cells have the same successor. Thm 5.4 also gives a finite test
 count preimages of blocks. The balanced-preimage property is special to onto maps, since
 non-onto maps have blocks with no preimage at all.
 
+Wolfram (1984) reaches parts of this theory from the physics side without citing Hedlund
+(the match is own reasoning). He proves that a rule one-to-one in its first or last input
+reaches every block, which is permutive-implies-onto. He notes that additive rules give
+every block exactly k^(2r) predecessors, the balanced count S^(n−1) with n = 2r + 1. He also
+gives a finite procedure that decides whether a 1D rule reaches every block, which is a
+test for surjectivity. He says no necessary condition on the rule is known, though
+Thm 5.4 here is an if-and-only-if in terms of block counts
+([[set-and-measure-entropy](pages/set-and-measure-entropy.md)]).[^25]
+
 ## Appearances in Sources
 
+- [[universality-and-complexity-in-cellular-automata](pages/universality-and-complexity-in-cellular-automata.md)] - independent physics-side versions: one-to-one at an end implies every block is reachable; k^(2r) predecessors for additive rules; a finite reachability test (the match is own reasoning)
 - [[endomorphisms-and-automorphisms-of-the-shift-dynamical-system](pages/endomorphisms-and-automorphisms-of-the-shift-dynamical-system.md)] — §§5, 9-18 develop the theory of onto maps
 
 ## Related Concepts
 
+- [[set-and-measure-entropy](pages/set-and-measure-entropy.md)] - Wolfram's reachability results and the critical block length
 - [[curtis-hedlund-lyndon-theorem](pages/curtis-hedlund-lyndon-theorem.md)] — reduces every endomorphism to a block map
 - [[permutive-map](pages/permutive-map.md)] — the simplest onto maps; L = 1 or R = 1
 - [[automorphism-group-of-the-shift](pages/automorphism-group-of-the-shift.md)] — the onto maps with exactly one preimage at every point
@@ -140,3 +151,4 @@ non-onto maps have blocks with no preimage at all.
 [^22]: [[endomorphisms-and-automorphisms-of-the-shift-dynamical-system](pages/endomorphisms-and-automorphisms-of-the-shift-dynamical-system.md)] pp.369-370 [synthesis] — Thm 16.11 for φ ∈ E(S), condition (4) "any two distinct members of φ⁻¹(x) are separated"
 [^23]: [[endomorphisms-and-automorphisms-of-the-shift-dynamical-system](pages/endomorphisms-and-automorphisms-of-the-shift-dynamical-system.md)] pp.345, 355-357 [synthesis] — Thm 9.1 (periodic), Cor 12.5 (almost periodic), Cor 12.8 (recurrent), Cor 12.11 (transitive, one-sided and bilateral)
 [^24]: [[endomorphisms-and-automorphisms-of-the-shift-dynamical-system](pages/endomorphisms-and-automorphisms-of-the-shift-dynamical-system.md)] p.357 [synthesis] — Thm 13.2: if φ(Y) = X(S) for closed invariant Y, then Y = X(S), via a transitive point's transitive preimage
+[^25]: [[universality-and-complexity-in-cellular-automata](pages/universality-and-complexity-in-cellular-automata.md)] pp.27-28 [synthesis] - progressive construction of predecessors gives "a finite algorithm for determining whether all possible arbitrarily long sequences of site values may be generated"; additive rules: all blocks reached, each with exactly k^(2r) predecessors; F injective in its first or last argument gives s⁽ˣ⁾(X) = 1 for all X; "A necessary condition is not known"

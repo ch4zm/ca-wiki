@@ -3,7 +3,7 @@ title: Permutive Map
 category: Concepts
 summary: A block map that permutes the alphabet in its leftmost (or rightmost) variable whatever the other variables are; permutive at one end implies onto, and at both ends exactly S^(n-1)-to-one (Hedlund; converse by Rothaus)
 tags: [concept, permutive, block-map, surjectivity, symbolic-dynamics, one-dimensional]
-sources: [endomorphisms-and-automorphisms-of-the-shift-dynamical-system]
+sources: [endomorphisms-and-automorphisms-of-the-shift-dynamical-system, universality-and-complexity-in-cellular-automata]
 created: 2026-09-24
 updated: 2026-09-24
 ---
@@ -47,12 +47,24 @@ permutive in x₁ equals a window-1 map. It is either the identity or the comple
 0 ↔ 1 (Thm 6.9). This fails for S = 3. Hedlund's window-2 map on {0, 1, 2} is permutive in
 x₁, depends on x₂, and is still one-to-one.[^10]
 
+**Wolfram's version.** Wolfram (1984) proves the permutive ⇒ onto direction for cellular
+automata in his own terms: if the rule is one-to-one in its first or last argument, every
+block of every length can be produced, so the configurations keep full spatial set
+dimension 1. His proof also adds one cell at a time. He extends it to compositions of such
+rules and remarks that the condition is not necessary. He does not cite Hedlund, and the
+identification with permutivity is own reasoning
+([[set-and-measure-entropy](pages/set-and-measure-entropy.md)]).[^11] The XOR rules, such as
+[[additive-cellular-automaton](pages/additive-cellular-automaton.md)] rule 90, are
+permutive at both ends (own reasoning).
+
 ## Appearances in Sources
 
+- [[universality-and-complexity-in-cellular-automata](pages/universality-and-complexity-in-cellular-automata.md)] - the same one-to-one-at-an-end condition, proved in cellular-automaton terms (identification is own reasoning)
 - [[endomorphisms-and-automorphisms-of-the-shift-dynamical-system](pages/endomorphisms-and-automorphisms-of-the-shift-dynamical-system.md)] — §6 (definition, onto and S^(n−1)-to-one results), §17 (Rothaus's converse)
 
 ## Related Concepts
 
+- [[set-and-measure-entropy](pages/set-and-measure-entropy.md)] - Wolfram's form of the result
 - [[surjective-shift-endomorphism](pages/surjective-shift-endomorphism.md)] — permutive maps are the standard onto examples; L = 1 / R = 1
 - [[automorphism-group-of-the-shift](pages/automorphism-group-of-the-shift.md)] — the S = 3 permutive automorphism
 - [[curtis-hedlund-lyndon-theorem](pages/curtis-hedlund-lyndon-theorem.md)] — block maps in general
@@ -67,3 +79,4 @@ x₁, depends on x₂, and is still one-to-one.[^10]
 [^8]: [[endomorphisms-and-automorphisms-of-the-shift-dynamical-system](pages/endomorphisms-and-automorphisms-of-the-shift-dynamical-system.md)] p.370 [synthesis] — "The converse of this has been proved by O. S. Rothaus"; Thm 17.2 (1)-(3)
 [^9]: [[endomorphisms-and-automorphisms-of-the-shift-dynamical-system](pages/endomorphisms-and-automorphisms-of-the-shift-dynamical-system.md)] pp.370-371 — "It is not known whether the same conclusion can be reached if it is assumed that card f∞⁻¹(x) = S^(n−1) for some x ∈ X(S)."
 [^10]: [[endomorphisms-and-automorphisms-of-the-shift-dynamical-system](pages/endomorphisms-and-automorphisms-of-the-shift-dynamical-system.md)] pp.334-335 [synthesis] — Thm 6.9: card S = 2, f permutive in x₁ and f∞ one-to-one implies f∞ = g∞ with g ∈ F(S, 1), i.e. the identity or the complement; "the preceding theorem is no longer true if card S > 2", with the S = {0, 1, 2} example
+[^11]: [[universality-and-complexity-in-cellular-automata](pages/universality-and-complexity-in-cellular-automata.md)] p.28 [synthesis] - "cellular automata evolving according to eq. (2.1) yield s⁽ˣ⁾(X) = 1 for all X, so that d⁽ˣ⁾ = 1, if F is an injective (one-to-one) function of either its first or last argument (or can be obtained by composition of functions with such a property)"; induction by adding a site at one end; "it is apparently not necessary"

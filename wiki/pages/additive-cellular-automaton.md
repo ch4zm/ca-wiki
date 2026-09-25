@@ -3,7 +3,7 @@ title: Additive Cellular Automaton
 category: Concepts
 summary: Cellular automata obeying superposition modulo k - evolution from any start is the XOR of evolutions from single seeds; among elementary rules only 0, 90, 150, 204; exactly solvable, and a separate universality class from the non-additive complex rules
 tags: [concept, additive, superposition, wolfram, exact-results, number-theory]
-sources: [statistical-mechanics-of-cellular-automata]
+sources: [statistical-mechanics-of-cellular-automata, universality-and-complexity-in-cellular-automata]
 created: 2026-09-24
 updated: 2026-09-24
 ---
@@ -53,6 +53,15 @@ Wolfram uses them as benchmarks throughout:
   ones with an even number of 1s. With N even it reaches a quarter. A fixed fraction
   therefore stays reachable as N → ∞, while for non-additive rules the reachable fraction
   goes to 0 ([[irreversibility-and-entropy](pages/irreversibility-and-entropy.md)]).[^8]
+- **Every block reachable.** In Wolfram (1984), with k values and range r, every block
+  of every length can be produced, and each has exactly k^(2r) predecessor blocks. So the
+  spatial set and measure dimensions are both 1, and the temporal set entropy is 1 for all
+  block lengths. Wolfram calls additive rules "maximally chaotic"
+  ([[set-and-measure-entropy](pages/set-and-measure-entropy.md)]).[^12] Own reasoning: the
+  k^(2r) count is Hedlund's balanced-preimage count S^(n−1) with window n = 2r + 1
+  ([[surjective-shift-endomorphism](pages/surjective-shift-endomorphism.md)]). In the
+  four-class scheme they are class 3 ([[wolfram-classes](pages/wolfram-classes.md)]). The
+  k = 2, r = 2 totalistic code 42, the XOR of five cells, is the example.[^12]
 
 **A separate universality class.** From random starts, the density of triangles of base n
 falls off as λ⁻ⁿ, with λ ≈ 2 for rules 90 and 150 and λ ≈ 4/3 for every non-additive
@@ -71,10 +80,13 @@ cell itself, are additive as well.[^11]
 
 ## Appearances in Sources
 
+- [[universality-and-complexity-in-cellular-automata](pages/universality-and-complexity-in-cellular-automata.md)] - additive rules reach every block, with dimension 1; code 42 as a class 3 example
 - [[statistical-mechanics-of-cellular-automata](pages/statistical-mechanics-of-cellular-automata.md)] — defines additivity, identifies the additive elementary rules, and derives their exact density, damage-spreading, cycle and reachability results
 
 ## Related Concepts
 
+- [[set-and-measure-entropy](pages/set-and-measure-entropy.md)] - additive rules have entropy and dimension 1
+- [[wolfram-classes](pages/wolfram-classes.md)] - additive rules are the most chaotic class 3 rules
 - [[rule-90](pages/rule-90.md)] — the main additive rule
 - [[elementary-cellular-automaton](pages/elementary-cellular-automaton.md)] — the family in which they are identified
 - [[fractal-dimension](pages/fractal-dimension.md)] — the dimensions of their seed patterns
@@ -93,3 +105,4 @@ cell itself, are additive as well.[^11]
 [^9]: [[statistical-mechanics-of-cellular-automata](pages/statistical-mechanics-of-cellular-automata.md)] pp.617, 619 [synthesis] — T(n) ~ λ⁻ⁿ, λ ~ 4/3 for nonadditive rules, λ ~ 2 for additive rules; Fig. 16
 [^10]: [[statistical-mechanics-of-cellular-automata](pages/statistical-mechanics-of-cellular-automata.md)] p.614 [synthesis] — Grassberger (1982): rule 18 configurations with even sites zero evolve as rule 90; domains separated by kinks that random-walk (⟨x²⟩ = t) and annihilate, density ~ (4πt)^(−1/2); alternate sites ultimately follow rule 90
 [^11]: [[statistical-mechanics-of-cellular-automata](pages/statistical-mechanics-of-cellular-automata.md)] pp.630, 637 [synthesis] — modulo-k rules obey additive superposition and tend to self-similar figures; 2D type-I modulo-two rules in analogy with rules 90 and 150 (Fig. 32)
+[^12]: [[universality-and-complexity-in-cellular-automata](pages/universality-and-complexity-in-cellular-automata.md)] pp.27-29 [synthesis] - for additive rules (such as code 42) "all possible blocks of any length X may be reached, and have exactly k^(2r) predecessors of length X + 2r"; d⁽ˣ⁾ = d_μ⁽ˣ⁾ = 1 (7.1); "maximally chaotic"; "s⁽ᵗ⁾(T) = 1 holds for all T for any additive cellular automaton rule"

@@ -3,7 +3,7 @@ title: Fractal Dimension (self-similar CA patterns)
 category: Concepts
 summary: The Hausdorff-Besicovitch dimension of the self-similar patterns cellular automata grow from simple seeds - log₂3 ≈ 1.59 for almost every complex elementary rule, log₂(2φ) ≈ 1.69 for rule 150, with values for modulo-k and higher-dimensional rules
 tags: [concept, fractal, self-similarity, scale-invariance, wolfram]
-sources: [statistical-mechanics-of-cellular-automata]
+sources: [statistical-mechanics-of-cellular-automata, universality-and-complexity-in-cellular-automata]
 created: 2026-09-24
 updated: 2026-09-24
 ---
@@ -56,6 +56,18 @@ because it depends on the absolute scale of the cell spacing
 - Reversible second-order rules also give self-similar patterns, but these are symmetric
   in time ([[irreversibility-and-entropy](pages/irreversibility-and-entropy.md)]).
 
+**Class 3 rules with range 2.** Wolfram (1984) grows k = 2, r = 2 totalistic class 3 rules
+from a single nonzero cell ([[wolfram-classes](pages/wolfram-classes.md)]). All of them
+grow without bound. Many, such as codes 2 and 34, give self-similar patterns of dimension
+log₂3 ≈ 1.59. Code 38 gives about 1.75. Every self-similar pattern has dimension d < 2, so
+its density of nonzero cells falls to zero as t^(d−2). Other rules, such as code 10, grow
+irregular patterns even from one cell. These keep a nonzero density and show no
+large-scale structure.[^9] Some regular patterns stay the same when more starting cells
+are added (code 12), and others break down (code 2). The two kinds are about equally
+common.[^10] (A different "dimension" is the set dimension of the whole collection of
+configurations a rule produces. See
+[[set-and-measure-entropy](pages/set-and-measure-entropy.md)].)
+
 **Conjecture.** Because self-similarity is generic for complex rules grown from simple
 seeds, Wolfram conjectures that many natural systems with self-similar structure get it
 "through local processes which follow cellular automaton rules". He offers this as a
@@ -63,10 +75,13 @@ possible explanation of how common self-similarity is in nature.[^8]
 
 ## Appearances in Sources
 
+- [[universality-and-complexity-in-cellular-automata](pages/universality-and-complexity-in-cellular-automata.md)] - single-seed growth under class 3 rules with k = 2, r = 2; dimension 1.75 for code 38; irregular seeded growth
 - [[statistical-mechanics-of-cellular-automata](pages/statistical-mechanics-of-cellular-automata.md)] — the definition, the elementary-rule values, the seed-independence argument, the modulo-k and 2D values, and the conjecture about nature
 
 ## Related Concepts
 
+- [[wolfram-classes](pages/wolfram-classes.md)] - self-similar seeded growth is a class 3 behaviour
+- [[set-and-measure-entropy](pages/set-and-measure-entropy.md)] - the dimension of a set of configurations, a different quantity
 - [[rule-90](pages/rule-90.md)] — the canonical log₂3 pattern
 - [[additive-cellular-automaton](pages/additive-cellular-automaton.md)] — where the dimensions can be derived exactly
 - [[elementary-cellular-automaton](pages/elementary-cellular-automaton.md)] — the simple/complex split that decides whether a fractal appears
@@ -80,3 +95,5 @@ possible explanation of how common self-similarity is in nature.[^8]
 [^6]: [[statistical-mechanics-of-cellular-automata](pages/statistical-mechanics-of-cellular-automata.md)] p.617 — "Triangles of all sizes are nevertheless obtained, so that structure is generated on all scales ... However, the pattern is not self-similar, but depends on the absolute scale defined by the spacing between sites."
 [^7]: [[statistical-mechanics-of-cellular-automata](pages/statistical-mechanics-of-cellular-automata.md)] pp.626 n.12, 630, 637 [synthesis] — modulo-k with k prime: D_k = 1 + log_k((k+1)/2), D₃ ≈ 1.63, D₅ ≈ 1.68; composite k depends on the seed value; D → 2 as k → ∞; 2D type-I modulo-two rules log₂5 ≈ 2.32 and 1 + log₂(1+√3) ≈ 2.45; d dimensions log₂(2d+1); reversible rules give self-similar patterns "symmetrical in time"
 [^8]: [[statistical-mechanics-of-cellular-automata](pages/statistical-mechanics-of-cellular-automata.md)] pp.617, 641 [synthesis] — conjecture that many self-similar systems "attain this structure through local processes which follow cellular automaton rules"; "This result may provide some explanation for the widespread occurrence of self-similarity in natural systems."
+[^9]: [[universality-and-complexity-in-cellular-automata](pages/universality-and-complexity-in-cellular-automata.md)] p.25 [synthesis] - Fig. 9: "Unbounded growth ... is evident in all cases"; codes 2 and 34 give d = log₂3 ≈ 1.59; code 38 d ≈ 1.75; "all self-similar patterns have d < 2, and lead to an asymptotic density of sites which tends to zero as t^(d−2)"; code 10 irregular from a single site, density tending to a nonzero value, "no large-scale structure"
+[^10]: [[universality-and-complexity-in-cellular-automata](pages/universality-and-complexity-in-cellular-automata.md)] p.25 [synthesis] - regular fractal patterns stable under added initial sites for code 12, unstable for code 2; "The numbers of rules yielding stable and unstable fractal patterns are found to be roughly comparable"

@@ -3,7 +3,7 @@ title: Self-Organization (cellular automata)
 category: Concepts
 summary: Order arising from disorder under deterministic local rules - complex cellular automata turn random initial states into equilibria with start-independent densities, correlations, and triangle/sequence spectra that fall into two universality classes (λ ≈ 4/3 non-additive, λ ≈ 2 additive)
 tags: [concept, self-organization, universality, statistical-mechanics, wolfram, noise]
-sources: [statistical-mechanics-of-cellular-automata]
+sources: [statistical-mechanics-of-cellular-automata, universality-and-complexity-in-cellular-automata]
 created: 2026-09-24
 updated: 2026-09-24
 ---
@@ -92,12 +92,28 @@ protective "membranes". These shield regions from outside noise, so very regular
 can grow from rare seeds. Any long enough random configuration contains a seed, which then
 dominates the long-time behaviour.[^17]
 
+**Range 2 and beyond.** Wolfram (1984) sees the same self-organization across all class 3
+rules ([[wolfram-classes](pages/wolfram-classes.md)]). Irreversible evolution turns a
+random start into patterns with structure, whose form depends on the rule's
+attractor.[^18] The triangular "clearings" appear again. Among k = 2, r = 2 totalistic rules
+their density falls with size n roughly as σ⁻ⁿ, and σ takes a *continuous* range of
+values from rule to rule. Larger σ gives more regular patterns. (For the elementary rules
+the 1983 paper found just two values of λ, one for additive rules and one for the rest.)
+The more regular a class 3 pattern, the larger its entropy drop, and Wolfram reads this as
+more self-organization needing more irreversibility
+([[set-and-measure-entropy](pages/set-and-measure-entropy.md)]).[^19] The same ranking
+shows in the critical block length: rules whose configurations lose blocks sooner tend to
+give more regular patterns.[^19]
+
 ## Appearances in Sources
 
+- [[universality-and-complexity-in-cellular-automata](pages/universality-and-complexity-in-cellular-automata.md)] - self-organization across class 3; a continuous range of clearing exponents σ; regularity tied to irreversibility
 - [[statistical-mechanics-of-cellular-automata](pages/statistical-mechanics-of-cellular-automata.md)] — Sec. III (local statistics), the simulation-encoding conjecture (Sec. IV), membranes (Sec. V)
 
 ## Related Concepts
 
+- [[wolfram-classes](pages/wolfram-classes.md)] - self-organization in each of the four classes
+- [[set-and-measure-entropy](pages/set-and-measure-entropy.md)] - the entropy drop that measures it
 - [[irreversibility-and-entropy](pages/irreversibility-and-entropy.md)] — the ensemble-level mechanism
 - [[fractal-dimension](pages/fractal-dimension.md)] — the seeded counterpart: self-similar rather than exponentially damped structure
 - [[additive-cellular-automaton](pages/additive-cellular-automaton.md)] — the second universality class
@@ -122,3 +138,5 @@ dominates the long-time behaviour.[^17]
 [^15]: [[statistical-mechanics-of-cellular-automata](pages/statistical-mechanics-of-cellular-automata.md)] p.623 [synthesis] — trajectories become concentrated in limited regions; "This behavior makes self-organization possible, by allowing some configurations to occur with larger probabilities than others even in the large-time equilibrium limit."
 [^16]: [[statistical-mechanics-of-cellular-automata](pages/statistical-mechanics-of-cellular-automata.md)] p.641 — "Their nontrivial features are typically evident only when some form of growth inhibition is present."
 [^17]: [[statistical-mechanics-of-cellular-automata](pages/statistical-mechanics-of-cellular-automata.md)] p.631 [synthesis] — membranes that "protect" sites from external noise; regular patterns grow from seeds; "any sufficiently long disordered configuration will contain at least one, and the large time behavior of the cellular automaton will be radically affected by its presence"
+[^18]: [[universality-and-complexity-in-cellular-automata](pages/universality-and-complexity-in-cellular-automata.md)] p.1 [synthesis] - evolution to "attractors" from arbitrary initial states "allows for 'self-organizing' behaviour, in which structure may evolve at large times from structureless initial states. The nature of the attractors determines the form and extent of such structures."
+[^19]: [[universality-and-complexity-in-cellular-automata](pages/universality-and-complexity-in-cellular-automata.md)] pp.25, 27 [synthesis] - density of clearings decreases with size n roughly as σ⁻ⁿ; "Different cellular automata appear to yield a continuous range of σ values"; larger σ more regular; entropy decrease much greater for regular class 3 rules, "The more regular patterns require a higher degree of self-organization, with correspondingly greater irreversibility"; "Class 3 cellular automata with smaller Xc tend to generate more regular patterns"

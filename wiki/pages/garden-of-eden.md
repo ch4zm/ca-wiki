@@ -3,7 +3,7 @@ title: Garden-of-Eden Configuration
 category: Concepts
 summary: A cellular-automaton configuration with no predecessor, which can occur only at time zero; they exist exactly when erasable configurations do (Moore 1962, Myhill 1963)
 tags: [concept, garden-of-eden, moore, myhill, surjectivity]
-sources: [machine-models-of-self-reproduction, tsra-part2-ch5, converse-of-moores-garden-of-eden-theorem, endomorphisms-and-automorphisms-of-the-shift-dynamical-system, statistical-mechanics-of-cellular-automata]
+sources: [machine-models-of-self-reproduction, tsra-part2-ch5, converse-of-moores-garden-of-eden-theorem, endomorphisms-and-automorphisms-of-the-shift-dynamical-system, statistical-mechanics-of-cellular-automata, universality-and-complexity-in-cellular-automata]
 created: 2026-09-24
 updated: 2026-09-24
 ---
@@ -87,6 +87,20 @@ translate directly:
   S^(n−1) predecessor patterns (Thm 5.4). See
   [[surjective-shift-endomorphism](pages/surjective-shift-endomorphism.md)].[^16]
 
+**A finite test in one dimension.** Wolfram (1984) gives a procedure that builds
+predecessors one cell at a time. It turns any 1D rule into a finite automaton with at most
+2^(k^(2r)) states, and so decides in finitely many steps whether every block of every
+length can be produced (from J. Milnor's unpublished notes, cited via Wolfram). The
+output is the *critical block length* Xc, the shortest length at which some block
+cannot be produced. It is infinite when every block can be.[^20] A block that is missing at
+any time is already missing after one step.[^21] Own reasoning: a finite Xc therefore means
+a Garden-of-Eden block of length Xc, so the procedure is a decision method for
+Garden-of-Eden patterns in 1D. By Wolfram's Table II, every legal totalistic k = 2, r = 2
+rule it lists (codes 2 to 60) except the additive code 42 has one, with Xc between 3 and 36
+([[set-and-measure-entropy](pages/set-and-measure-entropy.md)]).[^20] Wolfram also shows that
+a rule one-to-one in its leftmost or rightmost input has none. This is Hedlund's
+[[permutive-map](pages/permutive-map.md)] theorem (own reasoning).[^22]
+
 **How common they are.** Wolfram links Garden-of-Eden configurations to irreversibility.
 When a rule sends several configurations to the same one, some configurations have no
 predecessor at all. He cites Moore (1962) and Aggarwal (1973) as giving criteria for their
@@ -100,6 +114,7 @@ the smallest known example in 1983 had about 300 cells.[^19] See
 
 ## Appearances in Sources
 
+- [[universality-and-complexity-in-cellular-automata](pages/universality-and-complexity-in-cellular-automata.md)] - a finite procedure for 1D rules that finds the shortest unreachable block (the critical block length); Table II values
 - [[statistical-mechanics-of-cellular-automata](pages/statistical-mechanics-of-cellular-automata.md)] - Garden-of-Eden configurations as a consequence of irreversibility, and how common they are in 1D rules and Life
 - [[machine-models-of-self-reproduction](pages/machine-models-of-self-reproduction.md)] - the definition, the name, Theorem 2 and its proof, the six assumptions
 - [[converse-of-moores-garden-of-eden-theorem](pages/converse-of-moores-garden-of-eden-theorem.md)] - the converse: Garden-of-Eden configurations require indistinguishable pairs
@@ -108,6 +123,7 @@ the smallest known example in 1983 had about 300 cells.[^19] See
 
 ## Related Concepts
 
+- [[set-and-measure-entropy](pages/set-and-measure-entropy.md)] - the critical block length Xc
 - [[irreversibility-and-entropy](pages/irreversibility-and-entropy.md)] - the many-to-one evolution that produces them
 - [[garden-of-eden-theorem](pages/garden-of-eden-theorem.md)] - the if-and-only-if result
 - [[erasable-configuration](pages/erasable-configuration.md)] - the condition equivalent to Garden-of-Eden configurations existing
@@ -138,3 +154,6 @@ the smallest known example in 1983 had about 300 cells.[^19] See
 [^17]: [[statistical-mechanics-of-cellular-automata](pages/statistical-mechanics-of-cellular-automata.md)] p.623 n.10 — "The existence of unreachable or 'garden-of-Eden' configurations in cellular automata is discussed in Moore (1962) and Aggarwal (1973), where criteria (equivalent to irreversibility) for their occurrence are given."
 [^18]: [[statistical-mechanics-of-cellular-automata](pages/statistical-mechanics-of-cellular-automata.md)] p.623 [synthesis] — rule 204 is unique in allowing all configurations to be reached; rule 90 reaches half (N odd) or ¼ (N even); rule 126 unreachable fraction tends to one, behaving as 1 − λᴺ with λ ≈ 0.88 (Martin et al. 1983, cited via this paper)
 [^19]: [[statistical-mechanics-of-cellular-automata](pages/statistical-mechanics-of-cellular-automata.md)] p.637 — "the simplest known 'unreachable' configuration contains around 300 sites"
+[^20]: [[universality-and-complexity-in-cellular-automata](pages/universality-and-complexity-in-cellular-automata.md)] pp.23, 27-28 [synthesis] - predecessor construction as a finite automaton with at most 2^(k^(2r)) states, ψ = 0 reached iff there is no predecessor; progressive construction "[21]"; "a finite algorithm for determining whether all possible arbitrarily long sequences of site values may be generated"; Table II (codes 2 to 60): Xc = ∞ only for code 42, otherwise 3 to 36
+[^21]: [[universality-and-complexity-in-cellular-automata](pages/universality-and-complexity-in-cellular-automata.md)] p.27 - "Notice that if s⁽ˣ⁾(X) = 1 after one time step, then s⁽ˣ⁾(X) = 1 at any time."
+[^22]: [[universality-and-complexity-in-cellular-automata](pages/universality-and-complexity-in-cellular-automata.md)] p.28 [synthesis] - s⁽ˣ⁾(X) = 1 for all X "if F is an injective (one-to-one) function of either its first or last argument", proved by induction on block length

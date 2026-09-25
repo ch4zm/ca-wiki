@@ -3,7 +3,7 @@ title: Cellular Automaton
 category: Concepts
 summary: A homogeneous lattice of identical finite-state cells, each updating in discrete time from its own state and its neighbours' states under one shared rule; introduced by von Neumann (after Ulam) as a medium for self-reproduction
 tags: [concept, cellular-automata, foundations, homogeneity, lattice]
-sources: [tsra-part2-ch1, tsra-part2-ch2, tsra-part2-ch3, machine-models-of-self-reproduction, endomorphisms-and-automorphisms-of-the-shift-dynamical-system, statistical-mechanics-of-cellular-automata]
+sources: [tsra-part2-ch1, tsra-part2-ch2, tsra-part2-ch3, machine-models-of-self-reproduction, endomorphisms-and-automorphisms-of-the-shift-dynamical-system, statistical-mechanics-of-cellular-automata, universality-and-complexity-in-cellular-automata]
 created: 2026-09-24
 updated: 2026-09-24
 ---
@@ -129,8 +129,23 @@ legal two-state type-I rules in 2D and 2⁵⁹ ≈ 6 × 10¹⁷ type-II rules.[^
 *totalistic* if it depends only on the sum of the neighbourhood values. The
 [[game-of-life](pages/game-of-life.md)] is a type-II totalistic rule.[^27]
 
+**General k and r.** Wolfram (1984) writes a one-dimensional rule with k values per cell
+(0 to k − 1) and *range* r: a cell's new value depends on the 2r + 1 cells within r of it
+at the previous step. The elementary rules are k = 2, r = 1.[^28] Influence spreads at most
+r cells per step, so after t steps one cell can affect at most 1 + 2rt cells, the same
+finite-speed limit Moore uses.[^28] There are k^(k^(2r+1)) rules in all. Rules can be
+composed, which gives another rule with a larger neighbourhood, and a rule that looks s
+steps back can be rewritten as a one-step rule with more values per cell.[^29] Wolfram
+also treats infinite configurations as points of a Cantor set, with rules as continuous,
+shift-invariant maps of it. This is the same arena as Hedlund's
+[[shift-dynamical-system](pages/shift-dynamical-system.md)], reached from the physics
+side.[^30] His survey of such rules sorts them into the four
+[[wolfram-classes](pages/wolfram-classes.md)], mostly using
+[[totalistic-cellular-automaton](pages/totalistic-cellular-automaton.md)] rules.
+
 ## Appearances in Sources
 
+- [[universality-and-complexity-in-cellular-automata](pages/universality-and-complexity-in-cellular-automata.md)] - general k and range r, rule counts, composition, configurations as a Cantor set
 - [[statistical-mechanics-of-cellular-automata](pages/statistical-mechanics-of-cellular-automata.md)] — the physicist's view, alternative names, applications, type-I/type-II neighbourhoods, rule counts
 - [[machine-models-of-self-reproduction](pages/machine-models-of-self-reproduction.md)] — the tessellation structure, the nine-cell neighbourhood, finite speed
 - [[tsra-part2-ch3](pages/tsra-part2-ch3.md)] — serial operation and wire-crossing in 2D
@@ -140,6 +155,8 @@ legal two-state type-I rules in 2D and 2⁵⁹ ≈ 6 × 10¹⁷ type-II rules.[^
 
 ## Related Concepts
 
+- [[wolfram-classes](pages/wolfram-classes.md)] - the four behaviour classes of 1D rules
+- [[totalistic-cellular-automaton](pages/totalistic-cellular-automaton.md)] - rules that depend only on the neighbourhood sum
 - [[elementary-cellular-automaton](pages/elementary-cellular-automaton.md)] — the simplest one-dimensional family
 - [[game-of-life](pages/game-of-life.md)] — the best-known two-dimensional rule
 - [[irreversibility-and-entropy](pages/irreversibility-and-entropy.md)] — the ensemble, statistical-mechanics view
@@ -188,3 +205,6 @@ legal two-state type-I rules in 2D and 2⁵⁹ ≈ 6 × 10¹⁷ type-II rules.[^
 [^25]: [[statistical-mechanics-of-cellular-automata](pages/statistical-mechanics-of-cellular-automata.md)] pp.602-603 [synthesis] — introduced by von Neumann and Ulam as "cellular spaces"; also called tessellation automata, homogeneous structures, cellular structures, tessellation structures, iterative arrays; any system of differential equations may be approximated by finite differences and discrete variables; nontrivial cellular automata arise with nonlinearity such as "growth inhibition"; applications to Ising-type spin systems, chemical reaction-diffusion, dendritic crystal growth, turbulence, biology, parallel computation
 [^26]: [[statistical-mechanics-of-cellular-automata](pages/statistical-mechanics-of-cellular-automata.md)] p.637 and n.14 [synthesis] — type-I neighbourhood of 2d+1 sites, type-II of 3ᵈ sites; identical when d = 1; for d = 2 "known as von Neumann and Moore neighborhoods"; legality includes rotation and reflection invariance; 2¹¹ = 2048 type-I rules for k = 2; 2⁵⁹ ≈ 6 × 10¹⁷ type-II rules
 [^27]: [[statistical-mechanics-of-cellular-automata](pages/statistical-mechanics-of-cellular-automata.md)] p.637 [synthesis] — "totalistic" cellular automata depend only on the sum of neighbourhood values; Life is a type-II example
+[^28]: [[universality-and-complexity-in-cellular-automata](pages/universality-and-complexity-in-cellular-automata.md)] p.2 [synthesis] - site values 0 through k − 1; eq. (2.1); r the "range", a neighbourhood of at most 2r + 1 sites; the affected region grows by at most r sites each step, at most 1 + 2rt sites after t steps; elementary cellular automata have k = 2, r = 1
+[^29]: [[universality-and-complexity-in-cellular-automata](pages/universality-and-complexity-in-cellular-automata.md)] p.3 [synthesis] - the set of rules closed under composition, which increases the neighbourhood; rules depending on s previous steps have equivalent first-order rules with more values; k^(k^(2r+1)) possible rules
+[^30]: [[universality-and-complexity-in-cellular-automata](pages/universality-and-complexity-in-cellular-automata.md)] p.4 [synthesis] - infinite configurations "naturally identified as elements of a Cantor set"; rules define mappings of this set, "invariant under shifts" and "also continuous"; the mapping "is usually not injective"

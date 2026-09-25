@@ -3,7 +3,7 @@ title: Irreversibility and Entropy (cellular automata)
 category: Concepts
 summary: The global, ensemble view of cellular automaton evolution - trajectories merge but never split, entropy of an equiprobable ensemble decreases, most configurations become unreachable, finite systems fall into short cycles, and reversible second-order rules restore Liouville's theorem
 tags: [concept, irreversibility, entropy, ensemble, cycles, reversible-ca, wolfram]
-sources: [statistical-mechanics-of-cellular-automata]
+sources: [statistical-mechanics-of-cellular-automata, universality-and-complexity-in-cellular-automata]
 created: 2026-09-24
 updated: 2026-09-24
 ---
@@ -103,12 +103,31 @@ Finite ones become effectively irreversible only when the boundary injects rando
 From simple seeds they grow self-similar patterns that are symmetric in time, not the
 one-directional triangles of irreversible rules.[^17]
 
+**Attractors.** Wolfram (1984) restates the picture in terms of attractors. Trajectories
+merge, so after many steps almost all starts end up on "attractors" that hold only a tiny
+fraction of all states.[^18] For a ring of N cells he uses the *state transition diagram*:
+each configuration is a node, with one arrow to its successor. Cycles are the attractors,
+trees of transients hang off them, and the leaves of the trees are configurations that can
+only be initial states. The fraction of configurations reachable in one step is a simple
+measure of irreversibility.[^18] Block entropies tie into this. The set entropy of blocks as
+long as the ring is set by the fraction of configurations reachable at that time, and in
+the long run by the fraction on cycles ([[set-and-measure-entropy](pages/set-and-measure-entropy.md)]).[^19]
+For finite class 3 rules ([[wolfram-classes](pages/wolfram-classes.md)]), average cycle
+lengths usually grow slowly with N. Rules with irregular patterns have long transients and
+many states on cycles. Rules with regular patterns have short transients and few states on
+cycles, which Wolfram reads as lower irreversibility in the irregular case. Additive rules
+are the exception, with maximal cycle lengths growing on average exponentially in N
+(Martin, Odlyzko and Wolfram 1983, cited via Wolfram 1984 and not read).[^20]
+
 ## Appearances in Sources
 
+- [[universality-and-complexity-in-cellular-automata](pages/universality-and-complexity-in-cellular-automata.md)] - attractors, state transition diagrams, and cycle and transient behaviour of finite class 3 rules
 - [[statistical-mechanics-of-cellular-automata](pages/statistical-mechanics-of-cellular-automata.md)] — Sec. IV: configuration-space mappings, irreversibility, unreachable configurations, entropy, cycles, random mappings, noise, reversible rules
 
 ## Related Concepts
 
+- [[set-and-measure-entropy](pages/set-and-measure-entropy.md)] - block entropies and dimensions of attractors
+- [[wolfram-classes](pages/wolfram-classes.md)] - the classes are classes of attractor
 - [[garden-of-eden](pages/garden-of-eden.md)] — the unreachable configurations
 - [[self-organization](pages/self-organization.md)] — what irreversibility makes possible
 - [[additive-cellular-automaton](pages/additive-cellular-automaton.md)] — exact cycle and reachability results
@@ -133,3 +152,6 @@ one-directional triangles of irreversible rules.[^17]
 [^15]: [[statistical-mechanics-of-cellular-automata](pages/statistical-mechanics-of-cellular-automata.md)] p.629 [synthesis] — "Global properties may, however, change discontinuously when a nonzero κ is introduced"; Fig. 27, N = 7, rule 126: six configurations at κ = 0; with κ > 0 every configuration is eventually visited
 [^16]: [[statistical-mechanics-of-cellular-automata](pages/statistical-mechanics-of-cellular-automata.md)] pp.625-626 [synthesis] — irreversibility from S_n = F[S_{n−1}]; analogy with first-order PDEs such as diffusion; reversible cellular automata (Fredkin 1982; Margolus 1982) S_n = F[S_{n−1}] ⊕ S_{n−2}, analogous to the wave equation; invertibility of modulo-two addition gives unique descendants and ancestors
 [^17]: [[statistical-mechanics-of-cellular-automata](pages/statistical-mechanics-of-cellular-automata.md)] p.626 [synthesis] — infinite reversible cellular automata: entropy almost always increases; finite ones globally irreversible with dissipative (random) boundaries; self-similar patterns from simple seeds, "symmetrical in time, rather than the asymmetrical triangle structures found with irreversible rules"
+[^18]: [[universality-and-complexity-in-cellular-automata](pages/universality-and-complexity-in-cellular-automata.md)] pp.1, 4 [synthesis] - "In almost all cases, cellular automaton evolution is irreversible"; trajectories merge and become concentrated onto "attractors" containing "only a very small fraction of possible states"; finite state transition diagrams, cycles as attractors, transient trees, peripheral nodes "may occur only as initial states"; the fraction reachable after one step "gives a simple measure of irreversibility"
+[^19]: [[universality-and-complexity-in-cellular-automata](pages/universality-and-complexity-in-cellular-automata.md)] p.16 [synthesis] - s⁽ˣ⁾(N) at a particular time "determined by the fraction of possible configurations which may be reached at that time"; its limiting value determined by the fraction of configurations on cycles
+[^20]: [[universality-and-complexity-in-cellular-automata](pages/universality-and-complexity-in-cellular-automata.md)] p.30 [synthesis] - ref. 2: maximal cycle length for additive rules grows on average exponentially with N; for most class 3 rules average cycle length grows slowly; transients short for regular, very long for irregular patterns; fractions of states on cycles much larger for irregular patterns, "a reflection of the lower irreversibility"

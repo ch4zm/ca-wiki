@@ -3,7 +3,7 @@ title: Conway's Game of Life
 category: Rules
 summary: Conway's two-state, eight-neighbour (Moore neighbourhood) totalistic rule - a cell survives with two or three live neighbours and is born with exactly three; home of blocks, blinkers, gliders and glider guns, and computationally universal via glider-stream circuits; stub pending the Gardner and Winning Ways ingests
 tags: [rule, life, conway, two-dimensional, totalistic, universality]
-sources: [statistical-mechanics-of-cellular-automata]
+sources: [statistical-mechanics-of-cellular-automata, universality-and-complexity-in-cellular-automata]
 created: 2026-09-24
 updated: 2026-09-24
 ---
@@ -11,7 +11,9 @@ updated: 2026-09-24
 # Conway's Game of Life
 
 > **Stub.** Everything here comes from the short treatment in Sec. V of
-> [[statistical-mechanics-of-cellular-automata](pages/statistical-mechanics-of-cellular-automata.md)].
+> [[statistical-mechanics-of-cellular-automata](pages/statistical-mechanics-of-cellular-automata.md)]
+> and the class 4 comparison in
+> [[universality-and-complexity-in-cellular-automata](pages/universality-and-complexity-in-cellular-automata.md)].
 > Conway, Gardner (1970-72) and Berlekamp, Conway and Guy (1982) are cited via that paper
 > and have not been read yet.
 
@@ -61,12 +63,24 @@ Neumann's [[von-neumann-29-state-ca](pages/von-neumann-29-state-ca.md)], which i
 universal but uses 29 states and the five-cell neighbourhood
 ([[universal-turing-machine](pages/universal-turing-machine.md)]).
 
+**The model for class 4.** Wolfram (1984) calls Life "essentially totalistic" and uses it
+as the template for class 4 of the [[wolfram-classes](pages/wolfram-classes.md)]. The
+one-dimensional class 4 rule with k = 2, r = 2 and code 20 behaves in a way "strongly
+reminiscent" of Life, with fixed, periodic and moving structures. Life's universality is
+the basis for the conjecture that class 4 rules are universal.[^7] The proof of Life's
+universality (Gosper; Wainwright 1974; Berlekamp, Conway and Guy 1982, cited via Wolfram
+and not read) builds wires and NAND gates from cellular structures. Code 20 has many of
+the needed parts, but no one had found an analogue of the glider gun.[^8]
+
 ## Appearances in Sources
 
+- [[universality-and-complexity-in-cellular-automata](pages/universality-and-complexity-in-cellular-automata.md)] - Life as the model for class 4, and code 20 as its 1D analogue
 - [[statistical-mechanics-of-cellular-automata](pages/statistical-mechanics-of-cellular-automata.md)] — Sec. V: the rule, standard structures, statistics from random starts, Garden-of-Eden size, universality via glider streams
 
 ## Related Concepts
 
+- [[wolfram-classes](pages/wolfram-classes.md)] - Life is the template for class 4
+- [[totalistic-cellular-automaton](pages/totalistic-cellular-automaton.md)] - the rule family Life belongs to
 - [[cellular-automaton](pages/cellular-automaton.md)] — the general notion; type-I vs type-II neighbourhoods
 - [[garden-of-eden](pages/garden-of-eden.md)] — Life has them, and the smallest known is large
 - [[universal-turing-machine](pages/universal-turing-machine.md)] — computational universality in cellular automata
@@ -79,3 +93,5 @@ universal but uses 29 states and the five-cell neighbourhood
 [^4]: [[statistical-mechanics-of-cellular-automata](pages/statistical-mechanics-of-cellular-automata.md)] p.637 [synthesis] — a disordered state of N² cells usually evolves to a steady state within about N² time steps, typically an order of magnitude quicker; very few configurations visited; glider guns very rarely produced; density of L-site structures decreases like e^(−L₋)/L
 [^5]: [[statistical-mechanics-of-cellular-automata](pages/statistical-mechanics-of-cellular-automata.md)] p.637 — "the simplest known 'unreachable' configuration contains around 300 sites"
 [^6]: [[statistical-mechanics-of-cellular-automata](pages/statistical-mechanics-of-cellular-automata.md)] p.639 [synthesis] — glider streams from glider guns used as wires, bits as presence or absence of gliders; meeting points determine crossing or a "NAND gate"; memories required; "The Life-game cellular automaton is thus computationally universal"; binary adders; circuits run slower "only by a constant multiplicative factor"
+[^7]: [[universality-and-complexity-in-cellular-automata](pages/universality-and-complexity-in-cellular-automata.md)] p.30 [synthesis] - code 20 behaviour "strongly reminiscent of the two-dimensional (essentially totalistic) cellular automaton known as the 'Game of Life'"; "The Game of Life has been shown to have the important property of computational universality"; the speculation that class 4 is characterized by universal computation
+[^8]: [[universality-and-complexity-in-cellular-automata](pages/universality-and-complexity-in-cellular-automata.md)] pp.30-31 [synthesis] - the proof of universality for Life [22] "uses the existence of cellular automaton structures which emulate components (such as 'wires' and 'NAND gates')"; [22] Gosper, Wainwright (1974), Berlekamp, Conway and Guy (1982); for code 20 "A major missing element is a configuration (dubbed the 'glider gun' in the Game of Life)"; "the required initial configuration is quite large, and is very difficult to find"

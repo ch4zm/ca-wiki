@@ -3,7 +3,7 @@ title: Statistical Mechanics of Cellular Automata (Wolfram, 1983)
 category: Sources
 summary: Wolfram's founding study of one-dimensional two-state "elementary" cellular automata as models of self-organization - rule numbering, simple vs complex rules, fractal growth from a seed, universal statistics from random starts, irreversibility and entropy, and extensions to more states, larger neighbourhoods, two dimensions, and universality
 tags: [wolfram, elementary-ca, statistical-mechanics, self-organization, fractals, irreversibility, entropy, universality]
-sources: [statistical-mechanics-of-cellular-automata]
+sources: [statistical-mechanics-of-cellular-automata, universality-and-complexity-in-cellular-automata]
 created: 2026-09-24
 updated: 2026-09-24
 ---
@@ -110,6 +110,8 @@ exist.[^9]
 - [[cellular-automaton](pages/cellular-automaton.md)] — the general notion, and neighbourhood types
 - [[universal-turing-machine](pages/universal-turing-machine.md)] — universality in cellular automata
 - [[self-reproduction](pages/self-reproduction.md)] — replication in rule 90
+- [[wolfram-classes](pages/wolfram-classes.md)] - the four-class scheme that grew out of the simple/complex split
+- [[stephen-wolfram](pages/stephen-wolfram.md)] - the author
 
 ## Relation to Other Wiki Pages
 
@@ -126,6 +128,12 @@ irreversibility measurable in actual cellular automata. The two meet again on
 pattern, with no description or constructor, through superposition alone. Von Neumann
 excluded that kind of trivial replication by requiring inheritable mutation.
 
+Wolfram's follow-up,
+[[universality-and-complexity-in-cellular-automata](pages/universality-and-complexity-in-cellular-automata.md)],
+widens the sample to more values per cell and larger neighbourhoods and replaces the
+simple/complex split with the four [[wolfram-classes](pages/wolfram-classes.md)]. It keeps
+this paper's judgment that elementary rules are too simple for universal computation.[^16]
+
 [^1]: [[statistical-mechanics-of-cellular-automata](pages/statistical-mechanics-of-cellular-automata.md)] pp.601-602 [synthesis] — second law vs dissipative systems; the goal "to abstract from a study of cellular automata general features of 'self-organizing' behavior and perhaps to devise universal laws analogous to the laws of thermodynamics"; differential equations and iterated maps depend on "high-order digits"; cellular automata use discrete coordinates, variables and time
 [^2]: [[statistical-mechanics-of-cellular-automata](pages/statistical-mechanics-of-cellular-automata.md)] p.603 [synthesis] — "elementary" defined; the eight-digit binary rule number used interchangeably with its decimal equivalent; 2⁸ = 256 rules; the quiescence and reflection-symmetry restrictions leave 32 legal rules
 [^3]: [[statistical-mechanics-of-cellular-automata](pages/statistical-mechanics-of-cellular-automata.md)] p.604 [synthesis] — Fig. 3 classes: the 1 erased or frozen (local rules 100→0 and 001→0 prevent propagation); uniform expanding structure (50, 122); both termed "simple"; "complex" rules such as 18, 22 and 90 yield nontrivial patterns
@@ -141,3 +149,4 @@ excluded that kind of trivial replication by requiring inheritable mutation.
 [^13]: [[statistical-mechanics-of-cellular-automata](pages/statistical-mechanics-of-cellular-automata.md)] pp.626-629 [synthesis] — Poincaré recurrence; rule 126 cycle and transient lengths far below 2ᴺ (Fig. 26); rules 90/150 cycle periods via Martin et al.; comparison with random mappings: cellular automaton evolution "is 'more irreversible' than iteration of a random mapping would imply"
 [^14]: [[statistical-mechanics-of-cellular-automata](pages/statistical-mechanics-of-cellular-automata.md)] pp.620, 629 [synthesis] — site reversal with probability κ; "the transition to disorder is a continuous one, and no phenomenon analogous to a 'phase transition' is found"; global properties "may, however, change discontinuously": with κ > 0 every configuration is eventually visited (Fig. 27)
 [^15]: [[statistical-mechanics-of-cellular-automata](pages/statistical-mechanics-of-cellular-automata.md)] pp.629-630, 639 [synthesis] — initial configuration as "program" and "initial data"; Life universal via glider streams as wires and NAND gates; the elementary rules "are not of sufficient complexity to be capable of universal computation"
+[^16]: [[universality-and-complexity-in-cellular-automata](pages/universality-and-complexity-in-cellular-automata.md)] pp.1, 5, 31 [synthesis] - the 1984 paper discusses the classification of the complex behaviour shown in ref. 1; four classes from samples with larger k and r; "k = 2, r = 1 cellular automata are too simple to support universal computation"

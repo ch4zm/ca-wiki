@@ -3,7 +3,7 @@ title: Universal Turing Machine
 category: Concepts
 summary: Turing's finite automaton with an unbounded tape that can simulate any other Turing machine — the logical model von Neumann generalized from computation to construction
 tags: [concept, turing, universality, computation]
-sources: [tsra-editors-introduction, tsra-lecture-2, tsra-part2-ch4, tsra-part2-ch5, statistical-mechanics-of-cellular-automata]
+sources: [tsra-editors-introduction, tsra-lecture-2, tsra-part2-ch4, tsra-part2-ch5, statistical-mechanics-of-cellular-automata, universality-and-complexity-in-cellular-automata]
 created: 2026-09-24
 updated: 2026-09-24
 ---
@@ -66,8 +66,24 @@ cellular automaton through an encoding, and if the encoding is simple, the simul
 should inherit the simulator's *statistical* behaviour
 ([[self-organization](pages/self-organization.md)]).[^14]
 
+**Universality as a class of behaviour.** Wolfram (1984) turns universality into a
+conjecture about a whole class of rules. Class 4 of the
+[[wolfram-classes](pages/wolfram-classes.md)] is conjectured to be exactly the rules capable
+of universal computation.[^15] If a rule is universal, no general finite algorithm can say
+whether a given start will die out or leave persistent structures, just as no algorithm
+solves the halting problem. Its behaviour cannot be found by any shortcut much simpler
+than running it.[^16] For code 20 Wolfram measures a "halting probability", the fraction
+of small random starts that die out, of about 0.93.[^17] Whether a given rule is universal
+is itself undecidable in general, because the structures needed may be arbitrarily large.
+Only infinite cellular automata can be universal. A finite one has finitely many states
+and can compute only the "space-bounded" functions.[^18] He also connects the idea to
+*algorithmic probability* (Chaitin), the chance that a universal computer given random
+input produces a given output, and defines an *evolutionary probability* for a structure
+to appear after t steps (cited via Wolfram and not read).[^19]
+
 ## Appearances in Sources
 
+- [[universality-and-complexity-in-cellular-automata](pages/universality-and-complexity-in-cellular-automata.md)] - class 4 conjectured universal; undecidability of dying out and of universality itself; halting probability of code 20
 - [[statistical-mechanics-of-cellular-automata](pages/statistical-mechanics-of-cellular-automata.md)] — universality across cellular automata: Smith's 18-state 1D rule, Life, Banks, and simulation by encoding
 - [[tsra-part2-ch5](pages/tsra-part2-ch5.md)] — an initially quiescent universal Turing machine in the 29-state CA
 - [[tsra-part2-ch4](pages/tsra-part2-ch4.md)] — a Turing machine realized in the 29-state CA
@@ -76,6 +92,7 @@ should inherit the simulator's *statistical* behaviour
 
 ## Related Concepts
 
+- [[wolfram-classes](pages/wolfram-classes.md)] - class 4 conjectured to be the universal rules
 - [[game-of-life](pages/game-of-life.md)] — universal through glider-stream circuits
 - [[elementary-cellular-automaton](pages/elementary-cellular-automaton.md)] — judged in 1983 too simple for universality
 - [[cellular-tape](pages/cellular-tape.md)] — the cellular realization of the tape
@@ -101,3 +118,8 @@ should inherit the simulator's *statistical* behaviour
 [^12]: [[statistical-mechanics-of-cellular-automata](pages/statistical-mechanics-of-cellular-automata.md)] p.639 [synthesis] — simplest universal Turing machine has seven internal states and four symbols; Smith (1971): an eighteen-state one-dimensional three-site-neighbourhood cellular automaton simulates it; wires, NAND gates and memories; Life via glider streams; Banks (1971) three-state type-I 2D; two states with an infinite background (Toffoli 1977a); "preliminary indications" of a five-state 1D universal rule
 [^13]: [[statistical-mechanics-of-cellular-automata](pages/statistical-mechanics-of-cellular-automata.md)] p.630 — "the elementary cellular automata considered here and in Secs. II and III are not of sufficient complexity to be capable of universal computation."
 [^14]: [[statistical-mechanics-of-cellular-automata](pages/statistical-mechanics-of-cellular-automata.md)] pp.629-630 [synthesis] — universal cellular automata may simulate any other cellular automaton; the interpreter is an encoding of configurations; "so long as the encoding defined by the interpreter is sufficiently simple, the statistical characteristics of the evolution of configurations in the universal cellular automaton will be shared by the cellular automaton being simulated"
+[^15]: [[universality-and-complexity-in-cellular-automata](pages/universality-and-complexity-in-cellular-automata.md)] p.31 - "These analogies lead to the speculation that class 4 cellular automata are characterized by the capability for universal computation."
+[^16]: [[universality-and-complexity-in-cellular-automata](pages/universality-and-complexity-in-cellular-automata.md)] p.32 [synthesis] - "no general finite algorithm can predict whether a particular initial configuration in a computationally universal cellular automaton will evolve to the null configuration after a finite time", analogous to "the insolubility of the halting problem for universal Turing machines"; the value cannot be determined "by any 'short-cut' procedure much simpler than explicit simulation"
+[^17]: [[universality-and-complexity-in-cellular-automata](pages/universality-and-complexity-in-cellular-automata.md)] pp.32-33 [synthesis] - Fig. 14: "the fraction of configurations which generate no persistent structures (essentially the 'halting probability') is approximately 0.93"
+[^18]: [[universality-and-complexity-in-cellular-automata](pages/universality-and-complexity-in-cellular-automata.md)] pp.32-33 [synthesis] - "Only infinite cellular automata may be capable of universal computation; finite cellular automata ... may therefore evaluate only a subset of all computable functions (the 'space-bounded' ones)"; "it is impossible to determine in general whether a particular cellular automaton is capable of universal computation"
+[^19]: [[universality-and-complexity-in-cellular-automata](pages/universality-and-complexity-in-cellular-automata.md)] p.34 [synthesis] - "algorithmic probability" [24] (Chaitin) of a structure generated by a universal computer from random input, invariant up to constant factors; "evolutionary probability" p_E(t); "logical depth" [25] (Bennett)

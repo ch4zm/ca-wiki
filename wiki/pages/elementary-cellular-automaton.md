@@ -3,7 +3,7 @@ title: Elementary Cellular Automaton
 category: Concepts
 summary: Wolfram's name for the simplest nontrivial cellular automata - a line of two-state cells, each updated from itself and its two nearest neighbours; 256 rules named by their 8-bit rule tables, 32 of them "legal"
 tags: [concept, elementary-ca, wolfram, rule-numbering, one-dimensional]
-sources: [statistical-mechanics-of-cellular-automata]
+sources: [statistical-mechanics-of-cellular-automata, universality-and-complexity-in-cellular-automata]
 created: 2026-09-24
 updated: 2026-09-24
 ---
@@ -77,12 +77,24 @@ The legality conditions leave k^((k³+k²)/2 - 1) of them: 32 for k = 2 and 3¹�
 for k = 3.[^11] Wolfram judged the elementary rules too simple for universal
 computation.[^12]
 
+**In the four-class scheme.** Wolfram (1984) places every elementary rule in class 1, 2
+or 3 of the [[wolfram-classes](pages/wolfram-classes.md)]. None is class 4, and he calls
+k = 2, r = 1 rules "too simple to support universal computation".[^13] Own reasoning: the
+simple rules above are classes 1 and 2, and the complex ones are class 3. The 1984 paper
+also uses elementary examples. Rule 108 is class 2 with periodic structures. Under rule 18,
+small "defects" wander at random and annihilate in pairs, so the approach to equilibrium
+decays only as t^(−1/2). The time series at a single cell under rule 18 appear to be
+exactly the sequences with no two adjacent 1s
+([[set-and-measure-entropy](pages/set-and-measure-entropy.md)]).[^14]
+
 ## Appearances in Sources
 
+- [[universality-and-complexity-in-cellular-automata](pages/universality-and-complexity-in-cellular-automata.md)] - places the elementary rules in classes 1-3; rules 18 and 108 as examples
 - [[statistical-mechanics-of-cellular-automata](pages/statistical-mechanics-of-cellular-automata.md)] — defines the family, the numbering, the legal subset, and the simple/complex split
 
 ## Related Concepts
 
+- [[wolfram-classes](pages/wolfram-classes.md)] - elementary rules fall into classes 1-3
 - [[cellular-automaton](pages/cellular-automaton.md)] — the general notion
 - [[additive-cellular-automaton](pages/additive-cellular-automaton.md)] — the exactly solvable subfamily
 - [[rule-90](pages/rule-90.md)] — the standard example
@@ -102,3 +114,5 @@ computation.[^12]
 [^10]: [[statistical-mechanics-of-cellular-automata](pages/statistical-mechanics-of-cellular-automata.md)] p.607 [synthesis] — periodic and null boundary conditions, "no important qualitative differences"; correspondence with feedback shift registers with taps at N-2, N-1, N; additive rules 90 and 150 correspond to linear feedback shift registers; end sites differ
 [^11]: [[statistical-mechanics-of-cellular-automata](pages/statistical-mechanics-of-cellular-automata.md)] p.630 [synthesis] — k^(k³) rule sets; legality imposes ½k²(k-1)+1 constraints; 2⁵ = 32 for k = 2; 3¹⁷ = 129140163 ≈ 1.3 × 10⁸ for k = 3
 [^12]: [[statistical-mechanics-of-cellular-automata](pages/statistical-mechanics-of-cellular-automata.md)] p.630 — "the elementary cellular automata considered here and in Secs. II and III are not of sufficient complexity to be capable of universal computation."
+[^13]: [[universality-and-complexity-in-cellular-automata](pages/universality-and-complexity-in-cellular-automata.md)] pp.5, 31 [synthesis] - k = 2, r = 1 patterns "are found to lie in classes 1, 2 and 3"; Table I gives 0 for class 4; "k = 2, r = 1 cellular automata are too simple to support universal computation"
+[^14]: [[universality-and-complexity-in-cellular-automata](pages/universality-and-complexity-in-cellular-automata.md)] pp.22-23, 25, 29 [synthesis] - rule 108 a class 2 rule with periodic persistent structures; for rule 18 [20] "defects" execute approximate random walks until annihilating in pairs, transients decreasing as t^(−1/2); evidence that rule 18 allows all temporal sequences with no 11 subsequences

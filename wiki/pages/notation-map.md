@@ -1,9 +1,9 @@
 ---
 title: Notation Map
 category: Analyses
-summary: Crosswalk from the symbols each source uses (von Neumann's lectures and manuscript, Burks's completion, Hedlund's symbolic dynamics) onto the wiki's common concepts and notation, with a list of letters that mean different things in different places
+summary: Crosswalk from the symbols each source uses (von Neumann's lectures and manuscript, Burks's completion, Hedlund's symbolic dynamics, Wolfram's 1984 entropies) onto the wiki's common concepts and notation, with a list of letters that mean different things in different places
 tags: [notation, reference, von-neumann, burks, hedlund, self-reproduction, 29-state, symbolic-dynamics]
-sources: [tsra-editors-introduction, tsra-lecture-5, tsra-part2-ch1, tsra-part2-ch2, tsra-part2-ch3, tsra-part2-ch4, tsra-part2-ch5, endomorphisms-and-automorphisms-of-the-shift-dynamical-system]
+sources: [universality-and-complexity-in-cellular-automata, tsra-editors-introduction, tsra-lecture-5, tsra-part2-ch1, tsra-part2-ch2, tsra-part2-ch3, tsra-part2-ch4, tsra-part2-ch5, endomorphisms-and-automorphisms-of-the-shift-dynamical-system]
 created: 2026-09-24
 updated: 2026-09-24
 ---
@@ -126,6 +126,27 @@ column below is own reasoning: Hedlund never uses those words.[^16][^17][^18]
 | degree; Welch's left and right indices | M(f); L(f), R(f) | — |
 | periodic points | P(𝒮) | spatially periodic configurations |
 
+## Wolfram (1984)
+
+[[universality-and-complexity-in-cellular-automata](pages/universality-and-complexity-in-cellular-automata.md)]
+writes one-dimensional rules in physicist's notation.[^19][^20]
+
+| Concept | Wolfram (1984) | Hedlund equivalent |
+|---|---|---|
+| number of values per cell | k | S |
+| range; neighbourhood size | r; 2r + 1 cells | window n = 2r + 1 |
+| value of cell i at step t | aᵢ⁽ᵗ⁾ | xᵢ |
+| the rule | F (on 2r + 1 values); f (on their weighted sum) | f ∈ F(𝒮, n) |
+| rule number; totalistic code | R_F; C_f | - |
+| spatial set / measure entropy of X-blocks | s⁽ˣ⁾(X); s_μ⁽ˣ⁾(X) | - |
+| temporal entropies of T-steps | s⁽ᵗ⁾(T); s_μ⁽ᵗ⁾(T) | - |
+| set / measure dimension | d; d_μ (superscripts ˣ, ᵗ for space, time) | - |
+| topological entropy of the map | h | - |
+| critical block length | Xc | - |
+| maximum speed; average speeds | λ₊; λ̄₊, λ̄₋ | - |
+| damage spread; its Green function | H(t); G(\|x − x′\|; t) | - |
+| clearing-density ratio | σ (density ~ σ⁻ⁿ) | - |
+
 ## Letter collisions
 
 Letters that change meaning between (or within) sources:
@@ -142,21 +163,27 @@ Letters that change meaning between (or within) sources:
 - **E**: the self-reproducer in Ch. 1, the evolution question (E), and in Ch. 5 a finite
   automaton's move function. In Hedlund, E(𝒮) is the set of onto endomorphisms.[^2][^4][^9][^16]
 - **F**: the payload in Ch. 1. The book also uses F for the transition function of a
-  cellular automaton (Ch. 2). In Hedlund, F(𝒮, n) is the set of all block maps of window n.[^2][^11][^17]
+  cellular automaton (Ch. 2), and so does Wolfram (1984). In Hedlund, F(𝒮, n) is the set of all block maps of window n.[^2][^11][^17][^19]
 - **L**: the tape. Script 𝔏 is the number of cell states, and L_X is a description. In
   Hedlund, L(f) is Welch's left index.[^5][^8][^18]
 - **P**: the wiki's payload. In the book P(i¹ … iⁿ) is a pulser, and in the Introduction P
   is the program of Turing's universal machine, which the wiki writes π. In Hedlund, P(𝒮)
   is the set of periodic points.[^14][^15][^18]
 - **S**: the secondary built in Ch. 1; S_Σ is a sensitized state. In Hedlund, S is the
-  number of symbols.[^2][^11][^16]
+  number of symbols, which Wolfram calls k.[^2][^11][^16][^19]
 - **M**: in Ch. 5, an arbitrary machine (M_c, M_u). In Hedlund, M(f) is the number of
   preimages of a bilaterally transitive point.[^3][^18]
 - **Φ, Σ**: in Ch. 3, Φ is the triple-return counter. In Hedlund, Φ(𝒮) is the set of all
   endomorphisms and Σ(𝒮) the powers of the shift. In Ch. 2, Σ indexes the sensitized
   states S_Σ.[^14][^11][^17]
 - **X**: an arbitrary automaton in Lecture 5; in Ch. 5 a finite automaton's write function
-  and also an area of the memory control.[^1][^9][^10]
+  and also an area of the memory control. In Wolfram (1984), X is a block length.[^1][^9][^10][^20]
+- **H**: in Hedlund, H(𝒮) is the set of one-to-one endomorphisms. In Wolfram (1984), H(t) is
+  a Hamming distance.[^17][^20]
+- **k**: in Ch. 1, the number base for tape digits. In Wolfram (1984), the number of values
+  per cell, which Hedlund calls S.[^5][^19]
+- **σ**: in Hedlund, the shift. In Wolfram (1984), the ratio in the σ⁻ⁿ decay of clearing
+  densities.[^16][^20]
 
 [^1]: [[tsra-lecture-5](pages/tsra-lecture-5.md)] pp.84-87 [synthesis] — φ(X) the chain describing X; A the universal constructor, B the copier, C the control; (A + B + C) + φ(A + B + C); X = A + B + C + D with D any automaton as by-product; mutation replaces D by D′
 [^2]: [[tsra-part2-ch1](pages/tsra-part2-ch1.md)] pp.118-131 [synthesis] — A, B, C with description L attached; B makes a copy L′; C builds the secondary S; D = A + B + C with description L_D; E = D + L_D is self-reproducing; F an additional automaton, E_F = D with L_(D+F); G a secondary with description L_G; primary, secondary, ternary; mutation to F′
@@ -176,3 +203,5 @@ Letters that change meaning between (or within) sources:
 [^16]: [[endomorphisms-and-automorphisms-of-the-shift-dynamical-system](pages/endomorphisms-and-automorphisms-of-the-shift-dynamical-system.md)] pp.320-322 [synthesis] — X(𝒮) the bisequences over 𝒮 with S = card 𝒮; σ the shift; Φ(𝒮) the endomorphisms, E(𝒮) the onto ones, A(𝒮) the automorphisms
 [^17]: [[endomorphisms-and-automorphisms-of-the-shift-dynamical-system](pages/endomorphisms-and-automorphisms-of-the-shift-dynamical-system.md)] pp.323-324, 331-332 [synthesis] — 𝔅ₙ(𝒮) the n-blocks; F(𝒮, n) the maps 𝔅ₙ(𝒮) → 𝒮; f_m and f∞; H(𝒮) the one-to-one members of Φ(𝒮), with A(𝒮) = H(𝒮); Σ(𝒮) = {σⁿ}
 [^18]: [[endomorphisms-and-automorphisms-of-the-shift-dynamical-system](pages/endomorphisms-and-automorphisms-of-the-shift-dynamical-system.md)] pp.338, 351, 358-359 [synthesis] — P(𝒮) the periodic points; M(f) the multiplicity at bilaterally transitive points; R(f) and L(f) defined by Welch
+[^19]: [[universality-and-complexity-in-cellular-automata](pages/universality-and-complexity-in-cellular-automata.md)] pp.2-3 [synthesis] - aᵢ⁽ᵗ⁾ the value of site i at step t, integer 0 to k − 1; rule F (2.1) with range r; f of a weighted sum (2.2); rule number R_F (2.6); code C_f (2.7)
+[^20]: [[universality-and-complexity-in-cellular-automata](pages/universality-and-complexity-in-cellular-automata.md)] pp.15-21, 25, 27 [synthesis] - s⁽ˣ⁾(X), s_μ⁽ˣ⁾(X) for blocks of length X; s⁽ᵗ⁾(T), s_μ⁽ᵗ⁾(T); d⁽ˣ⁾, d⁽ᵗ⁾ and measure versions; h (4.33); Xc (4.13); λ₊ (4.37), λ̄₊, λ̄₋; G(|x − x′|; t) and Hamming distance H(t); clearing density σ⁻ⁿ
