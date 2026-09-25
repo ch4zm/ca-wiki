@@ -17,8 +17,9 @@ Mathematics, University of Turku, Finland, with support from the Academy of Finl
 The survey says outright that its topics follow its author's research interests.[^2] The
 results it credits to Kari's own papers (all cited via the survey and not read) are:[^3]
 
-- **2D injectivity and surjectivity are undecidable** (1990, 1994), by reduction from
-  the tiling problem through the SNAKES tile set
+- **2D reversibility is undecidable** (1990), and **2D injectivity and surjectivity are
+  undecidable** (1994). Injectivity reduces from the tiling problem through the SNAKES
+  tile set, and surjectivity from the finite tiling problem
   ([[wang-tiles](pages/wang-tiles.md)],
   [[reversible-cellular-automaton](pages/reversible-cellular-automaton.md)]).
 - **The tiling problem stays undecidable for NW-deterministic tile sets**, and
@@ -26,8 +27,8 @@ results it credits to Kari's own papers (all cited via the survey and not read) 
 - **Rice's theorem for limit sets** (1994): every non-trivial property of limit sets is
   undecidable.
 - **The inverse neighbourhood bound**: in a 1D radius-½ reversible CA with s states, the
-  inverse needs at most s − 1 consecutive cells, and this bound is tight (1992; the upper
-  bound with Czeizler).
+  inverse needs at most s − 1 consecutive cells (with Czeizler, then to appear), and the
+  bound is tight (1992).
 - **Block representation** (1996, 1999): every 1D and 2D reversible CA is a
   block-permutation rule composed with a translation
   ([[margolus-neighbourhood](pages/margolus-neighbourhood.md)]).
@@ -49,4 +50,4 @@ results it credits to Kari's own papers (all cited via the survey and not read) 
 
 [^1]: [[theory-of-cellular-automata-a-survey](pages/theory-of-cellular-automata-a-survey.md)] p.3 [synthesis] - "Jarkko Kari, Department of Mathematics, University of Turku, FIN-20014, Turku, Finland"; "Research supported by the Academy of Finland Grant 54102"
 [^2]: [[theory-of-cellular-automata-a-survey](pages/theory-of-cellular-automata-a-survey.md)] p.3 - "The selection of topics is by no means comprehensive and reflects the research interests of the author."
-[^3]: [[theory-of-cellular-automata-a-survey](pages/theory-of-cellular-automata-a-survey.md)] pp.14, 19-20, 24-25, 32-33 [synthesis] - Theorem 5 (NW-deterministic tiling undecidable, [40]); 13-tile aperiodic set [16, 44]; Theorem 10 ([38, 41]); inverse neighbourhood at most s − 1 cells [20], tight [39]; Theorem 11 ([43, 45]); Theorem 15 ([40]); topological entropy uncomputable [35]; Theorem 16 ([42]); refs [35] and [38]-[46] with their years
+[^3]: [[theory-of-cellular-automata-a-survey](pages/theory-of-cellular-automata-a-survey.md)] pp.14, 19-20, 24-25, 28, 32-33 [synthesis] - Theorem 5 (NW-deterministic tiling undecidable, [40]); 13-tile aperiodic set [16, 44]; Theorem 10 ([38, 41]), injectivity via SNAKES and surjectivity by "an analogous reduction from the finite tiling problem"; [38] (1990) on reversibility, [41] (1994) on reversibility and surjectivity; linear CA with multiple state variables [46]; inverse neighbourhood at most s − 1 cells [20], tight [39]; Theorem 11 ([43, 45]); Theorem 15 ([40]); topological entropy uncomputable [35]; Theorem 16 ([42]); refs [35] and [38]-[46] with their years

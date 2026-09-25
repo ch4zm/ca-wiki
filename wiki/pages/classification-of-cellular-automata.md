@@ -25,16 +25,15 @@ settle to fixed points or short cycles, and complex rules behave more like stran
 attractors.[^1]
 
 **Wolfram 1984: four classes.** Running elementary rules from random starts and judging by
-the space-time diagrams, Wolfram sorted them into four classes. Almost all starts lead
-to:[^2]
+the space-time diagrams, Wolfram sorted them into four classes:[^2]
 
-- **W1**: the same uniform fixed point,
-- **W2**: a periodically repeating configuration,
-- **W3**: essentially random-looking behaviour,
-- **W4**: localized structures with complex interactions.
+- **W1**: almost all starts lead to the same uniform fixed point,
+- **W2**: almost all starts lead to a periodically repeating configuration,
+- **W3**: almost all starts lead to essentially random-looking behaviour,
+- **W4**: localized structures with complex interactions emerge.
 
-He conjectured that class-4 rules are computationally universal, which
-[[rule-110](pages/rule-110.md)] bears out. Localized class-4 structures are the 1D
+He conjectured that class-4 rules are computationally universal. The universal
+[[rule-110](pages/rule-110.md)] is consistent with that, while class-4 rule 54 is open. Localized class-4 structures are the 1D
 counterpart of the gliders of the [[game-of-life](pages/game-of-life.md)].[^2][^3] Kari
 calls the classification "vague".[^4]
 

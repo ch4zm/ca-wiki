@@ -82,9 +82,11 @@ computation.[^12]
 standard, and the rule number is called the *Wolfram number*.[^13] Wolfram (1984)
 sorted the elementary rules into four classes by their behaviour from random starts
 ([[classification-of-cellular-automata](pages/classification-of-cellular-automata.md)]).
-[[rule-110](pages/rule-110.md)], a class-4 rule outside the 32 legal ones, has since been
-proved computationally universal (Cook and Wolfram). Whether class-4 rule 54 is universal
-is open.[^14]
+Wolfram himself conjectured in the 1980s that the class-4
+[[rule-110](pages/rule-110.md)] is universal, and he and Cook later proved it, overturning
+the 1983 judgement above for the elementary family as a whole. Whether class-4 rule 54 is
+universal is open.[^14] (Own reasoning: rule 110 maps 100 to 0 and 001 to 1, so it is
+outside the 32 legal rules the 1983 judgement was about.)
 
 ## Appearances in Sources
 
@@ -118,4 +120,4 @@ is open.[^14]
 [^11]: [[statistical-mechanics-of-cellular-automata](pages/statistical-mechanics-of-cellular-automata.md)] p.630 [synthesis] — k^(k³) rule sets; legality imposes ½k²(k-1)+1 constraints; 2⁵ = 32 for k = 2; 3¹⁷ = 129140163 ≈ 1.3 × 10⁸ for k = 3
 [^12]: [[statistical-mechanics-of-cellular-automata](pages/statistical-mechanics-of-cellular-automata.md)] p.630 — "the elementary cellular automata considered here and in Secs. II and III are not of sufficient complexity to be capable of universal computation."
 [^13]: [[theory-of-cellular-automata-a-survey](pages/theory-of-cellular-automata-a-survey.md)] p.8 [synthesis] - 2⁸ = 256 elementary CA; "the number of essentially different elementary rules is smaller, only 88"; Wolfram's naming scheme "has since become standard"; "called the Wolfram number of the CA"
-[^14]: [[theory-of-cellular-automata-a-survey](pages/theory-of-cellular-automata-a-survey.md)] pp.8, 11-12 [synthesis] - Wolfram classes (W1)-(W4) from [74]; Theorem 2 (Cook and Wolfram): rule 110 is computationally universal; Open problem 1: rule 54, "another elementary CA that is in Wolfram class 4"
+[^14]: [[theory-of-cellular-automata-a-survey](pages/theory-of-cellular-automata-a-survey.md)] pp.8, 11-12 [synthesis] - Wolfram classes (W1)-(W4) from [74]; Wolfram conjectured in the 1980s that rule 110 is universal [74], "Recently this result was established by him and Cook [76]"; Theorem 2; Open problem 1: rule 54, "another elementary CA that is in Wolfram class 4"

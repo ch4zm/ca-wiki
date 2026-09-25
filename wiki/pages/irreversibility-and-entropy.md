@@ -105,10 +105,10 @@ one-directional triangles of irreversible rules.[^17]
 
 **The physical and topological sides (Kari 2005).** Kari gives the physical case for
 reversible rules directly. Microscopic physics is reversible, and a computer that makes
-optimal use of physics must be reversible too, because irreversibility always dissipates
-energy as heat ([[reversible-cellular-automaton](pages/reversible-cellular-automaton.md)]).[^18]
-The shrinking set of reachable configurations described above has an exact topological
-counterpart on the infinite lattice. The sets Gⁿ(C) form a decreasing chain whose
+optimal use of physics must be reversible too, because irreversibility always implies
+energy dissipation, in practice as heat ([[reversible-cellular-automaton](pages/reversible-cellular-automaton.md)]).[^18]
+The shrinking set of reachable configurations described above has a topological
+counterpart on the infinite lattice (own reasoning, linking the two sources). The sets Gⁿ(C) form a decreasing chain whose
 intersection is the [[limit-set](pages/limit-set.md)]: compact, non-empty, and a single
 configuration exactly when the rule is nilpotent.[^19] Conservation laws other than
 information, such as particle number, are handled as additive invariants

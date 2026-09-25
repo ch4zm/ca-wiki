@@ -43,7 +43,7 @@ theory of CA" ([[garden-of-eden-theorem](pages/garden-of-eden-theorem.md)]).[^10
 
 ## Appearances in Sources
 
-- [[theory-of-cellular-automata-a-survey](pages/theory-of-cellular-automata-a-survey.md)] - credits Moore with the sufficient direction of the Garden-of-Eden theorem
+- [[theory-of-cellular-automata-a-survey](pages/theory-of-cellular-automata-a-survey.md)] - credits the Garden-of-Eden theorem to Moore and Myhill
 - [[machine-models-of-self-reproduction](pages/machine-models-of-self-reproduction.md)] - author
 - [[converse-of-moores-garden-of-eden-theorem](pages/converse-of-moores-garden-of-eden-theorem.md)] - the result Myhill completes
 

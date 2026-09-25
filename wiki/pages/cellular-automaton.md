@@ -140,7 +140,10 @@ many cells are not quiescent, and *spatially periodic* if d independent translat
 it. Both kinds are preserved by G, giving restrictions G_F and G_P. The three maps can
 behave differently, so simulations with periodic boundary conditions "may be
 misleading".[^29] Temporal notions are kept separate: c is *temporally periodic* if Gᵏ(c) =
-c for some k ≥ 1, and every CA has a homogeneous temporally periodic configuration. A CA is
+c for some k ≥ 1, and every CA has a homogeneous temporally periodic configuration. It is
+*eventually periodic* if its forward orbit is finite, and every spatially periodic
+configuration is eventually periodic. The *phase space* is the infinite directed graph with
+an edge from c to G(c). A CA is
 *nilpotent* if all configurations end at one configuration after some fixed number of
 steps ([[limit-set](pages/limit-set.md)]).[^30] Composing two CA gives a CA, and whether two
 CA are equal is decidable.[^31] Which other properties can be decided is the subject of
@@ -213,5 +216,5 @@ CA are equal is decidable.[^31] Which other properties can be decided is the sub
 [^27]: [[statistical-mechanics-of-cellular-automata](pages/statistical-mechanics-of-cellular-automata.md)] p.637 [synthesis] — "totalistic" cellular automata depend only on the sum of neighbourhood values; Life is a type-II example
 [^28]: [[theory-of-cellular-automata-a-survey](pages/theory-of-cellular-automata-a-survey.md)] pp.4-5 [synthesis] - configurations c : ℤᵈ → S; neighbourhood vector N = (x₁, …, xₙ); local rule f : Sⁿ → S; global transition function G; "A d-dimensional CA is specified by a triple (S, N, f)"; "In algorithmic questions G is, however, always specified using the three finite items S, N and f"
 [^29]: [[theory-of-cellular-automata-a-survey](pages/theory-of-cellular-automata-a-survey.md)] pp.6-7 [synthesis] - quiescent state stable, f(q, q, …, q) = q; finite configurations C_F and G_F; periodic configurations invariant under d linearly independent translations, C_P and G_P; "experiments done with periodic boundary conditions may be misleading"
-[^30]: [[theory-of-cellular-automata-a-survey](pages/theory-of-cellular-automata-a-survey.md)] p.7 [synthesis] - temporally periodic configurations; every CA has a homogeneous temporally periodic configuration; nilpotent if Gⁿ(C) is a singleton
+[^30]: [[theory-of-cellular-automata-a-survey](pages/theory-of-cellular-automata-a-survey.md)] p.7 [synthesis] - temporally periodic configurations; every CA has a homogeneous temporally periodic configuration; eventually periodic iff the forward orbit is finite; "Every spatially periodic configuration is eventually periodic"; phase space as a directed graph; nilpotent if Gⁿ(C) is a singleton
 [^31]: [[theory-of-cellular-automata-a-survey](pages/theory-of-cellular-automata-a-survey.md)] p.7 [synthesis] - "The composition G₁ ∘ G₂ is also a CA function, and the composition can be formed effectively"; "The equivalence of two given CA G₁ and G₂ is decidable"

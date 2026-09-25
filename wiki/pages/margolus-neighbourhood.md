@@ -1,7 +1,7 @@
 ---
 title: Margolus Neighbourhood
 category: Concepts
-summary: Margolus's space-partitioning scheme - apply a permutation to every 2 × 2 block, then shift the partition and apply another - which makes any rule reversible by construction; basis of the billiard-ball computer and, generalized, of every 1D and 2D reversible cellular automaton
+summary: Margolus's space-partitioning scheme - apply a permutation to every 2 × 2 block, then shift the partition and apply another - which makes any rule reversible by construction; basis of the billiard-ball computer and, generalized and composed with a translation, of every 1D and 2D reversible cellular automaton
 tags: [concept, neighbourhood, margolus, reversibility, block-permutation, billiard-ball, lattice-gas]
 sources: [theory-of-cellular-automata-a-survey]
 created: 2026-09-24
@@ -12,14 +12,15 @@ updated: 2026-09-24
 
 ## Description
 
-**The scheme.** Margolus introduced *space partitioning* as a way to guarantee
+**The scheme.** Margolus (1984) introduced *space partitioning* as a way to guarantee
 reversibility. Each update has two steps. First the plane is cut into 2 × 2 blocks along
 odd coordinates, and a permutation π₁ of S⁴ is applied inside each block. Then the cut is
 moved to even coordinates and a second permutation π₂ is applied. This became known as
-the Margolus neighbourhood.[^1]
+the Margolus neighbourhood. The source's Fig. 8 shows the two partitions, solid for odd
+steps and dashed for even ones.[^1]
 
 **Why it is reversible.** Each step permutes the contents of disjoint blocks, so the
-inverse just applies the inverse permutations in reverse order. Other constraints are as
+inverse automaton applies the inverse permutations (in reverse order, own reasoning). Other constraints are as
 easy to build in. If the permutations never change the number of black cells in a block,
 the number of black cells in a finite configuration is conserved
 ([[conserved-quantity](pages/conserved-quantity.md)]).[^2]
@@ -55,7 +56,7 @@ d + 1.[^6]
 - [[moore-neighbourhood](pages/moore-neighbourhood.md)] - the ordinary neighbourhoods it departs from
 - [[universal-turing-machine](pages/universal-turing-machine.md)] - the billiard-ball computer is computationally universal
 
-[^1]: [[theory-of-cellular-automata-a-survey](pages/theory-of-cellular-automata-a-survey.md)] p.18 [synthesis] - "He also introduced the technique of space partitioning as a way to ensure reversibility"; 2 × 2 blocks along odd coordinates with permutation π₁ of S⁴, then even coordinates with π₂; "This technique became known as the Margolus neighborhood."
+[^1]: [[theory-of-cellular-automata-a-survey](pages/theory-of-cellular-automata-a-survey.md)] p.18 [synthesis] - "He also introduced the technique of space partitioning as a way to ensure reversibility"; 2 × 2 blocks along odd coordinates with permutation π₁ of S⁴, then even coordinates with π₂; "This technique became known as the Margolus neighborhood."; p.19 Fig. 8: "Odd updates use the solid partitioning, even updates the dashed partitioning"; [51] N. Margolus, Physics-like models of computation, Physica D 10 (1984)
 [^2]: [[theory-of-cellular-automata-a-survey](pages/theory-of-cellular-automata-a-survey.md)] p.18 [synthesis] - "A CA that uses the Margolus neighborhood is trivially reversible-the inverse automaton applies the inverse permutations"; the number of black cells in finite configurations is preserved if the permutations conserve black states
 [^3]: [[theory-of-cellular-automata-a-survey](pages/theory-of-cellular-automata-a-survey.md)] p.18 [synthesis] - "Strictly speaking Margolus neighborhood is not a CA neighborhood"; supercells of 2 × 2 blocks and combined clock cycles; "In this strict sense the billiard ball computer by Margolus has 2⁴ = 16 states."
 [^4]: [[theory-of-cellular-automata-a-survey](pages/theory-of-cellular-automata-a-survey.md)] p.18 [synthesis] - π₁ = π₂, binary states white and black; the exchanged blocks are shown pictorially; a single black state propagates diagonally depending on the parity of its location; motion and collisions of billiard balls of positive diameter, walls, "arbitrary computation [51]"

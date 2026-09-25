@@ -109,7 +109,7 @@ Hedlund's automorphisms are exactly the reversible CA. The dividing line is
 dimension. 1D injectivity and surjectivity are decidable. In 2D both are undecidable,
 because [[wang-tiles](pages/wang-tiles.md)] and the tiling problem can be encoded in them.
 Nilpotency is undecidable even in 1D, and so is every non-trivial property of the
-[[limit-set](pages/limit-set.md)]. Physics motivates block-permutation rules that are
+[[limit-set](pages/limit-set.md)] when the state set may vary. Physics motivates block-permutation rules that are
 reversible by construction ([[margolus-neighbourhood](pages/margolus-neighbourhood.md)])
 and additive [[conserved-quantity](pages/conserved-quantity.md)]s. Universality splits
 into the Turing kind, which Life and [[rule-110](pages/rule-110.md)] have, and the

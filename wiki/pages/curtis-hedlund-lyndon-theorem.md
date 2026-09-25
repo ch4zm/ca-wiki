@@ -48,8 +48,8 @@ map: (fg)∞ = f∞ g∞, with window m + n − 1.[^8]
 **In every dimension.** Kari (2005) states the theorem for d-dimensional CA and credits it
 to Hedlund: G : S^(ℤᵈ) → S^(ℤᵈ) is a CA iff it is continuous and commutes with the
 shifts.[^9] The topology is the Cantor (product) topology. Two configurations are close
-when they agree on a large region around the origin. Any norm and any strictly decreasing
-distance function give the same topology. The balls are the *cylinders*: the
+when they agree on a large region around the origin. Using the Manhattan or Euclidean norm, or
+any other strictly decreasing distance function, gives the same topology. The balls are the *cylinders*: the
 configurations that agree with a given one within radius r. For each r these finitely
 many cylinders partition the space, so each is clopen.[^10] Kari calls Hedlund's paper
 seminal and says it "marks the beginning of symbolic dynamics".[^11] The corollary Kari

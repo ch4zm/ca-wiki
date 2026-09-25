@@ -133,8 +133,9 @@ Kari's survey
 cites this paper for the rule numbering, which it says has become standard. It reports
 Wolfram's later four-class scheme
 ([[classification-of-cellular-automata](pages/classification-of-cellular-automata.md)])
-and the universality of [[rule-110](pages/rule-110.md)], an elementary rule outside the
-32 legal ones studied here.[^16]
+and the universality of [[rule-110](pages/rule-110.md)], which Wolfram himself later
+conjectured and, with Cook, proved. (Own reasoning: rule 110 is not mirror-symmetric, so
+it is outside the 32 legal rules studied here.)[^16]
 
 [^1]: [[statistical-mechanics-of-cellular-automata](pages/statistical-mechanics-of-cellular-automata.md)] pp.601-602 [synthesis] — second law vs dissipative systems; the goal "to abstract from a study of cellular automata general features of 'self-organizing' behavior and perhaps to devise universal laws analogous to the laws of thermodynamics"; differential equations and iterated maps depend on "high-order digits"; cellular automata use discrete coordinates, variables and time
 [^2]: [[statistical-mechanics-of-cellular-automata](pages/statistical-mechanics-of-cellular-automata.md)] p.603 [synthesis] — "elementary" defined; the eight-digit binary rule number used interchangeably with its decimal equivalent; 2⁸ = 256 rules; the quiescence and reflection-symmetry restrictions leave 32 legal rules

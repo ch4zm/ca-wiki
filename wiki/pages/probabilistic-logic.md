@@ -3,7 +3,7 @@ title: Probabilistic Logic (automata)
 category: Concepts
 summary: Von Neumann's logic of unreliable automata — failure treated as a logical entity, with axioms giving probabilities of outcomes rather than certainties; the framework for the reliability problem
 tags: [concept, probabilistic-logic, reliability, von-neumann]
-sources: [tsra-lecture-3, tsra-editors-introduction, tsra-lecture-4, statistical-mechanics-of-cellular-automata]
+sources: [tsra-lecture-3, tsra-editors-introduction, tsra-lecture-4, statistical-mechanics-of-cellular-automata, theory-of-cellular-automata-a-survey]
 created: 2026-09-24
 updated: 2026-09-24
 ---
@@ -50,8 +50,11 @@ configuration, while the noiseless system stays in a short cycle.[^12] Wolfram's
 three-state rules add a feature relevant to reliability: "membranes" that shield the
 region inside them from outside noise.[^13]
 
+**Reliable computation in cellular automata.** Kari (2005) lists fault tolerance among the topics his survey leaves out, and points to Gács (1986), "Reliable computation with cellular automata" (cited via Kari and not read), as the reference.[^14] (Own reasoning: going by its title, that paper takes up von Neumann's reliability problem inside a cellular automaton.)
+
 ## Appearances in Sources
 
+- [[theory-of-cellular-automata-a-survey](pages/theory-of-cellular-automata-a-survey.md)] - names fault tolerance (Gács 1986) as an omitted topic
 - [[statistical-mechanics-of-cellular-automata](pages/statistical-mechanics-of-cellular-automata.md)] — noise as random site flips in cellular automata: continuous local degradation, abrupt global change, protective membranes
 - [[tsra-lecture-3](pages/tsra-lecture-3.md)] — motivation and the form of the probabilistic axioms
 - [[tsra-editors-introduction](pages/tsra-editors-introduction.md)] — reliability as one of the two central problems
@@ -67,6 +70,7 @@ region inside them from outside noise.[^13]
 - [[mcculloch-pitts-neuron](pages/mcculloch-pitts-neuron.md)] — the rigorous, all-or-none elements that probabilistic logic generalizes
 - [[self-repair](pages/self-repair.md)] — how natural automata tolerate error in practice
 - [[irreversibility-and-entropy](pages/irreversibility-and-entropy.md)] - noisy rule 126 on a ring
+- [[theory-of-cellular-automata-a-survey](pages/theory-of-cellular-automata-a-survey.md)] - points to Gács's work on reliable computation in CA
 
 [^1]: [[tsra-editors-introduction](pages/tsra-editors-introduction.md)] p.19 — "How can reliable systems be constructed from unreliable components?"
 [^2]: [[tsra-lecture-3](pages/tsra-lecture-3.md)] p.57 — "in no practical way can we imagine an automaton which is really reliable. If you axiomatize an automaton by telling exactly what it will do in every completely defined situation you are missing an important part of the problem."
@@ -81,3 +85,4 @@ region inside them from outside noise.[^13]
 [^11]: [[tsra-lecture-3](pages/tsra-lecture-3.md)] p.58 fn1 — "See von Neumann's 'Probabilistic Logics and the Synthesis of Reliable Organs from Unreliable Components' for a detailed treatment of automata from this point of view."
 [^12]: [[statistical-mechanics-of-cellular-automata](pages/statistical-mechanics-of-cellular-automata.md)] pp.620, 629 [synthesis] — value reversed with probability κ, the Boltzmann factor of a finite-temperature heat bath; rule 126 structure "progressively destroyed" with "no phenomenon analogous to a 'phase transition'"; global properties "change discontinuously": with κ > 0 all configurations are eventually visited, with κ = 0 a cycle after six (Fig. 27)
 [^13]: [[statistical-mechanics-of-cellular-automata](pages/statistical-mechanics-of-cellular-automata.md)] p.631 [synthesis] — membranes that "protect" sites within them from the effects of noise outside; only when two membranes meet is the enclosed structure potentially destroyed
+[^14]: [[theory-of-cellular-automata-a-survey](pages/theory-of-cellular-automata-a-survey.md)] pp.30, 32 [synthesis] - "Examples of omissions include the firing squad synchronization problem [52], results on fault tolerance [28] and quantum CA [71]"; [28] P. Gacs, Reliable computation with cellular automata, J. Comput. Systems Sci. 32 (1986) 15-78

@@ -14,10 +14,10 @@ updated: 2026-09-24
 **Date ingested:** 2026-09-24
 **Type:** paper (survey)
 
-> Locators are the journal's printed page numbers (PDF page n = printed page n + 2).
+> Locators are the journal's printed page numbers (printed page n = PDF page n + 2).
 > A survey states most results without proof and credits them to other papers. Unless a
 > page says otherwise, those papers (Amoroso and Patt 1972, Culik and Yu 1988, Kurka
-> 1997, Ollinger 2002, Cook and Wolfram 2002, Hattori and Takesue 1991, Kari's own papers,
+> 1997, Ollinger 2002, Wolfram 2002 for the Cook-Wolfram rule 110 result, Hattori and Takesue 1991, Kari's own papers,
 > and the rest) are cited via this survey and have not been read. Moore 1962 is
 > [[machine-models-of-self-reproduction](pages/machine-models-of-self-reproduction.md)],
 > Myhill 1963 is
@@ -40,18 +40,23 @@ G_P to *spatially periodic* ones are studied separately. He warns that the three
 quite differently, so experiments with periodic boundaries "may be misleading".[^2] The
 physical motivation is also stated at the start: reversibility and conservation laws can be
 built into a rule, and the long-term hope is "programmable matter" that runs a universal
-CA directly.[^3]
+CA directly.[^3] Physical and biological systems are commonly simulated with CA: lattice
+gases for fluid flow (Hardy, Pomeau and de Pazzis 1976; Frisch, Hasslacher and Pomeau
+1986), Ising spin models, and diffusion.[^4] The survey leaves out the firing squad
+synchronization problem, fault tolerance (Gács 1986) and quantum CA.[^5]
 
-The survey keeps returning to one pattern: **dimension one is decidable, dimension two is
-not.** The [[garden-of-eden-theorem](pages/garden-of-eden-theorem.md)] (G surjective iff
+Kari notes early that one-dimensional CA behave in some respects differently from
+higher-dimensional ones.[^6] The difference runs through the whole survey, and in its
+results it mostly takes the form **dimension one is decidable, dimension two is not** (own
+reasoning, summarizing the theorems below). The [[garden-of-eden-theorem](pages/garden-of-eden-theorem.md)] (G surjective iff
 G_F injective) holds in every dimension, and the injectivity and surjectivity of 1D rules
-can be decided. For 2D rules neither can.[^4] The 2D undecidability proofs run through
-[[wang-tiles](pages/wang-tiles.md)]. Kari's SNAKES tile set forces any path that follows
-its arrows through arbitrarily large squares, and adding a "snake" of XOR cells on top turns
-tiling questions into injectivity questions.[^5] Nilpotency is the exception: it is
+can be decided. For 2D rules neither can.[^7] The 2D undecidability proofs run through
+[[wang-tiles](pages/wang-tiles.md)]. In Kari's SNAKES tile set, any arrow-following path
+along which the tiling is valid must pass through arbitrarily large squares. Adding an XOR
+layer steered by the arrows turns tiling questions into injectivity questions.[^8] Nilpotency is the exception: it is
 undecidable already in 1D, which Kari proved using NW-deterministic tiles. That result
 then spreads, through a Rice-style theorem, to every non-trivial property of
-[[limit-set](pages/limit-set.md)]s.[^6] The results are collected on
+[[limit-set](pages/limit-set.md)]s.[^9] The results are collected on
 [[decidability-in-cellular-automata](pages/decidability-in-cellular-automata.md)].
 
 Physics motivates the chapters on the
@@ -60,44 +65,45 @@ Physics motivates the chapters on the
 CA, but in 2D its neighbourhood has no computable bound. The
 [[margolus-neighbourhood](pages/margolus-neighbourhood.md)] (block permutations on
 alternating partitions) makes a rule reversible by construction. In 1D and 2D every
-reversible rule is a block-permutation rule followed by a translation.[^7] On the
+reversible rule is a composition of a block-permutation rule and a translation.[^10] On the
 computation side, [[intrinsic-universality](pages/intrinsic-universality.md)] (simulating
 every CA, including on infinite configurations) is set apart from Turing universality, as
-shown by the [[game-of-life](pages/game-of-life.md)] and [[rule-110](pages/rule-110.md)].[^8]
+shown by the [[game-of-life](pages/game-of-life.md)] and [[rule-110](pages/rule-110.md)].[^11]
 [[chaos-in-cellular-automata](pages/chaos-in-cellular-automata.md)] covers the
 topological-dynamics notions (equicontinuity, sensitivity, expansivity, transitivity) and
 Kurka's classification ([[classification-of-cellular-automata](pages/classification-of-cellular-automata.md)]).
-For linear rules over ℤ_m, which are
-[[additive-cellular-automaton](pages/additive-cellular-automaton.md)]s in Wolfram's
-terms, these properties reduce to gcd tests.[^9]
+For linear (additive) rules over ℤ_m
+([[additive-cellular-automaton](pages/additive-cellular-automaton.md)]), these properties
+reduce to gcd tests, and injectivity to a test on the prime factors of m.[^12]
 The survey closes with
 [[language-recognition-by-cellular-automata](pages/language-recognition-by-cellular-automata.md)],
-where the real-time vs linear-time question has been open since 1972.[^10]
+where the real-time vs linear-time question has been open since 1972.[^13]
 
 ## Key Takeaways
 
 - **Three spaces, three maps.** G on all configurations, G_F on finite ones, G_P on
-  periodic ones. The Garden-of-Eden theorem is a statement linking G and G_F. Several
-  implications between the injectivity and surjectivity of the three hold only in 1D, and
-  three are open in 2D.[^4][^11]
+  periodic ones. The Garden-of-Eden theorem is a statement linking G and G_F. Two
+  implications between the injectivity and surjectivity of the three are proved only in
+  1D. One of them fails in 2D, and three implications are open there.[^7][^14]
 - **Reversible = bijective = injective**, in every dimension (Hedlund, Richardson; Moore
   and Myhill). Injectivity is decidable in 1D (Amoroso and Patt 1972) and undecidable in 2D
-  (Kari 1990, 1994).[^12]
-- **Nilpotency is undecidable in every dimension**, and so is every non-trivial property
-  of limit sets (Kari 1992, 1994).[^6]
+  (Kari 1990, 1994).[^15]
+- **Nilpotency is undecidable in every dimension** (Culik, Pachl and Yu 1989; Kari 1992),
+  and so is every non-trivial property of limit sets when the state set may vary (Kari
+  1994).[^9]
 - **Universality comes in two strengths.** Life and rule 110 are Turing-universal (Theorems
   1-2). An intrinsically universal CA simulates every CA of its dimension. The smallest
-  known 1D example has 6 states and the nearest-neighbour neighbourhood (Ollinger).[^8]
+  known 1D example has 6 states and the nearest-neighbour neighbourhood (Ollinger).[^11]
 - **The Wolfram classes are informal**, and Culik and Yu's formal version is undecidable.
   Kurka's equicontinuity classes are undecidable except for the positively expansive
-  class, whose status is open.[^13]
-- **Linear rules are the tractable case.** Over ℤ_m, surjectivity, injectivity,
-  equicontinuity, sensitivity, transitivity and positive expansivity all reduce to
-  conditions on the gcd of the coefficients.[^9]
+  class, whose status is open.[^16]
+- **Linear rules are the tractable case.** Over ℤ_m, surjectivity, equicontinuity,
+  sensitivity, transitivity and positive expansivity reduce to gcd conditions on the
+  coefficients, and injectivity to a condition on the prime factors of m.[^12]
 
 ## Kari's open problems
 
-The survey poses nine, numbered in order:[^14]
+The survey poses nine, numbered in order:[^17]
 
 1. Is elementary rule 54 computationally universal? ([[rule-110](pages/rule-110.md)])
 2. In two or more dimensions, does G_P injective imply G_F surjective? Does G_F
@@ -146,7 +152,7 @@ The survey poses nine, numbered in order:[^14]
 
 ## Relation to Other Wiki Pages
 
-This is the wiki's first computer-science view of the field. Von Neumann and Moore
+Kari's survey takes the computer-science view of the field. Von Neumann and Moore
 ([[theory-of-self-reproducing-automata](pages/theory-of-self-reproducing-automata.md)],
 [[machine-models-of-self-reproduction](pages/machine-models-of-self-reproduction.md)]) each
 designed or analysed particular structures. Hedlund took the topological view of all 1D
@@ -154,33 +160,35 @@ rules and Wolfram the statistical one. Kari asks which properties of a rule can 
 *decided* from its table. Kari cites the earlier sources for their theorems: the
 Garden-of-Eden theorem (Moore, Myhill), the
 [[curtis-hedlund-lyndon-theorem](pages/curtis-hedlund-lyndon-theorem.md)] and "reversible
-iff bijective" (Hedlund), and the Wolfram numbering. The survey confirms two readings the
-wiki had made as its own step. The first is that Hedlund's endomorphisms and automorphisms are the CA and
+iff bijective" (Hedlund), and the Wolfram numbering. It also states two readings that other pages
+make. The first is that Hedlund's endomorphisms and automorphisms are the CA and
 reversible CA of later usage: "In symbolic dynamics literature it is therefore customary
 to call reversible CA automorphisms of the shift dynamical system". The second is that the
 Garden-of-Eden theorem is usually stated as surjectivity iff injectivity on finite
-configurations.[^15][^16]
+configurations.[^18][^19]
 
-On one point Kari's report updates the older sources. Wolfram (1983) judged the
-elementary rules too simple for universal computation,[^17] while Kari reports rule 110
-proved universal (Cook and Wolfram, 2002).[^18] Rule 110 is not among Wolfram's 32 "legal"
+Wolfram (1983) judged the elementary rules too simple for universal computation,[^20]
+while Kari reports rule 110 proved universal by Cook and Wolfram, citing Wolfram
+(2002).[^21] Rule 110 is not among Wolfram's 32 "legal"
 rules, so the two statements do not strictly conflict ([[rule-110](pages/rule-110.md)]).
-
 [^1]: [[theory-of-cellular-automata-a-survey](pages/theory-of-cellular-automata-a-survey.md)] pp.3-4 [synthesis] - abstract: "a tutorial of CA theory to researchers in other branches of natural computing"; "The selection of topics ... reflects the research interests of the author"; topics: reversibility, conservation laws, decidability questions, computational universality and limit behavior
 [^2]: [[theory-of-cellular-automata-a-survey](pages/theory-of-cellular-automata-a-survey.md)] pp.4-7 [synthesis] - §2.1: a d-dimensional CA is a triple (S, N, f), global transition function G; §2.3: finite configurations C_F and G_F, periodic configurations C_P and G_P; "the behavior of a CA can be quite different on finite, periodic and general configurations, so experiments done with periodic boundary conditions may be misleading"
 [^3]: [[theory-of-cellular-automata-a-survey](pages/theory-of-cellular-automata-a-survey.md)] p.4 [synthesis] - reversibility and conservation laws "can be programmed by choosing the local update rule properly"; using physics to run a universal CA; "While such truly programmable matter may be decades away, its potential is great"
-[^4]: [[theory-of-cellular-automata-a-survey](pages/theory-of-cellular-automata-a-survey.md)] pp.15-19 [synthesis] - Theorem 6 (G_F injective iff G surjective, Moore and Myhill); Theorem 7 implications in every dimension and in 1D; Theorem 9 (Amoroso and Patt: 1D injectivity and surjectivity decidable); Theorem 10 (Kari: undecidable in 2D)
-[^5]: [[theory-of-cellular-automata-a-survey](pages/theory-of-cellular-automata-a-survey.md)] pp.14-15, 17, 19-20 [synthesis] - SNAKES tile set and its plane-filling property; SNAKE-XOR; the injectivity proof reduces the tiling problem using a control layer of T and SNAKES tiles and an xor layer
-[^6]: [[theory-of-cellular-automata-a-survey](pages/theory-of-cellular-automata-a-survey.md)] pp.24-25 [synthesis] - Theorem 15 (Culik et al., Kari): nilpotency undecidable for every d ≥ 1; 1D proof via NW-deterministic tiles; Theorem 16 (Rice's theorem for limit sets, Kari): all non-trivial properties of d-dimensional limit sets are undecidable
-[^7]: [[theory-of-cellular-automata-a-survey](pages/theory-of-cellular-automata-a-survey.md)] pp.18-20 [synthesis] - Margolus neighbourhood; no computable bound on the inverse neighbourhood in 2D; Theorem 11 (Kari): all 1D and 2D reversible CA are a composition of a GMN-CA and a "translation-type" CA
-[^8]: [[theory-of-cellular-automata-a-survey](pages/theory-of-cellular-automata-a-survey.md)] pp.11, 22-23 [synthesis] - Theorem 1 (Berlekamp et al.: Life universal), Theorem 2 (Cook and Wolfram: rule 110 universal); §6 intrinsic universality; Theorem 13 (Ollinger: 6 states, neighbourhood (−1, 0, 1))
-[^9]: [[theory-of-cellular-automata-a-survey](pages/theory-of-cellular-automata-a-survey.md)] pp.28-29 [synthesis] - Corollary 4 (Ito et al.) gcd conditions for surjectivity and injectivity over ℤ_m; Theorem 18 (Cattaneo et al., Manzini and Margara) gcd conditions for equicontinuity, sensitivity, transitivity and positive expansivity; "all the given conditions are fast to test"
-[^10]: [[theory-of-cellular-automata-a-survey](pages/theory-of-cellular-automata-a-survey.md)] p.30 [synthesis] - closure of L(RCA) under reversal holds iff L(RCA) = L(LCA); "This is an intriguing open problem, already posed in 1972"
-[^11]: [[theory-of-cellular-automata-a-survey](pages/theory-of-cellular-automata-a-survey.md)] pp.15-17 [synthesis] - Theorem 7; Figs. 6 and 7; "Fig. 7 contains three implications whose status is unknown"
-[^12]: [[theory-of-cellular-automata-a-survey](pages/theory-of-cellular-automata-a-survey.md)] pp.12-13, 15, 18-19 [synthesis] - Corollary 1 (reversible iff bijection); Corollary 3 (injectivity, bijectivity and reversibility equivalent); Hedlund and Richardson independently; Theorems 9 and 10
-[^13]: [[theory-of-cellular-automata-a-survey](pages/theory-of-cellular-automata-a-survey.md)] pp.8, 25-26 [synthesis] - "The classification due to Wolfram is vague"; Culik and Yu proved their classification undecidable; Durand, Formenti and Varouchas: membership in K1, K2, K3 undecidable for 1D; "The membership problem for class (K4) remains an open problem"
-[^14]: [[theory-of-cellular-automata-a-survey](pages/theory-of-cellular-automata-a-survey.md)] pp.12, 17, 20, 22-23, 25-26, 30 [synthesis] - Open problems 1-9 as stated in §§2.6, 3, 4, 5, 6, 7, 8 and 10
-[^15]: [[theory-of-cellular-automata-a-survey](pages/theory-of-cellular-automata-a-survey.md)] p.13 - "In symbolic dynamics literature it is therefore customary to call reversible CA automorphisms of the shift dynamical system. CA are termed endomorphisms."
-[^16]: [[theory-of-cellular-automata-a-survey](pages/theory-of-cellular-automata-a-survey.md)] p.15 - "Theorem 6 (Garden-of-Eden theorem, Moore [53] and Myhill [55]). G_F is injective if and only if G is surjective."
-[^17]: [[statistical-mechanics-of-cellular-automata](pages/statistical-mechanics-of-cellular-automata.md)] p.630 - "the elementary cellular automata considered here and in Secs. II and III are not of sufficient complexity to be capable of universal computation."
-[^18]: [[theory-of-cellular-automata-a-survey](pages/theory-of-cellular-automata-a-survey.md)] p.11 - "Theorem 2 (M. Cook, S.Wolfram [76]). Rule 110 is computationally universal."
+[^4]: [[theory-of-cellular-automata-a-survey](pages/theory-of-cellular-automata-a-survey.md)] p.4 [synthesis] - "Discrete simulation of fluid flows using CA has even become a field of its own in which CA models are called lattice gases"; refs [27, 31] (Frisch, Hasslacher, Pomeau 1986; Hardy, Pomeau, de Pazzis 1976); "Ising spin models [68] and diffusion phenomena"
+[^5]: [[theory-of-cellular-automata-a-survey](pages/theory-of-cellular-automata-a-survey.md)] p.30 - "Examples of omissions include the firing squad synchronization problem [52], results on fault tolerance [28] and quantum CA [71]."
+[^6]: [[theory-of-cellular-automata-a-survey](pages/theory-of-cellular-automata-a-survey.md)] p.4 - "one-dimensional CA behave in some respects differently from the higher-dimensional ones"
+[^7]: [[theory-of-cellular-automata-a-survey](pages/theory-of-cellular-automata-a-survey.md)] pp.15-19 [synthesis] - Theorem 6 (G_F injective iff G surjective, Moore and Myhill); Theorem 7 implications in every dimension and in 1D; Theorem 9 (Amoroso and Patt: 1D injectivity and surjectivity decidable); Theorem 10 (Kari: undecidable in 2D)
+[^8]: [[theory-of-cellular-automata-a-survey](pages/theory-of-cellular-automata-a-survey.md)] pp.14-15, 17, 19-20 [synthesis] - SNAKES tile set and its plane-filling property; SNAKE-XOR; the injectivity proof reduces the tiling problem using a control layer of T and SNAKES tiles and an xor layer
+[^9]: [[theory-of-cellular-automata-a-survey](pages/theory-of-cellular-automata-a-survey.md)] pp.24-25 [synthesis] - Theorem 15 (Culik et al. [19], Kari [40]): nilpotency undecidable for every d ≥ 1; Theorem 16 holds for input CA with arbitrary state sets, and over a fixed state set 1D surjectivity is a decidable limit-set property (Open problem 6); 1D proof via NW-deterministic tiles; Theorem 16 (Rice's theorem for limit sets, Kari): all non-trivial properties of d-dimensional limit sets are undecidable
+[^10]: [[theory-of-cellular-automata-a-survey](pages/theory-of-cellular-automata-a-survey.md)] pp.18-20 [synthesis] - Margolus neighbourhood; no computable bound on the inverse neighbourhood in 2D; Theorem 11 (Kari): all 1D and 2D reversible CA are a composition of a GMN-CA and a "translation-type" CA
+[^11]: [[theory-of-cellular-automata-a-survey](pages/theory-of-cellular-automata-a-survey.md)] pp.11, 22-23 [synthesis] - Theorem 1 (Berlekamp et al.: Life universal), Theorem 2 (Cook and Wolfram: rule 110 universal); §6 intrinsic universality; Theorem 13 (Ollinger: 6 states, neighbourhood (−1, 0, 1))
+[^12]: [[theory-of-cellular-automata-a-survey](pages/theory-of-cellular-automata-a-survey.md)] pp.28-29 [synthesis] - Corollary 4 (Ito et al.): a gcd condition for surjectivity and a prime-factor condition for injectivity over ℤ_m; Theorem 18 (Cattaneo et al., Manzini and Margara) gcd conditions for equicontinuity, sensitivity, transitivity and positive expansivity; "all the given conditions are fast to test"
+[^13]: [[theory-of-cellular-automata-a-survey](pages/theory-of-cellular-automata-a-survey.md)] p.30 [synthesis] - closure of L(RCA) under reversal holds iff L(RCA) = L(LCA); "This is an intriguing open problem, already posed in 1972"
+[^14]: [[theory-of-cellular-automata-a-survey](pages/theory-of-cellular-automata-a-survey.md)] pp.15-17 [synthesis] - Theorem 7 (two implications stated for 1D only); SNAKE-XOR shows G_P injective does not imply G injective in 2D; Figs. 6 and 7; "Fig. 7 contains three implications whose status is unknown"
+[^15]: [[theory-of-cellular-automata-a-survey](pages/theory-of-cellular-automata-a-survey.md)] pp.12-13, 15, 18-19 [synthesis] - Corollary 1 (reversible iff bijection); Corollary 3 (injectivity, bijectivity and reversibility equivalent); Hedlund and Richardson independently; Theorems 9 and 10
+[^16]: [[theory-of-cellular-automata-a-survey](pages/theory-of-cellular-automata-a-survey.md)] pp.8, 25-26 [synthesis] - "The classification due to Wolfram is vague"; Culik and Yu proved their classification undecidable; Durand, Formenti and Varouchas: membership in K1, K2, K3 undecidable for 1D; "The membership problem for class (K4) remains an open problem"
+[^17]: [[theory-of-cellular-automata-a-survey](pages/theory-of-cellular-automata-a-survey.md)] pp.12, 17, 20, 22-23, 25-26, 30 [synthesis] - Open problems 1-9 as stated in §§2.6, 3, 4, 5, 6, 7, 8 and 10
+[^18]: [[theory-of-cellular-automata-a-survey](pages/theory-of-cellular-automata-a-survey.md)] p.13 - "In symbolic dynamics literature it is therefore customary to call reversible CA automorphisms of the shift dynamical system. CA are termed endomorphisms."
+[^19]: [[theory-of-cellular-automata-a-survey](pages/theory-of-cellular-automata-a-survey.md)] p.15 - "Theorem 6 (Garden-of-Eden theorem, Moore [53] and Myhill [55]). G_F is injective if and only if G is surjective."
+[^20]: [[statistical-mechanics-of-cellular-automata](pages/statistical-mechanics-of-cellular-automata.md)] p.630 - "the elementary cellular automata considered here and in Secs. II and III are not of sufficient complexity to be capable of universal computation."
+[^21]: [[theory-of-cellular-automata-a-survey](pages/theory-of-cellular-automata-a-survey.md)] p.11 - "Theorem 2 (M. Cook, S.Wolfram [76]). Rule 110 is computationally universal."

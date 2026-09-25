@@ -32,13 +32,13 @@ here:[^3]
   "improved" means able to print out larger classes of true theorems. He adds that this may
   interest a logician more than a biologist.
 
-**Later citation.** Kari (2005) credits the "only if" direction of the Garden-of-Eden
-theorem, stated as "G_F is injective if and only if G is surjective", to Myhill's 1963
-note.[^4]
+**Later citation.** Kari (2005) states the Garden-of-Eden theorem as "G_F is injective if
+and only if G is surjective" and credits its two directions to Moore and Myhill.[^4] (Own
+reasoning: Myhill's direction is G_F injective ⇒ G surjective.)
 
 ## Appearances in Sources
 
-- [[theory-of-cellular-automata-a-survey](pages/theory-of-cellular-automata-a-survey.md)] - credits Myhill with the converse of the Garden-of-Eden theorem
+- [[theory-of-cellular-automata-a-survey](pages/theory-of-cellular-automata-a-survey.md)] - credits the Garden-of-Eden theorem to Moore and Myhill
 - [[converse-of-moores-garden-of-eden-theorem](pages/converse-of-moores-garden-of-eden-theorem.md)] - author
 - [[machine-models-of-self-reproduction](pages/machine-models-of-self-reproduction.md)] - cites his work on self-reproducing automata
 

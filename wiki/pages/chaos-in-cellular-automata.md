@@ -35,8 +35,10 @@ its own by more than ε. For CA, having no equicontinuity points already implies
 sensitivity.[^3]
 
 **Positive expansivity.** Stronger still: there is an ε such that *any* two different
-configurations, however close, eventually separate by more than ε.[^4] Positively
-expansive CA exist only in one dimension. There are none in two or more.[^5] Every
+configurations, however close, eventually separate by more than ε.[^4] There are
+no positively expansive CA in two or more dimensions.[^5] One-dimensional ones do exist:
+by the linear criteria, x₋₁ + x₁ mod 2 ([[rule-90](pages/rule-90.md)]) is one (own
+reasoning, from Theorem 18). Every
 positively expansive CA is mixing (Blanchard and Maass).[^6]
 
 **Kurka's classes** sort every CA into exactly one of K1 equicontinuous, K2 some
@@ -54,11 +56,13 @@ Mixing implies transitive, and in CA transitive implies surjective and sensitive
 **Devaney chaos.** Devaney calls a system chaotic if it is (1) transitive, (2) has dense
 temporally periodic points, and (3) is sensitive. In CA (1) implies (3), so only (1) and
 (2) are needed. Kari asks whether temporally periodic configurations are dense in every
-surjective CA. If they are, then (since transitive implies surjective) chaos in CA is the
-same as transitivity.[^7]
+surjective CA. If they are, chaos in CA is the same as transitivity.[^7] (Own reasoning:
+this works because transitive CA are surjective.)
 
 **Linear rules.** For linear CA over ℤ_m, equicontinuity, sensitivity, transitivity and
-positive expansivity each reduce to a gcd test on the coefficients
+positive expansivity each reduce to a gcd test on the coefficients. There, equicontinuity
+at one point already implies equicontinuity everywhere, and sensitive means exactly not
+equicontinuous, so Kurka's class K2 is empty
 ([[additive-cellular-automaton](pages/additive-cellular-automaton.md)]).[^8]
 
 ## Appearances in Sources

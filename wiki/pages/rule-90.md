@@ -52,7 +52,7 @@ alternate cells.[^10]
 coefficient 1 at offsets −1 and +1 and 0 at offset 0. Kari's gcd criteria for linear rules
 ([[additive-cellular-automaton](pages/additive-cellular-automaton.md)]) then make it
 surjective but not injective, transitive, and positively expansive: every two distinct
-configurations eventually separate ([[chaos-in-cellular-automata](pages/chaos-in-cellular-automata.md)]).[^11]
+configurations eventually separate by at least one fixed distance ([[chaos-in-cellular-automata](pages/chaos-in-cellular-automata.md)]).[^11]
 
 ## Appearances in Sources
 

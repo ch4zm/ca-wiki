@@ -72,7 +72,9 @@ cell itself, are additive as well.[^11]
 **Linear rules over rings (Kari).** Kari (2005) calls these rules *linear* or *additive*
 and allows any commutative finite ring S with identity, not only ℤ₂. The local rule is
 f(a₁, …, aₙ) = c₁a₁ + ⋯ + cₙaₙ. He warns that some CA literature calls every 1D CA
-"linear", meaning the cells lie on a line.[^12] The superposition principle
+"linear", meaning the cells lie on a line.[^12] (Own reasoning: Kari's class is wider than
+the four legal additive rules above. Over ℤ₂ with three neighbours it has eight elementary
+rules: 0, 60, 90, 102, 150, 170, 204 and 240. The extra four are not mirror-symmetric.) The superposition principle
 G(ac₁ + bc₂) = aG(c₁) + bG(c₂) can itself serve as the definition, which extends linearity
 to any finite abelian group.[^13]
 
@@ -95,7 +97,8 @@ to any finite abelian group.[^13]
 
 (Own reasoning, applying these tests.) [[rule-90](pages/rule-90.md)] over ℤ₂ has
 coefficients 1 at offsets −1 and +1 and 0 at offset 0. It is surjective, not injective
-(2 divides neither coefficient, not all but one), transitive, and positively expansive.
+(two coefficients, those at ±1, are not divisible by 2, so "all but exactly one" fails),
+transitive, and positively expansive.
 Rule 150 adds coefficient 1 at offset 0 and gives the same four results.
 
 ## Appearances in Sources

@@ -62,7 +62,7 @@ up to that size. In 1D the inverse is small: for a radius-½ rule with s states 
 most s − 1 consecutive cells, and that bound is tight.[^12]
 
 **Reversible local rules.** A reversible global map still has a many-to-one local rule
-f, which cannot be built from reversible logic. Toffoli and Margolus asked whether every
+f, which cannot be built from reversible logic. Toffoli and Margolus (1990) asked whether every
 reversible CA can be built from reversible local rules instead. Kari showed that in 1D and
 2D every reversible CA is a generalized-Margolus (block-permutation) rule composed with a
 "translation-type" rule, and that a d-dimensional block rule needs a clock cycle of at most

@@ -69,7 +69,7 @@ has no continuous square root, cube root, and so on
 **Size.** Hedlund reports the impression that A(S) is "relatively sparse" among the
 endomorphisms, and notes that nothing had been proved in that direction.[^13]
 
-**The later name.** Kari (2005) confirms the reading above as standard usage. Because a CA
+**The later name.** Kari (2005) confirms the cellular-automaton reading below as standard usage. Because a CA
 is reversible iff it is bijective, symbolic dynamics calls reversible CA the automorphisms
 of the shift, and CA its endomorphisms.[^14] The survey adds facts about this group that
 Hedlund did not have. Universal computation is possible inside it: Morita and Harao (1989)

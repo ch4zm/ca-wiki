@@ -12,8 +12,8 @@ updated: 2026-09-24
 
 ## Description
 
-**Two kinds of universality.** Simulating a Turing machine in a CA is not hard, so
-*computational* universality is easy to get. Very simple rules such as the
+**Two kinds of universality.** It is not difficult to simulate a Turing machine in a CA,
+so universal computation is clearly possible in CA. Very simple rules such as the
 [[game-of-life](pages/game-of-life.md)], [[rule-110](pages/rule-110.md)] and Margolus's
 billiard-ball computer ([[margolus-neighbourhood](pages/margolus-neighbourhood.md)]) have
 it. Kari, citing Wolfram (2002), calls it the rule rather than the exception among CA.[^1]
