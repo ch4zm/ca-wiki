@@ -61,7 +61,6 @@ Nilpotency, ∃y ∀x (x →* y ∧ y → y), is FP with the quantifiers swapped
 - [[classification-of-cellular-automata](pages/classification-of-cellular-automata.md)] - FP as Wolfram class I; Culik-Yu's CY3 is decidable reachability for finite configurations
 - [[limit-set](pages/limit-set.md)] - nilpotency, the quantifier swap of FP
 - [[rule-110](pages/rule-110.md)] - universal, yet trivially decidable on finite support
-- [[collatz-function](pages/collatz-function.md)] - a reachability question for small Turing machines as hard as the Collatz problem
 
 [^1]: [[aucm-ch12-linear-cellular-automata-and-decidability](pages/aucm-ch12-linear-cellular-automata-and-decidability.md)] p.269 — "one can expect hardness results for the plain Reachability Problem: for two configurations X and Y that have finitary descriptions, is X →* Y?"
 [^2]: [[aucm-ch12-linear-cellular-automata-and-decidability](pages/aucm-ch12-linear-cellular-automata-and-decidability.md)] p.262 [synthesis] — T_ρ = ⟨C, →, →*⟩ with →* "the transitive reflexive closure of →, the reachability or orbit relation"; "the first-order theory of T_ρ is not decidable in general"

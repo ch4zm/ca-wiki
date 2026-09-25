@@ -1,8 +1,8 @@
 ---
 title: Overview
 tags: [overview, synthesis]
-sources: [theory-of-self-reproducing-automata, tsra-editors-introduction, tsra-lecture-2, tsra-lecture-3, tsra-lecture-4, tsra-lecture-5, tsra-part2-ch1, tsra-part2-ch2, tsra-part2-ch3, tsra-part2-ch4, tsra-part2-ch5, endomorphisms-and-automorphisms-of-the-shift-dynamical-system, machine-models-of-self-reproduction, converse-of-moores-garden-of-eden-theorem, statistical-mechanics-of-cellular-automata, planetmath-garden-of-eden-theorem, computation-at-the-edge-of-chaos, theory-of-cellular-automata-a-survey, automata-universality-computation, aucm-ch5-small-universal-turing-machines, aucm-ch6-reversible-turing-machines-by-rlem, aucm-ch12-linear-cellular-automata-and-decidability, aucm-ch13-cellular-automata-with-write-access, aucm-ch14-broadcasting-automata, aucm-ch15-real-time-prime-generators, aucm-ch16-phyllosilicate-automata]
-updated: 2026-09-24
+sources: [theory-of-self-reproducing-automata, tsra-editors-introduction, tsra-lecture-2, tsra-lecture-3, tsra-lecture-4, tsra-lecture-5, tsra-part2-ch1, tsra-part2-ch2, tsra-part2-ch3, tsra-part2-ch4, tsra-part2-ch5, endomorphisms-and-automorphisms-of-the-shift-dynamical-system, machine-models-of-self-reproduction, converse-of-moores-garden-of-eden-theorem, statistical-mechanics-of-cellular-automata, planetmath-garden-of-eden-theorem, computation-at-the-edge-of-chaos, theory-of-cellular-automata-a-survey, automata-universality-computation, aucm-ch12-linear-cellular-automata-and-decidability]
+updated: 2026-09-25
 ---
 
 # Cellular Automata — Overview
@@ -19,11 +19,7 @@ concept is complexity, and its two central problems are
 **Foundations.** Two logical ingredients underlie everything: networks of idealized
 threshold elements ([[mcculloch-pitts-neuron](pages/mcculloch-pitts-neuron.md)]) and Turing's
 [[universal-turing-machine](pages/universal-turing-machine.md)]. Universality has a threshold: above a minimum complexity,
-one automaton can do anything any automaton can do. The threshold is partly mapped for
-program size. The smallest known universal Turing machines, many of them simulators of a
-[[tag-system](pages/tag-system.md)], sit a few (states, symbols) pairs above the sizes
-where halting is decidable. Machines in the gap already iterate the
-[[collatz-function](pages/collatz-function.md)]. A universal automaton still cannot predict arbitrary
+one automaton can do anything any automaton can do. A universal automaton still cannot predict arbitrary
 behavior, which suggests that complex automata may be simpler than any description of what
 they do ([[description-vs-object-complexity](pages/description-vs-object-complexity.md)]).
 
@@ -134,10 +130,7 @@ while orbit questions are undecidable at graded levels
 Nilpotency is undecidable even in 1D, and so is every non-trivial property of the
 [[limit-set](pages/limit-set.md)] when the state set may vary. Physics motivates block-permutation rules that are
 reversible by construction ([[margolus-neighbourhood](pages/margolus-neighbourhood.md)])
-and additive [[conserved-quantity](pages/conserved-quantity.md)]s. Reversible Turing machines are universal (Bennett), and any of them can be built from a
-single one-bit reversible element, the rotary element
-([[reversible-logic-element-with-memory](pages/reversible-logic-element-with-memory.md)]),
-realizable in the frictionless [[billiard-ball-model](pages/billiard-ball-model.md)]
+and additive [[conserved-quantity](pages/conserved-quantity.md)]s. Reversible Turing machines are universal (Bennett)
 ([[reversible-turing-machine](pages/reversible-turing-machine.md)]). Universality splits
 into the Turing kind, which Life and [[rule-110](pages/rule-110.md)] have, and the
 stronger [[intrinsic-universality](pages/intrinsic-universality.md)]. Wolfram's classes
@@ -145,21 +138,7 @@ get formal, and undecidable, successors
 ([[classification-of-cellular-automata](pages/classification-of-cellular-automata.md)]).
 Topological dynamics supplies a precise vocabulary of
 [[chaos-in-cellular-automata](pages/chaos-in-cellular-automata.md)]. For linear rules over
-ℤ_m, injectivity, surjectivity and the dynamical properties reduce to gcd tests. Variants relax the read-only cell: in a
-[[cellular-automaton-with-write-access](pages/cellular-automaton-with-write-access.md)]
-active cells write to their neighbours, which suits agents and particles such as the
-traffic [[rule-184](pages/rule-184.md)], without adding power at bounded radius. In a
-[[broadcasting-automaton](pages/broadcasting-automaton.md)] each state sets a Euclidean
-transmission radius. Its waves trace discrete discs, which generalize the von Neumann and
-Moore neighbourhoods ([[neighbourhood-sequence](pages/neighbourhood-sequence.md)]). Composing
-discs yields only convex shapes, and aggregating two wave trains escapes that limit. Signals, straight-line information flows limited to one cell per step, let a 1D CA act as
-a clock: an 8-state rule fires its end cell at exactly the prime times
-([[sequence-generation-by-cellular-automata](pages/sequence-generation-by-cellular-automata.md)]),
-and 25 states suffice even when neighbours exchange only one bit per step
-([[one-bit-communication-cellular-automaton](pages/one-bit-communication-cellular-automaton.md)]). Life's gliders, eaters and guns are not tied to the square grid: they reappear in
-Life-like rules of the two-node-type
-[[phyllosilicate-automaton](pages/phyllosilicate-automaton.md)], though most collisions
-there explode. Bounded-space 1D CA also serve as
+ℤ_m, injectivity, surjectivity and the dynamical properties reduce to gcd tests. Bounded-space 1D CA also serve as
 language recognizers
 ([[language-recognition-by-cellular-automata](pages/language-recognition-by-cellular-automata.md)]).
 
@@ -172,15 +151,6 @@ language recognizers
 - What is the degree of the full first-order theory of a CA with its orbit relation? Sutner
   suspects every level of the arithmetic hierarchy is expressible as an orbit assertion.
 - Could pseudo-random rule 30 ever carry an undecidability proof?
-- What is the fewest states a real-time prime generator can have? The record is 8 for an
-  ordinary CA and 25 with one-bit links, and the source gives no lower bound.
-- Do the phyllosilicate rules R65 and R68 have glider guns, and R65 and R72 still lifes?
-  Adamatzky expects so. Are their few non-explosive collisions enough to build logic?
-- Which of the 39 open (states, symbols) pairs admit a universal Turing machine? Machines
-  of Collatz-simulator size are already at least as hard to analyse as the Collatz
-  conjecture.
-- Is the one remaining non-degenerate 2-state, 2-symbol reversible logic element
-  universal? The other three are not, and every one with more symbols is.
 - In two or more dimensions, which of the three open Garden-of-Eden implications between
   G, G_F and G_P hold?
 - Is positive expansivity of 1D rules decidable? Can one decide whether a 1D rule has any
@@ -262,17 +232,7 @@ language recognizers
 - [[language-recognition-by-cellular-automata](pages/language-recognition-by-cellular-automata.md)]
 - [[decidability-in-cellular-automata](pages/decidability-in-cellular-automata.md)]
 - [[tag-system](pages/tag-system.md)]
-- [[collatz-function](pages/collatz-function.md)]
 - [[reversible-turing-machine](pages/reversible-turing-machine.md)]
-- [[reversible-logic-element-with-memory](pages/reversible-logic-element-with-memory.md)]
-- [[billiard-ball-model](pages/billiard-ball-model.md)]
 - [[first-order-theory-of-cellular-automata](pages/first-order-theory-of-cellular-automata.md)]
 - [[de-bruijn-graph](pages/de-bruijn-graph.md)]
 - [[reachability-in-cellular-automata](pages/reachability-in-cellular-automata.md)]
-- [[cellular-automaton-with-write-access](pages/cellular-automaton-with-write-access.md)]
-- [[rule-184](pages/rule-184.md)]
-- [[broadcasting-automaton](pages/broadcasting-automaton.md)]
-- [[neighbourhood-sequence](pages/neighbourhood-sequence.md)]
-- [[sequence-generation-by-cellular-automata](pages/sequence-generation-by-cellular-automata.md)]
-- [[one-bit-communication-cellular-automaton](pages/one-bit-communication-cellular-automaton.md)]
-- [[phyllosilicate-automaton](pages/phyllosilicate-automaton.md)]

@@ -3,19 +3,16 @@ title: Rule 110
 category: Rules
 summary: Elementary cellular automaton 110 (01101110) - Wolfram class 4, full of colliding localized signals, and proved computationally universal by Cook and Wolfram; whether it is intrinsically universal is open, as is the universality of its class-4 cousin rule 54
 tags: [rule, rule-110, elementary-ca, class-4, universality, cook, wolfram]
-sources: [theory-of-cellular-automata-a-survey, statistical-mechanics-of-cellular-automata, aucm-ch5-small-universal-turing-machines, aucm-ch12-linear-cellular-automata-and-decidability]
+sources: [theory-of-cellular-automata-a-survey, statistical-mechanics-of-cellular-automata, aucm-ch12-linear-cellular-automata-and-decidability]
 created: 2026-09-24
-updated: 2026-09-24
+updated: 2026-09-25
 ---
 
 # Rule 110
 
 > The universality proof is cited via
 > [[theory-of-cellular-automata-a-survey](pages/theory-of-cellular-automata-a-survey.md)]
-> (as Wolfram's *A New Kind of Science*, 2002) and
-> [[aucm-ch5-small-universal-turing-machines](pages/aucm-ch5-small-universal-turing-machines.md)]
-> (as Cook, "Universality in elementary cellular automata", *Complex Systems* 15(1), 2004).
-> Neither has been read.
+> (as Wolfram's *A New Kind of Science*, 2002) and has not been read.
 
 ## Description
 
@@ -41,10 +38,7 @@ same way as glider collisions in the [[game-of-life](pages/game-of-life.md)]. On
 dimension makes this harder than two, because signals cannot easily cross.[^3] Kari leaves
 the exact form of universality undefined.[^4] The proof simulates Turing machines, which is
 the weaker of the two kinds of universality
-([[intrinsic-universality](pages/intrinsic-universality.md)]).[^5] Neary and Woods cite Cook
-(2004) for the result and list rule 110 with small universal Turing machines and tag
-systems ([[tag-system](pages/tag-system.md)]) as standard stepping stones: simulating one
-of them is now the usual way to prove another model universal.[^6]
+([[intrinsic-universality](pages/intrinsic-universality.md)]).[^5]
 
 **What the proof needs.** Cook's construction runs on ultimately periodic configurations
 with two different periodic blocks. The block extending left times the computation, and
@@ -53,13 +47,13 @@ carries universality. On configurations of finite support, by contrast, reachabi
 rule 110 is trivially decidable. Neary and Woods later removed the exponential slowdown in
 the original construction. As a result, predicting the state of one cell at time t from a
 finite configuration is P-complete
-([[reachability-in-cellular-automata](pages/reachability-in-cellular-automata.md)]).[^7]
+([[reachability-in-cellular-automata](pages/reachability-in-cellular-automata.md)]).[^6]
 
 **Open questions.** Is rule 110 *intrinsically* universal? And is rule 54, another
-elementary class-4 rule, computationally universal?[^8]
+elementary class-4 rule, computationally universal?[^7]
 
 **Against the 1983 view.** Wolfram (1983) wrote that the elementary rules he studied were
-too simple for universal computation.[^9] Those were the 32 legal rules, which exclude
+too simple for universal computation.[^8] Those were the 32 legal rules, which exclude
 110, so the two claims are consistent. Still, the universality of a two-state
 nearest-neighbour rule reverses the 1983 expectation for the family as a whole (own
 reasoning).
@@ -67,7 +61,6 @@ reasoning).
 ## Appearances in Sources
 
 - [[aucm-ch12-linear-cellular-automata-and-decidability](pages/aucm-ch12-linear-cellular-automata-and-decidability.md)] - the periodic backgrounds in Cook's proof; P-completeness; decidable reachability on finite support
-- [[aucm-ch5-small-universal-turing-machines](pages/aucm-ch5-small-universal-turing-machines.md)] - Cook (2004) as the universality proof; rule 110 as a standard route to universality proofs
 - [[theory-of-cellular-automata-a-survey](pages/theory-of-cellular-automata-a-survey.md)] - §2.5 (rule table, Fig. 3), §2.6 (Theorem 2, Open problem 1), §6 (Open problem 5)
 - [[statistical-mechanics-of-cellular-automata](pages/statistical-mechanics-of-cellular-automata.md)] - the numbering; the judgement that the legal elementary rules are not universal
 
@@ -79,7 +72,7 @@ reasoning).
 - [[universal-turing-machine](pages/universal-turing-machine.md)] - what the proof simulates
 - [[classification-of-cellular-automata](pages/classification-of-cellular-automata.md)] - class 4 and Wolfram's universality conjecture
 - [[rule-90](pages/rule-90.md)] - the canonical additive elementary rule, for contrast
-- [[tag-system](pages/tag-system.md)] - a fellow stepping stone for universality proofs
+- [[tag-system](pages/tag-system.md)] - the cyclic tag system Cook's construction encodes
 - [[reachability-in-cellular-automata](pages/reachability-in-cellular-automata.md)] - decidable on finite support, universal on periodic backgrounds
 
 [^1]: [[theory-of-cellular-automata-a-survey](pages/theory-of-cellular-automata-a-survey.md)] p.8 [synthesis] - "the famous rule 110 is the elementary CA where f(111) = 0, f(110) = 1, f(101) = 1, f(100) = 0, f(011) = 1, f(010) = 1, f(001) = 1, f(000) = 0, obtained from the binary expansion 110 = (01101110)b"
@@ -87,7 +80,6 @@ reasoning).
 [^3]: [[theory-of-cellular-automata-a-survey](pages/theory-of-cellular-automata-a-survey.md)] p.11 [synthesis] - "Rule 110 is in Wolfram class 4, and Wolfram conjectured in the 1980s that it is computationally universal [74]. Recently this result was established by him and Cook [76]"; signals encode information and collisions perform logic "in the same spirit" as GOL gliders; "in two dimensions it is much easier to make signals cross each other"; Theorem 2
 [^4]: [[theory-of-cellular-automata-a-survey](pages/theory-of-cellular-automata-a-survey.md)] p.12 - "We leave the exact form of universality of rule 110 undefined here."
 [^5]: [[theory-of-cellular-automata-a-survey](pages/theory-of-cellular-automata-a-survey.md)] p.23 - "The universality of GOL and rule 110 is based on performing Turing machine simulations in the CA."
-[^6]: [[aucm-ch5-small-universal-turing-machines](pages/aucm-ch5-small-universal-turing-machines.md)] pp.117-118 — "Simulation of small universal Turing machines and other simple universal models such as Post's tag systems [36] and the cellular automaton rule 110 [4] is by now a standard way to prove that a large number of other models of computation, including a variety of physically-inspired systems, are computationally universal."; [4] = Cook, M.: Universality in elementary cellular automata. Complex Systems 15(1), 1–40 (2004)
-[^7]: [[aucm-ch12-linear-cellular-automata-and-decidability](pages/aucm-ch12-linear-cellular-automata-and-decidability.md)] p.270 [synthesis] — "Cook's proof of computational universality uses ultimately periodic configurations ... the left block serves to time the computation whereas the right block encodes the cyclic tag-system that is essential for universality. By contrast, Reachability for rule 110 is trivially decidable for configurations of finite support"; Neary and Woods: "it is P-complete to determine the state of a particular cell at time t of the evolution of a finite configuration under rule 110"
-[^8]: [[theory-of-cellular-automata-a-survey](pages/theory-of-cellular-automata-a-survey.md)] pp.12, 23 [synthesis] - Open problem 1: "Is the elementary CA rule 54 computationally universal?", described as "another elementary CA that is in Wolfram class 4"; Open problem 5: "Is rule 110 intrinsically universal?"
-[^9]: [[statistical-mechanics-of-cellular-automata](pages/statistical-mechanics-of-cellular-automata.md)] p.630 - "the elementary cellular automata considered here and in Secs. II and III are not of sufficient complexity to be capable of universal computation."
+[^6]: [[aucm-ch12-linear-cellular-automata-and-decidability](pages/aucm-ch12-linear-cellular-automata-and-decidability.md)] p.270 [synthesis] — "Cook's proof of computational universality uses ultimately periodic configurations ... the left block serves to time the computation whereas the right block encodes the cyclic tag-system that is essential for universality. By contrast, Reachability for rule 110 is trivially decidable for configurations of finite support"; Neary and Woods: "it is P-complete to determine the state of a particular cell at time t of the evolution of a finite configuration under rule 110"
+[^7]: [[theory-of-cellular-automata-a-survey](pages/theory-of-cellular-automata-a-survey.md)] pp.12, 23 [synthesis] - Open problem 1: "Is the elementary CA rule 54 computationally universal?", described as "another elementary CA that is in Wolfram class 4"; Open problem 5: "Is rule 110 intrinsically universal?"
+[^8]: [[statistical-mechanics-of-cellular-automata](pages/statistical-mechanics-of-cellular-automata.md)] p.630 - "the elementary cellular automata considered here and in Secs. II and III are not of sufficient complexity to be capable of universal computation."

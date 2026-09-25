@@ -2,9 +2,47 @@
 
 ## Identity
 - **Path:** `.` (the directory containing this SCHEMA.md)
-- **Domain:** Cellular automata
+- **Domain:** Two-dimensional cellular automata in the Game of Life family, and how people
+  model, search, and simulate them (see **Scope** below)
 - **Source types:** papers (PDF/arXiv), web pages / URLs, books / transcripts
 - **Created:** 2026-09-24
+
+## Scope
+
+Every ingest passes through this gate. It decides which sources, chapters, and pages the
+wiki takes on.
+
+- **Core (full pages, actively grown):** 2D lattice cellular automata in the Life family.
+  - Life-like (outer-totalistic, two-state) rules in B/S rulestring notation, and the rule
+    space they form: B3/S23 and its neighbors (HighLife, Day & Night, Seeds, ...).
+  - Multistate rules, especially Generations rules, where dying cells pass through
+    dead-but-waiting (refractory) states before becoming available for birth: Star Wars,
+    Brian's Brain, and the rest of the family. Also excitable media, Wireworld, and von
+    Neumann's 29-state rule.
+  - Other extensions of Life on the 2D grid: isotropic non-totalistic rules (Hensel
+    notation), Larger than Life, other neighbourhoods and grids.
+  - Specific patterns and pattern classes: still lifes, oscillators, spaceships, guns,
+    puffers, methuselahs, Gardens of Eden in Life.
+  - How people study and simulate these systems: random-soup statistics and census work,
+    search programs, simulation algorithms (HashLife, QuickLife), rule formats and rule
+    tables, and engineering inside a rule (glider logic, Turing machines built in Life).
+- **Background (a page only when a core source needs it):** 1D and elementary cellular
+  automata, symbolic dynamics, Garden-of-Eden theory, reversibility, decidability,
+  classification schemes, the edge of chaos. Existing background pages are kept but not
+  expanded for their own sake.
+- **Out of scope (do not ingest, do not create pages):** abstract machine models with no
+  Life-family content: small universal Turing machines, reversible logic elements,
+  broadcasting or write-access automata, language recognition and sequence generation as
+  such, CA on exotic substrates.
+
+**Applying the gate:**
+- A book or collection is ingested chapter by chapter; ingest only chapters that pass.
+- A new concept earns its own page only if it is Core, or Background that a Core page
+  needs to explain itself. A term that is interesting but out of scope gets a sentence on
+  the source page, not a page of its own.
+- Prefer Rules and Patterns pages over new Concepts pages when a source supports both.
+- `wiki-lint` must not propose theory ingests or new theory pages to connect orphaned
+  Background pages to each other.
 
 ## Page Frontmatter
 Every wiki page must start with:

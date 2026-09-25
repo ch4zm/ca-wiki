@@ -3,7 +3,7 @@ title: Classification of Cellular Automata
 category: Concepts
 summary: Schemes for sorting rules by behaviour - Wolfram's simple/complex split (1983) and four classes (1984), Culik and Yu's formal four classes on finite configurations (undecidable), and Kurka's four equicontinuity classes from topological dynamics (undecidable except the open positively-expansive class)
 tags: [concept, classification, wolfram-classes, culik-yu, kurka, undecidability]
-sources: [theory-of-cellular-automata-a-survey, statistical-mechanics-of-cellular-automata, aucm-ch12-linear-cellular-automata-and-decidability, aucm-ch16-phyllosilicate-automata]
+sources: [theory-of-cellular-automata-a-survey, statistical-mechanics-of-cellular-automata, aucm-ch12-linear-cellular-automata-and-decidability]
 created: 2026-09-24
 updated: 2026-09-25
 ---
@@ -60,15 +60,8 @@ Properties that look at a bounded number of steps are all decidable in 1D
 ([[first-order-theory-of-cellular-automata](pages/first-order-theory-of-cellular-automata.md)]),
 so any classification that captures long-term behaviour is out of automatic reach.[^7]
 
-**Adamatzky: morphology.** For the two-node-type
-[[phyllosilicate-automaton](pages/phyllosilicate-automaton.md)], Adamatzky sorts 100,000
-random rules by what grows from a random seed. By shape the classes are octagonal,
-near-circular, stationary hulls, dendritic, and decay to localizations. By interior they
-are solid, labyrinthine, wave-like, disordered, and localizations. Like Wolfram's, the
-scheme is phenomenological and admittedly coarse.[^8]
-
 **Kurka: equicontinuity classes.** From topological dynamics
-([[chaos-in-cellular-automata](pages/chaos-in-cellular-automata.md)]):[^9]
+([[chaos-in-cellular-automata](pages/chaos-in-cellular-automata.md)]):[^8]
 
 - **K1**: equicontinuous (every configuration is an equicontinuity point).
 - **K2**: some but not all configurations are equicontinuity points.
@@ -78,7 +71,7 @@ scheme is phenomenological and admittedly coarse.[^8]
 Every CA is in exactly one class, because a CA with no equicontinuity points is
 automatically sensitive. K4 is empty in two or more dimensions. For 1D CA, membership in
 K1, K2 and K3 is undecidable. Whether K4 membership (positive expansivity) is decidable is
-open.[^9][^10]
+open.[^8][^9]
 
 **Comparison (own reasoning).** Wolfram's classes describe what is seen from random
 starts. Culik-Yu's describe finite configurations and computability. Kurka's describe how
@@ -87,7 +80,6 @@ All the formal versions are undecidable, so none can be computed from a rule tab
 
 ## Appearances in Sources
 
-- [[aucm-ch16-phyllosilicate-automata](pages/aucm-ch16-phyllosilicate-automata.md)] - shape and morphology classes for phyllosilicate automata
 - [[aucm-ch12-linear-cellular-automata-and-decidability](pages/aucm-ch12-linear-cellular-automata-and-decidability.md)] - FP as Wolfram class I; classification by reachability degree
 - [[theory-of-cellular-automata-a-survey](pages/theory-of-cellular-automata-a-survey.md)] - §2.5 (Wolfram and Culik-Yu classes), §8 (Kurka classes)
 - [[statistical-mechanics-of-cellular-automata](pages/statistical-mechanics-of-cellular-automata.md)] - the 1983 simple/complex split
@@ -101,7 +93,6 @@ All the formal versions are undecidable, so none can be computed from a rule tab
 - [[decidability-in-cellular-automata](pages/decidability-in-cellular-automata.md)] - where the undecidability of the classes sits
 - [[self-organization](pages/self-organization.md)] - Wolfram's statistical classes from random starts
 - [[reachability-in-cellular-automata](pages/reachability-in-cellular-automata.md)] - the degree of the orbit problem as a classification
-- [[phyllosilicate-automaton](pages/phyllosilicate-automaton.md)] - classified by pattern shape and interior
 - [[edge-of-chaos](pages/edge-of-chaos.md)] - Wolfram's classes placed on Langton's order-chaos axis, class IV at the transition
 - [[computation-at-the-edge-of-chaos](pages/computation-at-the-edge-of-chaos.md)] - Langton's paper relating the classes to the λ sweep
 - [[lambda-parameter](pages/lambda-parameter.md)] - the parameter along which the classes line up
@@ -113,6 +104,5 @@ All the formal versions are undecidable, so none can be computed from a rule tab
 [^5]: [[theory-of-cellular-automata-a-survey](pages/theory-of-cellular-automata-a-survey.md)] p.9 [synthesis] - (CY1)-(CY4) with "CA belongs to the lowest class whose defining property is satisfied"; "class (1) is not equivalent to nilpotency ... e.g. rule 128 in which the quiescent state 0 spreads killing all 1's"
 [^6]: [[aucm-ch12-linear-cellular-automata-and-decidability](pages/aucm-ch12-linear-cellular-automata-and-decidability.md)] pp.270-271 [synthesis] — "We can construe FP as a formalization of the first Wolfram class"; Theorem 7: Π⁰₁-complete; Theorem 8; "one should consider a more fine-grained hierarchy based on the complexity of Reachability. The resulting classification is again highly undecidable ... testing for computational universality is Σ⁰₄-complete"
 [^7]: [[aucm-ch12-linear-cellular-automata-and-decidability](pages/aucm-ch12-linear-cellular-automata-and-decidability.md)] p.273 — "Even in the one-dimensional case, assertions about long term evolution tend to be undecidable and fully automatic classification is simply impossible."
-[^8]: [[aucm-ch16-phyllosilicate-automata](pages/aucm-ch16-phyllosilicate-automata.md)] pp.357-365, 376 [synthesis] — 100K random rules; five shape classes C1-C5 and five morphology classes M1-M5; "The classes proposed give rather a coarse classification of a rule space"
-[^9]: [[theory-of-cellular-automata-a-survey](pages/theory-of-cellular-automata-a-survey.md)] pp.25-26 [synthesis] - Kurka [48] classes (K1)-(K4); "every CA belongs to exactly one class"; "In two- and higher-dimensional cases class (K4) is empty"; [23]: undecidable for 1D whether a CA belongs to K1, K2 or K3; "The membership problem for class (K4) remains an open problem"
-[^10]: [[theory-of-cellular-automata-a-survey](pages/theory-of-cellular-automata-a-survey.md)] p.25 - "CA have the property that if there are no equicontinuity points then the CA is sensitive [48]."
+[^8]: [[theory-of-cellular-automata-a-survey](pages/theory-of-cellular-automata-a-survey.md)] pp.25-26 [synthesis] - Kurka [48] classes (K1)-(K4); "every CA belongs to exactly one class"; "In two- and higher-dimensional cases class (K4) is empty"; [23]: undecidable for 1D whether a CA belongs to K1, K2 or K3; "The membership problem for class (K4) remains an open problem"
+[^9]: [[theory-of-cellular-automata-a-survey](pages/theory-of-cellular-automata-a-survey.md)] p.25 - "CA have the property that if there are no equicontinuity points then the CA is sensitive [48]."

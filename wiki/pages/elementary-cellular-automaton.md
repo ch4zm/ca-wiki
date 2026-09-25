@@ -3,7 +3,7 @@ title: Elementary Cellular Automaton
 category: Concepts
 summary: Wolfram's name for the simplest nontrivial cellular automata - a line of two-state cells, each updated from itself and its two nearest neighbours; 256 rules named by their 8-bit rule tables, 32 of them "legal"
 tags: [concept, elementary-ca, wolfram, rule-numbering, one-dimensional]
-sources: [statistical-mechanics-of-cellular-automata, computation-at-the-edge-of-chaos, theory-of-cellular-automata-a-survey, aucm-ch13-cellular-automata-with-write-access]
+sources: [statistical-mechanics-of-cellular-automata, computation-at-the-edge-of-chaos, theory-of-cellular-automata-a-survey]
 created: 2026-09-24
 updated: 2026-09-25
 ---
@@ -47,11 +47,9 @@ instructions.[^5]
 ([[additive-cellular-automaton](pages/additive-cellular-automaton.md)]). Rules 0, 4, 50 and
 254 satisfy conjunctive superposition, and 0, 204, 250 and 254 disjunctive superposition.
 No other legal rule has a superposition principle. *Peripheral* rules ignore the centre
-cell: 0, 90, 160 and 250.[^6] Outside the legal family,
-[[rule-184](pages/rule-184.md)] is the *traffic rule*: a 1 moves right whenever the cell
-ahead is empty.[^7]
+cell: 0, 90, 160 and 250.[^6]
 
-**Simple vs complex.** From a single 1, the legal rules fall into three behaviours:[^8]
+**Simple vs complex.** From a single 1, the legal rules fall into three behaviours:[^7]
 
 - The 1 is erased at once, as in rules 0 and 160, or frozen forever, as in rules 4 and 36.
   These rules have 100→0 and 001→0, so the 1 cannot spread.
@@ -61,10 +59,10 @@ ahead is empty.[^7]
 
 Wolfram calls the first two groups **simple** and the third **complex**. From random
 starts, simple rules settle to fixed points or short cycles, like the limit points and
-limit cycles of dynamical systems. Complex rules behave more like strange attractors.[^9]
+limit cycles of dynamical systems. Complex rules behave more like strange attractors.[^8]
 From random starts, the complex rules are 18, 22, 122, 126, 146 and 182, which are
 non-additive, and the
-additive rules 90 and 150.[^10] (Own check by simulation: from a single 1, rule 122 grows
+additive rules 90 and 150.[^9] (Own check by simulation: from a single 1, rule 122 grows
 only the uniform block listed above, so it is complex from random starts but simple from
 a seed.) Their statistics are covered on
 [[self-organization](pages/self-organization.md)] and
@@ -72,35 +70,34 @@ a seed.) Their statistics are covered on
 
 **Finite versions.** A finite line needs boundary conditions. The two used are
 *periodic*, where the ends are joined into a circle, and *null*, where the cells beyond the
-ends are held at 0. Neither changes the qualitative behaviour.[^11] A finite elementary
+ends are held at 0. Neither changes the qualitative behaviour.[^10] A finite elementary
 automaton of length N is close to a feedback shift register of length N with taps at
 N-2, N-1 and N. Only the two end cells behave differently. Rules 90 and 150 correspond to
-*linear* feedback shift registers.[^11]
+*linear* feedback shift registers.[^10]
 
 **Generalizations.** With k values per cell and three neighbours there are k^(k³) rules.
 The legality conditions leave k^((k³+k²)/2 - 1) of them: 32 for k = 2 and 3¹⁷ ≈ 1.3 × 10⁸
-for k = 3.[^12] Wolfram judged the elementary rules too simple for universal
-computation.[^13]
+for k = 3.[^11] Wolfram judged the elementary rules too simple for universal
+computation.[^12]
 
 **Too small for λ.** Langton's [[lambda-parameter](pages/lambda-parameter.md)] orders larger rule spaces well,
 but for 2-state, 3-neighbour rules it is "only roughly correlated" with behaviour.
 Langton suggests this is why earlier classification work on the smallest rule spaces did
-not see the order-chaos transition ([[edge-of-chaos](pages/edge-of-chaos.md)]).[^14]
+not see the order-chaos transition ([[edge-of-chaos](pages/edge-of-chaos.md)]).[^13]
 
 **Later results (Kari 2005).** Renaming the two states or reversing left and right leaves
 88 essentially different elementary rules out of the 256. Wolfram's numbering has become
-standard, and the rule number is called the *Wolfram number*.[^15] Wolfram (1984)
+standard, and the rule number is called the *Wolfram number*.[^14] Wolfram (1984)
 sorted the elementary rules into four classes by their behaviour from random starts
 ([[classification-of-cellular-automata](pages/classification-of-cellular-automata.md)]).
 Wolfram himself conjectured in the 1980s that the class-4
 [[rule-110](pages/rule-110.md)] is universal, and he and Cook later proved it, overturning
 the 1983 judgement above for the elementary family as a whole. Whether class-4 rule 54 is
-universal is open.[^16] (Own reasoning: rule 110 maps 100 to 0 and 001 to 1, so it is
+universal is open.[^15] (Own reasoning: rule 110 maps 100 to 0 and 001 to 1, so it is
 outside the 32 legal rules the 1983 judgement was about.)
 
 ## Appearances in Sources
 
-- [[aucm-ch13-cellular-automata-with-write-access](pages/aucm-ch13-cellular-automata-with-write-access.md)] - rule 184 as the traffic rule
 - [[computation-at-the-edge-of-chaos](pages/computation-at-the-edge-of-chaos.md)] - why λ works poorly for elementary rules
 - [[theory-of-cellular-automata-a-survey](pages/theory-of-cellular-automata-a-survey.md)] - 88 essentially different rules; the Wolfram number; the four classes; rule 110 universal, rule 54 open
 - [[statistical-mechanics-of-cellular-automata](pages/statistical-mechanics-of-cellular-automata.md)] — defines the family, the numbering, the legal subset, and the simple/complex split
@@ -119,7 +116,6 @@ outside the 32 legal rules the 1983 judgement was about.)
 - [[rule-110](pages/rule-110.md)] - the elementary rule proved universal
 - [[classification-of-cellular-automata](pages/classification-of-cellular-automata.md)] - Wolfram's four classes and their formal versions
 - [[chaos-in-cellular-automata](pages/chaos-in-cellular-automata.md)] - the topological-dynamics counterpart of the strange-attractor behaviour
-- [[rule-184](pages/rule-184.md)] - the traffic rule
 
 [^1]: [[statistical-mechanics-of-cellular-automata](pages/statistical-mechanics-of-cellular-automata.md)] p.603 [synthesis] — one-dimensional, base 2, neighbourhood of the site and its two neighbours, "We shall call such cellular automata elementary"; the eight-digit binary rule number used interchangeably with its decimal equivalent; 256 rules; quiescence forbids rules whose binary specification ends in 1; reflection symmetry requires 100 ≡ 001 and 110 ≡ 011; 32 legal rules
 [^2]: [[statistical-mechanics-of-cellular-automata](pages/statistical-mechanics-of-cellular-automata.md)] pp.603-604 [synthesis] — rule 90: s_{n+1}(m) = s_n(m-1) ⊕ s_n(m+1) (Eq. 2.1); Fig. 1 gives its rule table 01011010
@@ -127,13 +123,12 @@ outside the 32 legal rules the 1983 judgement was about.)
 [^4]: [[statistical-mechanics-of-cellular-automata](pages/statistical-mechanics-of-cellular-automata.md)] pp.606-608 [synthesis] — violating quiescence gives alternation of 0 and 1 at infinity; violating reflection symmetry gives uniform shifting (self-similar patterns sheared, as in rule 225); "consideration of illegal as well as 'legal' cellular automaton rules introduces no qualitatively new features"; Fig. 7 caption: rule 1 "flashes", rule 2 shifts
 [^5]: [[statistical-mechanics-of-cellular-automata](pages/statistical-mechanics-of-cellular-automata.md)] pp.603-604 n.3 [synthesis] — Boolean forms of rules 18, 22, 54, 90, 150; bit-parallel simulation using a word of 32 sites and copies shifted one bit left and right
 [^6]: [[statistical-mechanics-of-cellular-automata](pages/statistical-mechanics-of-cellular-automata.md)] p.604 [synthesis] — additive rules 0, 90, 150, 204; conjunctive superposition for 0, 4, 50, 254; disjunctive for 0, 204, 250, 254; "no other legal cellular automaton rules satisfy superposition principles with any combining function"; peripheral rules 0, 90, 160, 250
-[^7]: [[aucm-ch13-cellular-automata-with-write-access](pages/aucm-ch13-cellular-automata-with-write-access.md)] p.284 — "The elementary 1-D CA rule 184, also known as traffic rule, describes the moving of particles or cars in one direction"
-[^8]: [[statistical-mechanics-of-cellular-automata](pages/statistical-mechanics-of-cellular-automata.md)] p.604 [synthesis] — Fig. 3 classes: 1 erased (0, 160) or maintained (4, 36) with local rules 100→0 and 001→0; uniform expanding structure (50, 122); "These two classes of rules will be termed 'simple'"; "complex" rules exemplified by 18, 22 and 90
-[^9]: [[statistical-mechanics-of-cellular-automata](pages/statistical-mechanics-of-cellular-automata.md)] p.607 — "simple rules exhibit simple limit points or limit cycles, while complex rules exhibit phenomena analogous to strange attractors."
-[^10]: [[statistical-mechanics-of-cellular-automata](pages/statistical-mechanics-of-cellular-automata.md)] p.619 Fig. 16 caption [synthesis] — the nonadditive complex rules 18, 22, 122, 126, 146 and 182; the additive rules 90 and 150
-[^11]: [[statistical-mechanics-of-cellular-automata](pages/statistical-mechanics-of-cellular-automata.md)] p.607 [synthesis] — periodic and null boundary conditions, "no important qualitative differences"; correspondence with feedback shift registers with taps at N-2, N-1, N; additive rules 90 and 150 correspond to linear feedback shift registers; end sites differ
-[^12]: [[statistical-mechanics-of-cellular-automata](pages/statistical-mechanics-of-cellular-automata.md)] p.630 [synthesis] — k^(k³) rule sets; legality imposes ½k²(k-1)+1 constraints; 2⁵ = 32 for k = 2; 3¹⁷ = 129140163 ≈ 1.3 × 10⁸ for k = 3
-[^13]: [[statistical-mechanics-of-cellular-automata](pages/statistical-mechanics-of-cellular-automata.md)] p.630 — "the elementary cellular automata considered here and in Secs. II and III are not of sufficient complexity to be capable of universal computation."
-[^14]: [[computation-at-the-edge-of-chaos](pages/computation-at-the-edge-of-chaos.md)] p.15 [synthesis] - Sec. 2.4: "for a 1D CA with K = 2, and N = 3, λ is only roughly correlated with dynamical behavior. This may explain why the relationships reported here were not observed in earlier work on classifying CA dynamics"
-[^15]: [[theory-of-cellular-automata-a-survey](pages/theory-of-cellular-automata-a-survey.md)] p.8 [synthesis] - 2⁸ = 256 elementary CA; "the number of essentially different elementary rules is smaller, only 88"; Wolfram's naming scheme "has since become standard"; "called the Wolfram number of the CA"
-[^16]: [[theory-of-cellular-automata-a-survey](pages/theory-of-cellular-automata-a-survey.md)] pp.8, 11-12 [synthesis] - Wolfram classes (W1)-(W4) from [74]; Wolfram conjectured in the 1980s that rule 110 is universal [74], "Recently this result was established by him and Cook [76]"; Theorem 2; Open problem 1: rule 54, "another elementary CA that is in Wolfram class 4"
+[^7]: [[statistical-mechanics-of-cellular-automata](pages/statistical-mechanics-of-cellular-automata.md)] p.604 [synthesis] — Fig. 3 classes: 1 erased (0, 160) or maintained (4, 36) with local rules 100→0 and 001→0; uniform expanding structure (50, 122); "These two classes of rules will be termed 'simple'"; "complex" rules exemplified by 18, 22 and 90
+[^8]: [[statistical-mechanics-of-cellular-automata](pages/statistical-mechanics-of-cellular-automata.md)] p.607 — "simple rules exhibit simple limit points or limit cycles, while complex rules exhibit phenomena analogous to strange attractors."
+[^9]: [[statistical-mechanics-of-cellular-automata](pages/statistical-mechanics-of-cellular-automata.md)] p.619 Fig. 16 caption [synthesis] — the nonadditive complex rules 18, 22, 122, 126, 146 and 182; the additive rules 90 and 150
+[^10]: [[statistical-mechanics-of-cellular-automata](pages/statistical-mechanics-of-cellular-automata.md)] p.607 [synthesis] — periodic and null boundary conditions, "no important qualitative differences"; correspondence with feedback shift registers with taps at N-2, N-1, N; additive rules 90 and 150 correspond to linear feedback shift registers; end sites differ
+[^11]: [[statistical-mechanics-of-cellular-automata](pages/statistical-mechanics-of-cellular-automata.md)] p.630 [synthesis] — k^(k³) rule sets; legality imposes ½k²(k-1)+1 constraints; 2⁵ = 32 for k = 2; 3¹⁷ = 129140163 ≈ 1.3 × 10⁸ for k = 3
+[^12]: [[statistical-mechanics-of-cellular-automata](pages/statistical-mechanics-of-cellular-automata.md)] p.630 — "the elementary cellular automata considered here and in Secs. II and III are not of sufficient complexity to be capable of universal computation."
+[^13]: [[computation-at-the-edge-of-chaos](pages/computation-at-the-edge-of-chaos.md)] p.15 [synthesis] - Sec. 2.4: "for a 1D CA with K = 2, and N = 3, λ is only roughly correlated with dynamical behavior. This may explain why the relationships reported here were not observed in earlier work on classifying CA dynamics"
+[^14]: [[theory-of-cellular-automata-a-survey](pages/theory-of-cellular-automata-a-survey.md)] p.8 [synthesis] - 2⁸ = 256 elementary CA; "the number of essentially different elementary rules is smaller, only 88"; Wolfram's naming scheme "has since become standard"; "called the Wolfram number of the CA"
+[^15]: [[theory-of-cellular-automata-a-survey](pages/theory-of-cellular-automata-a-survey.md)] pp.8, 11-12 [synthesis] - Wolfram classes (W1)-(W4) from [74]; Wolfram conjectured in the 1980s that rule 110 is universal [74], "Recently this result was established by him and Cook [76]"; Theorem 2; Open problem 1: rule 54, "another elementary CA that is in Wolfram class 4"

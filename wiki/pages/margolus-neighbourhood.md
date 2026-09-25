@@ -3,9 +3,9 @@ title: Margolus Neighbourhood
 category: Concepts
 summary: Margolus's space-partitioning scheme - apply a permutation to every 2 × 2 block, then shift the partition and apply another - which makes any rule reversible by construction; basis of the billiard-ball computer and, generalized and composed with a translation, of every 1D and 2D reversible cellular automaton
 tags: [concept, neighbourhood, margolus, reversibility, block-permutation, billiard-ball, lattice-gas]
-sources: [theory-of-cellular-automata-a-survey, aucm-ch6-reversible-turing-machines-by-rlem]
+sources: [theory-of-cellular-automata-a-survey]
 created: 2026-09-24
-updated: 2026-09-24
+updated: 2026-09-25
 ---
 
 # Margolus Neighbourhood
@@ -35,22 +35,18 @@ one step gives an ordinary CA. In that strict sense the billiard-ball computer b
 figure. Because the partition alternates, a single black cell moves diagonally in a
 direction set by the parity of its position. With this rule one can simulate billiard
 balls of positive size moving and colliding, build walls for them to bounce off, and
-combine these into arbitrary computation.[^4] The billiard balls are those of Fredkin and
-Toffoli's [[billiard-ball-model](pages/billiard-ball-model.md)], in which Morita realizes
-reversible logic elements and whole reversible Turing machines (own reasoning connects the
-two sources).[^5]
+combine these into arbitrary computation.[^4]
 
 **Generalized.** Blocks can be bigger than 2 × 2, the clock cycle longer than two, and the
 dimension anything. Each phase may use its own partition, but every step applies a
 permutation to the blocks. Kari calls these *GMN-CA* (generalized Margolus neighbourhood)
-and notes that the literature also calls them lattice gases.[^6] Every 1D and 2D
+and notes that the literature also calls them lattice gases.[^5] Every 1D and 2D
 [[reversible-cellular-automaton](pages/reversible-cellular-automaton.md)] is a GMN-CA
 composed with a translation, and a d-dimensional GMN-CA needs a clock cycle of at most
-d + 1.[^7]
+d + 1.[^6]
 
 ## Appearances in Sources
 
-- [[aucm-ch6-reversible-turing-machines-by-rlem](pages/aucm-ch6-reversible-turing-machines-by-rlem.md)] - the billiard ball model itself, and machines built in it
 - [[theory-of-cellular-automata-a-survey](pages/theory-of-cellular-automata-a-survey.md)] - §4: the scheme, the billiard-ball computer, GMN-CA, Theorem 11
 
 ## Related Concepts
@@ -59,12 +55,10 @@ d + 1.[^7]
 - [[conserved-quantity](pages/conserved-quantity.md)] - conservation laws built in by choosing the permutations
 - [[moore-neighbourhood](pages/moore-neighbourhood.md)] - the ordinary neighbourhoods it departs from
 - [[universal-turing-machine](pages/universal-turing-machine.md)] - the billiard-ball computer is computationally universal
-- [[billiard-ball-model](pages/billiard-ball-model.md)] - the Newtonian model the rule simulates
 
 [^1]: [[theory-of-cellular-automata-a-survey](pages/theory-of-cellular-automata-a-survey.md)] p.18 [synthesis] - "He also introduced the technique of space partitioning as a way to ensure reversibility"; 2 × 2 blocks along odd coordinates with permutation π₁ of S⁴, then even coordinates with π₂; "This technique became known as the Margolus neighborhood."; p.19 Fig. 8: "Odd updates use the solid partitioning, even updates the dashed partitioning"; [51] N. Margolus, Physics-like models of computation, Physica D 10 (1984)
 [^2]: [[theory-of-cellular-automata-a-survey](pages/theory-of-cellular-automata-a-survey.md)] p.18 [synthesis] - "A CA that uses the Margolus neighborhood is trivially reversible-the inverse automaton applies the inverse permutations"; the number of black cells in finite configurations is preserved if the permutations conserve black states
 [^3]: [[theory-of-cellular-automata-a-survey](pages/theory-of-cellular-automata-a-survey.md)] p.18 [synthesis] - "Strictly speaking Margolus neighborhood is not a CA neighborhood"; supercells of 2 × 2 blocks and combined clock cycles; "In this strict sense the billiard ball computer by Margolus has 2⁴ = 16 states."
 [^4]: [[theory-of-cellular-automata-a-survey](pages/theory-of-cellular-automata-a-survey.md)] p.18 [synthesis] - π₁ = π₂, binary states white and black; the exchanged blocks are shown pictorially; a single black state propagates diagonally depending on the parity of its location; motion and collisions of billiard balls of positive diameter, walls, "arbitrary computation [51]"
-[^5]: [[aucm-ch6-reversible-turing-machines-by-rlem](pages/aucm-ch6-reversible-turing-machines-by-rlem.md)] pp.130, 137 [synthesis] — BBM "proposed by Fredkin and Toffoli [5]": balls and reflectors, elastic collisions, no friction; "the whole system of the RTM can be realized in the space of BBM"
-[^6]: [[theory-of-cellular-automata-a-survey](pages/theory-of-cellular-automata-a-survey.md)] p.20 [synthesis] - larger blocks, longer clock cycles, any dimension d, different partitions per phase; "call them GMN-CA. In the literature, GMN-CA are also known as lattice gases."
-[^7]: [[theory-of-cellular-automata-a-survey](pages/theory-of-cellular-automata-a-survey.md)] p.20 [synthesis] - Theorem 11 (Kari [43,45]): all 1D and 2D reversible CA are a composition of a GMN-CA and a "translation-type" CA; every d-dimensional GMN-CA can be modified to one with clock cycle at most d + 1
+[^5]: [[theory-of-cellular-automata-a-survey](pages/theory-of-cellular-automata-a-survey.md)] p.20 [synthesis] - larger blocks, longer clock cycles, any dimension d, different partitions per phase; "call them GMN-CA. In the literature, GMN-CA are also known as lattice gases."
+[^6]: [[theory-of-cellular-automata-a-survey](pages/theory-of-cellular-automata-a-survey.md)] p.20 [synthesis] - Theorem 11 (Kari [43,45]): all 1D and 2D reversible CA are a composition of a GMN-CA and a "translation-type" CA; every d-dimensional GMN-CA can be modified to one with clock cycle at most d + 1

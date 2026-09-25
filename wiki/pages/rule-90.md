@@ -3,9 +3,9 @@ title: Rule 90
 category: Rules
 summary: The elementary "modulo-two" rule - each cell becomes the XOR of its two neighbours; grows Pascal's triangle mod 2 (a Sierpinski pattern of dimension log₂3) from one cell, is additive and exactly solvable, and copies any finite pattern
 tags: [rule, elementary-ca, additive, wolfram, sierpinski, pascal-triangle]
-sources: [statistical-mechanics-of-cellular-automata, theory-of-cellular-automata-a-survey, aucm-ch12-linear-cellular-automata-and-decidability, aucm-ch13-cellular-automata-with-write-access]
+sources: [statistical-mechanics-of-cellular-automata, theory-of-cellular-automata-a-survey, aucm-ch12-linear-cellular-automata-and-decidability]
 created: 2026-09-24
-updated: 2026-09-24
+updated: 2026-09-25
 ---
 
 # Rule 90
@@ -54,18 +54,12 @@ coefficient 1 at offsets −1 and +1 and 0 at offset 0. Kari's gcd criteria for 
 surjective but not injective, transitive, and positively expansive: every two distinct
 configurations eventually separate by at least one fixed distance ([[chaos-in-cellular-automata](pages/chaos-in-cellular-automata.md)]).[^11]
 
-**Over the integers.** Hoffmann builds Pascal's triangle with the rule Center ← Left +
-Right on integer-valued cells, with zeros filling the gaps.[^12] (Own reasoning: this is
-rule 90 without the reduction mod 2, which is why rule 90 from one cell gives Pascal's
-triangle mod 2.)
-
 **On finite grids.** "Every configuration has exactly 4 predecessors" holds for rule 90
 on exactly the grid sizes in 2ℕ, a regular spectrum as every first-order property must
-have ([[first-order-theory-of-cellular-automata](pages/first-order-theory-of-cellular-automata.md)]).[^13]
+have ([[first-order-theory-of-cellular-automata](pages/first-order-theory-of-cellular-automata.md)]).[^12]
 
 ## Appearances in Sources
 
-- [[aucm-ch13-cellular-automata-with-write-access](pages/aucm-ch13-cellular-automata-with-write-access.md)] - Pascal's triangle by Center ← Left + Right over the integers
 - [[aucm-ch12-linear-cellular-automata-and-decidability](pages/aucm-ch12-linear-cellular-automata-and-decidability.md)] - the spectrum of "exactly 4 predecessors"
 - [[theory-of-cellular-automata-a-survey](pages/theory-of-cellular-automata-a-survey.md)] - the linear-CA criteria that decide its surjectivity and dynamics (applied as own reasoning)
 - [[statistical-mechanics-of-cellular-automata](pages/statistical-mechanics-of-cellular-automata.md)] — the running example: Pascal's triangle mod 2, exact density and cycle results, and the self-reproduction example
@@ -92,5 +86,4 @@ have ([[first-order-theory-of-cellular-automata](pages/first-order-theory-of-cel
 [^9]: [[statistical-mechanics-of-cellular-automata](pages/statistical-mechanics-of-cellular-automata.md)] pp.630, 637 [synthesis] — modulo-k rules generalize the modulo-two rule 90; 2D type-I case (a), the sum of four neighbours "in analogy with one-dimensional cellular automaton rule 90", fractal dimension log₂5 ≈ 2.32
 [^10]: [[statistical-mechanics-of-cellular-automata](pages/statistical-mechanics-of-cellular-automata.md)] p.614 [synthesis] — Grassberger (1982), cited via this paper: after kinks annihilate, alternate sites of rule 18 evolve according to rule 90
 [^11]: [[theory-of-cellular-automata-a-survey](pages/theory-of-cellular-automata-a-survey.md)] pp.28-29 [synthesis] - Corollary 4 (surjective iff gcd(m, c₁, …, cₙ) = 1; injective iff every prime factor of m divides all but exactly one coefficient) and Theorem 18 (transitivity and 1D positive expansivity gcd conditions), applied here to rule 90
-[^12]: [[aucm-ch13-cellular-automata-with-write-access](pages/aucm-ch13-cellular-automata-with-write-access.md)] p.286 (Fig. 13.6) — "Filling empty sites with zeros (Fig. 13.6 a), the computation can easily be formulated by the cellular automata rule: (Center ← Left + Right)."
-[^13]: [[aucm-ch12-linear-cellular-automata-and-decidability](pages/aucm-ch12-linear-cellular-automata-and-decidability.md)] p.265 — "consider the elementary cellular automaton number 90, an additive automaton whose local rule corresponds to the exclusive-or of the left and right argument. The property 'every configuration has exactly 4 predecessors' here has spectrum 2N."
+[^12]: [[aucm-ch12-linear-cellular-automata-and-decidability](pages/aucm-ch12-linear-cellular-automata-and-decidability.md)] p.265 — "consider the elementary cellular automaton number 90, an additive automaton whose local rule corresponds to the exclusive-or of the left and right argument. The property 'every configuration has exactly 4 predecessors' here has spectrum 2N."
