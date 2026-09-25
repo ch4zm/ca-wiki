@@ -3,7 +3,7 @@ title: Notation Map
 category: Analyses
 summary: Crosswalk from the symbols each source uses (von Neumann's lectures and manuscript, Burks's completion, Hedlund's symbolic dynamics) onto the wiki's common concepts and notation, with a list of letters that mean different things in different places
 tags: [notation, reference, von-neumann, burks, hedlund, self-reproduction, 29-state, symbolic-dynamics]
-sources: [tsra-editors-introduction, tsra-lecture-5, tsra-part2-ch1, tsra-part2-ch2, tsra-part2-ch3, tsra-part2-ch4, tsra-part2-ch5, endomorphisms-and-automorphisms-of-the-shift-dynamical-system]
+sources: [tsra-editors-introduction, tsra-lecture-5, tsra-part2-ch1, tsra-part2-ch2, tsra-part2-ch3, tsra-part2-ch4, tsra-part2-ch5, endomorphisms-and-automorphisms-of-the-shift-dynamical-system, statistical-mechanics-of-cellular-automata, computation-at-the-edge-of-chaos]
 created: 2026-09-24
 updated: 2026-09-24
 ---
@@ -150,6 +150,9 @@ Letters that change meaning between (or within) sources:
   is the set of periodic points.[^14][^15][^18]
 - **S**: the secondary built in Ch. 1; S_Σ is a sensitized state. In Hedlund, S is the
   number of symbols.[^2][^11][^16]
+- **λ**: in Ch. 1, λᵢⱼ is the state wanted in target cell (i, j). In Wolfram (1983), λ is
+  the decay rate of triangle and sequence spectra, T(n) ~ λ⁻ⁿ. In Langton (1990), λ is the
+  fraction of rule-table entries not leading to the quiescent state ([[lambda-parameter](pages/lambda-parameter.md)]).[^8][^19][^20]
 - **M**: in Ch. 5, an arbitrary machine (M_c, M_u). In Hedlund, M(f) is the number of
   preimages of a bilaterally transitive point.[^3][^18]
 - **Φ, Σ**: in Ch. 3, Φ is the triple-return counter. In Hedlund, Φ(𝒮) is the set of all
@@ -176,3 +179,5 @@ Letters that change meaning between (or within) sources:
 [^16]: [[endomorphisms-and-automorphisms-of-the-shift-dynamical-system](pages/endomorphisms-and-automorphisms-of-the-shift-dynamical-system.md)] pp.320-322 [synthesis] — X(𝒮) the bisequences over 𝒮 with S = card 𝒮; σ the shift; Φ(𝒮) the endomorphisms, E(𝒮) the onto ones, A(𝒮) the automorphisms
 [^17]: [[endomorphisms-and-automorphisms-of-the-shift-dynamical-system](pages/endomorphisms-and-automorphisms-of-the-shift-dynamical-system.md)] pp.323-324, 331-332 [synthesis] — 𝔅ₙ(𝒮) the n-blocks; F(𝒮, n) the maps 𝔅ₙ(𝒮) → 𝒮; f_m and f∞; H(𝒮) the one-to-one members of Φ(𝒮), with A(𝒮) = H(𝒮); Σ(𝒮) = {σⁿ}
 [^18]: [[endomorphisms-and-automorphisms-of-the-shift-dynamical-system](pages/endomorphisms-and-automorphisms-of-the-shift-dynamical-system.md)] pp.338, 351, 358-359 [synthesis] — P(𝒮) the periodic points; M(f) the multiplicity at bilaterally transitive points; R(f) and L(f) defined by Welch
+[^19]: [[statistical-mechanics-of-cellular-automata](pages/statistical-mechanics-of-cellular-automata.md)] pp.617, 619 [synthesis] - T(n) ~ λ⁻ⁿ (Eq. 3.7); λ ~ 4/3 for nonadditive and λ ~ 2 for additive complex rules
+[^20]: [[computation-at-the-edge-of-chaos](pages/computation-at-the-edge-of-chaos.md)] p.14 [synthesis] - Sec. 2.1, Eq. 1: λ = (K^N - n)/K^N, with n the number of transitions to the quiescent state s_q

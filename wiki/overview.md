@@ -1,7 +1,7 @@
 ---
 title: Overview
 tags: [overview, synthesis]
-sources: [theory-of-self-reproducing-automata, tsra-editors-introduction, tsra-lecture-2, tsra-lecture-3, tsra-lecture-4, tsra-lecture-5, tsra-part2-ch1, tsra-part2-ch2, tsra-part2-ch3, tsra-part2-ch4, tsra-part2-ch5, endomorphisms-and-automorphisms-of-the-shift-dynamical-system, machine-models-of-self-reproduction, converse-of-moores-garden-of-eden-theorem, statistical-mechanics-of-cellular-automata]
+sources: [theory-of-self-reproducing-automata, tsra-editors-introduction, tsra-lecture-2, tsra-lecture-3, tsra-lecture-4, tsra-lecture-5, tsra-part2-ch1, tsra-part2-ch2, tsra-part2-ch3, tsra-part2-ch4, tsra-part2-ch5, endomorphisms-and-automorphisms-of-the-shift-dynamical-system, machine-models-of-self-reproduction, converse-of-moores-garden-of-eden-theorem, statistical-mechanics-of-cellular-automata, computation-at-the-edge-of-chaos]
 updated: 2026-09-24
 ---
 
@@ -98,6 +98,18 @@ resemble thermodynamics becomes something measurable. The
 [[game-of-life](pages/game-of-life.md)] enters as a universal two-state rule built from
 glider-stream circuits.
 
+**The edge of chaos.** Langton (1990) asks where in rule space computation is possible at
+all. He orders rules by the [[lambda-parameter](pages/lambda-parameter.md)], the fraction
+of rule-table entries that do not lead to the quiescent state, and finds a phase
+transition between frozen and chaotic dynamics ([[edge-of-chaos](pages/edge-of-chaos.md)]).
+Near it, transients grow long and size-dependent, glider-like particles appear, and mutual
+information between cells peaks. Wolfram's class IV sits there, as does the
+[[game-of-life](pages/game-of-life.md)]. Langton pairs the "freezing problem" with the
+halting problem and gives von Neumann's [[complexity-threshold](pages/complexity-threshold.md)]
+an upper bound: too much disorder is as degenerative as too little. Where Wolfram (1983)
+found no phase transition as noise increased, Langton finds one as the rule itself
+changes.
+
 ## Open Questions
 
 - Why exactly two universality classes? Wolfram conjectures it is because rules simulate each
@@ -116,6 +128,10 @@ glider-stream circuits.
 - How can "less trivial" self-reproduction be made precise?
 - Hedlund reports that onto maps look rare and automorphisms "relatively sparse" among all
   1D rules, but nothing was proved. Can that be made precise?
+- Is Langton's freezing problem undecidable, as he conjectures, and is the halting problem
+  really a special case of it?
+- λ works poorly for 2-state, 3-neighbour rules. Where do elementary rules such as rule 110
+  sit relative to the transition, and what finer parameter would place them?
 
 ## Key Entities / Concepts
 
@@ -157,3 +173,6 @@ glider-stream circuits.
 - [[self-organization](pages/self-organization.md)]
 - [[irreversibility-and-entropy](pages/irreversibility-and-entropy.md)]
 - [[game-of-life](pages/game-of-life.md)]
+- [[lambda-parameter](pages/lambda-parameter.md)]
+- [[edge-of-chaos](pages/edge-of-chaos.md)]
+- [[chris-langton](pages/chris-langton.md)]

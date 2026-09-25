@@ -3,7 +3,7 @@ title: Von Neumann's 29-State Cellular Automaton
 category: Rules
 summary: The first cellular automaton designed for universal construction and self-reproduction — a 2D, 5-cell (von Neumann) neighbourhood rule with 29 states split between signal transmission/logic and construction/destruction
 tags: [rule, von-neumann, 29-state, self-reproduction, universal-construction]
-sources: [tsra-part2-ch2, tsra-part2-ch1, tsra-part2-ch3, tsra-part2-ch4, tsra-part2-ch5]
+sources: [tsra-part2-ch2, tsra-part2-ch1, tsra-part2-ch3, tsra-part2-ch4, tsra-part2-ch5, computation-at-the-edge-of-chaos]
 created: 2026-09-24
 updated: 2026-09-24
 ---
@@ -96,6 +96,7 @@ are assembled into an unbounded [[cellular-tape](pages/cellular-tape.md)] with i
 - [[tsra-part2-ch3](pages/tsra-part2-ch3.md)] — the basic organs built from the rule
 - [[tsra-part2-ch2](pages/tsra-part2-ch2.md)] — derivation of the states and the full transition rule
 - [[tsra-part2-ch1](pages/tsra-part2-ch1.md)] — the editor's preview of the state set and the direct/reverse processes
+- [[computation-at-the-edge-of-chaos](pages/computation-at-the-edge-of-chaos.md)] - cited as the first proof of a universal computer/constructor in a CA, the starting point for asking which rules can support computation[^13]
 
 ## Related Concepts
 
@@ -110,6 +111,7 @@ are assembled into an unbounded [[cellular-tape](pages/cellular-tape.md)] with i
 - [[universal-constructor](pages/universal-constructor.md)] — designed in this rule
 - [[mcculloch-pitts-neuron](pages/mcculloch-pitts-neuron.md)] — transmission and confluent cells realize neuron-like logic
 - [[self-reproduction](pages/self-reproduction.md)] — the goal the rule was built for
+- [[edge-of-chaos](pages/edge-of-chaos.md)] - Langton's answer to which rules, among all of them, can support computation
 
 [^1]: [[tsra-part2-ch2](pages/tsra-part2-ch2.md)] pp.132-134, 151-152 [synthesis] — quadratic lattice; next state depends on the cell and its four nearest neighbours at t−1; editor: finite initial cell assignment, all other cells unexcitable
 [^2]: [[tsra-part2-ch2](pages/tsra-part2-ch2.md)] pp.148-149 [synthesis] — rigorous list of states: 16 transmission, 4 confluent, 1 unexcitable, 8 sensitized; N = 29
@@ -123,3 +125,4 @@ are assembled into an unbounded [[cellular-tape](pages/cellular-tape.md)] with i
 [^10]: [[tsra-part2-ch4](pages/tsra-part2-ch4.md)] pp.201-250 [synthesis] — design of the tape, connecting and timing loops, and memory control from the basic organs
 [^11]: [[tsra-part2-ch5](pages/tsra-part2-ch5.md)] p.296 — "His 29-state cellular structure is computation-universal, construction-universal, and self-reproductive."
 [^12]: [[tsra-part2-ch5](pages/tsra-part2-ch5.md)] p.291 [synthesis] — not all automata specifiable at time zero can be constructed; the 3 × 3 configuration of sensitized S₀ surrounded by C₀₀
+[^13]: [[computation-at-the-edge-of-chaos](pages/computation-at-the-edge-of-chaos.md)] p.16 [synthesis] - "Von Neumann's proof of the possibility of machine self-reproduction involves the demonstration of the existence of a universal computer/constructor in a 29-state CA"; Codd, Smith, Conway and co-workers, Fredkin and Toffoli later found much simpler universal rules

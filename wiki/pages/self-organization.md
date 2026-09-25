@@ -3,7 +3,7 @@ title: Self-Organization (cellular automata)
 category: Concepts
 summary: Order arising from disorder under deterministic local rules - complex cellular automata turn random initial states into equilibria with start-independent densities, correlations, and triangle/sequence spectra that fall into two universality classes (λ ≈ 4/3 non-additive, λ ≈ 2 additive)
 tags: [concept, self-organization, universality, statistical-mechanics, wolfram, noise]
-sources: [statistical-mechanics-of-cellular-automata]
+sources: [statistical-mechanics-of-cellular-automata, computation-at-the-edge-of-chaos]
 created: 2026-09-24
 updated: 2026-09-24
 ---
@@ -79,6 +79,9 @@ temperature, in Boltzmann terms) destroys the structure gradually. Densities and
 correlations change continuously with κ, and there is nothing like a phase transition.[^14]
 Global behaviour does change abruptly, though
 ([[irreversibility-and-entropy](pages/irreversibility-and-entropy.md)]).
+Langton (1990) does find a phase transition, along a different axis: the rule itself, as
+measured by his [[lambda-parameter](pages/lambda-parameter.md)] (a different λ from the triangle constant
+above). See [[edge-of-chaos](pages/edge-of-chaos.md)].[^18]
 
 **Why it can happen at all.** Self-organization depends on irreversibility. Trajectories
 merge, probability concentrates on a shrinking set of configurations, and some
@@ -94,10 +97,12 @@ dominates the long-time behaviour.[^17]
 
 ## Appearances in Sources
 
+- [[computation-at-the-edge-of-chaos](pages/computation-at-the-edge-of-chaos.md)] - a phase transition across rule space, measured by entropy and mutual information
 - [[statistical-mechanics-of-cellular-automata](pages/statistical-mechanics-of-cellular-automata.md)] — Sec. III (local statistics), the simulation-encoding conjecture (Sec. IV), membranes (Sec. V)
 
 ## Related Concepts
 
+- [[edge-of-chaos](pages/edge-of-chaos.md)] - a phase transition in rule space rather than in noise
 - [[irreversibility-and-entropy](pages/irreversibility-and-entropy.md)] — the ensemble-level mechanism
 - [[fractal-dimension](pages/fractal-dimension.md)] — the seeded counterpart: self-similar rather than exponentially damped structure
 - [[additive-cellular-automaton](pages/additive-cellular-automaton.md)] — the second universality class
@@ -122,3 +127,4 @@ dominates the long-time behaviour.[^17]
 [^15]: [[statistical-mechanics-of-cellular-automata](pages/statistical-mechanics-of-cellular-automata.md)] p.623 [synthesis] — trajectories become concentrated in limited regions; "This behavior makes self-organization possible, by allowing some configurations to occur with larger probabilities than others even in the large-time equilibrium limit."
 [^16]: [[statistical-mechanics-of-cellular-automata](pages/statistical-mechanics-of-cellular-automata.md)] p.641 — "Their nontrivial features are typically evident only when some form of growth inhibition is present."
 [^17]: [[statistical-mechanics-of-cellular-automata](pages/statistical-mechanics-of-cellular-automata.md)] p.631 [synthesis] — membranes that "protect" sites from external noise; regular patterns grow from seeds; "any sufficiently long disordered configuration will contain at least one, and the large time behavior of the cellular automaton will be radically affected by its presence"
+[^18]: [[computation-at-the-edge-of-chaos](pages/computation-at-the-edge-of-chaos.md)] pp.24, 27-28 [synthesis] - sweeping λ over K = 4, N = 5 1D rules gives "a phase transition between periodic and chaotic dynamics"; in 2D K = 8, N = 5 rules the average cell entropy jumps at a critical λ, "a classic signature of a first-order phase transition"

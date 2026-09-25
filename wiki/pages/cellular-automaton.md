@@ -3,7 +3,7 @@ title: Cellular Automaton
 category: Concepts
 summary: A homogeneous lattice of identical finite-state cells, each updating in discrete time from its own state and its neighbours' states under one shared rule; introduced by von Neumann (after Ulam) as a medium for self-reproduction
 tags: [concept, cellular-automata, foundations, homogeneity, lattice]
-sources: [tsra-part2-ch1, tsra-part2-ch2, tsra-part2-ch3, machine-models-of-self-reproduction, endomorphisms-and-automorphisms-of-the-shift-dynamical-system, statistical-mechanics-of-cellular-automata]
+sources: [tsra-part2-ch1, tsra-part2-ch2, tsra-part2-ch3, machine-models-of-self-reproduction, endomorphisms-and-automorphisms-of-the-shift-dynamical-system, statistical-mechanics-of-cellular-automata, computation-at-the-edge-of-chaos]
 created: 2026-09-24
 updated: 2026-09-24
 ---
@@ -129,8 +129,17 @@ legal two-state type-I rules in 2D and 2⁵⁹ ≈ 6 × 10¹⁷ type-II rules.[^
 *totalistic* if it depends only on the sum of the neighbourhood values. The
 [[game-of-life](pages/game-of-life.md)] is a type-II totalistic rule.[^27]
 
+**Computers or universes.** Langton distinguishes two ways to see computation in a
+cellular automaton. The CA can *be* a computer, with the initial configuration as data
+and the rule as algorithm. Or the initial configuration can *contain* a computer, with
+the rule as the physics its parts obey, as in von Neumann's construction. With K states
+and N neighbours there are K^(K^N) rules, and Langton orders this space with the
+[[lambda-parameter](pages/lambda-parameter.md)] to ask which rules can support the second view
+([[edge-of-chaos](pages/edge-of-chaos.md)]).[^28]
+
 ## Appearances in Sources
 
+- [[computation-at-the-edge-of-chaos](pages/computation-at-the-edge-of-chaos.md)] - two views of computation; the size of rule space and an ordering for it
 - [[statistical-mechanics-of-cellular-automata](pages/statistical-mechanics-of-cellular-automata.md)] — the physicist's view, alternative names, applications, type-I/type-II neighbourhoods, rule counts
 - [[machine-models-of-self-reproduction](pages/machine-models-of-self-reproduction.md)] — the tessellation structure, the nine-cell neighbourhood, finite speed
 - [[tsra-part2-ch3](pages/tsra-part2-ch3.md)] — serial operation and wire-crossing in 2D
@@ -140,6 +149,8 @@ legal two-state type-I rules in 2D and 2⁵⁹ ≈ 6 × 10¹⁷ type-II rules.[^
 
 ## Related Concepts
 
+- [[lambda-parameter](pages/lambda-parameter.md)] - an ordering of rule space by one number
+- [[edge-of-chaos](pages/edge-of-chaos.md)] - where in rule space computation is possible
 - [[elementary-cellular-automaton](pages/elementary-cellular-automaton.md)] — the simplest one-dimensional family
 - [[game-of-life](pages/game-of-life.md)] — the best-known two-dimensional rule
 - [[irreversibility-and-entropy](pages/irreversibility-and-entropy.md)] — the ensemble, statistical-mechanics view
@@ -188,3 +199,4 @@ legal two-state type-I rules in 2D and 2⁵⁹ ≈ 6 × 10¹⁷ type-II rules.[^
 [^25]: [[statistical-mechanics-of-cellular-automata](pages/statistical-mechanics-of-cellular-automata.md)] pp.602-603 [synthesis] — introduced by von Neumann and Ulam as "cellular spaces"; also called tessellation automata, homogeneous structures, cellular structures, tessellation structures, iterative arrays; any system of differential equations may be approximated by finite differences and discrete variables; nontrivial cellular automata arise with nonlinearity such as "growth inhibition"; applications to Ising-type spin systems, chemical reaction-diffusion, dendritic crystal growth, turbulence, biology, parallel computation
 [^26]: [[statistical-mechanics-of-cellular-automata](pages/statistical-mechanics-of-cellular-automata.md)] p.637 and n.14 [synthesis] — type-I neighbourhood of 2d+1 sites, type-II of 3ᵈ sites; identical when d = 1; for d = 2 "known as von Neumann and Moore neighborhoods"; legality includes rotation and reflection invariance; 2¹¹ = 2048 type-I rules for k = 2; 2⁵⁹ ≈ 6 × 10¹⁷ type-II rules
 [^27]: [[statistical-mechanics-of-cellular-automata](pages/statistical-mechanics-of-cellular-automata.md)] p.637 [synthesis] — "totalistic" cellular automata depend only on the sum of neighbourhood values; Life is a type-II example
+[^28]: [[computation-at-the-edge-of-chaos](pages/computation-at-the-edge-of-chaos.md)] pp.13-16 [synthesis] - Sec. 1.4: K^N neighbourhood states and K^(K^N) transition functions; Sec. 2.5: CAs "can be viewed either as computers themselves or as logical universes within which computers may be embedded"; on the second view "the transition function is seen as the 'physics' obeyed by the parts of this embedded computer"; "when is it possible - even necessary - to adopt the second point of view"

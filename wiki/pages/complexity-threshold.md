@@ -3,7 +3,7 @@ title: Complexity Threshold
 category: Concepts
 summary: Von Neumann's claim that below a critical level of complexity automata can only build simpler things, while above it self-reproduction and growth of complexity become possible
 tags: [concept, complexity, self-reproduction, von-neumann]
-sources: [tsra-editors-introduction, tsra-lecture-1, tsra-lecture-2, tsra-lecture-3, tsra-lecture-4, tsra-lecture-5]
+sources: [tsra-editors-introduction, tsra-lecture-1, tsra-lecture-2, tsra-lecture-3, tsra-lecture-4, tsra-lecture-5, computation-at-the-edge-of-chaos]
 created: 2026-09-24
 updated: 2026-09-24
 ---
@@ -60,6 +60,12 @@ examples like this are worked out, much as energy and entropy were abstracted fr
 simple systems.[^12] The [[universal-constructor](pages/universal-constructor.md)] scheme shows how self-reproduction works above the
 threshold.
 
+**An upper bound.** Langton (1990) quotes the critical-size passage and, using a "slightly
+different sense" of complexity, adds a second limit. Above some level of complexity,
+synthesis is degenerative again. Open-ended synthesis needs complexity between a lower and
+an upper bound. In his cellular-automaton surveys the two bounds lie close together, near
+an order-chaos phase transition ([[edge-of-chaos](pages/edge-of-chaos.md)]).[^13]
+
 ## Appearances in Sources
 
 - [[tsra-editors-introduction](pages/tsra-editors-introduction.md)] — Burks's summary, with the thermodynamic analogy
@@ -68,6 +74,7 @@ threshold.
 - [[tsra-lecture-3](pages/tsra-lecture-3.md)] — the entropy analogy behind "degeneration"
 - [[tsra-lecture-5](pages/tsra-lecture-5.md)] — primary statement of the threshold for synthesis and self-reproduction
 - [[tsra-lecture-4](pages/tsra-lecture-4.md)] — the general principle of minima, and square-law growth of interrelationships
+- [[computation-at-the-edge-of-chaos](pages/computation-at-the-edge-of-chaos.md)] - Langton's upper bound, at the edge of chaos
 
 ## Related Concepts
 
@@ -79,6 +86,7 @@ threshold.
 - [[maxwells-demon](pages/maxwells-demon.md)] — the entropy–information link behind the degeneration analogy
 - [[self-repair](pages/self-repair.md)] — how highly complex automata survive the errors complexity brings
 - [[probabilistic-logic](pages/probabilistic-logic.md)] — complexity also raises the odds of lethal failure
+- [[edge-of-chaos](pages/edge-of-chaos.md)] - where Langton puts both bounds
 
 [^1]: [[tsra-lecture-4](pages/tsra-lecture-4.md)] pp.65-66 — "an n-fold increase in size brings much more than an n-fold increase in what can be done. What can be done is a matter of the interrelationships between the components, and the number of interrelationships increases with the square of the number of components. And apart from this, what can be done depends on certain minima. Below a certain minimum level of complexity you cannot do a certain thing, but above this minimum level of complexity you can do it."
 [^2]: [[tsra-lecture-5](pages/tsra-lecture-5.md)] pp.78-79 [synthesis] — living organisms reproduce and grow more complex phylogenetically, while an automaton A that makes B must contain a complete description of B, suggesting complication is degenerative
@@ -92,3 +100,4 @@ threshold.
 [^10]: [[tsra-lecture-4](pages/tsra-lecture-4.md)] p.70 — "Thus error considerations become more important as the system becomes more complex."
 [^11]: [[tsra-editors-introduction](pages/tsra-editors-introduction.md)] p.23 — "Von Neumann thought that the chief problems of automata theory center around the concept of complexity. This very concept needs rigorous definition."
 [^12]: [[tsra-lecture-5](pages/tsra-lecture-5.md)] pp.79-80 [synthesis] — complication is degenerative below a minimum number of parts, probably in the millions for his parts; above it synthesis "can become explosive"; complication cannot be defined correctly until critical examples are studied, as with energy and entropy
+[^13]: [[computation-at-the-edge-of-chaos](pages/computation-at-the-edge-of-chaos.md)] pp.35-36 [synthesis] - quotes von Neumann's 1949 critical-size passage; "a slightly different sense of 'complexity'"; "above a certain level of 'complexity', the process of synthesis is also degenerative"; "there exist an upper limit as well as a lower limit"; the bounds are "fairly close together and are located in the vicinity of a phase transition"
