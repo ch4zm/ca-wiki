@@ -19,3 +19,16 @@
 - [ ] Kari, J. (2005). Theory of cellular automata: A survey. *Theoretical Computer Science, 334*(1–3), 3–33.
 - [ ] Frisch, U., Hasslacher, B., & Pomeau, Y. (1986). Lattice-gas automata for the Navier–Stokes equation. *Physical Review Letters, 56*(14), 1505–1508.
 - [ ] Wolfram, S. (2002). *A new kind of science*. Wolfram Media.
+
+## Von Neumann - TSRA
+
+- [ ] Thatcher, J. W. (1965). *Universality in the von Neumann cellular model* (Technical Report 03105-30-T). ORA, University of Michigan.
+- [ ] Codd, E. F. (1965). *Propagation, computation, and construction in two-dimensional cellular spaces* [Doctoral dissertation, University of Michigan].
+- [ ] Ulam, S. M. (1962). On some mathematical problems connected with patterns of growth of figures. In R. E. Bellman (Ed.), *Mathematical problems in the biological sciences* (Proceedings of Symposia in Applied Mathematics, Vol. 14, pp. 215–224). American Mathematical Society.
+- [ ] von Neumann, J. (1951). The general and logical theory of automata. In L. A. Jeffress (Ed.), *Cerebral mechanisms in behavior: The Hixon Symposium* (pp. 1–41). Wiley.
+- [ ] von Neumann, J. (1956). Probabilistic logics and the synthesis of reliable organisms from unreliable components. In C. E. Shannon & J. McCarthy (Eds.), *Automata studies* (pp. 43–98). Princeton University Press.
+- [ ] Burks, A. W. (1961). Computation, behavior, and structure in fixed and growing automata. *Behavioral Science, 6*, 5–22.
+- [ ] Burks, A. W., & Wang, H. (1957). The logic of automata. *Journal of the Association for Computing Machinery, 4*(2), 193–218; *4*(3), 279–297.
+- [ ] Holland, J. H. (1960). Iterative circuit computers. In *Proceedings of the 1960 Western Joint Computer Conference* (pp. 259–265). Institute of Radio Engineers.
+- [ ] Lee, C. Y. (1963). A Turing machine which prints its own code script. In *Proceedings of the Symposium on Mathematical Theory of Automata, New York, April 1962* (pp. 155–164). Polytechnic Press.
+- [ ] Turing, A. M. (1936–37). On computable numbers, with an application to the Entscheidungsproblem. *Proceedings of the London Mathematical Society, Series 2, 42*, 230–265.
