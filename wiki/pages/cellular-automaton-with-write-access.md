@@ -55,6 +55,7 @@ with agents, and leader election
 - [[cellular-automaton](pages/cellular-automaton.md)] - the read-only model it extends
 - [[rule-184](pages/rule-184.md)] - the traffic rule in push and pull form
 - [[margolus-neighbourhood](pages/margolus-neighbourhood.md)] - another departure from the standard neighbourhood scheme, where a block rule updates several cells at once
+- [[broadcasting-automaton](pages/broadcasting-automaton.md)] - another variant whose links change with state
 
 [^1]: [[aucm-ch13-cellular-automata-with-write-access](pages/aucm-ch13-cellular-automata-with-write-access.md)] pp.277-278 [synthesis] — "in CA a cell can only read information from its neighbors and cannot change its neighbors' states directly"; "CA and GCA do not allow to modify the state of a neighbor. Therefore no write-conflict can occur, simplifying implementations in hardware and in software"
 [^2]: [[aucm-ch13-cellular-automata-with-write-access](pages/aucm-ch13-cellular-automata-with-write-access.md)] p.278 — "These models allow a cell to write information to its neighbors. This feature is very important because information can actively be transferred to a destination, and the activity of the destination can be switched on or off."

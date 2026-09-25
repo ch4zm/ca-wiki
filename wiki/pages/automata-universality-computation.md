@@ -3,7 +3,7 @@ title: "Automata, Universality, Computation: Tribute to Maurice Margenstern"
 category: Sources
 summary: Adamatzky (ed.), Springer ECC vol. 12 (2015) - 17 chapters honouring Margenstern on small universal machines, reversible computing, P systems, splicing, and cellular automata; the wiki covers the automata-theoretic and cellular-automata chapters one at a time
 tags: [book, festschrift, margenstern, universality, turing-machines, cellular-automata]
-sources: [automata-universality-computation, aucm-ch5-small-universal-turing-machines, aucm-ch6-reversible-turing-machines-by-rlem, aucm-ch12-linear-cellular-automata-and-decidability, aucm-ch13-cellular-automata-with-write-access]
+sources: [automata-universality-computation, aucm-ch5-small-universal-turing-machines, aucm-ch6-reversible-turing-machines-by-rlem, aucm-ch12-linear-cellular-automata-and-decidability, aucm-ch13-cellular-automata-with-write-access, aucm-ch14-broadcasting-automata]
 created: 2026-09-24
 updated: 2026-09-24
 ---
@@ -16,7 +16,8 @@ updated: 2026-09-24
 **Editor:** Andrew Adamatzky (Springer, Emergence, Complexity and Computation vol. 12, 2015; DOI 10.1007/978-3-319-09039-9)[^1]
 
 > **Locators.** Printed page numbers are used throughout. PDF page = printed page + 9 for
-> Chs. 5-6 (p. 117 = PDF p. 126) and printed page + 5 from Ch. 12 on (p. 259 = PDF p. 264).
+> Chs. 5-6 (p. 117 = PDF p. 126), + 5 for Chs. 12-13 (p. 259 = PDF p. 264), and + 4 for
+> Ch. 14 (p. 297 = PDF p. 301).
 
 ## Summary
 
@@ -40,7 +41,7 @@ automata:
 | 6 | Constructing Reversible Turing Machines by Reversible Logic Element with Memory | Morita | [[aucm-ch6-reversible-turing-machines-by-rlem](pages/aucm-ch6-reversible-turing-machines-by-rlem.md)] |
 | 12 | Linear Cellular Automata and Decidability | Sutner | [[aucm-ch12-linear-cellular-automata-and-decidability](pages/aucm-ch12-linear-cellular-automata-and-decidability.md)] |
 | 13 | Algorithms with Active Cells Modeled by Cellular Automata with Write-Access (CA-w) | Hoffmann | [[aucm-ch13-cellular-automata-with-write-access](pages/aucm-ch13-cellular-automata-with-write-access.md)] |
-| 14 | Broadcasting Automata and Patterns on Z² | Nickson, Potapov | pending |
+| 14 | Broadcasting Automata and Patterns on Z² | Nickson, Potapov | [[aucm-ch14-broadcasting-automata](pages/aucm-ch14-broadcasting-automata.md)] |
 | 15 | Real-Time Prime Generators Implemented on Small-State Cellular Automata | Umeo, Miyamoto, Abe | pending |
 | 16 | Phyllosilicate Automata | Adamatzky | pending |
 
@@ -72,6 +73,11 @@ DC programming in bioinformatics).[^3]
   is shown on the traffic rule 184, Pascal's triangle, Fibonacci numbers, sorting on a
   ring, and leader election
   ([[aucm-ch13-cellular-automata-with-write-access](pages/aucm-ch13-cellular-automata-with-write-access.md)]).[^7]
+- **Waves of variable radius (Ch. 14).** Nickson and Potapov's broadcasting automata send
+  messages to everyone within a state-dependent Euclidean radius. The waves trace discrete
+  discs that generalize the von Neumann and Moore neighbourhoods. Composing discs can never
+  produce some gradients or any non-convex shape, while aggregating two wave trains can
+  ([[aucm-ch14-broadcasting-automata](pages/aucm-ch14-broadcasting-automata.md)]).[^8]
 
 ## Entities & Concepts
 
@@ -87,6 +93,8 @@ DC programming in bioinformatics).[^3]
 - [[reachability-in-cellular-automata](pages/reachability-in-cellular-automata.md)]
 - [[cellular-automaton-with-write-access](pages/cellular-automaton-with-write-access.md)]
 - [[rule-184](pages/rule-184.md)]
+- [[broadcasting-automaton](pages/broadcasting-automaton.md)]
+- [[neighbourhood-sequence](pages/neighbourhood-sequence.md)]
 
 ## Relation to Other Wiki Pages
 
@@ -105,3 +113,4 @@ the shape of the 1D column of
 [^5]: [[aucm-ch6-reversible-turing-machines-by-rlem](pages/aucm-ch6-reversible-turing-machines-by-rlem.md)] pp.129-137 [synthesis] — any RTM as an infinite circuit of REs; RE realized in BBM with a stationary state ball, no input synchronization; every non-degenerate 2-state k-symbol RLEM with k > 2 is universal
 [^6]: [[aucm-ch12-linear-cellular-automata-and-decidability](pages/aucm-ch12-linear-cellular-automata-and-decidability.md)] pp.259-273 [synthesis] — Theorems 1, 3, 5 (first-order decidability), Theorem 8 (Reachability any r.e. degree), universality testing Σ⁰₄-complete
 [^7]: [[aucm-ch13-cellular-automata-with-write-access](pages/aucm-ch13-cellular-automata-with-write-access.md)] p.277 (Abstract) [synthesis] — CA-w lets an active cell send data to a neighbouring cell, activate or deactivate it; demonstrated on the traffic rule, Pascal's triangle, Fibonacci numbers, sorting on the ring, leader election
+[^8]: [[aucm-ch14-broadcasting-automata](pages/aucm-ch14-broadcasting-automata.md)] pp.297-334 [synthesis] — Broadcasting Automata with state-dependent radius; discrete discs with r² = 1, 2 as von Neumann and Moore; gradients that cannot be produced (Proposition 6); closure under composition (Corollary 2); non-convex shapes by moiré aggregation
