@@ -22,9 +22,8 @@ organized mostly around how they can fail. Their safeguards aim to make most fai
 non-lethal rather than to eliminate failure: "palliatives of failures, not cures."[^3]
 
 **Form of the axioms.** Failure is admitted as an independent logical entity. Instead of
-rules of the form "if A and B happen, C will follow", the axioms say "if A and B happen, C
-will follow with a certain specified probability, D will follow with another specified
-probability, and so on", in effect a probability matrix. Von Neumann holds that any
+deterministic rules ("if these inputs, then that output"), the axioms assign probabilities
+to each possible outcome, in effect a probability matrix. Von Neumann holds that any
 automaton of real complexity, natural or artificial, should be treated in this system.[^4]
 
 **Why complexity forces it.** For a fixed chance of malfunction per component, the more
@@ -60,7 +59,7 @@ which this wiki has not ingested.[^11]
 [^1]: [[tsra-editors-introduction](pages/tsra-editors-introduction.md)] p.19 — "How can reliable systems be constructed from unreliable components?"
 [^2]: [[tsra-lecture-3](pages/tsra-lecture-3.md)] p.57 — "in no practical way can we imagine an automaton which is really reliable. If you axiomatize an automaton by telling exactly what it will do in every completely defined situation you are missing an important part of the problem."
 [^3]: [[tsra-lecture-3](pages/tsra-lecture-3.md)] p.58 — "they are arrangements by which it is attempted to achieve a state where at least a majority of all failures will not be lethal. ... These arrangements give palliatives of failures, not cures."
-[^4]: [[tsra-lecture-3](pages/tsra-lecture-3.md)] p.58 — "To permit failure as an independent logical entity means that one does not state the axioms in a rigorous manner. The axioms are not of the form: if A and B happen, C will follow. The axioms are always of this variety: If A and B happen, C will follow with a certain specified probability, D will follow with another specified probability, and so on. ... Both artificial and natural automata should be discussed in this system as soon as there is any degree of involvement."
+[^4]: [[tsra-lecture-3](pages/tsra-lecture-3.md)] p.58 [synthesis] — permitting failure as an independent logical entity means axioms are no longer rigorous: instead of "if these inputs, then this output," each outcome follows "with a certain specified probability"; both natural and artificial automata of any real complexity should be treated this way
 [^5]: [[tsra-lecture-3](pages/tsra-lecture-3.md)] p.58 fn2 — "For a given probability of malfunction of a component, the more complex the automaton the more likely it is that a lethal failure will occur."
 [^6]: [[tsra-editors-introduction](pages/tsra-editors-introduction.md)] p.xvi — "The reliability of components limits the complexity of the automata we can build"
 [^7]: [[tsra-lecture-4](pages/tsra-lecture-4.md)] pp.70-71 [synthesis] — error considerations "become more important as the system becomes more complex"; under the philosophy "that every error has to be caught, explained, and corrected, a system of the complexity of the living organism would not run for a millisecond. Such a system is so well integrated that it can operate across errors."

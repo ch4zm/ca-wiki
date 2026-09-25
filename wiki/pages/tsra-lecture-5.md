@@ -39,8 +39,8 @@ He then shows how self-reproduction works above the threshold, with the
 A builds any automaton from its description, a copier B duplicates descriptions, and a
 controller C coordinates the two. Supplied with its own description, A + B + C produces a
 copy of itself with a copy of the description attached.[^3] Adding an arbitrary component
-D to the description gives an automaton that reproduces and also makes D. A random change
-in the D part of the description is inherited by later generations, which gives a
+P to the description gives an automaton that reproduces and also makes P. A random change
+in the P part of the description is inherited by later generations, which gives a
 primitive form of inheritable mutation.[^4]
 
 ## Key Takeaways
@@ -54,7 +54,7 @@ primitive form of inheritable mutation.[^4]
   an existing object. This is Turing's trick transferred to construction.[^5]
 - **A + B + C + φ(A + B + C).** Constructor, copier, and controller together self-reproduce,
   though none of them does so alone.[^3]
-- **Heredity.** Changes to the extra part D of the description are inherited. Von Neumann
+- **Heredity.** Changes to the payload P in the description are inherited. Von Neumann
   suggests the capacity for inheritable mutation as what distinguishes real
   self-reproduction from trivial cases such as crystal growth.[^4]
 
@@ -78,5 +78,5 @@ construction. Its kinematic model is the forerunner of the cellular model in Par
 [^1]: [[tsra-lecture-5](pages/tsra-lecture-5.md)] pp.74-75 [synthesis] — Turing machines, neural nets, and computers all produce outputs unlike themselves; the broader view considers automata whose outputs are like themselves, built by picking up parts from an unlimited supply
 [^2]: [[tsra-lecture-5](pages/tsra-lecture-5.md)] pp.78-80 [synthesis] — the paradox of degenerative synthesis versus organic reproduction and evolution; resolved by a minimum complexity below which synthesis degenerates and above which it "can become explosive"; the minimum is probably in the millions of parts
 [^3]: [[tsra-lecture-5](pages/tsra-lecture-5.md)] pp.84-86 [synthesis] — definitions of A, B, and C; with X = A + B + C, the system (A + B + C) + φ(A + B + C) produces a copy of itself; none of A, B, or C is self-reproductive alone
-[^4]: [[tsra-lecture-5](pages/tsra-lecture-5.md)] pp.86-87 [synthesis] — the D by-product; mutations in A, B, or C are usually lethal or sterilizing, while a mutation in the D part is inherited; inheritable mutation proposed as a criterion for self-reproduction
+[^4]: [[tsra-lecture-5](pages/tsra-lecture-5.md)] pp.86-87 [synthesis] — the payload by-product; mutations in A, B, or C are usually lethal or sterilizing, while a mutation in the payload part is inherited; inheritable mutation proposed as a criterion for self-reproduction
 [^5]: [[tsra-lecture-5](pages/tsra-lecture-5.md)] pp.83-84 [synthesis] — constructing from a description is simpler than copying an object; the approach is compared to Turing's trick with universal automata

@@ -29,9 +29,8 @@ they can fail and what guards against failure. Those guards only try to make mos
 non-lethal: "palliatives of failures, not cures."[^2]
 
 This leads to [[probabilistic-logic](pages/probabilistic-logic.md)]. Failure is admitted as
-an independent logical entity, and an automaton's axioms take the form "if A and B happen,
-C will follow with a certain specified probability, D with another," which amounts to a
-probability matrix. Von Neumann holds that any automaton of real complexity should be
+an independent logical entity, and an automaton's axioms assign a probability to each
+possible outcome instead of fixing one, which amounts to a probability matrix. Von Neumann holds that any automaton of real complexity should be
 treated this way.[^3]
 
 The second half connects information with thermodynamic entropy. Von Neumann discussed the
@@ -75,7 +74,7 @@ problem, the counterpart of [[self-reproduction](pages/self-reproduction.md)].
 
 [^1]: [[tsra-lecture-3](pages/tsra-lecture-3.md)] p.57 — "in no practical way can we imagine an automaton which is really reliable. If you axiomatize an automaton by telling exactly what it will do in every completely defined situation you are missing an important part of the problem."
 [^2]: [[tsra-lecture-3](pages/tsra-lecture-3.md)] pp.57-58 — "their structure is controlled only partly by rigorous requirements and is controlled to a much larger extent by the manner in which they might fail and by the (more or less effective) precautionary measures which have been taken against their failure. ... These arrangements give palliatives of failures, not cures."
-[^3]: [[tsra-lecture-3](pages/tsra-lecture-3.md)] p.58 — "To permit failure as an independent logical entity means that one does not state the axioms in a rigorous manner. ... If A and B happen, C will follow with a certain specified probability, D will follow with another specified probability, and so on. ... Both artificial and natural automata should be discussed in this system as soon as there is any degree of involvement."
+[^3]: [[tsra-lecture-3](pages/tsra-lecture-3.md)] p.58 [synthesis] — permitting failure as an independent logical entity means axioms are no longer rigorous: instead of "if these inputs, then this output," each outcome follows "with a certain specified probability"; both natural and artificial automata of any real complexity should be treated this way
 [^4]: [[tsra-lecture-3](pages/tsra-lecture-3.md)] pp.59-60 — "He explained at length the paradox of Maxwell's demon and how Szilard resolved it by working out the relation of entropy to information."
 [^5]: [[tsra-lecture-3](pages/tsra-lecture-3.md)] p.62 — "There are strong indications that information is similar to entropy and that degenerative processes of entropy are paralleled by degenerative processes in the processing of information. It is likely that you cannot define the function of an automaton, or its efficiency, without characterizing the milieu in which it works by means of statistical traits like the ones used to characterize a milieu in thermodynamics."
 [^6]: [[tsra-lecture-3](pages/tsra-lecture-3.md)] p.62 — "It is not surprising that this new theory of information should be like formal logics, but it is surprising that it is likely to have a lot in common with thermodynamics. ... These all-or-none processes are only weakly connected to analysis, which is the best developed and best known part of mathematics, while they are closely connected to combinatorics, that part of mathematics of which we know the least."

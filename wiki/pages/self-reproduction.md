@@ -45,13 +45,13 @@ makes non-degenerating reproduction possible ([[descriptions-vs-originals](pages
 
 **What counts as self-reproduction.** Naive definitions admit trivial cases such as
 growing crystals. Von Neumann proposed requiring the capacity for *inheritable mutation*.
-If an extra part D is added to the description, a random change in D is passed on to later
+If an extra payload P is added to the description, a random change in P is passed on to later
 generations. Changes to A, B, or C are usually lethal or leave the offspring unable to
 reproduce.[^9]
 
 In the cellular model, mutations sort by where they fall. Changes to the machinery are
 usually lethal or sterilizing. Changes to the part of the description that specifies a
-by-product F give viable offspring making F′, a change of hereditary strain. Conflicts over
+payload P give viable offspring making P′, a change of hereditary strain. Conflicts over
 space between independently reproducing organisms are a possible route to natural
 selection, though von Neumann leaves evolution open.[^10]
 
@@ -81,5 +81,5 @@ selection, though von Neumann leaves evolution open.[^10]
 [^6]: [[tsra-editors-introduction](pages/tsra-editors-introduction.md)] p.20 — "It is also to be expected that because of the close relation of self-reproduction to self-repair, results on self-reproduction would help solve the reliability problem."
 [^7]: [[tsra-lecture-5](pages/tsra-lecture-5.md)] pp.84-86 [synthesis] — A (universal constructor), B (copier), C (control); (A + B + C) + φ(A + B + C) produces a copy of itself; none of A, B, or C is self-reproductive alone
 [^8]: [[tsra-part2-ch1](pages/tsra-part2-ch1.md)] pp.121-122 [synthesis] — copying requires exploration; quiescent descriptions can be explored without disturbance; this is the decisive step making reproduction without degeneration possible
-[^9]: [[tsra-lecture-5](pages/tsra-lecture-5.md)] pp.86-87 [synthesis] — self-reproduction is hard to define since crystals qualify naively; requiring inheritable mutation resolves this; mutations in the D part are inherited, those in A, B, or C usually lethal or sterilizing
-[^10]: [[tsra-part2-ch1](pages/tsra-part2-ch1.md)] pp.130-131 [synthesis] — mutation classes by location in E_F; conflicts between independent organisms and natural selection; evolution (E) left open
+[^9]: [[tsra-lecture-5](pages/tsra-lecture-5.md)] pp.86-87 [synthesis] — self-reproduction is hard to define since crystals qualify naively; requiring inheritable mutation resolves this; mutations in the payload part are inherited, those in A, B, or C usually lethal or sterilizing
+[^10]: [[tsra-part2-ch1](pages/tsra-part2-ch1.md)] pp.130-131 [synthesis] — mutation classes by location in the self-reproducer with payload; conflicts between independent organisms and natural selection; evolution left open
