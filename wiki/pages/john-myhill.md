@@ -3,7 +3,7 @@ title: John Myhill
 category: People
 summary: Stanford author who proved the converse of Moore's Garden-of-Eden theorem (1963), and who wrote on self-reproducing automata and favourable mutation
 tags: [person, myhill, garden-of-eden, self-reproduction]
-sources: [converse-of-moores-garden-of-eden-theorem, machine-models-of-self-reproduction]
+sources: [converse-of-moores-garden-of-eden-theorem, machine-models-of-self-reproduction, planetmath-garden-of-eden-theorem]
 created: 2026-09-24
 updated: 2026-09-24
 ---
@@ -34,6 +34,7 @@ here:[^3]
 
 ## Appearances in Sources
 
+- [[planetmath-garden-of-eden-theorem](pages/planetmath-garden-of-eden-theorem.md)] - modern statement of the theorem in d dimensions, credited as Theorem 2
 - [[converse-of-moores-garden-of-eden-theorem](pages/converse-of-moores-garden-of-eden-theorem.md)] - author
 - [[machine-models-of-self-reproduction](pages/machine-models-of-self-reproduction.md)] - cites his work on self-reproducing automata
 

@@ -3,7 +3,7 @@ title: Erasable Configuration
 category: Concepts
 summary: Moore's term for a finite pattern that has a different "twin" with identical surroundings and an identical next step - local information loss; it exists exactly when Garden-of-Eden configurations do
 tags: [concept, erasable-configuration, moore, garden-of-eden, irreversibility]
-sources: [machine-models-of-self-reproduction, converse-of-moores-garden-of-eden-theorem]
+sources: [machine-models-of-self-reproduction, converse-of-moores-garden-of-eden-theorem, planetmath-garden-of-eden-theorem]
 created: 2026-09-24
 updated: 2026-09-24
 ---
@@ -53,7 +53,7 @@ configurations are distinguished by no environment. If every pair can be told ap
 environment, every pair can be told apart by every environment of the right size, including
 the all-quiescent one.[^9] In modern terms, erasability is the failure of the global rule to
 be injective on finite patterns, and a Garden-of-Eden configuration is a failure of
-surjectivity. That framing is the wiki's own summary, not the papers' wording.
+surjectivity. An automaton with no mutually erasable pair is called *pre-injective*.[^11]
 
 **Open questions from Moore.** Can a structure have a self-reproducing configuration and
 no erasable one? Does the fraction of n-state structures with erasable configurations tend
@@ -62,11 +62,13 @@ could be a single cell. Is that always possible?[^10]
 
 ## Appearances in Sources
 
+- [[planetmath-garden-of-eden-theorem](pages/planetmath-garden-of-eden-theorem.md)] - mutually erasable patterns and pre-injectivity in d dimensions
 - [[machine-models-of-self-reproduction](pages/machine-models-of-self-reproduction.md)] - definition, role in Theorem 2, and open problems
 - [[converse-of-moores-garden-of-eden-theorem](pages/converse-of-moores-garden-of-eden-theorem.md)] - the equivalent notion of indistinguishable configurations, and the converse
 
 ## Related Concepts
 
+- [[amenable-group](pages/amenable-group.md)] - where erasability and Garden-of-Eden patterns are equivalent
 - [[garden-of-eden](pages/garden-of-eden.md)] - exist exactly when erasable configurations do
 - [[garden-of-eden-theorem](pages/garden-of-eden-theorem.md)] - the equivalence
 - [[cellular-automaton](pages/cellular-automaton.md)] - the setting
@@ -82,3 +84,4 @@ could be a single cell. Is that always possible?[^10]
 [^8]: [[converse-of-moores-garden-of-eden-theorem](pages/converse-of-moores-garden-of-eden-theorem.md)] p.686 - "the existence of two indistinguishable configurations is a necessary as well as a sufficient condition for the existence of Garden-of-Eden configurations."
 [^9]: [[converse-of-moores-garden-of-eden-theorem](pages/converse-of-moores-garden-of-eden-theorem.md)] p.685 and n.2, p.686 [synthesis] - environment, insertion, sequent, and distinguishing environments defined; the referee's equivalence of mutual erasability with indistinguishability; the strengthened Lemma that distinguishability by some environment implies by every environment; the Lemma for the all-passive environment E₀
 [^10]: [[machine-models-of-self-reproduction](pages/machine-models-of-self-reproduction.md)] p.30 [synthesis] - open problems: self-reproduction without erasable configurations; fraction of n-state structures with erasable configurations approaching 1; one-cell inner arrays in every structure examined
+[^11]: [[planetmath-garden-of-eden-theorem](pages/planetmath-garden-of-eden-theorem.md)] Thms 1-2 [synthesis] L10-32 - two mutually erasable patterns ⇒ an orphan pattern, restated as "surjective d-dimensional cellular automata are pre-injective"; the converse, "pre-injective d-dimensional cellular automata are surjective"

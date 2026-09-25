@@ -1,7 +1,7 @@
 ---
 title: Overview
 tags: [overview, synthesis]
-sources: [theory-of-self-reproducing-automata, tsra-editors-introduction, tsra-lecture-2, tsra-lecture-3, tsra-lecture-4, tsra-lecture-5, tsra-part2-ch1, tsra-part2-ch2, tsra-part2-ch3, tsra-part2-ch4, tsra-part2-ch5, endomorphisms-and-automorphisms-of-the-shift-dynamical-system, machine-models-of-self-reproduction, converse-of-moores-garden-of-eden-theorem, statistical-mechanics-of-cellular-automata]
+sources: [theory-of-self-reproducing-automata, tsra-editors-introduction, tsra-lecture-2, tsra-lecture-3, tsra-lecture-4, tsra-lecture-5, tsra-part2-ch1, tsra-part2-ch2, tsra-part2-ch3, tsra-part2-ch4, tsra-part2-ch5, endomorphisms-and-automorphisms-of-the-shift-dynamical-system, machine-models-of-self-reproduction, converse-of-moores-garden-of-eden-theorem, statistical-mechanics-of-cellular-automata, planetmath-garden-of-eden-theorem]
 updated: 2026-09-24
 ---
 
@@ -55,7 +55,8 @@ caps offspring at quadratic growth in time. His Garden-of-Eden theorem says that
 an [[erasable-configuration](pages/erasable-configuration.md)] exists, so do patterns with
 no predecessor, and no self-reproducer can contain one. Myhill proved the converse, so the
 [[garden-of-eden-theorem](pages/garden-of-eden-theorem.md)] is an equivalence: Garden-of-Eden patterns exist exactly
-when two different patterns can be indistinguishable after one step. He also surveys working kinematic
+when two different patterns can be indistinguishable after one step. The theorem holds in every dimension and, on general groups, exactly on an
+[[amenable-group](pages/amenable-group.md)]; in modern terms, surjective ⇔ pre-injective. He also surveys working kinematic
 reproducers (Penrose's shaken blocks, Jacobson's model trains).
 
 **One dimension, all rules at once.** Hedlund's symbolic dynamics takes the opposite
@@ -141,6 +142,7 @@ glider-stream circuits.
 - [[crossing-organ](pages/crossing-organ.md)]
 - [[garden-of-eden](pages/garden-of-eden.md)]
 - [[garden-of-eden-theorem](pages/garden-of-eden-theorem.md)]
+- [[amenable-group](pages/amenable-group.md)]
 - [[edward-f-moore](pages/edward-f-moore.md)]
 - [[john-myhill](pages/john-myhill.md)]
 - [[erasable-configuration](pages/erasable-configuration.md)]

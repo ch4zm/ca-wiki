@@ -3,7 +3,7 @@ title: Notation Map
 category: Analyses
 summary: Crosswalk from the symbols each source uses (von Neumann's lectures and manuscript, Burks's completion, Hedlund's symbolic dynamics) onto the wiki's common concepts and notation, with a list of letters that mean different things in different places
 tags: [notation, reference, von-neumann, burks, hedlund, self-reproduction, 29-state, symbolic-dynamics]
-sources: [tsra-editors-introduction, tsra-lecture-5, tsra-part2-ch1, tsra-part2-ch2, tsra-part2-ch3, tsra-part2-ch4, tsra-part2-ch5, endomorphisms-and-automorphisms-of-the-shift-dynamical-system]
+sources: [tsra-editors-introduction, tsra-lecture-5, tsra-part2-ch1, tsra-part2-ch2, tsra-part2-ch3, tsra-part2-ch4, tsra-part2-ch5, endomorphisms-and-automorphisms-of-the-shift-dynamical-system, planetmath-garden-of-eden-theorem]
 created: 2026-09-24
 updated: 2026-09-24
 ---
@@ -126,6 +126,21 @@ column below is own reasoning: Hedlund never uses those words.[^16][^17][^18]
 | degree; Welch's left and right indices ([[permutive-map](pages/permutive-map.md)]) | M(f); L(f), R(f) | — |
 | periodic points | P(𝒮) | spatially periodic configurations |
 
+## The Garden-of-Eden counting
+
+Moore and Myhill work in the plane with radius 1. PlanetMath works on ℤᵈ with radius r and
+swaps the roles of k and n.[^19][^20]
+
+| Concept | Moore, Myhill | PlanetMath |
+|---|---|---|
+| number of cell states | A | a = \|Q\| |
+| dimension; neighbourhood radius | 2; 1 | d; r |
+| side of the small block (erasable pair or Garden-of-Eden pattern) | n | k |
+| number of small blocks per side of the big block | k | n |
+| the counting inequality | (A^(n²) − 1)^(k²) < A^((kn−2)²) | (a^(k^d) − 1)^(n^d) < a^((kn − 2r)^d) |
+| a pattern with no predecessor | Garden-of-Eden configuration | orphan pattern |
+| a structure with no mutually erasable pair | - | pre-injective |
+
 ## Letter collisions
 
 Letters that change meaning between (or within) sources:
@@ -150,6 +165,9 @@ Letters that change meaning between (or within) sources:
   is the set of periodic points.[^14][^15][^18]
 - **S**: the secondary built in Ch. 1; S_Σ is a sensitized state. In Hedlund, S is the
   number of symbols.[^2][^11][^16]
+- **k, n**: in Moore and Myhill, n is the side of the small block and k the number of
+  blocks per side; PlanetMath reverses them. In Ch. 1, k is the tape's number base, and
+  xₙ, n index the tape cells.[^19][^20][^5]
 - **M**: in Ch. 5, an arbitrary machine (M_c, M_u). In Hedlund, M(f) is the number of
   preimages of a bilaterally transitive point.[^3][^18]
 - **Φ, Σ**: in Ch. 3, Φ is the triple-return counter. In Hedlund, Φ(𝒮) is the set of all
@@ -176,3 +194,5 @@ Letters that change meaning between (or within) sources:
 [^16]: [[endomorphisms-and-automorphisms-of-the-shift-dynamical-system](pages/endomorphisms-and-automorphisms-of-the-shift-dynamical-system.md)] pp.320-322 [synthesis] — X(𝒮) the bisequences over 𝒮 with S = card 𝒮; σ the shift; Φ(𝒮) the endomorphisms, E(𝒮) the onto ones, A(𝒮) the automorphisms
 [^17]: [[endomorphisms-and-automorphisms-of-the-shift-dynamical-system](pages/endomorphisms-and-automorphisms-of-the-shift-dynamical-system.md)] pp.323-324, 331-332 [synthesis] — 𝔅ₙ(𝒮) the n-blocks; F(𝒮, n) the maps 𝔅ₙ(𝒮) → 𝒮; f_m and f∞; H(𝒮) the one-to-one members of Φ(𝒮), with A(𝒮) = H(𝒮); Σ(𝒮) = {σⁿ}
 [^18]: [[endomorphisms-and-automorphisms-of-the-shift-dynamical-system](pages/endomorphisms-and-automorphisms-of-the-shift-dynamical-system.md)] pp.338, 351, 358-359 [synthesis] — P(𝒮) the periodic points; M(f) the multiplicity at bilaterally transitive points; R(f) and L(f) defined by Welch
+[^19]: [[machine-models-of-self-reproduction](pages/machine-models-of-self-reproduction.md)] pp.26-28 [synthesis] - kn × kn array of k² n × n sub-arrays; A states; inequality (1) (A^(n²) − 1)^(k²) < A^((kn−2)²)
+[^20]: [[planetmath-garden-of-eden-theorem](pages/planetmath-garden-of-eden-theorem.md)] Lemma 1 and proof of Moore's theorem [synthesis] L40-60,L78-101 - a = |Q|; cube neighbourhood of radius r on ℤᵈ; hypercubes of side k subdivided from side kn into n^d sub-patterns; (a^(k^d) − 1)^(n^d) < a^((kn − 2r)^d); "orphan pattern"; "pre-injective"

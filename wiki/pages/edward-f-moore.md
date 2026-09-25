@@ -3,7 +3,7 @@ title: Edward F. Moore
 category: People
 summary: Bell Labs author who formalized von Neumann's cellular model as "tessellation structures", proved the sufficient direction of the Garden-of-Eden theorem (1962), and gave his name to the nine-cell neighbourhood
 tags: [person, moore, garden-of-eden, self-reproduction, bell-labs]
-sources: [machine-models-of-self-reproduction, converse-of-moores-garden-of-eden-theorem]
+sources: [machine-models-of-self-reproduction, converse-of-moores-garden-of-eden-theorem, planetmath-garden-of-eden-theorem]
 created: 2026-09-24
 updated: 2026-09-24
 ---
@@ -39,6 +39,7 @@ configurations "which can forget".[^9] These are listed, not read.
 
 ## Appearances in Sources
 
+- [[planetmath-garden-of-eden-theorem](pages/planetmath-garden-of-eden-theorem.md)] - modern statement of the theorem in d dimensions, credited as Theorem 1
 - [[machine-models-of-self-reproduction](pages/machine-models-of-self-reproduction.md)] - author
 - [[converse-of-moores-garden-of-eden-theorem](pages/converse-of-moores-garden-of-eden-theorem.md)] - the result Myhill completes
 

@@ -101,7 +101,8 @@ configuration has a predecessor. Thm 5.1 then says a non-surjective 1D rule alwa
 *finite* orphan pattern, the 1D [[garden-of-eden](pages/garden-of-eden.md)]. Cor 9.4,
 read with Lemma 5.11, says a 1D rule is surjective iff no two configurations that differ
 on finitely many cells have the same successor, the 1D form of the
-[[garden-of-eden-theorem](pages/garden-of-eden-theorem.md)]. Thm 5.4 also gives a finite test:
+[[garden-of-eden-theorem](pages/garden-of-eden-theorem.md)] (surjective ⇔ pre-injective, stated for every dimension in
+[[planetmath-garden-of-eden-theorem](pages/planetmath-garden-of-eden-theorem.md)]). Thm 5.4 also gives a finite test:
 count preimages of blocks. The balanced-preimage property is special to onto maps, since
 non-onto maps have blocks with no preimage at all.
 

@@ -3,7 +3,7 @@ title: Garden-of-Eden Configuration
 category: Concepts
 summary: A cellular-automaton configuration with no predecessor, which can occur only at time zero; they exist exactly when erasable configurations do (Moore 1962, Myhill 1963)
 tags: [concept, garden-of-eden, moore, myhill, surjectivity]
-sources: [machine-models-of-self-reproduction, tsra-part2-ch5, converse-of-moores-garden-of-eden-theorem, endomorphisms-and-automorphisms-of-the-shift-dynamical-system, statistical-mechanics-of-cellular-automata]
+sources: [machine-models-of-self-reproduction, tsra-part2-ch5, converse-of-moores-garden-of-eden-theorem, endomorphisms-and-automorphisms-of-the-shift-dynamical-system, statistical-mechanics-of-cellular-automata, planetmath-garden-of-eden-theorem]
 created: 2026-09-24
 updated: 2026-09-24
 ---
@@ -15,7 +15,8 @@ updated: 2026-09-24
 A **Garden-of-Eden configuration** is a pattern that no configuration at time T − 1 can
 turn into at time T. It can therefore occur only at time 0, where initial conditions are
 set by hand. [[edward-f-moore](pages/edward-f-moore.md)] named it in 1962, on a suggestion from John W. Tukey, after the account
-in Genesis.[^1]
+in Genesis.[^1] A finite pattern that cannot occur in any successor is also called an
+*orphan*; a configuration containing one is a Garden of Eden.[^20]
 
 **Moore's theorem.** Moore's Theorem 2: "For a tessellation structure for which there
 exist erasable configurations, there exist Garden-of-Eden configurations."[^2] An
@@ -103,6 +104,7 @@ the smallest known example in 1983 had about 300 cells.[^19] See
 
 ## Appearances in Sources
 
+- [[planetmath-garden-of-eden-theorem](pages/planetmath-garden-of-eden-theorem.md)] - orphan patterns; the theorem in d dimensions and on amenable groups
 - [[statistical-mechanics-of-cellular-automata](pages/statistical-mechanics-of-cellular-automata.md)] - Garden-of-Eden configurations as a consequence of irreversibility, and how common they are in 1D rules and Life
 - [[machine-models-of-self-reproduction](pages/machine-models-of-self-reproduction.md)] - the definition, the name, Theorem 2 and its proof, the six assumptions
 - [[converse-of-moores-garden-of-eden-theorem](pages/converse-of-moores-garden-of-eden-theorem.md)] - the converse: Garden-of-Eden configurations require indistinguishable pairs
@@ -111,6 +113,7 @@ the smallest known example in 1983 had about 300 cells.[^19] See
 
 ## Related Concepts
 
+- [[amenable-group](pages/amenable-group.md)] - the groups on which Garden-of-Eden configurations exist exactly when erasable ones do
 - [[irreversibility-and-entropy](pages/irreversibility-and-entropy.md)] - the many-to-one evolution that produces them
 - [[garden-of-eden-theorem](pages/garden-of-eden-theorem.md)] - the if-and-only-if result
 - [[erasable-configuration](pages/erasable-configuration.md)] - the condition equivalent to Garden-of-Eden configurations existing
@@ -141,3 +144,4 @@ the smallest known example in 1983 had about 300 cells.[^19] See
 [^17]: [[statistical-mechanics-of-cellular-automata](pages/statistical-mechanics-of-cellular-automata.md)] p.623 n.10 — "The existence of unreachable or 'garden-of-Eden' configurations in cellular automata is discussed in Moore (1962) and Aggarwal (1973), where criteria (equivalent to irreversibility) for their occurrence are given."
 [^18]: [[statistical-mechanics-of-cellular-automata](pages/statistical-mechanics-of-cellular-automata.md)] p.623 [synthesis] — rule 204 is unique in allowing all configurations to be reached; rule 90 reaches half (N odd) or ¼ (N even); rule 126 unreachable fraction tends to one, behaving as 1 − λᴺ with λ ≈ 0.88 (Martin et al. 1983, cited via this paper)
 [^19]: [[statistical-mechanics-of-cellular-automata](pages/statistical-mechanics-of-cellular-automata.md)] p.637 — "the simplest known 'unreachable' configuration contains around 300 sites"
+[^20]: [[planetmath-garden-of-eden-theorem](pages/planetmath-garden-of-eden-theorem.md)] Thms 1-2 [synthesis] L10-32 - Theorem 1 concludes that the automaton "has an orphan pattern"; the proof of Myhill's theorem counts configurations that "are not Gardens of Eden" by the orphan patterns they avoid (L103-122)
