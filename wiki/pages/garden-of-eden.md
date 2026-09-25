@@ -1,47 +1,83 @@
 ---
 title: Garden-of-Eden Configuration
 category: Concepts
-summary: A cellular-automaton configuration that has no predecessor and so can only occur at time zero (Moore); stub pending the Moore and Myhill ingests
+summary: A cellular-automaton configuration with no predecessor, which can occur only at time zero; Moore (1962) proved they exist in any structure with erasable configurations
 tags: [concept, garden-of-eden, moore, myhill, surjectivity]
-sources: [tsra-part2-ch5]
+sources: [machine-models-of-self-reproduction, tsra-part2-ch5]
 created: 2026-09-24
 updated: 2026-09-24
 ---
 
 # Garden-of-Eden Configuration
 
-> **Stub.** Everything here comes from a footnote in Burks's Ch. 5 of
-> [[theory-of-self-reproducing-automata](pages/theory-of-self-reproducing-automata.md)].
-> Moore (1962) and Myhill (1963) are cited via that footnote and have not been read yet.
-
 ## Description
 
-Moore called a configuration that can exist only at time zero a "Garden-of-Eden"
-configuration. It cannot arise from any earlier configuration.[^1]
+A **Garden-of-Eden configuration** is a pattern that no configuration at time T − 1 can
+turn into at time T. It can therefore occur only at time 0, where initial conditions are
+set by hand. Moore named it in 1962, on a suggestion from John W. Tukey, after the account
+in Genesis.[^1]
 
-**Relation to constructibility.** Every Garden-of-Eden configuration is non-constructible,
-since nothing can build a pattern that has no predecessor. The converse fails: a
-configuration can have predecessors and still be unbuildable by any constructor. Burks
-gives an example in [[von-neumann-29-state-ca](pages/von-neumann-29-state-ca.md)] (a 3 × 3
-block of sensitized S₀ in C₀₀; see
-[[initially-quiescent-automaton](pages/initially-quiescent-automaton.md)]).[^1][^2]
+**Moore's theorem.** Moore's Theorem 2: "For a tessellation structure for which there
+exist erasable configurations, there exist Garden-of-Eden configurations."[^2] An
+[[erasable-configuration](pages/erasable-configuration.md)] is a pair of distinct patterns
+with the same surroundings that become identical after one step.
 
-**Existence.** In Burks's words, Moore "established a necessary condition" for
-Garden-of-Eden configurations to exist in a cellular structure where information takes at
-least one time step to pass from a cell to its neighbors, and Myhill showed the condition is
-also sufficient. Burks says the condition amounts to the structure not being "backwards
-deterministic", in the sense of Burks and Wang. Which direction each paper proves is to be
-checked against Moore and Myhill directly.[^1]
+**The proof.** Suppose an n × n block can hold an erasable configuration. Divide a
+kn × kn block into k² such sub-blocks. Patterns that agree up to erasure in every sub-block
+lead to the same next state, so at most (A^(n²) − 1)^(k²) distinct successors can appear
+in the (kn − 2) × (kn − 2) interior, where A is the number of cell states. The interior has
+A^((kn−2)²) possible patterns. The loss from erasure grows with k², while the loss from the
+boundary layer grows only with k, so for large k the first count is smaller. Some interior
+pattern is then unreachable, and it is a Garden-of-Eden configuration.[^3]
+
+**Assumptions.** Moore lists six: the universe is homogeneous, space and time are
+discrete, action is local, space is Euclidean N-space, the laws are deterministic, and
+erasing is possible. Local action plays the role of a finite speed of light, confining
+outside influence to a thin boundary. Euclidean space supplies regions whose interior is
+arbitrarily large relative to their boundary. Erasing is vital: a structure from earlier in
+his paper satisfies the other five and has no Garden-of-Eden configurations.[^4] He
+suggests that a similar result in a model of modern physics would mean some states of the
+universe "are describable but not attainable".[^5]
+
+**Relation to self-reproduction and constructibility.** Since nothing produces a
+Garden-of-Eden configuration, no self-reproducing configuration can contain one.[^6] Moore
+reads it as a machine "which cannot be built out of the available parts, but whose
+physical structure can be described as an arrangement of those parts".[^7] Every
+Garden-of-Eden configuration is non-constructible, but not every non-constructible pattern
+is Garden-of-Eden. Burks gives a pattern in
+[[von-neumann-29-state-ca](pages/von-neumann-29-state-ca.md)] that has predecessors yet
+cannot be built: a 3 × 3 block of sensitized S₀ in C₀₀
+([[initially-quiescent-automaton](pages/initially-quiescent-automaton.md)]).[^8][^9]
+
+**Size.** Moore's proof gives very large Garden-of-Eden patterns. In every structure he
+examined in detail, one of size 5 × 5 or smaller existed.[^10]
+
+**The converse.** Burks, in a footnote to TSRA Ch. 5, says Myhill proved the converse
+condition, and that the condition amounts to the structure not being "backwards
+deterministic" in the sense of Burks and Wang.[^8] Myhill (1963), "The converse of Moore's
+Garden-of-Eden theorem", has not been ingested yet.
 
 ## Appearances in Sources
 
-- [[tsra-part2-ch5](pages/tsra-part2-ch5.md)] — footnote 12 to §5.3.1, relating non-constructibility to Moore and Myhill
+- [[machine-models-of-self-reproduction](pages/machine-models-of-self-reproduction.md)] - the definition, the name, Theorem 2 and its proof, the six assumptions
+- [[tsra-part2-ch5](pages/tsra-part2-ch5.md)] - footnote 12 to §5.3.1, relating non-constructibility to Moore and Myhill
 
 ## Related Concepts
 
-- [[initially-quiescent-automaton](pages/initially-quiescent-automaton.md)] — the class a constructor can build; Garden-of-Eden patterns lie wholly outside it
-- [[universal-constructor](pages/universal-constructor.md)] — no constructor can build a Garden-of-Eden pattern
-- [[cellular-automaton](pages/cellular-automaton.md)] — the general setting
+- [[erasable-configuration](pages/erasable-configuration.md)] - the condition that forces Garden-of-Eden configurations
+- [[moore-neighbourhood](pages/moore-neighbourhood.md)] - the radius-1 neighbourhood behind the boundary-layer count
+- [[initially-quiescent-automaton](pages/initially-quiescent-automaton.md)] - the class a constructor can build; Garden-of-Eden patterns lie wholly outside it
+- [[universal-constructor](pages/universal-constructor.md)] - no constructor can build a Garden-of-Eden pattern
+- [[self-reproduction](pages/self-reproduction.md)] - no self-reproducer contains one
+- [[cellular-automaton](pages/cellular-automaton.md)] - the general setting
 
-[^1]: [[tsra-part2-ch5](pages/tsra-part2-ch5.md)] p.291 n.12 [synthesis] — Moore called a configuration that can exist only at time zero a "Garden-of-Eden" configuration; every such configuration is non-constructible, not conversely; Moore established a necessary condition for their existence where information needs at least 1 unit of time to pass between neighbors; Myhill showed it is also sufficient; the condition is essentially non-backwards-determinism (Burks and Wang)
-[^2]: [[tsra-part2-ch5](pages/tsra-part2-ch5.md)] p.291 [synthesis] — the 3 × 3 configuration of sensitized S₀ surrounded by C₀₀ is not constructible
+[^1]: [[machine-models-of-self-reproduction](pages/machine-models-of-self-reproduction.md)] p.23 [synthesis] - configurations that "cannot occur except at time T = 0"; no configuration at T − 1 gives rise to them; "Such a configuration will be called a Garden-of Eden configuration. This term, from the Biblical account in the second and third chapters of Genesis, was suggested by John W. Tukey."
+[^2]: [[machine-models-of-self-reproduction](pages/machine-models-of-self-reproduction.md)] p.26 - "THEOREM 2. For a tessellation structure for which there exist erasable configurations, there exist Garden-of-Eden configurations."
+[^3]: [[machine-models-of-self-reproduction](pages/machine-models-of-self-reproduction.md)] pp.26-28 [synthesis] - kn × kn array of k² n × n sub-arrays; relation R* has at most (A^(n²) − 1)^(k²) classes, each leading to one configuration at T + 1; inequality (1) against A^((kn−2)²); erasure loss grows with k², boundary loss with k; the unreachable state p is the Garden-of-Eden configuration
+[^4]: [[machine-models-of-self-reproduction](pages/machine-models-of-self-reproduction.md)] pp.28-29 [synthesis] - the six assumptions and how each is used; local action corresponds to information not travelling faster than light; Euclidean space gives interiors arbitrarily large relative to boundaries; assumption (6) is vital, with one of the paper's structures as counterexample
+[^5]: [[machine-models-of-self-reproduction](pages/machine-models-of-self-reproduction.md)] p.29 - "it might have some cosmological interest in indicating that certain states of the physical universe are describable but not attainable."
+[^6]: [[machine-models-of-self-reproduction](pages/machine-models-of-self-reproduction.md)] pp.23-24 - "Since a Garden-of-Eden configuration cannot be produced by any other configuration, no self-reproducing configuration can contain a copy of a Garden-of-Eden configuration."
+[^7]: [[machine-models-of-self-reproduction](pages/machine-models-of-self-reproduction.md)] p.28 - "This also corresponds to a machine which cannot be built out of the available parts, but whose physical structure can be described as an arrangement of those parts."
+[^8]: [[tsra-part2-ch5](pages/tsra-part2-ch5.md)] p.291 n.12 [synthesis] - every Garden-of-Eden configuration is non-constructible, not conversely; Moore established a condition for their existence where information needs at least 1 unit of time to pass between neighbours; Myhill showed the converse; the condition is essentially non-backwards-determinism (Burks and Wang)
+[^9]: [[tsra-part2-ch5](pages/tsra-part2-ch5.md)] p.291 [synthesis] - the 3 × 3 configuration of sensitized S₀ surrounded by C₀₀ is not constructible
+[^10]: [[machine-models-of-self-reproduction](pages/machine-models-of-self-reproduction.md)] p.30 [synthesis] - the proof of Theorem 2 gives a very large array; 5 × 5 or smaller sufficed in every structure Moore examined in detail

@@ -3,7 +3,7 @@ title: Initially Quiescent Automaton
 category: Concepts
 summary: A finite pattern in von Neumann's 29-state CA whose cells all start in one of the 10 quiescent states and which is switched on by a stimulus at its edge — the class of machines a universal constructor can build
 tags: [concept, quiescence, construction, von-neumann, 29-state]
-sources: [tsra-part2-ch5, tsra-part2-ch1]
+sources: [tsra-part2-ch5, tsra-part2-ch1, machine-models-of-self-reproduction]
 created: 2026-09-24
 updated: 2026-09-24
 ---
@@ -35,11 +35,14 @@ unit and a universal Turing machine can be built as initially quiescent automata
 larger class than patterns that can be built. A constructor can build every initially
 quiescent automaton and many active ones, but not all active ones. Burks's example is a
 3 × 3 block of the sensitized state S₀ surrounded by C₀₀ cells.[^6] Patterns that have no
-predecessor at all are [[garden-of-eden](pages/garden-of-eden.md)] configurations.
+predecessor at all are [[garden-of-eden](pages/garden-of-eden.md)] configurations. Moore
+proved they exist in any structure that has an
+[[erasable-configuration](pages/erasable-configuration.md)].[^7]
 
 ## Appearances in Sources
 
 - [[tsra-part2-ch5](pages/tsra-part2-ch5.md)] — the definition, and its use as the target class for construction
+- [[machine-models-of-self-reproduction](pages/machine-models-of-self-reproduction.md)] — the Garden-of-Eden theorem
 - [[tsra-part2-ch1](pages/tsra-part2-ch1.md)] — offspring built quiescent and activated by a starting stimulus
 
 ## Related Concepts
@@ -47,6 +50,7 @@ predecessor at all are [[garden-of-eden](pages/garden-of-eden.md)] configuration
 - [[universal-constructor](pages/universal-constructor.md)] — construction-universal for this class
 - [[crossing-organ](pages/crossing-organ.md)] — an organ that must be adapted to meet the constraint
 - [[garden-of-eden](pages/garden-of-eden.md)] — an extreme case of non-constructibility
+- [[erasable-configuration](pages/erasable-configuration.md)] — Moore's condition forcing Garden-of-Eden patterns
 - [[descriptions-vs-originals](pages/descriptions-vs-originals.md)] — quiescence is also what makes descriptions safe to copy
 - [[von-neumann-29-state-ca](pages/von-neumann-29-state-ca.md)] — the rule whose 10 quiescent states define the class
 
@@ -56,3 +60,4 @@ predecessor at all are [[garden-of-eden](pages/garden-of-eden.md)] configuration
 [^4]: [[tsra-part2-ch5](pages/tsra-part2-ch5.md)] pp.264-265 [synthesis] — crossing organs contain excited states, so MC is modified to contain only passive states initially, with a constructing device that starts each organ's clocks
 [^5]: [[tsra-part2-ch5](pages/tsra-part2-ch5.md)] pp.265, 270 [synthesis] — italicized results: an initially quiescent tape unit with unlimited memory, and an initially quiescent universal Turing machine, can be embedded
 [^6]: [[tsra-part2-ch5](pages/tsra-part2-ch5.md)] p.291 [synthesis] — constructible automata are a proper subclass of those specifiable at time zero; a constructor can build every initially quiescent automaton and many active ones; the 3 × 3 sensitized S₀ in C₀₀ is not constructible
+[^7]: [[machine-models-of-self-reproduction](pages/machine-models-of-self-reproduction.md)] p.26 - "THEOREM 2. For a tessellation structure for which there exist erasable configurations, there exist Garden-of-Eden configurations."

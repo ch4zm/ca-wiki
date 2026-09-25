@@ -16,7 +16,8 @@ Von Neumann's 29-state rule is the [[cellular-automaton](pages/cellular-automato
 which he designed a [[universal-constructor](pages/universal-constructor.md)] and a
 self-reproducing machine. It runs on an infinite square lattice. Each cell updates from its
 own state and those of its four orthogonal neighbours; this five-cell neighbourhood is now
-called the *von Neumann neighbourhood*. Every cell starts blank except for a finite initial
+called the *von Neumann neighbourhood*, in contrast to the nine-cell
+[[moore-neighbourhood](pages/moore-neighbourhood.md)]. Every cell starts blank except for a finite initial
 pattern.[^1]
 
 The rule is built around two kinds of signal:
