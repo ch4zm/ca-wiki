@@ -3,7 +3,7 @@ title: Universal Turing Machine
 category: Concepts
 summary: Turing's finite automaton with an unbounded tape that can simulate any other Turing machine — the logical model von Neumann generalized from computation to construction
 tags: [concept, turing, universality, computation]
-sources: [tsra-editors-introduction, tsra-lecture-2, tsra-part2-ch4, tsra-part2-ch5, statistical-mechanics-of-cellular-automata]
+sources: [tsra-editors-introduction, tsra-lecture-2, tsra-part2-ch4, tsra-part2-ch5, statistical-mechanics-of-cellular-automata, computation-at-the-edge-of-chaos]
 created: 2026-09-24
 updated: 2026-09-24
 ---
@@ -36,6 +36,10 @@ no vicious circle, because the extra complexity comes in through the instruction
 which can do anything that can be done, but you cannot build an organ which tells you
 whether it can be done" (the halting problem).[^6] This underlies the
 [[description-vs-object-complexity](pages/description-vs-object-complexity.md)] conjecture.
+Langton (1990) proposes a dynamical analogue, the *freezing problem*: will a cellular
+automaton near the order-chaos transition eventually freeze into short-period behaviour?
+He calls it "quite likely" undecidable, and conjectures that the halting problem is a
+special case of it ([[edge-of-chaos](pages/edge-of-chaos.md)]).[^15]
 
 The Part II TOC of
 [[theory-of-self-reproducing-automata](pages/theory-of-self-reproducing-automata.md)]
@@ -68,6 +72,7 @@ should inherit the simulator's *statistical* behaviour
 
 ## Appearances in Sources
 
+- [[computation-at-the-edge-of-chaos](pages/computation-at-the-edge-of-chaos.md)] - the freezing problem; class IV and universal computation at the phase transition
 - [[statistical-mechanics-of-cellular-automata](pages/statistical-mechanics-of-cellular-automata.md)] — universality across cellular automata: Smith's 18-state 1D rule, Life, Banks, and simulation by encoding
 - [[tsra-part2-ch5](pages/tsra-part2-ch5.md)] — an initially quiescent universal Turing machine in the 29-state CA
 - [[tsra-part2-ch4](pages/tsra-part2-ch4.md)] — a Turing machine realized in the 29-state CA
@@ -76,6 +81,7 @@ should inherit the simulator's *statistical* behaviour
 
 ## Related Concepts
 
+- [[edge-of-chaos](pages/edge-of-chaos.md)] - the freezing problem, a dynamical analogue of halting
 - [[game-of-life](pages/game-of-life.md)] — universal through glider-stream circuits
 - [[elementary-cellular-automaton](pages/elementary-cellular-automaton.md)] — judged in 1983 too simple for universality
 - [[cellular-tape](pages/cellular-tape.md)] — the cellular realization of the tape
@@ -101,3 +107,4 @@ should inherit the simulator's *statistical* behaviour
 [^12]: [[statistical-mechanics-of-cellular-automata](pages/statistical-mechanics-of-cellular-automata.md)] p.639 [synthesis] — simplest universal Turing machine has seven internal states and four symbols; Smith (1971): an eighteen-state one-dimensional three-site-neighbourhood cellular automaton simulates it; wires, NAND gates and memories; Life via glider streams; Banks (1971) three-state type-I 2D; two states with an infinite background (Toffoli 1977a); "preliminary indications" of a five-state 1D universal rule
 [^13]: [[statistical-mechanics-of-cellular-automata](pages/statistical-mechanics-of-cellular-automata.md)] p.630 — "the elementary cellular automata considered here and in Secs. II and III are not of sufficient complexity to be capable of universal computation."
 [^14]: [[statistical-mechanics-of-cellular-automata](pages/statistical-mechanics-of-cellular-automata.md)] pp.629-630 [synthesis] — universal cellular automata may simulate any other cellular automaton; the interpreter is an encoding of configurations; "so long as the encoding defined by the interpreter is sufficiently simple, the statistical characteristics of the evolution of configurations in the universal cellular automaton will be shared by the cellular automaton being simulated"
+[^15]: [[computation-at-the-edge-of-chaos](pages/computation-at-the-edge-of-chaos.md)] pp.33-34 [synthesis] - Sec. 7.3: "a natural analog of Turing's Halting problem in what we call the Freezing problem"; "It is quite likely that the freezing problem is undecidable"; Sec. 8.1: "the halting problem can be seen as a specific instance of the more general freezing problem for dynamical systems"

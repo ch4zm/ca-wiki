@@ -3,7 +3,7 @@ title: Notation Map
 category: Analyses
 summary: Crosswalk from the symbols each source uses (von Neumann's lectures and manuscript, Burks's completion, Hedlund's symbolic dynamics) onto the wiki's common concepts and notation, with a list of letters that mean different things in different places
 tags: [notation, reference, von-neumann, burks, hedlund, self-reproduction, 29-state, symbolic-dynamics]
-sources: [tsra-editors-introduction, tsra-lecture-5, tsra-part2-ch1, tsra-part2-ch2, tsra-part2-ch3, tsra-part2-ch4, tsra-part2-ch5, endomorphisms-and-automorphisms-of-the-shift-dynamical-system, planetmath-garden-of-eden-theorem]
+sources: [tsra-editors-introduction, tsra-lecture-5, tsra-part2-ch1, tsra-part2-ch2, tsra-part2-ch3, tsra-part2-ch4, tsra-part2-ch5, endomorphisms-and-automorphisms-of-the-shift-dynamical-system, planetmath-garden-of-eden-theorem, statistical-mechanics-of-cellular-automata, computation-at-the-edge-of-chaos]
 created: 2026-09-24
 updated: 2026-09-24
 ---
@@ -168,6 +168,9 @@ Letters that change meaning between (or within) sources:
 - **k, n**: in Moore and Myhill, n is the side of the small block and k the number of
   blocks per side; PlanetMath reverses them. In Ch. 1, k is the tape's number base, and
   xₙ, n index the tape cells.[^19][^20][^5]
+- **λ**: in Ch. 1, λᵢⱼ is the state wanted in target cell (i, j). In Wolfram (1983), λ is
+  the decay rate of triangle and sequence spectra, T(n) ~ λ⁻ⁿ. In Langton (1990), λ is the
+  fraction of rule-table entries not leading to the quiescent state ([[lambda-parameter](pages/lambda-parameter.md)]).[^8][^21][^22]
 - **M**: in Ch. 5, an arbitrary machine (M_c, M_u). In Hedlund, M(f) is the number of
   preimages of a bilaterally transitive point.[^3][^18]
 - **Φ, Σ**: in Ch. 3, Φ is the triple-return counter. In Hedlund, Φ(𝒮) is the set of all
@@ -196,3 +199,5 @@ Letters that change meaning between (or within) sources:
 [^18]: [[endomorphisms-and-automorphisms-of-the-shift-dynamical-system](pages/endomorphisms-and-automorphisms-of-the-shift-dynamical-system.md)] pp.338, 351, 358-359 [synthesis] — P(𝒮) the periodic points; M(f) the multiplicity at bilaterally transitive points; R(f) and L(f) defined by Welch
 [^19]: [[machine-models-of-self-reproduction](pages/machine-models-of-self-reproduction.md)] pp.26-28 [synthesis] - kn × kn array of k² n × n sub-arrays; A states; inequality (1) (A^(n²) − 1)^(k²) < A^((kn−2)²)
 [^20]: [[planetmath-garden-of-eden-theorem](pages/planetmath-garden-of-eden-theorem.md)] Lemma 1 and proof of Moore's theorem [synthesis] L40-60,L78-101 - a = |Q|; cube neighbourhood of radius r on ℤᵈ; hypercubes of side k subdivided from side kn into n^d sub-patterns; (a^(k^d) − 1)^(n^d) < a^((kn − 2r)^d); "orphan pattern"; "pre-injective"
+[^21]: [[statistical-mechanics-of-cellular-automata](pages/statistical-mechanics-of-cellular-automata.md)] pp.617, 619 [synthesis] - T(n) ~ λ⁻ⁿ (Eq. 3.7); λ ~ 4/3 for nonadditive and λ ~ 2 for additive complex rules
+[^22]: [[computation-at-the-edge-of-chaos](pages/computation-at-the-edge-of-chaos.md)] p.14 [synthesis] - Sec. 2.1, Eq. 1: λ = (K^N - n)/K^N, with n the number of transitions to the quiescent state s_q

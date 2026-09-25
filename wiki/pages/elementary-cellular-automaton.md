@@ -3,7 +3,7 @@ title: Elementary Cellular Automaton
 category: Concepts
 summary: Wolfram's name for the simplest nontrivial cellular automata - a line of two-state cells, each updated from itself and its two nearest neighbours; 256 rules named by their 8-bit rule tables, 32 of them "legal"
 tags: [concept, elementary-ca, wolfram, rule-numbering, one-dimensional]
-sources: [statistical-mechanics-of-cellular-automata]
+sources: [statistical-mechanics-of-cellular-automata, computation-at-the-edge-of-chaos]
 created: 2026-09-24
 updated: 2026-09-24
 ---
@@ -77,12 +77,19 @@ The legality conditions leave k^((k³+k²)/2 - 1) of them: 32 for k = 2 and 3¹�
 for k = 3.[^11] Wolfram judged the elementary rules too simple for universal
 computation.[^12]
 
+**Too small for λ.** Langton's [[lambda-parameter](pages/lambda-parameter.md)] orders larger rule spaces well,
+but for 2-state, 3-neighbour rules it is "only roughly correlated" with behaviour.
+Langton suggests this is why earlier classification work on the smallest rule spaces did
+not see the order-chaos transition ([[edge-of-chaos](pages/edge-of-chaos.md)]).[^13]
+
 ## Appearances in Sources
 
+- [[computation-at-the-edge-of-chaos](pages/computation-at-the-edge-of-chaos.md)] - why λ works poorly for elementary rules
 - [[statistical-mechanics-of-cellular-automata](pages/statistical-mechanics-of-cellular-automata.md)] — defines the family, the numbering, the legal subset, and the simple/complex split
 
 ## Related Concepts
 
+- [[lambda-parameter](pages/lambda-parameter.md)] - discriminates poorly in this small rule space
 - [[cellular-automaton](pages/cellular-automaton.md)] — the general notion
 - [[additive-cellular-automaton](pages/additive-cellular-automaton.md)] — the exactly solvable subfamily
 - [[rule-90](pages/rule-90.md)] — the standard example
@@ -104,3 +111,4 @@ computation.[^12]
 [^10]: [[statistical-mechanics-of-cellular-automata](pages/statistical-mechanics-of-cellular-automata.md)] p.607 [synthesis] — periodic and null boundary conditions, "no important qualitative differences"; correspondence with feedback shift registers with taps at N-2, N-1, N; additive rules 90 and 150 correspond to linear feedback shift registers; end sites differ
 [^11]: [[statistical-mechanics-of-cellular-automata](pages/statistical-mechanics-of-cellular-automata.md)] p.630 [synthesis] — k^(k³) rule sets; legality imposes ½k²(k-1)+1 constraints; 2⁵ = 32 for k = 2; 3¹⁷ = 129140163 ≈ 1.3 × 10⁸ for k = 3
 [^12]: [[statistical-mechanics-of-cellular-automata](pages/statistical-mechanics-of-cellular-automata.md)] p.630 — "the elementary cellular automata considered here and in Secs. II and III are not of sufficient complexity to be capable of universal computation."
+[^13]: [[computation-at-the-edge-of-chaos](pages/computation-at-the-edge-of-chaos.md)] p.15 [synthesis] - Sec. 2.4: "for a 1D CA with K = 2, and N = 3, λ is only roughly correlated with dynamical behavior. This may explain why the relationships reported here were not observed in earlier work on classifying CA dynamics"

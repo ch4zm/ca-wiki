@@ -93,7 +93,8 @@ exist.[^9]
   automata are "more irreversible" than random mappings.[^13]
 - **Noise.** Flipping each cell with probability κ destroys structure smoothly, with no
   phase transition. Any κ > 0 changes the global behaviour abruptly, though: the system
-  eventually visits every configuration.[^14]
+  eventually visits every configuration.[^14] (Noise is a different axis from the
+  rule-space phase transition on [[edge-of-chaos](pages/edge-of-chaos.md)].)
 - **Computation.** A cellular automaton is a parallel computer, with the initial
   configuration as its program. Life is universal through glider-stream circuits. Wolfram
   judges elementary rules too simple to be universal.[^15]

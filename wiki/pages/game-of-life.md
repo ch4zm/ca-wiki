@@ -3,7 +3,7 @@ title: Conway's Game of Life
 category: Rules
 summary: Conway's two-state, eight-neighbour (Moore neighbourhood) totalistic rule - a cell survives with two or three live neighbours and is born with exactly three; home of blocks, blinkers, gliders and glider guns, and computationally universal via glider-stream circuits; stub pending the Gardner and Winning Ways ingests
 tags: [rule, life, conway, two-dimensional, totalistic, universality]
-sources: [statistical-mechanics-of-cellular-automata]
+sources: [statistical-mechanics-of-cellular-automata, computation-at-the-edge-of-chaos]
 created: 2026-09-24
 updated: 2026-09-24
 ---
@@ -11,7 +11,8 @@ updated: 2026-09-24
 # Conway's Game of Life
 
 > **Stub.** Everything here comes from the short treatment in Sec. V of
-> [[statistical-mechanics-of-cellular-automata](pages/statistical-mechanics-of-cellular-automata.md)].
+> [[statistical-mechanics-of-cellular-automata](pages/statistical-mechanics-of-cellular-automata.md)]
+> and from passing remarks in [[computation-at-the-edge-of-chaos](pages/computation-at-the-edge-of-chaos.md)].
 > Conway, Gardner (1970-72) and Berlekamp, Conway and Guy (1982) are cited via that paper
 > and have not been read yet.
 
@@ -61,12 +62,21 @@ Neumann's [[von-neumann-29-state-ca](pages/von-neumann-29-state-ca.md)], which i
 universal but uses 29 states and the five-cell neighbourhood
 ([[universal-turing-machine](pages/universal-turing-machine.md)]).
 
+**Place in rule space.** Life's [[lambda-parameter](pages/lambda-parameter.md)] is 0.273, which lies inside the
+order-chaos transition region for 2-state, 9-neighbour rules. Langton reads its gliders
+(used as signals) and blinkers (used as storage) in the universality proof as the kind of
+moving and static structures that appear near the transition ([[edge-of-chaos](pages/edge-of-chaos.md)]).[^7]
+He also notes that Bak had suggested Life is a self-organized critical system (cited via
+Langton, not read).[^8]
+
 ## Appearances in Sources
 
 - [[statistical-mechanics-of-cellular-automata](pages/statistical-mechanics-of-cellular-automata.md)] — Sec. V: the rule, standard structures, statistics from random starts, Garden-of-Eden size, universality via glider streams
+- [[computation-at-the-edge-of-chaos](pages/computation-at-the-edge-of-chaos.md)] - λ = 0.273, gliders and blinkers as signals and storage
 
 ## Related Concepts
 
+- [[edge-of-chaos](pages/edge-of-chaos.md)] - Life sits in the transition region
 - [[cellular-automaton](pages/cellular-automaton.md)] — the general notion; type-I vs type-II neighbourhoods
 - [[garden-of-eden](pages/garden-of-eden.md)] — Life has them, and the smallest known is large
 - [[universal-turing-machine](pages/universal-turing-machine.md)] — computational universality in cellular automata
@@ -79,3 +89,5 @@ universal but uses 29 states and the five-cell neighbourhood
 [^4]: [[statistical-mechanics-of-cellular-automata](pages/statistical-mechanics-of-cellular-automata.md)] p.637 [synthesis] — a disordered state of N² cells usually evolves to a steady state within about N² time steps, typically an order of magnitude quicker; very few configurations visited; glider guns very rarely produced; density of L-site structures decreases like e^(−L₋)/L
 [^5]: [[statistical-mechanics-of-cellular-automata](pages/statistical-mechanics-of-cellular-automata.md)] p.637 — "the simplest known 'unreachable' configuration contains around 300 sites"
 [^6]: [[statistical-mechanics-of-cellular-automata](pages/statistical-mechanics-of-cellular-automata.md)] p.639 [synthesis] — glider streams from glider guns used as wires, bits as presence or absence of gliders; meeting points determine crossing or a "NAND gate"; memories required; "The Life-game cellular automaton is thus computationally universal"; binary adders; circuits run slower "only by a constant multiplicative factor"
+[^7]: [[computation-at-the-edge-of-chaos](pages/computation-at-the-edge-of-chaos.md)] pp.25-26 [synthesis] - "The λ value for the Game of Life (λ_Life = 0.273) lies within the transition region for K = 2, N = 9 2D CAs"; the universality proof "employs propagating 'gliders' as signals and the period-2 'blinkers' as storage elements"
+[^8]: [[computation-at-the-edge-of-chaos](pages/computation-at-the-edge-of-chaos.md)] p.35 - "Bak has suggested that Conway's game of Life is a self-organized critical system, although he does not bring Life's computational capacity into the discussion."
