@@ -3,7 +3,7 @@ title: Irreversibility and Entropy (cellular automata)
 category: Concepts
 summary: The global, ensemble view of cellular automaton evolution - trajectories merge but never split, entropy of an equiprobable ensemble decreases, most configurations become unreachable, finite systems fall into short cycles, and reversible second-order rules restore Liouville's theorem
 tags: [concept, irreversibility, entropy, ensemble, cycles, reversible-ca, wolfram]
-sources: [statistical-mechanics-of-cellular-automata]
+sources: [statistical-mechanics-of-cellular-automata, theory-of-cellular-automata-a-survey]
 created: 2026-09-24
 updated: 2026-09-24
 ---
@@ -103,8 +103,20 @@ Finite ones become effectively irreversible only when the boundary injects rando
 From simple seeds they grow self-similar patterns that are symmetric in time, not the
 one-directional triangles of irreversible rules.[^17]
 
+**The physical and topological sides (Kari 2005).** Kari gives the physical case for
+reversible rules directly. Microscopic physics is reversible, and a computer that makes
+optimal use of physics must be reversible too, because irreversibility always implies
+energy dissipation, in practice as heat ([[reversible-cellular-automaton](pages/reversible-cellular-automaton.md)]).[^18]
+The shrinking set of reachable configurations described above has a topological
+counterpart on the infinite lattice (own reasoning, linking the two sources). The sets Gⁿ(C) form a decreasing chain whose
+intersection is the [[limit-set](pages/limit-set.md)]: compact, non-empty, and a single
+configuration exactly when the rule is nilpotent.[^19] Conservation laws other than
+information, such as particle number, are handled as additive invariants
+([[conserved-quantity](pages/conserved-quantity.md)]).[^20]
+
 ## Appearances in Sources
 
+- [[theory-of-cellular-automata-a-survey](pages/theory-of-cellular-automata-a-survey.md)] - the physical argument for reversibility; limit sets as the topological version of shrinking reachable sets
 - [[statistical-mechanics-of-cellular-automata](pages/statistical-mechanics-of-cellular-automata.md)] — Sec. IV: configuration-space mappings, irreversibility, unreachable configurations, entropy, cycles, random mappings, noise, reversible rules
 
 ## Related Concepts
@@ -118,6 +130,10 @@ one-directional triangles of irreversible rules.[^17]
 - [[automorphism-group-of-the-shift](pages/automorphism-group-of-the-shift.md)] - the invertible 1D rules
 - [[erasable-configuration](pages/erasable-configuration.md)] - local information loss
 - [[probabilistic-logic](pages/probabilistic-logic.md)] - von Neumann's treatment of noisy components, cf. noisy rule 126
+- [[reversible-cellular-automaton](pages/reversible-cellular-automaton.md)] - the rules with no information loss
+- [[limit-set](pages/limit-set.md)] - the configurations left after infinitely many steps
+- [[conserved-quantity](pages/conserved-quantity.md)] - other conservation laws
+- [[margolus-neighbourhood](pages/margolus-neighbourhood.md)] - a different way to build reversible rules, by block permutations
 
 [^1]: [[statistical-mechanics-of-cellular-automata](pages/statistical-mechanics-of-cellular-automata.md)] p.621 [synthesis] — the ensemble of all configurations "in analogy with the Γ-space approach to classical statistical mechanics"; connections with dynamical systems theory and the formal theory of computation; "symbolic dynamics" with genuinely discrete degrees of freedom
 [^2]: [[statistical-mechanics-of-cellular-automata](pages/statistical-mechanics-of-cellular-automata.md)] p.621 [synthesis] — finite N, 2ᴺ configurations, each a length-N binary integer; rules define a mapping of the set of binary numbers of length N onto itself (Fig. 19)
@@ -136,3 +152,6 @@ one-directional triangles of irreversible rules.[^17]
 [^15]: [[statistical-mechanics-of-cellular-automata](pages/statistical-mechanics-of-cellular-automata.md)] p.629 [synthesis] — "Global properties may, however, change discontinuously when a nonzero κ is introduced"; Fig. 27, N = 7, rule 126: six configurations at κ = 0; with κ > 0 every configuration is eventually visited
 [^16]: [[statistical-mechanics-of-cellular-automata](pages/statistical-mechanics-of-cellular-automata.md)] pp.625-626 [synthesis] — irreversibility from S_n = F[S_{n−1}]; analogy with first-order PDEs such as diffusion; reversible cellular automata (Fredkin 1982; Margolus 1982) S_n = F[S_{n−1}] ⊕ S_{n−2}, analogous to the wave equation; invertibility of modulo-two addition gives unique descendants and ancestors
 [^17]: [[statistical-mechanics-of-cellular-automata](pages/statistical-mechanics-of-cellular-automata.md)] p.626 [synthesis] — infinite reversible cellular automata: entropy almost always increases; finite ones globally irreversible with dissipative (random) boundaries; self-similar patterns from simple seeds, "symmetrical in time, rather than the asymmetrical triangle structures found with irreversible rules"
+[^18]: [[theory-of-cellular-automata-a-survey](pages/theory-of-cellular-automata-a-survey.md)] p.17 - "a massively parallel computer that optimally uses physics to compute must itself be reversible. Non-reversibility always implies energy dissipation, in practice in the form of heat."
+[^19]: [[theory-of-cellular-automata-a-survey](pages/theory-of-cellular-automata-a-survey.md)] pp.23-24 [synthesis] - Λ⁽ⁿ⁾ = Gⁿ(C) decreasing chain, Λ = ⋂ Λ⁽ⁿ⁾; Theorem 14: compact, non-empty, finite iff nilpotent
+[^20]: [[theory-of-cellular-automata-a-survey](pages/theory-of-cellular-automata-a-survey.md)] p.21 [synthesis] - "Reversible CA preserve information. There are also other conservation laws in physics that CA may obey"; additive conserved quantities; number conservation

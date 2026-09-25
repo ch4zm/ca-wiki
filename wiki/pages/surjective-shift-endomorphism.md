@@ -3,7 +3,7 @@ title: Surjective Shift Endomorphism
 category: Concepts
 summary: Onto block maps of the full shift - onto iff no finite block is missing iff every block has exactly S^(n-1) preimages; bounded fibers, no finite collisions, a constant degree M on transitive points, Welch's L·M·R = S^(n-1), and Rothaus's cross-section theorem
 tags: [concept, surjectivity, block-map, preimage, welch-indices, symbolic-dynamics, one-dimensional]
-sources: [endomorphisms-and-automorphisms-of-the-shift-dynamical-system]
+sources: [endomorphisms-and-automorphisms-of-the-shift-dynamical-system, theory-of-cellular-automata-a-survey]
 created: 2026-09-24
 updated: 2026-09-24
 ---
@@ -94,6 +94,18 @@ Every preimage of a periodic, almost periodic, recurrent, or transitive point un
 onto φ has the same property.[^23] This lets Hedlund show that a closed invariant
 Y ⊂ X(S) with φ(Y) = X(S) must be all of X(S) (Thm 13.2).[^24]
 
+### Deciding surjectivity, and beyond one dimension
+
+Kari (2005) reports that Amoroso and Patt (1972) gave algorithms deciding whether a 1D CA
+is surjective or injective, and that Sutner later gave cleaner ones based on de Bruijn
+graphs. In two dimensions no such algorithm exists (Kari).[^25] Two more facts from the
+survey link surjectivity to other properties. In 1D, a surjective G is also surjective on
+spatially periodic configurations ([[garden-of-eden-theorem](pages/garden-of-eden-theorem.md)]).[^26]
+In any dimension, every transitive CA is surjective
+([[chaos-in-cellular-automata](pages/chaos-in-cellular-automata.md)]).[^27] Over a fixed
+state set, G is surjective iff its [[limit-set](pages/limit-set.md)] is the whole space.
+That makes surjectivity the one known decidable property of 1D limit sets.[^28]
+
 ### Cellular-automaton reading (own reasoning)
 
 For a 1D [[cellular-automaton](pages/cellular-automaton.md)], "onto" means every
@@ -108,6 +120,7 @@ non-onto maps have blocks with no preimage at all.
 
 ## Appearances in Sources
 
+- [[theory-of-cellular-automata-a-survey](pages/theory-of-cellular-automata-a-survey.md)] - decidability of 1D surjectivity (Amoroso and Patt, Sutner), undecidability in 2D, links to transitivity and limit sets
 - [[endomorphisms-and-automorphisms-of-the-shift-dynamical-system](pages/endomorphisms-and-automorphisms-of-the-shift-dynamical-system.md)] — §§5, 9-18 develop the theory of onto maps
 
 ## Related Concepts
@@ -119,6 +132,9 @@ non-onto maps have blocks with no preimage at all.
 - [[shift-dynamical-system](pages/shift-dynamical-system.md)] — the space the maps act on
 - [[rule-90](pages/rule-90.md)] - onto on the infinite line
 - [[notation-map](pages/notation-map.md)] - Hedlund's symbols
+- [[decidability-in-cellular-automata](pages/decidability-in-cellular-automata.md)] - decidable in 1D, undecidable in 2D
+- [[limit-set](pages/limit-set.md)] - surjective iff the limit set is everything
+- [[chaos-in-cellular-automata](pages/chaos-in-cellular-automata.md)] - transitive CA are surjective
 
 [^1]: [[endomorphisms-and-automorphisms-of-the-shift-dynamical-system](pages/endomorphisms-and-automorphisms-of-the-shift-dynamical-system.md)] pp.328-329 [synthesis] — E(S) defined as the onto members of Φ(S); proof of Thm 5.6: φ = σ^p f∞ is onto iff f∞ is onto, since σ is a bijection
 [^2]: [[endomorphisms-and-automorphisms-of-the-shift-dynamical-system](pages/endomorphisms-and-automorphisms-of-the-shift-dynamical-system.md)] p.321 [synthesis] — "There are sharp differences in behavior with respect to multiplicities between the members of E(S) and the members of Φ(S) − E(S)": uncountable preimages of a periodic point versus uniformly bounded preimage counts
@@ -144,3 +160,7 @@ non-onto maps have blocks with no preimage at all.
 [^22]: [[endomorphisms-and-automorphisms-of-the-shift-dynamical-system](pages/endomorphisms-and-automorphisms-of-the-shift-dynamical-system.md)] pp.369-370 [synthesis] — Thm 16.11 for φ ∈ E(S), condition (4) "any two distinct members of φ⁻¹(x) are separated"
 [^23]: [[endomorphisms-and-automorphisms-of-the-shift-dynamical-system](pages/endomorphisms-and-automorphisms-of-the-shift-dynamical-system.md)] pp.345, 355-357 [synthesis] — Thm 9.1 (periodic), Cor 12.5 (almost periodic), Cor 12.8 (recurrent), Cor 12.11 (transitive, one-sided and bilateral)
 [^24]: [[endomorphisms-and-automorphisms-of-the-shift-dynamical-system](pages/endomorphisms-and-automorphisms-of-the-shift-dynamical-system.md)] p.357 [synthesis] — Thm 13.2: if φ(Y) = X(S) for closed invariant Y, then Y = X(S), via a transitive point's transitive preimage
+[^25]: [[theory-of-cellular-automata-a-survey](pages/theory-of-cellular-automata-a-survey.md)] p.19 [synthesis] - Theorem 9 (Amoroso and Patt [2]); "Elegant decision algorithms based on de Bruijn graphs were later designed by Sutner"; Theorem 10 (Kari)
+[^26]: [[theory-of-cellular-automata-a-survey](pages/theory-of-cellular-automata-a-survey.md)] p.15 [synthesis] - Theorem 7, one-dimensional implications: "If G is surjective then G_P is surjective"
+[^27]: [[theory-of-cellular-automata-a-survey](pages/theory-of-cellular-automata-a-survey.md)] p.26 [synthesis] - "G transitive ⇒ G surjective and sensitive to initial conditions" (Kurka [48])
+[^28]: [[theory-of-cellular-automata-a-survey](pages/theory-of-cellular-automata-a-survey.md)] p.25 [synthesis] - "a CA is surjective if and only if its limit set contains all configurations over the state set S"; decidable in dimension one; Open problem 6

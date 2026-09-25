@@ -3,7 +3,7 @@ title: Additive Cellular Automaton
 category: Concepts
 summary: Cellular automata obeying superposition modulo k - evolution from any start is the XOR of evolutions from single seeds; among elementary rules only 0, 90, 150, 204; exactly solvable, and a separate universality class from the non-additive complex rules
 tags: [concept, additive, superposition, wolfram, exact-results, number-theory]
-sources: [statistical-mechanics-of-cellular-automata]
+sources: [statistical-mechanics-of-cellular-automata, theory-of-cellular-automata-a-survey]
 created: 2026-09-24
 updated: 2026-09-24
 ---
@@ -69,8 +69,41 @@ two neighbours, are also additive and grow self-similar figures from a seed. In 
 dimensions the modulo-two sums over the four orthogonal neighbours, with or without the
 cell itself, are additive as well.[^11]
 
+**Linear rules over rings (Kari).** Kari (2005) calls these rules *linear* or *additive*
+and allows any commutative finite ring S with identity, not only ℤ₂. The local rule is
+f(a₁, …, aₙ) = c₁a₁ + ⋯ + cₙaₙ. He warns that some CA literature calls every 1D CA
+"linear", meaning the cells lie on a line.[^12] (Own reasoning: Kari's class is wider than
+the four legal additive rules above. Over ℤ₂ with three neighbours it has eight elementary
+rules: 0, 60, 90, 102, 150, 170, 204 and 240. The extra four are not mirror-symmetric.) The superposition principle
+G(ac₁ + bc₂) = aG(c₁) + bG(c₂) can itself serve as the definition, which extends linearity
+to any finite abelian group.[^13]
+
+- **Laurent polynomials.** A linear rule is the polynomial p(Z) = Σ cᵢ Z^(−xᵢ), with
+  negative and positive powers allowed. Coefficients are the rule's weights, and exponents
+  are its neighbourhood offsets. The product of two polynomials is the composition of the
+  rules, and pᵏ is Gᵏ. A configuration is a Laurent power series s(Z), and p(Z)s(Z) is
+  G(c).[^14]
+- **Injective and surjective.** G is injective iff p is a unit of the polynomial ring,
+  and not surjective iff p is a zero divisor. Sato characterized both through the maximal
+  ideals of S. Over ℤ_m (Ito, Osato and Nasu), G is **surjective iff gcd(m, c₁, …, cₙ) =
+  1**, and **injective iff every prime factor of m divides all but exactly one
+  coefficient**.[^15]
+- **Dynamics.** Take c₁ to be the coefficient at offset 0. G is equicontinuous iff every
+  prime factor of m divides c₂, …, cₙ, and sensitive otherwise. It is transitive iff
+  gcd(m, c₂, …, cₙ) = 1. A 1D rule is positively expansive iff the coefficients at negative
+  offsets have gcd 1 with m and so do the coefficients at positive offsets. Higher-dimensional
+  positively expansive rules do not exist. All of these are quick gcd tests
+  ([[chaos-in-cellular-automata](pages/chaos-in-cellular-automata.md)]).[^16]
+
+(Own reasoning, applying these tests.) [[rule-90](pages/rule-90.md)] over ℤ₂ has
+coefficients 1 at offsets −1 and +1 and 0 at offset 0. It is surjective, not injective
+(two coefficients, those at ±1, are not divisible by 2, so "all but exactly one" fails),
+transitive, and positively expansive.
+Rule 150 adds coefficient 1 at offset 0 and gives the same four results.
+
 ## Appearances in Sources
 
+- [[theory-of-cellular-automata-a-survey](pages/theory-of-cellular-automata-a-survey.md)] - linear CA over commutative rings; Laurent polynomial representation; Sato and Ito et al. criteria; gcd tests for topological dynamics
 - [[statistical-mechanics-of-cellular-automata](pages/statistical-mechanics-of-cellular-automata.md)] — defines additivity, identifies the additive elementary rules, and derives their exact density, damage-spreading, cycle and reachability results
 
 ## Related Concepts
@@ -83,6 +116,8 @@ cell itself, are additive as well.[^11]
 - [[self-reproduction](pages/self-reproduction.md)] — superposition makes rule 90 copy any pattern
 - [[permutive-map](pages/permutive-map.md)] - rules 90 and 150 are permutive at both ends
 - [[surjective-shift-endomorphism](pages/surjective-shift-endomorphism.md)] - onto on the infinite line
+- [[chaos-in-cellular-automata](pages/chaos-in-cellular-automata.md)] - the dynamical properties decided by gcd tests
+- [[decidability-in-cellular-automata](pages/decidability-in-cellular-automata.md)] - for linear rules, surjectivity, injectivity and the main dynamical properties are decidable
 
 [^1]: [[statistical-mechanics-of-cellular-automata](pages/statistical-mechanics-of-cellular-automata.md)] p.604 [synthesis] — superposition principle (Eq. 2.2); "such additivity does not imply linearity in the real number sense ... since the addition is over a finite field"; "Only rules 0, 90, 150, and 204 are of this form"; 0 erases, 204 is the identity; rule 90 sums two neighbours mod 2, rule 150 also includes the site's own value
 [^2]: [[statistical-mechanics-of-cellular-automata](pages/statistical-mechanics-of-cellular-automata.md)] pp.605-606, 613 [synthesis] — rule 90 from one site: binomial coefficients mod 2 (Fig. 4); N_τ⁽¹⁾ = 2^#₁(τ) (Eq. 3.2); rule 150: coefficients of (x² + x + 1)ⁿ mod 2
@@ -95,3 +130,8 @@ cell itself, are additive as well.[^11]
 [^9]: [[statistical-mechanics-of-cellular-automata](pages/statistical-mechanics-of-cellular-automata.md)] pp.617, 619 [synthesis] — T(n) ~ λ⁻ⁿ, λ ~ 4/3 for nonadditive rules, λ ~ 2 for additive rules; Fig. 16
 [^10]: [[statistical-mechanics-of-cellular-automata](pages/statistical-mechanics-of-cellular-automata.md)] p.614 [synthesis] — Grassberger (1982): rule 18 configurations with even sites zero evolve as rule 90; domains separated by kinks that random-walk (⟨x²⟩ = t) and annihilate, density ~ (4πt)^(−1/2); alternate sites ultimately follow rule 90
 [^11]: [[statistical-mechanics-of-cellular-automata](pages/statistical-mechanics-of-cellular-automata.md)] pp.630, 637 [synthesis] — modulo-k rules obey additive superposition and tend to self-similar figures; 2D type-I modulo-two rules in analogy with rules 90 and 150 (Fig. 32)
+[^12]: [[theory-of-cellular-automata-a-survey](pages/theory-of-cellular-automata-a-survey.md)] pp.26-27 [synthesis] - S a commutative finite ring with identity; "Such CA are called linear or additive"; "in some CA literature all one-dimensional CA are called linear, referring to the organization of the cells on the line"; local rule c₁a₁ + ⋯ + cₙaₙ
+[^13]: [[theory-of-cellular-automata-a-survey](pages/theory-of-cellular-automata-a-survey.md)] p.27 [synthesis] - superposition principle G(ac₁ + bc₂) = aG(c₁) + bG(c₂); "the superposition principle can be taken as the defining condition of linear CA, and the linearity can then be generalized to arbitrary finite abelian groups"
+[^14]: [[theory-of-cellular-automata-a-survey](pages/theory-of-cellular-automata-a-survey.md)] p.27 [synthesis] - Laurent polynomial p(Z) = c₁Z^(−x₁) + ⋯ + cₙZ^(−xₙ); "the product p(Z)q(Z) represents the composition G ∘ H"; pᵏ(Z) represents Gᵏ; configurations as Laurent power series s(Z); p(Z)s(Z) represents G(c)
+[^15]: [[theory-of-cellular-automata-a-survey](pages/theory-of-cellular-automata-a-survey.md)] p.28 [synthesis] - injective iff p(Z) is a unit of S[Z, Z⁻¹]; non-surjective iff p(Z) is a zero divisor; Theorem 17 (Sato [59]); Corollary 4 (Ito et al. [37]): surjective iff gcd(m, c₁, …, cₙ) = 1, injective iff every prime factor p of m divides all but exactly one coefficient
+[^16]: [[theory-of-cellular-automata-a-survey](pages/theory-of-cellular-automata-a-survey.md)] pp.28-29 [synthesis] - Theorem 18 (Cattaneo et al. [11] and Manzini and Margara [50]) with x₁ = 0: equicontinuity, sensitivity, transitivity and 1D positive expansivity conditions; "Higher dimensional positively expansive CA do not exist"; "all the given conditions are fast to test because the greatest common divisor is easy to compute"

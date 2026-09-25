@@ -3,7 +3,7 @@ title: Edward F. Moore
 category: People
 summary: Bell Labs author who formalized von Neumann's cellular model as "tessellation structures", proved the sufficient direction of the Garden-of-Eden theorem (1962), and gave his name to the nine-cell neighbourhood
 tags: [person, moore, garden-of-eden, self-reproduction, bell-labs]
-sources: [machine-models-of-self-reproduction, converse-of-moores-garden-of-eden-theorem, planetmath-garden-of-eden-theorem]
+sources: [machine-models-of-self-reproduction, converse-of-moores-garden-of-eden-theorem, planetmath-garden-of-eden-theorem, theory-of-cellular-automata-a-survey]
 created: 2026-09-24
 updated: 2026-09-24
 ---
@@ -37,9 +37,14 @@ machines" (*Automata Studies*, 1956), "Artificial living plants" (*Scientific Am
 1956), and a 1959 abstract of the 1962 paper in which erasable configurations were called
 configurations "which can forget".[^9] These are listed, not read.
 
+**Later citation.** Kari (2005) opens his Garden-of-Eden section with Moore's 1962
+theorem and Myhill's 1963 converse, and calls them "one of the oldest results in the
+theory of CA" ([[garden-of-eden-theorem](pages/garden-of-eden-theorem.md)]).[^10]
+
 ## Appearances in Sources
 
 - [[planetmath-garden-of-eden-theorem](pages/planetmath-garden-of-eden-theorem.md)] - modern statement of the theorem in d dimensions, credited as Theorem 1
+- [[theory-of-cellular-automata-a-survey](pages/theory-of-cellular-automata-a-survey.md)] - credits the Garden-of-Eden theorem to Moore and Myhill
 - [[machine-models-of-self-reproduction](pages/machine-models-of-self-reproduction.md)] - author
 - [[converse-of-moores-garden-of-eden-theorem](pages/converse-of-moores-garden-of-eden-theorem.md)] - the result Myhill completes
 
@@ -48,7 +53,6 @@ configurations "which can forget".[^9] These are listed, not read.
 - [[john-myhill](pages/john-myhill.md)] - proved the converse of his theorem
 - [[garden-of-eden-theorem](pages/garden-of-eden-theorem.md)] - his main result, completed by Myhill
 - [[moore-neighbourhood](pages/moore-neighbourhood.md)] - named after him
-
 [^1]: [[machine-models-of-self-reproduction](pages/machine-models-of-self-reproduction.md)] p.33 [synthesis] - author's affiliation: Bell Telephone Laboratories, Incorporated, Murray Hill, New Jersey
 [^2]: [[machine-models-of-self-reproduction](pages/machine-models-of-self-reproduction.md)] p.17 - "I heard only one series of the later lectures, but by reading and by hearsay I am acquainted with the ideas of some of the others."
 [^3]: [[machine-models-of-self-reproduction](pages/machine-models-of-self-reproduction.md)] pp.17-18, 21 [synthesis] - the tessellation structure defined, formally a quintuple (N, T, S, q₀, f)
@@ -58,3 +62,4 @@ configurations "which can forget".[^9] These are listed, not read.
 [^7]: [[converse-of-moores-garden-of-eden-theorem](pages/converse-of-moores-garden-of-eden-theorem.md)] p.685 - "Moore proves that the existence of two mutually erasable configurations in a tessellation universe is a sufficient condition for the existence of Garden-of-Eden configurations therein. We shall show that this condition is both necessary and sufficient."
 [^8]: [[machine-models-of-self-reproduction](pages/machine-models-of-self-reproduction.md)] p.19 [synthesis] - Moore built an exact copy of Penrose's basic model and found it useful for audiences
 [^9]: [[machine-models-of-self-reproduction](pages/machine-models-of-self-reproduction.md)] pp.25, 32-33 [synthesis] - bibliography entries 9, 11, and 43; erasable configuration called a "configuration which can forget" in [11]
+[^10]: [[theory-of-cellular-automata-a-survey](pages/theory-of-cellular-automata-a-survey.md)] p.15 [synthesis] - "One of the earliest discovered properties of CA were the Garden-of-Eden theorems by Moore and Myhill in 1962 and 1963, respectively"; "one of the oldest results in the theory of CA"; Theorem 6

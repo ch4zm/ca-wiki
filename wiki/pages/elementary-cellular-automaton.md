@@ -3,7 +3,7 @@ title: Elementary Cellular Automaton
 category: Concepts
 summary: Wolfram's name for the simplest nontrivial cellular automata - a line of two-state cells, each updated from itself and its two nearest neighbours; 256 rules named by their 8-bit rule tables, 32 of them "legal"
 tags: [concept, elementary-ca, wolfram, rule-numbering, one-dimensional]
-sources: [statistical-mechanics-of-cellular-automata, computation-at-the-edge-of-chaos]
+sources: [statistical-mechanics-of-cellular-automata, computation-at-the-edge-of-chaos, theory-of-cellular-automata-a-survey]
 created: 2026-09-24
 updated: 2026-09-24
 ---
@@ -82,9 +82,21 @@ but for 2-state, 3-neighbour rules it is "only roughly correlated" with behaviou
 Langton suggests this is why earlier classification work on the smallest rule spaces did
 not see the order-chaos transition ([[edge-of-chaos](pages/edge-of-chaos.md)]).[^13]
 
+**Later results (Kari 2005).** Renaming the two states or reversing left and right leaves
+88 essentially different elementary rules out of the 256. Wolfram's numbering has become
+standard, and the rule number is called the *Wolfram number*.[^14] Wolfram (1984)
+sorted the elementary rules into four classes by their behaviour from random starts
+([[classification-of-cellular-automata](pages/classification-of-cellular-automata.md)]).
+Wolfram himself conjectured in the 1980s that the class-4
+[[rule-110](pages/rule-110.md)] is universal, and he and Cook later proved it, overturning
+the 1983 judgement above for the elementary family as a whole. Whether class-4 rule 54 is
+universal is open.[^15] (Own reasoning: rule 110 maps 100 to 0 and 001 to 1, so it is
+outside the 32 legal rules the 1983 judgement was about.)
+
 ## Appearances in Sources
 
 - [[computation-at-the-edge-of-chaos](pages/computation-at-the-edge-of-chaos.md)] - why λ works poorly for elementary rules
+- [[theory-of-cellular-automata-a-survey](pages/theory-of-cellular-automata-a-survey.md)] - 88 essentially different rules; the Wolfram number; the four classes; rule 110 universal, rule 54 open
 - [[statistical-mechanics-of-cellular-automata](pages/statistical-mechanics-of-cellular-automata.md)] — defines the family, the numbering, the legal subset, and the simple/complex split
 
 ## Related Concepts
@@ -98,7 +110,9 @@ not see the order-chaos transition ([[edge-of-chaos](pages/edge-of-chaos.md)]).[
 - [[irreversibility-and-entropy](pages/irreversibility-and-entropy.md)] — the global, ensemble view of the family
 - [[permutive-map](pages/permutive-map.md)] - rules 90 and 150 are XORs permutive at both ends
 - [[curtis-hedlund-lyndon-theorem](pages/curtis-hedlund-lyndon-theorem.md)] - the elementary rules as block maps with S = 2, window 3
-
+- [[rule-110](pages/rule-110.md)] - the elementary rule proved universal
+- [[classification-of-cellular-automata](pages/classification-of-cellular-automata.md)] - Wolfram's four classes and their formal versions
+- [[chaos-in-cellular-automata](pages/chaos-in-cellular-automata.md)] - the topological-dynamics counterpart of the strange-attractor behaviour
 [^1]: [[statistical-mechanics-of-cellular-automata](pages/statistical-mechanics-of-cellular-automata.md)] p.603 [synthesis] — one-dimensional, base 2, neighbourhood of the site and its two neighbours, "We shall call such cellular automata elementary"; the eight-digit binary rule number used interchangeably with its decimal equivalent; 256 rules; quiescence forbids rules whose binary specification ends in 1; reflection symmetry requires 100 ≡ 001 and 110 ≡ 011; 32 legal rules
 [^2]: [[statistical-mechanics-of-cellular-automata](pages/statistical-mechanics-of-cellular-automata.md)] pp.603-604 [synthesis] — rule 90: s_{n+1}(m) = s_n(m-1) ⊕ s_n(m+1) (Eq. 2.1); Fig. 1 gives its rule table 01011010
 [^3]: [[statistical-mechanics-of-cellular-automata](pages/statistical-mechanics-of-cellular-automata.md)] p.603 n.2 — "The quiescence condition is required in many applications to forbid 'instantaneous propagation' of value-one sites. The reflection symmetry condition guarantees isotropy as well as homogeneity in cellular automaton evolution."
@@ -112,3 +126,5 @@ not see the order-chaos transition ([[edge-of-chaos](pages/edge-of-chaos.md)]).[
 [^11]: [[statistical-mechanics-of-cellular-automata](pages/statistical-mechanics-of-cellular-automata.md)] p.630 [synthesis] — k^(k³) rule sets; legality imposes ½k²(k-1)+1 constraints; 2⁵ = 32 for k = 2; 3¹⁷ = 129140163 ≈ 1.3 × 10⁸ for k = 3
 [^12]: [[statistical-mechanics-of-cellular-automata](pages/statistical-mechanics-of-cellular-automata.md)] p.630 — "the elementary cellular automata considered here and in Secs. II and III are not of sufficient complexity to be capable of universal computation."
 [^13]: [[computation-at-the-edge-of-chaos](pages/computation-at-the-edge-of-chaos.md)] p.15 [synthesis] - Sec. 2.4: "for a 1D CA with K = 2, and N = 3, λ is only roughly correlated with dynamical behavior. This may explain why the relationships reported here were not observed in earlier work on classifying CA dynamics"
+[^14]: [[theory-of-cellular-automata-a-survey](pages/theory-of-cellular-automata-a-survey.md)] p.8 [synthesis] - 2⁸ = 256 elementary CA; "the number of essentially different elementary rules is smaller, only 88"; Wolfram's naming scheme "has since become standard"; "called the Wolfram number of the CA"
+[^15]: [[theory-of-cellular-automata-a-survey](pages/theory-of-cellular-automata-a-survey.md)] pp.8, 11-12 [synthesis] - Wolfram classes (W1)-(W4) from [74]; Wolfram conjectured in the 1980s that rule 110 is universal [74], "Recently this result was established by him and Cook [76]"; Theorem 2; Open problem 1: rule 54, "another elementary CA that is in Wolfram class 4"

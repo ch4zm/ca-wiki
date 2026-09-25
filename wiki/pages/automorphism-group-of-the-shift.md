@@ -3,7 +3,7 @@ title: Automorphism Group of the Shift
 category: Concepts
 summary: A(S), the group of invertible shift-commuting maps of the full shift (the reversible 1D cellular automata, own reasoning); one-to-one already implies onto; contains every finite group and two involutions with product of infinite order, though no continuous roots of σ exist for prime S
 tags: [concept, automorphism, group, reversibility, block-map, symbolic-dynamics, one-dimensional]
-sources: [endomorphisms-and-automorphisms-of-the-shift-dynamical-system]
+sources: [endomorphisms-and-automorphisms-of-the-shift-dynamical-system, theory-of-cellular-automata-a-survey]
 created: 2026-09-24
 updated: 2026-09-24
 ---
@@ -69,6 +69,17 @@ has no continuous square root, cube root, and so on
 **Size.** Hedlund reports the impression that A(S) is "relatively sparse" among the
 endomorphisms, and notes that nothing had been proved in that direction.[^13]
 
+**The later name.** Kari (2005) confirms the cellular-automaton reading below as standard usage. Because a CA
+is reversible iff it is bijective, symbolic dynamics calls reversible CA the automorphisms
+of the shift, and CA its endomorphisms.[^14] The survey adds facts about this group that
+Hedlund did not have. Universal computation is possible inside it: Morita and Harao (1989)
+built computationally universal 1D reversible CA. The inverse of a 1D radius-½
+automorphism with s states needs at most s − 1 consecutive cells, and the bound is tight.
+Every element is a block-permutation rule composed with a translation, and the shift σ
+itself needs the translation part
+([[reversible-cellular-automaton](pages/reversible-cellular-automaton.md)],
+[[margolus-neighbourhood](pages/margolus-neighbourhood.md)]).[^15]
+
 **Cellular-automaton reading (own reasoning).** A(S) is the group of 1D
 [[cellular-automaton](pages/cellular-automaton.md)] global maps that are invertible, whose
 inverse is again a cellular automaton, over the full space of infinite configurations.
@@ -78,6 +89,7 @@ local rule.
 
 ## Appearances in Sources
 
+- [[theory-of-cellular-automata-a-survey](pages/theory-of-cellular-automata-a-survey.md)] - reversible CA are called automorphisms of the shift; universal reversible 1D CA; inverse neighbourhood bound; block representation
 - [[endomorphisms-and-automorphisms-of-the-shift-dynamical-system](pages/endomorphisms-and-automorphisms-of-the-shift-dynamical-system.md)] — §§5-6 (definition, existence), §18 (inverse pairs, roots), §20 (infinite order)
 
 ## Related Concepts
@@ -88,6 +100,8 @@ local rule.
 - [[garden-of-eden](pages/garden-of-eden.md)] — invertible rules have none (own reasoning)
 - [[irreversibility-and-entropy](pages/irreversibility-and-entropy.md)] - invertible rules restore Liouville's theorem
 - [[notation-map](pages/notation-map.md)] - Hedlund's symbols
+- [[reversible-cellular-automaton](pages/reversible-cellular-automaton.md)] - the same maps in any dimension
+- [[margolus-neighbourhood](pages/margolus-neighbourhood.md)] - every 1D automorphism is a block permutation plus a translation
 
 [^1]: [[endomorphisms-and-automorphisms-of-the-shift-dynamical-system](pages/endomorphisms-and-automorphisms-of-the-shift-dynamical-system.md)] pp.321, 331 [synthesis] — automorphisms are homeomorphisms of X(S) onto X(S) commuting with σ; "the set A(S) is a group and is of some complexity"
 [^2]: [[endomorphisms-and-automorphisms-of-the-shift-dynamical-system](pages/endomorphisms-and-automorphisms-of-the-shift-dynamical-system.md)] pp.331-332 [synthesis] — H(S) the one-to-one members of Φ(S); Thm 5.14 A(S) = H(S)
@@ -102,3 +116,5 @@ local rule.
 [^11]: [[endomorphisms-and-automorphisms-of-the-shift-dynamical-system](pages/endomorphisms-and-automorphisms-of-the-shift-dynamical-system.md)] p.371 [synthesis] — for p = qk with q ≥ 2, take ψ of order q from Thm 6.13 and φ = σ^k ψ; then φ^q = σ^p and φ is not a power of σ
 [^12]: [[endomorphisms-and-automorphisms-of-the-shift-dynamical-system](pages/endomorphisms-and-automorphisms-of-the-shift-dynamical-system.md)] p.371 [synthesis] — Thm 18.1 and Cor 18.2 (Welch): S prime and φ^q = σ^p imply q divides p
 [^13]: [[endomorphisms-and-automorphisms-of-the-shift-dynamical-system](pages/endomorphisms-and-automorphisms-of-the-shift-dynamical-system.md)] p.321 — "the set A(S) is relatively sparse, but nothing has been proved in this direction"
+[^14]: [[theory-of-cellular-automata-a-survey](pages/theory-of-cellular-automata-a-survey.md)] p.13 - "In symbolic dynamics literature it is therefore customary to call reversible CA automorphisms of the shift dynamical system. CA are termed endomorphisms."
+[^15]: [[theory-of-cellular-automata-a-survey](pages/theory-of-cellular-automata-a-survey.md)] pp.18, 20 [synthesis] - Theorem 8 (Morita and Harao): one-dimensional reversible CA exist that are computationally universal; 1D radius-½ inverse neighbourhood at most s − 1 consecutive cells, tight; Theorem 11; "left shift σ cannot be implemented as a GMN-CA alone"

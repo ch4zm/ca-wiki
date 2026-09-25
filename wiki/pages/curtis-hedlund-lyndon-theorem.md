@@ -3,7 +3,7 @@ title: Curtis–Hedlund–Lyndon Theorem
 category: Concepts
 summary: The continuous maps of the full shift that commute with the shift are exactly the sliding block maps (composed with shift powers) - equivalently, the global maps of one-dimensional cellular automata are exactly the continuous shift-commuting maps
 tags: [concept, theorem, curtis-hedlund-lyndon, block-map, sliding-block-code, symbolic-dynamics, one-dimensional]
-sources: [endomorphisms-and-automorphisms-of-the-shift-dynamical-system]
+sources: [endomorphisms-and-automorphisms-of-the-shift-dynamical-system, theory-of-cellular-automata-a-survey]
 created: 2026-09-24
 updated: 2026-09-24
 ---
@@ -45,15 +45,28 @@ transfers directly to all endomorphisms. Hedlund proves each theorem for f∞, t
 restates it for φ ∈ Φ(S) "by Theorem 3.4".[^7] The composite of block maps is a block
 map: (fg)∞ = f∞ g∞, with window m + n − 1.[^8]
 
+**In every dimension.** Kari (2005) states the theorem for d-dimensional CA and credits it
+to Hedlund: G : S^(ℤᵈ) → S^(ℤᵈ) is a CA iff it is continuous and commutes with the
+shifts.[^9] The topology is the Cantor (product) topology. Two configurations are close
+when they agree on a large region around the origin. Using the Manhattan or Euclidean norm, or
+any other strictly decreasing distance function, gives the same topology. The balls are the *cylinders*: the
+configurations that agree with a given one within radius r. For each r these finitely
+many cylinders partition the space, so each is clopen.[^10] Kari calls Hedlund's paper
+seminal and says it "marks the beginning of symbolic dynamics".[^11] The corollary Kari
+draws is that a CA is reversible iff it is bijective. The inverse of a bijective CA
+commutes with the shifts and, by compactness, is continuous, so the theorem makes it a CA
+([[reversible-cellular-automaton](pages/reversible-cellular-automaton.md)]).[^12]
+
 **Cellular-automaton reading (own reasoning).** A 1D
 [[cellular-automaton](pages/cellular-automaton.md)] with radius-r neighbourhood has
 global map σ^(−r) f∞, where f is its local rule on windows of 2r + 1 cells. The theorem
 therefore says that the global maps of 1D cellular automata on S states are *exactly* the
-continuous, translation-commuting self-maps of X(S). Later literature usually cites
-Hedlund for this topological definition of a cellular automaton.
+continuous, translation-commuting self-maps of X(S). Later literature cites Hedlund for
+this topological definition of a cellular automaton, as Kari (2005) does above.
 
 ## Appearances in Sources
 
+- [[theory-of-cellular-automata-a-survey](pages/theory-of-cellular-automata-a-survey.md)] - Theorem 3 in d dimensions; the Cantor topology and cylinders; Corollary 1 (reversible iff bijective)
 - [[endomorphisms-and-automorphisms-of-the-shift-dynamical-system](pages/endomorphisms-and-automorphisms-of-the-shift-dynamical-system.md)] — §3, Thm 3.4, proved in full
 
 ## Related Concepts
@@ -65,6 +78,8 @@ Hedlund for this topological definition of a cellular automaton.
 - [[cellular-automaton](pages/cellular-automaton.md)] — 1D global maps are exactly Φ(S) (own reasoning)
 - [[elementary-cellular-automaton](pages/elementary-cellular-automaton.md)] - block maps with S = 2, window 3
 - [[notation-map](pages/notation-map.md)] - Hedlund's symbols
+- [[reversible-cellular-automaton](pages/reversible-cellular-automaton.md)] - the theorem makes the inverse of a bijective CA a CA
+- [[chaos-in-cellular-automata](pages/chaos-in-cellular-automata.md)] - CA as dynamical systems on the Cantor space
 
 [^1]: [[endomorphisms-and-automorphisms-of-the-shift-dynamical-system](pages/endomorphisms-and-automorphisms-of-the-shift-dynamical-system.md)] pp.323-324 [synthesis] — n-blocks, F(S, n) as maps 𝔅_n(S) → S with card F(S, n) = S^(S^n); f_m: 𝔅_(m+n−1)(S) → 𝔅_m(S); f∞(x) = y with y_i = f(x_i x_(i+1) ⋯ x_(i+n−1))
 [^2]: [[endomorphisms-and-automorphisms-of-the-shift-dynamical-system](pages/endomorphisms-and-automorphisms-of-the-shift-dynamical-system.md)] p.324 [synthesis] — Thm 3.1: f∞ is continuous and commutes with σ
@@ -74,3 +89,7 @@ Hedlund for this topological definition of a cellular automaton.
 [^6]: [[endomorphisms-and-automorphisms-of-the-shift-dynamical-system](pages/endomorphisms-and-automorphisms-of-the-shift-dynamical-system.md)] p.325 [synthesis] — card Φ(S) = ℵ₀, since card F(S, n) = S^(S^n) and the powers of σ are distinct
 [^7]: [[endomorphisms-and-automorphisms-of-the-shift-dynamical-system](pages/endomorphisms-and-automorphisms-of-the-shift-dynamical-system.md)] pp.328-329, 331, 347, 350, 352 [synthesis] — e.g. Thm 5.6, 5.13, Cor 9.6, Cor 10.6, Thm 11.5: results for f∞ transferred to Φ(S) or E(S) via Thm 3.4
 [^8]: [[endomorphisms-and-automorphisms-of-the-shift-dynamical-system](pages/endomorphisms-and-automorphisms-of-the-shift-dynamical-system.md)] p.357 [synthesis] — for f ∈ F(S, m), g ∈ F(S, n), fg maps (m + n − 1)-blocks to symbols; Remark 13.1 (fg)∞ = f∞ g∞
+[^9]: [[theory-of-cellular-automata-a-survey](pages/theory-of-cellular-automata-a-survey.md)] p.12 - "Theorem 3 (Hedlund [33]). A function G : S^(ℤᵈ) → S^(ℤᵈ) is the global transition function of a CA if and only if (i) G is continuous, and (ii) G commutes with the shifts σⱼ."
+[^10]: [[theory-of-cellular-automata-a-survey](pages/theory-of-cellular-automata-a-survey.md)] p.12 [synthesis] - Cantor topology, compact by Tychonoff's theorem, metric d(c, e) = (½)^min{‖x‖∞ : c(x) ≠ e(x)}; other norms or strictly decreasing functions give the same topology; cylinder sets Cyl(c, r) form a basis; the radius-r cylinders partition the space and each is clopen
+[^11]: [[theory-of-cellular-automata-a-survey](pages/theory-of-cellular-automata-a-survey.md)] p.12 - "A seminal paper in the topological investigation of CA is by Hedlund [33]. ... It also marks the beginning of symbolic dynamics"
+[^12]: [[theory-of-cellular-automata-a-survey](pages/theory-of-cellular-automata-a-survey.md)] pp.12-13 [synthesis] - the inverse of a bijective CA commutes with the shift and is continuous because C is compact, "and therefore it is a CA function"; Corollary 1 (Hedlund)
