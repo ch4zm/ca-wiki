@@ -5,7 +5,7 @@
 - [x] von Neumann, J. (1966). *Theory of self-reproducing automata* (A. W. Burks, Ed.). University of Illinois Press.
 - [ ] Moore, E. F. (1962). Machine models of self-reproduction. In R. E. Bellman (Ed.), *Mathematical problems in the biological sciences* (Proceedings of Symposia in Applied Mathematics, Vol. 14, pp. 17–33). American Mathematical Society.
 - [ ] Myhill, J. (1963). The converse of Moore's Garden-of-Eden theorem. *Proceedings of the American Mathematical Society, 14*(4), 685–686.
-- [ ] Hedlund, G. A. (1969). Endomorphisms and automorphisms of the shift dynamical system. *Mathematical Systems Theory, 3*(4), 320–375. https://doi.org/10.1007/BF01691062
+- [x] Hedlund, G. A. (1969). Endomorphisms and automorphisms of the shift dynamical system. *Mathematical Systems Theory, 3*(4), 320–375. https://doi.org/10.1007/BF01691062
 - [ ] Gardner, M. (1970). Mathematical games: The fantastic combinations of John Conway's new solitaire game "life." *Scientific American, 223*(4), 120–123. https://doi.org/10.1038/scientificamerican1070-120
 - [ ] Berlekamp, E. R., Conway, J. H., & Guy, R. K. (1982). *Winning ways for your mathematical plays: Vol. 2. Games in particular*. Academic Press. (Ch. 25, "What Is Life?")
 - [ ] Wolfram, S. (1983). Statistical mechanics of cellular automata. *Reviews of Modern Physics, 55*(3), 601–644. https://doi.org/10.1103/RevModPhys.55.601

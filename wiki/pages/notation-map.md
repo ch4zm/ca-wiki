@@ -1,9 +1,9 @@
 ---
 title: Notation Map
 category: Analyses
-summary: Crosswalk from the symbols each source uses (von Neumann's lectures and manuscript, Burks's completion) onto the wiki's common concepts and notation, with a list of letters that mean different things in different places
-tags: [notation, reference, von-neumann, burks, self-reproduction, 29-state]
-sources: [tsra-editors-introduction, tsra-lecture-5, tsra-part2-ch1, tsra-part2-ch2, tsra-part2-ch3, tsra-part2-ch4, tsra-part2-ch5]
+summary: Crosswalk from the symbols each source uses (von Neumann's lectures and manuscript, Burks's completion, Hedlund's symbolic dynamics) onto the wiki's common concepts and notation, with a list of letters that mean different things in different places
+tags: [notation, reference, von-neumann, burks, hedlund, self-reproduction, 29-state, symbolic-dynamics]
+sources: [tsra-editors-introduction, tsra-lecture-5, tsra-part2-ch1, tsra-part2-ch2, tsra-part2-ch3, tsra-part2-ch4, tsra-part2-ch5, endomorphisms-and-automorphisms-of-the-shift-dynamical-system]
 created: 2026-09-24
 updated: 2026-09-24
 ---
@@ -106,12 +106,33 @@ The book writes a binary characteristic i¹ … iⁿ, with 1 for a stimulus and 
 | triple-return counter | Φ |
 | 1-vs-10101 discriminator | Ψ |
 
+## Symbolic dynamics
+
+Hedlund (1969) writes in the language of symbolic dynamics, not cellular automata. The CA
+column below is own reasoning: Hedlund never uses those words.[^16][^17][^18]
+
+| Concept | Hedlund | CA reading (own reasoning) |
+|---|---|---|
+| alphabet; its size | 𝒮 (script S); S = card 𝒮 | cell states; number of states |
+| space of all bisequences | X(𝒮) | all infinite 1D configurations |
+| the shift | σ, [σ(x)]ᵢ = xᵢ₊₁ | translating by one cell |
+| n-blocks over 𝒮 | 𝔅ₙ(𝒮) | finite patterns of length n |
+| block maps of window n | F(𝒮, n) | local rules on n consecutive cells |
+| global map of f; its action on blocks | f∞; f_m | global map; image of a finite pattern |
+| all continuous shift-commuting maps | Φ(𝒮) | all 1D global maps |
+| onto members of Φ | E(𝒮) | surjective rules |
+| automorphisms (= one-to-one members) | A(𝒮) = H(𝒮) | invertible rules |
+| powers of the shift | Σ(𝒮) | pure translations |
+| degree; Welch's left and right indices | M(f); L(f), R(f) | — |
+| periodic points | P(𝒮) | spatially periodic configurations |
+
 ## Letter collisions
 
 Letters that change meaning between (or within) sources:
 
 - **A**: universal constructor in Lecture 5 and Ch. 1. In Ch. 5 it is also a finite
-  automaton's next-state function. As (A), it is the logical-universality question.[^1][^9][^4]
+  automaton's next-state function. As (A), it is the logical-universality question. In
+  Hedlund, A(𝒮) is the automorphism group.[^1][^9][^4][^16]
 - **B**: copier. As (B), it is the constructibility question.
 - **C**: controller in Lecture 5 and Ch. 1; the confluent state C_εε′ in Ch. 2; C₁ and C₂
   are the two tape loops.[^1][^11][^6]
@@ -119,13 +140,21 @@ Letters that change meaning between (or within) sources:
   Ch. 1, a decoder D(i¹ … iⁿ) in Ch. 3, the delay area of a control organ in Chs. 4–5, and
   the description D(M) in Ch. 5.[^1][^2][^14][^10][^3]
 - **E**: the self-reproducer in Ch. 1, the evolution question (E), and in Ch. 5 a finite
-  automaton's move function.[^2][^4][^9]
+  automaton's move function. In Hedlund, E(𝒮) is the set of onto endomorphisms.[^2][^4][^9][^16]
 - **F**: the payload in Ch. 1. The book also uses F for the transition function of a
-  cellular automaton (Ch. 2).[^2][^11]
-- **L**: the tape. Script 𝔏 is the number of cell states, and L_X is a description.[^5][^8]
+  cellular automaton (Ch. 2). In Hedlund, F(𝒮, n) is the set of all block maps of window n.[^2][^11][^17]
+- **L**: the tape. Script 𝔏 is the number of cell states, and L_X is a description. In
+  Hedlund, L(f) is Welch's left index.[^5][^8][^18]
 - **P**: the wiki's payload. In the book P(i¹ … iⁿ) is a pulser, and in the Introduction P
-  is the program of Turing's universal machine, which the wiki writes π.[^14][^15]
-- **S**: the secondary built in Ch. 1; S_Σ is a sensitized state.[^2][^11]
+  is the program of Turing's universal machine, which the wiki writes π. In Hedlund, P(𝒮)
+  is the set of periodic points.[^14][^15][^18]
+- **S**: the secondary built in Ch. 1; S_Σ is a sensitized state. In Hedlund, S is the
+  number of symbols.[^2][^11][^16]
+- **M**: in Ch. 5, an arbitrary machine (M_c, M_u). In Hedlund, M(f) is the number of
+  preimages of a bilaterally transitive point.[^3][^18]
+- **Φ, Σ**: in Ch. 3, Φ is the triple-return counter. In Hedlund, Φ(𝒮) is the set of all
+  endomorphisms and Σ(𝒮) the powers of the shift. In Ch. 2, Σ indexes the sensitized
+  states S_Σ.[^14][^11][^17]
 - **X**: an arbitrary automaton in Lecture 5; in Ch. 5 a finite automaton's write function
   and also an area of the memory control.[^1][^9][^10]
 
@@ -144,3 +173,6 @@ Letters that change meaning between (or within) sources:
 [^13]: [[tsra-part2-ch5](pages/tsra-part2-ch5.md)] pp.262, 274 [synthesis] — a single arrow represents an ordinary transmission state, a double arrow a special transmission state
 [^14]: [[tsra-part2-ch5](pages/tsra-part2-ch5.md)] p.292 [synthesis] — editor's summary of Ch. 3: pulsers P(i¹ … iⁿ), periodic pulsers PP(i¹ … iⁿ), decoders D(i¹ … iⁿ), the triple-return counter Φ, and the 1 vs. 10101 discriminator Ψ
 [^15]: [[tsra-editors-introduction](pages/tsra-editors-introduction.md)] p.14 — "for any Turing machine M there is a finite program P such that machine U, operating under the direction of P, will compute the same results as M."
+[^16]: [[endomorphisms-and-automorphisms-of-the-shift-dynamical-system](pages/endomorphisms-and-automorphisms-of-the-shift-dynamical-system.md)] pp.320-322 [synthesis] — X(𝒮) the bisequences over 𝒮 with S = card 𝒮; σ the shift; Φ(𝒮) the endomorphisms, E(𝒮) the onto ones, A(𝒮) the automorphisms
+[^17]: [[endomorphisms-and-automorphisms-of-the-shift-dynamical-system](pages/endomorphisms-and-automorphisms-of-the-shift-dynamical-system.md)] pp.323-324, 331-332 [synthesis] — 𝔅ₙ(𝒮) the n-blocks; F(𝒮, n) the maps 𝔅ₙ(𝒮) → 𝒮; f_m and f∞; H(𝒮) the one-to-one members of Φ(𝒮), with A(𝒮) = H(𝒮); Σ(𝒮) = {σⁿ}
+[^18]: [[endomorphisms-and-automorphisms-of-the-shift-dynamical-system](pages/endomorphisms-and-automorphisms-of-the-shift-dynamical-system.md)] pp.338, 351, 358-359 [synthesis] — P(𝒮) the periodic points; M(f) the multiplicity at bilaterally transitive points; R(f) and L(f) defined by Welch

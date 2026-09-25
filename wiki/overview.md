@@ -1,7 +1,7 @@
 ---
 title: Overview
 tags: [overview, synthesis]
-sources: [theory-of-self-reproducing-automata, tsra-editors-introduction, tsra-lecture-2, tsra-lecture-3, tsra-lecture-4, tsra-lecture-5, tsra-part2-ch1, tsra-part2-ch2, tsra-part2-ch3, tsra-part2-ch4, tsra-part2-ch5]
+sources: [theory-of-self-reproducing-automata, tsra-editors-introduction, tsra-lecture-2, tsra-lecture-3, tsra-lecture-4, tsra-lecture-5, tsra-part2-ch1, tsra-part2-ch2, tsra-part2-ch3, tsra-part2-ch4, tsra-part2-ch5, endomorphisms-and-automorphisms-of-the-shift-dynamical-system]
 updated: 2026-09-24
 ---
 
@@ -48,6 +48,22 @@ machine as payload. Construction and computation turn out to be the same kind of
 Some patterns can never be built, the extreme case being [[garden-of-eden](pages/garden-of-eden.md)]
 configurations, which have no predecessor.
 
+**One dimension, all rules at once.** Hedlund's symbolic dynamics takes the opposite
+approach to von Neumann's. It builds no single machine and asks global questions about
+every 1D rule. Configurations are points of the
+[[shift-dynamical-system](pages/shift-dynamical-system.md)], and the
+[[curtis-hedlund-lyndon-theorem](pages/curtis-hedlund-lyndon-theorem.md)] identifies the
+global maps with the continuous shift-commuting maps. The main results concern
+[[surjective-shift-endomorphism](pages/surjective-shift-endomorphism.md)]s. A 1D rule is
+onto iff no finite pattern is orphaned, iff every pattern has exactly S^(n−1)
+predecessors, iff no two finitely-different configurations collide. Onto rules are
+finite-to-one, with a constant degree at almost every point. Injective rules are always
+onto. [[permutive-map](pages/permutive-map.md)]s are the standard onto examples. The
+invertible rules form the [[automorphism-group-of-the-shift](pages/automorphism-group-of-the-shift.md)],
+which contains every finite group. Hedlund does not use the words, so reading these as
+statements about cellular automata and [[garden-of-eden](pages/garden-of-eden.md)]
+configurations is the wiki's own step.
+
 **Reliability.** Von Neumann proposed a [[probabilistic-logic](pages/probabilistic-logic.md)] in which failure is part
 of the axioms, bringing the theory closer to analysis and thermodynamics, via the
 entropy–information link illustrated by [[maxwells-demon](pages/maxwells-demon.md)]. Natural automata survive
@@ -62,7 +78,11 @@ on the first one.
   in what they assume?
 - Von Neumann's design is serial and ignores the medium's parallelism. How much smaller could
   a parallel self-reproducer be?
-- Which cellular structures have Garden-of-Eden configurations? (Moore and Myhill are next.)
+- Which cellular structures have Garden-of-Eden configurations? In 1D, Hedlund's theorems
+  give "Garden of Eden ⇔ finitely-different configurations collide" (own reading). Does
+  the same hold in 2D, and is that what Moore and Myhill prove?
+- Hedlund reports that onto maps look rare and automorphisms "relatively sparse" among all
+  1D rules, but nothing was proved. Can that be made precise?
 
 ## Key Entities / Concepts
 
@@ -87,3 +107,8 @@ on the first one.
 - [[initially-quiescent-automaton](pages/initially-quiescent-automaton.md)]
 - [[crossing-organ](pages/crossing-organ.md)]
 - [[garden-of-eden](pages/garden-of-eden.md)]
+- [[shift-dynamical-system](pages/shift-dynamical-system.md)]
+- [[curtis-hedlund-lyndon-theorem](pages/curtis-hedlund-lyndon-theorem.md)]
+- [[surjective-shift-endomorphism](pages/surjective-shift-endomorphism.md)]
+- [[permutive-map](pages/permutive-map.md)]
+- [[automorphism-group-of-the-shift](pages/automorphism-group-of-the-shift.md)]
