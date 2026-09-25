@@ -3,7 +3,7 @@ title: Endomorphisms and Automorphisms of the Shift Dynamical System
 category: Sources
 summary: Hedlund (1969), the founding paper on shift-commuting maps - the Curtis-Hedlund-Lyndon theorem (continuous shift-commuting maps are exactly block maps), balanced preimages and bounded multiplicity for onto maps, Welch's L·M·R = S^(n-1), Rothaus's cross-section theorem, and the rich automorphism group of the full shift
 tags: [hedlund, symbolic-dynamics, shift, block-map, curtis-hedlund-lyndon, surjectivity, automorphism-group, one-dimensional]
-sources: [endomorphisms-and-automorphisms-of-the-shift-dynamical-system]
+sources: [endomorphisms-and-automorphisms-of-the-shift-dynamical-system, theory-of-cellular-automata-a-survey]
 created: 2026-09-24
 updated: 2026-09-24
 ---
@@ -170,6 +170,15 @@ It also adds a topological definition of the global map to
 [[cellular-automaton](pages/cellular-automaton.md)]. Its notation is mapped in
 [[notation-map](pages/notation-map.md)].
 
+Kari's survey
+([[theory-of-cellular-automata-a-survey](pages/theory-of-cellular-automata-a-survey.md)])
+calls this paper "seminal" for the topological study of CA and says it marks the start of
+symbolic dynamics. It restates the
+[[curtis-hedlund-lyndon-theorem](pages/curtis-hedlund-lyndon-theorem.md)] for every
+dimension, and it uses the names "endomorphism" and "automorphism" for CA and
+[[reversible-cellular-automaton](pages/reversible-cellular-automaton.md)]s in the way this
+page reads them.[^19]
+
 [^1]: [[endomorphisms-and-automorphisms-of-the-shift-dynamical-system](pages/endomorphisms-and-automorphisms-of-the-shift-dynamical-system.md)] pp.320-321 [synthesis] — X(S) is the set of bisequences over S, 1 < card S < ∞, with the shift σ; continuous shift-commuting maps are the endomorphisms; block maps; "It has been shown by Curtis, Hedlund and Lyndon that these mappings, composed with powers of the shift, constitute the entire class of continuous transformations which commute with the shift"
 [^2]: [[endomorphisms-and-automorphisms-of-the-shift-dynamical-system](pages/endomorphisms-and-automorphisms-of-the-shift-dynamical-system.md)] pp.323-325 [synthesis] — definition of F(S, n) and f∞ by y_i = f(x_i ⋯ x_{i+n−1}); Thm 3.1 (continuous, commutes with σ); Thm 3.4 F*(S) = Φ(S), credited to Curtis, Hedlund and Lyndon; card Φ(S) = ℵ₀
 [^3]: [[endomorphisms-and-automorphisms-of-the-shift-dynamical-system](pages/endomorphisms-and-automorphisms-of-the-shift-dynamical-system.md)] pp.321, 326-334, 345-346, 351, 362, 364 [synthesis] — Thm 5.1 (onto iff every f_m onto); Thm 5.4 (exactly S^(n−1) preimage blocks); Thm 5.5 (≤ S^(n−1) preimages); Thm 5.12 (non-onto: uncountable preimage of a periodic point); Thm 9.3-9.5 (preimage separation); Thm 11.2 (M(f)); Thm 14.9 (L·M·R = S^(n−1)); Thm 16.1 (Rothaus); Thm 6.6-6.7 (permutive maps)
@@ -188,3 +197,4 @@ It also adds a topological definition of the global map to
 [^16]: [[endomorphisms-and-automorphisms-of-the-shift-dynamical-system](pages/endomorphisms-and-automorphisms-of-the-shift-dynamical-system.md)] pp.372-373 [synthesis] — Thm 19.1: S prime implies F_P(S, n) = F(S, n), polynomials of degree at most S − 1 in each variable over GF(S)
 [^17]: [[endomorphisms-and-automorphisms-of-the-shift-dynamical-system](pages/endomorphisms-and-automorphisms-of-the-shift-dynamical-system.md)] p.321 — "It appears that the set Φ(S) − E(S) is in some sense more numerous than the set E(S) and that the set A(S) is relatively sparse, but nothing has been proved in this direction."
 [^18]: [[endomorphisms-and-automorphisms-of-the-shift-dynamical-system](pages/endomorphisms-and-automorphisms-of-the-shift-dynamical-system.md)] pp.370-371 — "It is not known whether the same conclusion can be reached if it is assumed that card f∞⁻¹(x) = S^(n−1) for some x ∈ X(S)."
+[^19]: [[theory-of-cellular-automata-a-survey](pages/theory-of-cellular-automata-a-survey.md)] pp.12-13 [synthesis] - "A seminal paper in the topological investigation of CA is by Hedlund [33]"; "It also marks the beginning of symbolic dynamics"; Theorem 3 for S^(ℤᵈ); "it is therefore customary to call reversible CA automorphisms of the shift dynamical system. CA are termed endomorphisms"

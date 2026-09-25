@@ -3,7 +3,7 @@ title: Universal Turing Machine
 category: Concepts
 summary: Turing's finite automaton with an unbounded tape that can simulate any other Turing machine — the logical model von Neumann generalized from computation to construction
 tags: [concept, turing, universality, computation]
-sources: [tsra-editors-introduction, tsra-lecture-2, tsra-part2-ch4, tsra-part2-ch5, statistical-mechanics-of-cellular-automata]
+sources: [tsra-editors-introduction, tsra-lecture-2, tsra-part2-ch4, tsra-part2-ch5, statistical-mechanics-of-cellular-automata, theory-of-cellular-automata-a-survey]
 created: 2026-09-24
 updated: 2026-09-24
 ---
@@ -66,8 +66,21 @@ cellular automaton through an encoding, and if the encoding is simple, the simul
 should inherit the simulator's *statistical* behaviour
 ([[self-organization](pages/self-organization.md)]).[^14]
 
+**Later universality results (Kari 2005).** Kari reports two universality theorems
+built on Turing-machine simulation. The [[game-of-life](pages/game-of-life.md)] is
+universal, and whether a finite Life pattern dies is undecidable (Berlekamp, Conway and
+Guy). [[rule-110](pages/rule-110.md)], a two-state nearest-neighbour rule, is universal
+(Cook and Wolfram).[^15] Reversible rules can be universal too. Toffoli (1977) simulated any
+d-dimensional CA in a (d + 1)-dimensional reversible one. Morita and Harao (1989)
+simulated reversible Turing machines, which can be universal (Bennett 1973), in 1D
+reversible CA ([[reversible-cellular-automaton](pages/reversible-cellular-automaton.md)]).[^16]
+Kari separates this Turing-machine universality from
+[[intrinsic-universality](pages/intrinsic-universality.md)], the ability to simulate
+every CA on infinite configurations.[^17]
+
 ## Appearances in Sources
 
+- [[theory-of-cellular-automata-a-survey](pages/theory-of-cellular-automata-a-survey.md)] - universality of Life and rule 110; universal reversible CA; Turing vs intrinsic universality
 - [[statistical-mechanics-of-cellular-automata](pages/statistical-mechanics-of-cellular-automata.md)] — universality across cellular automata: Smith's 18-state 1D rule, Life, Banks, and simulation by encoding
 - [[tsra-part2-ch5](pages/tsra-part2-ch5.md)] — an initially quiescent universal Turing machine in the 29-state CA
 - [[tsra-part2-ch4](pages/tsra-part2-ch4.md)] — a Turing machine realized in the 29-state CA
@@ -86,6 +99,10 @@ should inherit the simulator's *statistical* behaviour
 - [[theory-of-automata](pages/theory-of-automata.md)] — Turing machines belong to its strict part
 - [[mcculloch-pitts-neuron](pages/mcculloch-pitts-neuron.md)] — the finite-automaton building block
 - [[description-vs-object-complexity](pages/description-vs-object-complexity.md)] — follows from the impossibility of predicting behavior
+- [[rule-110](pages/rule-110.md)] - a universal elementary rule
+- [[intrinsic-universality](pages/intrinsic-universality.md)] - the CA-native, stronger notion
+- [[reversible-cellular-automaton](pages/reversible-cellular-automaton.md)] - universal reversible rules
+- [[decidability-in-cellular-automata](pages/decidability-in-cellular-automata.md)] - halting-problem reductions give undecidable CA questions
 
 [^1]: [[tsra-editors-introduction](pages/tsra-editors-introduction.md)] p.14 — "A Turing machine is a finite automaton with an indefinitely expandable tape. ... Turing's universal computer U has this property: for any Turing machine M there is a finite program P such that machine U, operating under the direction of P, will compute the same results as M."
 [^2]: [[tsra-editors-introduction](pages/tsra-editors-introduction.md)] pp.25, 27 [synthesis] — "Recursive functions are those functions which can be computed on Turing machines, and so mathematical logic may be treated from the point of view of automata"; the strict part "includes mathematical logic as extended to cover finite automata and Turing machines"
@@ -101,3 +118,6 @@ should inherit the simulator's *statistical* behaviour
 [^12]: [[statistical-mechanics-of-cellular-automata](pages/statistical-mechanics-of-cellular-automata.md)] p.639 [synthesis] — simplest universal Turing machine has seven internal states and four symbols; Smith (1971): an eighteen-state one-dimensional three-site-neighbourhood cellular automaton simulates it; wires, NAND gates and memories; Life via glider streams; Banks (1971) three-state type-I 2D; two states with an infinite background (Toffoli 1977a); "preliminary indications" of a five-state 1D universal rule
 [^13]: [[statistical-mechanics-of-cellular-automata](pages/statistical-mechanics-of-cellular-automata.md)] p.630 — "the elementary cellular automata considered here and in Secs. II and III are not of sufficient complexity to be capable of universal computation."
 [^14]: [[statistical-mechanics-of-cellular-automata](pages/statistical-mechanics-of-cellular-automata.md)] pp.629-630 [synthesis] — universal cellular automata may simulate any other cellular automaton; the interpreter is an encoding of configurations; "so long as the encoding defined by the interpreter is sufficiently simple, the statistical characteristics of the evolution of configurations in the universal cellular automaton will be shared by the cellular automaton being simulated"
+[^15]: [[theory-of-cellular-automata-a-survey](pages/theory-of-cellular-automata-a-survey.md)] p.11 [synthesis] - Theorem 1 (Berlekamp et al.): Life universal, death of a finite configuration undecidable; Theorem 2 (Cook and Wolfram): rule 110 universal
+[^16]: [[theory-of-cellular-automata-a-survey](pages/theory-of-cellular-automata-a-survey.md)] p.18 [synthesis] - Toffoli [65]: any d-dimensional CA simulated by a (d + 1)-dimensional reversible CA; Morita and Harao [54]; "reversible Turing machines can be computationally universal [4]"; Theorem 8
+[^17]: [[theory-of-cellular-automata-a-survey](pages/theory-of-cellular-automata-a-survey.md)] p.23 [synthesis] - "The universality of GOL and rule 110 is based on performing Turing machine simulations in the CA. But also a stronger form of universality exists that is inherent to CA"

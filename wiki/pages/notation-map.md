@@ -1,9 +1,9 @@
 ---
 title: Notation Map
 category: Analyses
-summary: Crosswalk from the symbols each source uses (von Neumann's lectures and manuscript, Burks's completion, Hedlund's symbolic dynamics) onto the wiki's common concepts and notation, with a list of letters that mean different things in different places
-tags: [notation, reference, von-neumann, burks, hedlund, self-reproduction, 29-state, symbolic-dynamics]
-sources: [tsra-editors-introduction, tsra-lecture-5, tsra-part2-ch1, tsra-part2-ch2, tsra-part2-ch3, tsra-part2-ch4, tsra-part2-ch5, endomorphisms-and-automorphisms-of-the-shift-dynamical-system]
+summary: Crosswalk from the symbols each source uses (von Neumann's lectures and manuscript, Burks's completion, Hedlund's symbolic dynamics, Kari's survey) onto the wiki's common concepts and notation, with a list of letters that mean different things in different places
+tags: [notation, reference, von-neumann, burks, hedlund, kari, self-reproduction, 29-state, symbolic-dynamics]
+sources: [tsra-editors-introduction, tsra-lecture-5, tsra-part2-ch1, tsra-part2-ch2, tsra-part2-ch3, tsra-part2-ch4, tsra-part2-ch5, endomorphisms-and-automorphisms-of-the-shift-dynamical-system, theory-of-cellular-automata-a-survey]
 created: 2026-09-24
 updated: 2026-09-24
 ---
@@ -126,6 +126,25 @@ column below is own reasoning: Hedlund never uses those words.[^16][^17][^18]
 | degree; Welch's left and right indices ([[permutive-map](pages/permutive-map.md)]) | M(f); L(f), R(f) | — |
 | periodic points | P(𝒮) | spatially periodic configurations |
 
+## Kari's survey
+
+Kari (2005) uses the notation of theoretical computer science, for any dimension d.[^19][^20]
+
+| Concept | Kari | Hedlund (1D) |
+|---|---|---|
+| state set; a state | S (the set itself); a, b, q | 𝒮, with S = card 𝒮 |
+| all configurations ([[cellular-automaton](pages/cellular-automaton.md)]) | C = C(d, S) = S^(ℤᵈ) | X(𝒮) |
+| finite configurations; spatially periodic configurations | C_F; C_P | -; P(𝒮) |
+| neighbourhood vector; local rule | N = (x₁, …, xₙ); f : Sⁿ → S | window n; f ∈ F(𝒮, n) |
+| global map; restrictions to C_F and C_P | G; G_F, G_P | f∞ (or φ ∈ Φ(𝒮)) |
+| shift along coordinate i; the 1D left shift | σᵢ; σ | σ |
+| quiescent state; quiescent configuration | q; Q | - |
+| limit set; image after n steps ([[limit-set](pages/limit-set.md)]) | Λ; Λ⁽ⁿ⁾ = Gⁿ(C) | - |
+| equicontinuity points ([[chaos-in-cellular-automata](pages/chaos-in-cellular-automata.md)]) | Eq(G) | - |
+| classification schemes ([[classification-of-cellular-automata](pages/classification-of-cellular-automata.md)]) | W1-W4, CY1-CY4, K1-K4 | - |
+| Laurent polynomial of a linear rule ([[additive-cellular-automaton](pages/additive-cellular-automaton.md)]) | p(Z), Z = (z₁, …, z_d) | - |
+| language families ([[language-recognition-by-cellular-automata](pages/language-recognition-by-cellular-automata.md)]) | L(CA), L(OCA), L(LCA), L(RCA), L(LOCA), L(ROCA) | - |
+
 ## Letter collisions
 
 Letters that change meaning between (or within) sources:
@@ -135,7 +154,7 @@ Letters that change meaning between (or within) sources:
   Hedlund, A(𝒮) is the automorphism group.[^1][^9][^4][^16]
 - **B**: copier. As (B), it is the constructibility question.
 - **C**: controller in Lecture 5 and Ch. 1; the confluent state C_εε′ in Ch. 2; C₁ and C₂
-  are the two tape loops.[^1][^11][^6]
+  are the two tape loops. In Kari, C is the set of all configurations.[^1][^11][^6][^19]
 - **D**: the most overloaded letter. It is the payload in Lecture 5, the machine A + B + C in
   Ch. 1, a decoder D(i¹ … iⁿ) in Ch. 3, the delay area of a control organ in Chs. 4–5, and
   the description D(M) in Ch. 5.[^1][^2][^14][^10][^3]
@@ -149,7 +168,7 @@ Letters that change meaning between (or within) sources:
   is the program of Turing's universal machine, which the wiki writes π. In Hedlund, P(𝒮)
   is the set of periodic points.[^14][^15][^18]
 - **S**: the secondary built in Ch. 1; S_Σ is a sensitized state. In Hedlund, S is the
-  number of symbols.[^2][^11][^16]
+  number of symbols. In Kari, S is the state set itself.[^2][^11][^16][^19]
 - **M**: in Ch. 5, an arbitrary machine (M_c, M_u). In Hedlund, M(f) is the number of
   preimages of a bilaterally transitive point.[^3][^18]
 - **Φ, Σ**: in Ch. 3, Φ is the triple-return counter. In Hedlund, Φ(𝒮) is the set of all
@@ -176,3 +195,5 @@ Letters that change meaning between (or within) sources:
 [^16]: [[endomorphisms-and-automorphisms-of-the-shift-dynamical-system](pages/endomorphisms-and-automorphisms-of-the-shift-dynamical-system.md)] pp.320-322 [synthesis] — X(𝒮) the bisequences over 𝒮 with S = card 𝒮; σ the shift; Φ(𝒮) the endomorphisms, E(𝒮) the onto ones, A(𝒮) the automorphisms
 [^17]: [[endomorphisms-and-automorphisms-of-the-shift-dynamical-system](pages/endomorphisms-and-automorphisms-of-the-shift-dynamical-system.md)] pp.323-324, 331-332 [synthesis] — 𝔅ₙ(𝒮) the n-blocks; F(𝒮, n) the maps 𝔅ₙ(𝒮) → 𝒮; f_m and f∞; H(𝒮) the one-to-one members of Φ(𝒮), with A(𝒮) = H(𝒮); Σ(𝒮) = {σⁿ}
 [^18]: [[endomorphisms-and-automorphisms-of-the-shift-dynamical-system](pages/endomorphisms-and-automorphisms-of-the-shift-dynamical-system.md)] pp.338, 351, 358-359 [synthesis] — P(𝒮) the periodic points; M(f) the multiplicity at bilaterally transitive points; R(f) and L(f) defined by Welch
+[^19]: [[theory-of-cellular-automata-a-survey](pages/theory-of-cellular-automata-a-survey.md)] pp.4-7 [synthesis] - state set S, configurations c : ℤᵈ → S, C(d, S), neighbourhood vector N, local rule f : Sⁿ → S, global transition function G; shifts σᵢ and the left shift σ; quiescent state q and configuration Q; C_F, G_F, C_P, G_P
+[^20]: [[theory-of-cellular-automata-a-survey](pages/theory-of-cellular-automata-a-survey.md)] pp.8-9, 23, 25-27, 29-30 [synthesis] - classes (W1)-(W4) and (CY1)-(CY4); Λ and Λ⁽ⁿ⁾ = Gⁿ(C); Eq(G) and classes (K1)-(K4); Laurent polynomial p(Z); L(CA), L(OCA), L(LCA), L(RCA), L(LOCA), L(ROCA)

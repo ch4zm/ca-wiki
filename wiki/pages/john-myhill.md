@@ -3,7 +3,7 @@ title: John Myhill
 category: People
 summary: Stanford author who proved the converse of Moore's Garden-of-Eden theorem (1963), and who wrote on self-reproducing automata and favourable mutation
 tags: [person, myhill, garden-of-eden, self-reproduction]
-sources: [converse-of-moores-garden-of-eden-theorem, machine-models-of-self-reproduction]
+sources: [converse-of-moores-garden-of-eden-theorem, machine-models-of-self-reproduction, theory-of-cellular-automata-a-survey]
 created: 2026-09-24
 updated: 2026-09-24
 ---
@@ -32,8 +32,13 @@ here:[^3]
   "improved" means able to print out larger classes of true theorems. He adds that this may
   interest a logician more than a biologist.
 
+**Later citation.** Kari (2005) credits the "only if" direction of the Garden-of-Eden
+theorem, stated as "G_F is injective if and only if G is surjective", to Myhill's 1963
+note.[^4]
+
 ## Appearances in Sources
 
+- [[theory-of-cellular-automata-a-survey](pages/theory-of-cellular-automata-a-survey.md)] - credits Myhill with the converse of the Garden-of-Eden theorem
 - [[converse-of-moores-garden-of-eden-theorem](pages/converse-of-moores-garden-of-eden-theorem.md)] - author
 - [[machine-models-of-self-reproduction](pages/machine-models-of-self-reproduction.md)] - cites his work on self-reproducing automata
 
@@ -47,3 +52,4 @@ here:[^3]
 [^1]: [[converse-of-moores-garden-of-eden-theorem](pages/converse-of-moores-garden-of-eden-theorem.md)] pp.685-686 [synthesis] - author John Myhill, Stanford University; footnote 1 acknowledges NSF grant G19001
 [^2]: [[converse-of-moores-garden-of-eden-theorem](pages/converse-of-moores-garden-of-eden-theorem.md)] p.686 - "the existence of two indistinguishable configurations is a necessary as well as a sufficient condition for the existence of Garden-of-Eden configurations."
 [^3]: [[machine-models-of-self-reproduction](pages/machine-models-of-self-reproduction.md)] pp.30-32 [synthesis] - bibliography entries 13 and 14; [13] gives a partial description of a model intermediate between von Neumann's kinematic and tessellation models; [14] proves from axioms, by recursive function theory, that machines can build improvements of themselves, in the sense of printing larger classes of true theorems, of more interest to a logician than a biologist
+[^4]: [[theory-of-cellular-automata-a-survey](pages/theory-of-cellular-automata-a-survey.md)] p.15 [synthesis] - "This result, the two directions of which are due to Moore [53] and Myhill [55]"; Theorem 6 (Garden-of-Eden theorem, Moore and Myhill)

@@ -3,7 +3,7 @@ title: Cellular Automaton
 category: Concepts
 summary: A homogeneous lattice of identical finite-state cells, each updating in discrete time from its own state and its neighbours' states under one shared rule; introduced by von Neumann (after Ulam) as a medium for self-reproduction
 tags: [concept, cellular-automata, foundations, homogeneity, lattice]
-sources: [tsra-part2-ch1, tsra-part2-ch2, tsra-part2-ch3, machine-models-of-self-reproduction, endomorphisms-and-automorphisms-of-the-shift-dynamical-system, statistical-mechanics-of-cellular-automata]
+sources: [tsra-part2-ch1, tsra-part2-ch2, tsra-part2-ch3, machine-models-of-self-reproduction, endomorphisms-and-automorphisms-of-the-shift-dynamical-system, statistical-mechanics-of-cellular-automata, theory-of-cellular-automata-a-survey]
 created: 2026-09-24
 updated: 2026-09-24
 ---
@@ -129,8 +129,26 @@ legal two-state type-I rules in 2D and 2⁵⁹ ≈ 6 × 10¹⁷ type-II rules.[^
 *totalistic* if it depends only on the sum of the neighbourhood values. The
 [[game-of-life](pages/game-of-life.md)] is a type-II totalistic rule.[^27]
 
+**The computer-science formalization.** Kari (2005) fixes the setting used in theoretical
+computer science. A d-dimensional CA is a triple (S, N, f): a finite state set S, a
+neighbourhood vector N of n distinct offsets in ℤᵈ, and a local rule f : Sⁿ → S. The
+global map G sends a configuration c : ℤᵈ → S to the configuration whose value at x is f
+applied to the states at x + x₁, …, x + xₙ. A CA is usually identified with G, but in
+algorithmic questions it is always given by the three finite items S, N and f.[^28] A
+quiescent state q must satisfy f(q, …, q) = q. A configuration is *finite* if only finitely
+many cells are not quiescent, and *spatially periodic* if d independent translations fix
+it. Both kinds are preserved by G, giving restrictions G_F and G_P. The three maps can
+behave differently, so simulations with periodic boundary conditions "may be
+misleading".[^29] Temporal notions are kept separate: c is *temporally periodic* if Gᵏ(c) =
+c for some k ≥ 1, and every CA has a homogeneous temporally periodic configuration. A CA is
+*nilpotent* if all configurations end at one configuration after some fixed number of
+steps ([[limit-set](pages/limit-set.md)]).[^30] Composing two CA gives a CA, and whether two
+CA are equal is decidable.[^31] Which other properties can be decided is the subject of
+[[decidability-in-cellular-automata](pages/decidability-in-cellular-automata.md)].
+
 ## Appearances in Sources
 
+- [[theory-of-cellular-automata-a-survey](pages/theory-of-cellular-automata-a-survey.md)] - the formal triple (S, N, f); finite and periodic configurations; composition, equivalence, nilpotency
 - [[statistical-mechanics-of-cellular-automata](pages/statistical-mechanics-of-cellular-automata.md)] — the physicist's view, alternative names, applications, type-I/type-II neighbourhoods, rule counts
 - [[machine-models-of-self-reproduction](pages/machine-models-of-self-reproduction.md)] — the tessellation structure, the nine-cell neighbourhood, finite speed
 - [[tsra-part2-ch3](pages/tsra-part2-ch3.md)] — serial operation and wire-crossing in 2D
@@ -160,6 +178,11 @@ legal two-state type-I rules in 2D and 2⁵⁹ ≈ 6 × 10¹⁷ type-II rules.[^
 - [[universal-constructor](pages/universal-constructor.md)] — realized inside a cellular automaton in Part II
 - [[universal-turing-machine](pages/universal-turing-machine.md)] — the blank cellular background is analogous to blank tape
 - [[theory-of-automata](pages/theory-of-automata.md)] — the program within which the cellular automaton appears
+- [[reversible-cellular-automaton](pages/reversible-cellular-automaton.md)] - rules whose global map is invertible
+- [[limit-set](pages/limit-set.md)] - what a rule can still produce after arbitrarily many steps
+- [[decidability-in-cellular-automata](pages/decidability-in-cellular-automata.md)] - which properties of a rule are decidable, by dimension
+- [[chaos-in-cellular-automata](pages/chaos-in-cellular-automata.md)] - CA as topological dynamical systems
+- [[classification-of-cellular-automata](pages/classification-of-cellular-automata.md)] - Wolfram, Culik-Yu and Kurka classes
 
 [^1]: [[tsra-part2-ch1](pages/tsra-part2-ch1.md)] pp.94, 103, 106 [synthesis] — each cell contains the same finite automaton; functional homogeneity means every cell is connected to its neighbours in the same way and obeys the same rules
 [^2]: [[tsra-part2-ch1](pages/tsra-part2-ch1.md)] pp.102-103, 109 [synthesis] — avoidance of geometry and kinematics; stationarity with quiescent vs. active states; discrete medium; growth as the transformation of unexcitable cells into excitable ones; the "structure of the vacuum"
@@ -188,3 +211,7 @@ legal two-state type-I rules in 2D and 2⁵⁹ ≈ 6 × 10¹⁷ type-II rules.[^
 [^25]: [[statistical-mechanics-of-cellular-automata](pages/statistical-mechanics-of-cellular-automata.md)] pp.602-603 [synthesis] — introduced by von Neumann and Ulam as "cellular spaces"; also called tessellation automata, homogeneous structures, cellular structures, tessellation structures, iterative arrays; any system of differential equations may be approximated by finite differences and discrete variables; nontrivial cellular automata arise with nonlinearity such as "growth inhibition"; applications to Ising-type spin systems, chemical reaction-diffusion, dendritic crystal growth, turbulence, biology, parallel computation
 [^26]: [[statistical-mechanics-of-cellular-automata](pages/statistical-mechanics-of-cellular-automata.md)] p.637 and n.14 [synthesis] — type-I neighbourhood of 2d+1 sites, type-II of 3ᵈ sites; identical when d = 1; for d = 2 "known as von Neumann and Moore neighborhoods"; legality includes rotation and reflection invariance; 2¹¹ = 2048 type-I rules for k = 2; 2⁵⁹ ≈ 6 × 10¹⁷ type-II rules
 [^27]: [[statistical-mechanics-of-cellular-automata](pages/statistical-mechanics-of-cellular-automata.md)] p.637 [synthesis] — "totalistic" cellular automata depend only on the sum of neighbourhood values; Life is a type-II example
+[^28]: [[theory-of-cellular-automata-a-survey](pages/theory-of-cellular-automata-a-survey.md)] pp.4-5 [synthesis] - configurations c : ℤᵈ → S; neighbourhood vector N = (x₁, …, xₙ); local rule f : Sⁿ → S; global transition function G; "A d-dimensional CA is specified by a triple (S, N, f)"; "In algorithmic questions G is, however, always specified using the three finite items S, N and f"
+[^29]: [[theory-of-cellular-automata-a-survey](pages/theory-of-cellular-automata-a-survey.md)] pp.6-7 [synthesis] - quiescent state stable, f(q, q, …, q) = q; finite configurations C_F and G_F; periodic configurations invariant under d linearly independent translations, C_P and G_P; "experiments done with periodic boundary conditions may be misleading"
+[^30]: [[theory-of-cellular-automata-a-survey](pages/theory-of-cellular-automata-a-survey.md)] p.7 [synthesis] - temporally periodic configurations; every CA has a homogeneous temporally periodic configuration; nilpotent if Gⁿ(C) is a singleton
+[^31]: [[theory-of-cellular-automata-a-survey](pages/theory-of-cellular-automata-a-survey.md)] p.7 [synthesis] - "The composition G₁ ∘ G₂ is also a CA function, and the composition can be formed effectively"; "The equivalence of two given CA G₁ and G₂ is decidable"

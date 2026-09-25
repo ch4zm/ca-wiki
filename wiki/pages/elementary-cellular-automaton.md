@@ -3,7 +3,7 @@ title: Elementary Cellular Automaton
 category: Concepts
 summary: Wolfram's name for the simplest nontrivial cellular automata - a line of two-state cells, each updated from itself and its two nearest neighbours; 256 rules named by their 8-bit rule tables, 32 of them "legal"
 tags: [concept, elementary-ca, wolfram, rule-numbering, one-dimensional]
-sources: [statistical-mechanics-of-cellular-automata]
+sources: [statistical-mechanics-of-cellular-automata, theory-of-cellular-automata-a-survey]
 created: 2026-09-24
 updated: 2026-09-24
 ---
@@ -77,8 +77,18 @@ The legality conditions leave k^((k³+k²)/2 - 1) of them: 32 for k = 2 and 3¹�
 for k = 3.[^11] Wolfram judged the elementary rules too simple for universal
 computation.[^12]
 
+**Later results (Kari 2005).** Renaming the two states or reversing left and right leaves
+88 essentially different elementary rules out of the 256. Wolfram's numbering has become
+standard, and the rule number is called the *Wolfram number*.[^13] Wolfram (1984)
+sorted the elementary rules into four classes by their behaviour from random starts
+([[classification-of-cellular-automata](pages/classification-of-cellular-automata.md)]).
+[[rule-110](pages/rule-110.md)], a class-4 rule outside the 32 legal ones, has since been
+proved computationally universal (Cook and Wolfram). Whether class-4 rule 54 is universal
+is open.[^14]
+
 ## Appearances in Sources
 
+- [[theory-of-cellular-automata-a-survey](pages/theory-of-cellular-automata-a-survey.md)] - 88 essentially different rules; the Wolfram number; the four classes; rule 110 universal, rule 54 open
 - [[statistical-mechanics-of-cellular-automata](pages/statistical-mechanics-of-cellular-automata.md)] — defines the family, the numbering, the legal subset, and the simple/complex split
 
 ## Related Concepts
@@ -91,6 +101,9 @@ computation.[^12]
 - [[irreversibility-and-entropy](pages/irreversibility-and-entropy.md)] — the global, ensemble view of the family
 - [[permutive-map](pages/permutive-map.md)] - rules 90 and 150 are XORs permutive at both ends
 - [[curtis-hedlund-lyndon-theorem](pages/curtis-hedlund-lyndon-theorem.md)] - the elementary rules as block maps with S = 2, window 3
+- [[rule-110](pages/rule-110.md)] - the elementary rule proved universal
+- [[classification-of-cellular-automata](pages/classification-of-cellular-automata.md)] - Wolfram's four classes and their formal versions
+- [[chaos-in-cellular-automata](pages/chaos-in-cellular-automata.md)] - the topological-dynamics counterpart of the strange-attractor behaviour
 
 [^1]: [[statistical-mechanics-of-cellular-automata](pages/statistical-mechanics-of-cellular-automata.md)] p.603 [synthesis] — one-dimensional, base 2, neighbourhood of the site and its two neighbours, "We shall call such cellular automata elementary"; the eight-digit binary rule number used interchangeably with its decimal equivalent; 256 rules; quiescence forbids rules whose binary specification ends in 1; reflection symmetry requires 100 ≡ 001 and 110 ≡ 011; 32 legal rules
 [^2]: [[statistical-mechanics-of-cellular-automata](pages/statistical-mechanics-of-cellular-automata.md)] pp.603-604 [synthesis] — rule 90: s_{n+1}(m) = s_n(m-1) ⊕ s_n(m+1) (Eq. 2.1); Fig. 1 gives its rule table 01011010
@@ -104,3 +117,5 @@ computation.[^12]
 [^10]: [[statistical-mechanics-of-cellular-automata](pages/statistical-mechanics-of-cellular-automata.md)] p.607 [synthesis] — periodic and null boundary conditions, "no important qualitative differences"; correspondence with feedback shift registers with taps at N-2, N-1, N; additive rules 90 and 150 correspond to linear feedback shift registers; end sites differ
 [^11]: [[statistical-mechanics-of-cellular-automata](pages/statistical-mechanics-of-cellular-automata.md)] p.630 [synthesis] — k^(k³) rule sets; legality imposes ½k²(k-1)+1 constraints; 2⁵ = 32 for k = 2; 3¹⁷ = 129140163 ≈ 1.3 × 10⁸ for k = 3
 [^12]: [[statistical-mechanics-of-cellular-automata](pages/statistical-mechanics-of-cellular-automata.md)] p.630 — "the elementary cellular automata considered here and in Secs. II and III are not of sufficient complexity to be capable of universal computation."
+[^13]: [[theory-of-cellular-automata-a-survey](pages/theory-of-cellular-automata-a-survey.md)] p.8 [synthesis] - 2⁸ = 256 elementary CA; "the number of essentially different elementary rules is smaller, only 88"; Wolfram's naming scheme "has since become standard"; "called the Wolfram number of the CA"
+[^14]: [[theory-of-cellular-automata-a-survey](pages/theory-of-cellular-automata-a-survey.md)] pp.8, 11-12 [synthesis] - Wolfram classes (W1)-(W4) from [74]; Theorem 2 (Cook and Wolfram): rule 110 is computationally universal; Open problem 1: rule 54, "another elementary CA that is in Wolfram class 4"

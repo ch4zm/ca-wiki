@@ -1,7 +1,7 @@
 ---
 title: Overview
 tags: [overview, synthesis]
-sources: [theory-of-self-reproducing-automata, tsra-editors-introduction, tsra-lecture-2, tsra-lecture-3, tsra-lecture-4, tsra-lecture-5, tsra-part2-ch1, tsra-part2-ch2, tsra-part2-ch3, tsra-part2-ch4, tsra-part2-ch5, endomorphisms-and-automorphisms-of-the-shift-dynamical-system, machine-models-of-self-reproduction, converse-of-moores-garden-of-eden-theorem, statistical-mechanics-of-cellular-automata]
+sources: [theory-of-self-reproducing-automata, tsra-editors-introduction, tsra-lecture-2, tsra-lecture-3, tsra-lecture-4, tsra-lecture-5, tsra-part2-ch1, tsra-part2-ch2, tsra-part2-ch3, tsra-part2-ch4, tsra-part2-ch5, endomorphisms-and-automorphisms-of-the-shift-dynamical-system, machine-models-of-self-reproduction, converse-of-moores-garden-of-eden-theorem, statistical-mechanics-of-cellular-automata, theory-of-cellular-automata-a-survey]
 updated: 2026-09-24
 ---
 
@@ -98,12 +98,43 @@ resemble thermodynamics becomes something measurable. The
 [[game-of-life](pages/game-of-life.md)] enters as a universal two-state rule built from
 glider-stream circuits.
 
+**The decidability turn.** Kari (2005) surveys the field as theoretical computer
+science. A rule is a finite triple (S, N, f), and the main question is which properties of
+its global map can be *decided* from that triple
+([[decidability-in-cellular-automata](pages/decidability-in-cellular-automata.md)]). The
+[[garden-of-eden-theorem](pages/garden-of-eden-theorem.md)] reads "surjective iff
+injective on finite configurations" in this setting, and injective, bijective and
+[[reversible-cellular-automaton](pages/reversible-cellular-automaton.md)] all coincide.
+Hedlund's automorphisms are exactly the reversible CA. The dividing line is
+dimension. 1D injectivity and surjectivity are decidable. In 2D both are undecidable,
+because [[wang-tiles](pages/wang-tiles.md)] and the tiling problem can be encoded in them.
+Nilpotency is undecidable even in 1D, and so is every non-trivial property of the
+[[limit-set](pages/limit-set.md)]. Physics motivates block-permutation rules that are
+reversible by construction ([[margolus-neighbourhood](pages/margolus-neighbourhood.md)])
+and additive [[conserved-quantity](pages/conserved-quantity.md)]s. Universality splits
+into the Turing kind, which Life and [[rule-110](pages/rule-110.md)] have, and the
+stronger [[intrinsic-universality](pages/intrinsic-universality.md)]. Wolfram's classes
+get formal, and undecidable, successors
+([[classification-of-cellular-automata](pages/classification-of-cellular-automata.md)]).
+Topological dynamics supplies a precise vocabulary of
+[[chaos-in-cellular-automata](pages/chaos-in-cellular-automata.md)]. For linear rules over
+ℤ_m, injectivity, surjectivity and the dynamical properties reduce to gcd tests. Bounded-space 1D CA also serve as
+language recognizers
+([[language-recognition-by-cellular-automata](pages/language-recognition-by-cellular-automata.md)]).
+
 ## Open Questions
 
 - Why exactly two universality classes? Wolfram conjectures it is because rules simulate each
   other under short encodings. Is that the whole story?
-- Wolfram judged elementary rules too simple for universal computation. Rule 110 is outside
-  his 32 legal rules, and Cook (2004), on the reading list, is the test of this claim.
+- Rule 110 is universal (Cook and Wolfram, reported by Kari). Is it intrinsically universal?
+  Is rule 54 universal at all? Cook (2004), on the reading list, gives the proof.
+- In two or more dimensions, which of the three open Garden-of-Eden implications between
+  G, G_F and G_P hold?
+- Is positive expansivity of 1D rules decidable? Can one decide whether a 1D rule has any
+  non-trivial conserved quantity?
+- Are temporally periodic configurations dense in every surjective rule? If so, chaos in
+  CA is just transitivity.
+- Is real-time CA language recognition as strong as linear-time (Smith, 1972)?
 - What exactly is von Neumann's complexity threshold, and does the 29-state construction
   make it precise? Von Neumann guessed millions of parts for the kinematic model.
 - How do the kinematic (Part I) and cellular (Part II) models of self-reproduction differ
@@ -157,3 +188,15 @@ glider-stream circuits.
 - [[self-organization](pages/self-organization.md)]
 - [[irreversibility-and-entropy](pages/irreversibility-and-entropy.md)]
 - [[game-of-life](pages/game-of-life.md)]
+- [[jarkko-kari](pages/jarkko-kari.md)]
+- [[reversible-cellular-automaton](pages/reversible-cellular-automaton.md)]
+- [[margolus-neighbourhood](pages/margolus-neighbourhood.md)]
+- [[wang-tiles](pages/wang-tiles.md)]
+- [[limit-set](pages/limit-set.md)]
+- [[conserved-quantity](pages/conserved-quantity.md)]
+- [[intrinsic-universality](pages/intrinsic-universality.md)]
+- [[rule-110](pages/rule-110.md)]
+- [[classification-of-cellular-automata](pages/classification-of-cellular-automata.md)]
+- [[chaos-in-cellular-automata](pages/chaos-in-cellular-automata.md)]
+- [[language-recognition-by-cellular-automata](pages/language-recognition-by-cellular-automata.md)]
+- [[decidability-in-cellular-automata](pages/decidability-in-cellular-automata.md)]

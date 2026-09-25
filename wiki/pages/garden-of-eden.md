@@ -3,7 +3,7 @@ title: Garden-of-Eden Configuration
 category: Concepts
 summary: A cellular-automaton configuration with no predecessor, which can occur only at time zero; they exist exactly when erasable configurations do (Moore 1962, Myhill 1963)
 tags: [concept, garden-of-eden, moore, myhill, surjectivity]
-sources: [machine-models-of-self-reproduction, tsra-part2-ch5, converse-of-moores-garden-of-eden-theorem, endomorphisms-and-automorphisms-of-the-shift-dynamical-system, statistical-mechanics-of-cellular-automata]
+sources: [machine-models-of-self-reproduction, tsra-part2-ch5, converse-of-moores-garden-of-eden-theorem, endomorphisms-and-automorphisms-of-the-shift-dynamical-system, statistical-mechanics-of-cellular-automata, theory-of-cellular-automata-a-survey]
 created: 2026-09-24
 updated: 2026-09-24
 ---
@@ -101,8 +101,15 @@ configurations at all (own reasoning, from the 1D section above). In the [[game-
 the smallest known example in 1983 had about 300 cells.[^19] See
 [[irreversibility-and-entropy](pages/irreversibility-and-entropy.md)].
 
+**The computer-science view.** Kari (2005) defines Garden-of-Eden configurations as
+configurations without a pre-image, which exist exactly when G is not surjective.[^20]
+They are the first configurations to drop out of the [[limit-set](pages/limit-set.md)],
+since none can appear after the first step.[^21] Whether a rule has any can be decided for
+1D rules (Amoroso and Patt, 1972) but not for 2D rules (Kari).[^22]
+
 ## Appearances in Sources
 
+- [[theory-of-cellular-automata-a-survey](pages/theory-of-cellular-automata-a-survey.md)] - the definition via non-surjectivity; decidable in 1D, undecidable in 2D; transient configurations and limit sets
 - [[statistical-mechanics-of-cellular-automata](pages/statistical-mechanics-of-cellular-automata.md)] - Garden-of-Eden configurations as a consequence of irreversibility, and how common they are in 1D rules and Life
 - [[machine-models-of-self-reproduction](pages/machine-models-of-self-reproduction.md)] - the definition, the name, Theorem 2 and its proof, the six assumptions
 - [[converse-of-moores-garden-of-eden-theorem](pages/converse-of-moores-garden-of-eden-theorem.md)] - the converse: Garden-of-Eden configurations require indistinguishable pairs
@@ -121,6 +128,9 @@ the smallest known example in 1983 had about 300 cells.[^19] See
 - [[cellular-automaton](pages/cellular-automaton.md)] - the general setting
 - [[surjective-shift-endomorphism](pages/surjective-shift-endomorphism.md)] - a 1D rule has no Garden-of-Eden configuration exactly when its global map is onto
 - [[automorphism-group-of-the-shift](pages/automorphism-group-of-the-shift.md)] - invertible 1D rules, which have none
+- [[limit-set](pages/limit-set.md)] - configurations that survive every number of steps
+- [[decidability-in-cellular-automata](pages/decidability-in-cellular-automata.md)] - whether a rule has any is decidable only in 1D
+- [[reversible-cellular-automaton](pages/reversible-cellular-automaton.md)] - reversible rules, which have none
 
 [^1]: [[machine-models-of-self-reproduction](pages/machine-models-of-self-reproduction.md)] p.23 [synthesis] - configurations that "cannot occur except at time T = 0"; no configuration at T − 1 gives rise to them; "Such a configuration will be called a Garden-of Eden configuration. This term, from the Biblical account in the second and third chapters of Genesis, was suggested by John W. Tukey."
 [^2]: [[machine-models-of-self-reproduction](pages/machine-models-of-self-reproduction.md)] p.26 - "THEOREM 2. For a tessellation structure for which there exist erasable configurations, there exist Garden-of-Eden configurations."
@@ -141,3 +151,6 @@ the smallest known example in 1983 had about 300 cells.[^19] See
 [^17]: [[statistical-mechanics-of-cellular-automata](pages/statistical-mechanics-of-cellular-automata.md)] p.623 n.10 — "The existence of unreachable or 'garden-of-Eden' configurations in cellular automata is discussed in Moore (1962) and Aggarwal (1973), where criteria (equivalent to irreversibility) for their occurrence are given."
 [^18]: [[statistical-mechanics-of-cellular-automata](pages/statistical-mechanics-of-cellular-automata.md)] p.623 [synthesis] — rule 204 is unique in allowing all configurations to be reached; rule 90 reaches half (N odd) or ¼ (N even); rule 126 unreachable fraction tends to one, behaving as 1 − λᴺ with λ ≈ 0.88 (Martin et al. 1983, cited via this paper)
 [^19]: [[statistical-mechanics-of-cellular-automata](pages/statistical-mechanics-of-cellular-automata.md)] p.637 — "the simplest known 'unreachable' configuration contains around 300 sites"
+[^20]: [[theory-of-cellular-automata-a-survey](pages/theory-of-cellular-automata-a-survey.md)] p.15 - "If G is not surjective then there exist Garden-of-Eden configurations, that is, configurations without a pre-image."
+[^21]: [[theory-of-cellular-automata-a-survey](pages/theory-of-cellular-automata-a-survey.md)] p.23 - "For example, Garden of Eden configurations cannot appear after the first update."
+[^22]: [[theory-of-cellular-automata-a-survey](pages/theory-of-cellular-automata-a-survey.md)] p.19 [synthesis] - Theorem 9 (Amoroso and Patt): 1D surjectivity decidable; Theorem 10 (Kari): 2D surjectivity undecidable

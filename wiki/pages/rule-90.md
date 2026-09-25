@@ -3,7 +3,7 @@ title: Rule 90
 category: Rules
 summary: The elementary "modulo-two" rule - each cell becomes the XOR of its two neighbours; grows Pascal's triangle mod 2 (a Sierpinski pattern of dimension log₂3) from one cell, is additive and exactly solvable, and copies any finite pattern
 tags: [rule, elementary-ca, additive, wolfram, sierpinski, pascal-triangle]
-sources: [statistical-mechanics-of-cellular-automata]
+sources: [statistical-mechanics-of-cellular-automata, theory-of-cellular-automata-a-survey]
 created: 2026-09-24
 updated: 2026-09-24
 ---
@@ -48,8 +48,15 @@ two-dimensional sum of the four orthogonal neighbours gives self-similar pyramid
 dimension log₂5 ≈ 2.32.[^9] The non-additive rule 18 ends up evolving like rule 90 on
 alternate cells.[^10]
 
+**Dynamics from the linear tests (own reasoning).** Rule 90 is linear over ℤ₂ with
+coefficient 1 at offsets −1 and +1 and 0 at offset 0. Kari's gcd criteria for linear rules
+([[additive-cellular-automaton](pages/additive-cellular-automaton.md)]) then make it
+surjective but not injective, transitive, and positively expansive: every two distinct
+configurations eventually separate ([[chaos-in-cellular-automata](pages/chaos-in-cellular-automata.md)]).[^11]
+
 ## Appearances in Sources
 
+- [[theory-of-cellular-automata-a-survey](pages/theory-of-cellular-automata-a-survey.md)] - the linear-CA criteria that decide its surjectivity and dynamics (applied as own reasoning)
 - [[statistical-mechanics-of-cellular-automata](pages/statistical-mechanics-of-cellular-automata.md)] — the running example: Pascal's triangle mod 2, exact density and cycle results, and the self-reproduction example
 
 ## Related Concepts
@@ -61,6 +68,7 @@ alternate cells.[^10]
 - [[self-organization](pages/self-organization.md)] — additive rules form their own statistical class
 - [[permutive-map](pages/permutive-map.md)] - XOR of the end cells, permutive at both ends
 - [[surjective-shift-endomorphism](pages/surjective-shift-endomorphism.md)] - onto on the infinite line
+- [[chaos-in-cellular-automata](pages/chaos-in-cellular-automata.md)] - transitive and positively expansive by the linear tests
 
 [^1]: [[statistical-mechanics-of-cellular-automata](pages/statistical-mechanics-of-cellular-automata.md)] pp.603-604 [synthesis] — Fig. 1 rule table; Eq. 2.1 s_{n+1}(m) = s_n(m−1) ⊕ s_n(m+1); rules 0, 90, 160, 250 are peripheral
 [^2]: [[statistical-mechanics-of-cellular-automata](pages/statistical-mechanics-of-cellular-automata.md)] p.603 [synthesis] — "As a first example consider the 'modulo-two' rule 90 (also used as the example for Fig. 1)"
@@ -72,3 +80,4 @@ alternate cells.[^10]
 [^8]: [[statistical-mechanics-of-cellular-automata](pages/statistical-mechanics-of-cellular-automata.md)] pp.604, 607 [synthesis] — rule 150 is s₋ ⊕ s ⊕ s₊; Fig. 6 dimension log₂2φ ≈ 1.69
 [^9]: [[statistical-mechanics-of-cellular-automata](pages/statistical-mechanics-of-cellular-automata.md)] pp.630, 637 [synthesis] — modulo-k rules generalize the modulo-two rule 90; 2D type-I case (a), the sum of four neighbours "in analogy with one-dimensional cellular automaton rule 90", fractal dimension log₂5 ≈ 2.32
 [^10]: [[statistical-mechanics-of-cellular-automata](pages/statistical-mechanics-of-cellular-automata.md)] p.614 [synthesis] — Grassberger (1982), cited via this paper: after kinks annihilate, alternate sites of rule 18 evolve according to rule 90
+[^11]: [[theory-of-cellular-automata-a-survey](pages/theory-of-cellular-automata-a-survey.md)] pp.28-29 [synthesis] - Corollary 4 (surjective iff gcd(m, c₁, …, cₙ) = 1; injective iff every prime factor of m divides all but exactly one coefficient) and Theorem 18 (transitivity and 1D positive expansivity gcd conditions), applied here to rule 90
