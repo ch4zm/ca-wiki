@@ -3,7 +3,7 @@ title: Cellular Automaton
 category: Concepts
 summary: A homogeneous lattice of identical finite-state cells, each updating in discrete time from its own state and its neighbours' states under one shared rule; introduced by von Neumann (after Ulam) as a medium for self-reproduction
 tags: [concept, cellular-automata, foundations, homogeneity, lattice]
-sources: [tsra-part2-ch1, tsra-part2-ch2, tsra-part2-ch3, machine-models-of-self-reproduction, endomorphisms-and-automorphisms-of-the-shift-dynamical-system]
+sources: [tsra-part2-ch1, tsra-part2-ch2, tsra-part2-ch3, machine-models-of-self-reproduction, endomorphisms-and-automorphisms-of-the-shift-dynamical-system, statistical-mechanics-of-cellular-automata]
 created: 2026-09-24
 updated: 2026-09-24
 ---
@@ -108,8 +108,30 @@ and a global theory of all rules at once. That theory covers which rules are ont
 invertible ([[automorphism-group-of-the-shift](pages/automorphism-group-of-the-shift.md)]),
 and how many predecessors a configuration has.[^23]
 
+**A physicist's view.** Wolfram describes cellular automata as idealized physical systems
+in which space, time and the physical quantities are all discrete. The lattice is regular
+and usually infinite. All cells update together ("synchronously") from their neighbourhoods
+at the previous step.[^24] He counts "cellular spaces" (von Neumann and Ulam's term),
+"tessellation automata", "homogeneous structures", "cellular structures", "tessellation
+structures" and "iterative arrays" as names for the same idea. He proposes cellular
+automata as models for spin systems, reaction-diffusion chemistry, crystal growth,
+turbulence, biological pattern formation, and parallel computers. Finite differences turn
+any differential equation into one, and nontrivial behaviour needs nonlinearity, such as
+"growth inhibition".[^25] The simplest case, a line of two-state cells with nearest
+neighbours, is the [[elementary-cellular-automaton](pages/elementary-cellular-automaton.md)].
+
+**Neighbourhoods in d dimensions.** A *type-I* neighbourhood has the cell plus its 2d
+orthogonal neighbours, which is von Neumann's five-cell neighbourhood when d = 2. A *type-II*
+neighbourhood has all 3ᵈ cells within one step, orthogonal or diagonal, which is the
+nine-cell Moore neighbourhood when d = 2. In one dimension the two coincide. Requiring
+quiescence and the lattice's rotation and reflection symmetries, there are 2¹¹ = 2048
+legal two-state type-I rules in 2D and 2⁵⁹ ≈ 6 × 10¹⁷ type-II rules.[^26] A rule is
+*totalistic* if it depends only on the sum of the neighbourhood values. The
+[[game-of-life](pages/game-of-life.md)] is a type-II totalistic rule.[^27]
+
 ## Appearances in Sources
 
+- [[statistical-mechanics-of-cellular-automata](pages/statistical-mechanics-of-cellular-automata.md)] — the physicist's view, alternative names, applications, type-I/type-II neighbourhoods, rule counts
 - [[machine-models-of-self-reproduction](pages/machine-models-of-self-reproduction.md)] — the tessellation structure, the nine-cell neighbourhood, finite speed
 - [[tsra-part2-ch3](pages/tsra-part2-ch3.md)] — serial operation and wire-crossing in 2D
 - [[tsra-part2-ch2](pages/tsra-part2-ch2.md)] — the neighbourhood and the size of the rule space
@@ -118,6 +140,9 @@ and how many predecessors a configuration has.[^23]
 
 ## Related Concepts
 
+- [[elementary-cellular-automaton](pages/elementary-cellular-automaton.md)] — the simplest one-dimensional family
+- [[game-of-life](pages/game-of-life.md)] — the best-known two-dimensional rule
+- [[irreversibility-and-entropy](pages/irreversibility-and-entropy.md)] — the ensemble, statistical-mechanics view
 - [[garden-of-eden](pages/garden-of-eden.md)] — configurations with no predecessor
 - [[garden-of-eden-theorem](pages/garden-of-eden-theorem.md)] — Garden-of-Eden patterns exist exactly when erasure does
 - [[erasable-configuration](pages/erasable-configuration.md)] — local information loss, which forces Garden-of-Eden patterns
@@ -159,3 +184,7 @@ and how many predecessors a configuration has.[^23]
 [^21]: [[tsra-part2-ch3](pages/tsra-part2-ch3.md)] pp.190-191 [synthesis] — in 2D, communication channels must sometimes intersect; solved by the coded channel
 [^22]: [[endomorphisms-and-automorphisms-of-the-shift-dynamical-system](pages/endomorphisms-and-automorphisms-of-the-shift-dynamical-system.md)] pp.323-325 [synthesis] — block maps f∞ with [f∞(x)]_i = f(x_i ⋯ x_(i+n−1)); Thm 3.1 (continuous, commute with σ); Thm 3.4 (Curtis, Hedlund, Lyndon): every continuous shift-commuting map is σ^m f∞
 [^23]: [[endomorphisms-and-automorphisms-of-the-shift-dynamical-system](pages/endomorphisms-and-automorphisms-of-the-shift-dynamical-system.md)] pp.321, 326-334, 351 [synthesis] — the paper's program: onto maps E(S), automorphisms A(S), multiplicities of preimages
+[^24]: [[statistical-mechanics-of-cellular-automata](pages/statistical-mechanics-of-cellular-automata.md)] p.602 [synthesis] — "mathematical idealizations of physical systems in which space and time are discrete, and physical quantities take on a finite set of discrete values"; regular uniform lattice, usually infinite; variables "updated simultaneously ('synchronously')" from neighbourhood values at the preceding step
+[^25]: [[statistical-mechanics-of-cellular-automata](pages/statistical-mechanics-of-cellular-automata.md)] pp.602-603 [synthesis] — introduced by von Neumann and Ulam as "cellular spaces"; also called tessellation automata, homogeneous structures, cellular structures, tessellation structures, iterative arrays; any system of differential equations may be approximated by finite differences and discrete variables; nontrivial cellular automata arise with nonlinearity such as "growth inhibition"; applications to Ising-type spin systems, chemical reaction-diffusion, dendritic crystal growth, turbulence, biology, parallel computation
+[^26]: [[statistical-mechanics-of-cellular-automata](pages/statistical-mechanics-of-cellular-automata.md)] p.637 and n.14 [synthesis] — type-I neighbourhood of 2d+1 sites, type-II of 3ᵈ sites; identical when d = 1; for d = 2 "known as von Neumann and Moore neighborhoods"; legality includes rotation and reflection invariance; 2¹¹ = 2048 type-I rules for k = 2; 2⁵⁹ ≈ 6 × 10¹⁷ type-II rules
+[^27]: [[statistical-mechanics-of-cellular-automata](pages/statistical-mechanics-of-cellular-automata.md)] p.637 [synthesis] — "totalistic" cellular automata depend only on the sum of neighbourhood values; Life is a type-II example

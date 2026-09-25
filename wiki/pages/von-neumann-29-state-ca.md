@@ -99,6 +99,7 @@ are assembled into an unbounded [[cellular-tape](pages/cellular-tape.md)] with i
 
 ## Related Concepts
 
+- [[game-of-life](pages/game-of-life.md)] — a later universal rule with 2 states and the eight-cell Moore neighbourhood
 - [[initially-quiescent-automaton](pages/initially-quiescent-automaton.md)] — patterns of its 10 quiescent states
 - [[crossing-organ](pages/crossing-organ.md)] — a wire crossing synthesized in the rule
 - [[cellular-tape](pages/cellular-tape.md)] — unbounded memory in the rule

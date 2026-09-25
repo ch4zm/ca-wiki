@@ -3,7 +3,7 @@ title: Universal Turing Machine
 category: Concepts
 summary: Turing's finite automaton with an unbounded tape that can simulate any other Turing machine — the logical model von Neumann generalized from computation to construction
 tags: [concept, turing, universality, computation]
-sources: [tsra-editors-introduction, tsra-lecture-2, tsra-part2-ch4, tsra-part2-ch5]
+sources: [tsra-editors-introduction, tsra-lecture-2, tsra-part2-ch4, tsra-part2-ch5, statistical-mechanics-of-cellular-automata]
 created: 2026-09-24
 updated: 2026-09-24
 ---
@@ -49,8 +49,26 @@ structure" and "The Universal Constructor".[^7]
 extendible wire loop) behaves exactly like finite control plus tape. The head moves ±1
 cell per step, because a finite control cannot store an unbounded address.[^8] Burks completes the construction in Ch. 5. Any finite automaton is built as one state organ per state, joined by a coded channel. Adding the tape gives an [[initially-quiescent-automaton](pages/initially-quiescent-automaton.md)] that performs a universal Turing machine's computations, so the rule is logically universal. The embedded machine gets the same results, only much more slowly.[^9] The universal constructor has the same shape, a finite automaton plus a tape unit. Its output is a construction rather than a computation.[^10]
 
+**Universality in other cellular automata.** Wolfram treats any cellular automaton as a
+computer. The initial configuration is the program and data, and the evolution is the
+computation. Unlike a Turing machine's single head, every cell is updated at every
+step.[^11] He lists the known universal cases as of 1983. The simplest universal Turing
+machine then known had 7 states and 4 symbols. Smith (1971) showed that an 18-state
+one-dimensional cellular automaton with three-cell neighbourhoods can simulate it.
+Otherwise universality is shown by building "wires", NAND gates and memories out of
+cellular structures. The [[game-of-life](pages/game-of-life.md)] does this with glider
+streams. Banks (1971) gave a 3-state type-I (five-cell) 2D universal rule, and Toffoli
+(1977) a 2-state one that needs an infinite nonzero background. There were early signs of
+a 5-state one-dimensional universal rule (all cited via Wolfram and not read).[^12]
+Wolfram judged the elementary two-state rules too simple to be universal.[^13] He adds an
+idea that goes beyond computation. A universal cellular automaton can simulate any other
+cellular automaton through an encoding, and if the encoding is simple, the simulated rule
+should inherit the simulator's *statistical* behaviour
+([[self-organization](pages/self-organization.md)]).[^14]
+
 ## Appearances in Sources
 
+- [[statistical-mechanics-of-cellular-automata](pages/statistical-mechanics-of-cellular-automata.md)] — universality across cellular automata: Smith's 18-state 1D rule, Life, Banks, and simulation by encoding
 - [[tsra-part2-ch5](pages/tsra-part2-ch5.md)] — an initially quiescent universal Turing machine in the 29-state CA
 - [[tsra-part2-ch4](pages/tsra-part2-ch4.md)] — a Turing machine realized in the 29-state CA
 - [[tsra-editors-introduction](pages/tsra-editors-introduction.md)] — definition of the universal machine, and its role in the logic of automata
@@ -58,6 +76,8 @@ cell per step, because a finite control cannot store an unbounded address.[^8] B
 
 ## Related Concepts
 
+- [[game-of-life](pages/game-of-life.md)] — universal through glider-stream circuits
+- [[elementary-cellular-automaton](pages/elementary-cellular-automaton.md)] — judged in 1983 too simple for universality
 - [[cellular-tape](pages/cellular-tape.md)] — the cellular realization of the tape
 - [[descriptions-vs-originals](pages/descriptions-vs-originals.md)] — the halting problem and Richard's paradox motivate passive self-description
 - [[universal-constructor](pages/universal-constructor.md)] — the construction analogue: builds any automaton from its description
@@ -77,3 +97,7 @@ cell per step, because a finite control cannot store an unbounded address.[^8] B
 [^8]: [[tsra-part2-ch4](pages/tsra-part2-ch4.md)] pp.204-206 [synthesis] — relative addressing by ±1 steps following Turing; the constructing unit specified as a finite automaton with next-state, write, and move functions operating the tape
 [^9]: [[tsra-part2-ch5](pages/tsra-part2-ch5.md)] pp.267-270 [synthesis] — FA embedded as state organs interconnected by a coded channel; an initially quiescent universal Turing machine can be embedded, so the structure is logically universal; embedded devices operate slowly relative to the cellular time frame
 [^10]: [[tsra-part2-ch5](pages/tsra-part2-ch5.md)] pp.285-286 [synthesis] — both M_u and M_c are a finite automaton plus MC + L; the output of M_u is a computation, of M_c a construction
+[^11]: [[statistical-mechanics-of-cellular-automata](pages/statistical-mechanics-of-cellular-automata.md)] p.629 [synthesis] — the initial configuration represents a "program" and "initial data", processed by evolution into the "output"; analogous to a Turing machine's tape, but "instead of considering a single 'head' ... the cellular automaton evolution simultaneously affects all sites at each time step"
+[^12]: [[statistical-mechanics-of-cellular-automata](pages/statistical-mechanics-of-cellular-automata.md)] p.639 [synthesis] — simplest universal Turing machine has seven internal states and four symbols; Smith (1971): an eighteen-state one-dimensional three-site-neighbourhood cellular automaton simulates it; wires, NAND gates and memories; Life via glider streams; Banks (1971) three-state type-I 2D; two states with an infinite background (Toffoli 1977a); "preliminary indications" of a five-state 1D universal rule
+[^13]: [[statistical-mechanics-of-cellular-automata](pages/statistical-mechanics-of-cellular-automata.md)] p.630 — "the elementary cellular automata considered here and in Secs. II and III are not of sufficient complexity to be capable of universal computation."
+[^14]: [[statistical-mechanics-of-cellular-automata](pages/statistical-mechanics-of-cellular-automata.md)] pp.629-630 [synthesis] — universal cellular automata may simulate any other cellular automaton; the interpreter is an encoding of configurations; "so long as the encoding defined by the interpreter is sufficiently simple, the statistical characteristics of the evolution of configurations in the universal cellular automaton will be shared by the cellular automaton being simulated"

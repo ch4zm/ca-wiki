@@ -3,7 +3,7 @@ title: Self-Reproduction (automata)
 category: Concepts
 summary: The problem of what logical organization lets an automaton construct a copy of itself — von Neumann's founding question for cellular automata
 tags: [concept, self-reproduction, von-neumann, construction]
-sources: [tsra-editors-introduction, tsra-lecture-5, tsra-part2-ch1, tsra-part2-ch2, tsra-part2-ch5, machine-models-of-self-reproduction]
+sources: [tsra-editors-introduction, tsra-lecture-5, tsra-part2-ch1, tsra-part2-ch2, tsra-part2-ch5, machine-models-of-self-reproduction, statistical-mechanics-of-cellular-automata]
 created: 2026-09-24
 updated: 2026-09-24
 ---
@@ -84,8 +84,20 @@ an [[erasable-configuration](pages/erasable-configuration.md)] such patterns exi
 self-reproducer can contain every given configuration.[^17] Whether self-reproduction is
 possible without erasable configurations is one of Moore's open problems.[^18]
 
+**Trivial replication by superposition.** Wolfram gives a "very simple form of
+self-reproduction" in the additive [[rule-90](pages/rule-90.md)]. After 2^j steps a single
+cell becomes exactly two cells, so by superposition *any* finite pattern becomes two exact
+copies of itself. There are four copies 2^(j−1) steps later. Then the inner pair collide
+and annihilate. Wolfram argues that exact copies cannot multiply exponentially in any d
+dimensions. A pattern grows at most like (2τ)ᵈ, which is too slow to hold exponentially
+many copies. Exponential self-reproduction therefore needs copies that are not exactly
+identical and that vary, for example by drifting under noise or carrying a counter.[^19]
+The mechanism uses no description and no constructor. By the inheritable-mutation
+criterion above, it counts as a trivial case.[^12]
+
 ## Appearances in Sources
 
+- [[statistical-mechanics-of-cellular-automata](pages/statistical-mechanics-of-cellular-automata.md)] — trivial self-reproduction of any pattern by superposition in rule 90, and the overcrowding limit
 - [[machine-models-of-self-reproduction](pages/machine-models-of-self-reproduction.md)] — formal definition, trivial cases, the quadratic bound, Garden-of-Eden limits, kinematic models
 - [[tsra-part2-ch5](pages/tsra-part2-ch5.md)] — the self-reproducing automaton completed in the 29-state rule
 - [[tsra-part2-ch2](pages/tsra-part2-ch2.md)] — the rule in which the cellular model is built
@@ -95,6 +107,7 @@ possible without erasable configurations is one of Moore's open problems.[^18]
 
 ## Related Concepts
 
+- [[rule-90](pages/rule-90.md)] — self-reproduction without a description, by superposition
 - [[initially-quiescent-automaton](pages/initially-quiescent-automaton.md)] — the form every offspring is built in
 - [[garden-of-eden](pages/garden-of-eden.md)] — patterns no self-reproducer can contain
 - [[garden-of-eden-theorem](pages/garden-of-eden-theorem.md)] — when such patterns exist
@@ -128,3 +141,4 @@ possible without erasable configurations is one of Moore's open problems.[^18]
 [^16]: [[machine-models-of-self-reproduction](pages/machine-models-of-self-reproduction.md)] p.23 [synthesis] - Theorem 1, f(T) < kT²; finite velocity of propagation of the non-quiescent region; kT^N for N dimensions
 [^17]: [[machine-models-of-self-reproduction](pages/machine-models-of-self-reproduction.md)] pp.23-24, 26 [synthesis] - a self-reproducing configuration containing a copy of any given configuration is impossible by Theorem 2; no self-reproducing configuration can contain a Garden-of-Eden configuration
 [^18]: [[machine-models-of-self-reproduction](pages/machine-models-of-self-reproduction.md)] p.30 - "Can a tessellation structure have a self-reproducing configuration without having an erasable configuration ?"
+[^19]: [[statistical-mechanics-of-cellular-automata](pages/statistical-mechanics-of-cellular-automata.md)] p.639 [synthesis] — "a very simple form of self-reproduction with the elementary modulo-two rule" (Fig. 33); two exact copies of any initial sequence after τ = 2^j, four after a further 2^(j−1), the inner pair annihilate; "Purely geometrical 'overcrowding' thus prevents exponential multiplication"; pattern size grows at most as (2τ)ᵈ, slower than required; exponential self-reproduction only if copies "exhibit variability", e.g. a random walk in response to noise or a "counter"

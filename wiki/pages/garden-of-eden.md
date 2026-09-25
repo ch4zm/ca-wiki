@@ -3,7 +3,7 @@ title: Garden-of-Eden Configuration
 category: Concepts
 summary: A cellular-automaton configuration with no predecessor, which can occur only at time zero; they exist exactly when erasable configurations do (Moore 1962, Myhill 1963)
 tags: [concept, garden-of-eden, moore, myhill, surjectivity]
-sources: [machine-models-of-self-reproduction, tsra-part2-ch5, converse-of-moores-garden-of-eden-theorem, endomorphisms-and-automorphisms-of-the-shift-dynamical-system]
+sources: [machine-models-of-self-reproduction, tsra-part2-ch5, converse-of-moores-garden-of-eden-theorem, endomorphisms-and-automorphisms-of-the-shift-dynamical-system, statistical-mechanics-of-cellular-automata]
 created: 2026-09-24
 updated: 2026-09-24
 ---
@@ -87,8 +87,20 @@ translate directly:
   S^(n−1) predecessor patterns (Thm 5.4). See
   [[surjective-shift-endomorphism](pages/surjective-shift-endomorphism.md)].[^16]
 
+**How common they are.** Wolfram links Garden-of-Eden configurations to irreversibility.
+When a rule sends several configurations to the same one, some configurations have no
+predecessor at all. He cites Moore (1962) and Aggarwal (1973) as giving criteria for their
+existence, which he calls "equivalent to irreversibility".[^17] In one dimension they are
+the typical case. On a ring of N cells, the non-additive rule 126 leaves a fraction of
+configurations unreachable that tends to 1 as N grows (about 1 − 0.88ᴺ). The additive
+[[rule-90](pages/rule-90.md)] leaves exactly half or three quarters unreachable, and only
+the identity rule 204 reaches everything.[^18] In the [[game-of-life](pages/game-of-life.md)],
+the smallest known example in 1983 had about 300 cells.[^19] See
+[[irreversibility-and-entropy](pages/irreversibility-and-entropy.md)].
+
 ## Appearances in Sources
 
+- [[statistical-mechanics-of-cellular-automata](pages/statistical-mechanics-of-cellular-automata.md)] - Garden-of-Eden configurations as a consequence of irreversibility, and how common they are in 1D rules and Life
 - [[machine-models-of-self-reproduction](pages/machine-models-of-self-reproduction.md)] - the definition, the name, Theorem 2 and its proof, the six assumptions
 - [[converse-of-moores-garden-of-eden-theorem](pages/converse-of-moores-garden-of-eden-theorem.md)] - the converse: Garden-of-Eden configurations require indistinguishable pairs
 - [[tsra-part2-ch5](pages/tsra-part2-ch5.md)] - footnote 12 to §5.3.1, relating non-constructibility to Moore and Myhill
@@ -96,6 +108,7 @@ translate directly:
 
 ## Related Concepts
 
+- [[irreversibility-and-entropy](pages/irreversibility-and-entropy.md)] - the many-to-one evolution that produces them
 - [[garden-of-eden-theorem](pages/garden-of-eden-theorem.md)] - the if-and-only-if result
 - [[erasable-configuration](pages/erasable-configuration.md)] - the condition equivalent to Garden-of-Eden configurations existing
 - [[moore-neighbourhood](pages/moore-neighbourhood.md)] - the radius-1 neighbourhood behind the boundary-layer count
@@ -122,3 +135,6 @@ translate directly:
 [^14]: [[endomorphisms-and-automorphisms-of-the-shift-dynamical-system](pages/endomorphisms-and-automorphisms-of-the-shift-dynamical-system.md)] pp.330-331 [synthesis] — Lemma 5.11: blocks P ≠ P* and an (n − 1)-block A with f(APA) = f(AP*A); Thm 5.12: if f∞ is not onto, some periodic x has uncountable preimage
 [^15]: [[endomorphisms-and-automorphisms-of-the-shift-dynamical-system](pages/endomorphisms-and-automorphisms-of-the-shift-dynamical-system.md)] pp.331-332 [synthesis] — Thm 5.14: A(S) = H(S); a one-to-one endomorphism is onto
 [^16]: [[endomorphisms-and-automorphisms-of-the-shift-dynamical-system](pages/endomorphisms-and-automorphisms-of-the-shift-dynamical-system.md)] pp.327-328 [synthesis] — Thm 5.4: f∞ onto iff card f_m⁻¹(B) = S^(n−1) for every m-block B
+[^17]: [[statistical-mechanics-of-cellular-automata](pages/statistical-mechanics-of-cellular-automata.md)] p.623 n.10 — "The existence of unreachable or 'garden-of-Eden' configurations in cellular automata is discussed in Moore (1962) and Aggarwal (1973), where criteria (equivalent to irreversibility) for their occurrence are given."
+[^18]: [[statistical-mechanics-of-cellular-automata](pages/statistical-mechanics-of-cellular-automata.md)] p.623 [synthesis] — rule 204 is unique in allowing all configurations to be reached; rule 90 reaches half (N odd) or ¼ (N even); rule 126 unreachable fraction tends to one, behaving as 1 − λᴺ with λ ≈ 0.88 (Martin et al. 1983, cited via this paper)
+[^19]: [[statistical-mechanics-of-cellular-automata](pages/statistical-mechanics-of-cellular-automata.md)] p.637 — "the simplest known 'unreachable' configuration contains around 300 sites"

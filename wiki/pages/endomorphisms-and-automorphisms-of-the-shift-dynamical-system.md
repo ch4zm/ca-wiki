@@ -138,8 +138,8 @@ None of this section is in the paper.
   finitely-different configurations collide" in one dimension. Lemma 5.11 turns into a
   collision by placing APA and AP*A in the same surroundings. That is the one-dimensional
   shape of the Moore–Myhill relationship as the wiki's Garden-of-Eden page describes it.
-  Moore and Myhill have not been read yet, so which paper proves which direction is still
-  unchecked.
+  Moore's theorem gives "collide ⇒ Garden of Eden" and Myhill's converse the other
+  direction ([[garden-of-eden-theorem](pages/garden-of-eden-theorem.md)]).
 - Theorem 5.14 (injective ⇒ surjective) is the 1D statement that a cellular automaton
   whose global map loses no information has no Garden-of-Eden patterns.
 - The [[cellular-automaton](pages/cellular-automaton.md)] page records that von Neumann

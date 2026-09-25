@@ -62,6 +62,7 @@ also have much in common with thermodynamics.[^11]
 
 ## Related Concepts
 
+- [[irreversibility-and-entropy](pages/irreversibility-and-entropy.md)] — entropy and irreversibility measured in actual cellular automata (Wolfram)
 - [[self-reproduction](pages/self-reproduction.md)] — one of the two central problems
 - [[complexity-threshold](pages/complexity-threshold.md)] — the complexity claim at the theory's core
 - [[mcculloch-pitts-neuron](pages/mcculloch-pitts-neuron.md)] — the idealized element used to specify automata
