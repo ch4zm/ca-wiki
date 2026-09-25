@@ -217,6 +217,7 @@ neighbourhoods can simulate it.[^34][^35]
 - [[broadcasting-automaton](pages/broadcasting-automaton.md)] - state-dependent transmission radii
 - [[sequence-generation-by-cellular-automata](pages/sequence-generation-by-cellular-automata.md)] - programming with signals
 - [[one-bit-communication-cellular-automaton](pages/one-bit-communication-cellular-automaton.md)] - a bandwidth-restricted subclass
+- [[phyllosilicate-automaton](pages/phyllosilicate-automaton.md)] - a network with two node types, each with its own rule
 
 [^1]: [[tsra-part2-ch1](pages/tsra-part2-ch1.md)] pp.94, 103, 106 [synthesis] — each cell contains the same finite automaton; functional homogeneity means every cell is connected to its neighbours in the same way and obeys the same rules
 [^2]: [[tsra-part2-ch1](pages/tsra-part2-ch1.md)] pp.102-103, 109 [synthesis] — avoidance of geometry and kinematics; stationarity with quiescent vs. active states; discrete medium; growth as the transformation of unexcitable cells into excitable ones; the "structure of the vacuum"

@@ -50,6 +50,7 @@ makes the BBM the bridge between reversible logic elements and
 - [[reversible-turing-machine](pages/reversible-turing-machine.md)] - realizable as a whole in the BBM
 - [[margolus-neighbourhood](pages/margolus-neighbourhood.md)] - a reversible CA that simulates billiard balls
 - [[reversible-cellular-automaton](pages/reversible-cellular-automaton.md)] - reversible dynamics on a lattice
+- [[phyllosilicate-automaton](pages/phyllosilicate-automaton.md)] - proposed for collision-based computing with gliders, though most of its collisions explode
 
 [^1]: [[aucm-ch6-reversible-turing-machines-by-rlem](pages/aucm-ch6-reversible-turing-machines-by-rlem.md)] p.130 — "we use the billiard ball model (BBM) proposed by Fredkin and Toffoli [5] as a reversible physical model. It is an idealized model of Newtonian mechanics consisting of balls and reflectors. Computation can be carried out by balls that collide with other balls or reflectors, and hence it is a kind of collision-based computing (see [1]). It is assumed that collisions are elastic, and there is no friction."
 [^2]: [[aucm-ch6-reversible-turing-machines-by-rlem](pages/aucm-ch6-reversible-turing-machines-by-rlem.md)] p.130 (Fig. 6.3) — "Figure 6.3 shows a realization of an interaction gate, which is a 2-input 4-output reversible logic gate, in BBM [5]."
