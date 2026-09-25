@@ -3,7 +3,7 @@ title: Cellular Automaton
 category: Concepts
 summary: A homogeneous lattice of identical finite-state cells, each updating in discrete time from its own state and its neighbours' states under one shared rule; introduced by von Neumann (after Ulam) as a medium for self-reproduction
 tags: [concept, cellular-automata, foundations, homogeneity, lattice]
-sources: [tsra-part2-ch1, tsra-part2-ch2, tsra-part2-ch3]
+sources: [tsra-part2-ch1, tsra-part2-ch2, tsra-part2-ch3, endomorphisms-and-automorphisms-of-the-shift-dynamical-system]
 created: 2026-09-24
 updated: 2026-09-24
 ---
@@ -76,15 +76,34 @@ like a serial computer, with most of its organs dormant at any moment.[^13] Two
 dimensions also force a problem that three do not: signal lines must sometimes cross,
 which von Neumann solves by coding ([[coded-channel](pages/coded-channel.md)]).[^14]
 
+**The topological view in one dimension.** Hedlund (1969) never uses the words
+"cellular automaton". Read as a 1D CA (own reasoning), a configuration is a point of the
+[[shift-dynamical-system](pages/shift-dynamical-system.md)] X(S): an infinite row of
+cells with no finiteness condition. Translating by one cell is the shift σ, and a rule of
+radius r is a block map on windows of 2r + 1 cells. The
+[[curtis-hedlund-lyndon-theorem](pages/curtis-hedlund-lyndon-theorem.md)] says the
+continuous, shift-commuting maps of X(S) are exactly these block maps composed with
+shifts.[^15] This gives a definition of the global map with no mention of neighbourhoods,
+and a global theory of all rules at once. That theory covers which rules are onto
+([[surjective-shift-endomorphism](pages/surjective-shift-endomorphism.md)]), which are
+invertible ([[automorphism-group-of-the-shift](pages/automorphism-group-of-the-shift.md)]),
+and how many predecessors a configuration has.[^16]
+
 ## Appearances in Sources
 
 - [[tsra-part2-ch3](pages/tsra-part2-ch3.md)] — serial operation and wire-crossing in 2D
 - [[tsra-part2-ch2](pages/tsra-part2-ch2.md)] — the neighbourhood and the size of the rule space
 - [[tsra-part2-ch1](pages/tsra-part2-ch1.md)] — the derivation of the cellular model and its general properties
+- [[endomorphisms-and-automorphisms-of-the-shift-dynamical-system](pages/endomorphisms-and-automorphisms-of-the-shift-dynamical-system.md)] — 1D global maps as continuous shift-commuting maps (the CA reading is own reasoning)
 
 ## Related Concepts
 
 - [[garden-of-eden](pages/garden-of-eden.md)] — configurations with no predecessor
+- [[curtis-hedlund-lyndon-theorem](pages/curtis-hedlund-lyndon-theorem.md)] — 1D global maps = continuous shift-commuting maps
+- [[shift-dynamical-system](pages/shift-dynamical-system.md)] — the configuration space of a 1D automaton
+- [[surjective-shift-endomorphism](pages/surjective-shift-endomorphism.md)] — 1D rules whose global map is onto
+- [[automorphism-group-of-the-shift](pages/automorphism-group-of-the-shift.md)] — invertible 1D rules
+- [[permutive-map](pages/permutive-map.md)] — a class of 1D rules that are always onto
 - [[coded-channel](pages/coded-channel.md)] — the 2D wire-crossing problem and its solution
 - [[von-neumann-29-state-ca](pages/von-neumann-29-state-ca.md)] — the first concrete rule
 - [[construction-arm](pages/construction-arm.md)] — how construction works without moving parts
@@ -108,3 +127,5 @@ which von Neumann solves by coding ([[coded-channel](pages/coded-channel.md)]).[
 [^12]: [[tsra-part2-ch1](pages/tsra-part2-ch1.md)] pp.129-130 [synthesis] — in the crystal, moving a structure is about as complex as reproducing it; structures are tied to location and conflicts are conflicts in location
 [^13]: [[tsra-part2-ch3](pages/tsra-part2-ch3.md)] pp.157-158 [synthesis] — editor: the cellular structure allows an indefinite amount of parallelism, but the self-reproducing automaton works like a serial digital computer with most organs normally quiescent
 [^14]: [[tsra-part2-ch3](pages/tsra-part2-ch3.md)] pp.190-191 [synthesis] — in 2D, communication channels must sometimes intersect; solved by the coded channel
+[^15]: [[endomorphisms-and-automorphisms-of-the-shift-dynamical-system](pages/endomorphisms-and-automorphisms-of-the-shift-dynamical-system.md)] pp.323-325 [synthesis] — block maps f∞ with [f∞(x)]_i = f(x_i ⋯ x_(i+n−1)); Thm 3.1 (continuous, commute with σ); Thm 3.4 (Curtis, Hedlund, Lyndon): every continuous shift-commuting map is σ^m f∞
+[^16]: [[endomorphisms-and-automorphisms-of-the-shift-dynamical-system](pages/endomorphisms-and-automorphisms-of-the-shift-dynamical-system.md)] pp.321, 326-334, 351 [synthesis] — the paper's program: onto maps E(S), automorphisms A(S), multiplicities of preimages
