@@ -158,12 +158,15 @@ None of this section is in the paper.
 
 ## Relation to Other Wiki Pages
 
-This is the wiki's first source outside the von Neumann–Burks line. The earlier sources
-build one particular two-dimensional rule for self-reproduction. This paper asks global
-questions about *every* rule in one dimension: which rules are onto, which are
-invertible, how many predecessors a configuration has. It supplies the one-dimensional
-theory behind [[garden-of-eden](pages/garden-of-eden.md)] ahead of the Moore and Myhill
-ingests. It also adds a topological definition of the global map to
+Von Neumann's program builds one particular two-dimensional rule for self-reproduction.
+This paper asks global questions about *every* rule in one dimension: which rules are
+onto, which are invertible, how many predecessors a configuration has. It supplies the
+one-dimensional theory behind [[garden-of-eden](pages/garden-of-eden.md)], whose general
+form is Moore's theorem
+([[machine-models-of-self-reproduction](pages/machine-models-of-self-reproduction.md)]) and
+Myhill's converse
+([[converse-of-moores-garden-of-eden-theorem](pages/converse-of-moores-garden-of-eden-theorem.md)]).
+It also adds a topological definition of the global map to
 [[cellular-automaton](pages/cellular-automaton.md)]. Its notation is mapped in
 [[notation-map](pages/notation-map.md)].
 

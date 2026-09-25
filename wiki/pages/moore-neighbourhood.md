@@ -33,7 +33,7 @@ region can grow by at most one cell per step in each direction. This gives Moore
 quadratic bound on the number of offspring of a self-reproducing configuration
 ([[self-reproduction](pages/self-reproduction.md)]) and confines incoming information to a
 thin boundary layer in the proof of the
-[[garden-of-eden](pages/garden-of-eden.md)] theorem.[^5]
+[[garden-of-eden](pages/garden-of-eden.md)] theorem ([[garden-of-eden-theorem](pages/garden-of-eden-theorem.md)]).[^5]
 
 ## Appearances in Sources
 

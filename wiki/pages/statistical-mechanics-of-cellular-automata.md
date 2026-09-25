@@ -15,9 +15,10 @@ updated: 2026-09-24
 **Type:** paper
 
 > Locators are the journal's printed page numbers (PDF page n = printed page 600 + n).
-> Works Wolfram cites (Grassberger 1982, Martin, Odlyzko and Wolfram 1983, Moore 1962,
-> Farmer 1982, Smith 1971, Banks 1971, and others) are cited via this paper and have not
-> been read.
+> Works Wolfram cites (Grassberger 1982, Martin, Odlyzko and Wolfram 1983, Farmer 1982,
+> Smith 1971, Banks 1971, and others) are cited via this paper and have not been read.
+> Moore 1962, which he also cites, is
+> [[machine-models-of-self-reproduction](pages/machine-models-of-self-reproduction.md)].
 
 ## Summary
 
@@ -106,6 +107,7 @@ exist.[^9]
 - [[self-organization](pages/self-organization.md)] — order and universal statistics from random starts
 - [[irreversibility-and-entropy](pages/irreversibility-and-entropy.md)] — the global, ensemble view
 - [[garden-of-eden](pages/garden-of-eden.md)] — unreachable configurations
+- [[erasable-configuration](pages/erasable-configuration.md)] - Moore's local form of irreversibility
 - [[game-of-life](pages/game-of-life.md)] — the 2D example in Sec. V
 - [[cellular-automaton](pages/cellular-automaton.md)] — the general notion, and neighbourhood types
 - [[universal-turing-machine](pages/universal-turing-machine.md)] — universality in cellular automata
@@ -113,7 +115,7 @@ exist.[^9]
 
 ## Relation to Other Wiki Pages
 
-This is the wiki's first source from outside von Neumann's program. Von Neumann
+Von Neumann
 ([[theory-of-self-reproducing-automata](pages/theory-of-self-reproducing-automata.md)])
 designed one enormous 29-state rule to carry out a construction. Wolfram does the reverse.
 He surveys every rule in the smallest possible family and asks what they do *statistically*.

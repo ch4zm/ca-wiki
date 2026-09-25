@@ -110,6 +110,8 @@ are assembled into an unbounded [[cellular-tape](pages/cellular-tape.md)] with i
 - [[universal-constructor](pages/universal-constructor.md)] — designed in this rule
 - [[mcculloch-pitts-neuron](pages/mcculloch-pitts-neuron.md)] — transmission and confluent cells realize neuron-like logic
 - [[self-reproduction](pages/self-reproduction.md)] — the goal the rule was built for
+- [[machine-models-of-self-reproduction](pages/machine-models-of-self-reproduction.md)] - the five-cell rule as a special case of Moore's nine-cell scheme
+- [[edward-f-moore](pages/edward-f-moore.md)] - author of the nine-cell tessellation scheme
 
 [^1]: [[tsra-part2-ch2](pages/tsra-part2-ch2.md)] pp.132-134, 151-152 [synthesis] — quadratic lattice; next state depends on the cell and its four nearest neighbours at t−1; editor: finite initial cell assignment, all other cells unexcitable
 [^2]: [[tsra-part2-ch2](pages/tsra-part2-ch2.md)] pp.148-149 [synthesis] — rigorous list of states: 16 transmission, 4 confluent, 1 unexcitable, 8 sensitized; N = 29

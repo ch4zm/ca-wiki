@@ -53,7 +53,7 @@ definition.[^11]
 
 **Where the threshold lies.** Measured even crudely by number of elementary parts, von
 Neumann guessed the critical size is large, perhaps in the millions of parts for his
-kinematic part set. Above it, synthesis "can become explosive": each automaton can
+kinematic part set ([[kinematic-self-reproduction](pages/kinematic-self-reproduction.md)]). Above it, synthesis "can become explosive": each automaton can
 produce others more complex than itself. He called this the decisive property of
 complexity. He also held that complication cannot be properly defined until critical
 examples like this are worked out, much as energy and entropy were abstracted from
@@ -78,6 +78,7 @@ threshold.
 - [[universal-turing-machine](pages/universal-turing-machine.md)] — universality also needs a minimum complexity
 - [[maxwells-demon](pages/maxwells-demon.md)] — the entropy–information link behind the degeneration analogy
 - [[self-repair](pages/self-repair.md)] — how highly complex automata survive the errors complexity brings
+- [[machine-models-of-self-reproduction](pages/machine-models-of-self-reproduction.md)] - Moore's open problem on the simplest structure with non-trivial self-reproduction
 - [[probabilistic-logic](pages/probabilistic-logic.md)] — complexity also raises the odds of lethal failure
 
 [^1]: [[tsra-lecture-4](pages/tsra-lecture-4.md)] pp.65-66 — "an n-fold increase in size brings much more than an n-fold increase in what can be done. What can be done is a matter of the interrelationships between the components, and the number of interrelationships increases with the square of the number of components. And apart from this, what can be done depends on certain minima. Below a certain minimum level of complexity you cannot do a certain thing, but above this minimum level of complexity you can do it."

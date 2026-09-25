@@ -66,6 +66,7 @@ region inside them from outside noise.[^13]
 - [[maxwells-demon](pages/maxwells-demon.md)] — the entropy–information link behind the thermodynamic view of logic
 - [[mcculloch-pitts-neuron](pages/mcculloch-pitts-neuron.md)] — the rigorous, all-or-none elements that probabilistic logic generalizes
 - [[self-repair](pages/self-repair.md)] — how natural automata tolerate error in practice
+- [[irreversibility-and-entropy](pages/irreversibility-and-entropy.md)] - noisy rule 126 on a ring
 
 [^1]: [[tsra-editors-introduction](pages/tsra-editors-introduction.md)] p.19 — "How can reliable systems be constructed from unreliable components?"
 [^2]: [[tsra-lecture-3](pages/tsra-lecture-3.md)] p.57 — "in no practical way can we imagine an automaton which is really reliable. If you axiomatize an automaton by telling exactly what it will do in every completely defined situation you are missing an important part of the problem."

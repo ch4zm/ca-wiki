@@ -100,7 +100,8 @@ For a 1D [[cellular-automaton](pages/cellular-automaton.md)], "onto" means every
 configuration has a predecessor. Thm 5.1 then says a non-surjective 1D rule always has a
 *finite* orphan pattern, the 1D [[garden-of-eden](pages/garden-of-eden.md)]. Cor 9.4,
 read with Lemma 5.11, says a 1D rule is surjective iff no two configurations that differ
-on finitely many cells have the same successor. Thm 5.4 also gives a finite test:
+on finitely many cells have the same successor, the 1D form of the
+[[garden-of-eden-theorem](pages/garden-of-eden-theorem.md)]. Thm 5.4 also gives a finite test:
 count preimages of blocks. The balanced-preimage property is special to onto maps, since
 non-onto maps have blocks with no preimage at all.
 
@@ -115,6 +116,8 @@ non-onto maps have blocks with no preimage at all.
 - [[automorphism-group-of-the-shift](pages/automorphism-group-of-the-shift.md)] — the onto maps with exactly one preimage at every point
 - [[garden-of-eden](pages/garden-of-eden.md)] — non-surjectivity seen from the configuration that has no predecessor (own reasoning)
 - [[shift-dynamical-system](pages/shift-dynamical-system.md)] — the space the maps act on
+- [[rule-90](pages/rule-90.md)] - onto on the infinite line
+- [[notation-map](pages/notation-map.md)] - Hedlund's symbols
 
 [^1]: [[endomorphisms-and-automorphisms-of-the-shift-dynamical-system](pages/endomorphisms-and-automorphisms-of-the-shift-dynamical-system.md)] pp.328-329 [synthesis] — E(S) defined as the onto members of Φ(S); proof of Thm 5.6: φ = σ^p f∞ is onto iff f∞ is onto, since σ is a bijection
 [^2]: [[endomorphisms-and-automorphisms-of-the-shift-dynamical-system](pages/endomorphisms-and-automorphisms-of-the-shift-dynamical-system.md)] p.321 [synthesis] — "There are sharp differences in behavior with respect to multiplicities between the members of E(S) and the members of Φ(S) − E(S)": uncountable preimages of a periodic point versus uniformly bounded preimage counts

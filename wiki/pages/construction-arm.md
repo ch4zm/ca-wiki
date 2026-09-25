@@ -37,7 +37,7 @@ example.[^2]
 
 **Why it matters.** Repeating the operation cell by cell lets a fixed device fed two binary
 strings build *any* finite quiescent pattern anywhere in the lattice. What it builds is left
-quiescent, and can be woken by a starting stimulus before the arm withdraws.[^3] The device that holds the full strings for a pattern is always larger than
+quiescent ([[initially-quiescent-automaton](pages/initially-quiescent-automaton.md)]), and can be woken by a starting stimulus before the arm withdraws.[^3] The device that holds the full strings for a pattern is always larger than
 the pattern. That is why a self-reproducer cannot simply store its own construction
 sequence internally, and instead reads a description from a tape (see
 [[universal-constructor](pages/universal-constructor.md)] and

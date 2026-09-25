@@ -68,8 +68,8 @@ row in the decoder, a sizing case for the pulser, and the periodic pulser misbeh
 
 ## Relation to Other Wiki Pages
 
-These organs are the building blocks of the tape unit (Ch. 4) and the constructor's control
-(Ch. 5). They use the transmission, confluent, and kill/build behaviours defined in
+These organs are the building blocks of the tape unit (Ch. 4, [[tsra-part2-ch4](pages/tsra-part2-ch4.md)]) and the constructor's control
+(Ch. 5, [[tsra-part2-ch5](pages/tsra-part2-ch5.md)]). They use the transmission, confluent, and kill/build behaviours defined in
 [[tsra-part2-ch2](pages/tsra-part2-ch2.md)].
 
 [^1]: [[tsra-part2-ch3](pages/tsra-part2-ch3.md)] p.158 [synthesis] — organs are constructed successively from simple to more complicated, each composite of previous ones, each given a name and symbol; von Neumann gave algorithms, not minimal designs

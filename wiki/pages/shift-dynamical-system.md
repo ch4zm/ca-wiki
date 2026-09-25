@@ -67,6 +67,7 @@ X(S) instead allows arbitrary infinite configurations.
 - [[surjective-shift-endomorphism](pages/surjective-shift-endomorphism.md)] — onto maps of X(S) and their preimages
 - [[automorphism-group-of-the-shift](pages/automorphism-group-of-the-shift.md)] — the invertible ones
 - [[cellular-automaton](pages/cellular-automaton.md)] — X(S) is the configuration space of a 1D CA (own reasoning)
+- [[notation-map](pages/notation-map.md)] - Hedlund's symbols
 
 [^1]: [[endomorphisms-and-automorphisms-of-the-shift-dynamical-system](pages/endomorphisms-and-automorphisms-of-the-shift-dynamical-system.md)] p.322 [synthesis] — bisequences as functions I → S; metric d(x, y) = (1 + k)⁻¹; the metric topology is the product topology; for S > 1, X(S) is compact, totally disconnected, perfect, metric, hence homeomorphic to the Cantor discontinuum; [σ(x)]_i = x_(i+1); "symbolic flow" / "shift dynamical system"
 [^2]: [[endomorphisms-and-automorphisms-of-the-shift-dynamical-system](pages/endomorphisms-and-automorphisms-of-the-shift-dynamical-system.md)] pp.322-323 [synthesis] — definition of expansive; (X(S), σ) is expansive; closed invariant Y gives a subdynamical system; Thm 2.1: for Z compact, totally disconnected, metric and φ a homeomorphism, (Z, φ) expansive ⇔ isomorphic to some (Y, σ)

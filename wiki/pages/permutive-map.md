@@ -56,6 +56,11 @@ x₁, depends on x₂, and is still one-to-one.[^10]
 - [[surjective-shift-endomorphism](pages/surjective-shift-endomorphism.md)] — permutive maps are the standard onto examples; L = 1 / R = 1
 - [[automorphism-group-of-the-shift](pages/automorphism-group-of-the-shift.md)] — the S = 3 permutive automorphism
 - [[curtis-hedlund-lyndon-theorem](pages/curtis-hedlund-lyndon-theorem.md)] — block maps in general
+- [[elementary-cellular-automaton](pages/elementary-cellular-automaton.md)] - rules 90 and 150 are permutive at both ends
+- [[rule-90](pages/rule-90.md)] - the XOR of the two end cells
+- [[additive-cellular-automaton](pages/additive-cellular-automaton.md)] - the XOR rules, permutive at both ends
+- [[garden-of-eden](pages/garden-of-eden.md)] - permutive implies onto, so no 1D Garden-of-Eden configuration
+- [[notation-map](pages/notation-map.md)] - Hedlund's symbols
 
 [^1]: [[endomorphisms-and-automorphisms-of-the-shift-dynamical-system](pages/endomorphisms-and-automorphisms-of-the-shift-dynamical-system.md)] pp.332-333 [synthesis] — Definition 6.3: g(x₁) = f(x₁ x̄₂ ⋯ x̄_n) a permutation for every choice of x̄₂, …, x̄_n; likewise for x_n; for n = 1, permutive means f is a permutation of S
 [^2]: [[endomorphisms-and-automorphisms-of-the-shift-dynamical-system](pages/endomorphisms-and-automorphisms-of-the-shift-dynamical-system.md)] p.333 [synthesis] — Remark 6.4: permutive in x₁ [x_n] implies f depends on x₁ [x_n]

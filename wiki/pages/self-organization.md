@@ -104,6 +104,7 @@ dominates the long-time behaviour.[^17]
 - [[elementary-cellular-automaton](pages/elementary-cellular-automaton.md)] — the family studied
 - [[maxwells-demon](pages/maxwells-demon.md)] — the entropy-information link von Neumann drew from thermodynamics
 - [[probabilistic-logic](pages/probabilistic-logic.md)] — von Neumann's treatment of noisy components
+- [[universal-turing-machine](pages/universal-turing-machine.md)] - universality in the computational sense
 
 [^1]: [[statistical-mechanics-of-cellular-automata](pages/statistical-mechanics-of-cellular-automata.md)] p.601 [synthesis] — the second law for isolated reversible systems; dissipative or open systems may evolve from disordered to ordered states; snowflakes, turbulent flow, biological systems; cellular automata "sufficiently simple to allow detailed mathematical analysis, yet sufficiently complex to exhibit a wide variety of complicated phenomena"
 [^2]: [[statistical-mechanics-of-cellular-automata](pages/statistical-mechanics-of-cellular-automata.md)] p.608 [synthesis] — disordered configurations have statistically uncorrelated sites, "a discrete form of 'white noise'"; deviations of statistical measures indicate order and correlations; a disordered configuration is specified by a single parameter p

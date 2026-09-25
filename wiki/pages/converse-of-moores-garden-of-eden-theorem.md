@@ -76,6 +76,9 @@ This note answers the converse question left open by
 [[machine-models-of-self-reproduction](pages/machine-models-of-self-reproduction.md)] and
 reuses its inequality (1). Burks's footnote in [[tsra-part2-ch5](pages/tsra-part2-ch5.md)]
 relates non-constructibility in von Neumann's structure to this pair of results.
+Hedlund's 1D form of the theorem is in
+[[endomorphisms-and-automorphisms-of-the-shift-dynamical-system](pages/endomorphisms-and-automorphisms-of-the-shift-dynamical-system.md)]
+([[surjective-shift-endomorphism](pages/surjective-shift-endomorphism.md)]).
 
 [^1]: [[converse-of-moores-garden-of-eden-theorem](pages/converse-of-moores-garden-of-eden-theorem.md)] p.685 - "Moore proves that the existence of two mutually erasable configurations in a tessellation universe is a sufficient condition for the existence of Garden-of-Eden configurations therein. We shall show that this condition is both necessary and sufficient."
 [^2]: [[converse-of-moores-garden-of-eden-theorem](pages/converse-of-moores-garden-of-eden-theorem.md)] p.686 - "Thus we have proved that the existence of two indistinguishable configurations is a necessary as well as a sufficient condition for the existence of Garden-of-Eden configurations."

@@ -59,6 +59,8 @@ alternate cells.[^10]
 - [[fractal-dimension](pages/fractal-dimension.md)] — log₂3 from a single seed
 - [[self-reproduction](pages/self-reproduction.md)] — trivial replication by superposition
 - [[self-organization](pages/self-organization.md)] — additive rules form their own statistical class
+- [[permutive-map](pages/permutive-map.md)] - XOR of the end cells, permutive at both ends
+- [[surjective-shift-endomorphism](pages/surjective-shift-endomorphism.md)] - onto on the infinite line
 
 [^1]: [[statistical-mechanics-of-cellular-automata](pages/statistical-mechanics-of-cellular-automata.md)] pp.603-604 [synthesis] — Fig. 1 rule table; Eq. 2.1 s_{n+1}(m) = s_n(m−1) ⊕ s_n(m+1); rules 0, 90, 160, 250 are peripheral
 [^2]: [[statistical-mechanics-of-cellular-automata](pages/statistical-mechanics-of-cellular-automata.md)] p.603 [synthesis] — "As a first example consider the 'modulo-two' rule 90 (also used as the example for Fig. 1)"

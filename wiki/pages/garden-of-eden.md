@@ -89,12 +89,15 @@ translate directly:
 
 **How common they are.** Wolfram links Garden-of-Eden configurations to irreversibility.
 When a rule sends several configurations to the same one, some configurations have no
-predecessor at all. He cites Moore (1962) and Aggarwal (1973) as giving criteria for their
-existence, which he calls "equivalent to irreversibility".[^17] In one dimension they are
-the typical case. On a ring of N cells, the non-additive rule 126 leaves a fraction of
+predecessor at all. He cites Moore (1962, [[machine-models-of-self-reproduction](pages/machine-models-of-self-reproduction.md)]) and Aggarwal (1973) as giving criteria for their
+existence, which he calls "equivalent to irreversibility".[^17] On a finite ring of N
+cells they are the typical case. There the non-additive rule 126 leaves a fraction of
 configurations unreachable that tends to 1 as N grows (about 1 − 0.88ᴺ). The additive
-[[rule-90](pages/rule-90.md)] leaves exactly half or three quarters unreachable, and only
-the identity rule 204 reaches everything.[^18] In the [[game-of-life](pages/game-of-life.md)],
+[[rule-90](pages/rule-90.md)] leaves exactly half or three quarters of the ring's
+configurations unreachable, and only the identity rule 204 reaches everything.[^18] These
+counts hold only on the ring. On the infinite line rule 90 is a
+[[permutive-map](pages/permutive-map.md)], hence onto, and has no Garden-of-Eden
+configurations at all (own reasoning, from the 1D section above). In the [[game-of-life](pages/game-of-life.md)],
 the smallest known example in 1983 had about 300 cells.[^19] See
 [[irreversibility-and-entropy](pages/irreversibility-and-entropy.md)].
 

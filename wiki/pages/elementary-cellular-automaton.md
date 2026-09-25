@@ -89,6 +89,8 @@ computation.[^12]
 - [[fractal-dimension](pages/fractal-dimension.md)] — what complex rules grow from a seed
 - [[self-organization](pages/self-organization.md)] — what complex rules do from random starts
 - [[irreversibility-and-entropy](pages/irreversibility-and-entropy.md)] — the global, ensemble view of the family
+- [[permutive-map](pages/permutive-map.md)] - rules 90 and 150 are XORs permutive at both ends
+- [[curtis-hedlund-lyndon-theorem](pages/curtis-hedlund-lyndon-theorem.md)] - the elementary rules as block maps with S = 2, window 3
 
 [^1]: [[statistical-mechanics-of-cellular-automata](pages/statistical-mechanics-of-cellular-automata.md)] p.603 [synthesis] — one-dimensional, base 2, neighbourhood of the site and its two neighbours, "We shall call such cellular automata elementary"; the eight-digit binary rule number used interchangeably with its decimal equivalent; 256 rules; quiescence forbids rules whose binary specification ends in 1; reflection symmetry requires 100 ≡ 001 and 110 ≡ 011; 32 legal rules
 [^2]: [[statistical-mechanics-of-cellular-automata](pages/statistical-mechanics-of-cellular-automata.md)] pp.603-604 [synthesis] — rule 90: s_{n+1}(m) = s_n(m-1) ⊕ s_n(m+1) (Eq. 2.1); Fig. 1 gives its rule table 01011010

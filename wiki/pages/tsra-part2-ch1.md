@@ -48,14 +48,15 @@ state.[^2] The result is the [[cellular-automaton](pages/cellular-automaton.md)]
 final form, an infinite square lattice of identical 29-state cells, each connected to its
 four neighbours.[^3]
 
-Within that medium the chapter sketches the solution. A linear tape of cells, outside
+Within that medium the chapter sketches the solution. A linear tape of cells ([[cellular-tape](pages/cellular-tape.md)]), outside
 the automaton, supplies unbounded memory, and so logical universality.[^4] Describing
 any automaton by its bounding rectangle and the state of every cell gives a universal plan,
 and so construction-universality.[^5] Self-reproduction then follows from the
 [[universal-constructor](pages/universal-constructor.md)] scheme of Lecture 5:
 (A + B + C) + φ(A + B + C).[^6] The key step is copying the *description* instead of the original
 ([[descriptions-vs-originals](pages/descriptions-vs-originals.md)]).[^7] The chapter closes
-with how offspring are positioned and activated, the analogues of genes and mutation, and a
+with how offspring are positioned and activated
+([[initially-quiescent-automaton](pages/initially-quiescent-automaton.md)]), the analogues of genes and mutation, and a
 brief look ahead at evolution.[^8][^9]
 
 ## Key Takeaways
@@ -87,7 +88,8 @@ brief look ahead at evolution.[^8][^9]
 This chapter carries the scheme of [[tsra-lecture-5](pages/tsra-lecture-5.md)] from the
 kinematic model into the cellular one. It is also where the
 [[cellular-automaton](pages/cellular-automaton.md)] appears as a formal model. Ch. 2 will
-supply the actual 29-state transition rule.
+supply the actual 29-state transition rule. Moore's formal version of the same cellular
+model is [[machine-models-of-self-reproduction](pages/machine-models-of-self-reproduction.md)].
 
 [^1]: [[tsra-part2-ch1](pages/tsra-part2-ch1.md)] pp.92-93 [synthesis] — the five main questions; logical universality answered by Turing; constructibility, construction-universality, and self-reproduction to be answered affirmatively; evolution needs a sharper notion of efficiency; all within automata of "crystalline regularity"
 [^2]: [[tsra-part2-ch1](pages/tsra-part2-ch1.md)] pp.102-104, 109 [synthesis] — avoiding geometry, kinematics, and mechanics; stationary quiescent vs. active states; discrete homogeneous medium; growth as transformation of unexcitable cells into excitable ones; the "structure of the vacuum"

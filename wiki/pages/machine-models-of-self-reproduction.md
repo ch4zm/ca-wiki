@@ -23,7 +23,8 @@ built a model railroad whose trains assemble copies of themselves from cars. Pen
 rigid A and B units that, shaken in a box with an AB "seed", hook together into more AB
 machines ([[kinematic-self-reproduction](pages/kinematic-self-reproduction.md)]).[^2]
 
-He then formalizes von Neumann's cellular model under the name **tessellation structure**:
+He then formalizes von Neumann's cellular model
+([[tsra-part2-ch1](pages/tsra-part2-ch1.md)]) under the name **tessellation structure**:
 a lattice of identical, deterministic, synchronous finite-state cells with a quiescent
 state and finitely many non-quiescent cells ([[cellular-automaton](pages/cellular-automaton.md)]).[^3]
 His neighbourhood is the nine-cell square around a cell, now called the
@@ -69,7 +70,8 @@ converse, completing the [[garden-of-eden-theorem](pages/garden-of-eden-theorem.
   reverse.[^12]
 - **Open problems.** How small a Garden-of-Eden pattern can be (every structure Moore
   examined had one of size 5 × 5 or less); whether self-reproduction is possible without
-  erasability; how simple a structure can support non-trivial self-reproduction; and how
+  erasability; how simple a structure can support non-trivial self-reproduction
+  ([[complexity-threshold](pages/complexity-threshold.md)]); and how
   reproduction could run in parallel rather than one part at a time.[^13]
 
 ## Entities & Concepts

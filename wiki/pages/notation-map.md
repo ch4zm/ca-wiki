@@ -114,16 +114,16 @@ column below is own reasoning: Hedlund never uses those words.[^16][^17][^18]
 | Concept | Hedlund | CA reading (own reasoning) |
 |---|---|---|
 | alphabet; its size | 𝒮 (script S); S = card 𝒮 | cell states; number of states |
-| space of all bisequences | X(𝒮) | all infinite 1D configurations |
-| the shift | σ, [σ(x)]ᵢ = xᵢ₊₁ | translating by one cell |
+| space of all bisequences ([[shift-dynamical-system](pages/shift-dynamical-system.md)]) | X(𝒮) | all infinite 1D configurations |
+| the shift ([[shift-dynamical-system](pages/shift-dynamical-system.md)]) | σ, [σ(x)]ᵢ = xᵢ₊₁ | translating by one cell |
 | n-blocks over 𝒮 | 𝔅ₙ(𝒮) | finite patterns of length n |
-| block maps of window n | F(𝒮, n) | local rules on n consecutive cells |
-| global map of f; its action on blocks | f∞; f_m | global map; image of a finite pattern |
-| all continuous shift-commuting maps | Φ(𝒮) | all 1D global maps |
-| onto members of Φ | E(𝒮) | surjective rules |
-| automorphisms (= one-to-one members) | A(𝒮) = H(𝒮) | invertible rules |
+| block maps of window n ([[curtis-hedlund-lyndon-theorem](pages/curtis-hedlund-lyndon-theorem.md)]) | F(𝒮, n) | local rules on n consecutive cells |
+| global map of f; its action on blocks ([[curtis-hedlund-lyndon-theorem](pages/curtis-hedlund-lyndon-theorem.md)]) | f∞; f_m | global map; image of a finite pattern |
+| all continuous shift-commuting maps ([[curtis-hedlund-lyndon-theorem](pages/curtis-hedlund-lyndon-theorem.md)]) | Φ(𝒮) | all 1D global maps |
+| onto members of Φ ([[surjective-shift-endomorphism](pages/surjective-shift-endomorphism.md)]) | E(𝒮) | surjective rules |
+| automorphisms (= one-to-one members) ([[automorphism-group-of-the-shift](pages/automorphism-group-of-the-shift.md)]) | A(𝒮) = H(𝒮) | invertible rules |
 | powers of the shift | Σ(𝒮) | pure translations |
-| degree; Welch's left and right indices | M(f); L(f), R(f) | — |
+| degree; Welch's left and right indices ([[permutive-map](pages/permutive-map.md)]) | M(f); L(f), R(f) | — |
 | periodic points | P(𝒮) | spatially periodic configurations |
 
 ## Letter collisions

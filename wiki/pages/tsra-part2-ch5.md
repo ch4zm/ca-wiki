@@ -43,7 +43,8 @@ construction, and construction and computation are similar activities."[^3]
 ## Finishing the memory control (§5.1.1)
 
 Six more sections of the manuscript survive and then break off. They are mostly delay
-calculations, and most of them are wrong because of von Neumann's Ch. 3 sizing errors.
+calculations, and most of them are wrong because of von Neumann's Ch. 3
+([[tsra-part2-ch3](pages/tsra-part2-ch3.md)]) sizing errors.
 Burks summarizes them instead of reproducing them.[^1] The finished memory control is
 547 × 87 cells. It has a read-write-erase unit (320 × 31), that unit's control
 (545 × 22), and a [[coded-channel](pages/coded-channel.md)]. The channel codes are 9-bit

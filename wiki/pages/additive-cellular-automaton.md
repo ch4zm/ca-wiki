@@ -81,6 +81,8 @@ cell itself, are additive as well.[^11]
 - [[self-organization](pages/self-organization.md)] — additive rules form their own statistical class
 - [[irreversibility-and-entropy](pages/irreversibility-and-entropy.md)] — additive rules keep a finite reachable fraction
 - [[self-reproduction](pages/self-reproduction.md)] — superposition makes rule 90 copy any pattern
+- [[permutive-map](pages/permutive-map.md)] - rules 90 and 150 are permutive at both ends
+- [[surjective-shift-endomorphism](pages/surjective-shift-endomorphism.md)] - onto on the infinite line
 
 [^1]: [[statistical-mechanics-of-cellular-automata](pages/statistical-mechanics-of-cellular-automata.md)] p.604 [synthesis] — superposition principle (Eq. 2.2); "such additivity does not imply linearity in the real number sense ... since the addition is over a finite field"; "Only rules 0, 90, 150, and 204 are of this form"; 0 erases, 204 is the identity; rule 90 sums two neighbours mod 2, rule 150 also includes the site's own value
 [^2]: [[statistical-mechanics-of-cellular-automata](pages/statistical-mechanics-of-cellular-automata.md)] pp.605-606, 613 [synthesis] — rule 90 from one site: binomial coefficients mod 2 (Fig. 4); N_τ⁽¹⁾ = 2^#₁(τ) (Eq. 3.2); rule 150: coefficients of (x² + x + 1)ⁿ mod 2

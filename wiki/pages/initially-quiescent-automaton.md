@@ -53,6 +53,7 @@ proved they exist in any structure that has an
 - [[erasable-configuration](pages/erasable-configuration.md)] — Moore's condition forcing Garden-of-Eden patterns
 - [[descriptions-vs-originals](pages/descriptions-vs-originals.md)] — quiescence is also what makes descriptions safe to copy
 - [[von-neumann-29-state-ca](pages/von-neumann-29-state-ca.md)] — the rule whose 10 quiescent states define the class
+- [[construction-arm](pages/construction-arm.md)] - the device that lays down such patterns and starts them
 
 [^1]: [[tsra-part2-ch5](pages/tsra-part2-ch5.md)] p.264 — "we define an *initially quiescent automaton* to be a finite area of von Neumann's 29-state cellular structure every cell of which is in 1 of the 10 quiescent states U, T_uα0, and C₀₀"
 [^2]: [[tsra-part2-ch1](pages/tsra-part2-ch1.md)] pp.126-129 [synthesis] — secondaries are built quasi-quiescent and started by a single stimulus

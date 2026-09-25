@@ -86,6 +86,8 @@ local rule.
 - [[surjective-shift-endomorphism](pages/surjective-shift-endomorphism.md)] — the larger class E(S) and Welch's indices
 - [[permutive-map](pages/permutive-map.md)] — on two symbols, permutive automorphisms are only the trivial ones
 - [[garden-of-eden](pages/garden-of-eden.md)] — invertible rules have none (own reasoning)
+- [[irreversibility-and-entropy](pages/irreversibility-and-entropy.md)] - invertible rules restore Liouville's theorem
+- [[notation-map](pages/notation-map.md)] - Hedlund's symbols
 
 [^1]: [[endomorphisms-and-automorphisms-of-the-shift-dynamical-system](pages/endomorphisms-and-automorphisms-of-the-shift-dynamical-system.md)] pp.321, 331 [synthesis] — automorphisms are homeomorphisms of X(S) onto X(S) commuting with σ; "the set A(S) is a group and is of some complexity"
 [^2]: [[endomorphisms-and-automorphisms-of-the-shift-dynamical-system](pages/endomorphisms-and-automorphisms-of-the-shift-dynamical-system.md)] pp.331-332 [synthesis] — H(S) the one-to-one members of Φ(S); Thm 5.14 A(S) = H(S)

@@ -79,6 +79,8 @@ reproduction run in parallel.[^11]
 - [[self-reproduction](pages/self-reproduction.md)] — the problem it addresses
 - [[mcculloch-pitts-neuron](pages/mcculloch-pitts-neuron.md)] — its logic organs
 - [[complexity-threshold](pages/complexity-threshold.md)] — estimated in terms of these parts
+- [[edward-f-moore](pages/edward-f-moore.md)] - built a copy of Penrose's model
+- [[john-myhill](pages/john-myhill.md)] - a model between the kinematic and tessellation models
 
 [^1]: [[tsra-lecture-5](pages/tsra-lecture-5.md)] p.75 [synthesis] — an unlimited supply of well-defined elementary parts floating in a container; the automaton picks up parts and puts them together, or takes aggregates apart
 [^2]: [[tsra-lecture-5](pages/tsra-lecture-5.md)] p.82 [synthesis] — editor: fuel and energy are ignored; the model deals with the geometrical-kinematic problems of movement, contact, positioning, fusing, and cutting, hence "kinematic model", to be contrasted with the "cellular model" of Part II

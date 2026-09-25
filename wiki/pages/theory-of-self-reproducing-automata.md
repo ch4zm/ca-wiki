@@ -48,7 +48,7 @@ itself.[^3] See [[self-reproduction](pages/self-reproduction.md)] and
 
 ## Structure and ingest map
 
-Each unit gets its own source page as it is ingested. Printed pages:
+Printed pages:
 
 | Unit | Pages | Source page |
 |---|---|---|
@@ -99,8 +99,11 @@ Each unit gets its own source page as it is ingested. Printed pages:
 
 ## Relation to Other Wiki Pages
 
-This is the wiki's first source. Its unit pages will be the primary citations for
-Von Neumann's cellular model, the universal constructor, and the 29-state transition rule.
+The unit pages are the primary citations for von Neumann's cellular model, the universal
+constructor, and the 29-state transition rule. Moore's survey of the same program is
+[[machine-models-of-self-reproduction](pages/machine-models-of-self-reproduction.md)]
+([[edward-f-moore](pages/edward-f-moore.md)]); its Garden-of-Eden theorem was completed by
+[[john-myhill](pages/john-myhill.md)].
 
 [^1]: [[tsra-editors-introduction](pages/tsra-editors-introduction.md)] p.xvii — "Where the writing is strictly my own, it appears in brackets."
 [^2]: [[tsra-editors-introduction](pages/tsra-editors-introduction.md)] p.xviii — "The construction stops before the tape unit is quite finished. In Chapter 5 I show how to complete the design of von Neumann's self-reproducing automaton."

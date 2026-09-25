@@ -67,7 +67,7 @@ payload P give viable offspring making P′, a change of hereditary strain. Conf
 space between independently reproducing organisms are a possible route to natural
 selection, though von Neumann leaves evolution open.[^13]
 
-**A formal definition.** Moore defines a configuration c as *self-reproducing* if, started
+**A formal definition.** Moore ([[edward-f-moore](pages/edward-f-moore.md)]) defines a configuration c as *self-reproducing* if, started
 alone in a quiescent plane at time 0, it reaches for every n a time at which the
 non-quiescent region contains at least n disjoint copies of c.[^14] The definition admits
 trivial cases. In a two-state rule where a cell turns X whenever a neighbour is X, a single
@@ -122,6 +122,7 @@ criterion above, it counts as a trivial case.[^12]
 - [[universal-turing-machine](pages/universal-turing-machine.md)] — the model for von Neumann's universal constructor
 - [[probabilistic-logic](pages/probabilistic-logic.md)] — the other central problem; self-repair links the two
 - [[self-repair](pages/self-repair.md)] — the closely related capacity to maintain oneself
+- [[john-myhill](pages/john-myhill.md)] - earlier work on self-reproducing automata
 
 [^1]: [[tsra-editors-introduction](pages/tsra-editors-introduction.md)] p.19 — "What kind of logical organization is sufficient for an automaton to be able to reproduce itself?"
 [^2]: [[tsra-editors-introduction](pages/tsra-editors-introduction.md)] p.xvi — "The reliability of components limits the complexity of the automata we can build, and self-reproduction requires an automaton of considerable complexity."

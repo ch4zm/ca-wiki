@@ -63,6 +63,8 @@ Hedlund for this topological definition of a cellular automaton.
 - [[automorphism-group-of-the-shift](pages/automorphism-group-of-the-shift.md)] — the invertible members of Φ(S)
 - [[permutive-map](pages/permutive-map.md)] — a class of block maps with easily computed behaviour
 - [[cellular-automaton](pages/cellular-automaton.md)] — 1D global maps are exactly Φ(S) (own reasoning)
+- [[elementary-cellular-automaton](pages/elementary-cellular-automaton.md)] - block maps with S = 2, window 3
+- [[notation-map](pages/notation-map.md)] - Hedlund's symbols
 
 [^1]: [[endomorphisms-and-automorphisms-of-the-shift-dynamical-system](pages/endomorphisms-and-automorphisms-of-the-shift-dynamical-system.md)] pp.323-324 [synthesis] — n-blocks, F(S, n) as maps 𝔅_n(S) → S with card F(S, n) = S^(S^n); f_m: 𝔅_(m+n−1)(S) → 𝔅_m(S); f∞(x) = y with y_i = f(x_i x_(i+1) ⋯ x_(i+n−1))
 [^2]: [[endomorphisms-and-automorphisms-of-the-shift-dynamical-system](pages/endomorphisms-and-automorphisms-of-the-shift-dynamical-system.md)] p.324 [synthesis] — Thm 3.1: f∞ is continuous and commutes with σ

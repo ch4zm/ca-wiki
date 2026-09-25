@@ -74,6 +74,8 @@ can never be built or reproduced.
 - [[moore-neighbourhood](pages/moore-neighbourhood.md)] - the radius-1 neighbourhood behind the boundary count
 - [[self-reproduction](pages/self-reproduction.md)] - what the theorem limits
 - [[cellular-automaton](pages/cellular-automaton.md)] - the setting
+- [[surjective-shift-endomorphism](pages/surjective-shift-endomorphism.md)] - Hedlund's 1D form of the theorem
+- [[endomorphisms-and-automorphisms-of-the-shift-dynamical-system](pages/endomorphisms-and-automorphisms-of-the-shift-dynamical-system.md)] - Hedlund's paper, where the 1D form appears
 
 [^1]: [[machine-models-of-self-reproduction](pages/machine-models-of-self-reproduction.md)] p.26 - "THEOREM 2. For a tessellation structure for which there exist erasable configurations, there exist Garden-of-Eden configurations."
 [^2]: [[converse-of-moores-garden-of-eden-theorem](pages/converse-of-moores-garden-of-eden-theorem.md)] p.686 - "Thus we have proved that the existence of two indistinguishable configurations is a necessary as well as a sufficient condition for the existence of Garden-of-Eden configurations."

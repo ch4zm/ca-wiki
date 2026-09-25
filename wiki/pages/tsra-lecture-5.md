@@ -51,7 +51,7 @@ primitive form of inheritable mutation.[^4]
   it, construction can produce equal or greater complexity. Von Neumann guesses the
   critical number of parts is large, perhaps in the millions.[^2]
 - **Build from descriptions.** It is easier to build from a logical description than to copy
-  an existing object. This is Turing's trick transferred to construction.[^5]
+  an existing object ([[descriptions-vs-originals](pages/descriptions-vs-originals.md)]). This is Turing's trick transferred to construction.[^5]
 - **A + B + C + φ(A + B + C).** Constructor, copier, and controller together self-reproduce,
   though none of them does so alone.[^3]
 - **Heredity.** Changes to the payload P in the description are inherited. Von Neumann
@@ -73,7 +73,9 @@ This lecture gives the primary statement of the
 [[complexity-threshold](pages/complexity-threshold.md)] for self-reproduction, which
 [[tsra-editors-introduction](pages/tsra-editors-introduction.md)] summarizes. It carries the
 [[universal-turing-machine](pages/universal-turing-machine.md)] over from computation to
-construction. Its kinematic model is the forerunner of the cellular model in Part II.
+construction. Its kinematic model is the forerunner of the cellular model in Part II. Moore surveys
+built kinematic models in
+[[machine-models-of-self-reproduction](pages/machine-models-of-self-reproduction.md)].
 
 [^1]: [[tsra-lecture-5](pages/tsra-lecture-5.md)] pp.74-75 [synthesis] — Turing machines, neural nets, and computers all produce outputs unlike themselves; the broader view considers automata whose outputs are like themselves, built by picking up parts from an unlimited supply
 [^2]: [[tsra-lecture-5](pages/tsra-lecture-5.md)] pp.78-80 [synthesis] — the paradox of degenerative synthesis versus organic reproduction and evolution; resolved by a minimum complexity below which synthesis degenerates and above which it "can become explosive"; the minimum is probably in the millions of parts

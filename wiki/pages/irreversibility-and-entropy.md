@@ -40,9 +40,9 @@ the [[garden-of-eden](pages/garden-of-eden.md)] configurations:[^5]
   tends to 1 and behaves as 1 − λᴺ with λ ≈ 0.88, a root of a cubic (Martin et al. 1983,
   cited via this paper and not read). Other non-additive rules behave similarly.
 
-Wolfram points to Moore (1962) and Aggarwal (1973) for criteria for Garden-of-Eden
-configurations to exist, which he describes as "equivalent to irreversibility" (cited via
-this paper and not read).[^5]
+Wolfram points to Moore (1962, [[machine-models-of-self-reproduction](pages/machine-models-of-self-reproduction.md)]) and Aggarwal
+(1973, cited via this paper and not read) for criteria for Garden-of-Eden configurations to
+exist, which he describes as "equivalent to irreversibility".[^5]
 
 **Entropy.** The entropy S is the base-2 logarithm of the average number of possible
 states, computed from the probabilities pᵢ of the states. It measures how many bits it
@@ -115,6 +115,9 @@ one-directional triangles of irreversible rules.[^17]
 - [[rule-90](pages/rule-90.md)] — reaches a fixed fraction of configurations
 - [[maxwells-demon](pages/maxwells-demon.md)] — the entropy-information link behind von Neumann's thermodynamic view of automata
 - [[elementary-cellular-automaton](pages/elementary-cellular-automaton.md)] — the family analysed
+- [[automorphism-group-of-the-shift](pages/automorphism-group-of-the-shift.md)] - the invertible 1D rules
+- [[erasable-configuration](pages/erasable-configuration.md)] - local information loss
+- [[probabilistic-logic](pages/probabilistic-logic.md)] - von Neumann's treatment of noisy components, cf. noisy rule 126
 
 [^1]: [[statistical-mechanics-of-cellular-automata](pages/statistical-mechanics-of-cellular-automata.md)] p.621 [synthesis] — the ensemble of all configurations "in analogy with the Γ-space approach to classical statistical mechanics"; connections with dynamical systems theory and the formal theory of computation; "symbolic dynamics" with genuinely discrete degrees of freedom
 [^2]: [[statistical-mechanics-of-cellular-automata](pages/statistical-mechanics-of-cellular-automata.md)] p.621 [synthesis] — finite N, 2ᴺ configurations, each a length-N binary integer; rules define a mapping of the set of binary numbers of length N onto itself (Fig. 19)

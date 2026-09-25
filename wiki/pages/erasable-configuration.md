@@ -12,7 +12,8 @@ updated: 2026-09-24
 
 ## Description
 
-**Erasing** is an irreversible process: an action produces a state from which the earlier
+**Erasing** is an irreversible process
+([[irreversibility-and-entropy](pages/irreversibility-and-entropy.md)]): an action produces a state from which the earlier
 states that led to it cannot be recovered, as with an erased blackboard.[^1] Moore makes
 this precise for a cellular structure, which he calls a tessellation structure
 ([[cellular-automaton](pages/cellular-automaton.md)]).

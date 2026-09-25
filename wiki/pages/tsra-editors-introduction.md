@@ -28,7 +28,8 @@ machine's logical design be treated separately from its physical realization, wh
 Burks calls "a step in the direction of a theory of automata."[^2]
 
 On Burks's account, the theory's core is two questions: how reliable systems can be
-built from unreliable components, and what logical organization is sufficient for an
+built from unreliable components (see [[probabilistic-logic](pages/probabilistic-logic.md)]
+and [[self-repair](pages/self-repair.md)]), and what logical organization is sufficient for an
 automaton to reproduce itself.[^3] Both are questions about complexity.[^4] Von Neumann
 argued that below a certain level, complexity is "degenerative" and self-reproduction is
 impossible, while above it organization need not degrade and can even grow. Burks
@@ -51,7 +52,8 @@ a continuous one.[^8]
   simpler things. Above it, self-reproduction and growth in complexity become possible.[^5]
 - **Symbolic description vs. automaton.** Von Neumann suggested that for simple automata a
   symbolic description of the behavior is simpler than the automaton, but for extremely
-  complex automata the automaton is simpler than any description of its behavior.[^9]
+  complex automata the automaton is simpler than any description of its behavior
+  ([[description-vs-object-complexity](pages/description-vs-object-complexity.md)]).[^9]
 - **Discrete first, continuous hoped for.** The kinematic and cellular models are
   discrete, but von Neumann wanted the mathematics of automata to move toward the
   continuous.[^8]
