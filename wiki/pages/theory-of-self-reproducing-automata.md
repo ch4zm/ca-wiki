@@ -3,7 +3,7 @@ title: Theory of Self-Reproducing Automata
 category: Sources
 summary: Von Neumann's posthumous book (ed. Burks, 1966) — the 1949 Illinois lectures plus the unfinished manuscript designing a 29-state self-reproducing cellular automaton
 tags: [book, von-neumann, self-reproduction, cellular-automata, foundational]
-sources: [theory-of-self-reproducing-automata, tsra-editors-introduction, tsra-lecture-1, tsra-lecture-2, tsra-lecture-3, tsra-lecture-4, tsra-lecture-5]
+sources: [theory-of-self-reproducing-automata, tsra-editors-introduction, tsra-lecture-1, tsra-lecture-2, tsra-lecture-3, tsra-lecture-4, tsra-lecture-5, tsra-part2-ch1]
 created: 2026-09-24
 updated: 2026-09-24
 ---
@@ -54,7 +54,7 @@ Each unit gets its own source page as it is ingested. Printed pages:
 | Part I, Lecture 3 Statistical Theories of Information | 57–63 | [[tsra-lecture-3](pages/tsra-lecture-3.md)] |
 | Part I, Lecture 4 The Role of High and of Extremely High Complication | 64–73 | [[tsra-lecture-4](pages/tsra-lecture-4.md)] |
 | Part I, Lecture 5 Problems of Hierarchy and Evolution | 74–87 | [[tsra-lecture-5](pages/tsra-lecture-5.md)] |
-| Part II, Ch. 1 General Considerations | 91–131 | *not yet ingested* |
+| Part II, Ch. 1 General Considerations | 91–131 | [[tsra-part2-ch1](pages/tsra-part2-ch1.md)] |
 | Part II, Ch. 2 A System of 29 States with a General Transition Rule | 132–156 | *not yet ingested* |
 | Part II, Ch. 3 Design of Some Basic Organs | 157–200 | *not yet ingested* |
 | Part II, Ch. 4 Design of a Tape and Its Control | 201–250 | *not yet ingested* |
@@ -82,6 +82,8 @@ Each unit gets its own source page as it is ingested. Printed pages:
 - [[self-repair](pages/self-repair.md)]
 - [[universal-constructor](pages/universal-constructor.md)]
 - [[kinematic-self-reproduction](pages/kinematic-self-reproduction.md)]
+- [[cellular-automaton](pages/cellular-automaton.md)]
+- [[descriptions-vs-originals](pages/descriptions-vs-originals.md)]
 
 ## Relation to Other Wiki Pages
 

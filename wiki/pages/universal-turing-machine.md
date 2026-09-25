@@ -51,6 +51,7 @@ structure" and "The Universal Constructor".[^7]
 
 ## Related Concepts
 
+- [[descriptions-vs-originals](pages/descriptions-vs-originals.md)] — the halting problem and Richard's paradox motivate passive self-description
 - [[universal-constructor](pages/universal-constructor.md)] — the construction analogue: builds any automaton from its description
 
 - [[self-reproduction](pages/self-reproduction.md)] — von Neumann's construction-universality analogue

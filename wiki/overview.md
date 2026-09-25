@@ -1,7 +1,7 @@
 ---
 title: Overview
 tags: [overview, synthesis]
-sources: [theory-of-self-reproducing-automata, tsra-editors-introduction, tsra-lecture-2, tsra-lecture-3, tsra-lecture-4, tsra-lecture-5]
+sources: [theory-of-self-reproducing-automata, tsra-editors-introduction, tsra-lecture-2, tsra-lecture-3, tsra-lecture-4, tsra-lecture-5, tsra-part2-ch1]
 updated: 2026-09-24
 ---
 
@@ -26,7 +26,10 @@ over from computation to construction. The theory's organizing concept is comple
 Von Neumann claimed a [[complexity-threshold](pages/complexity-threshold.md)] exists,
 below which automata can only build simpler automata. Above it, self-reproduction works
 through the [[universal-constructor](pages/universal-constructor.md)] scheme: build from a description, copy the description, attach it. This
-was first set out in the [[kinematic-self-reproduction](pages/kinematic-self-reproduction.md)] model. Universality has a threshold of
+was first set out in the [[kinematic-self-reproduction](pages/kinematic-self-reproduction.md)] model. Von Neumann then
+abstracted it into a [[cellular-automaton](pages/cellular-automaton.md)], a homogeneous lattice of identical finite-state cells, where
+construction becomes changing cell states. The key move is to copy a quiescent
+description rather than the live automaton ([[descriptions-vs-originals](pages/descriptions-vs-originals.md)]). Universality has a threshold of
 the same kind: above a minimum complexity, a single automaton can do anything any
 automaton can do. That same automaton cannot predict arbitrary behavior, which suggests
 that complex automata may be simpler than any description of what they do ([[description-vs-object-complexity](pages/description-vs-object-complexity.md)]).
@@ -57,3 +60,5 @@ halting on the first one.
 - [[self-repair](pages/self-repair.md)]
 - [[universal-constructor](pages/universal-constructor.md)]
 - [[kinematic-self-reproduction](pages/kinematic-self-reproduction.md)]
+- [[cellular-automaton](pages/cellular-automaton.md)]
+- [[descriptions-vs-originals](pages/descriptions-vs-originals.md)]

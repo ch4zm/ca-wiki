@@ -58,6 +58,7 @@ self-reproduction becomes possible only above a critical complexity.
 
 ## Related Concepts
 
+- [[descriptions-vs-originals](pages/descriptions-vs-originals.md)] — why self-reproducers carry a passive self-description
 - [[complexity-threshold](pages/complexity-threshold.md)] — the other claim about behavior changing above a critical complexity
 - [[universal-turing-machine](pages/universal-turing-machine.md)] — Gödel's reconstruction runs through undecidability of its behavior
 - [[mcculloch-pitts-neuron](pages/mcculloch-pitts-neuron.md)] — the equivalence theorem whose usefulness the conjecture limits

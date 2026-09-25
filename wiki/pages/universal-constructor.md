@@ -3,7 +3,7 @@ title: Universal Constructor
 category: Concepts
 summary: Von Neumann's automaton that builds any automaton from its description; combined with a description copier and a controller it yields self-reproduction via A + B + C + φ(A + B + C)
 tags: [concept, universal-constructor, self-reproduction, von-neumann]
-sources: [tsra-lecture-5]
+sources: [tsra-lecture-5, tsra-part2-ch1]
 created: 2026-09-24
 updated: 2026-09-24
 ---
@@ -56,12 +56,25 @@ Von Neumann first presented the scheme in the
 [[theory-of-self-reproducing-automata](pages/theory-of-self-reproducing-automata.md)]
 carries it out in a cellular structure (§5.2, "The Universal Constructor CU + (MC + L)").[^7]
 
+**In the cellular model.** Inside a [[cellular-automaton](pages/cellular-automaton.md)], the description is a linear tape L of cells
+outside the automaton. It lists the bounding rectangle of the target and the state of every
+cell in it, as base-k digits separated by commas and ending in a period. Any automaton fits
+this format, so a single constructor that reads L is construction-universal. The same
+tape also supplies the unbounded memory needed for logical universality.[^8] Offspring are
+built in a quiescent state, so that partly built parts do not react, and are then activated
+by a single starting stimulus. Successive offspring are placed at shifted coordinates so
+that descendants never collide.[^9] Why the copier copies the description rather than the
+original is explained in [[descriptions-vs-originals](pages/descriptions-vs-originals.md)].
+
 ## Appearances in Sources
 
+- [[tsra-part2-ch1](pages/tsra-part2-ch1.md)] — the cellular version: tape L, universal plan, and activation
 - [[tsra-lecture-5](pages/tsra-lecture-5.md)] — the A + B + C scheme in the kinematic model
 
 ## Related Concepts
 
+- [[descriptions-vs-originals](pages/descriptions-vs-originals.md)] — why the copier copies the description
+- [[cellular-automaton](pages/cellular-automaton.md)] — the medium of the cellular version
 - [[self-reproduction](pages/self-reproduction.md)] — what the scheme achieves
 - [[universal-turing-machine](pages/universal-turing-machine.md)] — the computational model it generalizes
 - [[kinematic-self-reproduction](pages/kinematic-self-reproduction.md)] — the setting of the first version
@@ -74,3 +87,5 @@ carries it out in a cellular structure (§5.2, "The Universal Constructor CU + (
 [^5]: [[tsra-lecture-5](pages/tsra-lecture-5.md)] p.85 [synthesis] — A, B, and C are defined for arbitrary X before X is chosen, so "the process is not circular"
 [^6]: [[tsra-lecture-5](pages/tsra-lecture-5.md)] pp.86-87 [synthesis] — adding D yields a by-product; mutations in the D part are inherited
 [^7]: raw/von-neumann-theory-of-self-reproducing-automata.pdf p.ix (Contents) — §5.2 "The Universal Constructor CU + (MC + L)"
+[^8]: [[tsra-part2-ch1](pages/tsra-part2-ch1.md)] pp.113-118 [synthesis] — tape L with digit, comma, and period states; the universal plan (bounding rectangle plus every cell's state λ_ij) encoded on L gives construction-universality; L also closes the gap to logical universality
+[^9]: [[tsra-part2-ch1](pages/tsra-part2-ch1.md)] pp.126-129 [synthesis] — secondaries are built quasi-quiescent and started by a single stimulus; successive descendants are shifted so they don't interfere

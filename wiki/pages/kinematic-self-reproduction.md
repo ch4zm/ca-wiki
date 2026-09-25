@@ -3,7 +3,7 @@ title: Kinematic Self-Reproduction
 category: Concepts
 summary: Von Neumann's first model of self-reproduction — an automaton assembling copies of itself from a sea of discrete parts (girders, logic organs, fusing/cutting organs, muscles), abstracted from energy and physics; precursor of the cellular model
 tags: [concept, kinematic-model, self-reproduction, von-neumann]
-sources: [tsra-lecture-5]
+sources: [tsra-lecture-5, tsra-part2-ch1]
 created: 2026-09-24
 updated: 2026-09-24
 ---
@@ -48,15 +48,19 @@ suggests two might be enough for the kinematic model as well.[^6]
 **Relation to the cellular model.** The kinematic model leaves open the mechanics of how
 parts move, find each other, and connect. Part II of
 [[theory-of-self-reproducing-automata](pages/theory-of-self-reproducing-automata.md)]
-replaces it with a *cellular* model, a homogeneous grid of finite-state cells, where
-construction becomes changing the states of neighboring cells.[^2]
+replaces it with a *cellular* model ([[cellular-automaton](pages/cellular-automaton.md)]), a homogeneous grid of finite-state cells, where
+construction becomes changing the states of neighboring cells.[^2] Von Neumann gets there by
+removing motion, making the medium discrete and homogeneous, and treating growth as the
+conversion of unexcitable cells into excitable ones.[^7]
 
 ## Appearances in Sources
 
+- [[tsra-part2-ch1](pages/tsra-part2-ch1.md)] — why and how the kinematic model is replaced by the cellular one
 - [[tsra-lecture-5](pages/tsra-lecture-5.md)] — the model, its parts, and the self-reproducing scheme
 
 ## Related Concepts
 
+- [[cellular-automaton](pages/cellular-automaton.md)] — the model that replaced it
 - [[universal-constructor](pages/universal-constructor.md)] — the self-reproducing scheme built in this model
 - [[self-reproduction](pages/self-reproduction.md)] — the problem it addresses
 - [[mcculloch-pitts-neuron](pages/mcculloch-pitts-neuron.md)] — its logic organs
@@ -68,3 +72,4 @@ construction becomes changing the states of neighboring cells.[^2]
 [^4]: [[tsra-lecture-5](pages/tsra-lecture-5.md)] pp.81-82 [synthesis] — editor's reconstruction from the June 1948 lectures: eight kinds of parts (four logical organs, rigid member, fusing organ, cutting organ, muscle), each taking a unit of time to respond
 [^5]: [[tsra-lecture-5](pages/tsra-lecture-5.md)] p.82 [synthesis] — the constructor contains a description, picks up parts, and identifies them by tests, e.g. a muscle contracts when stimulated
 [^6]: [[tsra-lecture-5](pages/tsra-lecture-5.md)] p.82 [synthesis] — von Neumann suspected three dimensions (or a Riemann surface) were needed; Part II shows two suffice for the cellular model, strongly suggesting two suffice for the kinematic one
+[^7]: [[tsra-part2-ch1](pages/tsra-part2-ch1.md)] pp.102-103, 109 [synthesis] — avoiding geometry and kinematics: stationary quiescent/active cells, discrete homogeneous medium, growth as transformation of unexcitable into excitable cells
