@@ -5,7 +5,7 @@ summary: Langton's survey of cellular-automaton rule space ordered by the λ par
 tags: [langton, lambda-parameter, edge-of-chaos, phase-transition, rule-space, entropy, mutual-information, emergent-computation, wolfram-classes]
 sources: [computation-at-the-edge-of-chaos]
 created: 2026-09-24
-updated: 2026-09-24
+updated: 2026-09-25
 ---
 
 # Computation at the Edge of Chaos (Langton, 1990)
@@ -63,7 +63,7 @@ begun there.[^8]
   steps.[^4][^11]
 - **Particles and storage at the transition.** The λ = 0.45 rule supports several kinds
   of moving particles that collide with each other and with static periodic structures,
-  like gliders and blinkers in the [[game-of-life](pages/game-of-life.md)]. Life's own λ
+  like [[glider](pages/glider.md)]s and [[blinker](pages/blinker.md)]s in the [[game-of-life](pages/game-of-life.md)]. Life's own λ
   is 0.273, inside the transition region for 2-state, 9-neighbour rules.[^12]
 - **Entropy gap and percolation.** In the 2D survey the entropy data are bimodal, with a
   sparse gap below H ≈ 0.84. The low-entropy cutoff at λ ≈ 0.6 matches the site-percolation
@@ -106,6 +106,7 @@ begun there.[^8]
 - [[chris-langton](pages/chris-langton.md)] - the author
 - [[cellular-automaton](pages/cellular-automaton.md)] - Langton's formal definition and rule counts
 - [[game-of-life](pages/game-of-life.md)] - λ = 0.273, in the transition region
+- [[glider](pages/glider.md)], [[blinker](pages/blinker.md)] - signal and storage in the Life universality proof
 - [[complexity-threshold](pages/complexity-threshold.md)] - von Neumann's lower bound, plus Langton's upper one
 - [[universal-turing-machine](pages/universal-turing-machine.md)] - the halting problem and its "freezing" analogue
 - [[self-organization](pages/self-organization.md)] - Wolfram found no phase transition in noise, while Langton finds one in rule space

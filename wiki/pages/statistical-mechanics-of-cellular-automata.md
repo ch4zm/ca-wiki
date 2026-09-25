@@ -5,7 +5,7 @@ summary: Wolfram's founding study of one-dimensional two-state "elementary" cell
 tags: [wolfram, elementary-ca, statistical-mechanics, self-organization, fractals, irreversibility, entropy, universality]
 sources: [statistical-mechanics-of-cellular-automata, theory-of-cellular-automata-a-survey]
 created: 2026-09-24
-updated: 2026-09-24
+updated: 2026-09-25
 ---
 
 # Statistical Mechanics of Cellular Automata (Wolfram, 1983)
@@ -110,6 +110,7 @@ exist.[^9]
 - [[garden-of-eden](pages/garden-of-eden.md)] — unreachable configurations
 - [[erasable-configuration](pages/erasable-configuration.md)] - Moore's local form of irreversibility
 - [[game-of-life](pages/game-of-life.md)] — the 2D example in Sec. V
+- [[block](pages/block.md)], [[beehive](pages/beehive.md)], [[blinker](pages/blinker.md)], [[glider](pages/glider.md)] - the standard Life structures ("square", "hexagon", blinker, glider)
 - [[cellular-automaton](pages/cellular-automaton.md)] — the general notion, and neighbourhood types
 - [[universal-turing-machine](pages/universal-turing-machine.md)] — universality in cellular automata
 - [[self-reproduction](pages/self-reproduction.md)] — replication in rule 90

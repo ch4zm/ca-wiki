@@ -5,7 +5,7 @@ time; entries here are working references, not checked bibliography.
 
 ## Core, in ingest order
 
-- [ ] Gardner, M. (1970). Mathematical games: The fantastic combinations of John Conway's new solitaire game "life." *Scientific American, 223*(4), 120–123. https://doi.org/10.1038/scientificamerican1070-120
+- [x] Gardner, M. (1970). Mathematical games: The fantastic combinations of John Conway's new solitaire game "life." *Scientific American, 223*(4), 120–123. https://doi.org/10.1038/scientificamerican1070-120
 - [ ] Berlekamp, E. R., Conway, J. H., & Guy, R. K. (1982). *Winning ways for your mathematical plays: Vol. 2. Games in particular*. Academic Press. (Ch. 25, "What Is Life?")
 - [ ] Johnston, N., & Greene, D. (2022). *Conway's Game of Life: Mathematics and construction*. (Free PDF, https://conwaylife.com/book/) Chapter by chapter.
 - [ ] LifeWiki rule pages (https://conwaylife.com/wiki/): Life-like cellular automaton, Rulestring, Generations, Star Wars, Brian's Brain, HighLife, Day & Night, Seeds, Isotropic non-totalistic rule, Larger than Life

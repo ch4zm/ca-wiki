@@ -1,7 +1,7 @@
 ---
 title: Overview
 tags: [overview, synthesis]
-sources: [theory-of-self-reproducing-automata, tsra-editors-introduction, tsra-lecture-2, tsra-lecture-3, tsra-lecture-4, tsra-lecture-5, tsra-part2-ch1, tsra-part2-ch2, tsra-part2-ch3, tsra-part2-ch4, tsra-part2-ch5, endomorphisms-and-automorphisms-of-the-shift-dynamical-system, machine-models-of-self-reproduction, converse-of-moores-garden-of-eden-theorem, statistical-mechanics-of-cellular-automata, planetmath-garden-of-eden-theorem, computation-at-the-edge-of-chaos, theory-of-cellular-automata-a-survey, automata-universality-computation, aucm-ch12-linear-cellular-automata-and-decidability]
+sources: [fantastic-combinations-of-john-conways-life, theory-of-self-reproducing-automata, tsra-editors-introduction, tsra-lecture-2, tsra-lecture-3, tsra-lecture-4, tsra-lecture-5, tsra-part2-ch1, tsra-part2-ch2, tsra-part2-ch3, tsra-part2-ch4, tsra-part2-ch5, endomorphisms-and-automorphisms-of-the-shift-dynamical-system, machine-models-of-self-reproduction, converse-of-moores-garden-of-eden-theorem, statistical-mechanics-of-cellular-automata, planetmath-garden-of-eden-theorem, computation-at-the-edge-of-chaos, theory-of-cellular-automata-a-survey, automata-universality-computation, aucm-ch12-linear-cellular-automata-and-decidability]
 updated: 2026-09-25
 ---
 
@@ -15,6 +15,16 @@ Cellular automata begin with von Neumann's [[theory-of-automata](pages/theory-of
 mathematical theory of how automata, natural and artificial, are organized. Its organizing
 concept is complexity, and its two central problems are
 [[self-reproduction](pages/self-reproduction.md)] and reliability.
+
+**Life.** The wiki's center is Conway's [[game-of-life](pages/game-of-life.md)], which Gardner introduced in
+1970 ([[fantastic-combinations-of-john-conways-life](pages/fantastic-combinations-of-john-conways-life.md)]): two states, eight neighbours,
+birth on three, survival on two or three. Conway tuned the rule so that a pattern's fate is
+hard to predict. Patterns fall into three basic classes: the [[still-life](pages/still-life.md)] ([[block](pages/block.md)],
+[[beehive](pages/beehive.md)]), the [[oscillator](pages/oscillator.md)] ([[blinker](pages/blinker.md)], [[pulsar](pages/pulsar.md)],
+[[pentadecathlon](pages/pentadecathlon.md)]), and the [[spaceship](pages/spaceship.md)], of which the [[glider](pages/glider.md)] is the
+smallest, moving at a quarter of the "speed of light" of one cell per generation. Long-lived
+starts such as the [[r-pentomino](pages/r-pentomino.md)] were followed by hand and on early computers from the
+beginning. The theory sections below are background to this.
 
 **Foundations.** Two logical ingredients underlie everything: networks of idealized
 threshold elements ([[mcculloch-pitts-neuron](pages/mcculloch-pitts-neuron.md)]) and Turing's
@@ -144,6 +154,8 @@ language recognizers
 
 ## Open Questions
 
+- What is the R-pentomino's eventual fate? In 1970 Conway had tracked it for 460 generations without an answer ([[r-pentomino](pages/r-pentomino.md)]).
+- Which three spaceships did Conway keep secret in 1970, and what other speeds are possible below the c/4 and c/2 limits ([[spaceship](pages/spaceship.md)])?
 - Why exactly two universality classes? Wolfram conjectures it is because rules simulate each
   other under short encodings. Is that the whole story?
 - Rule 110 is universal (Cook and Wolfram, reported by Kari). Is it intrinsically universal?
@@ -216,6 +228,16 @@ language recognizers
 - [[self-organization](pages/self-organization.md)]
 - [[irreversibility-and-entropy](pages/irreversibility-and-entropy.md)]
 - [[game-of-life](pages/game-of-life.md)]
+- [[still-life](pages/still-life.md)]
+- [[oscillator](pages/oscillator.md)]
+- [[spaceship](pages/spaceship.md)]
+- [[glider](pages/glider.md)]
+- [[block](pages/block.md)]
+- [[beehive](pages/beehive.md)]
+- [[blinker](pages/blinker.md)]
+- [[r-pentomino](pages/r-pentomino.md)]
+- [[pulsar](pages/pulsar.md)]
+- [[pentadecathlon](pages/pentadecathlon.md)]
 - [[lambda-parameter](pages/lambda-parameter.md)]
 - [[edge-of-chaos](pages/edge-of-chaos.md)]
 - [[chris-langton](pages/chris-langton.md)]

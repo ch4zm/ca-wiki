@@ -34,7 +34,7 @@ and Wolfram conjectured in the 1980s that it is computationally universal.[^3]
 
 **Universality.** Cook and Wolfram established it: **rule 110 is computationally
 universal**. Information is coded in signals, and their collisions perform logic, in the
-same way as glider collisions in the [[game-of-life](pages/game-of-life.md)]. One
+same way as [[glider](pages/glider.md)] collisions in the [[game-of-life](pages/game-of-life.md)]. One
 dimension makes this harder than two, because signals cannot easily cross.[^3] Kari leaves
 the exact form of universality undefined.[^4] The proof simulates Turing machines, which is
 the weaker of the two kinds of universality

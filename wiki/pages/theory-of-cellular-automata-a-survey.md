@@ -5,7 +5,7 @@ summary: Kari's tutorial survey of cellular automata as a part of theoretical co
 tags: [kari, survey, decidability, reversibility, garden-of-eden, limit-sets, topological-dynamics, wang-tiles, universality, linear-ca, language-recognition]
 sources: [theory-of-cellular-automata-a-survey]
 created: 2026-09-24
-updated: 2026-09-24
+updated: 2026-09-25
 ---
 
 # Theory of Cellular Automata - A Survey (Kari, 2005)
@@ -135,6 +135,7 @@ The survey poses nine, numbered in order:[^17]
 - [[elementary-cellular-automaton](pages/elementary-cellular-automaton.md)] - Wolfram numbers, 88 essentially different rules
 - [[classification-of-cellular-automata](pages/classification-of-cellular-automata.md)] - Wolfram, Culik-Yu and Kurka classes
 - [[game-of-life](pages/game-of-life.md)] - object categories, universality, undecidable death
+- [[still-life](pages/still-life.md)], [[oscillator](pages/oscillator.md)], [[spaceship](pages/spaceship.md)] - the object categories as finite fixed points, periodic orbits, and translating orbits
 - [[rule-110](pages/rule-110.md)] - universal; intrinsic universality open
 - [[curtis-hedlund-lyndon-theorem](pages/curtis-hedlund-lyndon-theorem.md)] - CA = continuous shift-commuting maps in any dimension
 - [[shift-dynamical-system](pages/shift-dynamical-system.md)] - the Cantor topology on configurations

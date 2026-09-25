@@ -60,7 +60,7 @@ step.[^12] He lists the known universal cases as of 1983. The simplest universal
 machine then known had 7 states and 4 symbols. Smith (1971) showed that an 18-state
 one-dimensional cellular automaton with three-cell neighbourhoods can simulate it.
 Otherwise universality is shown by building "wires", NAND gates and memories out of
-cellular structures. The [[game-of-life](pages/game-of-life.md)] does this with glider
+cellular structures. The [[game-of-life](pages/game-of-life.md)] does this with [[glider](pages/glider.md)]
 streams. Banks (1971) gave a 3-state type-I (five-cell) 2D universal rule, and Toffoli
 (1977) a 2-state one that needs an infinite nonzero background. There were early signs of
 a 5-state one-dimensional universal rule (all cited via Wolfram and not read).[^13]

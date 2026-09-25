@@ -46,7 +46,7 @@ Langton reads four things from this.[^4]
   do not depend on size at all.
 - **Randomness grows toward λ = 0.75**, the point of maximum disorder.
 - **Particles.** The transition supports both static and moving structures. The moving
-  ones are solitary waves, like gliders in the [[game-of-life](pages/game-of-life.md)].
+  ones are solitary waves, like [[glider](pages/glider.md)]s in the [[game-of-life](pages/game-of-life.md)].
   They collide with each other and with static periodic structures, and could serve as
   signals and storage.
 
