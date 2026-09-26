@@ -1,7 +1,7 @@
 ---
 title: Overview
 tags: [overview, synthesis]
-sources: [cgol-ch12-0e0p-metacell, cgol-ch6-periodic-circuitry, cgol-ch5-glider-synthesis, cgol-ch4-spaceships-and-moving-objects, cgol-ch3-oscillators, cgol-ch2-still-lifes, conways-game-of-life-mathematics-and-construction, cgol-ch1-early-life, fantastic-combinations-of-john-conways-life, theory-of-self-reproducing-automata, tsra-editors-introduction, tsra-lecture-2, tsra-lecture-3, tsra-lecture-4, tsra-lecture-5, tsra-part2-ch1, tsra-part2-ch2, tsra-part2-ch3, tsra-part2-ch4, tsra-part2-ch5, endomorphisms-and-automorphisms-of-the-shift-dynamical-system, machine-models-of-self-reproduction, converse-of-moores-garden-of-eden-theorem, statistical-mechanics-of-cellular-automata, planetmath-garden-of-eden-theorem, computation-at-the-edge-of-chaos, theory-of-cellular-automata-a-survey, automata-universality-computation, aucm-ch12-linear-cellular-automata-and-decidability]
+sources: [lifewiki-generations, lifewiki-star-wars, lifewiki-list-of-generations-rules, golly-help-generations, cgol-ch12-0e0p-metacell, cgol-ch6-periodic-circuitry, cgol-ch5-glider-synthesis, cgol-ch4-spaceships-and-moving-objects, cgol-ch3-oscillators, cgol-ch2-still-lifes, conways-game-of-life-mathematics-and-construction, cgol-ch1-early-life, fantastic-combinations-of-john-conways-life, theory-of-self-reproducing-automata, tsra-editors-introduction, tsra-lecture-2, tsra-lecture-3, tsra-lecture-4, tsra-lecture-5, tsra-part2-ch1, tsra-part2-ch2, tsra-part2-ch3, tsra-part2-ch4, tsra-part2-ch5, endomorphisms-and-automorphisms-of-the-shift-dynamical-system, machine-models-of-self-reproduction, converse-of-moores-garden-of-eden-theorem, statistical-mechanics-of-cellular-automata, planetmath-garden-of-eden-theorem, computation-at-the-edge-of-chaos, theory-of-cellular-automata-a-survey, automata-universality-computation, aucm-ch12-linear-cellular-automata-and-decidability]
 updated: 2026-09-25
 ---
 
@@ -36,7 +36,7 @@ sit inside 2^102 [[isotropic-non-totalistic-rule](pages/isotropic-non-totalistic
 2^512 [[non-isotropic-rule](pages/non-isotropic-rule.md)]s (MAP rulestrings) on the same eight-cell neighbourhood.
 Other rules have patterns Life lacks: [[highlife](pages/highlife.md)]'s 12-cell [[replicator](pages/replicator.md)],
 looping oscillators and spaceships made of spaceships in isotropic rules, and single-cell
-spaceships in non-isotropic ones. Life can host all of them. A [[metacell](pages/metacell.md)] is a Life
+spaceships in non-isotropic ones. [[generations-rule](pages/generations-rule.md)]s add dying ("refractory") states: a live cell that fails to survive ages through states that neither count as live nor allow birth, which makes small lightspeed spaceships abundant. [[brians-brain](pages/brians-brain.md)] (B2/S/C3) is almost all motion; [[star-wars-rule](pages/star-wars-rule.md)] (B2/S345/C4) adds survival, and gains still lifes, oscillators of every period from 4, guns and a photon logic technology able to emulate Rule 110. Life can host all of them. A [[metacell](pages/metacell.md)] is a Life
 pattern that acts as one cell of another rule; the 0E0P metacell runs any two-state Moore
 rule where empty stays empty, by emulating an 8-state von Neumann rule and building its
 own neighbours.
@@ -288,6 +288,9 @@ language recognizers
 - [[non-isotropic-rule](pages/non-isotropic-rule.md)]
 - [[highlife](pages/highlife.md)]
 - [[replicator](pages/replicator.md)]
+- [[generations-rule](pages/generations-rule.md)]
+- [[star-wars-rule](pages/star-wars-rule.md)]
+- [[brians-brain](pages/brians-brain.md)]
 - [[lambda-parameter](pages/lambda-parameter.md)]
 - [[edge-of-chaos](pages/edge-of-chaos.md)]
 - [[chris-langton](pages/chris-langton.md)]

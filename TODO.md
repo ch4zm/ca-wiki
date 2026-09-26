@@ -8,8 +8,8 @@ time; entries here are working references, not checked bibliography.
 - [x] Gardner, M. (1970). Mathematical games: The fantastic combinations of John Conway's new solitaire game "life." *Scientific American, 223*(4), 120–123. https://doi.org/10.1038/scientificamerican1070-120
 - [ ] Berlekamp, E. R., Conway, J. H., & Guy, R. K. (1982). *Winning ways for your mathematical plays: Vol. 2. Games in particular*. Academic Press. (Ch. 25, "What Is Life?")
 - [ ] Johnston, N., & Greene, D. (2022). *Conway's Game of Life: Mathematics and construction*. (Free PDF, https://conwaylife.com/book/) Chapter by chapter.
-- [ ] LifeWiki rule pages (https://conwaylife.com/wiki/): Life-like cellular automaton, Rulestring, Generations, Star Wars, Brian's Brain, HighLife, Day & Night, Seeds, Isotropic non-totalistic rule, Larger than Life
-- [ ] Golly help documentation (https://golly.sourceforge.io/Help/): rule formats, Generations algorithm, RuleLoader / rule tables, QuickLife vs. HashLife
+- [ ] LifeWiki rule pages (https://conwaylife.com/wiki/): [x] Generations, [x] Star Wars, [x] List of Generations rules; still to do: Life-like cellular automaton, Rulestring, Brian's Brain, HighLife, Day & Night, Seeds, Isotropic non-totalistic rule, Larger than Life
+- [ ] Golly help documentation (https://golly.sourceforge.io/Help/): [x] Generations algorithm; still to do: rule formats, RuleLoader / rule tables, QuickLife vs. HashLife
 - [ ] Gosper, R. W. (1984). Exploiting regularities in large cellular spaces. *Physica D: Nonlinear Phenomena, 10*(1–2), 75–80. (HashLife)
 - [ ] Adamatzky, A. (Ed.). (2010). *Game of Life cellular automata*. Springer. Chapter-picked; start with Eppstein, "Growth and decay in Life-like cellular automata."
 - [ ] Greenberg, J. M., & Hastings, S. P. (1978). Spatial patterns for discrete models of diffusion in excitable media. *SIAM Journal on Applied Mathematics, 34*(3), 515–523. (Origin of refractory states)
