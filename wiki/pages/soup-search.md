@@ -15,7 +15,8 @@ updated: 2026-09-25
 **Soup and ash.** A random starting configuration is called *soup*, and the objects it
 leaves after its chaos dies down are *ash*, what remains once a pattern stops
 "burning".[^1] Evolving soups is one of three ways to find Life objects, alongside
-programs that search for patterns with given properties and combining known objects into
+programs that search for patterns with given properties
+([[row-by-row-search](pages/row-by-row-search.md)]) and combining known objects into
 new ones.[^2] Tiny changes matter: flipping one cell of a soup can make it last 25 times
 longer and leave 20 times as much ash.[^3]
 
@@ -64,6 +65,7 @@ symmetric soups can reach.
 ## Related Concepts
 
 - [[apgsearch](pages/apgsearch.md)], [[catagolue](pages/catagolue.md)] - the program and census that do soup search at scale today
+- [[row-by-row-search](pages/row-by-row-search.md)] - the directed alternative: search for a pattern with a given period and speed
 - [[life-like-cellular-automaton](pages/life-like-cellular-automaton.md)] - TOLLCASS and apgsearch cover other rules too
 - [[methuselah](pages/methuselah.md)] - found by the same kind of random search
 - [[familiar-fours](pages/familiar-fours.md)] - common ash formations

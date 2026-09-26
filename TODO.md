@@ -11,7 +11,7 @@ time; entries here are working references, not checked bibliography.
 - [ ] LifeWiki rule pages (https://conwaylife.com/wiki/): [x] Generations, [x] Star Wars, [x] List of Generations rules, [x] Life-like cellular automaton, [x] Rulestring, [x] Brian's Brain, [x] Seeds, [x] Star Trek, [x] WireWorld, [x] Larger than Life, [x] Higher-range outer-totalistic rule, [x] Higher-range isotropic non-totalistic rule, [x] von Neumann neighbourhood, [x] Hexagonal neighbourhood, [x] Unit cell, [x] RuleLoader; still to do: HighLife, Day & Night, Isotropic non-totalistic rule
 - [ ] Golly help documentation (https://golly.sourceforge.io/Help/): [x] Generations algorithm; still to do: rule formats, RuleLoader / rule tables, QuickLife vs. HashLife
 - [ ] Gosper, R. W. (1984). Exploiting regularities in large cellular spaces. *Physica D: Nonlinear Phenomena, 10*(1–2), 75–80. (HashLife)
-- [ ] Adamatzky, A. (Ed.). (2010). *Game of Life cellular automata*. Springer. Chapter-picked; start with Eppstein, "Growth and decay in Life-like cellular automata."
+- [ ] Adamatzky, A. (Ed.). (2010). *Game of Life cellular automata*. Springer. Chapter-picked: [x] Eppstein, "Growth and decay in Life-like cellular automata"; next: Johnston, "The B36/S125 '2x2' Life-like cellular automaton."
 - [ ] Greenberg, J. M., & Hastings, S. P. (1978). Spatial patterns for discrete models of diffusion in excitable media. *SIAM Journal on Applied Mathematics, 34*(3), 515–523. (Origin of refractory states)
 - [ ] Dewdney, A. K. (1990, January). Computer recreations: The cellular automata programs that create Wireworld, Rugworld and other diversions. *Scientific American, 262*(1).
 - [ ] Toffoli, T., & Margolus, N. (1987). *Cellular automata machines: A new environment for modeling*. MIT Press.
@@ -24,3 +24,7 @@ time; entries here are working references, not checked bibliography.
 - [ ] Wójtowicz, M. *Mirek's Cellebration* rule lexicon, Generations family (source of Star Wars and many named Generations rules).
 - [ ] Catagolue and apgsearch documentation (https://catagolue.hatsya.com/): random-soup census methodology. [x] LifeWiki apgsearch and Catagolue articles.
 - [ ] Rendell, P. (2002). Turing universality of the Game of Life. In A. Adamatzky (Ed.), *Collision-based computing*. Springer.
+- [x] Eppstein, D. (2002). Searching for spaceships. In R. J. Nowakowski (Ed.), *More games of no chance* (MSRI Publications 42, pp. 433-453). Cambridge University Press. https://arxiv.org/abs/cs/0004003
+- [x] Eppstein, D. Gliders in Life-like cellular automata (web site and glider.db). https://www.ics.uci.edu/~eppstein/ca/
+- [x] Bays, C. (1987). Candidates for the game of Life in three dimensions. *Complex Systems, 1*, 373-400. Plus [x] triangular tessellation (1994, *Complex Systems 8*, 127-150) and [x] hexagonal and pentagonal tessellations (2005, *Complex Systems 15*, 245-252).
+- [ ] ConwayLife forum threads (save from browser; site blocks fetches): "List of the Turing-complete totalistic life-like CA" (t=2597), "Glider Syntheses in Other Rules" (t=1197).

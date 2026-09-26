@@ -3,7 +3,7 @@ title: Seeds (B2/S)
 category: Rules
 summary: The Life-like rule B2/S - birth on exactly two neighbours, no survival at all, so every pattern is a phoenix; still, most patterns explode, 4-cell photons fly at lightspeed, oscillators of many periods exist, and a Rule 110 unit stripe makes it Turing-complete; Brian's Brain is Seeds plus a refractory state
 tags: [rule, life-like, seeds, b2-s, phoenix, explosive, turing-complete, photon]
-sources: [lifewiki-seeds, lifewiki-brians-brain, lifewiki-life-like-cellular-automaton]
+sources: [eppstein-2010-growth-and-decay-in-life-like-ca, lifewiki-seeds, lifewiki-brians-brain, lifewiki-life-like-cellular-automaton]
 created: 2026-09-25
 updated: 2026-09-25
 ---
@@ -45,10 +45,17 @@ turns Seeds' explosions into directed motion.[^7] B2 rules in general are explos
 expanding, because a domino at a pattern's edge breeds a new domino
 ([[life-like-cellular-automaton](pages/life-like-cellular-automaton.md)]).[^8]
 
+**Fertile and mortal.** In Eppstein's terms Seeds is fertile, as every B2 rule is: a 2 × 2
+block spreads forever.[^9] It is also mortal, since a single live cell dies at once and
+has too few neighbours to cause a birth, so it sits in the region where Eppstein expects
+engineered complexity ([[fertile-and-mortal-rules](pages/fertile-and-mortal-rules.md)]; own
+reasoning for mortality, from the rule).
+
 ## Appearances in Sources
 
 - [[lifewiki-seeds](pages/lifewiki-seeds.md)] - the rule and its patterns
 - [[lifewiki-brians-brain](pages/lifewiki-brians-brain.md)] - Brian's Brain as Seeds plus a third state
+- [[eppstein-2010-growth-and-decay-in-life-like-ca](pages/eppstein-2010-growth-and-decay-in-life-like-ca.md)] - every B2 rule is fertile
 
 ## Related Concepts
 
@@ -57,6 +64,7 @@ expanding, because a domino at a pattern's edge breeds a new domino
 - [[rule-110](pages/rule-110.md)] - emulated to prove universality
 - [[generations-rule](pages/generations-rule.md)] - Seeds is B2/S/C2; add states and it becomes Brian's Brain
 - [[spaceship](pages/spaceship.md)], [[oscillator](pages/oscillator.md)] - its object types
+- [[fertile-and-mortal-rules](pages/fertile-and-mortal-rules.md)] - Seeds is both
 
 [^1]: [[lifewiki-seeds](pages/lifewiki-seeds.md)] L12-15,L20 - rulestrings "/2", "B2/S", rule integer 4; "Seeds is a Life-like cellular automaton in which a new cell is born when it has exactly two live neighbours, and live cells never survive to the next generation. Even though all the living cells die in every generation (turning every pattern into a phoenix), most patterns are still exploding quadratically. The rule was initially investigated by Brian Silverman and named by Mirek Wójtowicz."
 [^2]: [[lifewiki-seeds](pages/lifewiki-seeds.md)] L18-19 - "Black/white reversal B012345678/S01234578"
@@ -66,3 +74,4 @@ expanding, because a domino at a pattern's edge breeds a new domino
 [^6]: [[lifewiki-seeds](pages/lifewiki-seeds.md)] L21 - "On October 30, 2020, Peter Naszvadi proved that Seeds is Turing-complete on an infinite, periodically-tiled grid by constructing a Rule 110 \"unit stripe\"."
 [^7]: [[lifewiki-brians-brain](pages/lifewiki-brians-brain.md)] L16 - "It is similar to Seeds, but with an additional state; dead cells get born if they have exactly two live neighbors, and live cells never survive, but instead of dying immediately, they advance to a third state, not considered \"live\" for the purpose of cell birth, before dying."
 [^8]: [[lifewiki-life-like-cellular-automaton](pages/lifewiki-life-like-cellular-automaton.md)] L27 - "All rules where the lowest birth condition is 2 neighboring ON cells are exploding or expanding in character; this is largely due to the fact that a domino at the edge of a pattern will give rise to a new domino, also located at the edge of the daughter pattern."
+[^9]: [[eppstein-2010-growth-and-decay-in-life-like-ca](pages/eppstein-2010-growth-and-decay-in-life-like-ca.md)] p.8 - "If a rule includes B2, it is fertile. If the rule also includes B1, this follows from the previous case; otherwise, the pattern consisting of a 2 × 2 block of live cells is a growth pattern"

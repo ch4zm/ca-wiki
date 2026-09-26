@@ -60,6 +60,7 @@ from each direction is easier to use than the tight 3-glider one ([[object-synth
 ## Related Concepts
 
 - [[puffer](pages/puffer.md)] - rakes built from xWSSes
+- [[row-by-row-search](pages/row-by-row-search.md)] - glide-reflect c/2 ships like these are handled by a small change to the row-by-row search equation
 - [[spaceship](pages/spaceship.md)] - the class
 - [[glider](pages/glider.md)] - the diagonal counterpart
 - [[soup-search](pages/soup-search.md)] - where their natural frequency is measured

@@ -67,6 +67,7 @@ changed becomes a puffer, and a heavyweight spaceship turns that into a period-8
 - [[gosper-glider-gun](pages/gosper-glider-gun.md)] - the stationary counterpart of a rake
 - [[light-middle-heavyweight-spaceships](pages/light-middle-heavyweight-spaceships.md)] - the parts rakes are made of
 - [[signal-wire](pages/signal-wire.md)] - fuses and wicks behind adjustable rakes
+- [[row-by-row-search](pages/row-by-row-search.md)] - puffers combined into spaceships are designed by hand, outside the reach of row-by-row search
 - [[apgsearch](pages/apgsearch.md)] - found the pony express, a natural puffer made from two switch engines
 
 [^1]: [[cgol-ch1-early-life](pages/cgol-ch1-early-life.md)] pp.14-15 [synthesis] - "An object like this one, which moves but leaves periodic junk behind it, is called a puffer"; block-laying and glider-producing switch engines; arks

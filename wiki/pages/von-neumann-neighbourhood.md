@@ -3,7 +3,7 @@ title: von Neumann neighbourhood
 category: Concepts
 summary: The four cells orthogonally adjacent to a cell (Manhattan distance 1), named for von Neumann's 29-state automaton; 2n cells in n dimensions and 2n(n+1) at range n; with two states and no B1 nothing can leave its bounding box, so spaceships need a third state; written with a V suffix (B1/S0V)
 tags: [concept, neighbourhood, von-neumann, manhattan-distance, lattice]
-sources: [lifewiki-von-neumann-neighbourhood, lifewiki-rulestring, lifewiki-larger-than-life, lifewiki-higher-range-outer-totalistic-rule, lifewiki-higher-range-isotropic-non-totalistic-rule, lifewiki-apgsearch, lifewiki-unit-cell]
+sources: [bays-1987-candidates-for-the-game-of-life-in-three-dimensions, lifewiki-von-neumann-neighbourhood, lifewiki-rulestring, lifewiki-larger-than-life, lifewiki-higher-range-outer-totalistic-rule, lifewiki-higher-range-isotropic-non-totalistic-rule, lifewiki-apgsearch, lifewiki-unit-cell]
 created: 2026-09-25
 updated: 2026-09-25
 ---
@@ -39,20 +39,26 @@ one three-state rule has many spaceships, rakes and breeders.[^3] B1 rules are
 not dull, though. The Larger than Life rule Gnarl, R1,C2,S0,B1,NN or **B1/S0V**, is an
 exploding rule by Kellie Evans ([[larger-than-life](pages/larger-than-life.md)]).[^4]
 
+**In three dimensions.** The 3D form is the six face neighbours of a cube. In Carter Bays's
+search for 3D Games of Life, rules restricted to faces alone or to corners alone produced
+no glider; gliders appeared only with face-plus-edge and corner-plus-edge neighbourhoods,
+and those rules grow without bound from random soup
+([[three-dimensional-life](pages/three-dimensional-life.md)]).[^5]
+
 **Isotropic rules.** Up to rotation and reflection, the four neighbours have only six
-arrangements, so there are few isotropic rules.[^5] With six arrangements each for birth
+arrangements, so there are few isotropic rules.[^6] With six arrangements each for birth
 and survival, that gives 2^12 two-state isotropic von Neumann rules (own reasoning). They
 all fit inside the [[isotropic-non-totalistic-rule](pages/isotropic-non-totalistic-rule.md)]
 Moore rules, and that is how [[apgsearch](pages/apgsearch.md)] searches them: as isotropic
-Moore rules that ignore the corners.[^6] At range 2 the count jumps to 618 arrangements.[^5]
+Moore rules that ignore the corners.[^7] At range 2 the count jumps to 618 arrangements.[^6]
 
 **In rulestrings and software.** A trailing **V** marks a von Neumann rule
 ([[rulestring](pages/rulestring.md)]); in range-based notation the code is **NN**
-([[higher-range-outer-totalistic-rule](pages/higher-range-outer-totalistic-rule.md)]).[^7]
+([[higher-range-outer-totalistic-rule](pages/higher-range-outer-totalistic-rule.md)]).[^8]
 
 **Universality.** Banks-I, an early two-state rule on this neighbourhood, is logically
 universal, as shown with a Rule 110 unit cell; Roger Banks's own proofs date to
-1971.[^8]
+1971.[^9]
 
 ## Appearances in Sources
 
@@ -62,6 +68,7 @@ universal, as shown with a Rule 110 unit cell; Roger Banks's own proofs date to
 - [[lifewiki-higher-range-isotropic-non-totalistic-rule](pages/lifewiki-higher-range-isotropic-non-totalistic-rule.md)] - transition counts at ranges 1 and 2
 - [[lifewiki-apgsearch](pages/lifewiki-apgsearch.md)] - searching von Neumann rules as isotropic Moore rules
 - [[lifewiki-unit-cell](pages/lifewiki-unit-cell.md)] - Banks-I
+- [[bays-1987-candidates-for-the-game-of-life-in-three-dimensions](pages/bays-1987-candidates-for-the-game-of-life-in-three-dimensions.md)] - the face-only neighbourhood in 3D
 
 ## Related Concepts
 
@@ -75,7 +82,8 @@ universal, as shown with a Rule 110 unit cell; Roger Banks's own proofs date to
 [^2]: [[lifewiki-von-neumann-neighbourhood](pages/lifewiki-von-neumann-neighbourhood.md)] L8,L13 [synthesis] - "a 6-cell octahedral neighborhood for a cellular automaton in three dimensions"; 2n cells in n dimensions; range n defined recursively; "The number of cells in the von Neumann neighbourhood of range n of a single cell is given by 2 n (n + 1)"
 [^3]: [[lifewiki-von-neumann-neighbourhood](pages/lifewiki-von-neumann-neighbourhood.md)] L11 - "With two states, patterns cannot escape their bounding box without B1, which causes patterns to grow at the speed of light, so spaceships are impossible. However, a three-state rule has been found in which many spaceships (and rakes and breeders) exist"
 [^4]: [[lifewiki-larger-than-life](pages/lifewiki-larger-than-life.md)] L52-55 - "R1,C2,S0,B1,NN B1/S0V Gnarl an exploding rule by Kellie Evans"
-[^5]: [[lifewiki-higher-range-isotropic-non-totalistic-rule](pages/lifewiki-higher-range-isotropic-non-totalistic-rule.md)] L120-127,L208-217 [synthesis] - range-1 von Neumann, 2 states: 6 transitions; R2 von Neumann INT: 618 transitions
-[^6]: [[lifewiki-apgsearch](pages/lifewiki-apgsearch.md)] L97,L107 [synthesis] - "Isotropic von Neumann neighbourhood rules. (implicitly by isotropic non-totalistic Moore neighbourhood rules)"; "the von Neumann neighbourhood can be indirectly simulated by isotropic Moore rules"
-[^7]: [[lifewiki-rulestring](pages/lifewiki-rulestring.md)] L13 - "a suffixed V indicates that the CA in question uses the von Neumann neighbourhood"; [[lifewiki-higher-range-outer-totalistic-rule](pages/lifewiki-higher-range-outer-totalistic-rule.md)] L20 - "NN for von Neumann neighbourhood"
-[^8]: [[lifewiki-von-neumann-neighbourhood](pages/lifewiki-von-neumann-neighbourhood.md)] L19 - "Banks-I, an early two-state Von Neumann rule"; [[lifewiki-unit-cell](pages/lifewiki-unit-cell.md)] L44 - "Banks-I: proves logic universality using Matthew Cook's results, simplifying Roger Banks' proofs from 1971"
+[^5]: [[bays-1987-candidates-for-the-game-of-life-in-three-dimensions](pages/bays-1987-candidates-for-the-game-of-life-in-three-dimensions.md)] p.393 [synthesis] - "Life.001 R similarly deals only with the six face neighbors"; "Two additional gliders have been found - one in Life.011 4544 and another in Life.110 4544. These are the only rules that seem to support gliders ... primordial soup experiments with Life.110 4544 and Life.011 4544 usually lead to unbounded growth"
+[^6]: [[lifewiki-higher-range-isotropic-non-totalistic-rule](pages/lifewiki-higher-range-isotropic-non-totalistic-rule.md)] L120-127,L208-217 [synthesis] - range-1 von Neumann, 2 states: 6 transitions; R2 von Neumann INT: 618 transitions
+[^7]: [[lifewiki-apgsearch](pages/lifewiki-apgsearch.md)] L97,L107 [synthesis] - "Isotropic von Neumann neighbourhood rules. (implicitly by isotropic non-totalistic Moore neighbourhood rules)"; "the von Neumann neighbourhood can be indirectly simulated by isotropic Moore rules"
+[^8]: [[lifewiki-rulestring](pages/lifewiki-rulestring.md)] L13 - "a suffixed V indicates that the CA in question uses the von Neumann neighbourhood"; [[lifewiki-higher-range-outer-totalistic-rule](pages/lifewiki-higher-range-outer-totalistic-rule.md)] L20 - "NN for von Neumann neighbourhood"
+[^9]: [[lifewiki-von-neumann-neighbourhood](pages/lifewiki-von-neumann-neighbourhood.md)] L19 - "Banks-I, an early two-state Von Neumann rule"; [[lifewiki-unit-cell](pages/lifewiki-unit-cell.md)] L44 - "Banks-I: proves logic universality using Matthew Cook's results, simplifying Roger Banks' proofs from 1971"

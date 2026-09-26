@@ -3,7 +3,7 @@ title: Hexagonal neighbourhood
 category: Concepts
 summary: The six cells adjacent to a cell on the hexagonal (honeycomb) tiling, written with an H suffix (B2/S34H); 3n(n+1) cells at range n, plus the ray-shaped asterisk and the chiral three-cell tripod; isotropic hex rules use Paul Callahan's ortho/meta/para letters from chemistry, and the grid brings its own three- and six-fold symmetries
 tags: [concept, neighbourhood, hexagonal, honeycomb, symmetry, lattice]
-sources: [lifewiki-hexagonal-neighbourhood, lifewiki-higher-range-isotropic-non-totalistic-rule, lifewiki-higher-range-outer-totalistic-rule, lifewiki-apgsearch, lifewiki-rulestring]
+sources: [bays-2005-game-of-life-in-hexagonal-and-pentagonal-tessellations, bays-1994-cellular-automata-in-the-triangular-tessellation, lifewiki-hexagonal-neighbourhood, lifewiki-higher-range-isotropic-non-totalistic-rule, lifewiki-higher-range-outer-totalistic-rule, lifewiki-apgsearch, lifewiki-rulestring]
 created: 2026-09-25
 updated: 2026-09-25
 ---
@@ -48,7 +48,15 @@ Soup searchers treat these as separate symmetry classes
 ([[apgsearch](pages/apgsearch.md)], [[catagolue](pages/catagolue.md)]). All except C3_3
 and D6_3 can be searched.[^5]
 
-**Software.**[^6]
+**A Game of Life on hexagons.** By Carter Bays's test ([[gl-rule](pages/gl-rule.md)]),
+a natural glider plus bounded growth from random soup, the hexagonal grid has one known
+Game of Life: **B2/S35H**, with a period-5 glider. The window is narrow. With only six
+neighbours, birth on 1 is unstable and birth on 3 or more cannot leave a convex border, so
+a hex Game of Life must have birth on exactly 2. B245/S3H has a period-10 glider but fails,
+since large random blobs slowly grow forever. Earlier hexagonal gliders came from rules
+that weight neighbours by position (Golay surrounds), which the test excludes.[^6]
+
+**Software.**[^7]
 - Golly runs outer-totalistic hexagonal rules, their Generations variants, and (from
   4.0) hexagonal [[higher-range-outer-totalistic-rule](pages/higher-range-outer-totalistic-rule.md)]s
   including [[larger-than-life](pages/larger-than-life.md)] (code **NH**).
@@ -64,6 +72,8 @@ and D6_3 can be searched.[^5]
 - [[lifewiki-higher-range-isotropic-non-totalistic-rule](pages/lifewiki-higher-range-isotropic-non-totalistic-rule.md)] - transition counts on the hex grid
 - [[lifewiki-higher-range-outer-totalistic-rule](pages/lifewiki-higher-range-outer-totalistic-rule.md)] - NH, NA (asterisk) and N3 (tripod) codes
 - [[lifewiki-apgsearch](pages/lifewiki-apgsearch.md)] - hexagonal symmetries in soup search
+- [[bays-2005-game-of-life-in-hexagonal-and-pentagonal-tessellations](pages/bays-2005-game-of-life-in-hexagonal-and-pentagonal-tessellations.md)] - B2/S35H, the hexagonal Game of Life
+- [[bays-1994-cellular-automata-in-the-triangular-tessellation](pages/bays-1994-cellular-automata-in-the-triangular-tessellation.md)] - growth bounds on the hexagonal grid
 
 ## Related Concepts
 
@@ -71,10 +81,13 @@ and D6_3 can be searched.[^5]
 - [[isotropic-non-totalistic-rule](pages/isotropic-non-totalistic-rule.md)] - the square-grid counterpart of Callahan's notation
 - [[margolus-neighbourhood](pages/margolus-neighbourhood.md)] - another departure from the standard neighbourhoods
 - [[rulestring](pages/rulestring.md)] - the H suffix
+- [[gl-rule](pages/gl-rule.md)] - Bays's test, passed here by B2/S35H
+- [[triangular-neighbourhood](pages/triangular-neighbourhood.md)] - the dual grid, with twelve touching neighbours
 
 [^1]: [[lifewiki-hexagonal-neighbourhood](pages/lifewiki-hexagonal-neighbourhood.md)] L7 - "The hexagonal neighbourhood, perhaps more correctly the honeycomb neighbourhood, ... is the set of all cells that are adjacent to the region of interest (neighbourhood) on the hexagonal tiling (the region of interest itself may or may not be considered part of the hexagonal neighbourhood, depending on context) ... These rules are typically notated using the H suffix (e.g. B2/S34H)"
 [^2]: [[lifewiki-hexagonal-neighbourhood](pages/lifewiki-hexagonal-neighbourhood.md)] L21,L26,L30 [synthesis] - "the number of cells in a range n hexagonal neighbourhood has the formula 3 n (n + 1)"; the asterisk, "casting six rays outwards from the central cell", "the hexagonal-grid analogue to the cross neighbourhood or star neighbourhood"; the tripod "has an essence of intrinsic chirality; having only half of the rotational symmetry ... as well as cells in one cell's tripod neighbourhood not including the original cell in their tripod neighbourhood imparts rather strange mechanics"
 [^3]: [[lifewiki-hexagonal-neighbourhood](pages/lifewiki-hexagonal-neighbourhood.md)] L36 - "a notation devised by Paul Callahan which represent the relative permutations of the cells using the letters o, m, and p ... The three letters stand for ortho, meta, and para respectively and were chosen in analogy to arene substitution patterns in aromatic chemistry"
 [^4]: [[lifewiki-higher-range-isotropic-non-totalistic-rule](pages/lifewiki-higher-range-isotropic-non-totalistic-rule.md)] L138-147,L158-167,L308-317 [synthesis] - non-totalistic hexagonal (range 1, 2 states): 13 transitions; isotropic non-totalistic Moore: 51; R2 hexagonal INT: 22668
 [^5]: [[lifewiki-hexagonal-neighbourhood](pages/lifewiki-hexagonal-neighbourhood.md)] L55-70 [synthesis] - the hexagonal neighbourhood "features a different set of inherent symmetries": C2, C3, C6, D2, D4, D6, D12 variants; "All of these are currently supported by both lifelib and apgsearch, except for D6_3 and C3_3"; [[lifewiki-apgsearch](pages/lifewiki-apgsearch.md)] L109 - "many of the symmetries of the Moore neighbourhood do not apply to the hexagonal grid, and hexagonal rules must therefore use a separate set of symmetries"
-[^6]: [[lifewiki-hexagonal-neighbourhood](pages/lifewiki-hexagonal-neighbourhood.md)] L19,L37,L73-75 [synthesis] - Golly supports outer-totalistic Generations rules on the hexagonal grid; Golly "does not support isotropic non-totalistic hexagonal rules using this syntax, so they must instead be simulated using either rule tables or MAP strings. LifeViewer and lifelib support them natively"; hexagonal HROT including LtL "supported from v4.0 onwards"; apgsearch and Catagolue support hexagonal Generations and isotropic rules; [[lifewiki-higher-range-outer-totalistic-rule](pages/lifewiki-higher-range-outer-totalistic-rule.md)] L29 - "NH for Hexagonal"
+[^6]: [[bays-2005-game-of-life-in-hexagonal-and-pentagonal-tessellations](pages/bays-2005-game-of-life-in-hexagonal-and-pentagonal-tessellations.md)] pp.247-248 [synthesis] - "a valid hexagonal GL rule has been found. The rule 3,5/2 satisfies all three criteria; its discovered glider has a period of five"; 3/2,4,5 "supports a period 10 glider" but "sufficiently large random blobs exhibit instability by growing slowly"; "F1 must be exactly 2, for if F1 = 1, then the rule will be unstable, and if F1 = 3, then no glider is possible"; earlier gliders used "Golay Surrounds", which "do not qualify as GL rules"; [[bays-1994-cellular-automata-in-the-triangular-tessellation](pages/bays-1994-cellular-automata-in-the-triangular-tessellation.md)] p.128 - "for the hexagonal tessellation the values are 1 and 3"; B/S forms are own translation (3,5/2 lists survival then birth)
+[^7]: [[lifewiki-hexagonal-neighbourhood](pages/lifewiki-hexagonal-neighbourhood.md)] L19,L37,L73-75 [synthesis] - Golly supports outer-totalistic Generations rules on the hexagonal grid; Golly "does not support isotropic non-totalistic hexagonal rules using this syntax, so they must instead be simulated using either rule tables or MAP strings. LifeViewer and lifelib support them natively"; hexagonal HROT including LtL "supported from v4.0 onwards"; apgsearch and Catagolue support hexagonal Generations and isotropic rules; [[lifewiki-higher-range-outer-totalistic-rule](pages/lifewiki-higher-range-outer-totalistic-rule.md)] L29 - "NH for Hexagonal"
