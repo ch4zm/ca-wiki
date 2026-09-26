@@ -3,7 +3,7 @@ title: Glider
 category: Patterns
 summary: The five-cell Life spaceship that shifts one cell diagonally every four generations (speed c/4), named for its glide reflection; the commonest moving object in random soup, emitted by guns, and the signal of glider-stream circuits
 tags: [pattern, life, glider, spaceship, signal]
-sources: [cgol-ch2-still-lifes, cgol-ch1-early-life, fantastic-combinations-of-john-conways-life, statistical-mechanics-of-cellular-automata, computation-at-the-edge-of-chaos, theory-of-cellular-automata-a-survey]
+sources: [cgol-ch3-oscillators, cgol-ch2-still-lifes, cgol-ch1-early-life, fantastic-combinations-of-john-conways-life, statistical-mechanics-of-cellular-automata, computation-at-the-edge-of-chaos, theory-of-cellular-automata-a-survey]
 created: 2026-09-25
 updated: 2026-09-25
 ---
@@ -33,15 +33,19 @@ period-30 [[gosper-glider-gun](pages/gosper-glider-gun.md)]; the
 of 4 generations, the fastest possible. A glider stream is erased most compactly by the
 6-cell boat-bit.[^7]
 
+**Reflection.** [[reflector](pages/reflector.md)]s turn gliders by 90 or 180 degrees; the Snark
+does it with a repeat time of 43. Gliders can be no closer than 14 generations apart on
+the same path without colliding.[^8]
+
 **Collisions.** Gliders crashing in pairs can leave blocks: in one of Gardner's row
-experiments, eight gliders collide in pairs to become eight [[block](pages/block.md)]s.[^8]
+experiments, eight gliders collide in pairs to become eight [[block](pages/block.md)]s.[^9]
 
 **As a signal.** Glider streams from guns serve as wires in Life circuits, with the
 presence or absence of a glider as one bit. That is how
-[[game-of-life](pages/game-of-life.md)] is shown to be computationally universal.[^9]
+[[game-of-life](pages/game-of-life.md)] is shown to be computationally universal.[^10]
 Langton reads gliders (signals) and [[blinker](pages/blinker.md)]s (storage) in that
 construction as the moving and static structures typical of the
-[[edge-of-chaos](pages/edge-of-chaos.md)].[^10]
+[[edge-of-chaos](pages/edge-of-chaos.md)].[^11]
 
 ## Appearances in Sources
 
@@ -53,6 +57,8 @@ construction as the moving and static structures typical of the
 
 ## Related Concepts
 
+- [[reflector](pages/reflector.md)] - turns gliders
+- [[herschel](pages/herschel.md)] - emits a glider 21 generations in
 - [[eater](pages/eater.md)] - deletes gliders
 - [[spaceship](pages/spaceship.md)] - the class
 - [[light-middle-heavyweight-spaceships](pages/light-middle-heavyweight-spaceships.md)] - the orthogonal natural spaceships
@@ -66,6 +72,7 @@ construction as the moving and static structures typical of the
 [^5]: [[cgol-ch1-early-life](pages/cgol-ch1-early-life.md)] pp.11,13 [synthesis] - "Patterns that create glider streams are called glider guns"; the Gosper glider gun oscillates at period 30; the twin bees gun is "a period 46 glider gun"
 [^6]: [[cgol-ch1-early-life](pages/cgol-ch1-early-life.md)] p.14 - the glider-producing switch engine leaves "a glider every 384 generations"
 [^7]: [[cgol-ch2-still-lifes](pages/cgol-ch2-still-lifes.md)] pp.39-41 [synthesis] - eater 1 has "a recovery time of 4 generations, which is the fastest possible for any glider eater"; the boat-bit "gives the smallest known way of erasing such a glider stream (in particular, it contains only 6 cells)"
-[^8]: [[fantastic-combinations-of-john-conways-life](pages/fantastic-combinations-of-john-conways-life.md)] p.6 - "5-5-5-5-5 terminates with a 'spectacular display of eight gliders and eight blinkers. Then the gliders crash in pairs to become eight blocks.'"
-[^9]: [[statistical-mechanics-of-cellular-automata](pages/statistical-mechanics-of-cellular-automata.md)] p.639 [synthesis] - glider streams from glider guns used as wires, bits as presence or absence of gliders; "The Life-game cellular automaton is thus computationally universal"
-[^10]: [[computation-at-the-edge-of-chaos](pages/computation-at-the-edge-of-chaos.md)] pp.25-26 [synthesis] - the universality proof "employs propagating 'gliders' as signals and the period-2 'blinkers' as storage elements"
+[^8]: [[cgol-ch3-oscillators](pages/cgol-ch3-oscillators.md)] pp.65-67 [synthesis] - reflectors output "another glider ... in a different direction"; the Snark "with a repeat time of 43 generations"; "The closest together that we can place gliders without them crashing into each other is 14 generations apart"
+[^9]: [[fantastic-combinations-of-john-conways-life](pages/fantastic-combinations-of-john-conways-life.md)] p.6 - "5-5-5-5-5 terminates with a 'spectacular display of eight gliders and eight blinkers. Then the gliders crash in pairs to become eight blocks.'"
+[^10]: [[statistical-mechanics-of-cellular-automata](pages/statistical-mechanics-of-cellular-automata.md)] p.639 [synthesis] - glider streams from glider guns used as wires, bits as presence or absence of gliders; "The Life-game cellular automaton is thus computationally universal"
+[^11]: [[computation-at-the-edge-of-chaos](pages/computation-at-the-edge-of-chaos.md)] pp.25-26 [synthesis] - the universality proof "employs propagating 'gliders' as signals and the period-2 'blinkers' as storage elements"

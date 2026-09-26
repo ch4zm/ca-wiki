@@ -3,7 +3,7 @@ title: Twin bees
 category: Patterns
 summary: A pair of B-heptominoes that reflects itself every 23 generations; stabilized by blocks it gives the period-46 twin bees shuttle, and two pairs make the period-46 twin bees gun
 tags: [pattern, life, twin-bees, b-heptomino, shuttle, period-46, gun]
-sources: [cgol-ch1-early-life]
+sources: [cgol-ch3-oscillators, cgol-ch1-early-life]
 created: 2026-09-25
 updated: 2026-09-25
 ---
@@ -32,12 +32,18 @@ with their debris cleaned up each time, giving the **twin bees shuttle**, a peri
 found by Gosper. It was the smallest period-46 gun until a smaller one was found in
 December 2021.[^5]
 
+**Herschel and sparks.** Left alone, a B-heptomino becomes a block and a
+[[herschel](pages/herschel.md)] in 20 generations. The twin bees shuttle gives off duoplet sparks that
+can turn a glider by 90 degrees ([[sparker](pages/sparker.md)]).[^6]
+
 ## Appearances in Sources
 
 - [[cgol-ch1-early-life](pages/cgol-ch1-early-life.md)] - §1.4: the B-heptomino, twin bees, shuttle and gun
 
 ## Related Concepts
 
+- [[herschel](pages/herschel.md)] - what a B-heptomino becomes
+- [[sparker](pages/sparker.md)] - the shuttle's duoplet sparks
 - [[queen-bee](pages/queen-bee.md)] - the period-30 analogue
 - [[gosper-glider-gun](pages/gosper-glider-gun.md)] - built the same way
 - [[r-pentomino](pages/r-pentomino.md)] - produces a B-heptomino-like object in generation 28
@@ -47,3 +53,4 @@ December 2021.[^5]
 [^3]: [[cgol-ch1-early-life](pages/cgol-ch1-early-life.md)] p.12 [synthesis] - "B-heptominoes occasionally occur in pairs, in a configuration that is called the twin bees"; "they now reflect themselves, just like the queen bee did (albeit after 23 generations instead of 15)"; the mess "explodes and destroys them very shortly after the first reflection"; n.12 on the name
 [^4]: [[cgol-ch1-early-life](pages/cgol-ch1-early-life.md)] pp.12-13 [synthesis] - Fig. 1.21: two blocks destroy the debris in 5 generations; "This whole process takes 23 + 23 = 46 generations to complete, and results in the period 46 oscillator known as the twin bees shuttle"; n.13 "This stabilization was found by Bill Gosper in 1971"; "there are many other ways to stabilize the twin bees shuttle"
 [^5]: [[cgol-ch1-early-life](pages/cgol-ch1-early-life.md)] p.13, n.14 - "This gun was also found by Bill Gosper, and was the smallest p46 gun until ConwayLife.com forums user 'iNoMed' found a smaller version in December 2021"
+[^6]: [[cgol-ch3-oscillators](pages/cgol-ch3-oscillators.md)] pp.61,68 [synthesis] - "The B-heptomino takes 20 generations to evolve into a block and a Herschel"; "Some sparkers create a duoplet spark ..., such as the twin bees shuttle"; duoplet sparks reflect gliders by 90 degrees

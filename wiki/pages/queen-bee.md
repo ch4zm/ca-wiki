@@ -3,7 +3,7 @@ title: Queen bee
 category: Patterns
 summary: A common unstable Life object that reflects itself every 15 generations, leaving a beehive each time; blocks that eat the beehives turn it into the period-30 queen bee shuttle, and two queen bees make the Gosper glider gun
 tags: [pattern, life, queen-bee, shuttle, period-30, engineered]
-sources: [cgol-ch2-still-lifes, cgol-ch1-early-life]
+sources: [cgol-ch3-oscillators, cgol-ch2-still-lifes, cgol-ch1-early-life]
 created: 2026-09-25
 updated: 2026-09-25
 ---
@@ -31,12 +31,18 @@ can also stabilize it, such as eater 1 ([[eater](pages/eater.md)]).[^5]
 collision makes a [[glider](pages/glider.md)] in place of beehives. Adding stabilizing
 blocks on the outer sides gives the [[gosper-glider-gun](pages/gosper-glider-gun.md)].[^6]
 
+**Buckaroo.** A queen bee shuttle variant stabilized by an eater 1, the buckaroo, gives
+off a banana spark that turns a glider by 90 degrees. Four buckaroos make glider loops of
+any period that is a multiple of 30 ([[reflector](pages/reflector.md)]).[^7]
+
 ## Appearances in Sources
 
 - [[cgol-ch1-early-life](pages/cgol-ch1-early-life.md)] - §1.3: the queen bee, the block-eats-beehive reaction, the shuttle, the gun
 
 ## Related Concepts
 
+- [[reflector](pages/reflector.md)] - the buckaroo reflects gliders
+- [[hassler](pages/hassler.md)] - the shuttle is a hassler
 - [[eater](pages/eater.md)] - eater 1 stabilizes it too
 - [[gosper-glider-gun](pages/gosper-glider-gun.md)] - two queen bees and two blocks
 - [[twin-bees](pages/twin-bees.md)] - the period-46 analogue
@@ -49,3 +55,4 @@ blocks on the outer sides gives the [[gosper-glider-gun](pages/gosper-glider-gun
 [^4]: [[cgol-ch1-early-life](pages/cgol-ch1-early-life.md)] p.11 - "The queen bee shuttle is our first example of an engineered object--a pattern that we didn't discover 'naturally', but rather one that we specifically constructed by piecing together simpler reactions that we had observed. This is how most recent discoveries in the Game of Life have been made"
 [^5]: [[cgol-ch1-early-life](pages/cgol-ch1-early-life.md)] p.11 - "The queen bee can also be stabilized by some objects other than blocks"; [[cgol-ch2-still-lifes](pages/cgol-ch2-still-lifes.md)] p.40 - "we used eater 1 to stabilize a queen bee"
 [^6]: [[cgol-ch1-early-life](pages/cgol-ch1-early-life.md)] p.11 - "If lined up and timed just right, the queen bees bounce off of each other, and instead of each producing a beehive, their collision produces a glider"
+[^7]: [[cgol-ch3-oscillators](pages/cgol-ch3-oscillators.md)] pp.61,65 [synthesis] - "a banana spark ... is emitted by the variant of the queen bee shuttle (called a buckaroo)"; duoplet and banana sparks reflect gliders by 90 degrees; four buckaroos give "an oscillator with any period that is a multiple of 30"
