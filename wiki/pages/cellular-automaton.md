@@ -127,7 +127,9 @@ nine-cell Moore neighbourhood when d = 2. In one dimension the two coincide. Req
 quiescence and the lattice's rotation and reflection symmetries, there are 2¹¹ = 2048
 legal two-state type-I rules in 2D and 2⁵⁹ ≈ 6 × 10¹⁷ type-II rules.[^26] A rule is
 *totalistic* if it depends only on the sum of the neighbourhood values. The
-[[game-of-life](pages/game-of-life.md)] is a type-II totalistic rule.[^27]
+[[game-of-life](pages/game-of-life.md)] is a type-II totalistic rule.[^27] It belongs to the
+[[life-like-cellular-automaton](pages/life-like-cellular-automaton.md)] family, rules on the eight-cell neighbourhood whose
+next state depends only on the count of live neighbours.
 
 **Computers or universes.** Langton distinguishes two ways to see computation in a
 cellular automaton. The CA can *be* a computer, with the initial configuration as data
@@ -174,6 +176,7 @@ CA are equal is decidable.[^32] Which other properties can be decided is the sub
 - [[edge-of-chaos](pages/edge-of-chaos.md)] - where in rule space computation is possible
 - [[elementary-cellular-automaton](pages/elementary-cellular-automaton.md)] — the simplest one-dimensional family
 - [[game-of-life](pages/game-of-life.md)] — the best-known two-dimensional rule
+- [[life-like-cellular-automaton](pages/life-like-cellular-automaton.md)] - the B/S rule family Life belongs to
 - [[irreversibility-and-entropy](pages/irreversibility-and-entropy.md)] — the ensemble, statistical-mechanics view
 - [[garden-of-eden](pages/garden-of-eden.md)] — configurations with no predecessor
 - [[garden-of-eden-theorem](pages/garden-of-eden-theorem.md)] — Garden-of-Eden patterns exist exactly when erasure does

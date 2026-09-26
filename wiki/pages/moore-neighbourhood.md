@@ -3,7 +3,7 @@ title: Moore Neighbourhood
 category: Concepts
 summary: The nine-cell neighbourhood (a cell plus its eight orthogonal and diagonal neighbours) that Moore used for tessellation structures; contains the five-cell von Neumann neighbourhood as a special case
 tags: [concept, neighbourhood, moore, lattice]
-sources: [fantastic-combinations-of-john-conways-life, machine-models-of-self-reproduction, theory-of-cellular-automata-a-survey]
+sources: [cgol-ch1-early-life, fantastic-combinations-of-john-conways-life, machine-models-of-self-reproduction, theory-of-cellular-automata-a-survey]
 created: 2026-09-24
 updated: 2026-09-25
 ---
@@ -54,11 +54,13 @@ this sense at all. It partitions the plane into blocks.[^8]
 - [[machine-models-of-self-reproduction](pages/machine-models-of-self-reproduction.md)] - defines the nine-cell neighbourhood for tessellation structures
 - [[tsra-part2-ch2](pages/tsra-part2-ch2.md)] - von Neumann's choice of four neighbours over eight
 - [[fantastic-combinations-of-john-conways-life](pages/fantastic-combinations-of-john-conways-life.md)] - Life's eight neighbours, four orthogonal and four diagonal
+- [[cgol-ch1-early-life](pages/cgol-ch1-early-life.md)] - Moore vs von Neumann neighbourhoods; the Life-like rule family on the eight-cell neighbourhood
 
 ## Related Concepts
 
 - [[cellular-automaton](pages/cellular-automaton.md)] - the neighbourhood is part of every rule
 - [[game-of-life](pages/game-of-life.md)] - the best-known rule on the eight-cell neighbourhood
+- [[life-like-cellular-automaton](pages/life-like-cellular-automaton.md)] - all 262,144 count-based two-state rules on it
 - [[von-neumann-29-state-ca](pages/von-neumann-29-state-ca.md)] - uses the five-cell von Neumann neighbourhood
 - [[garden-of-eden](pages/garden-of-eden.md)] - the boundary-layer counting depends on the neighbourhood radius
 - [[margolus-neighbourhood](pages/margolus-neighbourhood.md)] - a block-partition scheme, not a neighbourhood vector

@@ -5,7 +5,7 @@ summary: A tessellation structure has Garden-of-Eden configurations if and only 
 tags: [concept, garden-of-eden, theorem, moore, myhill, surjectivity, injectivity]
 sources: [machine-models-of-self-reproduction, converse-of-moores-garden-of-eden-theorem, planetmath-garden-of-eden-theorem, theory-of-cellular-automata-a-survey]
 created: 2026-09-24
-updated: 2026-09-24
+updated: 2026-09-25
 ---
 
 # Garden-of-Eden Theorem (Moore-Myhill)
@@ -110,6 +110,7 @@ surjective?[^15] Both sides of the theorem can be decided for 1D rules (Amoroso 
 
 ## Related Concepts
 
+- [[game-of-life](pages/game-of-life.md)] - the Life existence proof and smallest known orphans are on [[garden-of-eden](pages/garden-of-eden.md)]
 - [[garden-of-eden](pages/garden-of-eden.md)] - the configurations the theorem is about
 - [[erasable-configuration](pages/erasable-configuration.md)] - the equivalent condition
 - [[amenable-group](pages/amenable-group.md)] - the groups on which the theorem holds

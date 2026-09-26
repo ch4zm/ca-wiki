@@ -3,9 +3,9 @@ title: Garden-of-Eden Configuration
 category: Concepts
 summary: A cellular-automaton configuration with no predecessor, which can occur only at time zero; they exist exactly when erasable configurations do (Moore 1962, Myhill 1963)
 tags: [concept, garden-of-eden, moore, myhill, surjectivity]
-sources: [machine-models-of-self-reproduction, tsra-part2-ch5, converse-of-moores-garden-of-eden-theorem, endomorphisms-and-automorphisms-of-the-shift-dynamical-system, statistical-mechanics-of-cellular-automata, planetmath-garden-of-eden-theorem, theory-of-cellular-automata-a-survey]
+sources: [cgol-ch1-early-life, machine-models-of-self-reproduction, tsra-part2-ch5, converse-of-moores-garden-of-eden-theorem, endomorphisms-and-automorphisms-of-the-shift-dynamical-system, statistical-mechanics-of-cellular-automata, planetmath-garden-of-eden-theorem, theory-of-cellular-automata-a-survey]
 created: 2026-09-24
-updated: 2026-09-24
+updated: 2026-09-25
 ---
 
 # Garden-of-Eden Configuration
@@ -98,18 +98,42 @@ configurations unreachable that tends to 1 as N grows (about 1 − 0.88ᴺ). The
 configurations unreachable, and only the identity rule 204 reaches everything.[^19] These
 counts hold only on the ring. On the infinite line rule 90 is a
 [[permutive-map](pages/permutive-map.md)], hence onto, and has no Garden-of-Eden
-configurations at all (own reasoning, from the 1D section above). In the [[game-of-life](pages/game-of-life.md)],
-the smallest known example in 1983 had about 300 cells.[^20] See
+configurations at all (own reasoning, from the 1D section above). See
 [[irreversibility-and-entropy](pages/irreversibility-and-entropy.md)].
 
+**In the Game of Life.** In [[game-of-life](pages/game-of-life.md)], the existence proof
+needs only that a [[block](pages/block.md)] and a pre-block evolve the same way. Split a
+6n × 6n square into n² tiles of 6 × 6. A tile holding a centred block can always be
+swapped for one holding a pre-block without changing the next generation, so at most
+(2^36 − 1)^(n²) patterns can appear in the central (6n − 2) × (6n − 2) square after one
+step, out of 2^((6n−2)²) possible. For large n the first number is smaller, so some
+central pattern has no parent.[^20] The ratio of the two counts tends to 0, so almost all
+large patterns are Gardens of Eden. The argument proves more: it gives *orphans*,
+patterns that stay parentless whatever surrounds them. Every pattern containing an
+orphan is a Garden of Eden, and every Garden of Eden contains an orphan.[^21]
+
+- **Construction.** An orphan can be built one cell at a time along a spiral, choosing
+  each new cell's state to minimize the count of parents; this reaches zero parents after
+  266 cells.[^22]
+- **Smallest known orphans.** 45 live cells (Beluchenko, 2009); 88 specified live and
+  dead cells, and a bounding box of area 96 = 8 × 12 (both Eker).[^23] None fits in a
+  6 × 7 box.[^24]
+- **Thin patterns.** Every pattern of height 1 has a parent, with an explicit
+  construction. No orphan has height 2 or 3, one of height 5 exists, and height 4 is
+  open.[^24]
+- **Deeper ancestry.** Some patterns have parents but no grandparents: one has 17,920
+  parents, all Gardens of Eden. For every n ≥ 1 there are patterns with a
+  great^n-grandparent but no great^(n+1)-grandparent (Törmä and Salo, 2022).[^25]
+
 **The computer-science view.** Kari (2005) defines Garden-of-Eden configurations as
-configurations without a pre-image, which exist exactly when G is not surjective.[^21]
+configurations without a pre-image, which exist exactly when G is not surjective.[^26]
 They are the first configurations to drop out of the [[limit-set](pages/limit-set.md)],
-since none can appear after the first step.[^22] Whether a rule has any can be decided for
-1D rules (Amoroso and Patt, 1972) but not for 2D rules (Kari).[^23]
+since none can appear after the first step.[^27] Whether a rule has any can be decided for
+1D rules (Amoroso and Patt, 1972) but not for 2D rules (Kari).[^28]
 
 ## Appearances in Sources
 
+- [[cgol-ch1-early-life](pages/cgol-ch1-early-life.md)] - §1.7: the Life existence proof, orphans, smallest known orphans, thin patterns, grandparentless patterns
 - [[planetmath-garden-of-eden-theorem](pages/planetmath-garden-of-eden-theorem.md)] - orphan patterns; the theorem in d dimensions and on amenable groups
 - [[theory-of-cellular-automata-a-survey](pages/theory-of-cellular-automata-a-survey.md)] - the definition via non-surjectivity; decidable in 1D, undecidable in 2D; transient configurations and limit sets
 - [[statistical-mechanics-of-cellular-automata](pages/statistical-mechanics-of-cellular-automata.md)] - Garden-of-Eden configurations as a consequence of irreversibility, and how common they are in 1D rules and Life
@@ -134,6 +158,7 @@ since none can appear after the first step.[^22] Whether a rule has any can be d
 - [[limit-set](pages/limit-set.md)] - configurations that survive every number of steps
 - [[decidability-in-cellular-automata](pages/decidability-in-cellular-automata.md)] - whether a rule has any is decidable only in 1D
 - [[reversible-cellular-automaton](pages/reversible-cellular-automaton.md)] - reversible rules, which have none
+
 [^1]: [[machine-models-of-self-reproduction](pages/machine-models-of-self-reproduction.md)] p.23 [synthesis] - configurations that "cannot occur except at time T = 0"; no configuration at T − 1 gives rise to them; "Such a configuration will be called a Garden-of Eden configuration. This term, from the Biblical account in the second and third chapters of Genesis, was suggested by John W. Tukey."
 [^2]: [[planetmath-garden-of-eden-theorem](pages/planetmath-garden-of-eden-theorem.md)] Thms 1-2 [synthesis] L10-32 - Theorem 1 concludes that the automaton "has an orphan pattern"; the proof of Myhill's theorem counts configurations that "are not Gardens of Eden" by the orphan patterns they avoid (L103-122)
 [^3]: [[machine-models-of-self-reproduction](pages/machine-models-of-self-reproduction.md)] p.26 - "THEOREM 2. For a tessellation structure for which there exist erasable configurations, there exist Garden-of-Eden configurations."
@@ -153,7 +178,12 @@ since none can appear after the first step.[^22] Whether a rule has any can be d
 [^17]: [[endomorphisms-and-automorphisms-of-the-shift-dynamical-system](pages/endomorphisms-and-automorphisms-of-the-shift-dynamical-system.md)] pp.327-328 [synthesis] — Thm 5.4: f∞ onto iff card f_m⁻¹(B) = S^(n−1) for every m-block B
 [^18]: [[statistical-mechanics-of-cellular-automata](pages/statistical-mechanics-of-cellular-automata.md)] p.623 n.10 — "The existence of unreachable or 'garden-of-Eden' configurations in cellular automata is discussed in Moore (1962) and Aggarwal (1973), where criteria (equivalent to irreversibility) for their occurrence are given."
 [^19]: [[statistical-mechanics-of-cellular-automata](pages/statistical-mechanics-of-cellular-automata.md)] p.623 [synthesis] — rule 204 is unique in allowing all configurations to be reached; rule 90 reaches half (N odd) or ¼ (N even); rule 126 unreachable fraction tends to one, behaving as 1 − λᴺ with λ ≈ 0.88 (Martin et al. 1983, cited via this paper)
-[^20]: [[statistical-mechanics-of-cellular-automata](pages/statistical-mechanics-of-cellular-automata.md)] p.637 — "the simplest known 'unreachable' configuration contains around 300 sites"
-[^21]: [[theory-of-cellular-automata-a-survey](pages/theory-of-cellular-automata-a-survey.md)] p.15 - "If G is not surjective then there exist Garden-of-Eden configurations, that is, configurations without a pre-image."
-[^22]: [[theory-of-cellular-automata-a-survey](pages/theory-of-cellular-automata-a-survey.md)] p.23 - "For example, Garden of Eden configurations cannot appear after the first update."
-[^23]: [[theory-of-cellular-automata-a-survey](pages/theory-of-cellular-automata-a-survey.md)] p.19 [synthesis] - Theorem 9 (Amoroso and Patt): 1D surjectivity decidable; Theorem 10 (Kari): 2D surjectivity undecidable
+[^20]: [[cgol-ch1-early-life](pages/cgol-ch1-early-life.md)] pp.20-21 [synthesis] - Theorem 1.1 (Existence of Gardens of Eden); proof with 6 × 6 tiles, block vs pre-block (Fig. 1.33); at most (2^36 − 1)^(n²) children against 2^((6n−2)²) central patterns
+[^21]: [[cgol-ch1-early-life](pages/cgol-ch1-early-life.md)] pp.22-23 [synthesis] - n.30 the ratio "can be made as small as we like ... almost all large patterns are Gardens of Eden"; "Patterns like this one that cannot be any part of the evolution of another pattern ... are called orphans"; "Every pattern containing an orphan is (by definition) a Garden of Eden, and remarkably the converse is also true"; n.35 the proof "actually demonstrates the existence of orphans"
+[^22]: [[cgol-ch1-early-life](pages/cgol-ch1-early-life.md)] p.22 [synthesis] - cells added "in a clockwise spiral", each chosen alive or dead to give fewer parents; "after 266 cells the pattern has no parents at all"
+[^23]: [[cgol-ch1-early-life](pages/cgol-ch1-early-life.md)] p.23, Fig. 1.36 - "(a) An orphan with 45 live cells, found by Nicolay Beluchenko in 2009. (b) An orphan with 88 specified cells, found by Steven Eker in 2017. (c) An orphan in a bounding box with area 96 = 8 × 12, found by Steven Eker in 2016"
+[^24]: [[cgol-ch1-early-life](pages/cgol-ch1-early-life.md)] pp.23-25 [synthesis] - "there does not exist an orphan that fits within a 6 × 7 bounding box"; Theorem 1.2 (No Thin Gardens of Eden) with constructive proof; no orphans 2 or 3 cells high; "there does exist an orphan ... with height 5"; "whether or not there exists an orphan whose bounding box is 4 cells high remains open"
+[^25]: [[cgol-ch1-early-life](pages/cgol-ch1-early-life.md)] pp.25-26 [synthesis] - a pattern with "17 920 distinct parents, every single one of which is a Garden of Eden"; n.42: Törmä and Salo (January 2022), for every n ≥ 1 a pattern with a great^n-grandparent but no great^(n+1)-grandparent
+[^26]: [[theory-of-cellular-automata-a-survey](pages/theory-of-cellular-automata-a-survey.md)] p.15 - "If G is not surjective then there exist Garden-of-Eden configurations, that is, configurations without a pre-image."
+[^27]: [[theory-of-cellular-automata-a-survey](pages/theory-of-cellular-automata-a-survey.md)] p.23 - "For example, Garden of Eden configurations cannot appear after the first update."
+[^28]: [[theory-of-cellular-automata-a-survey](pages/theory-of-cellular-automata-a-survey.md)] p.19 [synthesis] - Theorem 9 (Amoroso and Patt): 1D surjectivity decidable; Theorem 10 (Kari): 2D surjectivity undecidable
