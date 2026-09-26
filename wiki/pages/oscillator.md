@@ -3,7 +3,7 @@ title: Oscillator
 category: Patterns
 summary: A Life pattern that cycles through a fixed number of configurations (phases) and returns to its start; its period is the cycle length - blinker, toad, beacon and clock (2), pulsar (3), figure 8 (8), pentadecathlon (15), and engineered shuttles such as the queen bee (30) and twin bees (46)
 tags: [pattern-class, life, oscillator, period, phase, shuttle]
-sources: [cgol-ch1-early-life, fantastic-combinations-of-john-conways-life, theory-of-cellular-automata-a-survey]
+sources: [cgol-ch2-still-lifes, cgol-ch1-early-life, fantastic-combinations-of-john-conways-life, theory-of-cellular-automata-a-survey]
 created: 2026-09-25
 updated: 2026-09-25
 ---
@@ -32,6 +32,9 @@ and Greene:[^7]
 - the [[queen-bee](pages/queen-bee.md)] shuttle, period 30;
 - the [[twin-bees](pages/twin-bees.md)] shuttle, period 46.
 
+The maximum density of an oscillator is open; averaged over phases it seems never to
+exceed 1/2, and 8/13 is a proved upper bound ([[still-life-density](pages/still-life-density.md)]).[^8]
+
 Guns are oscillators that also emit a stream of moving objects
 ([[gosper-glider-gun](pages/gosper-glider-gun.md)]).
 
@@ -43,6 +46,7 @@ Guns are oscillators that also emit a stream of moving objects
 
 ## Related Concepts
 
+- [[still-life-density](pages/still-life-density.md)] - the open density question for oscillators
 - [[still-life](pages/still-life.md)] - the period-1 case
 - [[spaceship](pages/spaceship.md)] - periodic up to a translation
 - [[blinker](pages/blinker.md)], [[pulsar](pages/pulsar.md)], [[pentadecathlon](pages/pentadecathlon.md)] - natural examples
@@ -55,3 +59,4 @@ Guns are oscillators that also emit a stream of moving objects
 [^5]: [[fantastic-combinations-of-john-conways-life](pages/fantastic-combinations-of-john-conways-life.md)] p.6 - "The 'figure 8' ..., an oscillator found by Norton, both resembles an 8 and has a period of 8"
 [^6]: [[cgol-ch1-early-life](pages/cgol-ch1-early-life.md)] p.11, n.8 - "The term 'shuttle' typically refers to oscillators in which an unstable object moves back and forth between stabilizing objects"
 [^7]: [[cgol-ch1-early-life](pages/cgol-ch1-early-life.md)] pp.11,13 [synthesis] - "This period 30 oscillator is called the queen bee shuttle"; "the period 46 oscillator known as the twin bees shuttle"
+[^8]: [[cgol-ch2-still-lifes](pages/cgol-ch2-still-lifes.md)] p.48 [synthesis] - "The related problem of finding the maximum density of an oscillator remains open"; average density "never greater than 1/2" appears to hold; "an infinite pattern cannot have average density ... that exceeds 8/13"

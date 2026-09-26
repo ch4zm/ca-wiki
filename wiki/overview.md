@@ -1,7 +1,7 @@
 ---
 title: Overview
 tags: [overview, synthesis]
-sources: [conways-game-of-life-mathematics-and-construction, cgol-ch1-early-life, fantastic-combinations-of-john-conways-life, theory-of-self-reproducing-automata, tsra-editors-introduction, tsra-lecture-2, tsra-lecture-3, tsra-lecture-4, tsra-lecture-5, tsra-part2-ch1, tsra-part2-ch2, tsra-part2-ch3, tsra-part2-ch4, tsra-part2-ch5, endomorphisms-and-automorphisms-of-the-shift-dynamical-system, machine-models-of-self-reproduction, converse-of-moores-garden-of-eden-theorem, statistical-mechanics-of-cellular-automata, planetmath-garden-of-eden-theorem, computation-at-the-edge-of-chaos, theory-of-cellular-automata-a-survey, automata-universality-computation, aucm-ch12-linear-cellular-automata-and-decidability]
+sources: [cgol-ch2-still-lifes, conways-game-of-life-mathematics-and-construction, cgol-ch1-early-life, fantastic-combinations-of-john-conways-life, theory-of-self-reproducing-automata, tsra-editors-introduction, tsra-lecture-2, tsra-lecture-3, tsra-lecture-4, tsra-lecture-5, tsra-part2-ch1, tsra-part2-ch2, tsra-part2-ch3, tsra-part2-ch4, tsra-part2-ch5, endomorphisms-and-automorphisms-of-the-shift-dynamical-system, machine-models-of-self-reproduction, converse-of-moores-garden-of-eden-theorem, statistical-mechanics-of-cellular-automata, planetmath-garden-of-eden-theorem, computation-at-the-edge-of-chaos, theory-of-cellular-automata-a-survey, automata-universality-computation, aucm-ch12-linear-cellular-automata-and-decidability]
 updated: 2026-09-25
 ---
 
@@ -27,7 +27,7 @@ by [[soup-search](pages/soup-search.md)], show which objects arise naturally and
 ([[familiar-fours](pages/familiar-fours.md)]). Unstable objects such as the [[queen-bee](pages/queen-bee.md)],
 [[twin-bees](pages/twin-bees.md)] and [[switch-engine](pages/switch-engine.md)] can be stabilized into shuttles, guns
 ([[gosper-glider-gun](pages/gosper-glider-gun.md)]) and puffers, so finite patterns can grow forever; most modern
-Life patterns are engineered this way. Small patterns can also take very long to settle
+Life patterns are engineered this way. Still lifes are well understood: counted to 34 cells, built by a known grammar, used as [[eater](pages/eater.md)]s to delete gliders, and packed at most at density 1/2 ([[still-life-density](pages/still-life-density.md)]). Small patterns can also take very long to settle
 ([[methuselah](pages/methuselah.md)], [[r-pentomino](pages/r-pentomino.md)]), and almost all large patterns are Gardens of
 Eden. The theory sections below are background to this.
 
@@ -159,6 +159,7 @@ language recognizers
 
 ## Open Questions
 
+- What is the maximum average density of an oscillator? Still lifes top out at 1/2; oscillators are only bounded by 8/13 ([[still-life-density](pages/still-life-density.md)]).
 - Does an orphan of height 4 exist? Heights 1-3 are ruled out and height 5 is achieved ([[garden-of-eden](pages/garden-of-eden.md)]).
 - Which methuselahs above 9 cells are optimal? Records are proved only up to 9 ([[methuselah](pages/methuselah.md)]).
 - Why exactly two universality classes? Wolfram conjectures it is because rules simulate each
@@ -252,6 +253,8 @@ language recognizers
 - [[familiar-fours](pages/familiar-fours.md)]
 - [[methuselah](pages/methuselah.md)]
 - [[soup-search](pages/soup-search.md)]
+- [[eater](pages/eater.md)]
+- [[still-life-density](pages/still-life-density.md)]
 - [[lambda-parameter](pages/lambda-parameter.md)]
 - [[edge-of-chaos](pages/edge-of-chaos.md)]
 - [[chris-langton](pages/chris-langton.md)]

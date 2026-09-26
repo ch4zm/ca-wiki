@@ -39,7 +39,7 @@ The wiki covers the book chapter by chapter.[^6]
 | Ch. | Title | Printed pp. | Wiki page |
 |---|---|---|---|
 | 1 | Early Life | 3-32 | [[cgol-ch1-early-life](pages/cgol-ch1-early-life.md)] |
-| 2 | Still Lifes | 33-52 | - |
+| 2 | Still Lifes | 33-52 | [[cgol-ch2-still-lifes](pages/cgol-ch2-still-lifes.md)] |
 | 3 | Oscillators | 53-82 | - |
 | 4 | Spaceships and Moving Objects | 83-120 | - |
 | 5 | Glider Synthesis | 121-152 | - |
