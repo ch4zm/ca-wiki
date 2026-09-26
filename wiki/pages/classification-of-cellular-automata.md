@@ -5,7 +5,7 @@ summary: Schemes for sorting rules by behaviour - Wolfram's simple/complex split
 tags: [concept, classification, wolfram-classes, culik-yu, kurka, undecidability]
 sources: [eppstein-gliders-in-life-like-cellular-automata, eppstein-2010-growth-and-decay-in-life-like-ca, theory-of-cellular-automata-a-survey, statistical-mechanics-of-cellular-automata, aucm-ch12-linear-cellular-automata-and-decidability]
 created: 2026-09-24
-updated: 2026-09-25
+updated: 2026-09-26
 ---
 
 # Classification of Cellular Automata
@@ -103,6 +103,7 @@ All the formal versions are undecidable, so none can be computed from a rule tab
 
 ## Related Concepts
 
+- [[wolfram-classes](pages/wolfram-classes.md)] - Wolfram's four classes in detail, from the 1984 paper
 - [[elementary-cellular-automaton](pages/elementary-cellular-automaton.md)] - the family first classified
 - [[fertile-and-mortal-rules](pages/fertile-and-mortal-rules.md)] - Eppstein's growth-and-decay alternative for Life-like rules
 - [[chaos-in-cellular-automata](pages/chaos-in-cellular-automata.md)] - the notions behind Kurka's classes
