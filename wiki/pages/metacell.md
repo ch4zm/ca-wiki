@@ -88,6 +88,7 @@ Goucher's StreamLife algorithm.[^7]
 
 ## Related Concepts
 
+- [[single-channel-construction](pages/single-channel-construction.md)] - the recipe technique the 0E0P metacell builds with
 - [[life-like-cellular-automaton](pages/life-like-cellular-automaton.md)], [[isotropic-non-totalistic-rule](pages/isotropic-non-totalistic-rule.md)], [[non-isotropic-rule](pages/non-isotropic-rule.md)] - the rule families it can emulate
 - [[replicator](pages/replicator.md)] - HighLife's replicator, meta-fied into Life
 - [[universal-constructor](pages/universal-constructor.md)], [[self-reproduction](pages/self-reproduction.md)] - the 0E0P builds copies of itself

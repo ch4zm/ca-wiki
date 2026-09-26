@@ -3,7 +3,7 @@ title: Conway's Game of Life
 category: Rules
 summary: Conway's B3/S23 rule on the eight-cell neighbourhood - survival on two or three live neighbours, birth on exactly three; the most-studied Life-like rule, home of still lifes, oscillators, spaceships, guns, puffers and methuselahs, and computationally universal via glider-stream circuits, with undecidable death of finite patterns
 tags: [rule, life, conway, two-dimensional, totalistic, universality]
-sources: [cgol-ch12-0e0p-metacell, cgol-ch1-early-life, fantastic-combinations-of-john-conways-life, statistical-mechanics-of-cellular-automata, computation-at-the-edge-of-chaos, theory-of-cellular-automata-a-survey]
+sources: [cgol-ch9-universal-computation, cgol-ch12-0e0p-metacell, cgol-ch1-early-life, fantastic-combinations-of-john-conways-life, statistical-mechanics-of-cellular-automata, computation-at-the-edge-of-chaos, theory-of-cellular-automata-a-survey]
 created: 2026-09-24
 updated: 2026-09-25
 ---
@@ -87,7 +87,10 @@ smallest known orphan has 45 live cells.[^19]
 Structures where streams meet decide whether the wires cross or combine through a NAND
 gate. Memories are needed too. With these, Life can simulate a digital computer, so it is
 computationally universal. Circuits such as binary adders have been built, and they appear
-to run only a constant factor slower than the computers they imitate.[^20] Compare von
+to run only a constant factor slower than the computers they imitate.[^20] Explicit programmable computers now exist as Life patterns small enough to run in
+Golly: Adam P. Goucher's toolkit stores numbers in [[sliding-block-register](pages/sliding-block-register.md)]s and
+binary registers, and programs written in [[apgsembly](pages/apgsembly.md)] compile into patterns such as
+one that prints the digits of π forever.[^21] Compare von
 Neumann's [[von-neumann-29-state-ca](pages/von-neumann-29-state-ca.md)], which is also
 universal but uses 29 states and the five-cell neighbourhood
 ([[universal-turing-machine](pages/universal-turing-machine.md)]).
@@ -96,14 +99,14 @@ universal but uses 29 states and the five-cell neighbourhood
 cells of another rule. The 0E0P metacell emulates any two-state Moore-neighbourhood rule
 in which empty stays empty, so patterns from [[highlife](pages/highlife.md)] or
 [[isotropic-non-totalistic-rule](pages/isotropic-non-totalistic-rule.md)]s can be imported into Life, at a scale 2^18 larger
-and 2^36 slower.[^21]
+and 2^36 slower.[^22]
 
 **Place in rule space.** Life's [[lambda-parameter](pages/lambda-parameter.md)] is 0.273, which lies inside the
 order-chaos transition region for 2-state, 9-neighbour rules. Langton reads its gliders
 (used as signals) and blinkers (used as storage) in the universality proof as the kind of
-moving and static structures that appear near the transition ([[edge-of-chaos](pages/edge-of-chaos.md)]).[^22]
+moving and static structures that appear near the transition ([[edge-of-chaos](pages/edge-of-chaos.md)]).[^23]
 He also notes that Bak had suggested Life is a self-organized critical system (cited via
-Langton, not read).[^23]
+Langton, not read).[^24]
 
 **Formal definitions and undecidability (Kari 2005).** Kari defines Life's objects in
 terms of finite configurations c and the global map G: a still life is a finite fixed
@@ -112,15 +115,16 @@ general, any spaceship) is a finite c with Gᵏ(c) equal to a translate of c; a 
 is periodic like an oscillator and emits one or more gliders each period. His examples
 are a period-two oscillator, a period-four glider and a period-30 glider gun. Random
 starts quickly produce such objects, which interact by collisions "leading to
-extraordinary complexity".[^24] For any Turing machine M one can build a finite Life
+extraordinary complexity".[^25] For any Turing machine M one can build a finite Life
 configuration that *dies*, meaning it eventually becomes all-dead, iff M halts on the
 blank tape. So Life is computationally universal and **whether a finite configuration
-dies is undecidable** (Berlekamp, Conway and Guy).[^25] Life's gliders correspond to the
+dies is undecidable** (Berlekamp, Conway and Guy).[^26] Life's gliders correspond to the
 signals of class-4 1D rules such as [[rule-110](pages/rule-110.md)], but signals cross
-far more easily in two dimensions.[^26]
+far more easily in two dimensions.[^27]
 
 ## Appearances in Sources
 
+- [[cgol-ch9-universal-computation](pages/cgol-ch9-universal-computation.md)] - explicit programmable computers: registers, APGsembly, π calculator
 - [[cgol-ch1-early-life](pages/cgol-ch1-early-life.md)] - B3/S23 and why, early history, soup and ash, guns and puffers, methuselahs, Gardens of Eden
 - [[fantastic-combinations-of-john-conways-life](pages/fantastic-combinations-of-john-conways-life.md)] - Gardner 1970: design goals, the rule, hand procedure, first named patterns, speed of light, the growth conjecture
 - [[theory-of-cellular-automata-a-survey](pages/theory-of-cellular-automata-a-survey.md)] - §2.6: formal definitions of still lifes, oscillators, gliders and guns; Theorem 1 (universality, undecidable death)
@@ -129,6 +133,7 @@ far more easily in two dimensions.[^26]
 
 ## Related Concepts
 
+- [[apgsembly](pages/apgsembly.md)] - programming computers built in Life
 - [[metacell](pages/metacell.md)] - Life patterns that emulate other rules
 - [[still-life](pages/still-life.md)], [[oscillator](pages/oscillator.md)], [[spaceship](pages/spaceship.md)] - the three basic pattern classes
 - [[glider](pages/glider.md)], [[block](pages/block.md)], [[beehive](pages/beehive.md)], [[blinker](pages/blinker.md)], [[r-pentomino](pages/r-pentomino.md)], [[pulsar](pages/pulsar.md)], [[pentadecathlon](pages/pentadecathlon.md)] - named patterns
@@ -167,9 +172,10 @@ far more easily in two dimensions.[^26]
 [^18]: [[statistical-mechanics-of-cellular-automata](pages/statistical-mechanics-of-cellular-automata.md)] p.637 [synthesis] - a disordered state of N² cells usually evolves to a steady state within about N² time steps, typically an order of magnitude quicker; very few configurations visited; glider guns very rarely produced; density of L-site structures decreases like e^(−L₋)/L
 [^19]: [[cgol-ch1-early-life](pages/cgol-ch1-early-life.md)] pp.22-23 [synthesis] - n.30 "almost all large patterns are Gardens of Eden"; Fig. 1.36(a) "An orphan with 45 live cells, found by Nicolay Beluchenko in 2009", the smallest known by live cells
 [^20]: [[statistical-mechanics-of-cellular-automata](pages/statistical-mechanics-of-cellular-automata.md)] p.639 [synthesis] - glider streams from glider guns used as wires, bits as presence or absence of gliders; meeting points determine crossing or a "NAND gate"; memories required; "The Life-game cellular automaton is thus computationally universal"; binary adders; circuits run slower "only by a constant multiplicative factor"
-[^21]: [[cgol-ch12-0e0p-metacell](pages/cgol-ch12-0e0p-metacell.md)] pp.385-386,391 [synthesis] - the 0E0P metacell "can actually emulate a huge variety of 2D cellular automata besides Life ... any pattern from one of those other cellular automata can be straightforwardly 'imported' into Life"; 2^18 times as large, 2^36 times as slow; emulates "the 2^511 of them that send a dead cell with no live neighbors to a dead cell"
-[^22]: [[computation-at-the-edge-of-chaos](pages/computation-at-the-edge-of-chaos.md)] pp.25-26 [synthesis] - "The λ value for the Game of Life (λ_Life = 0.273) lies within the transition region for K = 2, N = 9 2D CAs"; the universality proof "employs propagating 'gliders' as signals and the period-2 'blinkers' as storage elements"
-[^23]: [[computation-at-the-edge-of-chaos](pages/computation-at-the-edge-of-chaos.md)] p.35 - "Bak has suggested that Conway's game of Life is a self-organized critical system, although he does not bring Life's computational capacity into the discussion."
-[^24]: [[theory-of-cellular-automata-a-survey](pages/theory-of-cellular-automata-a-survey.md)] pp.10-11 [synthesis] - Game of Life by Conway; still life, oscillator, glider, glider gun defined via finite configurations; Fig. 5: still life, period two oscillator, period four glider, period 30 glider gun; objects emerge from random configurations and interact through collisions, "leading to extraordinary complexity"
-[^25]: [[theory-of-cellular-automata-a-survey](pages/theory-of-cellular-automata-a-survey.md)] p.11 [synthesis] - "for any given Turing machine M one can effectively construct a finite GOL configuration that dies if and only if machine M halts on the blank tape"; Theorem 1 (Berlekamp et al. [6])
-[^26]: [[theory-of-cellular-automata-a-survey](pages/theory-of-cellular-automata-a-survey.md)] p.11 [synthesis] - "gliders in GOL are analogous to the complicated localized structures, or signals, that emerge in class 4 elementary CA"; "in two dimensions it is much easier to make signals cross each other"
+[^21]: [[cgol-ch9-universal-computation](pages/cgol-ch9-universal-computation.md)] pp.271,283,296-300 [synthesis] - original universality constructions "monstrously large and only mostly pieced together"; toolkit "Developed by Adam P. Goucher in 2009 and 2010"; sliding block registers already "Turing complete"; §9.6 π calculator, Fig. 9.15
+[^22]: [[cgol-ch12-0e0p-metacell](pages/cgol-ch12-0e0p-metacell.md)] pp.385-386,391 [synthesis] - the 0E0P metacell "can actually emulate a huge variety of 2D cellular automata besides Life ... any pattern from one of those other cellular automata can be straightforwardly 'imported' into Life"; 2^18 times as large, 2^36 times as slow; emulates "the 2^511 of them that send a dead cell with no live neighbors to a dead cell"
+[^23]: [[computation-at-the-edge-of-chaos](pages/computation-at-the-edge-of-chaos.md)] pp.25-26 [synthesis] - "The λ value for the Game of Life (λ_Life = 0.273) lies within the transition region for K = 2, N = 9 2D CAs"; the universality proof "employs propagating 'gliders' as signals and the period-2 'blinkers' as storage elements"
+[^24]: [[computation-at-the-edge-of-chaos](pages/computation-at-the-edge-of-chaos.md)] p.35 - "Bak has suggested that Conway's game of Life is a self-organized critical system, although he does not bring Life's computational capacity into the discussion."
+[^25]: [[theory-of-cellular-automata-a-survey](pages/theory-of-cellular-automata-a-survey.md)] pp.10-11 [synthesis] - Game of Life by Conway; still life, oscillator, glider, glider gun defined via finite configurations; Fig. 5: still life, period two oscillator, period four glider, period 30 glider gun; objects emerge from random configurations and interact through collisions, "leading to extraordinary complexity"
+[^26]: [[theory-of-cellular-automata-a-survey](pages/theory-of-cellular-automata-a-survey.md)] p.11 [synthesis] - "for any given Turing machine M one can effectively construct a finite GOL configuration that dies if and only if machine M halts on the blank tape"; Theorem 1 (Berlekamp et al. [6])
+[^27]: [[theory-of-cellular-automata-a-survey](pages/theory-of-cellular-automata-a-survey.md)] p.11 [synthesis] - "gliders in GOL are analogous to the complicated localized structures, or signals, that emerge in class 4 elementary CA"; "in two dimensions it is much easier to make signals cross each other"

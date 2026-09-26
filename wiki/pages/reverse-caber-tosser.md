@@ -26,7 +26,7 @@ origin and an approaching c/12 diagonal object, such as a
 - The recipe is stored in a single number, the starting distance, so a fixed handful of
   gliders can hold a recipe of any length.
 
-The name comes from the *caber tosser*, a pattern that behaves like a time-reversed
+The name comes from the [[caber-tosser](pages/caber-tosser.md)], a pattern that behaves like a time-reversed
 RCT.[^1] Caber tossers are patterns whose population grows like log(t); Dean Hickerson
 built one.[^2] The first constructed logarithmic-growth pattern was a caber tosser, whose
 population grows logarithmically while its bounding box still grows linearly.[^3]
@@ -85,6 +85,7 @@ The RCT placed third in the ConwayLife.com Pattern of the Year vote for 2018, be
 
 ## Related Concepts
 
+- [[caber-tosser](pages/caber-tosser.md)] - the forward version
 - [[object-synthesis](pages/object-synthesis.md)] - the RCT bounds every synthesis at 15 gliders
 - [[switch-engine](pages/switch-engine.md)] - glider-producing switch engines are its fixed circuitry
 - [[cordership](pages/cordership.md)] - the receding c/12 object that encodes the recipe

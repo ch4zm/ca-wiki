@@ -62,6 +62,7 @@ changed becomes a puffer, and a heavyweight spaceship turns that into a period-8
 
 ## Related Concepts
 
+- [[self-supporting-spaceship](pages/self-supporting-spaceship.md)] - rakes that crawl along block and blinker tracks, used to build spaceships
 - [[switch-engine](pages/switch-engine.md)] - the natural puffers
 - [[gosper-glider-gun](pages/gosper-glider-gun.md)] - the stationary counterpart of a rake
 - [[light-middle-heavyweight-spaceships](pages/light-middle-heavyweight-spaceships.md)] - the parts rakes are made of

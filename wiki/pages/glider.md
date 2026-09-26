@@ -72,6 +72,7 @@ construction as the moving and static structures typical of the
 
 ## Related Concepts
 
+- [[gun](pages/gun.md)] - guns of every period from 14; slide, armless and slow guns
 - [[spaceship](pages/spaceship.md)] - tagalongs and diagonal speeds
 - [[reflector](pages/reflector.md)] - turns gliders
 - [[herschel](pages/herschel.md)] - emits a glider 21 generations in

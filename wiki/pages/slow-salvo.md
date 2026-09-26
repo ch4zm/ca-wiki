@@ -53,6 +53,7 @@ can, though they may need many more gliders.[^2]
 
 ## Related Concepts
 
+- [[single-channel-construction](pages/single-channel-construction.md)] - encodes the same constructions in glider timing on one lane
 - [[object-synthesis](pages/object-synthesis.md)] - what slow salvos emulate
 - [[block](pages/block.md)] - the usual seed
 - [[reflector](pages/reflector.md)] - a permanent turner, unlike a one-time turner

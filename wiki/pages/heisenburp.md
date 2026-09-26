@@ -3,7 +3,7 @@ title: Heisenburp
 category: Patterns
 summary: A Life mechanism that detects or copies a passing spaceship without affecting it at all - the passing glider only overcrowds a nearby spark so it becomes a new glider; named against Heisenberg's uncertainty principle
 tags: [pattern-class, life, heisenburp, duplicator, detector, circuitry]
-sources: [cgol-ch6-periodic-circuitry]
+sources: [cgol-ch7-stable-circuitry, cgol-ch6-periodic-circuitry]
 created: 2026-09-25
 updated: 2026-09-25
 ---
@@ -33,14 +33,18 @@ copied without disturbing it.[^1]
 
 **Stable ones.** Heisenburps made only of still lifes exist for spaceships whose sparks
 make a still life explode into a signal. A glider has no accessible sparks, so a glider
-Heisenburp needs an oscillating part.[^3]
+Heisenburp needs an oscillating part.[^3] A stable MWSS Heisenburp exists ("Entity Valkyrie", June 2020, building on Martin Grant's
+work). The MWSS's spark makes a ship explode into a glider; stable [[conduit](pages/conduit.md)]s turn
+that glider into a Herschel, and the Herschel's own evolution rebuilds the ship.[^4]
 
 ## Appearances in Sources
 
+- [[cgol-ch7-stable-circuitry](pages/cgol-ch7-stable-circuitry.md)] - §7.8.2: a stable MWSS Heisenburp
 - [[cgol-ch6-periodic-circuitry](pages/cgol-ch6-periodic-circuitry.md)] - §6.3.3: Heisenburps
 
 ## Related Concepts
 
+- [[conduit](pages/conduit.md)] - stable circuitry behind the stable Heisenburp
 - [[inverter](pages/inverter.md)] - ordinary duplicators, which do touch the glider
 - [[sparker](pages/sparker.md)] - Heisenburps work by nudging sparks
 - [[twin-bees](pages/twin-bees.md)] - the simplest one uses two shuttles
@@ -48,3 +52,4 @@ Heisenburp needs an oscillating part.[^3]
 [^1]: [[cgol-ch6-periodic-circuitry](pages/cgol-ch6-periodic-circuitry.md)] pp.168-169 [synthesis] - "there exist duplicators for which this is not necessary, as the input glider is not actually affected at all (even temporarily)"; "the passing glider itself is not affected at all in the process, but rather just serves to overpopulate other nearby cells (much like how we used induction coils)"; n.18 named for Heisenberg's uncertainty principle
 [^2]: [[cgol-ch6-periodic-circuitry](pages/cgol-ch6-periodic-circuitry.md)] pp.169-170 [synthesis] - Fig. 6.31 "A small period 92 Heisenburp that uses two twin bees shuttles" (n.19 Brice Due, January 2005); Fig. 6.32 MWSS out of the blue (n.20 Peter Rott, November 1997); "all that is needed is a spark whose evolution is changed sufficiently by the passing spaceship"; Fig. 6.33 glider + MWSS + HWSS reaction with "a repeat time of 35 generations" (n.21 Jason Summers, June 1999); Fig. 6.34 period 46 Heisenburp
 [^3]: [[cgol-ch6-periodic-circuitry](pages/cgol-ch6-periodic-circuitry.md)] p.171 - "it is even possible to construct stable Heisenburps ... using a spark from the to-be-detected spaceship to cause a still life to explode ... However, a glider Heisenburp must have an oscillating component, as gliders have no accessible sparks that could be detected by still lifes"
+[^4]: [[cgol-ch7-stable-circuitry](pages/cgol-ch7-stable-circuitry.md)] pp.209-210 [synthesis] - "The spark from an MWSS can cause a ship to explode (without destroying the MWSS)" (Figure 7.34); "a Herschel on its own evolves into a configuration of two blocks, two gliders, and a rather edgy ship" (Figure 7.35); Figure 7.36 "constructed by ConwayLife.com forums member 'Entity Valkyrie' in June 2020, largely based on earlier work by Martin Grant"

@@ -44,11 +44,11 @@ The wiki covers the book chapter by chapter.[^6]
 | 4 | Spaceships and Moving Objects | 83-120 | [[cgol-ch4-spaceships-and-moving-objects](pages/cgol-ch4-spaceships-and-moving-objects.md)] |
 | 5 | Glider Synthesis | 121-152 | [[cgol-ch5-glider-synthesis](pages/cgol-ch5-glider-synthesis.md)] |
 | 6 | Periodic Circuitry | 153-182 | [[cgol-ch6-periodic-circuitry](pages/cgol-ch6-periodic-circuitry.md)] |
-| 7 | Stable Circuitry | 183-220 | - |
-| 8 | Guns and Glider Streams | 221-270 | - |
-| 9 | Universal Computation | 271-310 | - |
-| 10 | Self-Supporting Spaceships | 311-344 | - |
-| 11 | Universal Construction | 345-384 | - |
+| 7 | Stable Circuitry | 183-220 | [[cgol-ch7-stable-circuitry](pages/cgol-ch7-stable-circuitry.md)] |
+| 8 | Guns and Glider Streams | 221-270 | [[cgol-ch8-guns-and-glider-streams](pages/cgol-ch8-guns-and-glider-streams.md)] |
+| 9 | Universal Computation | 271-310 | [[cgol-ch9-universal-computation](pages/cgol-ch9-universal-computation.md)] |
+| 10 | Self-Supporting Spaceships | 311-344 | [[cgol-ch10-self-supporting-spaceships](pages/cgol-ch10-self-supporting-spaceships.md)] |
+| 11 | Universal Construction | 345-384 | [[cgol-ch11-universal-construction](pages/cgol-ch11-universal-construction.md)] |
 | 12 | The 0E0P Metacell | 385-430 | [[cgol-ch12-0e0p-metacell](pages/cgol-ch12-0e0p-metacell.md)] |
 
 Appendices: A, Mathematical Miscellany; B, Extra Details (including isotropic and

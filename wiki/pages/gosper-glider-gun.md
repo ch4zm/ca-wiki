@@ -3,7 +3,7 @@ title: Gosper glider gun
 category: Patterns
 summary: The period-30 Life gun made of two queen bees bouncing between two blocks, emitting a glider every 30 generations; found by Bill Gosper in November 1970, it was the first pattern found to grow without limit
 tags: [pattern, life, gun, glider-gun, period-30, gosper, infinite-growth]
-sources: [cgol-ch6-periodic-circuitry, cgol-ch5-glider-synthesis, cgol-ch1-early-life, fantastic-combinations-of-john-conways-life, theory-of-cellular-automata-a-survey]
+sources: [cgol-ch8-guns-and-glider-streams, cgol-ch6-periodic-circuitry, cgol-ch5-glider-synthesis, cgol-ch1-early-life, fantastic-combinations-of-john-conways-life, theory-of-cellular-automata-a-survey]
 created: 2026-09-25
 updated: 2026-09-25
 ---
@@ -38,14 +38,21 @@ into the explosion between its queen bees stops that glider being made. That mak
 Three queen bees and two blocks can make a "double" gun that emits two glider
 streams.[^7]
 
+Two Gosper guns aimed at each other in the right phase form a block that deletes every
+second glider, giving a period-60 gun. Seven of them, joined by a glider-insertion
+reaction, give a gun whose stream has period 15 though the mechanism oscillates at
+period 30 ([[gun](pages/gun.md)]).[^8]
+
 ## Appearances in Sources
 
+- [[cgol-ch8-guns-and-glider-streams](pages/cgol-ch8-guns-and-glider-streams.md)] - §8.1 period doubling to p60; §8.2 the p15 gun built from seven Gosper guns
 - [[cgol-ch1-early-life](pages/cgol-ch1-early-life.md)] - §1.3: construction, first infinitely growing pattern, discovery and prize
 - [[fantastic-combinations-of-john-conways-life](pages/fantastic-combinations-of-john-conways-life.md)] - the growth conjecture and prize the gun settled
 - [[theory-of-cellular-automata-a-survey](pages/theory-of-cellular-automata-a-survey.md)] - §2.6: period-30 glider gun as the example gun
 
 ## Related Concepts
 
+- [[gun](pages/gun.md)] - the general pattern class
 - [[inverter](pages/inverter.md)] - the gun as an inline inverter
 - [[primer](pages/primer.md)] - built from Gosper-gun circuitry
 - [[object-synthesis](pages/object-synthesis.md)] - how it is built from gliders
@@ -62,3 +69,4 @@ streams.[^7]
 [^5]: [[cgol-ch5-glider-synthesis](pages/cgol-ch5-glider-synthesis.md)] pp.124-129,134-135 [synthesis] - "a Gosper glider gun is made up of nothing more than two blocks and two queen bees"; n.4 piece-by-piece "requires 10 gliders ... syntheses of the Gosper glider gun are known, requiring as few as 8 gliders"; Fig. 5.6 incremental synthesis via pond, ship, queen bee with 12 gliders; the breeder
 [^6]: [[cgol-ch6-periodic-circuitry](pages/cgol-ch6-periodic-circuitry.md)] pp.154-157 [synthesis] - "The simplest set of circuitry that exists is based off of the queen bee shuttle and thus has period 30"; inline inverter; Fig. 6.8 guns of "period equal to 120n for any integer n ≥ 1"
 [^7]: [[cgol-ch1-early-life](pages/cgol-ch1-early-life.md)] p.29, Ex. 1.6 - "Use two blocks and three queen bees to create a 'double' Gosper glider gun: a gun that emits two streams of gliders"
+[^8]: [[cgol-ch8-guns-and-glider-streams](pages/cgol-ch8-guns-and-glider-streams.md)] pp.221-222,226-227,231 [synthesis] - Fig. 8.2(a) "two period 30 Gosper glider guns creating a period 60 gun"; Fig. 8.11 period 15 gun "via 7 Gosper glider guns"; "the gun of Figure 8.11 actually oscillates at period 30, despite producing a glider stream of period 15"

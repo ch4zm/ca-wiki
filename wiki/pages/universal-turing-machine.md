@@ -3,7 +3,7 @@ title: Universal Turing Machine
 category: Concepts
 summary: Turing's finite automaton with an unbounded tape that can simulate any other Turing machine - the logical model von Neumann generalized from computation to construction
 tags: [concept, turing, universality, computation]
-sources: [tsra-editors-introduction, tsra-lecture-2, tsra-part2-ch4, tsra-part2-ch5, statistical-mechanics-of-cellular-automata, computation-at-the-edge-of-chaos, theory-of-cellular-automata-a-survey]
+sources: [cgol-ch9-universal-computation, tsra-editors-introduction, tsra-lecture-2, tsra-part2-ch4, tsra-part2-ch5, statistical-mechanics-of-cellular-automata, computation-at-the-edge-of-chaos, theory-of-cellular-automata-a-survey]
 created: 2026-09-24
 updated: 2026-09-25
 ---
@@ -75,16 +75,19 @@ built on Turing-machine simulation. The [[game-of-life](pages/game-of-life.md)] 
 universal, and whether a finite Life pattern dies is undecidable (Berlekamp, Conway and
 Guy). [[rule-110](pages/rule-110.md)], a two-state nearest-neighbour rule, is universal: Wolfram
 conjectured this in the 1980s and later proved it with Cook, overturning the 1983 judgement
-above for the elementary family.[^16] Reversible rules can be universal too. Toffoli (1977) simulated any
+above for the elementary family.[^16] Explicit Life machines followed: Paul Rendell's Turing machine (April 2000),
+extended to a universal Turing machine in February 2010, and Paul Chapman's register
+machine (2002), the ancestor of the [[apgsembly](pages/apgsembly.md)] computers.[^17] Reversible rules can be universal too. Toffoli (1977) simulated any
 d-dimensional CA in a (d + 1)-dimensional reversible one. Morita and Harao (1989)
 simulated [[reversible-turing-machine](pages/reversible-turing-machine.md)]s, which can be universal (Bennett 1973), in 1D
-reversible CA ([[reversible-cellular-automaton](pages/reversible-cellular-automaton.md)]).[^17]
+reversible CA ([[reversible-cellular-automaton](pages/reversible-cellular-automaton.md)]).[^18]
 Kari separates this Turing-machine universality from
 [[intrinsic-universality](pages/intrinsic-universality.md)], the ability to simulate
-every CA on infinite configurations.[^18]
+every CA on infinite configurations.[^19]
 
 ## Appearances in Sources
 
+- [[cgol-ch9-universal-computation](pages/cgol-ch9-universal-computation.md)] - Rendell's Turing machine, Chapman's register machine, APGsembly
 - [[computation-at-the-edge-of-chaos](pages/computation-at-the-edge-of-chaos.md)] - the freezing problem; class IV and universal computation at the phase transition
 - [[theory-of-cellular-automata-a-survey](pages/theory-of-cellular-automata-a-survey.md)] - universality of Life and rule 110; universal reversible CA; Turing vs intrinsic universality
 - [[statistical-mechanics-of-cellular-automata](pages/statistical-mechanics-of-cellular-automata.md)] — universality across cellular automata: Smith's 18-state 1D rule, Life, Banks, and simulation by encoding
@@ -95,6 +98,7 @@ every CA on infinite configurations.[^18]
 
 ## Related Concepts
 
+- [[apgsembly](pages/apgsembly.md)] - programmable computers in Life
 - [[edge-of-chaos](pages/edge-of-chaos.md)] - the freezing problem, a dynamical analogue of halting
 - [[game-of-life](pages/game-of-life.md)] — universal through glider-stream circuits
 - [[elementary-cellular-automaton](pages/elementary-cellular-automaton.md)] — judged in 1983 too simple for universality
@@ -128,5 +132,6 @@ every CA on infinite configurations.[^18]
 [^14]: [[statistical-mechanics-of-cellular-automata](pages/statistical-mechanics-of-cellular-automata.md)] p.630 — "the elementary cellular automata considered here and in Secs. II and III are not of sufficient complexity to be capable of universal computation."
 [^15]: [[statistical-mechanics-of-cellular-automata](pages/statistical-mechanics-of-cellular-automata.md)] pp.629-630 [synthesis] — universal cellular automata may simulate any other cellular automaton; the interpreter is an encoding of configurations; "so long as the encoding defined by the interpreter is sufficiently simple, the statistical characteristics of the evolution of configurations in the universal cellular automaton will be shared by the cellular automaton being simulated"
 [^16]: [[theory-of-cellular-automata-a-survey](pages/theory-of-cellular-automata-a-survey.md)] p.11 [synthesis] - Theorem 1 (Berlekamp et al.): Life universal, death of a finite configuration undecidable; Wolfram's 1980s conjecture [74] and its proof by "him and Cook [76]"; Theorem 2: rule 110 universal
-[^17]: [[theory-of-cellular-automata-a-survey](pages/theory-of-cellular-automata-a-survey.md)] p.18 [synthesis] - Toffoli [65]: any d-dimensional CA simulated by a (d + 1)-dimensional reversible CA; Morita and Harao [54]; "reversible Turing machines can be computationally universal [4]"; Theorem 8
-[^18]: [[theory-of-cellular-automata-a-survey](pages/theory-of-cellular-automata-a-survey.md)] p.23 [synthesis] - "The universality of GOL and rule 110 is based on performing Turing machine simulations in the CA. But also a stronger form of universality exists that is inherent to CA"
+[^17]: [[cgol-ch9-universal-computation](pages/cgol-ch9-universal-computation.md)] pp.306-308 [synthesis] - "Paul Rendell developed the first such device in April 2000 - a Turing machine based on period 30 circuitry"; extended to a universal Turing machine in February 2010; "Paul Chapman constructed the next universal computer in 2002 - a register machine"
+[^18]: [[theory-of-cellular-automata-a-survey](pages/theory-of-cellular-automata-a-survey.md)] p.18 [synthesis] - Toffoli [65]: any d-dimensional CA simulated by a (d + 1)-dimensional reversible CA; Morita and Harao [54]; "reversible Turing machines can be computationally universal [4]"; Theorem 8
+[^19]: [[theory-of-cellular-automata-a-survey](pages/theory-of-cellular-automata-a-survey.md)] p.23 [synthesis] - "The universality of GOL and rule 110 is based on performing Turing machine simulations in the CA. But also a stronger form of universality exists that is inherent to CA"
