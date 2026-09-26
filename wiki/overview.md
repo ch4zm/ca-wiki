@@ -190,7 +190,6 @@ language recognizers
 
 ## Open Questions
 
-- Do phoenices of period 4 or 6 and up exist? Only period 2 is known; 3 and 5 are impossible ([[phoenix](pages/phoenix.md)]).
 - What is the maximum average density of an oscillator? Still lifes top out at 1/2; oscillators are only bounded by 8/13 ([[still-life-density](pages/still-life-density.md)]).
 - Does an orphan of height 4 exist? Heights 1-3 are ruled out and height 5 is achieved ([[garden-of-eden](pages/garden-of-eden.md)]).
 - Which methuselahs above 9 cells are optimal? Records are proved only up to 9 ([[methuselah](pages/methuselah.md)]).

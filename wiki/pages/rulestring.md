@@ -5,7 +5,7 @@ summary: The text names that identify cellular-automaton rules - B3/S23 birth/su
 tags: [concept, notation, rulestring, hensel-notation, map-rulestring, rule-integer]
 sources: [eppstein-gliders-in-life-like-cellular-automata, lifewiki-rulestring, lifewiki-seeds, lifewiki-star-trek, lifewiki-catagolue, lifewiki-life-like-cellular-automaton, lifewiki-larger-than-life, lifewiki-higher-range-outer-totalistic-rule, lifewiki-von-neumann-neighbourhood, lifewiki-hexagonal-neighbourhood]
 created: 2026-09-25
-updated: 2026-09-25
+updated: 2026-09-26
 ---
 
 # Rulestring
@@ -70,6 +70,8 @@ under rule names such as b3s23.[^11]
 - [[lifewiki-larger-than-life](pages/lifewiki-larger-than-life.md)], [[lifewiki-higher-range-outer-totalistic-rule](pages/lifewiki-higher-range-outer-totalistic-rule.md)] - range-based notations
 - [[lifewiki-hexagonal-neighbourhood](pages/lifewiki-hexagonal-neighbourhood.md)] - the H suffix
 - [[lifewiki-seeds](pages/lifewiki-seeds.md)], [[lifewiki-star-trek](pages/lifewiki-star-trek.md)] - rule integers
+- [[cgol-ch12-0e0p-metacell](pages/cgol-ch12-0e0p-metacell.md)] - Appendix B.6-B.7: rulestrings and Hensel notation
+- [[golly-help-generations](pages/golly-help-generations.md)] - Golly's survival/birth/states notation for Generations rules
 
 ## Related Concepts
 
@@ -79,6 +81,7 @@ under rule names such as b3s23.[^11]
 - [[generations-rule](pages/generations-rule.md)] - state-count suffix
 - [[larger-than-life](pages/larger-than-life.md)], [[higher-range-outer-totalistic-rule](pages/higher-range-outer-totalistic-rule.md)] - range notation
 - [[rule-range](pages/rule-range.md)] - a pattern's minimum and maximum rulestring
+- [[notation-map](pages/notation-map.md)] - the symbol crosswalk for the von Neumann, Hedlund and Kari sources
 - [[ruleloader](pages/ruleloader.md)] - for rules that no string can describe, Golly reads a rule file
 
 [^1]: [[lifewiki-rulestring](pages/lifewiki-rulestring.md)] L6 - "Rulestrings are a way of describing the behavior of various classes of cellular automaton in the form of a string"

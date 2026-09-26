@@ -5,7 +5,7 @@ summary: David Eppstein's long-running site asking which Life-like rules have gl
 tags: [source, web, eppstein, glider-db, spaceships, rule-space, rule-range, wolfram-classes]
 sources: [eppstein-gliders-in-life-like-cellular-automata]
 created: 2026-09-25
-updated: 2026-09-25
+updated: 2026-09-26
 ---
 
 # Eppstein, Gliders in Life-Like Cellular Automata (web site and glider.db)
@@ -55,6 +55,7 @@ blocks of rules cannot have gliders.[^5]
 - [[classification-of-cellular-automata](pages/classification-of-cellular-automata.md)] - Wolfram's classes, which the site argues against
 - [[spaceship](pages/spaceship.md)], [[glider](pages/glider.md)] - what the database lists
 - [[life-like-cellular-automaton](pages/life-like-cellular-automaton.md)], [[rulestring](pages/rulestring.md)] - the rule family and its notation
+- [[eppstein-2002-searching-for-spaceships](pages/eppstein-2002-searching-for-spaceships.md)] - Eppstein's account of the searches that find such ships
 
 ## Relation to Other Wiki Pages
 

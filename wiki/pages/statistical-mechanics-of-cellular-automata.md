@@ -5,7 +5,7 @@ summary: Wolfram's founding study of one-dimensional two-state "elementary" cell
 tags: [wolfram, elementary-ca, statistical-mechanics, self-organization, fractals, irreversibility, entropy, universality]
 sources: [statistical-mechanics-of-cellular-automata, theory-of-cellular-automata-a-survey]
 created: 2026-09-24
-updated: 2026-09-25
+updated: 2026-09-26
 ---
 
 # Statistical Mechanics of Cellular Automata (Wolfram, 1983)
@@ -114,6 +114,7 @@ exist.[^9]
 - [[cellular-automaton](pages/cellular-automaton.md)] — the general notion, and neighbourhood types
 - [[universal-turing-machine](pages/universal-turing-machine.md)] — universality in cellular automata
 - [[self-reproduction](pages/self-reproduction.md)] — replication in rule 90
+- [[intrinsic-universality](pages/intrinsic-universality.md)] - universal CA that simulate any other CA through a simple encoding
 
 ## Relation to Other Wiki Pages
 

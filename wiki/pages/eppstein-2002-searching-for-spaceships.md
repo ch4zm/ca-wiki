@@ -5,7 +5,7 @@ summary: David Eppstein's paper on gfind, a spaceship search program for Life an
 tags: [source, paper, eppstein, gfind, spaceship, search, de-bruijn, state-space-search, life-like]
 sources: [eppstein-2002-searching-for-spaceships]
 created: 2026-09-25
-updated: 2026-09-25
+updated: 2026-09-26
 ---
 
 # Eppstein (2002), Searching for Spaceships
@@ -60,10 +60,11 @@ spaceship of a given speed.[^7]
 - [[spaceship](pages/spaceship.md)], [[de-bruijn-graph](pages/de-bruijn-graph.md)], [[life-like-cellular-automaton](pages/life-like-cellular-automaton.md)]
 - [[cordership](pages/cordership.md)], [[puffer](pages/puffer.md)] - the engineered class of spaceships
 - [[highlife](pages/highlife.md)] - one of the rules where gfind found new ships
+- [[eppstein-gliders-in-life-like-cellular-automata](pages/eppstein-gliders-in-life-like-cellular-automata.md)] - Eppstein's database of spaceships across Life-like rules
 
 ## Relation to Other Wiki Pages
 
-The book chapters describe what spaceships exist; this paper is about how the long,
+The book chapters ([[cgol-ch4-spaceships-and-moving-objects](pages/cgol-ch4-spaceships-and-moving-objects.md)]) describe what spaceships exist; this paper is about how the long,
 narrow elementary ones are found. It is the other half of object-finding alongside
 [[soup-search](pages/soup-search.md)], which lets random soups do the work. It also
 revisits the [[de-bruijn-graph](pages/de-bruijn-graph.md)], known in this wiki from 1D

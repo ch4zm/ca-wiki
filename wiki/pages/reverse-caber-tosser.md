@@ -1,11 +1,11 @@
 ---
 title: Reverse caber tosser
 category: Patterns
-summary: A universal constructor with a small, bounded starting population that reads its construction recipe from the distance to a receding c/12 object, one bit per glider round trip; its 15-glider form shows that any glider-constructible pattern can be built from just 15 gliders, though running a real recipe takes exponentially many generations
+summary: A universal constructor with a small, bounded starting population that reads its construction recipe from the distance to an approaching c/12 object, one bit per glider round trip; its 15-glider form shows that any glider-constructible pattern can be built from just 15 gliders, though running a real recipe takes exponentially many generations
 tags: [pattern, life, universal-constructor, rct, glider-synthesis, switch-engine, gpse, cordership]
 sources: [cgol-ch5-glider-synthesis]
 created: 2026-09-25
-updated: 2026-09-25
+updated: 2026-09-26
 ---
 
 # Reverse caber tosser
@@ -88,8 +88,10 @@ The RCT placed third in the ConwayLife.com Pattern of the Year vote for 2018, be
 - [[caber-tosser](pages/caber-tosser.md)] - the forward version
 - [[object-synthesis](pages/object-synthesis.md)] - the RCT bounds every synthesis at 15 gliders
 - [[switch-engine](pages/switch-engine.md)] - glider-producing switch engines are its fixed circuitry
-- [[cordership](pages/cordership.md)] - the receding c/12 object that encodes the recipe
+- [[cordership](pages/cordership.md)] - the approaching c/12 object whose distance encodes the recipe
 - [[slow-salvo](pages/slow-salvo.md)] - construction arms build from slow salvos
+- [[construction-arm](pages/construction-arm.md)] - receives the recipe bits and makes the RCT universal
+- [[universal-constructor](pages/universal-constructor.md)] - the RCT is one, with a small bounded population
 
 [^1]: https://conwaylife.com/wiki/Reverse_caber_tosser (2025-06-01, search excerpt) - "a universal constructor with a small bounded population, where a recipe is encoded in the distance between an approaching c/12 diagonal object (such as a Cordership or puffer) and the origin. One or more gliders shuttle between the Cordership and the fixed circuitry, causing the times between collisions to repeatedly halve"; "named by analogy with the caber tosser which behaves as a time-reversed version thereof. Each iteration, the least significant bit of the recipe is consumed by the circuitry and typically routed to a universal construction arm"
 [^2]: https://conwaylife.com/wiki/Sublinear_growth (search excerpt) - "Caber tossers are a family of patterns that have population in generation T asymptotically proportional to log(T)"; http://www.conwaylife.com/ref/lexicon/lex_i.htm (search excerpt) - "Dean Hickerson has found many patterns with unusual growth rates, such as sawtooths and a caber tosser"

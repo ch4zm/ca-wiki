@@ -5,7 +5,7 @@ summary: A Life pattern class - an oscillating mechanism that emits spaceships f
 tags: [pattern-class, life, gun, glider-stream, true-period, pseudo-period, slide-gun, armless-construction, sqrtgun]
 sources: [cgol-ch8-guns-and-glider-streams, cgol-ch1-early-life]
 created: 2026-09-25
-updated: 2026-09-25
+updated: 2026-09-26
 ---
 
 # Gun
@@ -87,6 +87,11 @@ whose population grows slower than linearly.[^10]
 - [[inverter](pages/inverter.md)] - guns of period 120n and gun-against-stream logic
 - [[caber-tosser](pages/caber-tosser.md)] - a gun with logarithmic growth
 - [[puffer](pages/puffer.md)] - moving guns (rakes)
+- [[game-of-life](pages/game-of-life.md)] - the rule where the Gosper gun gave the first unbounded growth
+- [[oscillator](pages/oscillator.md)] - guns are oscillators that also emit moving objects
+- [[conduit](pages/conduit.md)] - Herschel conduits that release gliders, each of which can be made into a gun
+- [[period-multiplier](pages/period-multiplier.md)] - multiplies a gun's period, up to 2^100 in a 240 × 260 box
+- [[primer](pages/primer.md)] - a gun built from inline-inverter guns whose stream marks the primes
 - [[breeder](pages/breeder.md)] - builds guns
 - [[catagolue](pages/catagolue.md)] - keeps a database of true-period and pseudo-period glider guns
 - [[wireworld](pages/wireworld.md)] - clocks play the part of guns in wire circuits

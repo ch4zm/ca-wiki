@@ -5,7 +5,7 @@ summary: Building a Life object by colliding gliders that could arrive from arbi
 tags: [concept, life, glider-synthesis, construction, incremental-synthesis, seed]
 sources: [tsra-part2-ch5, tsra-lecture-5, cgol-ch5-glider-synthesis]
 created: 2026-09-25
-updated: 2026-09-25
+updated: 2026-09-26
 ---
 
 # Glider synthesis (object synthesis)
@@ -101,6 +101,8 @@ is a [[slow-salvo](pages/slow-salvo.md)].
 - [[still-life](pages/still-life.md)] - the objects most syntheses start from
 - [[garden-of-eden](pages/garden-of-eden.md)] - a related limit on what can arise
 - [[catagolue](pages/catagolue.md)] - keeps the cheapest known glider syntheses and takes submissions
+- [[construction-arm](pages/construction-arm.md)] - Life's construction machinery, a block elbow moved by gliders
+- [[initially-quiescent-automaton](pages/initially-quiescent-automaton.md)] - the class von Neumann's constructor builds from tape descriptions
 
 [^1]: [[cgol-ch5-glider-synthesis](pages/cgol-ch5-glider-synthesis.md)] pp.121-122 [synthesis] - Fig. 5.1 3-glider synthesis of an LWSS; Fig. 5.2 "a period 30 lightweight spaceship gun" from three Gosper glider guns; for stationary objects "the glider source has to be moving"
 [^2]: [[cgol-ch5-glider-synthesis](pages/cgol-ch5-glider-synthesis.md)] p.122 - "we require that the gliders in a synthesis could arrive at their positions from arbitrarily far away"; Fig. 5.3 is "not a valid 3-glider synthesis"

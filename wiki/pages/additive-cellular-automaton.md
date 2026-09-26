@@ -1,11 +1,11 @@
 ---
 title: Additive Cellular Automaton
 category: Concepts
-summary: Cellular automata obeying superposition modulo k - evolution from any start is the XOR of evolutions from single seeds; among elementary rules only 0, 90, 150, 204; exactly solvable, and a separate universality class from the non-additive complex rules
+summary: Cellular automata obeying superposition modulo k - evolution from any start is the XOR of evolutions from single seeds; among the 32 legal elementary rules only 0, 90, 150, 204 (eight among all 256); exactly solvable, and a separate universality class from the non-additive complex rules
 tags: [concept, additive, superposition, wolfram, exact-results, number-theory]
 sources: [statistical-mechanics-of-cellular-automata, theory-of-cellular-automata-a-survey]
 created: 2026-09-24
-updated: 2026-09-24
+updated: 2026-09-26
 ---
 
 # Additive Cellular Automaton

@@ -5,7 +5,7 @@ summary: Technique for building structures at a distance in a cellular automaton
 tags: [concept, construction, von-neumann, universal-constructor]
 sources: [cgol-ch11-universal-construction, tsra-part2-ch2, tsra-part2-ch5]
 created: 2026-09-24
-updated: 2026-09-25
+updated: 2026-09-26
 ---
 
 # Construction Arm
@@ -78,6 +78,11 @@ its own ([[single-channel-construction](pages/single-channel-construction.md)]).
 - [[universal-constructor](pages/universal-constructor.md)] — drives an arm from a description tape
 - [[cellular-automaton](pages/cellular-automaton.md)] — construction by changing cell states rather than moving parts
 - [[descriptions-vs-originals](pages/descriptions-vs-originals.md)] — why the construction program lives on an external description
+- [[self-constructing-spaceship](pages/self-constructing-spaceship.md)] - the Gemini carries three Chapman-Greene construction arms
+- [[slow-salvo](pages/slow-salvo.md)] - the construction elbow can emit any slow salvo
+- [[reverse-caber-tosser](pages/reverse-caber-tosser.md)] - routes its recipe bits to a universal construction arm
+- [[object-synthesis](pages/object-synthesis.md)] - the Life construction the arm carries out with gliders
+- [[self-reproduction](pages/self-reproduction.md)] - the constructor's building mechanism in the 29-state CA
 
 [^1]: [[tsra-part2-ch2](pages/tsra-part2-ch2.md)] pp.155-156 [synthesis] — editor: ordinary stimuli are fed alternately into two inputs; the direct process creates a confluent cell at the remote end of a path, then the constructing path is wiped out (Fig. 14)
 [^2]: [[tsra-part2-ch2](pages/tsra-part2-ch2.md)] p.155 [synthesis] — editor: the Fig. 14 transformation takes 37 time steps and can be driven by two 36-bit sequences of ordinary stimuli

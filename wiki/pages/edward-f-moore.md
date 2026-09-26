@@ -5,7 +5,7 @@ summary: Bell Labs author who formalized von Neumann's cellular model as "tessel
 tags: [person, moore, garden-of-eden, self-reproduction, bell-labs]
 sources: [machine-models-of-self-reproduction, converse-of-moores-garden-of-eden-theorem, planetmath-garden-of-eden-theorem, theory-of-cellular-automata-a-survey]
 created: 2026-09-24
-updated: 2026-09-24
+updated: 2026-09-26
 ---
 
 # Edward F. Moore
@@ -47,6 +47,7 @@ theory of CA" ([[garden-of-eden-theorem](pages/garden-of-eden-theorem.md)]).[^10
 - [[theory-of-cellular-automata-a-survey](pages/theory-of-cellular-automata-a-survey.md)] - credits the Garden-of-Eden theorem to Moore and Myhill
 - [[machine-models-of-self-reproduction](pages/machine-models-of-self-reproduction.md)] - author
 - [[converse-of-moores-garden-of-eden-theorem](pages/converse-of-moores-garden-of-eden-theorem.md)] - the result Myhill completes
+- [[tsra-part2-ch5](pages/tsra-part2-ch5.md)] - Burks relates an unconstructible configuration to his Garden-of-Eden configurations
 
 ## Related Concepts
 

@@ -1,19 +1,20 @@
 ---
 title: Larger than Life
 category: Rules
-summary: Kellie Evans's 1996 family of range-r outer-totalistic rules in which a cell is born or survives when its neighbour count falls in a single interval; at large range an LtL rule acts like a pair of density thresholds and can be rescaled to any range; hollow "bugs" in Bosco's Rule, slow circular "solid ships"; run by Golly's Larger than Life algorithm, generalized by HROT
+summary: David Griffeath's early-1990s proposal, defined and studied by Kellie Evans in her 1996 thesis: a family of range-r outer-totalistic rules in which a cell is born or survives when its neighbour count falls in a single interval; at large range an LtL rule acts like a pair of density thresholds and can be rescaled to any range, converging as range grows to a continuum limit, RealLife; hollow "bugs" in Bosco's Rule, slow circular "solid ships"; run by Golly's Larger than Life algorithm, generalized by HROT
 tags: [rule-family, larger-than-life, ltl, higher-range, outer-totalistic, bugs, golly, mcell]
 sources: [lifewiki-larger-than-life, lifewiki-higher-range-outer-totalistic-rule, lifewiki-rulestring, lifewiki-catagolue, lifewiki-apgsearch, lifewiki-unit-cell, lifewiki-hexagonal-neighbourhood]
 created: 2026-09-25
-updated: 2026-09-25
+updated: 2026-09-26
 ---
 
 # Larger than Life
 
 ## Description
 
-*Larger than Life* (LtL) is a family of rules defined by Kellie Michele Evans in her 1996
-thesis. Each cell looks at an extended neighbourhood of range r, and counts its live
+*Larger than Life* (LtL) is a family of rules proposed by David Griffeath in the early
+1990s, to test whether Life sits near a critical point as neighbourhood range grows.[^13]
+Kellie Michele Evans defined and studied it in her 1996 thesis. Each cell looks at an extended neighbourhood of range r, and counts its live
 cells.[^1] What sets the family apart is the shape of the rule: a dead cell is born if
 the count lies in **one interval** [bmin, bmax], and a live cell survives if it lies in
 **one interval** [smin, smax].[^2] Rules that allow any list of counts, not just one
@@ -37,6 +38,15 @@ as a statement about local density (own reasoning). David Griffeath's rule Major
 R4,C2,S40-80,B41-81, is the plainest example.[^5] A range-4 Moore neighbourhood has 80
 cells around the centre, so survival needs at least half of them alive and birth needs
 more than half: a majority vote (own reasoning from the rule's numbers).
+
+**The continuum limit.** LtL structures at longer range look like rescaled, higher-resolution
+versions of those at shorter range. Evans conjectured that they converge, and Marcus Pivato
+proved it: as range grows, LtL rules converge to a rule on the continuous plane, which he
+called *RealLife*, and their still lifes, oscillators and bugs converge to RealLife
+still lifes, oscillators and bugs.[^14] In that form the four limits are fractions of
+the neighbourhood; Life is survival on [1/3, 4/9] and birth at exactly 1/3.[^14] Evans's
+"winged" bugs at ranges 50, 100 and 200, with parameters such as
+(50, 2361, 3120, 2613, 3974), are the most complex bug shapes seen in LtL.[^13]
 
 **Notations.** There are several, differing mainly in whether the middle cell counts.[^6]
 - **HROT form** (current): Rr,Cc,Ssurvival,Bbirth,Nn, with dashes for runs.
@@ -79,6 +89,8 @@ for Bosco's Rule.[^12]
 - [[lifewiki-rulestring](pages/lifewiki-rulestring.md)] - LtL rulestrings
 - [[lifewiki-catagolue](pages/lifewiki-catagolue.md)], [[lifewiki-apgsearch](pages/lifewiki-apgsearch.md)] - soup search in LtL
 - [[lifewiki-unit-cell](pages/lifewiki-unit-cell.md)] - Bosco's Rule unit cell
+- Evans (2016), "Larger than Life", in *Art of Cellular Automata* - origin and winged bugs
+- Pivato (2007), "RealLife", *Theoretical Computer Science* 372 - the continuum limit
 
 ## Related Concepts
 
@@ -100,3 +112,5 @@ for Bosco's Rule.[^12]
 [^10]: [[lifewiki-unit-cell](pages/lifewiki-unit-cell.md)] L42,L59 [synthesis] - "Selection of Life-like rules with constructed W110 unit cells" includes "Bosco's Rule"
 [^11]: [[lifewiki-larger-than-life](pages/lifewiki-larger-than-life.md)] L7,L35-39 [synthesis] - supported by "Golly 3.0 and onwards and LifeViewer build 260 and onwards"; range 1 to 500; C for Circular and other neighbourhoods; [[lifewiki-higher-range-outer-totalistic-rule](pages/lifewiki-higher-range-outer-totalistic-rule.md)] L14 - "Golly supports c from 0 to 256"; [[lifewiki-hexagonal-neighbourhood](pages/lifewiki-hexagonal-neighbourhood.md)] L19 - "LifeViewer and Golly support Larger than Life rules in this neighbourhood"
 [^12]: [[lifewiki-apgsearch](pages/lifewiki-apgsearch.md)] L99 - "Larger than Life rules. (up to range 7)"; [[lifewiki-catagolue](pages/lifewiki-catagolue.md)] L454 - "R5,C0,M1,S34..58,B34..45,NM (Bosco's Rule)"
+[^13]: raw/evans-2016-larger-than-life.pdf pp.27-28 - "LtL was proposed by David Griffeath in the early 1990s to explore whether Life might be a clue to a critical phase point in the threshold-range scaling limit"; winged bugs (50, 2361, 3120, 2613, 3974), (100, 9350, 12360, 10350, 15740), (200, 37214, 49194, 41194, 62647); "These winged bugs have the most complex bug geometry seen in LtL rules (to date)"
+[^14]: raw/pivato-2007-reallife.pdf pp.1-2 [synthesis] - "We prove a conjecture of Evans: as their radius grows to infinity, LtL CA converge to a 'continuum limit' Euclidean automaton, which we call 'RealLife'"; life forms of LtL "converge to life forms of RealLife"; thresholds as neighbourhood fractions, Life s0 = b0 = b1 = 1/3, s1 = 4/9; "introduced by Evans [Eva96, ...]"

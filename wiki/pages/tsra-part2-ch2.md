@@ -5,7 +5,7 @@ summary: Von Neumann's derivation of the 29-state cellular automaton — transmi
 tags: [von-neumann, cellular-automata, 29-state, transition-rule, construction]
 sources: [tsra-part2-ch2]
 created: 2026-09-24
-updated: 2026-09-24
+updated: 2026-09-26
 ---
 
 # Theory of Self-Reproducing Automata — Part II, Ch. 2: A System of 29 States with a General Transition Rule
@@ -65,6 +65,7 @@ quiescent pattern from two binary input strings.[^3]
 - [[cellular-automaton](pages/cellular-automaton.md)]
 - [[mcculloch-pitts-neuron](pages/mcculloch-pitts-neuron.md)]
 - [[universal-constructor](pages/universal-constructor.md)]
+- [[von-neumann-neighbourhood](pages/von-neumann-neighbourhood.md)]
 
 ## Relation to Other Wiki Pages
 
@@ -75,7 +76,7 @@ builder is always bigger than what it builds. Ch. 3 designs the basic organs out
 states.
 
 [^1]: [[tsra-part2-ch2](pages/tsra-part2-ch2.md)] pp.132-134 [synthesis] — quadratic lattice; the four nearest neighbours chosen over eight for simplicity; the next state is a function of the cell's and its four neighbours' states at t−1; N^(N⁵) possible rules
-[^2]: [[tsra-part2-ch2](pages/tsra-part2-ch2.md)] pp.148-149 [synthesis] — summary list of states: 16 transmission, 4 confluent, 1 unexcitable, 8 sensitized, N = 29; 29^(29⁵) ≈ 10^(59,000,000) possible rules
+[^2]: [[tsra-part2-ch2](pages/tsra-part2-ch2.md)] pp.148-149 [synthesis] — summary list of states: 16 transmission, 4 confluent, 1 unexcitable, 8 sensitized, N = 29; 29^(29⁵) ≈ 10^(30,000,000) possible rules
 [^3]: [[tsra-part2-ch2](pages/tsra-part2-ch2.md)] pp.153-156 [synthesis] — editor: a storage loop feeding a construction code yields a line growing without limit; two input channels build a remote cell and retract the constructing path; any finite quiescent array can be built by a fixed device fed two binary sequences, the device always being larger
 [^4]: [[tsra-part2-ch2](pages/tsra-part2-ch2.md)] pp.136-138 [synthesis] — transmission cells with several inputs act as + (OR) neurons; confluent cells need all incoming transmission cells excited (· neuron); negation is not represented by a state but synthesized from the reverse and direct processes
 [^5]: [[tsra-part2-ch2](pages/tsra-part2-ch2.md)] pp.139-142 [synthesis] — ordinary vs. special stimuli; special stimuli kill ordinary transmission and confluent cells to U, ordinary stimuli kill special transmission cells; the two classes are dual

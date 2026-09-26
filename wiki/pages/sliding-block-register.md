@@ -5,7 +5,7 @@ summary: A Life memory device that stores a non-negative integer as the distance
 tags: [pattern, life, register, memory, block, computation, apgsembly, binary-register]
 sources: [cgol-ch9-universal-computation]
 created: 2026-09-25
-updated: 2026-09-25
+updated: 2026-09-26
 ---
 
 # Sliding block register
@@ -68,6 +68,7 @@ is the B2D 2D printer.[^8]
 - [[block](pages/block.md)] - the stored object
 - [[memory-cell](pages/memory-cell.md)] - glider-loop memory from periodic circuitry
 - [[slow-salvo](pages/slow-salvo.md)] - how binary-register moves are generated
+- [[universal-turing-machine](pages/universal-turing-machine.md)] - register machines built from these registers are Turing complete
 
 [^1]: [[cgol-ch9-universal-computation](pages/cgol-ch9-universal-computation.md)] pp.272, 275 [synthesis] - "it will be easier for us to simply store it in the position of a single block"; "a memory device called a sliding block register (SBR)"; n.4 "The 'U' stands for the word unary"
 [^2]: [[cgol-ch9-universal-computation](pages/cgol-ch9-universal-computation.md)] p.272 [synthesis] - a stable conduit turns a glider into the three gliders of Fig. 8.37(c) that push the block "diagonally away by 1 cell" (INC) and the two gliders of Fig. 8.37(b) that pull it "diagonally closer by 1 cell" (DEC)

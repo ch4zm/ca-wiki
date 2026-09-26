@@ -5,7 +5,7 @@ summary: Sutner on where decidability ends for one-dimensional CA - every first-
 tags: [decidability, first-order-logic, model-checking, de-bruijn, buchi-automata, reachability, arithmetic-hierarchy, rule-110, sutner]
 sources: [aucm-ch12-linear-cellular-automata-and-decidability]
 created: 2026-09-24
-updated: 2026-09-24
+updated: 2026-09-26
 ---
 
 # Automata, Universality, Computation — Ch. 12: Linear Cellular Automata and Decidability
@@ -121,6 +121,7 @@ suggests crowd-sourced inspection, as in Galaxy Zoo.[^19]
 - [[rule-90](pages/rule-90.md)]
 - [[limit-set](pages/limit-set.md)]
 - [[curtis-hedlund-lyndon-theorem](pages/curtis-hedlund-lyndon-theorem.md)]
+- [[jarkko-kari](pages/jarkko-kari.md)]
 
 ## Relation to Other Wiki Pages
 

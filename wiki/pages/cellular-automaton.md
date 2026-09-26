@@ -5,7 +5,7 @@ summary: A homogeneous lattice of identical finite-state cells, each updating in
 tags: [concept, cellular-automata, foundations, homogeneity, lattice]
 sources: [bays-1994-cellular-automata-in-the-triangular-tessellation, bays-2005-game-of-life-in-hexagonal-and-pentagonal-tessellations, cgol-ch12-0e0p-metacell, tsra-part2-ch1, tsra-part2-ch2, tsra-part2-ch3, machine-models-of-self-reproduction, endomorphisms-and-automorphisms-of-the-shift-dynamical-system, statistical-mechanics-of-cellular-automata, computation-at-the-edge-of-chaos, theory-of-cellular-automata-a-survey]
 created: 2026-09-24
-updated: 2026-09-25
+updated: 2026-09-26
 ---
 
 # Cellular Automaton
@@ -68,7 +68,7 @@ he found a way for wires to cross in two. Shannon told Moore of a scheme for a l
 of self-reproduction in one dimension.[^12] Using the four orthogonal neighbours rather than all eight keeps the rule
 simpler. A rule is then a function of five cells (the cell and its four neighbours), so
 with N states there are N^(N⁵) possible rules. For von Neumann's own rule,
-[[von-neumann-29-state-ca](pages/von-neumann-29-state-ca.md)], that is roughly 10^(59,000,000).[^13]
+[[von-neumann-29-state-ca](pages/von-neumann-29-state-ca.md)], that is roughly 10^(30,000,000).[^13]
 Moore instead takes all nine cells of the surrounding 3 × 3 block, the
 [[moore-neighbourhood](pages/moore-neighbourhood.md)], which includes von Neumann's five as a
 special case.[^14]
@@ -224,7 +224,7 @@ CA are equal is decidable.[^34] Which other properties can be decided is the sub
 [^10]: [[tsra-part2-ch1](pages/tsra-part2-ch1.md)] p.108 [synthesis] — editor: initial cell assignment; "infinite cellular automaton"; self-reproduction as a later copy of an embedded automaton in another area
 [^11]: [[tsra-part2-ch1](pages/tsra-part2-ch1.md)] pp.105-106 [synthesis] — questions of dimensionality, isotropy, and crystal class; 2D usable, 1D unlikely; maximum regularity chosen; editor: square cells with four neighbours
 [^12]: [[machine-models-of-self-reproduction](pages/machine-models-of-self-reproduction.md)] p.20 [synthesis] - Vanuxem lectures (Princeton, March 2-5, 1955): 3 dimensions first thought necessary since the wiring diagram might be non-planar, then a method for wires to cross in 2 dimensions; Shannon's unpublished scheme for a limited kind of self-reproduction in a 1-dimensional tessellation structure
-[^13]: [[tsra-part2-ch2](pages/tsra-part2-ch2.md)] pp.133-134, 149 [synthesis] — nearest four neighbours chosen over eight as simpler; the transition rule is a function of five states; N^(N⁵) possible rules, 29^(29⁵) ≈ 10^(59,000,000) for N = 29
+[^13]: [[tsra-part2-ch2](pages/tsra-part2-ch2.md)] pp.133-134, 149 [synthesis] — nearest four neighbours chosen over eight as simpler; the transition rule is a function of five states; N^(N⁵) possible rules, 29^(29⁵) ≈ 10^(30,000,000) for N = 29
 [^14]: [[machine-models-of-self-reproduction](pages/machine-models-of-self-reproduction.md)] p.21 [synthesis] - neighbours are the nine cells whose coordinates differ by at most 1; von Neumann's five-cell definition is included as a special case
 [^15]: [[bays-1994-cellular-automata-in-the-triangular-tessellation](pages/bays-1994-cellular-automata-in-the-triangular-tessellation.md)] pp.148-149 [synthesis] - even and odd cells stored in a two-dimensional array with neighbour templates; "we can thus utilize the same program to explore cellular automata in many regular tessellations - for example, the hexagonal tessellation, the Cairo tessellation ... or the square tessellation"; templates for mixed tilings; [[bays-2005-game-of-life-in-hexagonal-and-pentagonal-tessellations](pages/bays-2005-game-of-life-in-hexagonal-and-pentagonal-tessellations.md)] pp.245-251 [synthesis] - GL rules on hexagonal, Cairo pentagonal, square and triangular grids
 [^16]: [[tsra-part2-ch1](pages/tsra-part2-ch1.md)] pp.105-106 [synthesis] — the same general possibilities in both settings; the continuous case is mathematically much harder but more satisfactory once analytic methods exist; attention primarily on the crystalline case

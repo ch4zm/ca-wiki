@@ -5,7 +5,7 @@ summary: A Life mechanism that turns the gliders of an irregular stream into gap
 tags: [pattern-class, life, circuitry, inverter, duplicator, toggle, glider-stream]
 sources: [cgol-ch6-periodic-circuitry]
 created: 2026-09-25
-updated: 2026-09-25
+updated: 2026-09-26
 ---
 
 # Inverter
@@ -57,6 +57,7 @@ it makes the output bits obey b(k) = b(k−1) ⊕ b(k−n). With n = 25 the sequ
 - [[primer](pages/primer.md)] - built from inline-inverter guns
 - [[memory-cell](pages/memory-cell.md)] - inverted loop segments allow writing 1s
 - [[heisenburp](pages/heisenburp.md)] - duplication without touching the glider
+- [[conduit](pages/conduit.md)] - stable glider duplicators from a syringe and a Herschel-to-3-gliders converter
 - [[regulator](pages/regulator.md)] - re-timing gliders
 
 [^1]: [[cgol-ch6-periodic-circuitry](pages/cgol-ch6-periodic-circuitry.md)] p.155 - "If we have an irregular glider stream--one in which gliders are separated by a fixed period, except some gliders are missing--it is often useful to invert the stream. That is, we would like to have a mechanism for replacing the gliders in the stream by empty gaps, and replacing the empty gaps by gliders"

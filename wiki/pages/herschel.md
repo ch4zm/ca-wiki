@@ -1,11 +1,11 @@
 ---
 title: Herschel
 category: Patterns
-summary: A seven-cell chaotic Life object that emits a glider after 21 generations and appears in many evolutions (the B-heptomino becomes one in 20); moved through stable conduits such as R64 and Fx77, it runs around Herschel tracks that give oscillators and guns of every period 61 or more
+summary: A seven-cell chaotic Life object that emits a glider after 21 generations and appears in many evolutions (the B-heptomino becomes one in 20); moved through stable conduits such as R64 and Fx77, it runs around Herschel tracks that give oscillators of every period 61 or more and guns of every period 62 or more
 tags: [pattern, life, herschel, conduit, herschel-track, r64, fx77]
 sources: [cgol-ch7-stable-circuitry, cgol-ch3-oscillators, cgol-ch1-early-life]
 created: 2026-09-25
-updated: 2026-09-25
+updated: 2026-09-26
 ---
 
 # Herschel
@@ -45,7 +45,8 @@ into a glider gun of the same period.[^5]
 These are far from the smallest tracks for most periods.[^6] Faster conduits reach
 periods 58-60, and oscillating Herschel conduits (Dietrich Leithner, 1997) reach 56 and
 57.[^7] David Buckingham developed Herschel tracks, and by October 1996 had a toolkit for
-oscillators and guns of every period 61 or more. The Silver reflector is a Herschel track
+oscillators of every period 61 or more; track guns start at 62, since a period-61 track gun's
+gliders hit later Herschels ([[gun](pages/gun.md)]). The Silver reflector is a Herschel track
 that keeps its gliders ([[reflector](pages/reflector.md)]).[^7]
 
 **Beyond R64 and Fx77.** Conduits are named by the output Herschel's turn (R, L, F or B,

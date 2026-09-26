@@ -1,11 +1,11 @@
 ---
 title: Switch engine
 category: Patterns
-summary: An eight-cell unstable Life object that travels diagonally, reflecting itself every 48 generations; stabilized by its own debris it becomes the block-laying or glider-producing switch engine, puffers that are the only infinitely growing patterns ever seen to arise from random soup; pairs of switch engines make arks
+summary: An eight-cell unstable Life object that travels diagonally, reflecting itself every 48 generations; stabilized by its own debris it becomes the block-laying or glider-producing switch engine, puffers that (with two-engine combinations like the pony express) are the only infinite growth seen from asymmetric random soup; pairs of switch engines make arks
 tags: [pattern, life, switch-engine, puffer, ark, infinite-growth, methuselah]
 sources: [cgol-ch5-glider-synthesis, cgol-ch4-spaceships-and-moving-objects, cgol-ch1-early-life]
 created: 2026-09-25
-updated: 2026-09-25
+updated: 2026-09-26
 ---
 
 # Switch engine
@@ -28,8 +28,9 @@ stabilization, giving one of two puffers:[^4]
   glider every 384 generations. The glider travels the same way at 3 cells per 12
   generations, against the engine's 1 cell per 12, and soon passes it.
 
-These two puffers are the only infinitely growing patterns that have ever formed from a
-randomly filled region of the Life plane. They have very small predecessors, 11 or 12
+Puffers built from switch engines, including two-engine combinations such as the pony
+express, are the only infinite growth seen from asymmetric random soups; a symmetric soup
+has also given the pufferfish.[^6] They have very small predecessors, 11 or 12
 cells, while glider guns need many coordinated live cells.[^5]
 
 **Arks.** A puffer made of two switch engines stabilizing each other is an *ark*. Dozens
@@ -70,3 +71,4 @@ from three gliders ([[object-synthesis](pages/object-synthesis.md)]).[^10]
 [^8]: [[cgol-ch1-early-life](pages/cgol-ch1-early-life.md)] pp.18,31 [synthesis] - Fig. 1.30: "A 16-cell pattern that takes a whopping 736 692 generations to stabilize ... this pattern is an ark"; Ex. 1.17: "The 19-cell pattern ... consists of two switch engine predecessors and a blinker, and takes a staggering 6 526 574 generations to stabilize"
 [^9]: [[cgol-ch4-spaceships-and-moving-objects](pages/cgol-ch4-spaceships-and-moving-objects.md)] p.90 - using switch engines "to stabilize each other and erase their debris entirely (thus creating a spaceship) ... Spaceships constructed in this way are called Corderships"
 [^10]: [[cgol-ch5-glider-synthesis](pages/cgol-ch5-glider-synthesis.md)] pp.124-125 [synthesis] - Table 5.2 3-glider syntheses of the switch engine and the glider-producing switch engine; "the only known way of generating infinite growth with just 3 gliders"
+[^6]: [[lifewiki-apgsearch](pages/lifewiki-apgsearch.md)] L75-76 - "The pufferfish was discovered in the ash of a symmetric soup"; "a p1152 made from two switch engines dubbed the pony express"

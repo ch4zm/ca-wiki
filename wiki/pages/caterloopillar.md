@@ -1,11 +1,11 @@
 ---
 title: Caterloopillar
 category: Patterns
-summary: A family of self-supporting Life spaceships in which xWSS flotillae push and pull two antiparallel tracks of loaves and build each other by unidirectional slow salvo encoded in the loaf spacing - the first (April 2016) moves at c/24, and caterloopillars exist for every rational orthogonal speed below c/4
+summary: A family of self-supporting Life spaceships in which xWSS flotillae push and pull two antiparallel tracks of loaves and build each other by unidirectional slow salvo encoded in the loaf spacing - the first (Michael Simkin, April 2016, Pattern of the Year) moves at c/8, the book's worked example at c/24; caterloopillars exist in theory for every rational orthogonal speed below c/4, though the construction script misses some speed forms
 tags: [pattern, life, spaceship, self-supporting-spaceship, caterloopillar, loaf, flotilla, slow-salvo, adjustable-speed]
 sources: [cgol-ch10-self-supporting-spaceships]
 created: 2026-09-25
-updated: 2026-09-25
+updated: 2026-09-26
 ---
 
 # Caterloopillar
@@ -16,7 +16,18 @@ A *caterloopillar* is a [[self-supporting-spaceship](pages/self-supporting-space
 that reverses the usual design. The silverfish and caterpillar use a trail of stable
 objects to support a moving object. A caterloopillar uses a trail of spaceships to move a
 stable object, a loaf.[^1] David Bell proposed the idea in October 2006; slow-salvo
-technology was ready to build it in April 2016.[^2]
+technology was ready to build it in April 2016.[^2] Each half of the ship acts as a
+[[universal-constructor](pages/universal-constructor.md)], building the other half's parts
+while reading and moving the shared construction tape.[^18]
+
+**The first ones.** Michael Simkin completed the first caterloopillar on April 9, 2016. It
+moves at c/8 (250 cells per 2000 generations), the first spaceship of that speed. It has
+232,815 to 239,370 live cells and a bounding box of about 734 × 500,000.[^17][^19] Simkin's
+script then gave c/9 (252c/2268) within a week, followed by 2c/9 (the fastest at the time),
+c/11 and c/12. The smallest early ones, c/13 and c/12, have about 117,000 and 125,000
+cells.[^20] A 31c/240 caterloopillar beat the Centipede, the earlier record holder at that
+speed. The caterloopillar was voted the ConwayLife.com Pattern of the Year for 2016.[^17]
+Trivial changes turn it into puffers and rakes.[^19]
 
 **Loaf tracks.** The spine is a track of loaves.[^3]
 - A **loaf-pusher** of three xWSS flotillae ([[light-middle-heavyweight-spaceships](pages/light-middle-heavyweight-spaceships.md)])
@@ -54,7 +65,8 @@ loaves were moved.[^12]
 - **Theorem 10.3.** Caterloopillars exist at every rational speed below c/4. Set the
   flotillae to move the loaves 100 + 2n cells and space the pushers 400 + 2n + 2m cells
   apart. The speed is (50 + n)c/(500 + 4n + 2m), and n = 300p - 50, m = 150(q - 4p) - 150
-  gives any p/q < 1/4.[^14]
+  gives any p/q < 1/4.[^14] In practice Simkin's script does not work for speeds of the
+  form m/(8k+2) and m/(8k+6).[^17]
 - The c/4 ceiling comes from the glider: at larger displacements more of each period is
   spent as a c/4 glider bouncing between flotilla parts. Reaching c/2 would need a major
   redesign.[^15]
@@ -71,6 +83,7 @@ loaves were moved.[^12]
 - [[self-supporting-spaceship](pages/self-supporting-spaceship.md)] - its class
 - [[spaceship](pages/spaceship.md)] - the speed catalogue and the c/4 and c/2 limits
 - [[slow-salvo](pages/slow-salvo.md)] - how each track builds the other
+- [[universal-constructor](pages/universal-constructor.md)] - what each half of the ship is
 - [[light-middle-heavyweight-spaceships](pages/light-middle-heavyweight-spaceships.md)] - the flotillae
 
 [^1]: [[cgol-ch10-self-supporting-spaceships](pages/cgol-ch10-self-supporting-spaceships.md)] p.330 - "what if instead of using an infinite trail of stable objects like blocks or blinkers to support a naturally moving object like a Herschel or pi-heptomino, we use an infinite trail of spaceships to move a stable object?"
@@ -89,3 +102,7 @@ loaves were moved.[^12]
 [^14]: [[cgol-ch10-self-supporting-spaceships](pages/cgol-ch10-self-supporting-spaceships.md)] p.335 [synthesis] - Theorem 10.3 "Caterloopillar spaceships can be constructed that travel at any rational speed slower than c/4"; proof with push 100 + 2n, separation 400 + 2n + 2m, speed (50 + n)c/(500 + 4n + 2m), n = 300p - 50 and m = 150(q - 4p) - 150
 [^15]: [[cgol-ch10-self-supporting-spaceships](pages/cgol-ch10-self-supporting-spaceships.md)] p.335, n.35 - "more and more of its travel time is spent as a (c/4) glider bouncing between the components of the flotillae ... Reaching the theoretical speed limit of c/2 would require a major redesign"
 [^16]: [[cgol-ch10-self-supporting-spaceships](pages/cgol-ch10-self-supporting-spaceships.md)] pp.335-337 - "faster caterloopillars are typically larger than slower ones, not just because their component flotillae become more spaced out, but also because the glider syntheses used to construct those flotillae require more steps"
+[^17]: https://conwaylife.com/wiki/Caterloopillar (2026-09-26, search excerpt) - "The first Caterloopillar was constructed by Michael Simkin and completed on April 9, 2016; this Caterloopillar has a speed of c/8"; period 2000, 250c/2000; "voted Pattern of the Year for 2016"; "The script does not work for speeds of the form m/(8k+2) and m/(8k+6)"; "the first three being c/9, c/11 and c/12"; "a 31c/240 one smaller than the Centipede"
+[^18]: https://playgameoflife.com/list.html (Life Lexicon, 2026-09-26, search excerpt) - "The front and back halves of Caterloopillars each function as universal constructors, with each half constructing the building blocks of the other half, while also reading and moving a construction tape"
+[^19]: https://mathematrec.wordpress.com/2016/04/10/how-slow-do-you-want-it/ (2016-04-10) - Simkin "has found an orthogonal c/8 spaceship, the first of that speed"; can be modified "to produce spaceships - or, with trivial modifications, puffers or rakes - of any speed slower than c/4"; Simkin: "cell count: minimal - 232,815 maximal - 239,370 bounding box ~ 734 X 500K"
+[^20]: https://conwaylife.com/forums/viewtopic.php?t=2151 (2016-04-15 to 2016-04-18, search excerpt) - simsim314: "I've managed to complete the c/9 caterloopillar ... It's c252/2268 (=c/9)"; "Here is 2c/9 (1016/4572) ... the fastest caterloopillar yet"; "The smallest caterloopillar (c/13 with 117K and c/12 with 125K)"

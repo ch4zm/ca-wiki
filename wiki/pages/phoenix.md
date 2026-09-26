@@ -1,11 +1,11 @@
 ---
 title: Phoenix
 category: Patterns
-summary: A Life pattern in which every live cell dies each generation yet the pattern lives on; every phoenix stays within one cell of its starting bounding box and so is an oscillator (no phoenix spaceships), period-2 phoenices exist, and none exist with period 3 or 5
+summary: A Life pattern in which every live cell dies each generation yet the pattern lives on; every phoenix stays within one cell of its starting bounding box and so is an oscillator (no phoenix spaceships), every finite phoenix has period 2 (Goucher, 2024)
 tags: [pattern-class, life, phoenix, oscillator, theorem]
 sources: [cgol-ch12-0e0p-metacell, cgol-ch3-oscillators]
 created: 2026-09-25
-updated: 2026-09-25
+updated: 2026-09-26
 ---
 
 # Phoenix
@@ -24,7 +24,7 @@ cell beyond its original bounding box.[^2]
 - That leaves K with exactly two live neighbours at n − 1, so K survives, contradicting
   the phoenix property.
 - A pattern confined to a w × h box must repeat within 2^(wh) generations, so it
-  oscillates. There are no phoenix spaceships or puffers.
+  oscillates. There are no finite phoenix spaceships or puffers.
 
 A phoenix can leave its original bounding box by one cell.[^3] The edge argument used
 here is a standard tool; it also bounds spaceship speeds.[^4]
@@ -34,8 +34,9 @@ here is a standard tool; it also bounds spaceship speeds.[^4]
 - Period 3: impossible (Theorem 3.4). Take the leftmost rotor cell in the top row; a
   neighbour count on it and the cells feeding it rules this out.
 - Period 5: impossible, by a computer-assisted proof (Alex Greason, 2019).
-- No phoenix of period 3 or more has been found, and little else is known for period 4
-  and above.
+- Every finite phoenix has period 2: Adam P. Goucher proved it in January 2024, after
+  Amling ruled out periods 7, 9 and 11. Infinite phoenix agars and wicks exist with
+  periods 2, 4, 8 and 6n.[^8]
 
 A whole rule can be phoenix-only: in the 8-state von Neumann rule that the 0E0P
 [[metacell](pages/metacell.md)] runs, every cell dies every generation, so every pattern is a
@@ -53,6 +54,8 @@ exist at higher periods, such as a period-3 example (Jason Summers, 2012).[^7]
 - [[oscillator](pages/oscillator.md)] - every phoenix is one
 - [[spaceship](pages/spaceship.md)] - no phoenix can be one
 - [[catagolue](pages/catagolue.md)] - awards the "Conchita" badge for a soup containing a phoenix
+- [[seeds-rule](pages/seeds-rule.md)] - no survival, so every pattern is a phoenix
+- [[brians-brain](pages/brians-brain.md)] - no survival either, so every pattern is a phoenix
 
 [^1]: [[cgol-ch3-oscillators](pages/cgol-ch3-oscillators.md)] p.75 - "the period 2 oscillator shown in Figure 3.37, which has the interesting property that all of its live cells die every generation, yet the pattern as a whole lives. A pattern with this property is called a phoenix, after the mythological bird that is cyclically reborn after dying"
 [^2]: [[cgol-ch3-oscillators](pages/cgol-ch3-oscillators.md)] p.75 [synthesis] - Theorem 3.3: "no phoenix can ever extend more than one cell outside of its original bounding box. In particular, every phoenix evolves into an oscillator"; proof via cells J, K, L, A, B, C and X; "2^(wh) different patterns"; "There's no such thing in Life as a phoenix spaceship"; n.28 proved by Stephen Silver, January 2000
@@ -61,3 +64,4 @@ exist at higher periods, such as a period-3 example (Jason Summers, 2012).[^7]
 [^5]: [[cgol-ch3-oscillators](pages/cgol-ch3-oscillators.md)] pp.76-77 [synthesis] - "to date no one has found any phoenices with period 3 or higher"; Theorem 3.4 (No Phoenices with Period 3) with proof via cells A, J, K, L, M, X, Y; "A computer-assisted proof has also been used to show that no phoenices of period 5 exist" (n.30 Alex Greason, September 2019); "essentially nothing else is known ... with period 4 or greater"
 [^6]: [[cgol-ch12-0e0p-metacell](pages/cgol-ch12-0e0p-metacell.md)] p.392, n.13 - the metacell emulates "an 8-state von-Neumann-neighborhood CA in which every cell dies in every generation"; "In other words, every pattern is a phoenix in these cellular automata"
 [^7]: [[cgol-ch3-oscillators](pages/cgol-ch3-oscillators.md)] p.77 - "every cell in the period 3 oscillator displayed in Figure 3.41 oscillates, even though it is not a phoenix" (Fig. 3.41: found by Jason Summers in August 2012)
+[^8]: https://conwaylife.com/wiki/Phoenix (2026-09-26, search excerpt) - every finite phoenix has period 2 (Goucher, January 2024); earlier exclusions of periods 3 (Silver), 5 (Greason), 7, 9 and 11 (Amling); infinite phoenix agars and wicks of periods 2, 4, 8 and 6n

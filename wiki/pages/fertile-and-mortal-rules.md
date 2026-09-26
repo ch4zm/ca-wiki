@@ -5,7 +5,7 @@ summary: Eppstein's two yes/no tests for a Life-like rule - fertile if some fini
 tags: [concept, classification, fertile, mortal, rule-space, life-like, growth, decay]
 sources: [eppstein-2010-growth-and-decay-in-life-like-ca, eppstein-gliders-in-life-like-cellular-automata]
 created: 2026-09-25
-updated: 2026-09-25
+updated: 2026-09-26
 ---
 
 # Fertile and mortal rules
@@ -35,7 +35,7 @@ dies ([[game-of-life](pages/game-of-life.md)]), whose proof uses patterns that f
   live neighbours.
 - In **B3**, spaceship searches show 10,736 of the 16,384 rules fertile. A diamond-shaped
   bounding argument proves 64 infertile (B3 rules with none of B1245 and none of
-  S012345). That leaves 5,584 open, so 96% of rules are settled. Fertility without
+  S012345). That leaves 5,584 open, so 96% of all 131,072 rules without B0 are settled. Fertility without
   spaceships also occurs, as in the ladders of Life without Death.
 
 **Deciding mortality.** Dean Hickerson's duality makes mortality a still-life question: a

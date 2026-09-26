@@ -5,7 +5,7 @@ summary: Conway's B3/S23 rule on the eight-cell neighbourhood - survival on two 
 tags: [rule, life, conway, two-dimensional, totalistic, universality]
 sources: [eppstein-2010-growth-and-decay-in-life-like-ca, cgol-ch9-universal-computation, cgol-ch12-0e0p-metacell, cgol-ch1-early-life, fantastic-combinations-of-john-conways-life, statistical-mechanics-of-cellular-automata, computation-at-the-edge-of-chaos, theory-of-cellular-automata-a-survey]
 created: 2026-09-24
-updated: 2026-09-25
+updated: 2026-09-26
 ---
 
 # Conway's Game of Life
@@ -62,10 +62,10 @@ move, the "speed of light" c. He proved that finite figures move at most c/4 dia
 and c/2 orthogonally. The glider moves at c/4 and is the smallest
 [[spaceship](pages/spaceship.md)].[^14]
 
-**Unbounded growth.** Finite patterns can grow without limit. A *gun* emits an endless
+**Unbounded growth.** Finite patterns can grow without limit. A *[[gun](pages/gun.md)]* emits an endless
 stream of moving objects; the [[gosper-glider-gun](pages/gosper-glider-gun.md)], two
 [[queen-bee](pages/queen-bee.md)]s bouncing between blocks, was the first pattern found
-to do so, and settled a $50 challenge Conway had set on the question.[^15] A *puffer*
+to do so, and settled a $50 challenge Conway had set on the question.[^15] A *[[puffer](pages/puffer.md)]*
 moves while leaving debris; the block-laying and glider-producing
 [[switch-engine](pages/switch-engine.md)]s are the only infinitely growing patterns ever
 seen to arise from random soup.[^16] Most modern Life patterns are engineered by

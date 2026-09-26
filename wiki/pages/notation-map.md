@@ -5,7 +5,7 @@ summary: Crosswalk from the symbols each source uses (von Neumann's lectures and
 tags: [notation, reference, von-neumann, burks, hedlund, kari, self-reproduction, 29-state, symbolic-dynamics]
 sources: [tsra-editors-introduction, tsra-lecture-5, tsra-part2-ch1, tsra-part2-ch2, tsra-part2-ch3, tsra-part2-ch4, tsra-part2-ch5, endomorphisms-and-automorphisms-of-the-shift-dynamical-system, planetmath-garden-of-eden-theorem, statistical-mechanics-of-cellular-automata, computation-at-the-edge-of-chaos, theory-of-cellular-automata-a-survey]
 created: 2026-09-24
-updated: 2026-09-25
+updated: 2026-09-26
 ---
 
 # Notation Map
@@ -13,7 +13,7 @@ updated: 2026-09-25
 The sources letter the same ideas differently, and reuse the same letters for unrelated
 ideas. Wiki pages use the common notation below. Source symbols appear only when quoted or
 when a page is explicitly about a source's own construction. This page maps each source's
-symbols to the concept it names. Add a column or a table when a new source brings its own
+symbols to the concept it names. Rule notation for the Life family is mapped in [[rulestring](pages/rulestring.md)]. Add a column or a table when a new source brings its own
 notation.
 
 ## The self-reproduction scheme

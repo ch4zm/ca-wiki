@@ -5,7 +5,7 @@ summary: The elementary "modulo-two" rule - each cell becomes the XOR of its two
 tags: [rule, elementary-ca, additive, wolfram, sierpinski, pascal-triangle]
 sources: [statistical-mechanics-of-cellular-automata, theory-of-cellular-automata-a-survey, aucm-ch12-linear-cellular-automata-and-decidability]
 created: 2026-09-24
-updated: 2026-09-25
+updated: 2026-09-26
 ---
 
 # Rule 90
@@ -70,6 +70,7 @@ have ([[first-order-theory-of-cellular-automata](pages/first-order-theory-of-cel
 - [[elementary-cellular-automaton](pages/elementary-cellular-automaton.md)] — its family
 - [[fractal-dimension](pages/fractal-dimension.md)] — log₂3 from a single seed
 - [[self-reproduction](pages/self-reproduction.md)] — trivial replication by superposition
+- [[highlife](pages/highlife.md)] - its replicator count after n cycles follows the same 2^(number of 1 bits) law
 - [[self-organization](pages/self-organization.md)] — additive rules form their own statistical class
 - [[permutive-map](pages/permutive-map.md)] - XOR of the end cells, permutive at both ends
 - [[surjective-shift-endomorphism](pages/surjective-shift-endomorphism.md)] - onto on the infinite line

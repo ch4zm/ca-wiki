@@ -5,7 +5,7 @@ summary: A Life pattern that cycles through a fixed number of configurations (ph
 tags: [pattern-class, life, oscillator, period, phase, shuttle]
 sources: [cgol-ch3-oscillators, cgol-ch2-still-lifes, cgol-ch1-early-life, fantastic-combinations-of-john-conways-life, theory-of-cellular-automata-a-survey]
 created: 2026-09-25
-updated: 2026-09-25
+updated: 2026-09-26
 ---
 
 # Oscillator
@@ -76,6 +76,7 @@ Guns are oscillators that also emit a stream of moving objects
 - [[spaceship](pages/spaceship.md)] - periodic up to a translation
 - [[blinker](pages/blinker.md)], [[pulsar](pages/pulsar.md)], [[pentadecathlon](pages/pentadecathlon.md)] - natural examples
 - [[queen-bee](pages/queen-bee.md)], [[twin-bees](pages/twin-bees.md)] - engineered shuttles
+- [[gun](pages/gun.md)] - an oscillator that also emits a stream of moving objects
 - [[apgsearch](pages/apgsearch.md)], [[catagolue](pages/catagolue.md)] - soup search, where many oscillators (Rob's p16, 32P21, 30P25) were first found
 
 [^1]: [[cgol-ch1-early-life](pages/cgol-ch1-early-life.md)] p.6 - "Patterns like this one, which cycle between finitely many different configurations, are called oscillators, and the configurations that they take on in individual generations are called phases"

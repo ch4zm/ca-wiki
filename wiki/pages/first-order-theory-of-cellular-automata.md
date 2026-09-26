@@ -5,7 +5,7 @@ summary: Treating a 1D cellular automaton as the logical structure (configuratio
 tags: [concept, decidability, first-order-logic, model-checking, automatic-structures, buchi-automata, sutner]
 sources: [aucm-ch12-linear-cellular-automata-and-decidability]
 created: 2026-09-24
-updated: 2026-09-24
+updated: 2026-09-26
 ---
 
 # First-Order Theory of Cellular Automata
@@ -82,6 +82,7 @@ undecidable (Kari).[^14]
 - [[decidability-in-cellular-automata](pages/decidability-in-cellular-automata.md)] - the decidable 1D properties this method covers
 - [[surjective-shift-endomorphism](pages/surjective-shift-endomorphism.md)] - Hedlund's characterizations of 1D surjectivity
 - [[reversible-cellular-automaton](pages/reversible-cellular-automaton.md)] - injectivity as a first-order sentence
+- [[jarkko-kari](pages/jarkko-kari.md)] - 2D injectivity and surjectivity are undecidable by his theorem
 
 [^1]: [[aucm-ch12-linear-cellular-automata-and-decidability](pages/aucm-ch12-linear-cellular-automata-and-decidability.md)] pp.260-261 [synthesis] — local map ρ: Σ^w → Σ, structure C_ρ = ⟨C, →⟩; "three natural choices of the configuration space C: the bi-infinite case Σ^ζ, the one-way infinite case Σ^ω and the finite case Σⁿ"
 [^2]: [[aucm-ch12-linear-cellular-automata-and-decidability](pages/aucm-ch12-linear-cellular-automata-and-decidability.md)] p.261 [synthesis] — "Given a first-order sentence φ, we want to determine whether φ is valid over C_ρ ... model checking"; expression model checking (structure fixed, e.g. "rule 30 or rule 110") vs data model checking (sentence fixed, many structures)

@@ -5,7 +5,7 @@ summary: A finite pattern in von Neumann's 29-state CA whose cells all start in 
 tags: [concept, quiescence, construction, von-neumann, 29-state]
 sources: [tsra-part2-ch5, tsra-part2-ch1, machine-models-of-self-reproduction]
 created: 2026-09-24
-updated: 2026-09-24
+updated: 2026-09-26
 ---
 
 # Initially Quiescent Automaton
@@ -54,6 +54,8 @@ proved they exist in any structure that has an
 - [[descriptions-vs-originals](pages/descriptions-vs-originals.md)] — quiescence is also what makes descriptions safe to copy
 - [[von-neumann-29-state-ca](pages/von-neumann-29-state-ca.md)] — the rule whose 10 quiescent states define the class
 - [[construction-arm](pages/construction-arm.md)] - the device that lays down such patterns and starts them
+- [[object-synthesis](pages/object-synthesis.md)] - the Life counterpart: building any constructible pattern from gliders
+- [[cellular-tape](pages/cellular-tape.md)] - the tape unit can itself be built initially quiescent
 
 [^1]: [[tsra-part2-ch5](pages/tsra-part2-ch5.md)] p.264 — "we define an *initially quiescent automaton* to be a finite area of von Neumann's 29-state cellular structure every cell of which is in 1 of the 10 quiescent states U, T_uα0, and C₀₀"
 [^2]: [[tsra-part2-ch1](pages/tsra-part2-ch1.md)] pp.126-129 [synthesis] — secondaries are built quasi-quiescent and started by a single stimulus

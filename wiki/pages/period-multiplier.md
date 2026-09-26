@@ -5,7 +5,7 @@ summary: A Life conduit that emits one output signal for every two or more ident
 tags: [pattern-class, life, period-multiplier, semi-snark, glider-gun, stable-circuitry, conduit]
 sources: [cgol-ch7-stable-circuitry]
 created: 2026-09-25
-updated: 2026-09-25
+updated: 2026-09-26
 ---
 
 # Period Multiplier
@@ -78,6 +78,7 @@ period of at least 1,703.[^9]
 - [[herschel](pages/herschel.md)] - Herschel tracks give the base guns
 - [[inverter](pages/inverter.md)] - the periodic route to big-period guns
 - [[primer](pages/primer.md)] - another gun built around number theory
+- [[gun](pages/gun.md)] - other ways to change a gun's period: deletion, filters, insertion
 
 [^1]: [[cgol-ch7-stable-circuitry](pages/cgol-ch7-stable-circuitry.md)] p.198 - "period multipliers--conduits that only produce an output signal for every two or more (identical) input signals that are received, and thus multiply the period of the input stream"
 [^2]: [[cgol-ch7-stable-circuitry](pages/cgol-ch7-stable-circuitry.md)] p.198 [synthesis] - an m × m box has 2^(m²) patterns, so "there cannot exist a period p gun inside a box of size less than √log2(p) × √log2(p)"; "this lower bound is 'essentially' tight--there exists a constant C such that it is possible to construct period p guns inside a box of size C√log2(p) × C√log2(p) for all large p"; "The key objects used in the construction of such guns are period multipliers"

@@ -5,7 +5,7 @@ summary: Chapter 4 of Conway's Game of Life - Mathematics and Construction - gli
 tags: [source, chapter, life, spaceship, cordership, rake, puffer, speed-limit, signal, wire]
 sources: [cgol-ch4-spaceships-and-moving-objects]
 created: 2026-09-25
-updated: 2026-09-25
+updated: 2026-09-26
 ---
 
 # Spaceships and Moving Objects (Johnston and Greene, Ch. 4)
@@ -52,6 +52,7 @@ rakes with arbitrarily large periods.[^8]
 - [[spaceship](pages/spaceship.md)], [[glider](pages/glider.md)], [[light-middle-heavyweight-spaceships](pages/light-middle-heavyweight-spaceships.md)]
 - [[cordership](pages/cordership.md)], [[puffer](pages/puffer.md)], [[signal-wire](pages/signal-wire.md)]
 - [[switch-engine](pages/switch-engine.md)], [[twin-bees](pages/twin-bees.md)], [[reflector](pages/reflector.md)]
+- [[eppstein-2002-searching-for-spaceships](pages/eppstein-2002-searching-for-spaceships.md)] - how long, narrow elementary spaceships are found by search
 
 ## Relation to Other Wiki Pages
 

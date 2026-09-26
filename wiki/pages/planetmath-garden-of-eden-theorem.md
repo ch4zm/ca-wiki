@@ -5,7 +5,7 @@ summary: PlanetMath entry stating and proving the Moore and Myhill theorems for 
 tags: [garden-of-eden, moore, myhill, surjectivity, injectivity, amenable-group]
 sources: [planetmath-garden-of-eden-theorem]
 created: 2026-09-24
-updated: 2026-09-24
+updated: 2026-09-26
 ---
 
 # Garden-of-Eden Theorem (PlanetMath)
@@ -69,6 +69,7 @@ Myhill's theorem characterizes them too (Bartholdi and Kielak, 2016).[^7]
 - [[surjective-shift-endomorphism](pages/surjective-shift-endomorphism.md)] - the d = 1 case, where Hedlund's theorems give the same equivalence
 - [[edward-f-moore](pages/edward-f-moore.md)], [[john-myhill](pages/john-myhill.md)] - the two authors
 - [[notation-map](pages/notation-map.md)] - the k/n swap against Moore
+- [[reversible-cellular-automaton](pages/reversible-cellular-automaton.md)] - Corollary 1: injective implies surjective
 
 ## Relation to Other Wiki Pages
 

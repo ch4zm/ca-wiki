@@ -5,7 +5,7 @@ summary: Chapter 12 of Conway's Game of Life - Mathematics and Construction - Li
 tags: [source, chapter, life, metacell, 0e0p, rule-emulation, isotropic, non-isotropic, highlife, replicator, rulestring]
 sources: [cgol-ch12-0e0p-metacell]
 created: 2026-09-25
-updated: 2026-09-25
+updated: 2026-09-26
 ---
 
 # The 0E0P Metacell (Johnston and Greene, Ch. 12)
@@ -58,6 +58,9 @@ the p5760 metacell, the OTCA metapixel and the p1 megacell.[^5]
 This is where the book leaves B3/S23 for the wider rule space that is this wiki's core
 scope. The metacell's construction relies on the universal-construction machinery behind
 [[object-synthesis](pages/object-synthesis.md)].[^4]
+Its Appendix B.6-B.7 rulestrings, including Hensel notation, are laid out in
+[[rulestring](pages/rulestring.md)]. The same metacell lineage, from Bell's p5760 metacell through the OTCA
+metapixel and p1 megacell to 0E0P, is traced in [[lifewiki-unit-cell](pages/lifewiki-unit-cell.md)].
 
 [^1]: [[cgol-ch12-0e0p-metacell](pages/cgol-ch12-0e0p-metacell.md)] pp.385-386 [synthesis] - "if we arrange copies of it on the Life plane then, at a zoomed-out macroscopic scale, it evolves in the same way that the corresponding arrangement of cells would evolve"; "2^18 = 262 144 times as large ... runs 2^36 = 68 719 476 736 times as slowly"; n.1 "(State) 0 Encoded by 0 Population"; "it can actually emulate a huge variety of 2D cellular automata besides Life ... any pattern from one of those other cellular automata can be straightforwardly 'imported' into Life"
 [^2]: [[cgol-ch12-0e0p-metacell](pages/cgol-ch12-0e0p-metacell.md)] §12.1, pp.386-391 [synthesis] - Life-like (outer-totalistic) rules, HighLife replicator; isotropic rules ("2^102 isotropic 2-state CA ... versus 'just' 2^18 outer-totalistic ones"), RRO and SMOS; non-isotropic rules ("2^512 different 2D not necessarily isotropic cellular automata"); "this method gave the first explicit construction of a spaceship made of spaceships in Life ... also gave the first reflectorless rotating oscillator in Life"

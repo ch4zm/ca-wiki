@@ -5,7 +5,7 @@ summary: A Life spaceship that runs a moving reaction along a track and uses the
 tags: [pattern-class, life, spaceship, self-supporting-spaceship, silverfish, caterpillar, waterbear, helix, crawler, rake, half-baked-knightship]
 sources: [cgol-ch10-self-supporting-spaceships]
 created: 2026-09-25
-updated: 2026-09-25
+updated: 2026-09-26
 ---
 
 # Self-Supporting Spaceship
@@ -124,6 +124,7 @@ needs extra tracks to clear.[^29]
 - [[puffer](pages/puffer.md)] - rakes and the wick-and-fuse idea
 - [[signal-wire](pages/signal-wire.md)] - fuses burning through wicks
 - [[slow-salvo](pages/slow-salvo.md)], [[object-synthesis](pages/object-synthesis.md)] - how the ships build their tracks and supports
+- [[self-constructing-spaceship](pages/self-constructing-spaceship.md)] - the sibling engineered-ship family, which builds copies of itself from a glider recipe
 
 [^1]: [[cgol-ch10-self-supporting-spaceships](pages/cgol-ch10-self-supporting-spaceships.md)] p.311 - "self-supporting spaceships (the topic of this chapter) work by manipulating a reaction that moves along a track so as to construct the track in front of itself"
 [^2]: [[cgol-ch10-self-supporting-spaceships](pages/cgol-ch10-self-supporting-spaceships.md)] p.311 - universal construction "could be loosely summarized as the ability to 'construct anything that can be constructed'"; "we will build spaceships that work by reaching out into a region of empty space in front of themselves and constructing something there"

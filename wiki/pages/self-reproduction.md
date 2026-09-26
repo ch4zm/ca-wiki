@@ -5,7 +5,7 @@ summary: The problem of what logical organization lets an automaton construct a 
 tags: [concept, self-reproduction, von-neumann, construction]
 sources: [cgol-ch12-0e0p-metacell, tsra-editors-introduction, tsra-lecture-5, tsra-part2-ch1, tsra-part2-ch2, tsra-part2-ch5, machine-models-of-self-reproduction, statistical-mechanics-of-cellular-automata]
 created: 2026-09-24
-updated: 2026-09-25
+updated: 2026-09-26
 ---
 
 # Self-Reproduction (automata)
@@ -125,6 +125,8 @@ criterion above, it counts as a trivial case.[^12]
 - [[probabilistic-logic](pages/probabilistic-logic.md)] — the other central problem; self-repair links the two
 - [[self-repair](pages/self-repair.md)] — the closely related capacity to maintain oneself
 - [[john-myhill](pages/john-myhill.md)] - earlier work on self-reproducing automata
+- [[construction-arm](pages/construction-arm.md)] - how the constructor lays down each offspring in the 29-state CA
+- [[cellular-tape](pages/cellular-tape.md)] - the tape each offspring gets, holding a copy of the description
 
 [^1]: [[tsra-editors-introduction](pages/tsra-editors-introduction.md)] p.19 — "What kind of logical organization is sufficient for an automaton to be able to reproduce itself?"
 [^2]: [[tsra-editors-introduction](pages/tsra-editors-introduction.md)] p.xvi — "The reliability of components limits the complexity of the automata we can build, and self-reproduction requires an automaton of considerable complexity."

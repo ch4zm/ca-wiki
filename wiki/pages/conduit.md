@@ -5,7 +5,7 @@ summary: A stable Life pattern that takes in one active object, such as a Hersch
 tags: [pattern-class, life, conduit, herschel, syringe, catalyst, converter, factory, stable-circuitry]
 sources: [cgol-ch7-stable-circuitry]
 created: 2026-09-25
-updated: 2026-09-25
+updated: 2026-09-26
 ---
 
 # Conduit
@@ -118,6 +118,8 @@ lanes and rebuilds it far away. Its repeat time is 117, against the syringe's 78
 - [[herschel](pages/herschel.md)] - the object most conduits carry
 - [[reflector](pages/reflector.md)] - stable reflectors built from conduits
 - [[period-multiplier](pages/period-multiplier.md)] - conduits that pass only some inputs
+- [[gun](pages/gun.md)] - Herschel tracks built from conduits give guns of any period 62 or more
+- [[inverter](pages/inverter.md)] - glider duplicators by double inversion, the periodic counterpart
 - [[eater](pages/eater.md)] - the commonest catalyst
 - [[object-synthesis](pages/object-synthesis.md)] - what glider-to-object circuits perform
 

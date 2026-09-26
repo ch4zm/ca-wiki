@@ -5,7 +5,7 @@ summary: Elementary cellular automaton 110 (01101110) - Wolfram class 4, full of
 tags: [rule, rule-110, elementary-ca, class-4, universality, cook, wolfram]
 sources: [theory-of-cellular-automata-a-survey, statistical-mechanics-of-cellular-automata, aucm-ch12-linear-cellular-automata-and-decidability, lifewiki-brians-brain, lifewiki-seeds, lifewiki-star-wars]
 created: 2026-09-24
-updated: 2026-09-25
+updated: 2026-09-26
 ---
 
 # Rule 110
@@ -50,7 +50,7 @@ finite configuration is P-complete
 ([[reachability-in-cellular-automata](pages/reachability-in-cellular-automata.md)]).[^6]
 
 **A yardstick for 2D rules.** Because Rule 110 is universal, building it inside another
-rule proves that rule universal too. A row or tiling of *unit cells*, each emulating one
+rule proves that rule universal too. A row or tiling of *unit cells* ([[lifewiki-unit-cell](pages/lifewiki-unit-cell.md)]), each emulating one
 Rule 110 cell, is the standard route.
 - [[seeds-rule](pages/seeds-rule.md)] (B2/S): a Rule 110 "unit stripe" on a periodically
   tiled grid (Peter Naszvadi, 2020).[^7]

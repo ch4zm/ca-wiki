@@ -5,7 +5,7 @@ summary: Eppstein's chapter replacing Wolfram's random-start classes with two ye
 tags: [source, paper, eppstein, classification, fertile, mortal, life-like, rule-space, wolfram-classes, replicators]
 sources: [eppstein-2010-growth-and-decay-in-life-like-ca]
 created: 2026-09-25
-updated: 2026-09-25
+updated: 2026-09-26
 ---
 
 # Eppstein (2010), Growth and Decay in Life-Like Cellular Automata
@@ -25,7 +25,8 @@ yes/no questions instead, restricted to the 2^17 [[life-like-cellular-automaton]
 rules without B0: is the rule **fertile** (some finite pattern escapes every bounding
 box) and is it **mortal** (some finite pattern dies out completely)? Short proofs settle
 most rules. B1 and B2 rules are fertile, rules with none of B1, B2, B3 are not, and
-spaceship searches plus one diamond argument settle 96% of the rest. Hickerson's duality
+spaceship searches plus one diamond argument settle all but 5,584 of the B3 rules, so 96%
+of all rules are settled. Hickerson's duality
 between fading and still lifes settles mortality for 99.8% of rules, including every B3
 rule ([[fertile-and-mortal-rules](pages/fertile-and-mortal-rules.md)]).[^2]
 
@@ -66,6 +67,7 @@ not empty but periodic, such as the strobing B0 rules.[^5]
 - [[spaceship](pages/spaceship.md)], [[glider](pages/glider.md)] - fertility is shown mostly by exhibiting spaceships
 - [[metacell](pages/metacell.md)] - the OTCA metapixel as an engineered pattern random soup would never make
 - [[eppstein-gliders-in-life-like-cellular-automata](pages/eppstein-gliders-in-life-like-cellular-automata.md)] - the spaceship database behind the fertility counts
+- [[edge-of-chaos](pages/edge-of-chaos.md)] - Langton's rival rule-space criterion for where complexity lives
 
 ## Relation to Other Wiki Pages
 

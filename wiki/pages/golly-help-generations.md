@@ -5,7 +5,7 @@ summary: Golly's documentation for its Generations algorithm - the survival/birt
 tags: [source, golly, documentation, generations, rulestring, simulator]
 sources: [golly-help-generations]
 created: 2026-09-25
-updated: 2026-09-25
+updated: 2026-09-26
 ---
 
 # Golly Help: Generations
@@ -19,7 +19,7 @@ updated: 2026-09-25
 Golly's Generations algorithm runs Life-like rules with an extra "history" component,
 allowing up to 256 cell states.[^1] Rules are written survival/birth/states, for example
 "345/2/4". Survival digits come first, then birth digits, then the number of states n, from
-2 to 256. This is the older S/B ordering, the reverse of B/S rulestrings.[^1] The page
+2 to 256. This is the older S/B ordering, the reverse of B/S rulestrings ([[rulestring](pages/rulestring.md)]).[^1] The page
 lists example rules with their authors and points to Mirek Wójtowicz's MCell site for
 more.[^2]
 - Brian's Brain (/2/3, Brian Silverman), Star Wars (345/2/4, Mirek Wójtowicz)

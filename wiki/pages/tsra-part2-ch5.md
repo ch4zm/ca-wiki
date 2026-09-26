@@ -5,7 +5,7 @@ summary: Burks's completion of von Neumann's design — the memory control finis
 tags: [von-neumann, burks, 29-state, self-reproduction, universal-constructor, turing-machine, engineering]
 sources: [tsra-part2-ch5]
 created: 2026-09-24
-updated: 2026-09-25
+updated: 2026-09-26
 ---
 
 # Theory of Self-Reproducing Automata — Part II, Ch. 5: Automata Self-Reproduction
@@ -230,7 +230,7 @@ structure."[^36] With a universal Turing machine attached as the payload P,
 The chapter completes what [[tsra-part2-ch4](pages/tsra-part2-ch4.md)] leaves unfinished
 and carries out the scheme that [[tsra-part2-ch1](pages/tsra-part2-ch1.md)] and
 [[tsra-lecture-5](pages/tsra-lecture-5.md)] outline. It also points ahead to later work:
-Thatcher's and Codd's designs, and Moore and Myhill on Garden-of-Eden configurations
+Thatcher's and Codd's designs, and Moore ([[edward-f-moore](pages/edward-f-moore.md)]) and Myhill ([[john-myhill](pages/john-myhill.md)]) on Garden-of-Eden configurations
 (Moore's paper is [[machine-models-of-self-reproduction](pages/machine-models-of-self-reproduction.md)], Myhill's
 [[converse-of-moores-garden-of-eden-theorem](pages/converse-of-moores-garden-of-eden-theorem.md)]; see [[garden-of-eden-theorem](pages/garden-of-eden-theorem.md)]).
 

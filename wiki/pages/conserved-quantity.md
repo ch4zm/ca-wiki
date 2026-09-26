@@ -5,7 +5,7 @@ summary: An additive invariant of a cellular automaton - a sum over all cells of
 tags: [concept, conservation-law, additive-invariant, number-conservation, physics, decidability]
 sources: [theory-of-cellular-automata-a-survey]
 created: 2026-09-24
-updated: 2026-09-25
+updated: 2026-09-26
 ---
 
 # Conserved Quantity (cellular automata)
@@ -68,6 +68,7 @@ conserved quantity iff a non-trivial valid finite tiling exists.[^11]
 - [[wang-tiles](pages/wang-tiles.md)] - the 2D undecidability
 - [[decidability-in-cellular-automata](pages/decidability-in-cellular-automata.md)] - the other decision problems
 - [[irreversibility-and-entropy](pages/irreversibility-and-entropy.md)] - the statistical-physics side of CA modelling
+- [[jarkko-kari](pages/jarkko-kari.md)] - poses the 1D decidability question
 
 [^1]: [[theory-of-cellular-automata-a-survey](pages/theory-of-cellular-automata-a-survey.md)] p.21 [synthesis] - "Reversible CA preserve information. There are also other conservation laws in physics that CA may obey, e.g. conservation of energy, momentum, etc. The Margolus neighborhood is a particularly useful tool in programming conservation laws into CA."
 [^2]: [[theory-of-cellular-automata-a-survey](pages/theory-of-cellular-automata-a-survey.md)] p.18 [synthesis] - "the number of black cells in finite configurations is automatically preserved if the permutations are such that they conserve black states"

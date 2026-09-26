@@ -5,7 +5,7 @@ summary: A(S), the group of invertible shift-commuting maps of the full shift (t
 tags: [concept, automorphism, group, reversibility, block-map, symbolic-dynamics, one-dimensional]
 sources: [endomorphisms-and-automorphisms-of-the-shift-dynamical-system, theory-of-cellular-automata-a-survey]
 created: 2026-09-24
-updated: 2026-09-24
+updated: 2026-09-26
 ---
 
 # Automorphism Group of the Shift
@@ -102,6 +102,7 @@ local rule.
 - [[notation-map](pages/notation-map.md)] - Hedlund's symbols
 - [[reversible-cellular-automaton](pages/reversible-cellular-automaton.md)] - the same maps in any dimension
 - [[margolus-neighbourhood](pages/margolus-neighbourhood.md)] - every 1D automorphism is a block permutation plus a translation
+- [[jarkko-kari](pages/jarkko-kari.md)] - the inverse-neighbourhood bound and block representation are his results
 
 [^1]: [[endomorphisms-and-automorphisms-of-the-shift-dynamical-system](pages/endomorphisms-and-automorphisms-of-the-shift-dynamical-system.md)] pp.321, 331 [synthesis] — automorphisms are homeomorphisms of X(S) onto X(S) commuting with σ; "the set A(S) is a group and is of some complexity"
 [^2]: [[endomorphisms-and-automorphisms-of-the-shift-dynamical-system](pages/endomorphisms-and-automorphisms-of-the-shift-dynamical-system.md)] pp.331-332 [synthesis] — H(S) the one-to-one members of Φ(S); Thm 5.14 A(S) = H(S)

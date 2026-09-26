@@ -5,7 +5,7 @@ summary: LifeWiki's article on unit cells (metacells) - tiles of the Life plane 
 tags: [source, lifewiki, unit-cell, metacell, rule-emulation, rule-110, universality]
 sources: [lifewiki-unit-cell]
 created: 2026-09-25
-updated: 2026-09-25
+updated: 2026-09-26
 ---
 
 # LifeWiki: Unit cell
@@ -21,7 +21,7 @@ fixed set of patterns so that the tiling emulates some cellular automaton, possi
 host rule itself. It then covers two uses.[^1]
 - **Emulating 2D rules.** David Bell's 1996 unit Life cell, Jared James Prince's
   multi-layer "deep cell" (2004), the OTCA metapixel (about 2005), the p1 megacell (2008)
-  and the 0E0P metacell, the largest, which needs no support circuitry.
+  and the 0E0P metacell ([[cgol-ch12-0e0p-metacell](pages/cgol-ch12-0e0p-metacell.md)]), the largest, which needs no support circuitry.
 - **Emulating 1D rules.** Some replicators naturally follow a 1D rule: HighLife's
   replicator runs Rule 6, or Rule 90 if read at period 24. The U-pentomino and
   T-tetromino are replicators that emulate Rule 110 in ranges of non-totalistic rules.

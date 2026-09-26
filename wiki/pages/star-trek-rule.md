@@ -5,7 +5,7 @@ summary: The Life-like rule B3/S0248 - Life's birth-on-three with survival on 0,
 tags: [rule, life-like, star-trek, b3-s0248, stable, spaceships]
 sources: [eppstein-2010-growth-and-decay-in-life-like-ca, lifewiki-star-trek, lifewiki-star-wars]
 created: 2026-09-25
-updated: 2026-09-25
+updated: 2026-09-26
 ---
 
 # Star Trek (B3/S0248)
@@ -20,7 +20,7 @@ neighbours, as in [[game-of-life](pages/game-of-life.md)]; a live cell survives 
 B12357/S01234678.[^1]
 
 **Survival on zero.** S0 means an isolated live cell survives. A lone cell's neighbours
-each see only one live cell, so nothing is born: a single cell is a still life (own
+each see only one live cell, so nothing is born: a single cell is a [[still-life](pages/still-life.md)] (own
 reasoning, from the rule).
 
 **Spaceships.** Despite the stable character, it supports a spread of speeds.[^2]

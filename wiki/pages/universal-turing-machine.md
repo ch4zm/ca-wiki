@@ -5,7 +5,7 @@ summary: Turing's finite automaton with an unbounded tape that can simulate any 
 tags: [concept, turing, universality, computation]
 sources: [cgol-ch9-universal-computation, tsra-editors-introduction, tsra-lecture-2, tsra-part2-ch4, tsra-part2-ch5, statistical-mechanics-of-cellular-automata, computation-at-the-edge-of-chaos, theory-of-cellular-automata-a-survey]
 created: 2026-09-24
-updated: 2026-09-25
+updated: 2026-09-26
 ---
 
 # Universal Turing Machine
@@ -61,8 +61,9 @@ machine then known had 7 states and 4 symbols. Smith (1971) showed that an 18-st
 one-dimensional cellular automaton with three-cell neighbourhoods can simulate it.
 Otherwise universality is shown by building "wires", NAND gates and memories out of
 cellular structures. The [[game-of-life](pages/game-of-life.md)] does this with [[glider](pages/glider.md)]
-streams. Banks (1971) gave a 3-state type-I (five-cell) 2D universal rule, and Toffoli
-(1977) a 2-state one that needs an infinite nonzero background. There were early signs of
+streams. Banks (1971) gave a 3-state type-I (five-cell) 2D universal rule needing only a finite
+configuration, and Toffoli (1977) a 2-state one that needs an infinite nonzero background;
+Banks's own 2-state Banks-I also needs one. There were early signs of
 a 5-state one-dimensional universal rule (all cited via Wolfram and not read).[^13]
 Wolfram judged the elementary two-state rules too simple to be universal.[^14] He adds an
 idea that goes beyond computation. A universal cellular automaton can simulate any other
@@ -74,8 +75,8 @@ should inherit the simulator's *statistical* behaviour
 built on Turing-machine simulation. The [[game-of-life](pages/game-of-life.md)] is
 universal, and whether a finite Life pattern dies is undecidable (Berlekamp, Conway and
 Guy). [[rule-110](pages/rule-110.md)], a two-state nearest-neighbour rule, is universal: Wolfram
-conjectured this in the 1980s and later proved it with Cook, overturning the 1983 judgement
-above for the elementary family.[^16] Explicit Life machines followed: Paul Rendell's Turing machine (April 2000),
+conjectured this in the 1980s and later proved it with Cook. Rule 110 is not one of the 32 legal rules that 1983
+judgement covered.[^16] Explicit Life machines followed: Paul Rendell's Turing machine (April 2000),
 extended to a universal Turing machine in February 2010, and Paul Chapman's register
 machine (2002), the ancestor of the [[apgsembly](pages/apgsembly.md)] computers.[^17] Reversible rules can be universal too. Toffoli (1977) simulated any
 d-dimensional CA in a (d + 1)-dimensional reversible one. Morita and Harao (1989)
@@ -115,6 +116,9 @@ every CA on infinite configurations.[^19]
 - [[reversible-cellular-automaton](pages/reversible-cellular-automaton.md)] - universal reversible rules
 - [[decidability-in-cellular-automata](pages/decidability-in-cellular-automata.md)] - halting-problem reductions give undecidable CA questions
 - [[reversible-turing-machine](pages/reversible-turing-machine.md)] - the reversible special case, also universal
+- [[von-neumann-neighbourhood](pages/von-neumann-neighbourhood.md)] - the five-cell neighbourhood of Banks's 1971 universal rules
+- [[tag-system](pages/tag-system.md)] - Cook's rule-110 universality proof encodes a cyclic tag system
+- [[sliding-block-register](pages/sliding-block-register.md)] - the Life register memory behind Chapman's register machine
 
 [^1]: [[tsra-editors-introduction](pages/tsra-editors-introduction.md)] p.14 — "A Turing machine is a finite automaton with an indefinitely expandable tape. ... Turing's universal computer U has this property: for any Turing machine M there is a finite program P such that machine U, operating under the direction of P, will compute the same results as M."
 [^2]: [[tsra-editors-introduction](pages/tsra-editors-introduction.md)] pp.25, 27 [synthesis] — "Recursive functions are those functions which can be computed on Turing machines, and so mathematical logic may be treated from the point of view of automata"; the strict part "includes mathematical logic as extended to cover finite automata and Turing machines"

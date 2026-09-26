@@ -5,7 +5,7 @@ summary: A cellular automaton whose global map has an inverse that is again a ce
 tags: [concept, reversibility, injectivity, bijectivity, decidability, physics, margolus, kari]
 sources: [theory-of-cellular-automata-a-survey, endomorphisms-and-automorphisms-of-the-shift-dynamical-system, statistical-mechanics-of-cellular-automata]
 created: 2026-09-24
-updated: 2026-09-25
+updated: 2026-09-26
 ---
 
 # Reversible Cellular Automaton
@@ -77,6 +77,7 @@ block rule really needs a cycle as long as d + 1.[^14]
 - [[theory-of-cellular-automata-a-survey](pages/theory-of-cellular-automata-a-survey.md)] - §2.4 definition, Corollary 1, §4 in full
 - [[endomorphisms-and-automorphisms-of-the-shift-dynamical-system](pages/endomorphisms-and-automorphisms-of-the-shift-dynamical-system.md)] - 1D: injective endomorphisms are automorphisms (Thm 5.14)
 - [[statistical-mechanics-of-cellular-automata](pages/statistical-mechanics-of-cellular-automata.md)] - reversible second-order rules and entropy
+- [[planetmath-garden-of-eden-theorem](pages/planetmath-garden-of-eden-theorem.md)] - Corollary 1: injective implies surjective, in every dimension
 
 ## Related Concepts
 

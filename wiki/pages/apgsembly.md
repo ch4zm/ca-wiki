@@ -5,7 +5,7 @@ summary: Adam P. Goucher's assembly-like language for programmable Life computer
 tags: [concept, life, computation, apgsembly, register-machine, finite-state-machine, compiler, pi]
 sources: [cgol-ch9-universal-computation]
 created: 2026-09-25
-updated: 2026-09-25
+updated: 2026-09-26
 ---
 
 # APGsembly
@@ -131,6 +131,7 @@ prints "ABRACADABRA" in an 8-pixel-high font.[^12]
 ## Related Concepts
 
 - [[sliding-block-register](pages/sliding-block-register.md)] - the basic memory, and the binary register built on it
+- [[memory-cell](pages/memory-cell.md)] - glider-loop memory, next to the sliding block and boat registers
 - [[regulator](pages/regulator.md)] - the clock gun
 - [[universal-turing-machine](pages/universal-turing-machine.md)] - the universality these machines share
 - [[game-of-life](pages/game-of-life.md)] - the rule they run in

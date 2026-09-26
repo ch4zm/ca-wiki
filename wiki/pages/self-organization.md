@@ -5,7 +5,7 @@ summary: Order arising from disorder under deterministic local rules - complex c
 tags: [concept, self-organization, universality, statistical-mechanics, wolfram, noise]
 sources: [statistical-mechanics-of-cellular-automata, computation-at-the-edge-of-chaos]
 created: 2026-09-24
-updated: 2026-09-24
+updated: 2026-09-26
 ---
 
 # Self-Organization (cellular automata)
@@ -112,6 +112,7 @@ dominates the long-time behaviour.[^17]
 - [[universal-turing-machine](pages/universal-turing-machine.md)] - universality in the computational sense
 - [[classification-of-cellular-automata](pages/classification-of-cellular-automata.md)] - Wolfram's classes and their formal successors
 - [[chaos-in-cellular-automata](pages/chaos-in-cellular-automata.md)] - sensitivity to initial conditions in the topological sense
+- [[intrinsic-universality](pages/intrinsic-universality.md)] - rule-to-rule simulation under short encodings, in formal form
 
 [^1]: [[statistical-mechanics-of-cellular-automata](pages/statistical-mechanics-of-cellular-automata.md)] p.601 [synthesis] — the second law for isolated reversible systems; dissipative or open systems may evolve from disordered to ordered states; snowflakes, turbulent flow, biological systems; cellular automata "sufficiently simple to allow detailed mathematical analysis, yet sufficiently complex to exhibit a wide variety of complicated phenomena"
 [^2]: [[statistical-mechanics-of-cellular-automata](pages/statistical-mechanics-of-cellular-automata.md)] p.608 [synthesis] — disordered configurations have statistically uncorrelated sites, "a discrete form of 'white noise'"; deviations of statistical measures indicate order and correlations; a disordered configuration is specified by a single parameter p

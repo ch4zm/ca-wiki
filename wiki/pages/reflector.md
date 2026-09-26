@@ -5,7 +5,7 @@ summary: A stationary pattern that turns an incoming glider into an outgoing one
 tags: [pattern-class, life, reflector, snark, glider-loop, repeat-time]
 sources: [cgol-ch7-stable-circuitry, cgol-ch6-periodic-circuitry, cgol-ch3-oscillators]
 created: 2026-09-25
-updated: 2026-09-25
+updated: 2026-09-26
 ---
 
 # Reflector
@@ -36,8 +36,8 @@ usually much more.[^6]
   [[herschel](pages/herschel.md)] via a beehive and runs it through 17 still lifes. It
   emits three gliders and has repeat time 497.
 - The **Snark** (completed by Mike Playle in April 2013 with a custom search program,
-  from a near-miss by Dietrich Leithner around 1998) is the smallest and fastest, with
-  repeat time 43. Four Snarks make oscillators of every period 43 or more, and this
+  from a near-miss by Dietrich Leithner around 1998) is the smallest and fastest stable
+  reflector, with repeat time 43. Four Snarks make oscillators of every period 43 or more, and this
   method gives the only known oscillators of periods 43 and 53.
 
 **Period-30 and period-46 reflectors.** Two pentadecathlons give another 180-degree

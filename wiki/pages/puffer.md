@@ -5,7 +5,7 @@ summary: A moving Life object that leaves debris behind; a rake is a puffer whos
 tags: [pattern-class, life, puffer, rake, space-rake, schick-engine, coe-ship, infinite-growth]
 sources: [cgol-ch4-spaceships-and-moving-objects, cgol-ch1-early-life]
 created: 2026-09-25
-updated: 2026-09-25
+updated: 2026-09-26
 ---
 
 # Puffer
@@ -65,6 +65,9 @@ changed becomes a puffer, and a heavyweight spaceship turns that into a period-8
 - [[self-supporting-spaceship](pages/self-supporting-spaceship.md)] - rakes that crawl along block and blinker tracks, used to build spaceships
 - [[switch-engine](pages/switch-engine.md)] - the natural puffers
 - [[gosper-glider-gun](pages/gosper-glider-gun.md)] - the stationary counterpart of a rake
+- [[gun](pages/gun.md)] - a rake is a moving gun
+- [[game-of-life](pages/game-of-life.md)] - switch-engine puffers are its only infinite growth seen from asymmetric random soups
+- [[primer](pages/primer.md)] - three space rakes synthesize its LWSS stream
 - [[light-middle-heavyweight-spaceships](pages/light-middle-heavyweight-spaceships.md)] - the parts rakes are made of
 - [[signal-wire](pages/signal-wire.md)] - fuses and wicks behind adjustable rakes
 - [[row-by-row-search](pages/row-by-row-search.md)] - puffers combined into spaceships are designed by hand, outside the reach of row-by-row search

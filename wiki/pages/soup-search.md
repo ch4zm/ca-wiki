@@ -5,7 +5,7 @@ summary: Finding Life objects by evolving random starting patterns ("soup") and 
 tags: [concept, method, soup, ash, apgsearch, census, simulation]
 sources: [cgol-ch4-spaceships-and-moving-objects, cgol-ch1-early-life, lifewiki-catagolue, lifewiki-apgsearch]
 created: 2026-09-25
-updated: 2026-09-25
+updated: 2026-09-26
 ---
 
 # Soup search
@@ -30,8 +30,9 @@ larger pulsar or pentadecathlon.[^5] Okrasinski's search of 4.7 × 10^11 objects
 the glider, LWSS, MWSS and HWSS as spaceships. The far larger asymmetric-soup census of
 [[catagolue](pages/catagolue.md)] has also produced the sidecar, the loafer, the Schick
 engine and the Coe ship, and symmetric soups have produced rarer ones such as the c/10
-copperhead.[^6][^7] The only infinitely growing patterns seen to arise from random fills are switch-engine
-puffers ([[switch-engine](pages/switch-engine.md)]).[^8]
+copperhead.[^6][^7] The only infinite growth seen from asymmetric random fills is switch-engine-based
+puffers ([[switch-engine](pages/switch-engine.md)]), including two-engine ones such as the pony
+express; the pufferfish came from a symmetric soup.[^8][^13]
 
 **Early method.** Early Life players, with little computing power and no ready-made
 software, evolved patterns by hand on graph paper, checkerboards or Go boards. They were
@@ -83,3 +84,4 @@ symmetric soups can reach.
 [^10]: [[cgol-ch1-early-life](pages/cgol-ch1-early-life.md)] pp.27-28, Table 1.2 [synthesis] - Flammenkamp 1994 (48 distinct oscillators) and 2004 (over 3 500 still lifes, over 80 oscillators); Okrasinski's screensaver (over 8 000 still lifes, about 180 oscillators, methuselahs); TOLLCASS by Nathaniel Johnston 2009; apgsearch by Adam P. Goucher 2014; ash-object counts per Table 1.2
 [^11]: [[lifewiki-catagolue](pages/lifewiki-catagolue.md)] L32,L434 - "20,644 rules have been investigated"; "at least 587,443,221,069,880 soups have been investigated by the census's participants, yielding a total of at least 7,315,050,809,532,447 objects of 553,848 distinct types"
 [^12]: [[cgol-ch1-early-life](pages/cgol-ch1-early-life.md)] p.28 [synthesis] - apgsearch "is the current state-of-the-art when it comes to soup searching"; "it has cataloged about 10 000 times as many ash objects as all of the previous searches combined"; n.43 "ash pattern generator"; n.44 catagolue.hatsya.com/apgsearch
+[^13]: [[lifewiki-apgsearch](pages/lifewiki-apgsearch.md)] L75-76 - "The pufferfish was discovered in the ash of a symmetric soup"; "a p1152 made from two switch engines dubbed the pony express"

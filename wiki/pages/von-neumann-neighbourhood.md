@@ -5,7 +5,7 @@ summary: The four cells orthogonally adjacent to a cell (Manhattan distance 1), 
 tags: [concept, neighbourhood, von-neumann, manhattan-distance, lattice]
 sources: [bays-1987-candidates-for-the-game-of-life-in-three-dimensions, lifewiki-von-neumann-neighbourhood, lifewiki-rulestring, lifewiki-larger-than-life, lifewiki-higher-range-outer-totalistic-rule, lifewiki-higher-range-isotropic-non-totalistic-rule, lifewiki-apgsearch, lifewiki-unit-cell]
 created: 2026-09-25
-updated: 2026-09-25
+updated: 2026-09-26
 ---
 
 # von Neumann neighbourhood
@@ -69,6 +69,7 @@ universal, as shown with a Rule 110 unit cell; Roger Banks's own proofs date to
 - [[lifewiki-apgsearch](pages/lifewiki-apgsearch.md)] - searching von Neumann rules as isotropic Moore rules
 - [[lifewiki-unit-cell](pages/lifewiki-unit-cell.md)] - Banks-I
 - [[bays-1987-candidates-for-the-game-of-life-in-three-dimensions](pages/bays-1987-candidates-for-the-game-of-life-in-three-dimensions.md)] - the face-only neighbourhood in 3D
+- [[tsra-part2-ch2](pages/tsra-part2-ch2.md)] - the five-cell neighbourhood of von Neumann's 29-state rule
 
 ## Related Concepts
 
@@ -77,6 +78,7 @@ universal, as shown with a Rule 110 unit cell; Roger Banks's own proofs date to
 - [[margolus-neighbourhood](pages/margolus-neighbourhood.md)] - a block partition, not a neighbourhood of this kind
 - [[von-neumann-29-state-ca](pages/von-neumann-29-state-ca.md)] - the rule it is named after
 - [[metacell](pages/metacell.md)] - the 0E0P metacell works by emulating an 8-state von Neumann rule
+- [[universal-turing-machine](pages/universal-turing-machine.md)] - Banks's universal rules use this neighbourhood
 
 [^1]: [[lifewiki-von-neumann-neighbourhood](pages/lifewiki-von-neumann-neighbourhood.md)] L7 - "the set of all cells that are orthogonally adjacent to the region of interest (the region of interest itself may or may not be considered part of the von Neumann neighbourhood, depending on context) ... named after John von Neumann, the creator of the first self-replicating cellular automaton"; L9 "the points at a Manhattan distance of 1 from that cell"
 [^2]: [[lifewiki-von-neumann-neighbourhood](pages/lifewiki-von-neumann-neighbourhood.md)] L8,L13 [synthesis] - "a 6-cell octahedral neighborhood for a cellular automaton in three dimensions"; 2n cells in n dimensions; range n defined recursively; "The number of cells in the von Neumann neighbourhood of range n of a single cell is given by 2 n (n + 1)"

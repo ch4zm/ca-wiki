@@ -5,7 +5,7 @@ summary: A Life spaceship that moves by building a copy of itself further along 
 tags: [pattern-class, life, spaceship, self-constructing, gemini, geminoid, demonoid, universal-constructor, single-channel]
 sources: [cgol-ch11-universal-construction]
 created: 2026-09-25
-updated: 2026-09-25
+updated: 2026-09-26
 ---
 
 # Self-constructing spaceship (Gemini, Geminoids, Demonoids)
@@ -100,6 +100,8 @@ on this page).
 - [[spaceship](pages/spaceship.md)] - speeds and slopes these ships fill in
 - [[cordership](pages/cordership.md)] - the middling Demonoid's elbow carrier
 - [[reverse-caber-tosser](pages/reverse-caber-tosser.md)] - another way to store a recipe, in one distance
+- [[construction-arm](pages/construction-arm.md)] - the Chapman-Greene arms each end of the Gemini carries
+- [[self-supporting-spaceship](pages/self-supporting-spaceship.md)] - the sibling engineered-ship family, driven by a reaction along a track
 
 [^1]: [[cgol-ch11-universal-construction](pages/cgol-ch11-universal-construction.md)] pp.346-348 [synthesis] - Gemini "is primarily made up of long sequences of gliders that encode its own construction"; "use an extremely long chain of gliders to have two construction arms build copies of themselves somewhere else in the plane"; the construction must propagate "without leaving anything behind itself", so a destruction arm removes the old circuitry
 [^2]: [[cgol-ch11-universal-construction](pages/cgol-ch11-universal-construction.md)] pp.348, 379 [synthesis] - "we instead have the glider recipes bounce back and forth between two copies of the entire three-arm circuit"; "you just store a bunch of moving gliders at the spacing you want - there is no need to encode anything at all"

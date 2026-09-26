@@ -5,7 +5,7 @@ summary: The Life-like rule B36/S23 - Life plus birth on six neighbours - famous
 tags: [rule, life-like, highlife, b36-s23, replicator]
 sources: [eppstein-2010-growth-and-decay-in-life-like-ca, cgol-ch12-0e0p-metacell]
 created: 2026-09-25
-updated: 2026-09-25
+updated: 2026-09-26
 ---
 
 # HighLife
@@ -56,6 +56,7 @@ B3/S23 itself.[^5]
 ## Related Concepts
 
 - [[replicator](pages/replicator.md)] - its most famous pattern
+- [[rule-90](pages/rule-90.md)] - the same 2^(number of 1 bits) count from a single seed
 - [[game-of-life](pages/game-of-life.md)] - differs only by B6
 - [[fertile-and-mortal-rules](pages/fertile-and-mortal-rules.md)] - a fertile, mortal rule
 - [[metacell](pages/metacell.md)] - imports its replicator into Life

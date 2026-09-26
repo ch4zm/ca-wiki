@@ -5,7 +5,7 @@ summary: A glider loop fitted with a duplicator, so it replays a stored bit patt
 tags: [pattern, life, memory, glider-loop, ticker-tape, circuitry, computation]
 sources: [cgol-ch9-universal-computation, cgol-ch6-periodic-circuitry]
 created: 2026-09-25
-updated: 2026-09-25
+updated: 2026-09-26
 ---
 
 # Memory cell
@@ -43,6 +43,7 @@ or rows of boats read by a sliding block (a binary register).[^4]
 ## Related Concepts
 
 - [[sliding-block-register](pages/sliding-block-register.md)] - unbounded memory for Life computers
+- [[apgsembly](pages/apgsembly.md)] - programs the Chapter 9 computers that use sliding block and boat registers
 - [[inverter](pages/inverter.md)] - makes insertion possible
 - [[reflector](pages/reflector.md)] - glider loops are built from reflectors
 - [[twin-bees](pages/twin-bees.md)] - the p46 duplicating reflector

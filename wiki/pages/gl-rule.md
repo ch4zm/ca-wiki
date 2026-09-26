@@ -5,7 +5,7 @@ summary: Carter Bays's test for when a rule on any grid counts as a Game of Life
 tags: [concept, gl-rule, rule-space, glider, soup, bounded-growth, classification]
 sources: [bays-1987-candidates-for-the-game-of-life-in-three-dimensions, bays-1994-cellular-automata-in-the-triangular-tessellation, bays-2005-game-of-life-in-hexagonal-and-pentagonal-tessellations]
 created: 2026-09-25
-updated: 2026-09-25
+updated: 2026-09-26
 ---
 
 # GL rule (a Game of Life "worthy of the name")
@@ -87,6 +87,7 @@ rules: can a pattern escape its bounding box, and can a pattern die out
 - [[life-like-cellular-automaton](pages/life-like-cellular-automaton.md)] - the square-grid rule family it screens
 - [[glider](pages/glider.md)], [[soup-search](pages/soup-search.md)] - the natural glider it demands
 - [[classification-of-cellular-automata](pages/classification-of-cellular-automata.md)] - other ways of sorting rules
+- [[fertile-and-mortal-rules](pages/fertile-and-mortal-rules.md)] - Eppstein's two yes/no questions, decided by proof
 
 [^1]: [[bays-2005-game-of-life-in-hexagonal-and-pentagonal-tessellations](pages/bays-2005-game-of-life-in-hexagonal-and-pentagonal-tessellations.md)] p.245 - "A. When counting the neighbors of a cell, all touching neighbors are considered and treated the same. B. At least one glider exists. C. Start with a finite wrapped universe that is completely filled with a random pattern. Then after a finite number of generations, all such patterns eventually must either disappear, or decompose into one or more oscillators"; [[bays-1987-candidates-for-the-game-of-life-in-three-dimensions](pages/bays-1987-candidates-for-the-game-of-life-in-three-dimensions.md)] p.374 - "A glider must exist and must occur 'naturally' if we apply ElEuFlFu repeatedly to primordial soup configurations"; [[bays-1994-cellular-automata-in-the-triangular-tessellation](pages/bays-1994-cellular-automata-in-the-triangular-tessellation.md)] p.127 - a glider "discoverable with probability one by starting with finite random initial configurations"
 [^2]: [[bays-1994-cellular-automata-in-the-triangular-tessellation](pages/bays-1994-cellular-automata-in-the-triangular-tessellation.md)] p.127 - "this second condition does not eliminate the possibility that some unusual highly organized configuration can be constructed where the growth is unbounded"; [[bays-2005-game-of-life-in-hexagonal-and-pentagonal-tessellations](pages/bays-2005-game-of-life-in-hexagonal-and-pentagonal-tessellations.md)] p.246 - "it is possible to construct quadratic growth patterns under Conway's Life rather easily. But Condition C eliminates the possibility that they could persist"

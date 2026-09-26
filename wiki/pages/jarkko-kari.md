@@ -5,7 +5,7 @@ summary: University of Turku mathematician whose results on decidability of cell
 tags: [person, kari, decidability, reversibility, wang-tiles, limit-sets]
 sources: [theory-of-cellular-automata-a-survey]
 created: 2026-09-24
-updated: 2026-09-24
+updated: 2026-09-26
 ---
 
 # Jarkko Kari
@@ -40,6 +40,7 @@ results it credits to Kari's own papers (all cited via the survey and not read) 
 ## Appearances in Sources
 
 - [[theory-of-cellular-automata-a-survey](pages/theory-of-cellular-automata-a-survey.md)] - author
+- [[aucm-ch12-linear-cellular-automata-and-decidability](pages/aucm-ch12-linear-cellular-automata-and-decidability.md)] - cites his 2D injectivity and surjectivity and 1D nilpotency results
 
 ## Related Concepts
 
@@ -47,6 +48,10 @@ results it credits to Kari's own papers (all cited via the survey and not read) 
 - [[wang-tiles](pages/wang-tiles.md)] - the tool behind most of his undecidability proofs
 - [[limit-set](pages/limit-set.md)] - nilpotency and Rice's theorem
 - [[reversible-cellular-automaton](pages/reversible-cellular-automaton.md)] - 2D reversibility, inverse neighbourhoods, block representation
+- [[automorphism-group-of-the-shift](pages/automorphism-group-of-the-shift.md)] - the 1D inverse-neighbourhood bound and block representation
+- [[first-order-theory-of-cellular-automata](pages/first-order-theory-of-cellular-automata.md)] - his 2D injectivity and surjectivity result marks where the method stops
+- [[reachability-in-cellular-automata](pages/reachability-in-cellular-automata.md)] - nilpotency, undecidable by his 1992 result
+- [[conserved-quantity](pages/conserved-quantity.md)] - his open problem on 1D conserved quantities; undecidable in 2D
 
 [^1]: [[theory-of-cellular-automata-a-survey](pages/theory-of-cellular-automata-a-survey.md)] p.3 [synthesis] - "Jarkko Kari, Department of Mathematics, University of Turku, FIN-20014, Turku, Finland"; "Research supported by the Academy of Finland Grant 54102"
 [^2]: [[theory-of-cellular-automata-a-survey](pages/theory-of-cellular-automata-a-survey.md)] p.3 - "The selection of topics is by no means comprehensive and reflects the research interests of the author."

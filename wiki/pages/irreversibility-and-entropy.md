@@ -5,7 +5,7 @@ summary: The global, ensemble view of cellular automaton evolution - trajectorie
 tags: [concept, irreversibility, entropy, ensemble, cycles, reversible-ca, wolfram]
 sources: [statistical-mechanics-of-cellular-automata, theory-of-cellular-automata-a-survey]
 created: 2026-09-24
-updated: 2026-09-24
+updated: 2026-09-26
 ---
 
 # Irreversibility and Entropy (cellular automata)
@@ -25,8 +25,9 @@ trajectories "may coalesce, but may never split". In a reversible system traject
 meet and the number of possible configurations stays constant (Liouville's theorem). In an
 irreversible system that number can shrink. Trajectories bunch together in limited regions
 of the configuration space and do not fill it.[^3] This bunching is what makes
-[[self-organization](pages/self-organization.md)] possible.[^3] Among the elementary rules,
-only the identity (rule 204) is invertible.[^4]
+[[self-organization](pages/self-organization.md)] possible.[^3] Among the 32 legal rules,
+only the identity (rule 204) is invertible.[^4] Across all 256 elementary rules the invertible
+ones are 15, 51, 85, 170, 204 and 240, all shifts, negations or the identity (own reasoning).
 
 **Unreachable configurations.** Some configurations can only be initial states. These are
 the [[garden-of-eden](pages/garden-of-eden.md)] configurations:[^5]

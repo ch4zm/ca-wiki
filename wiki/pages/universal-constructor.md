@@ -5,7 +5,7 @@ summary: Von Neumann's automaton that builds any automaton from its description;
 tags: [concept, universal-constructor, self-reproduction, von-neumann]
 sources: [cgol-ch11-universal-construction, cgol-ch12-0e0p-metacell, tsra-lecture-5, tsra-part2-ch1, tsra-part2-ch2, tsra-part2-ch4, tsra-part2-ch5]
 created: 2026-09-24
-updated: 2026-09-25
+updated: 2026-09-26
 ---
 
 # Universal Constructor
@@ -128,6 +128,7 @@ offspring can also compute.[^15]
 - [[kinematic-self-reproduction](pages/kinematic-self-reproduction.md)] — the setting of the first version
 - [[complexity-threshold](pages/complexity-threshold.md)] — the constructor exists only above the threshold
 - [[theory-of-automata](pages/theory-of-automata.md)] - poses the self-reproduction problem the constructor answers
+- [[reverse-caber-tosser](pages/reverse-caber-tosser.md)] - a Life universal constructor with a small bounded population
 
 [^1]: [[tsra-lecture-5](pages/tsra-lecture-5.md)] pp.83-84 [synthesis] — the approach is modeled on Turing's universal automata; given a description chain φ(X), the constructing automaton consumes it and builds X from free parts
 [^2]: [[tsra-lecture-5](pages/tsra-lecture-5.md)] pp.83-84 [synthesis] — building from a logical description is simpler than copying an object; an existing automaton's parts connect in all directions, while a linear chain is easy to copy

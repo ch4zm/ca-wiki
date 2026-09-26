@@ -5,7 +5,7 @@ summary: Wolfram's name for the simplest nontrivial cellular automata - a line o
 tags: [concept, elementary-ca, wolfram, rule-numbering, one-dimensional]
 sources: [cgol-ch12-0e0p-metacell, statistical-mechanics-of-cellular-automata, computation-at-the-edge-of-chaos, theory-of-cellular-automata-a-survey]
 created: 2026-09-24
-updated: 2026-09-25
+updated: 2026-09-26
 ---
 
 # Elementary Cellular Automaton
@@ -43,7 +43,7 @@ s₋ ⊕ s ⊕ s₊. This form makes simulation fast. Pack 32 cells into one mac
 copies shifted one bit left and one bit right, and apply the rule with bitwise
 instructions.[^5]
 
-**Special families.** Only rules 0, 90, 150 and 204 satisfy additive (XOR) superposition
+**Special families.** Among the 32 legal rules, only 0, 90, 150 and 204 satisfy additive (XOR) superposition
 ([[additive-cellular-automaton](pages/additive-cellular-automaton.md)]). Rules 0, 4, 50 and
 254 satisfy conjunctive superposition, and 0, 204, 250 and 254 disjunctive superposition.
 No other legal rule has a superposition principle. *Peripheral* rules ignore the centre

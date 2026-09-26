@@ -5,7 +5,7 @@ summary: An unbounded Turing-style tape embedded in a cellular automaton, read a
 tags: [concept, tape, memory, turing-machine, engineering, von-neumann]
 sources: [tsra-part2-ch4, tsra-part2-ch1, tsra-part2-ch5]
 created: 2026-09-24
-updated: 2026-09-24
+updated: 2026-09-26
 ---
 
 # Cellular Tape
@@ -95,6 +95,8 @@ memory control to a small read-write-erase unit and a coded channel.[^12]
 - [[signal-coding-organs](pages/signal-coding-organs.md)] — the pulsers, counters, and discriminator used
 - [[coded-channel](pages/coded-channel.md)] — wiring inside the memory control
 - [[von-neumann-29-state-ca](pages/von-neumann-29-state-ca.md)] — the rule it is built in
+- [[initially-quiescent-automaton](pages/initially-quiescent-automaton.md)] - the tape unit can be built initially quiescent
+- [[self-reproduction](pages/self-reproduction.md)] - each offspring gets a tape holding its description
 
 [^1]: [[tsra-part2-ch1](pages/tsra-part2-ch1.md)] pp.112-117 [synthesis] — the external linear array as unbounded memory closing the gap to logical universality, and as the carrier of the universal plan
 [^2]: [[tsra-part2-ch4](pages/tsra-part2-ch4.md)] pp.201, 203 [synthesis] — zero represented by U and one by a quiescent downward ordinary transmission state; the tape is a horizontal sequence of cells whose far end merges into the field of U's

@@ -5,7 +5,7 @@ summary: A Life gun that emits a stream of lightweight spaceships in which the n
 tags: [pattern, life, primer, computation, primes, sieve, breeder, circuitry]
 sources: [cgol-ch9-universal-computation, cgol-ch6-periodic-circuitry]
 created: 2026-09-25
-updated: 2026-09-25
+updated: 2026-09-26
 ---
 
 # Primer
@@ -56,8 +56,10 @@ by three space rakes, and inline-inverter guns of period 240 and 360 + 240n.[^6]
 
 ## Related Concepts
 
+- [[gun](pages/gun.md)] - a primer is a gun, built from inverter guns
 - [[inverter](pages/inverter.md)] - its guns are inline-inverter guns
 - [[breeder](pages/breeder.md)] - lays those guns
+- [[puffer](pages/puffer.md)] - space rakes make its period-120 LWSS stream
 - [[light-middle-heavyweight-spaceships](pages/light-middle-heavyweight-spaceships.md)] - the output stream
 - [[game-of-life](pages/game-of-life.md)] - computation in Life
 
