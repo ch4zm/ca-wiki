@@ -39,7 +39,7 @@ refractory mechanism that sets [[brians-brain](pages/brians-brain.md)]'s pattern
 
 **Circuitry.** A wire loop that passes electrons round periodically is an
 [[oscillator](pages/oscillator.md)]; a *clock*, a circuit that emits electrons, plays the
-part of a gun. Very small, robust logic gates, diodes, triggers and memory
+part of a [[gun](pages/gun.md)]. Very small, robust logic gates, diodes, triggers and memory
 banks can be built, and from them complex computing devices.[^4] Given an infinite tiling
 of suitably placed wires, WireWorld is Turing-complete.[^1]
 

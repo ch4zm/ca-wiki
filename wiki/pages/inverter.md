@@ -51,6 +51,8 @@ it makes the output bits obey b(k) = b(k−1) ⊕ b(k−n). With n = 25 the sequ
 
 ## Related Concepts
 
+- [[gun](pages/gun.md)] - the pattern class
+- [[caber-tosser](pages/caber-tosser.md)] - its duplicator uses the gun-against-stream blocking trick
 - [[gosper-glider-gun](pages/gosper-glider-gun.md)] - the p30 inline inverter
 - [[primer](pages/primer.md)] - built from inline-inverter guns
 - [[memory-cell](pages/memory-cell.md)] - inverted loop segments allow writing 1s

@@ -3,9 +3,9 @@ title: Construction Arm
 category: Concepts
 summary: Technique for building structures at a distance in a cellular automaton — extend a signal path out to the target site, write a cell there, then retract (erase) the path; the basic mechanism of cellular construction
 tags: [concept, construction, von-neumann, universal-constructor]
-sources: [tsra-part2-ch2, tsra-part2-ch5]
+sources: [cgol-ch11-universal-construction, tsra-part2-ch2, tsra-part2-ch5]
 created: 2026-09-24
-updated: 2026-09-24
+updated: 2026-09-25
 ---
 
 # Construction Arm
@@ -58,13 +58,21 @@ vertically, and inject a starting stimulus. A retreat leaves the two vacated cel
 chosen quiescent states, which is how the target gets built. Each operation is a fixed
 sequence of at most 47 pulses, whatever the arm's length.[^7]
 
+**In Life.** Life's construction arms need no path of cells. A block acts as a
+construction elbow: gliders pull or push it, or use it to fire a perpendicular glider,
+and those operations can emit any slow salvo. Paul Chapman and Dave Greene built such an
+arm from Herschel circuitry in 2004.[^8] A single lane of gliders can drive the elbow on
+its own ([[single-channel-construction](pages/single-channel-construction.md)]).
+
 ## Appearances in Sources
 
+- [[cgol-ch11-universal-construction](pages/cgol-ch11-universal-construction.md)] - construction elbows in Life
 - [[tsra-part2-ch5](pages/tsra-part2-ch5.md)] — the two-path arm and its five operations
 - [[tsra-part2-ch2](pages/tsra-part2-ch2.md)] — the construct-and-retract example and the general building result
 
 ## Related Concepts
 
+- [[single-channel-construction](pages/single-channel-construction.md)] - the Life version driven by one glider lane
 - [[cellular-tape](pages/cellular-tape.md)] — the same extend-and-retract idea used for memory access
 - [[von-neumann-29-state-ca](pages/von-neumann-29-state-ca.md)] — the rule whose direct and reverse processes implement it
 - [[universal-constructor](pages/universal-constructor.md)] — drives an arm from a description tape
@@ -78,3 +86,4 @@ sequence of at most 47 pulses, whatever the arm's length.[^7]
 [^5]: [[tsra-part2-ch2](pages/tsra-part2-ch2.md)] p.143 [synthesis] — organizing a cell on the constructing path (Fig. 7) requires the reverse process: the path must be removed and replaced after the surrounding cells are built
 [^6]: [[tsra-part2-ch5](pages/tsra-part2-ch5.md)] pp.272-274 [synthesis] — single path construction procedure changes the whole path between ordinary and special with a sequence proportional to its length; von Neumann's notes: two adjacent parallel paths, ordinary and special, terminating at a head
 [^7]: [[tsra-part2-ch5](pages/tsra-part2-ch5.md)] pp.275-277 [synthesis] — five operations, retreats leaving vacated cells in quiescent states γ and δ; longest sequence 47, independent of the arm's length
+[^8]: [[cgol-ch11-universal-construction](pages/cgol-ch11-universal-construction.md)] pp.346-347 [synthesis] - "By using a sliding block ... as a construction elbow, we can fire gliders at any location in the Life plane"; PULL, PUSH, FIRE WHITE, FIRE BLACK "are enough ... to implement any unidirectional slow salvo"; Fig. 11.2 "Constructed by Paul Chapman and Dave Greene in 2004"

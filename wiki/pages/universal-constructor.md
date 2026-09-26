@@ -3,7 +3,7 @@ title: Universal Constructor
 category: Concepts
 summary: Von Neumann's automaton that builds any automaton from its description; combined with a description copier and a controller it yields self-reproduction via A + B + C + φ(A + B + C)
 tags: [concept, universal-constructor, self-reproduction, von-neumann]
-sources: [cgol-ch12-0e0p-metacell, tsra-lecture-5, tsra-part2-ch1, tsra-part2-ch2, tsra-part2-ch4, tsra-part2-ch5]
+sources: [cgol-ch11-universal-construction, cgol-ch12-0e0p-metacell, tsra-lecture-5, tsra-part2-ch1, tsra-part2-ch2, tsra-part2-ch4, tsra-part2-ch5]
 created: 2026-09-24
 updated: 2026-09-25
 ---
@@ -82,20 +82,29 @@ finite *constructing unit* driving a *memory control*, which operates the descri
 through a connecting loop and a timing loop ([[cellular-tape](pages/cellular-tape.md)]). The memory control alone is about
 87 cells wide and 547 high.[^11]
 
+**In the Game of Life.** Life has working universal constructors: patterns that use
+gliders to build or move components while also moving or rebuilding those gliders for
+reuse, and that can build any pattern with a glider synthesis. Most are made of simple
+stable parts, so they can build copies of themselves.[^12] The recipe is usually a
+stream of moving gliders, and on a single lane it needs nothing but timing
+([[single-channel-construction](pages/single-channel-construction.md)]). Self-constructing spaceships carry the whole
+scheme out ([[self-constructing-spaceship](pages/self-constructing-spaceship.md)]).[^13]
+
 **The completed design.** Burks finishes the design in Ch. 5. The constructing unit reads
 the tape (a period, the position x₁, y₁ and size α, β of the target rectangle in tally
 form, every cell state, a closing period) and drives a two-path construction arm through a
 fixed algorithm. The constructor is universal for
 [[initially-quiescent-automaton](pages/initially-quiescent-automaton.md)]s: for every such
-M there is a description φ(M) from which it builds M.[^12] Self-reproduction needs one
+M there is a description φ(M) from which it builds M.[^14] Self-reproduction needs one
 change. On its own, A + φ(A) builds a bare A with no tape. So the constructor is extended
 to also give its offspring a tape, copying φ(M) onto it when no other contents are
 specified, and then start it. That puts B and C into the same unit, and (A + B + C) + φ(A
 + B + C) reproduces itself. With a universal Turing machine as the payload P, the
-offspring can also compute.[^13]
+offspring can also compute.[^15]
 
 ## Appearances in Sources
 
+- [[cgol-ch11-universal-construction](pages/cgol-ch11-universal-construction.md)] - universal constructors in Life
 - [[tsra-editors-introduction](pages/tsra-editors-introduction.md)] - Burks on the Turing machine as the model behind the constructor
 - [[tsra-part2-ch5](pages/tsra-part2-ch5.md)] — the finished constructor and the self-reproducing automaton
 - [[tsra-part2-ch4](pages/tsra-part2-ch4.md)] — the tape and memory control
@@ -105,6 +114,7 @@ offspring can also compute.[^13]
 
 ## Related Concepts
 
+- [[single-channel-construction](pages/single-channel-construction.md)], [[self-constructing-spaceship](pages/self-constructing-spaceship.md)] - universal construction in Life
 - [[metacell](pages/metacell.md)] - the 0E0P metacell uses universal construction to build its neighbours in Life
 - [[initially-quiescent-automaton](pages/initially-quiescent-automaton.md)] — the class it is universal for
 - [[cellular-tape](pages/cellular-tape.md)] — how the description tape is read and written
@@ -130,5 +140,7 @@ offspring can also compute.[^13]
 [^9]: [[tsra-part2-ch1](pages/tsra-part2-ch1.md)] pp.126-129 [synthesis] — secondaries are built quasi-quiescent and started by a single stimulus; successive descendants are shifted so they don't interfere
 [^10]: [[tsra-part2-ch2](pages/tsra-part2-ch2.md)] pp.155-156 [synthesis] — editor: construct-and-retract builds any finite quiescent array from two binary sequences; the constructing array is always larger, circumvented by a universal constructor with attached self-description
 [^11]: [[tsra-part2-ch4](pages/tsra-part2-ch4.md)] pp.201-202, 243 [synthesis] — editor: the universal constructor consists of the constructing unit plus the memory control, tape, connecting loop, and timing loop; memory control 547 × 87 cells
-[^12]: [[tsra-part2-ch5](pages/tsra-part2-ch5.md)] pp.280-286 [synthesis] — tape format of 14 five-bit characters; the construction algorithm driving the two-path arm; M_c constructs every initially quiescent M from D(M)
-[^13]: [[tsra-part2-ch5](pages/tsra-part2-ch5.md)] pp.294-296 [synthesis] — M_c + D(M_c) is not self-reproduction since the offspring lacks a tape; M_c* also produces the offspring's tape, copying D(M) when no tape content is given, and starts it; M_c* + D(M_c*) and (M_u + M_c*) + D(M_u + M_c*) reproduce themselves
+[^12]: [[cgol-ch11-universal-construction](pages/cgol-ch11-universal-construction.md)] p.345 - "we can use gliders to create or move some component in the Life plane, while simultaneously moving or recreating those gliders so that they can be reused ... they can build any Life pattern that is synthesizable via gliders"; "built out of simple stable components like blocks, beehives, and eater 1s ... they can even be used to build copies of themselves"
+[^13]: [[cgol-ch11-universal-construction](pages/cgol-ch11-universal-construction.md)] pp.353-356,379 [synthesis] - construction encoded "in the timing of a sequence of gliders, with their position playing no role"; Theorem 11.2; "you just store a bunch of moving gliders at the spacing you want"
+[^14]: [[tsra-part2-ch5](pages/tsra-part2-ch5.md)] pp.280-286 [synthesis] — tape format of 14 five-bit characters; the construction algorithm driving the two-path arm; M_c constructs every initially quiescent M from D(M)
+[^15]: [[tsra-part2-ch5](pages/tsra-part2-ch5.md)] pp.294-296 [synthesis] — M_c + D(M_c) is not self-reproduction since the offspring lacks a tape; M_c* also produces the offspring's tape, copying D(M) when no tape content is given, and starts it; M_c* + D(M_c*) and (M_u + M_c*) + D(M_u + M_c*) reproduce themselves

@@ -3,7 +3,7 @@ title: Reflector
 category: Patterns
 summary: A stationary pattern that turns an incoming glider into an outgoing one in another direction while surviving; oscillator-based reflectors (buckaroo, pentadecathlon) and stable ones (Silver reflector, repeat time 497; Snark, repeat time 43) turn glider loops into oscillators of every sufficiently large period
 tags: [pattern-class, life, reflector, snark, glider-loop, repeat-time]
-sources: [cgol-ch6-periodic-circuitry, cgol-ch3-oscillators]
+sources: [cgol-ch7-stable-circuitry, cgol-ch6-periodic-circuitry, cgol-ch3-oscillators]
 created: 2026-09-25
 updated: 2026-09-25
 ---
@@ -59,13 +59,25 @@ had repeat time 4,840, cut in steps to 497. Two 180-degree stable reflectors fol
 the boojum reflector (Dave Greene, 2001, repeat time 202) and the rectifier (Adam P.
 Goucher, 2009, repeat time 106).[^9]
 
+**Reflectors from conduits.** A syringe that turns the glider into a Herschel, followed by
+a Herschel-to-glider converter, makes a colour-changing stable reflector with repeat time
+78. The Bandersnatch (Martin Grant and "Entity Valkyrie", June 2020) changes a glider's
+colour without turning it; with a Snark it gives a colour-changing reflector with repeat
+time 70. The Silver reflector is Paul Callahan's glider-to-Herschel-plus-beehive reaction
+followed by Fx77, L112 and the Herschel-to-glider converter NW31 ([[conduit](pages/conduit.md)]).[^10]
+A *highway robber* (Chris Cain, March 2015) reflects gliders from one lane and ignores
+gliders on the lane next to it.[^11]
+
 ## Appearances in Sources
 
+- [[cgol-ch7-stable-circuitry](pages/cgol-ch7-stable-circuitry.md)] - §7.4 syringe and Bandersnatch reflectors; §7.8.1 highway robber; §7.9 anatomy of the Silver reflector
 - [[cgol-ch6-periodic-circuitry](pages/cgol-ch6-periodic-circuitry.md)] - p30 and p46 reflectors; §6.4 bumper and bouncer
 - [[cgol-ch3-oscillators](pages/cgol-ch3-oscillators.md)] - §3.5: reflectors and glider loops; §3.9 history of stable reflectors
 
 ## Related Concepts
 
+- [[conduit](pages/conduit.md)] - reflectors built from Herschel conduits
+- [[period-multiplier](pages/period-multiplier.md)] - semi-Snarks reflect every second glider
 - [[regulator](pages/regulator.md)] - reflectors adjust glider timing for regulators
 - [[glider](pages/glider.md)] - what it reflects
 - [[herschel](pages/herschel.md)] - the Silver reflector works through a Herschel track
@@ -81,3 +93,5 @@ Goucher, 2009, repeat time 106).[^9]
 [^7]: [[cgol-ch6-periodic-circuitry](pages/cgol-ch6-periodic-circuitry.md)] pp.154-155,163-165 [synthesis] - Fig. 6.4 pentadecathlon reflectors, including "a 90-degree color-preserving reflector"; buckaroo reflects by 90 degrees; Fig. 6.23 twin bees shuttle reflections of gliders and LWSSes and glider-LWSS conversions; Fig. 6.24(a) "a period 23 glider gun constructed by reflecting one period 46 stream into the gaps in another"
 [^8]: [[cgol-ch6-periodic-circuitry](pages/cgol-ch6-periodic-circuitry.md)] pp.171-172 [synthesis] - bumper "consists of an eater 1, a loaf, and a spark of almost any type", color-preserving, smaller than the Snark, repeat time 34 versus 43, output "exactly 5 generations delayed from that of a glider reflected by a Snark", p3 examples (n.22 Tanner Jacobi 2016, Arie Paap 2018); bouncer "consists of an eater 1, a boat, a block, and a domino spark", "a repeat time of just 22 generations", color-changing (n.23 Noam Elkies, September 1998)
 [^9]: [[cgol-ch3-oscillators](pages/cgol-ch3-oscillators.md)] p.78 [synthesis] - Callahan's first explicit stable glider reflector with repeat time 4 840, reduced through 894, 747, 672, 623, 575 to 497; boojum reflector (Dave Greene, April 2001, 202); rectifier (Adam P. Goucher, March 2009, 106)
+[^10]: [[cgol-ch7-stable-circuitry](pages/cgol-ch7-stable-circuitry.md)] pp.190-191,211 [synthesis] - Figure 7.9 "A stable color-changing reflector with a repeat time of 78 generations"; Figure 7.10 Bandersnatch plus Snark, "a repeat time of 70 generations" (n.13 Martin Grant and "Entity Valkyrie", June 2020); Silver reflector "uses the exact same initial component to turn the input glider into a Herschel and junk beehive, and even follows it up by Fx77 and L112 conduits", final conduit NW31
+[^11]: [[cgol-ch7-stable-circuitry](pages/cgol-ch7-stable-circuitry.md)] pp.208-209 [synthesis] - highway robber "reflects gliders from a particular lane without being affected whatsoever by gliders on any further away lanes (even directly adjacent ones)"; Figure 7.33 "constructed by Chris Cain in March 2015"

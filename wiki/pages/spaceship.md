@@ -3,7 +3,7 @@ title: Spaceship
 category: Patterns
 summary: A finite Life pattern that returns to its original phase shifted across the plane; speeds are fractions of the "speed of light" c, capped at c/4 diagonally and c/2 orthogonally with no lower limit; elementary ships reach ten orthogonal and five diagonal speeds, and engineered ones cover every rational speed below c/4 and every slope
 tags: [pattern-class, life, spaceship, speed-of-light, speed-limit, oblique, tagalong, flotilla]
-sources: [lifewiki-catagolue, cgol-ch12-0e0p-metacell, cgol-ch4-spaceships-and-moving-objects, cgol-ch1-early-life, fantastic-combinations-of-john-conways-life, theory-of-cellular-automata-a-survey]
+sources: [lifewiki-catagolue, cgol-ch11-universal-construction, cgol-ch10-self-supporting-spaceships, cgol-ch12-0e0p-metacell, cgol-ch4-spaceships-and-moving-objects, cgol-ch1-early-life, fantastic-combinations-of-john-conways-life, theory-of-cellular-automata-a-survey]
 created: 2026-09-25
 updated: 2026-09-25
 ---
@@ -62,9 +62,9 @@ is at most (2, 1)c/6.[^10]
 
 | Direction | Elementary speeds | Engineered |
 |---|---|---|
-| orthogonal | c/2 (xWSS), c/3, c/4, c/5 (spider), 2c/5, c/6, c/7 (loafer), 2c/7 (weekender), 3c/7, c/10 (copperhead) | 17c/45 (caterpillar), 31c/240 (silverfish), every rational speed below c/4 (caterloopillar) |
+| orthogonal | c/2 (xWSS), c/3, c/4, c/5 (spider), 2c/5, c/6, c/7 (loafer), 2c/7 (weekender), 3c/7, c/10 (copperhead) | 17c/45 (caterpillar), 31c/240 (silverfish) ([[self-supporting-spaceship](pages/self-supporting-spaceship.md)]), every rational speed below c/4 ([[caterloopillar](pages/caterloopillar.md)]) |
 | diagonal | c/4 (glider), c/5, c/6, c/7 (lobster), c/8 (walrus) | c/12 (Corderships), every rational speed below c/4 (Demonoid) |
-| oblique | (2, 1)c/6, Sir Robin, the first elementary knightship | (23, 5)c/79 (waterbear); every slope at small enough speed (Geminoid) |
+| oblique | (2, 1)c/6, Sir Robin, the first elementary knightship | (23, 5)c/79 (waterbear, [[self-supporting-spaceship](pages/self-supporting-spaceship.md)]); every slope at small enough speed (Geminoid, [[self-constructing-spaceship](pages/self-constructing-spaceship.md)]) |
 
 The walrus, found in 2023, is the first elementary c/8 diagonal spaceship.[^11]
 
@@ -82,6 +82,8 @@ Life gained its first SMOS.[^12]
 
 ## Related Concepts
 
+- [[self-constructing-spaceship](pages/self-constructing-spaceship.md)] - Geminoids (every slope) and Demonoids (every diagonal speed below c/4)
+- [[self-supporting-spaceship](pages/self-supporting-spaceship.md)], [[caterloopillar](pages/caterloopillar.md)] - engineered ships that build their own track ahead
 - [[glider](pages/glider.md)], [[light-middle-heavyweight-spaceships](pages/light-middle-heavyweight-spaceships.md)] - the basic spaceships
 - [[cordership](pages/cordership.md)], [[puffer](pages/puffer.md)] - slower and debris-leaving moving objects
 - [[signal-wire](pages/signal-wire.md)] - moving faster than the speed limits allow

@@ -3,7 +3,7 @@ title: Primer
 category: Patterns
 summary: A Life gun that emits a stream of lightweight spaceships in which the n-th ship is present exactly when n is prime - a sieve of Eratosthenes built from an LWSS stream and breeders that lay ever-longer inline-inverter guns; relatives include a twin primer, whose infinite output is an open problem
 tags: [pattern, life, primer, computation, primes, sieve, breeder, circuitry]
-sources: [cgol-ch6-periodic-circuitry]
+sources: [cgol-ch9-universal-computation, cgol-ch6-periodic-circuitry]
 created: 2026-09-25
 updated: 2026-09-25
 ---
@@ -45,8 +45,10 @@ by three space rakes, and inline-inverter guns of period 240 and 360 + 240n.[^6]
 - A *twin primer* emits a ship at position n exactly when n − 2 and n are both prime.
   Whether infinitely many twin primes exist is a famous open problem, so whether that
   pattern emits infinitely many ships is unknown.[^7]
+- A programmable Life computer can print primes too: an [[apgsembly](pages/apgsembly.md)] program printing
+  "2.3.5.7.11..." is set as an exercise.[^8]
 - Conway and Gosper's proof that Life is universal already implied primes could be
-  computed in Life, years before a primer was built.[^8]
+  computed in Life, years before a primer was built.[^9]
 
 ## Appearances in Sources
 
@@ -66,4 +68,5 @@ by three space rakes, and inline-inverter guns of period 240 and 360 + 240n.[^6]
 [^5]: [[cgol-ch6-periodic-circuitry](pages/cgol-ch6-periodic-circuitry.md)] pp.161-162 [synthesis] - four problems: 240-step periods fixed with 3p, 5p, 7p, ... plus a manual 2p gun; eater 1 replaces a block; MWSSes destroy excess gliders; a block below each gun spares the prime itself
 [^6]: [[cgol-ch6-periodic-circuitry](pages/cgol-ch6-periodic-circuitry.md)] pp.162-163 [synthesis] - Fig. 6.20 compact breeder with 6 space rakes; Fig. 6.22 completed primer with a period 120 LWSS stream from 3 space rakes and inline inverter guns of period 240 and 360 + 240n
 [^7]: [[cgol-ch6-periodic-circuitry](pages/cgol-ch6-periodic-circuitry.md)] p.176 - "A twin primer ... the n-th spaceship in the stream is present if and only if both n − 2 and n are prime ... it is currently unknown whether or not there are infinitely many twin primes ... so it is unknown whether or not it emits infinitely many lightweight spaceships"
-[^8]: [[cgol-ch6-periodic-circuitry](pages/cgol-ch6-periodic-circuitry.md)] p.178 - "John Conway and Bill Gosper used little more than some basic period 30 circuitry ... to demonstrate that the Game of Life is universal ... Thus, for example, we knew that prime numbers could be computed in the Game of Life for several years before the first primer was explicitly constructed"
+[^8]: [[cgol-ch9-universal-computation](pages/cgol-ch9-universal-computation.md)] p.309, Ex. 9.25 - "Write APGsembly code for a Life pattern that prints the prime numbers, separated by dots"
+[^9]: [[cgol-ch6-periodic-circuitry](pages/cgol-ch6-periodic-circuitry.md)] p.178 - "John Conway and Bill Gosper used little more than some basic period 30 circuitry ... to demonstrate that the Game of Life is universal ... Thus, for example, we knew that prime numbers could be computed in the Game of Life for several years before the first primer was explicitly constructed"

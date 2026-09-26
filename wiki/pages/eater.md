@@ -3,7 +3,7 @@ title: Eater
 category: Patterns
 summary: A still life that destroys a glider or other object hitting it in the right place and recovers undamaged; eater 1 (7 cells, recovery time 4, the fastest possible) is the standard, with eater 2, eater 3, eater 5, the boat-bit and the block pull for special cases, and welding to merge eaters into tight spaces
 tags: [pattern, life, eater, eater-1, still-life, glider, welding, stabilizer]
-sources: [cgol-ch6-periodic-circuitry, cgol-ch3-oscillators, cgol-ch2-still-lifes, cgol-ch1-early-life]
+sources: [cgol-ch7-stable-circuitry, cgol-ch6-periodic-circuitry, cgol-ch3-oscillators, cgol-ch2-still-lifes, cgol-ch1-early-life]
 created: 2026-09-25
 updated: 2026-09-25
 ---
@@ -68,13 +68,21 @@ constructions pack components tightly and fit eaters into restricted regions. On
 is an eater 5 reshaped to live inside a given box: its tub becomes a boat, and extra cells
 overpopulate the cells that would otherwise be born.[^10]
 
+**Catalysts.** In a stable [[conduit](pages/conduit.md)], eaters belong to a wider class of
+*catalysts*: still lifes that a passing reaction alters temporarily but that recover with
+no permanent damage. A *transparent catalyst*, usually a block or beehive, is destroyed
+completely and reappears in the same place a few generations later, letting a reaction
+pass "through" its location.[^11]
+
 ## Appearances in Sources
 
+- [[cgol-ch7-stable-circuitry](pages/cgol-ch7-stable-circuitry.md)] - §7.1.1 eaters as catalysts in Herschel conduits
 - [[cgol-ch2-still-lifes](pages/cgol-ch2-still-lifes.md)] - §2.3 eaters, rocks, boat-bit, block pull; §2.4 welding and constrained eaters
 - [[cgol-ch1-early-life](pages/cgol-ch1-early-life.md)] - blocks eating beehives; eater 1 stabilizing a queen bee
 
 ## Related Concepts
 
+- [[conduit](pages/conduit.md)] - eaters as catalysts in stable circuitry
 - [[herschel](pages/herschel.md)] - a constrained eater makes the R64 conduit work
 - [[oscillator](pages/oscillator.md)] - eaters stabilize many
 - [[still-life](pages/still-life.md)] - the class eaters belong to
@@ -92,3 +100,4 @@ overpopulate the cells that would otherwise be born.[^10]
 [^8]: [[cgol-ch6-periodic-circuitry](pages/cgol-ch6-periodic-circuitry.md)] p.174 - "if we use an eater 1 (instead of a snake ...), then a duoplet spark can be used to test whether or not the boat bit is present ... if the boat bit is present then the boat and eater are both destroyed, producing an output glider"
 [^9]: [[cgol-ch3-oscillators](pages/cgol-ch3-oscillators.md)] pp.55-57,69 [synthesis] - "two eaters: a period 3 oscillator made up of two eater 1s that eat each other's corners and then rebuild themselves"; snacker; "eater 2 is capable of eating most types of debris that eater 1 can"; oscillators that "really require an eater 2"; the eater "constructed back in Figure 2.24(b) ... lets this conduit accept Herschels that are spaced 61 or more generations apart"
 [^10]: [[cgol-ch2-still-lifes](pages/cgol-ch2-still-lifes.md)] pp.42-44 [synthesis] - two eater 1s too close "will no longer be stable"; welding "combine multiple still lifes into a single still life that retains the properties of each of its components"; keep pre-blocks, replace tails; reasons: restricted space and tight packing; eater 5 adapted to a region by changing the tub to a boat and overpopulating two cells (Figs. 2.23-2.24)
+[^11]: [[cgol-ch7-stable-circuitry](pages/cgol-ch7-stable-circuitry.md)] p.185 [synthesis] - "A more general term for the still lifes that make up a conduit is catalyst"; "a transparent catalyst. This is a small common object, usually a block or a beehive, that is temporarily destroyed completely by an active reaction, but reappears a few generations later in exactly the same location"

@@ -62,7 +62,7 @@ depth-first spaceship search whose search-tree positions play the role of soups.
   soups. Piping the spaceship searcher ikpx into it found a c/4 diagonal tubstretcher that
   neither program could find alone.
 - *Syntheses and guns.* It keeps the cheapest known glider syntheses of objects
-  ([[object-synthesis](pages/object-synthesis.md)]) and a database of glider guns, with a box for submitting improvements.
+  ([[object-synthesis](pages/object-synthesis.md)]) and a database of glider [[gun](pages/gun.md)]s, with a box for submitting improvements.
 
 **Community.** Contributors get user pages, credit for being among the first 20 finders of
 an interesting object, and badges such as "Conchita" for a soup containing a
