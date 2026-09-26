@@ -46,6 +46,7 @@ switch-engine rake that fires gliders sideways ([[puffer](pages/puffer.md)]).[^7
 
 ## Related Concepts
 
+- [[reverse-caber-tosser](pages/reverse-caber-tosser.md)] - its recipe is encoded in the distance to a receding c/12 object
 - [[switch-engine](pages/switch-engine.md)] - its components
 - [[spaceship](pages/spaceship.md)] - its class; c/12 diagonal
 - [[puffer](pages/puffer.md)] - arks and Corderrakes are its non-spaceship relatives
