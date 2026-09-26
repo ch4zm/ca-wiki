@@ -3,7 +3,7 @@ title: Switch engine
 category: Patterns
 summary: An eight-cell unstable Life object that travels diagonally, reflecting itself every 48 generations; stabilized by its own debris it becomes the block-laying or glider-producing switch engine, puffers that are the only infinitely growing patterns ever seen to arise from random soup; pairs of switch engines make arks
 tags: [pattern, life, switch-engine, puffer, ark, infinite-growth, methuselah]
-sources: [cgol-ch4-spaceships-and-moving-objects, cgol-ch1-early-life]
+sources: [cgol-ch5-glider-synthesis, cgol-ch4-spaceships-and-moving-objects, cgol-ch1-early-life]
 created: 2026-09-25
 updated: 2026-09-25
 ---
@@ -43,6 +43,10 @@ made of two switch-engine predecessors takes 736,692 generations to stabilize, a
 Switch engines that clean up all of each other's debris make c/12 diagonal spaceships,
 the [[cordership](pages/cordership.md)]s.[^9]
 
+Three gliders can synthesize a switch engine, and one three-glider collision makes a
+glider-producing switch engine plus junk, the only known way to get infinite growth
+from three gliders ([[object-synthesis](pages/object-synthesis.md)]).[^10]
+
 ## Appearances in Sources
 
 - [[cgol-ch1-early-life](pages/cgol-ch1-early-life.md)] - §1.5: switch engine, its two puffers, arks; §1.6 long-lived arks
@@ -63,3 +67,4 @@ the [[cordership](pages/cordership.md)]s.[^9]
 [^7]: [[cgol-ch1-early-life](pages/cgol-ch1-early-life.md)] p.30, n.48 - "This ark was found in 1971 by Charles Corderman, and was the first-discovered ark. Its name refers to the fact that the debris it leaves behind contains pairs of many different objects. The general term 'ark' is derived from the name of this pattern"
 [^8]: [[cgol-ch1-early-life](pages/cgol-ch1-early-life.md)] pp.18,31 [synthesis] - Fig. 1.30: "A 16-cell pattern that takes a whopping 736 692 generations to stabilize ... this pattern is an ark"; Ex. 1.17: "The 19-cell pattern ... consists of two switch engine predecessors and a blinker, and takes a staggering 6 526 574 generations to stabilize"
 [^9]: [[cgol-ch4-spaceships-and-moving-objects](pages/cgol-ch4-spaceships-and-moving-objects.md)] p.90 - using switch engines "to stabilize each other and erase their debris entirely (thus creating a spaceship) ... Spaceships constructed in this way are called Corderships"
+[^10]: [[cgol-ch5-glider-synthesis](pages/cgol-ch5-glider-synthesis.md)] pp.124-125 [synthesis] - Table 5.2 3-glider syntheses of the switch engine and the glider-producing switch engine; "the only known way of generating infinite growth with just 3 gliders"

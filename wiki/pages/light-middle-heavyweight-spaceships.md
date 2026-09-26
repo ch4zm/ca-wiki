@@ -3,7 +3,7 @@ title: Lightweight, middleweight and heavyweight spaceships
 category: Patterns
 summary: The LWSS, MWSS and HWSS - three period-4 Life spaceships that move orthogonally 2 cells every 4 generations (c/2); with the glider they are the spaceships that ordinary random soups produce
 tags: [pattern, life, spaceship, lwss, mwss, hwss, orthogonal, c-over-2]
-sources: [cgol-ch4-spaceships-and-moving-objects, cgol-ch1-early-life, fantastic-combinations-of-john-conways-life]
+sources: [cgol-ch5-glider-synthesis, cgol-ch4-spaceships-and-moving-objects, cgol-ch1-early-life, fantastic-combinations-of-john-conways-life]
 created: 2026-09-25
 updated: 2026-09-25
 ---
@@ -44,6 +44,10 @@ themselves, or the period-2 *killer toads*.[^8]
 - The Schick engine and Coe ship are xWSS-based spaceships with large pulsating sparks,
   used to build rakes ([[puffer](pages/puffer.md)]).
 
+**From gliders.** Each can be synthesized from three gliders. Aiming three Gosper glider
+guns at each other gives a period-30 LWSS gun. A 4-glider HWSS synthesis with one glider
+from each direction is easier to use than the tight 3-glider one ([[object-synthesis](pages/object-synthesis.md)]).[^10]
+
 ## Appearances in Sources
 
 - [[cgol-ch4-spaceships-and-moving-objects](pages/cgol-ch4-spaceships-and-moving-objects.md)] - §4.2: sparks, eaters for them, flotillae, tagalongs, the overweight spaceship
@@ -66,3 +70,4 @@ themselves, or the period-2 *killer toads*.[^8]
 [^7]: [[cgol-ch4-spaceships-and-moving-objects](pages/cgol-ch4-spaceships-and-moving-objects.md)] pp.87-88 [synthesis] - "Every second generation, the LWSS emits a dot spark and a thumb spark, the MWSS emits two dot sparks and a thumb spark, and the HWSS emits a dot spark, a domino spark, and a thumb spark"; Fig. 4.12 destroying small objects; used "to adjust the debris left behind by puffers"
 [^8]: [[cgol-ch4-spaceships-and-moving-objects](pages/cgol-ch4-spaceships-and-moving-objects.md)] p.88 [synthesis] - eater 1 and eater 2 destroy an LWSS or MWSS; Fig. 4.13 three HWSS eaters: large stable eater, pond and block reconstructed via a honey bit, and period-2 "killer toads"
 [^9]: [[cgol-ch4-spaceships-and-moving-objects](pages/cgol-ch4-spaceships-and-moving-objects.md)] pp.88-90 [synthesis] - "it is often convenient to refer to any of these components as an xWSS"; flotillae; "every flotilla constructed from them will also have the same period and speed"; pseudo spaceships (Fig. 4.15); sidecar, HWSS tagalong, MWSS tagalong, hivenudger (Fig. 4.14); pushalongs; overweight spaceship "is not actually a spaceship at all"; "one of the most versatile of known tagalongs"; "Overweight spaceships of any length can be stabilized"
+[^10]: [[cgol-ch5-glider-synthesis](pages/cgol-ch5-glider-synthesis.md)] pp.121,124-126 [synthesis] - Fig. 5.2 period 30 LWSS gun from three Gosper glider guns; Table 5.2 3-glider syntheses of LWSS, MWSS, HWSS; the 3-glider HWSS synthesis "is actually quite difficult to make use of"; "4-glider syntheses of a heavyweight spaceship that consist of one glider coming from each direction"

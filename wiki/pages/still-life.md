@@ -3,7 +3,7 @@ title: Still life
 category: Patterns
 summary: A Life pattern that never changes from one generation to the next (a finite fixed point of the rule); strict vs pseudo still lifes and their counts (known to 34 cells), still-life grammar and induction coils, and the commonest in random ash (block, tub, boat, ship, beehive, loaf, pond)
 tags: [pattern-class, life, still-life, stable, enumeration]
-sources: [cgol-ch1-early-life, cgol-ch2-still-lifes, fantastic-combinations-of-john-conways-life, theory-of-cellular-automata-a-survey]
+sources: [cgol-ch5-glider-synthesis, cgol-ch1-early-life, cgol-ch2-still-lifes, fantastic-combinations-of-john-conways-life, theory-of-cellular-automata-a-survey]
 created: 2026-09-25
 updated: 2026-09-25
 ---
@@ -72,8 +72,13 @@ with 16 cells, which is part of why enumerating larger ones is hard.[^11]
   any "pointy" still life stabilizes a run of orthogonal cells. Blocks and snakes can line
   up to support a row of any length.
 
+**Synthesis.** Every still life with up to 23 cells can be built by colliding gliders
+([[object-synthesis](pages/object-synthesis.md)]).[^13] Not all still lifes can be built: a 306-cell one
+contains a configuration that can only ever have existed unchanged, so no method can
+create it.[^14]
+
 **Eating.** A still life can destroy another object and survive: a block eats a
-beehive in 7 generations. Still lifes built for this are [[eater](pages/eater.md)]s.[^13]
+beehive in 7 generations. Still lifes built for this are [[eater](pages/eater.md)]s.[^15]
 Packing limits are on [[still-life-density](pages/still-life-density.md)].
 
 ## Appearances in Sources
@@ -85,6 +90,7 @@ Packing limits are on [[still-life-density](pages/still-life-density.md)].
 
 ## Related Concepts
 
+- [[object-synthesis](pages/object-synthesis.md)] - building still lifes from gliders
 - [[oscillator](pages/oscillator.md)] - the periodic generalization; a still life is period 1
 - [[spaceship](pages/spaceship.md)] - periodic up to a translation
 - [[eater](pages/eater.md)] - still lifes that delete other objects
@@ -104,4 +110,6 @@ Packing limits are on [[still-life-density](pages/still-life-density.md)].
 [^10]: [[cgol-ch2-still-lifes](pages/cgol-ch2-still-lifes.md)] p.35, Table 2.1 - numbers of strict and pseudo still lifes with 4 to 23 cells
 [^11]: [[cgol-ch2-still-lifes](pages/cgol-ch2-still-lifes.md)] pp.34,49-50 [synthesis] - "they have been computed up to 34 cells"; Ekström's January 2017 program has "catalog[ed] all still lifes (both strict and pseudo) with 30 or fewer cells, count[ed] all still lifes with 34 or fewer cells"; Fig. 2.33: the smallest strict still life missed by a greedy search has 16 cells
 [^12]: [[cgol-ch2-still-lifes](pages/cgol-ch2-still-lifes.md)] §2.2, pp.37-39 [synthesis] - Fig. 2.6 and 2.7 families; n.7 "long" prefix; pre-block and tail end pieces; n.8 cis and trans; "if every cell in a 2 × 2 square is alive, then every cell that is an immediate neighbor ... must be dead"; "still lifes never have 'thick' sections"; paths stabilized "often" (n.10 "But not always"); rules of thumb; induction coils (Figs. 2.12-2.13)
-[^13]: [[cgol-ch1-early-life](pages/cgol-ch1-early-life.md)] pp.10-11 [synthesis] - "a block being placed next to a beehive results in the beehive being destroyed and the block surviving unharmed"; Fig. 1.16: 7 generations
+[^13]: https://conwaylife.com/wiki/Glider_synthesis (2026-06-07) - syntheses of all still lifes up to specific populations completed for "21 bits in November 2022, 22 bits in August 2024, and 23 bits in December 2025"
+[^14]: [[cgol-ch5-glider-synthesis](pages/cgol-ch5-glider-synthesis.md)] p.147 - Törmä and Salo (January 2022): "There is a 306-cell still life that contains this configuration of cells, and thus cannot be constructed by glider synthesis or any other method"
+[^15]: [[cgol-ch1-early-life](pages/cgol-ch1-early-life.md)] pp.10-11 [synthesis] - "a block being placed next to a beehive results in the beehive being destroyed and the block surviving unharmed"; Fig. 1.16: 7 generations

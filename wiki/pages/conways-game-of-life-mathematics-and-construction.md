@@ -42,7 +42,7 @@ The wiki covers the book chapter by chapter.[^6]
 | 2 | Still Lifes | 33-52 | [[cgol-ch2-still-lifes](pages/cgol-ch2-still-lifes.md)] |
 | 3 | Oscillators | 53-82 | [[cgol-ch3-oscillators](pages/cgol-ch3-oscillators.md)] |
 | 4 | Spaceships and Moving Objects | 83-120 | [[cgol-ch4-spaceships-and-moving-objects](pages/cgol-ch4-spaceships-and-moving-objects.md)] |
-| 5 | Glider Synthesis | 121-152 | - |
+| 5 | Glider Synthesis | 121-152 | [[cgol-ch5-glider-synthesis](pages/cgol-ch5-glider-synthesis.md)] |
 | 6 | Periodic Circuitry | 153-182 | - |
 | 7 | Stable Circuitry | 183-220 | - |
 | 8 | Guns and Glider Streams | 221-270 | - |

@@ -3,7 +3,7 @@ title: Gosper glider gun
 category: Patterns
 summary: The period-30 Life gun made of two queen bees bouncing between two blocks, emitting a glider every 30 generations; found by Bill Gosper in November 1970, it was the first pattern found to grow without limit
 tags: [pattern, life, gun, glider-gun, period-30, gosper, infinite-growth]
-sources: [cgol-ch1-early-life, fantastic-combinations-of-john-conways-life, theory-of-cellular-automata-a-survey]
+sources: [cgol-ch5-glider-synthesis, cgol-ch1-early-life, fantastic-combinations-of-john-conways-life, theory-of-cellular-automata-a-survey]
 created: 2026-09-25
 updated: 2026-09-25
 ---
@@ -24,8 +24,14 @@ Conway had conjectured that no finite pattern could, offered $50 for a proof or
 disproof, and named a gun as one way to disprove it.[^3] Bill Gosper found the gun in
 November 1970 and received the $50 from Conway.[^4]
 
+**Building it from gliders.** Since it is just two blocks and two queen bees, the gun
+can be synthesized from gliders: 10 gliders piece by piece, 8 at the fewest, or 12 in an
+incremental synthesis (pond to ship to queen bee) that never needs more than two
+synchronized gliders ([[object-synthesis](pages/object-synthesis.md)]). Rakes firing that incremental synthesis
+build a new gun every 60 generations, giving a [[breeder](pages/breeder.md)].[^5]
+
 Three queen bees and two blocks can make a "double" gun that emits two glider
-streams.[^5]
+streams.[^6]
 
 ## Appearances in Sources
 
@@ -35,6 +41,8 @@ streams.[^5]
 
 ## Related Concepts
 
+- [[object-synthesis](pages/object-synthesis.md)] - how it is built from gliders
+- [[breeder](pages/breeder.md)] - rakes that build Gosper guns
 - [[queen-bee](pages/queen-bee.md)] - its moving parts
 - [[twin-bees](pages/twin-bees.md)] - the period-46 gun built the same way
 - [[switch-engine](pages/switch-engine.md)] - puffers, the other kind of infinite growth
@@ -44,4 +52,5 @@ streams.[^5]
 [^2]: [[theory-of-cellular-automata-a-survey](pages/theory-of-cellular-automata-a-survey.md)] pp.10-11 [synthesis] - glider gun defined as periodic and emitting gliders each period; Fig. 5: a period 30 glider gun
 [^3]: [[fantastic-combinations-of-john-conways-life](pages/fantastic-combinations-of-john-conways-life.md)] p.3 [synthesis] - "Conway conjectures that no pattern can grow without limit"; $50 prize; a "gun" (a configuration that repeatedly shoots out moving objects such as the glider) would disprove it
 [^4]: [[cgol-ch1-early-life](pages/cgol-ch1-early-life.md)] p.11, nn.9-10 - "Named after Bill Gosper, who found it in November 1970"; "this glider gun's discovery earned Gosper a $50 reward from Conway himself"
-[^5]: [[cgol-ch1-early-life](pages/cgol-ch1-early-life.md)] p.29, Ex. 1.6 - "Use two blocks and three queen bees to create a 'double' Gosper glider gun: a gun that emits two streams of gliders"
+[^5]: [[cgol-ch5-glider-synthesis](pages/cgol-ch5-glider-synthesis.md)] pp.124-129,134-135 [synthesis] - "a Gosper glider gun is made up of nothing more than two blocks and two queen bees"; n.4 piece-by-piece "requires 10 gliders ... syntheses of the Gosper glider gun are known, requiring as few as 8 gliders"; Fig. 5.6 incremental synthesis via pond, ship, queen bee with 12 gliders; the breeder
+[^6]: [[cgol-ch1-early-life](pages/cgol-ch1-early-life.md)] p.29, Ex. 1.6 - "Use two blocks and three queen bees to create a 'double' Gosper glider gun: a gun that emits two streams of gliders"
