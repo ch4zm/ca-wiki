@@ -3,7 +3,7 @@ title: Switch engine
 category: Patterns
 summary: An eight-cell unstable Life object that travels diagonally, reflecting itself every 48 generations; stabilized by its own debris it becomes the block-laying or glider-producing switch engine, puffers that are the only infinitely growing patterns ever seen to arise from random soup; pairs of switch engines make arks
 tags: [pattern, life, switch-engine, puffer, ark, infinite-growth, methuselah]
-sources: [cgol-ch1-early-life]
+sources: [cgol-ch4-spaceships-and-moving-objects, cgol-ch1-early-life]
 created: 2026-09-25
 updated: 2026-09-25
 ---
@@ -40,12 +40,16 @@ the pairs of objects in its debris; the general term comes from it.[^7] A 16-cel
 made of two switch-engine predecessors takes 736,692 generations to stabilize, and a
 19-cell one of two predecessors plus a blinker takes 6,526,574.[^8]
 
+Switch engines that clean up all of each other's debris make c/12 diagonal spaceships,
+the [[cordership](pages/cordership.md)]s.[^9]
+
 ## Appearances in Sources
 
 - [[cgol-ch1-early-life](pages/cgol-ch1-early-life.md)] - §1.5: switch engine, its two puffers, arks; §1.6 long-lived arks
 
 ## Related Concepts
 
+- [[cordership](pages/cordership.md)] - spaceships made of switch engines
 - [[gosper-glider-gun](pages/gosper-glider-gun.md)] - the other kind of unbounded growth
 - [[methuselah](pages/methuselah.md)] - long-lived arks strain the definition
 - [[soup-search](pages/soup-search.md)] - the searches in which switch-engine puffers are the only infinite growth seen
@@ -58,3 +62,4 @@ made of two switch-engine predecessors takes 736,692 generations to stabilize, a
 [^6]: [[cgol-ch1-early-life](pages/cgol-ch1-early-life.md)] pp.15-16 [synthesis] - "any puffer created by using two switch engines is called an ark, and dozens can be found just by trying different positions and phases"; Fig. 1.27: "two gliders, two toads, eight blinkers, and 42 still lifes ... every 576 generations", offset 48 cells diagonally
 [^7]: [[cgol-ch1-early-life](pages/cgol-ch1-early-life.md)] p.30, n.48 - "This ark was found in 1971 by Charles Corderman, and was the first-discovered ark. Its name refers to the fact that the debris it leaves behind contains pairs of many different objects. The general term 'ark' is derived from the name of this pattern"
 [^8]: [[cgol-ch1-early-life](pages/cgol-ch1-early-life.md)] pp.18,31 [synthesis] - Fig. 1.30: "A 16-cell pattern that takes a whopping 736 692 generations to stabilize ... this pattern is an ark"; Ex. 1.17: "The 19-cell pattern ... consists of two switch engine predecessors and a blinker, and takes a staggering 6 526 574 generations to stabilize"
+[^9]: [[cgol-ch4-spaceships-and-moving-objects](pages/cgol-ch4-spaceships-and-moving-objects.md)] p.90 - using switch engines "to stabilize each other and erase their debris entirely (thus creating a spaceship) ... Spaceships constructed in this way are called Corderships"
