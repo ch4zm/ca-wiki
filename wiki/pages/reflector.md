@@ -3,7 +3,7 @@ title: Reflector
 category: Patterns
 summary: A stationary pattern that turns an incoming glider into an outgoing one in another direction while surviving; oscillator-based reflectors (buckaroo, pentadecathlon) and stable ones (Silver reflector, repeat time 497; Snark, repeat time 43) turn glider loops into oscillators of every sufficiently large period
 tags: [pattern-class, life, reflector, snark, glider-loop, repeat-time]
-sources: [cgol-ch3-oscillators]
+sources: [cgol-ch6-periodic-circuitry, cgol-ch3-oscillators]
 created: 2026-09-25
 updated: 2026-09-25
 ---
@@ -40,17 +40,33 @@ usually much more.[^6]
   repeat time 43. Four Snarks make oscillators of every period 43 or more, and this
   method gives the only known oscillators of periods 43 and 53.
 
+**Period-30 and period-46 reflectors.** Two pentadecathlons give another 180-degree
+reflector and a 90-degree colour-preserving one, and a buckaroo reflects at period 30.
+The [[twin-bees](pages/twin-bees.md)] shuttle reflects gliders three ways at 90 degrees
+and one at 180, reflects an LWSS, and converts gliders to LWSSes and back. Its
+corner reflections can merge two period-46 streams into one of period 23.[^7]
+
+**Bumper and bouncer.** These spark-based reflectors work with low-period sparkers.[^8]
+- The **bumper** (eater 1, loaf and almost any spark; Tanner Jacobi, 2016) is
+  colour-preserving. It is smaller than the Snark and has repeat time 34, versus the
+  Snark's 43. Its output glider is 5 generations later than a Snark's, which is useful for
+  fine timing. Versions exist down to period 3.
+- The **bouncer** (eater 1, boat, block and a domino spark, usually from a pipsquirter;
+  Noam Elkies, 1998) is colour-changing, with repeat time 22.
+
 The first explicit stable reflector, built by Paul Callahan from Herschel tracks in 1996,
 had repeat time 4,840, cut in steps to 497. Two 180-degree stable reflectors followed:
 the boojum reflector (Dave Greene, 2001, repeat time 202) and the rectifier (Adam P.
-Goucher, 2009, repeat time 106).[^7]
+Goucher, 2009, repeat time 106).[^9]
 
 ## Appearances in Sources
 
+- [[cgol-ch6-periodic-circuitry](pages/cgol-ch6-periodic-circuitry.md)] - p30 and p46 reflectors; §6.4 bumper and bouncer
 - [[cgol-ch3-oscillators](pages/cgol-ch3-oscillators.md)] - §3.5: reflectors and glider loops; §3.9 history of stable reflectors
 
 ## Related Concepts
 
+- [[regulator](pages/regulator.md)] - reflectors adjust glider timing for regulators
 - [[glider](pages/glider.md)] - what it reflects
 - [[herschel](pages/herschel.md)] - the Silver reflector works through a Herschel track
 - [[omniperiodicity](pages/omniperiodicity.md)] - Snark loops fill every period 43 or more
@@ -62,4 +78,6 @@ Goucher, 2009, repeat time 106).[^7]
 [^4]: [[cgol-ch3-oscillators](pages/cgol-ch3-oscillators.md)] p.65 [synthesis] - pentadecathlon reflects by 180 degrees; smallest period 60; "period 60 + 120n"; "we can use two 90-degree reflectors to create a single 180-degree reflector, but we cannot use 180-degree reflectors to make a 90-degree reflector"; only a single glider fits
 [^5]: [[cgol-ch3-oscillators](pages/cgol-ch3-oscillators.md)] pp.65-66 [synthesis] - a still-life reflector avoids phase matching; "Glider reflectors consisting entirely of still lifes are called stable reflectors"; with non-interfering paths, "oscillators with every sufficiently large period"
 [^6]: [[cgol-ch3-oscillators](pages/cgol-ch3-oscillators.md)] pp.66-68 [synthesis] - "how many generations are needed between subsequent gliders colliding with the reflector, which is called its repeat time"; at least 14; Silver reflector colliding a glider with a beehive and 17 still lifes, repeat time 497, three output gliders; the Snark "with a repeat time of 43 generations", "the smallest and fastest"; nn.15-16 discovery history; "gives the only known oscillators with period 43 or 53"
-[^7]: [[cgol-ch3-oscillators](pages/cgol-ch3-oscillators.md)] p.78 [synthesis] - Callahan's first explicit stable glider reflector with repeat time 4 840, reduced through 894, 747, 672, 623, 575 to 497; boojum reflector (Dave Greene, April 2001, 202); rectifier (Adam P. Goucher, March 2009, 106)
+[^7]: [[cgol-ch6-periodic-circuitry](pages/cgol-ch6-periodic-circuitry.md)] pp.154-155,163-165 [synthesis] - Fig. 6.4 pentadecathlon reflectors, including "a 90-degree color-preserving reflector"; buckaroo reflects by 90 degrees; Fig. 6.23 twin bees shuttle reflections of gliders and LWSSes and glider-LWSS conversions; Fig. 6.24(a) "a period 23 glider gun constructed by reflecting one period 46 stream into the gaps in another"
+[^8]: [[cgol-ch6-periodic-circuitry](pages/cgol-ch6-periodic-circuitry.md)] pp.171-172 [synthesis] - bumper "consists of an eater 1, a loaf, and a spark of almost any type", color-preserving, smaller than the Snark, repeat time 34 versus 43, output "exactly 5 generations delayed from that of a glider reflected by a Snark", p3 examples (n.22 Tanner Jacobi 2016, Arie Paap 2018); bouncer "consists of an eater 1, a boat, a block, and a domino spark", "a repeat time of just 22 generations", color-changing (n.23 Noam Elkies, September 1998)
+[^9]: [[cgol-ch3-oscillators](pages/cgol-ch3-oscillators.md)] p.78 [synthesis] - Callahan's first explicit stable glider reflector with repeat time 4 840, reduced through 894, 747, 672, 623, 575 to 497; boojum reflector (Dave Greene, April 2001, 202); rectifier (Adam P. Goucher, March 2009, 106)

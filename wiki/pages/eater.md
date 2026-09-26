@@ -3,7 +3,7 @@ title: Eater
 category: Patterns
 summary: A still life that destroys a glider or other object hitting it in the right place and recovers undamaged; eater 1 (7 cells, recovery time 4, the fastest possible) is the standard, with eater 2, eater 3, eater 5, the boat-bit and the block pull for special cases, and welding to merge eaters into tight spaces
 tags: [pattern, life, eater, eater-1, still-life, glider, welding, stabilizer]
-sources: [cgol-ch3-oscillators, cgol-ch2-still-lifes, cgol-ch1-early-life]
+sources: [cgol-ch6-periodic-circuitry, cgol-ch3-oscillators, cgol-ch2-still-lifes, cgol-ch1-early-life]
 created: 2026-09-25
 updated: 2026-09-25
 ---
@@ -49,12 +49,16 @@ that eats gliders, but some objects act as rocks for pairs of gliders.[^7]
   the block 2 cells one way and 1 the other, and an opposite glider moves it back.
   The block is also the smallest eater of all, eating a beehive or a loaf.
 
+**Boat-bit as a detector.** With an eater 1 in place of the snake, a boat-bit can be
+tested by a duoplet spark. The spark destroys the boat and eater, releasing a glider, only
+if the boat is there. This is the core of the universal [[regulator](pages/regulator.md)].[^8]
+
 **Stabilizing oscillators.** Eaters box in debris to make oscillators. Two eater 1s
 eating each other's corners make the period-3 *two eaters*, and four around a
 pentadecathlon make the period-9 *snacker*. Eater 2 can stand in for eater 1 in many of
 these and is required in some ([[oscillator](pages/oscillator.md)]). The constrained eater 5 variant
 removes a Herschel's stray glider, letting the R64 conduit repeat every 61 generations
-([[herschel](pages/herschel.md)]).[^8]
+([[herschel](pages/herschel.md)]).[^9]
 
 **Welding.** Two eaters placed too close together interfere and stop being stable.
 *Welding* merges still lifes into one still life that keeps each part's function. For two
@@ -62,7 +66,7 @@ eater 1s, keep both pre-blocks and replace the two tails with one stabilizing pi
 found by the still-life grammar, trial and error, or computer search. Welding lets large
 constructions pack components tightly and fit eaters into restricted regions. One example
 is an eater 5 reshaped to live inside a given box: its tub becomes a boat, and extra cells
-overpopulate the cells that would otherwise be born.[^9]
+overpopulate the cells that would otherwise be born.[^10]
 
 ## Appearances in Sources
 
@@ -85,5 +89,6 @@ overpopulate the cells that would otherwise be born.[^9]
 [^5]: [[cgol-ch2-still-lifes](pages/cgol-ch2-still-lifes.md)] p.39, n.12 - "Eater 1 itself was almost immediately discovered independently by several Life enthusiasts as the smallest asymmetric still life, but its eating properties were discovered by Bill Gosper's group at MIT in 1971"
 [^6]: [[cgol-ch2-still-lifes](pages/cgol-ch2-still-lifes.md)] pp.40-41 [synthesis] - eater 2: recovery 5, symmetric, "4 different parallel paths"; eater 5 "(sometimes called the tub with tail eater, or TWIT)", recovery 6, two still lifes, "2 different perpendicular paths", eats gliders close to its edge; eater 3 from the loaf-flipping reaction (Fig. 2.19)
 [^7]: [[cgol-ch2-still-lifes](pages/cgol-ch2-still-lifes.md)] pp.40-42 [synthesis] - "an eater is called a rock if it does not even suffer temporary damage"; "no known rocks that eat gliders"; boat-bit: snake "not even temporarily disturbed", "the smallest known way of erasing such a glider stream (in particular, it contains only 6 cells)", n.15 stores a bit; loaf eats two gliders; "a block is the smallest eater of all, as it can be used to eat a beehive (and ... a loaf)"; (2,1) block pull (Fig. 2.20)
-[^8]: [[cgol-ch3-oscillators](pages/cgol-ch3-oscillators.md)] pp.55-57,69 [synthesis] - "two eaters: a period 3 oscillator made up of two eater 1s that eat each other's corners and then rebuild themselves"; snacker; "eater 2 is capable of eating most types of debris that eater 1 can"; oscillators that "really require an eater 2"; the eater "constructed back in Figure 2.24(b) ... lets this conduit accept Herschels that are spaced 61 or more generations apart"
-[^9]: [[cgol-ch2-still-lifes](pages/cgol-ch2-still-lifes.md)] pp.42-44 [synthesis] - two eater 1s too close "will no longer be stable"; welding "combine multiple still lifes into a single still life that retains the properties of each of its components"; keep pre-blocks, replace tails; reasons: restricted space and tight packing; eater 5 adapted to a region by changing the tub to a boat and overpopulating two cells (Figs. 2.23-2.24)
+[^8]: [[cgol-ch6-periodic-circuitry](pages/cgol-ch6-periodic-circuitry.md)] p.174 - "if we use an eater 1 (instead of a snake ...), then a duoplet spark can be used to test whether or not the boat bit is present ... if the boat bit is present then the boat and eater are both destroyed, producing an output glider"
+[^9]: [[cgol-ch3-oscillators](pages/cgol-ch3-oscillators.md)] pp.55-57,69 [synthesis] - "two eaters: a period 3 oscillator made up of two eater 1s that eat each other's corners and then rebuild themselves"; snacker; "eater 2 is capable of eating most types of debris that eater 1 can"; oscillators that "really require an eater 2"; the eater "constructed back in Figure 2.24(b) ... lets this conduit accept Herschels that are spaced 61 or more generations apart"
+[^10]: [[cgol-ch2-still-lifes](pages/cgol-ch2-still-lifes.md)] pp.42-44 [synthesis] - two eater 1s too close "will no longer be stable"; welding "combine multiple still lifes into a single still life that retains the properties of each of its components"; keep pre-blocks, replace tails; reasons: restricted space and tight packing; eater 5 adapted to a region by changing the tub to a boat and overpopulating two cells (Figs. 2.23-2.24)

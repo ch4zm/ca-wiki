@@ -3,7 +3,7 @@ title: Sparker
 category: Patterns
 summary: An oscillator that gives off a spark - a small group of cells that dies on its own, placed where the oscillator is otherwise empty; domino, dot, finger, thumb, duoplet and banana sparks let oscillators be combined into new composite periods, hassle other objects, and reflect gliders
 tags: [pattern-class, life, sparker, spark, oscillator, composite-period, reflector]
-sources: [cgol-ch3-oscillators]
+sources: [cgol-ch6-periodic-circuitry, cgol-ch3-oscillators]
 created: 2026-09-25
 updated: 2026-09-25
 ---
@@ -44,10 +44,16 @@ every 45.[^3]
 Duoplet and banana sparks can turn a [[glider](pages/glider.md)] by 90 degrees, which
 makes these sparkers usable as reflectors ([[reflector](pages/reflector.md)]).[^5]
 
+**Tanner's p46.** This extremely sparky period-46 oscillator combines with copies of
+itself into an *edge-shooting* glider gun, which can sit right beside another stream.
+That gun is also a period-46 inline inverter ([[inverter](pages/inverter.md)]). Two of them make a
+small MWSS gun, and the edge shooter places the tight gliders of a period-46 HWSS
+gun.[^6]
+
 **The caterer.** The caterer is the smallest known period-3 oscillator and a finger
 sparker. Its spark is used in the smallest known oscillators of periods 21, 24, 33, 39,
-66 and 93.[^6] Billiard tables, which enclose all their oscillating cells, give off no
-sparks and are less useful for this reason.[^7]
+66 and 93.[^7] Billiard tables, which enclose all their oscillating cells, give off no
+sparks and are less useful for this reason.[^8]
 
 ## Appearances in Sources
 
@@ -65,5 +71,6 @@ sparks and are less useful for this reason.[^7]
 [^3]: [[cgol-ch3-oscillators](pages/cgol-ch3-oscillators.md)] p.57, Fig. 3.10 - "A pentadecathlon strategically placed next to a snacker makes a non-trivial period 45 oscillator, since the two cells shown in green on the right are only alive 1 generation out of every 45"
 [^4]: [[cgol-ch3-oscillators](pages/cgol-ch3-oscillators.md)] pp.58-61 [synthesis] - domino spark; pipsquirters produce "a domino spark that points perpendicular to the oscillator's nearest edge"; dot spark (mold, middleweight spaceship); "two dot sparks cannot give the three live neighbors required"; emulators, volcanoes, supervolcanoes; finger and thumb sparks; duoplet (twin bees shuttle); banana spark (buckaroo)
 [^5]: [[cgol-ch3-oscillators](pages/cgol-ch3-oscillators.md)] p.61, Fig. 3.17 - "Duoplet and banana sparks can be used to reflect gliders by 90 degrees"
-[^6]: [[cgol-ch3-oscillators](pages/cgol-ch3-oscillators.md)] p.61 - "Not only is it the smallest known period 3 oscillator, but its spark is used in the construction of what are currently the smallest known oscillators of period 21, 24, 33 ..., 39, 66, and 93"
-[^7]: [[cgol-ch3-oscillators](pages/cgol-ch3-oscillators.md)] p.58, n.6 - "Billiard tables are a notable exception, which makes them somewhat less useful than other oscillators"
+[^6]: [[cgol-ch6-periodic-circuitry](pages/cgol-ch6-periodic-circuitry.md)] pp.167-168 [synthesis] - "the extremely sparky period 46 oscillator called Tanner's p46"; Fig. 6.29(a) "an edge-shooting glider gun"; "Edge shooters ... can be positioned as close as we like to existing glider streams on one side"; Fig. 6.29(b) inline inverter; Fig. 6.29(c) MWSS gun; Fig. 6.30 HWSS gun
+[^7]: [[cgol-ch3-oscillators](pages/cgol-ch3-oscillators.md)] p.61 - "Not only is it the smallest known period 3 oscillator, but its spark is used in the construction of what are currently the smallest known oscillators of period 21, 24, 33 ..., 39, 66, and 93"
+[^8]: [[cgol-ch3-oscillators](pages/cgol-ch3-oscillators.md)] p.58, n.6 - "Billiard tables are a notable exception, which makes them somewhat less useful than other oscillators"
