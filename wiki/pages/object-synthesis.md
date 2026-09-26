@@ -100,6 +100,7 @@ is a [[slow-salvo](pages/slow-salvo.md)].
 - [[soup-search](pages/soup-search.md)] - soups are the main source of new syntheses
 - [[still-life](pages/still-life.md)] - the objects most syntheses start from
 - [[garden-of-eden](pages/garden-of-eden.md)] - a related limit on what can arise
+- [[catagolue](pages/catagolue.md)] - keeps the cheapest known glider syntheses and takes submissions
 
 [^1]: [[cgol-ch5-glider-synthesis](pages/cgol-ch5-glider-synthesis.md)] pp.121-122 [synthesis] - Fig. 5.1 3-glider synthesis of an LWSS; Fig. 5.2 "a period 30 lightweight spaceship gun" from three Gosper glider guns; for stationary objects "the glider source has to be moving"
 [^2]: [[cgol-ch5-glider-synthesis](pages/cgol-ch5-glider-synthesis.md)] p.122 - "we require that the gliders in a synthesis could arrive at their positions from arbitrarily far away"; Fig. 5.3 is "not a valid 3-glider synthesis"

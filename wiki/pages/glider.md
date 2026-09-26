@@ -3,7 +3,7 @@ title: Glider
 category: Patterns
 summary: The five-cell Life spaceship that shifts one cell diagonally every four generations (speed c/4), named for its glide reflection; the commonest moving object in random soup, emitted by guns, and the signal of glider-stream circuits
 tags: [pattern, life, glider, spaceship, signal]
-sources: [cgol-ch4-spaceships-and-moving-objects, cgol-ch3-oscillators, cgol-ch2-still-lifes, cgol-ch1-early-life, fantastic-combinations-of-john-conways-life, statistical-mechanics-of-cellular-automata, computation-at-the-edge-of-chaos, theory-of-cellular-automata-a-survey]
+sources: [lifewiki-catagolue, cgol-ch4-spaceships-and-moving-objects, cgol-ch3-oscillators, cgol-ch2-still-lifes, cgol-ch1-early-life, fantastic-combinations-of-john-conways-life, statistical-mechanics-of-cellular-automata, computation-at-the-edge-of-chaos, theory-of-cellular-automata-a-survey]
 created: 2026-09-25
 updated: 2026-09-25
 ---
@@ -19,7 +19,7 @@ diagonally from where it started.[^1] It therefore moves at c/4, the fastest pos
 diagonal speed.[^2]
 
 **In soup.** The glider is one of the objects that most often appear in the ash of random
-soups; it and the LWSS, MWSS and HWSS are the spaceships that ordinary random soups
+soups; it and the LWSS, MWSS and HWSS are by far the commonest spaceships random soups
 produce ([[soup-search](pages/soup-search.md)]).[^3] The first glider ever observed came out of
 the [[r-pentomino](pages/r-pentomino.md)] in generation 69, noticed by Richard K. Guy.[^4]
 
@@ -83,7 +83,7 @@ construction as the moving and static structures typical of the
 
 [^1]: [[fantastic-combinations-of-john-conways-life](pages/fantastic-combinations-of-john-conways-life.md)] p.5 - "After two moves it has shifted slightly and been reflected in a diagonal line. Geometers call this a 'glide reflection'; hence the figure's name. After two more moves the glider has righted itself and moved one cell diagonally down and to the right from its initial position"
 [^2]: [[fantastic-combinations-of-john-conways-life](pages/fantastic-combinations-of-john-conways-life.md)] p.5 [synthesis] - "the maximum speed diagonally is a fourth the speed of light"; the glider "glides across the field at a fourth the speed of light"
-[^3]: [[cgol-ch1-early-life](pages/cgol-ch1-early-life.md)] pp.7,28 [synthesis] - Fig. 1.6: the glider among objects that "frequently appear in the ash"; "the only spaceships that turned up were the four that we have already seen (the glider, LWSS, MWSS, and HWSS)"
+[^3]: [[cgol-ch1-early-life](pages/cgol-ch1-early-life.md)] pp.7,28 [synthesis] - Fig. 1.6: the glider among objects that "frequently appear in the ash"; "the only spaceships that turned up were the four that we have already seen (the glider, LWSS, MWSS, and HWSS)" in Okrasinski's search; [[lifewiki-catagolue](pages/lifewiki-catagolue.md)] L124-128 [synthesis] - the asymmetric census also lists the sidecar, the loafer, the Schick engine and the Coe ship, none of which turned up among Okrasinski's 4.7 × 10^11 objects
 [^4]: [[cgol-ch1-early-life](pages/cgol-ch1-early-life.md)] p.17 - the R-pentomino produces "the very first glider that was ever observed in Life in generation 69"; n.20 first noticed by Richard K. Guy
 [^5]: [[cgol-ch4-spaceships-and-moving-objects](pages/cgol-ch4-spaceships-and-moving-objects.md)] pp.84-86 [synthesis] - color "stays constant as it moves, but can change when it hits a reflector"; checkerboard definition; the Snark is "a color-preserving reflector", the twin bees shuttle color-changing; "every glider loop must make use of an even number of color-changing reflectors"; lanes, "half diagonal (or hd)", "full diagonal (or fd)"; n.5 "a glider's color can just be thought of as its lane modulo 2"; timing; relative not absolute
 [^6]: [[cgol-ch4-spaceships-and-moving-objects](pages/cgol-ch4-spaceships-and-moving-objects.md)] pp.86-87 [synthesis] - "its rearmost cell is nonetheless far enough away from the body of the glider that it can carry some tagalongs"; tagalongs do not touch the glider but "if the glider is not present, the tagalong will collapse"; "dozens of different c/4 diagonal tagalongs known"; "a sort of grammar for c/4 diagonal spaceships"

@@ -3,7 +3,7 @@ title: Moore Neighbourhood
 category: Concepts
 summary: The nine-cell neighbourhood (a cell plus its eight orthogonal and diagonal neighbours) that Moore used for tessellation structures; contains the five-cell von Neumann neighbourhood as a special case
 tags: [concept, neighbourhood, moore, lattice]
-sources: [cgol-ch1-early-life, fantastic-combinations-of-john-conways-life, machine-models-of-self-reproduction, theory-of-cellular-automata-a-survey]
+sources: [lifewiki-von-neumann-neighbourhood, lifewiki-hexagonal-neighbourhood, lifewiki-higher-range-outer-totalistic-rule, cgol-ch1-early-life, fantastic-combinations-of-john-conways-life, machine-models-of-self-reproduction, theory-of-cellular-automata-a-survey]
 created: 2026-09-24
 updated: 2026-09-25
 ---
@@ -26,7 +26,17 @@ same rule gives 3^N neighbours.[^2]
 and its four orthogonal neighbours, five cells in all
 ([[von-neumann-29-state-ca](pages/von-neumann-29-state-ca.md)]). Moore includes this as a
 special case: a rule on nine cells that ignores the four diagonal ones.[^3] Von Neumann had
-chosen four neighbours over eight to keep the rule simple.[^4]
+chosen four neighbours over eight to keep the rule simple.[^4] Whether the centre cell
+counts as part of a neighbourhood is a convention that depends on context. LifeWiki
+describes the [[von-neumann-neighbourhood](pages/von-neumann-neighbourhood.md)] as the four
+orthogonal cells, and Life-like rules count eight neighbours, while Moore and Kari include
+the centre.[^9]
+
+**Other shapes.** On the hexagonal grid the analogue is the six-cell
+[[hexagonal-neighbourhood](pages/hexagonal-neighbourhood.md)]. Higher-range rules
+([[higher-range-outer-totalistic-rule](pages/higher-range-outer-totalistic-rule.md)]) make
+the neighbourhood a free choice among Moore, von Neumann, circular, cross, star and more;
+Moore is the default there.[^10]
 
 **Radius and speed.** Because each step reads only cells at distance 1, the non-quiescent
 region can grow by at most one cell per step in each direction. This gives Moore's
@@ -50,6 +60,8 @@ this sense at all. It partitions the plane into blocks.[^8]
 
 ## Appearances in Sources
 
+- [[lifewiki-von-neumann-neighbourhood](pages/lifewiki-von-neumann-neighbourhood.md)] - the centre cell may or may not count, by context
+- [[lifewiki-higher-range-outer-totalistic-rule](pages/lifewiki-higher-range-outer-totalistic-rule.md)] - Moore as one of many HROT neighbourhoods
 - [[theory-of-cellular-automata-a-survey](pages/theory-of-cellular-automata-a-survey.md)] - von Neumann and Moore neighbourhoods in d dimensions; radius r; radius-½ and one-way CA
 - [[machine-models-of-self-reproduction](pages/machine-models-of-self-reproduction.md)] - defines the nine-cell neighbourhood for tessellation structures
 - [[tsra-part2-ch2](pages/tsra-part2-ch2.md)] - von Neumann's choice of four neighbours over eight
@@ -64,6 +76,8 @@ this sense at all. It partitions the plane into blocks.[^8]
 - [[von-neumann-29-state-ca](pages/von-neumann-29-state-ca.md)] - uses the five-cell von Neumann neighbourhood
 - [[garden-of-eden](pages/garden-of-eden.md)] - the boundary-layer counting depends on the neighbourhood radius
 - [[margolus-neighbourhood](pages/margolus-neighbourhood.md)] - a block-partition scheme, not a neighbourhood vector
+- [[von-neumann-neighbourhood](pages/von-neumann-neighbourhood.md)] - the four orthogonal neighbours it contains
+- [[hexagonal-neighbourhood](pages/hexagonal-neighbourhood.md)] - the hexagonal-grid counterpart
 - [[language-recognition-by-cellular-automata](pages/language-recognition-by-cellular-automata.md)] - one-way CA as language recognizers
 
 [^1]: [[machine-models-of-self-reproduction](pages/machine-models-of-self-reproduction.md)] p.21 [synthesis] - neighbours are all cells, including the cell itself, whose coordinates differ by at most 1; all nine cells of Fig. 2 are neighbours of X; the neighbours of a rectangular array then form a rectangle; "The exact definition of neighbor used is not too important."
@@ -74,3 +88,5 @@ this sense at all. It partitions the plane into blocks.[^8]
 [^6]: [[theory-of-cellular-automata-a-survey](pages/theory-of-cellular-automata-a-survey.md)] p.5 [synthesis] - von Neumann neighbourhood ‖y‖₁ ≤ 1 with 2d + 1 neighbours; Moore neighbourhood ‖y‖∞ ≤ 1 with 3ᵈ neighbours; radius-r CA; "Moore neighborhood is of radius 1"; radius-½ offsets with each yᵢ 0 or 1; "A one-dimensional, radius-½ CA is also called one-way, or OCA for short"; information cannot flow to the positive direction
 [^7]: [[theory-of-cellular-automata-a-survey](pages/theory-of-cellular-automata-a-survey.md)] pp.16, 24, 29 [synthesis] - XOR is "a one-dimensional radius-½ CA"; the 1D nilpotency construction uses neighbourhood (0, 1); one-way CA (OCA) in language recognition
 [^8]: [[theory-of-cellular-automata-a-survey](pages/theory-of-cellular-automata-a-survey.md)] p.18 - "Strictly speaking Margolus neighborhood is not a CA neighborhood in the sense of our definitions."
+[^9]: [[lifewiki-von-neumann-neighbourhood](pages/lifewiki-von-neumann-neighbourhood.md)] L7 - "the region of interest itself may or may not be considered part of the von Neumann neighbourhood, depending on context). For example, the von Neumann neighbourhood of a single cell consists of the four cells orthogonally touching it"
+[^10]: [[lifewiki-hexagonal-neighbourhood](pages/lifewiki-hexagonal-neighbourhood.md)] L7 [synthesis] - "the set of all cells that are adjacent to the region of interest ... on the hexagonal tiling"; [[lifewiki-higher-range-outer-totalistic-rule](pages/lifewiki-higher-range-outer-totalistic-rule.md)] L17-36 [synthesis] - "Nn specifies the extended neighborhood type and can be omitted for the Moore neighbourhood"; the neighbourhood codes

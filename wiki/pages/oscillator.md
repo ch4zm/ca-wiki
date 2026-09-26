@@ -76,6 +76,7 @@ Guns are oscillators that also emit a stream of moving objects
 - [[spaceship](pages/spaceship.md)] - periodic up to a translation
 - [[blinker](pages/blinker.md)], [[pulsar](pages/pulsar.md)], [[pentadecathlon](pages/pentadecathlon.md)] - natural examples
 - [[queen-bee](pages/queen-bee.md)], [[twin-bees](pages/twin-bees.md)] - engineered shuttles
+- [[apgsearch](pages/apgsearch.md)], [[catagolue](pages/catagolue.md)] - soup search, where many oscillators (Rob's p16, 32P21, 30P25) were first found
 
 [^1]: [[cgol-ch1-early-life](pages/cgol-ch1-early-life.md)] p.6 - "Patterns like this one, which cycle between finitely many different configurations, are called oscillators, and the configurations that they take on in individual generations are called phases"
 [^2]: [[theory-of-cellular-automata-a-survey](pages/theory-of-cellular-automata-a-survey.md)] pp.10-11 [synthesis] - oscillator defined as a finite c with Gᵏ(c) = c for some k ≥ 2

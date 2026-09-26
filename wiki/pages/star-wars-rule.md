@@ -3,7 +3,7 @@ title: Star Wars (B2/S345/C4)
 category: Rules
 summary: Mirek Wójtowicz's 1999 Generations rule B2/S345/C4 (Golly 345/2/4) - Brian's Brain's birth-on-two plus survival on 3-5 and two dying states; mostly lightspeed "photon" spaceships, cross-shaped still lifes, railroad oscillators of every period from 4 (none of period 2 or 3), abundant natural guns, and a photon logic technology with gates, an adder and a Rule 110 emulator
 tags: [rule, generations, star-wars, mirekgro, multistate, refractory, b2-s345-c4, photon]
-sources: [lifewiki-star-wars, lifewiki-list-of-generations-rules, lifewiki-generations, golly-help-generations]
+sources: [lifewiki-star-wars, lifewiki-star-trek, lifewiki-list-of-generations-rules, lifewiki-generations, golly-help-generations]
 created: 2026-09-25
 updated: 2026-09-25
 ---
@@ -22,9 +22,10 @@ March 1999.[^1]
 The two dying states count as neither live nor available for birth. Its name comes from
 behaviour resembling "deep space battle scenes". It is described as "a successful
 combination of famous Brian's Brain with a stabilizing factor": it shares
-[[brians-brain](pages/brians-brain.md)]'s birth rule and adds survival on 3-5.[^2] The
-two-state rule B2/S345, with no dying states, is a different rule, called Star
-Trek.[^3]
+[[brians-brain](pages/brians-brain.md)]'s birth rule and adds survival on 3-5.[^2] Its
+namesake counterpart is Star Trek ([[star-trek-rule](pages/star-trek-rule.md)]), the
+Life-like rule B3/S0248: the two pages point to each other, but the rules share only the
+joke in their names.[^3]
 
 **Character.** John Elliott wrote that it is "notable for the abundance, intricacy, and
 variety of its naturally-occurring glider guns". He also noted that it is "active to a
@@ -83,10 +84,11 @@ all run Star Wars, and Mirek's Cellebration holds a pattern collection.[^13]
 - [[oscillator](pages/oscillator.md)], [[spaceship](pages/spaceship.md)], [[still-life](pages/still-life.md)] - its object types
 - [[omniperiodicity](pages/omniperiodicity.md)] - railroads give every period from 4 up
 - [[rule-110](pages/rule-110.md)] - emulated in Star Wars
+- [[star-trek-rule](pages/star-trek-rule.md)] - the Life-like rule with the matching name
 
 [^1]: [[lifewiki-star-wars](pages/lifewiki-star-wars.md)] L10-18 - rulestrings "345/2/4", "B2/S345/C4", "B2/S345/G4"; "Star Wars, also known as MirekGro, is a Generations rule devised by Mirek Wójtowicz in March 1999. In this rule, a state-0 cell will become state 1 iff it has two state-1 neighbours. A state-1 cell does not change if it has 3, 4 or 5 state-1 neighbours, otherwise it will enter state 2 next tick and then state 3 before dying"
 [^2]: [[lifewiki-star-wars](pages/lifewiki-star-wars.md)] L19 - "Named after its behaviour that resembles deep space battle scenes"; [[lifewiki-list-of-generations-rules](pages/lifewiki-list-of-generations-rules.md)] L243 - "a very interesting and beautiful rule producing deep space battle scenes; a paradise for patterns' creators in the tradition of Conway Life. It's a successful combination of famous Brian's Brain with a stabilizing factor"
-[^3]: [[lifewiki-star-wars](pages/lifewiki-star-wars.md)] L16 - "This article is about the Generations rule. For the outer-totalistic rule, see OCA:Star Trek"
+[^3]: [[lifewiki-star-wars](pages/lifewiki-star-wars.md)] L16 - "This article is about the Generations rule. For the outer-totalistic rule, see OCA:Star Trek"; [[lifewiki-star-trek](pages/lifewiki-star-trek.md)] L19 - "Star Trek is a Life-like cellular automaton with rulestring B3/S0248"
 [^4]: [[lifewiki-star-wars](pages/lifewiki-star-wars.md)] L21-23 - "it is notable for the abundance, intricacy, and variety of its naturally-occurring glider guns. In general when running 'au naturel' StarWars is active to a degree almost reminiscent of Brain, with the distinction that it likes to build fixed lego-like skeletal structures. In some orbits this latter penchant reaches its zenith, and we get large universe-spanning 'shells'" — John Elliott
 [^5]: [[lifewiki-star-wars](pages/lifewiki-star-wars.md)] L57 - "Usually, abundant linear growth patterns including guns, puffers, rakes, wickstretchers and wavestretchers emerge from sufficiently large soups"
 [^6]: [[lifewiki-star-wars](pages/lifewiki-star-wars.md)] L43-44 - "Still lifes of population 5, 8, 10, 12 and above exists. The only 5-cell still life is the X-pentomino, or cross, which is a common extendable segment in larger still lifes. A group of still lifes in the shape of rectangular boxes are invincible from inside ... for a m × n plane the exterior has a bounding box of (m + 4) × (n + 4)"

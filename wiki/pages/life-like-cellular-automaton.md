@@ -1,9 +1,9 @@
 ---
 title: Life-like cellular automaton
 category: Rules
-summary: The family of 2^18 = 262,144 two-state rules on the square grid's eight-cell neighbourhood whose next state depends only on the number of live neighbours, written as B/S rulestrings (Life is B3/S23); hub for Life's sibling rules and the extensions beyond them
+summary: The family of 2^18 = 262,144 two-state rules on the square grid's eight-cell neighbourhood whose next state depends only on the number of live neighbours, written as B/S rulestrings (Life is B3/S23); a rule's lowest birth count largely fixes its character, so chaotic rules live only at B3 or B0; each rule has a black/white complement; hub for Life's sibling rules and the extensions beyond them
 tags: [rule-family, life-like, rulestring, outer-totalistic, two-state]
-sources: [lifewiki-generations, cgol-ch12-0e0p-metacell, cgol-ch1-early-life]
+sources: [lifewiki-life-like-cellular-automaton, lifewiki-rulestring, lifewiki-star-trek, lifewiki-seeds, lifewiki-generations, cgol-ch12-0e0p-metacell, cgol-ch1-early-life]
 created: 2026-09-25
 updated: 2026-09-25
 ---
@@ -26,7 +26,39 @@ grid and the eight-cell neighbourhood.[^2]
 
 **Rulestrings.** A rule is written **Bx/Sy**, where x lists the neighbour counts that
 cause birth and y the counts that allow survival. [[game-of-life](pages/game-of-life.md)]
-is **B3/S23**.[^3]
+is **B3/S23**.[^3] Golly and the RLE pattern format use this form; the fuller story of
+rule notation is on [[rulestring](pages/rulestring.md)].[^10]
+
+**Where the lowest birth count puts a rule.** Much of a rule's character follows from the
+smallest neighbour count that causes birth.[^11]
+
+| Lowest birth | Rules | Character |
+|---|---|---|
+| B1 | 2^16 | Every finite pattern grows at lightspeed in all directions; no still lifes, oscillators or spaceships, though some have replicators |
+| B2 | 2^15 | Exploding or expanding: a domino on a pattern's edge breeds a new domino on the daughter's edge. Spaceships and oscillators still exist in many |
+| B3 | 2^14 | Where chaos is possible, and where most studied rules live, Life among them |
+| B4 or higher | 2^14 | Stable: no pattern can grow past its bounding box, so no spaceships |
+| B0 with S8 | - | The vacuum fills at once; nothing stays finite |
+| B0 without S8 | 2^16 | The other home of chaotic rules |
+
+So a chaotic rule must have B3 or B0 (without S8).[^11] Johnston and Greene's balance
+argument (see **Why Life among them**, below) reads the same map from Life's side: birth
+on 2 is too explosive, and rules without birth on 3 or fewer die off too fast (own
+reasoning linking the two sources). The counts come from fixing the lowest
+birth: for B1, birth on 1 and no birth on 0, which leaves 16 of the 18 choices free,
+giving 2^16 (own reasoning). [[seeds-rule](pages/seeds-rule.md)] (B2/S) is a B2 rule whose
+patterns mostly explode even though no cell ever survives.[^18]
+
+B0 rules were long neglected because no common software could simulate an infinite
+plane that flashes on. Golly's QuickLife runs them by converting each into an equivalent
+rule that avoids simulating infinitely many live cells.[^12]
+
+**Black/white complements.** Every rule has a complementary rule that behaves identically
+with on and off swapped: birth on every N except where 8 - N is a survival count of the
+original, and survival on every N except where 8 - N is a birth count.[^13] Life's
+complement is B0123478/S01234678. Seeds' is B012345678/S01234578, and Star Trek's is
+B12357/S01234678; both follow from the formula (own reasoning check).[^14] 512 = 2^9 rules
+are their own complement, so the 262,144 rules do not quite pair off into halves.[^13]
 
 **Why Life among them.** Johnston and Greene single Life out, "special (but by no means
 unique)", on three grounds:[^4]
@@ -50,25 +82,47 @@ the 0E0P [[metacell](pages/metacell.md)].[^6]
 
 **Multistate extension.** Every Life-like rule is the two-state case of a
 [[generations-rule](pages/generations-rule.md)]. Bx/Sy/C2 is Bx/Sy, and adding dying states gives rules such as
-[[star-wars-rule](pages/star-wars-rule.md)] (B2/S345/C4) and [[brians-brain](pages/brians-brain.md)] (B2/S/C3). The two-state
-B2/S345 is a separate rule, called Star Trek.[^7]
+[[star-wars-rule](pages/star-wars-rule.md)] (B2/S345/C4) and [[brians-brain](pages/brians-brain.md)] (B2/S/C3).[^7]
+Star Wars has a two-state namesake, [[star-trek-rule](pages/star-trek-rule.md)], though the
+link is only in the name: Star Trek is the Life-like rule B3/S0248, born on 3 and
+surviving on 0, 2, 4 or 8.[^15]
 
 **Beyond Life-like rules.** Other variations change what counts as a neighbour (the
 four-cell von Neumann neighbourhood), the grid (hexagonal, triangular, 1D, 3D), or let the
 relative *positions* of live neighbours matter, not just their number. The last are
-*isotropic non-totalistic* (INT) rules.[^8]
+*isotropic non-totalistic* (INT) rules.[^8] The main generalizations:[^16]
+- [[isotropic-non-totalistic-rule](pages/isotropic-non-totalistic-rule.md)]s count
+  arrangements, written in Hensel notation.
+- [[non-isotropic-rule](pages/non-isotropic-rule.md)]s also see absolute directions,
+  written as MAP strings.
+- [[generations-rule](pages/generations-rule.md)]s add dying states.
+- [[larger-than-life](pages/larger-than-life.md)] and
+  [[higher-range-outer-totalistic-rule](pages/higher-range-outer-totalistic-rule.md)]s
+  widen the neighbourhood past distance 1.
+- Other neighbourhoods and grids: the [[von-neumann-neighbourhood](pages/von-neumann-neighbourhood.md)]
+  and [[hexagonal-neighbourhood](pages/hexagonal-neighbourhood.md)].
+
+**Narrow and loose senses.** Strictly, a Life-like rule is a two-state outer-totalistic
+rule on the range-1 Moore neighbourhood of the square grid. In everyday use "lifelike"
+also covers non-totalistic rules or anything that behaves like Life.[^17]
 
 **Soup search in other rules.** The soup-search programs TOLLCASS and apgsearch both run on
 several Life-like rules, not only B3/S23 ([[soup-search](pages/soup-search.md)]).[^9]
 
 ## Appearances in Sources
 
+- [[lifewiki-life-like-cellular-automaton](pages/lifewiki-life-like-cellular-automaton.md)] - definition, rule-space map by lowest birth count, complements, generalizations
+- [[lifewiki-star-trek](pages/lifewiki-star-trek.md)], [[lifewiki-seeds](pages/lifewiki-seeds.md)] - two members and their complements
 - [[cgol-ch12-0e0p-metacell](pages/cgol-ch12-0e0p-metacell.md)] - outer-totalistic definition, notable rules, emulation
 - [[cgol-ch1-early-life](pages/cgol-ch1-early-life.md)] - the count of Life-like rules, B/S rulestrings, why B3/S23, INT and other variants
 
 ## Related Concepts
 
 - [[generations-rule](pages/generations-rule.md)] - the multistate extension with dying states
+- [[rulestring](pages/rulestring.md)] - how rules are named
+- [[seeds-rule](pages/seeds-rule.md)], [[star-trek-rule](pages/star-trek-rule.md)] - members in the B2 and B3 regions
+- [[larger-than-life](pages/larger-than-life.md)], [[higher-range-outer-totalistic-rule](pages/higher-range-outer-totalistic-rule.md)] - higher-range generalizations
+- [[von-neumann-neighbourhood](pages/von-neumann-neighbourhood.md)], [[hexagonal-neighbourhood](pages/hexagonal-neighbourhood.md)] - other neighbourhoods
 - [[highlife](pages/highlife.md)], [[replicator](pages/replicator.md)] - a notable member and its pattern
 - [[isotropic-non-totalistic-rule](pages/isotropic-non-totalistic-rule.md)], [[non-isotropic-rule](pages/non-isotropic-rule.md)] - the larger rule families
 - [[metacell](pages/metacell.md)] - emulates any Life-like rule inside Life
@@ -83,6 +137,15 @@ several Life-like rules, not only B3/S23 ([[soup-search](pages/soup-search.md)])
 [^4]: [[cgol-ch1-early-life](pages/cgol-ch1-early-life.md)] p.4 [synthesis] - "the following three properties make Life special (but by no means unique)": simple rules (death from overcrowding and isolation); "almost any rule in which a cell is born when it has 2 live neighbors" is too chaotic, rules without birth on 3 or fewer are "too stable"; "historically it is the most well-studied rule"
 [^5]: [[cgol-ch12-0e0p-metacell](pages/cgol-ch12-0e0p-metacell.md)] pp.386-388 [synthesis] - HighLife (B36/S23) replicator; "the appropriately named replicator rule (B1357/S1357)"; B12345678/S012345678 single-cell replicator; spiral growth in B34568/S15678
 [^6]: [[cgol-ch12-0e0p-metacell](pages/cgol-ch12-0e0p-metacell.md)] pp.389,391,422 [synthesis] - 2^102 isotropic versus 2^18 outer-totalistic; 2^512 not necessarily isotropic; the OTCA metapixel "can be used to emulate any of the 2^18 different outer-totalistic (i.e., Life-like) cellular automata"
-[^7]: [[lifewiki-generations](pages/lifewiki-generations.md)] L24 - "Any outer-totalistic cellular automaton with rulestring B.../S... is equivalent to the Generations rule with rulestring B.../S.../2"; [[lifewiki-star-wars](pages/lifewiki-star-wars.md)] L16 - "For the outer-totalistic rule, see OCA:Star Trek"
+[^7]: [[lifewiki-generations](pages/lifewiki-generations.md)] L24 - "Any outer-totalistic cellular automaton with rulestring B.../S... is equivalent to the Generations rule with rulestring B.../S.../2"
 [^8]: [[cgol-ch1-early-life](pages/cgol-ch1-early-life.md)] p.5 [synthesis] - "this 4-cell neighborhood is called the von Neumann neighborhood"; "a hexagonal or triangular grid instead of a square one, or a 1D or 3D grid"; "not only the number of live neighbors matters, but also their relative positions--such rules are known as isotropic rules, or INT rules (short for 'isotropic non-totalistic')"
 [^9]: [[cgol-ch1-early-life](pages/cgol-ch1-early-life.md)] p.28 [synthesis] - TOLLCASS "also worked not just with Conway's Game of Life, but also with a handful of other Life-like cellular automata"; apgsearch "can be used with several different Life-like CA"
+[^10]: [[lifewiki-life-like-cellular-automaton](pages/lifewiki-life-like-cellular-automaton.md)] L22 - "In the notation used by Golly and in the RLE format for storing patterns, Life-like rules are expressed by rulestrings in the 'B0...8/S0...8' notation"
+[^11]: [[lifewiki-life-like-cellular-automaton](pages/lifewiki-life-like-cellular-automaton.md)] L26-30 [synthesis] - B1: "all finite patterns grow at the speed of light in all directions. No still lifes, oscillators or spaceships are possible ... Several have replicators", 65536 rules; B2: "exploding or expanding in character ... a domino at the edge of a pattern will give rise to a new domino", spaceships and oscillators exist in many, 32768 rules; B4+: "stable in character, since no patterns can ever grow beyond their initial bounding box. In particular, no spaceships can exist", 16384 rules; B0 with S8: "the vacuum is unstable and will be immediately filled"; "This leaves 16384 rules in which the lowest birth condition is 3 ... as well as 65536 rules in which the lowest birth condition is 0 ... and 8 neighbors is not a survival condition. All chaotic rules must fall in either of these two areas"; "Most well-studied examples fall in the first one"
+[^12]: [[lifewiki-life-like-cellular-automaton](pages/lifewiki-life-like-cellular-automaton.md)] L30 - "for long no commonly available software existed that could simulate the evolution of rules containing B0. Golly's QuickLife algorithm simulates them by converting them into equivalent rules to avoid having to simulate an infinite number of cells"
+[^13]: [[lifewiki-life-like-cellular-automaton](pages/lifewiki-life-like-cellular-automaton.md)] L24 - "Each rule has a complementary rule which behaves identically under on-off reversal; namely the rule in which birth occurs on all N except those for which 8 - N is a survival condition in the original rule, and survival occurs on all N except those for which 8 - N is a birth condition in the original rule. For example, the rule complementary to Conway's Life is B0123478/S01234678. This however does not quite halve the number of effectively distinct rules, as there are 512 ... self-complementary rules"
+[^14]: [[lifewiki-seeds](pages/lifewiki-seeds.md)] L18-19 - "Black/white reversal B012345678/S01234578"; [[lifewiki-star-trek](pages/lifewiki-star-trek.md)] L15-16 - "Black/white reversal B12357/S01234678"
+[^15]: [[lifewiki-star-trek](pages/lifewiki-star-trek.md)] L19 - "Star Trek is a Life-like cellular automaton with rulestring B3/S0248. Dead cells are born if they have 3 neighbours and alive cells survive if they have no, 2, 4 or 8 neighbours"; [[lifewiki-star-wars](pages/lifewiki-star-wars.md)] L16 - "This article is about the Generations rule. For the outer-totalistic rule, see OCA:Star Trek"
+[^16]: [[lifewiki-life-like-cellular-automaton](pages/lifewiki-life-like-cellular-automaton.md)] L33-36 [synthesis] - isotropic non-totalistic rules "described using Hensel notation"; non-isotropic rules "described using MAP strings"; Generations rules add states; in Larger than Life rules "the size of a cell's neighborhood is extended to include cells with a distance greater than one"
+[^17]: [[lifewiki-life-like-cellular-automaton](pages/lifewiki-life-like-cellular-automaton.md)] L38 - "a two-state non-totalistic rule, or any rule that is in some sense similar to Conway's Game of Life in behaviour, may also be referred to as life-like. However, this article follows the narrow definition, according to which a Life-like rule is a two-state outer-totalistic rule with range-1 Moore neighbourhood on the square tiling"
+[^18]: [[lifewiki-seeds](pages/lifewiki-seeds.md)] L20 - "Even though all the living cells die in every generation (turning every pattern into a phoenix), most patterns are still exploding quadratically"

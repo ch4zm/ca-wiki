@@ -58,6 +58,7 @@ from three gliders ([[object-synthesis](pages/object-synthesis.md)]).[^10]
 - [[gosper-glider-gun](pages/gosper-glider-gun.md)] - the other kind of unbounded growth
 - [[methuselah](pages/methuselah.md)] - long-lived arks strain the definition
 - [[soup-search](pages/soup-search.md)] - the searches in which switch-engine puffers are the only infinite growth seen
+- [[catagolue](pages/catagolue.md)] - the census's longest-lived symmetric soups are switch-engine pairs killed by a glider
 
 [^1]: [[cgol-ch1-early-life](pages/cgol-ch1-early-life.md)] pp.13-14 [synthesis] - "the switch engine, which is the configuration of 8 live cells"; reappears after 48 generations "in a different location and orientation"; Fig. 1.24: after 96 generations back in original orientation 8 cells northeast; "appears for the last time in generation 1 152"
 [^2]: [[cgol-ch1-early-life](pages/cgol-ch1-early-life.md)] p.16 - "the 8-cell switch engine, which takes 3 911 generations to stabilize--considerably longer than most other patterns with 8 or fewer cells"

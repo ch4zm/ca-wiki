@@ -3,7 +3,7 @@ title: Spaceship
 category: Patterns
 summary: A finite Life pattern that returns to its original phase shifted across the plane; speeds are fractions of the "speed of light" c, capped at c/4 diagonally and c/2 orthogonally with no lower limit; elementary ships reach ten orthogonal and five diagonal speeds, and engineered ones cover every rational speed below c/4 and every slope
 tags: [pattern-class, life, spaceship, speed-of-light, speed-limit, oblique, tagalong, flotilla]
-sources: [cgol-ch12-0e0p-metacell, cgol-ch4-spaceships-and-moving-objects, cgol-ch1-early-life, fantastic-combinations-of-john-conways-life, theory-of-cellular-automata-a-survey]
+sources: [lifewiki-catagolue, cgol-ch12-0e0p-metacell, cgol-ch4-spaceships-and-moving-objects, cgol-ch1-early-life, fantastic-combinations-of-john-conways-life, theory-of-cellular-automata-a-survey]
 created: 2026-09-25
 updated: 2026-09-25
 ---
@@ -39,8 +39,10 @@ c/4 diagonally or c/2 orthogonally.[^5]
 at c, so period 2 is the minimum, and period-2 spaceships exist. Adjustable designs give
 spaceships and rakes of arbitrarily large period ([[puffer](pages/puffer.md)]).[^6]
 
-**Natural spaceships.** Ordinary random soups produce the glider, LWSS, MWSS and HWSS
-([[soup-search](pages/soup-search.md)]).[^7]
+**Natural spaceships.** Random soups mostly produce the glider, LWSS, MWSS and HWSS
+([[soup-search](pages/soup-search.md)]). Rarer natural ones have turned up in the
+[[catagolue](pages/catagolue.md)] census of asymmetric soups: the sidecar, the loafer
+(period 7), the Schick engine (period 12) and the Coe ship (period 16).[^7]
 
 **Building on spaceships.**[^8]
 - A *tagalong* is an object a spaceship drags along, usually held by a spark. A
@@ -73,7 +75,8 @@ Life gained its first SMOS.[^12]
 ## Appearances in Sources
 
 - [[cgol-ch4-spaceships-and-moving-objects](pages/cgol-ch4-spaceships-and-moving-objects.md)] - the whole chapter: speed, Theorem 4.1, tagalongs and flotillae, speed and period status
-- [[cgol-ch1-early-life](pages/cgol-ch1-early-life.md)] - the four natural spaceships
+- [[cgol-ch1-early-life](pages/cgol-ch1-early-life.md)] - the four common natural spaceships
+- [[lifewiki-catagolue](pages/lifewiki-catagolue.md)] - rarer natural spaceships from asymmetric soups
 - [[fantastic-combinations-of-john-conways-life](pages/fantastic-combinations-of-john-conways-life.md)] - speed of light, the c/4 and c/2 limits
 - [[theory-of-cellular-automata-a-survey](pages/theory-of-cellular-automata-a-survey.md)] - §2.6: the translate-of-itself definition (Kari calls every such object a "glider")
 
@@ -91,7 +94,7 @@ Life gained its first SMOS.[^12]
 [^4]: [[cgol-ch4-spaceships-and-moving-objects](pages/cgol-ch4-spaceships-and-moving-objects.md)] p.109 - "If we wish to emphasize that the light, middle, and heavyweight spaceships have period 4 then we would say that they travel at 2c/4 instead of at c/2"
 [^5]: [[cgol-ch4-spaceships-and-moving-objects](pages/cgol-ch4-spaceships-and-moving-objects.md)] p.99 [synthesis] - Theorem 4.1: "The maximum diagonal and orthogonal speeds that a finite object ... can travel through empty space are c/4 and c/2"; proof via cells X, A, B, C, K, L, M, N; two diagonal lines for c/2; n.22 "originally proved by Conway himself"; "such a lower bound does not exist"; the theorem "only applies to objects travelling through a vacuum"
 [^6]: [[cgol-ch4-spaceships-and-moving-objects](pages/cgol-ch4-spaceships-and-moving-objects.md)] pp.106,109-110 [synthesis] - "a spaceship with speed c/n must have period at least n"; period 2 spaceships exist and "this period is minimal"; adjustable-period spaceships and rakes
-[^7]: [[cgol-ch1-early-life](pages/cgol-ch1-early-life.md)] pp.7-8,28 [synthesis] - glider, LWSS, MWSS, HWSS are the spaceships in ordinary soup ash
+[^7]: [[cgol-ch1-early-life](pages/cgol-ch1-early-life.md)] pp.7-8,28 [synthesis] - glider, LWSS, MWSS, HWSS are the common spaceships in soup ash, and the only ones Okrasinski's search found; [[lifewiki-catagolue](pages/lifewiki-catagolue.md)] L124-128 [synthesis] - B3/S23/C1 spaceships include the sidecar, "1 period 7 spaceship (the loafer)", "1 period 12 spaceship (the Schick engine)", "1 period 16 spaceship (the Coe ship)"
 [^8]: [[cgol-ch4-spaceships-and-moving-objects](pages/cgol-ch4-spaceships-and-moving-objects.md)] pp.86-90 [synthesis] - tagalongs; "a sort of grammar for c/4 diagonal spaceships"; pushalongs; tubstretcher creates "a single arbitrarily large object"; flotillae; pseudo spaceships; Corderships; B-heptomino puffers
 [^9]: [[cgol-ch4-spaceships-and-moving-objects](pages/cgol-ch4-spaceships-and-moving-objects.md)] pp.106-107 [synthesis] - "an elementary spaceship ... acts 'as a whole' rather than by piecing together many smaller reactions"; engineered spaceships "typically with thousands or millions of live cells"
 [^10]: [[cgol-ch4-spaceships-and-moving-objects](pages/cgol-ch4-spaceships-and-moving-objects.md)] p.107 - "oblique spaceship"; "speed is (x, y)c/n"; "oblique spaceships all have speed no greater than (2, 1)c/6 and period equal to at least 6"; Sir Robin (Goucher, March 2018)

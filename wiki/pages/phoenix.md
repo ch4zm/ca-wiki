@@ -52,6 +52,7 @@ exist at higher periods, such as a period-3 example (Jason Summers, 2012).[^7]
 
 - [[oscillator](pages/oscillator.md)] - every phoenix is one
 - [[spaceship](pages/spaceship.md)] - no phoenix can be one
+- [[catagolue](pages/catagolue.md)] - awards the "Conchita" badge for a soup containing a phoenix
 
 [^1]: [[cgol-ch3-oscillators](pages/cgol-ch3-oscillators.md)] p.75 - "the period 2 oscillator shown in Figure 3.37, which has the interesting property that all of its live cells die every generation, yet the pattern as a whole lives. A pattern with this property is called a phoenix, after the mythological bird that is cyclically reborn after dying"
 [^2]: [[cgol-ch3-oscillators](pages/cgol-ch3-oscillators.md)] p.75 [synthesis] - Theorem 3.3: "no phoenix can ever extend more than one cell outside of its original bounding box. In particular, every phoenix evolves into an oscillator"; proof via cells J, K, L, A, B, C and X; "2^(wh) different patterns"; "There's no such thing in Life as a phoenix spaceship"; n.28 proved by Stephen Silver, January 2000

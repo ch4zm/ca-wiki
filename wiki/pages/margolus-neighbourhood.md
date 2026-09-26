@@ -53,7 +53,7 @@ d + 1.[^6]
 
 - [[reversible-cellular-automaton](pages/reversible-cellular-automaton.md)] - what the scheme guarantees, and the representation theorem
 - [[conserved-quantity](pages/conserved-quantity.md)] - conservation laws built in by choosing the permutations
-- [[moore-neighbourhood](pages/moore-neighbourhood.md)] - the ordinary neighbourhoods it departs from
+- [[moore-neighbourhood](pages/moore-neighbourhood.md)], [[von-neumann-neighbourhood](pages/von-neumann-neighbourhood.md)], [[hexagonal-neighbourhood](pages/hexagonal-neighbourhood.md)] - the ordinary neighbourhoods it departs from
 - [[universal-turing-machine](pages/universal-turing-machine.md)] - the billiard-ball computer is computationally universal
 
 [^1]: [[theory-of-cellular-automata-a-survey](pages/theory-of-cellular-automata-a-survey.md)] p.18 [synthesis] - "He also introduced the technique of space partitioning as a way to ensure reversibility"; 2 × 2 blocks along odd coordinates with permutation π₁ of S⁴, then even coordinates with π₂; "This technique became known as the Margolus neighborhood."; p.19 Fig. 8: "Odd updates use the solid partitioning, even updates the dashed partitioning"; [51] N. Margolus, Physics-like models of computation, Physica D 10 (1984)

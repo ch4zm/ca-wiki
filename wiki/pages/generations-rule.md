@@ -3,7 +3,7 @@ title: Generations rule
 category: Rules
 summary: A multistate extension of Life-like rules in which a live cell that fails its survival condition does not die at once but passes through a fixed sequence of dying ("refractory") states that count as neither alive nor available for birth; written Bx/Sy/Cn (or Golly's y/x/n), with Life-like rules as the n = 2 case; Brian's Brain and Star Wars are the best known
 tags: [rule-family, generations, multistate, refractory, dying-states, rulestring, mcell]
-sources: [lifewiki-generations, lifewiki-list-of-generations-rules, golly-help-generations]
+sources: [lifewiki-generations, lifewiki-list-of-generations-rules, golly-help-generations, lifewiki-seeds, lifewiki-wireworld, lifewiki-brians-brain]
 created: 2026-09-25
 updated: 2026-09-25
 ---
@@ -56,9 +56,16 @@ with "generations" in the sense of time steps.[^3]
 toward their live edge. Refractory states make small lightspeed spaceships common. In
 Brian's Brain almost every pattern moves, and in Star Wars most spaceships travel at
 c.[^8] Several rules in the family produce spirals like those of the
-Belousov-Zhabotinsky reaction.[^7]
+Belousov-Zhabotinsky reaction.[^7] With more than two states no period-2 oscillator can
+exist, since a cell that dies needs at least one extra generation to become available
+again.[^9] Brian's Brain is [[seeds-rule](pages/seeds-rule.md)] (B2/S) with one dying
+state added, which turns Seeds' explosions into directed motion.[^10]
 
-**Extensions.**[^9]
+**Generations inside other rules.** [[wireworld](pages/wireworld.md)] contains a Generations
+rule: electron heads and tails moving through its conductor behave exactly like the
+explosive rule /12/3, with the tail as the refractory state.[^11]
+
+**Extensions.**[^12]
 - Generations rules adapt to von Neumann, hexagonal and triangular neighbourhoods, and to
   non-totalistic ([[isotropic-non-totalistic-rule](pages/isotropic-non-totalistic-rule.md)])
   and non-isotropic ([[non-isotropic-rule](pages/non-isotropic-rule.md)]) rules. With MAP
@@ -76,11 +83,15 @@ Belousov-Zhabotinsky reaction.[^7]
 - [[lifewiki-generations](pages/lifewiki-generations.md)] - definition, notation, software, extensions
 - [[lifewiki-list-of-generations-rules](pages/lifewiki-list-of-generations-rules.md)] - rule catalogue
 - [[golly-help-generations](pages/golly-help-generations.md)] - Golly's notation, neighbourhood and MAP variants
+- [[lifewiki-brians-brain](pages/lifewiki-brians-brain.md)] - no period-2 oscillators with more than two states
+- [[lifewiki-wireworld](pages/lifewiki-wireworld.md)] - WireWorld electrons as /12/3
 
 ## Related Concepts
 
 - [[life-like-cellular-automaton](pages/life-like-cellular-automaton.md)] - the n = 2 case
 - [[star-wars-rule](pages/star-wars-rule.md)], [[brians-brain](pages/brians-brain.md)] - the best-known members
+- [[seeds-rule](pages/seeds-rule.md)] - the two-state rule under Brian's Brain
+- [[wireworld](pages/wireworld.md)] - its electrons follow /12/3
 - [[spaceship](pages/spaceship.md)] - dying states make spaceships abundant
 
 [^1]: [[lifewiki-generations](pages/lifewiki-generations.md)] L6-7 - "Generations rules are a multistate generalization of Life-like cellular automata in which live cells can exist in different states, and cells that would die in a 2-state cellular automaton instead advance to the next state. The name 'Generations' is due to the conceptualization of this process as cells 'getting older' before eventually dying"
@@ -91,4 +102,7 @@ Belousov-Zhabotinsky reaction.[^7]
 [^6]: [[lifewiki-generations](pages/lifewiki-generations.md)] L25,L109-110 [synthesis] - "B0 is also possible for Generations rules, however software support is not widespread"; "Both MCell and Golly support Generations rules, the latter with a maximum of 256 states. Golly currently does not support Generations rules with B0"; LifeViewer supports non-B0 rules; "CAViewer can support Generations rules including those with B0"
 [^7]: [[lifewiki-list-of-generations-rules](pages/lifewiki-list-of-generations-rules.md)] L44-62,L110-115,L155-167,L200-205,L237-243 [synthesis] - entries for Bombers, Brian's Brain, Faders, Lava, Lines, RainZha ("The simplest 'Zhabotinsky' style cellular automaton. It spontaneously generates spirals") and Star Wars; further Zhabotinsky-reaction rules at L30,L139
 [^8]: [[lifewiki-star-wars](pages/lifewiki-star-wars.md)] L50 - "Most of the spaceships in Star Wars are at c orthogonal"; https://en.wikipedia.org/wiki/Brian%27s_Brain (2026-08-13) - "The 'dying state' cells tend to lead to directional movement, so almost every pattern in Brian's Brain is a spaceship"
-[^9]: [[lifewiki-generations](pages/lifewiki-generations.md)] L112-115 [synthesis] - adaptation to other neighbourhoods and to non-totalistic and non-isotropic rules; "Larger than Life rules extend Generations rules to larger neighbourhoods"; "Reverse Generations rules (also called 'snoitareneG' rules), in which cells take time to become alive, have been explored"; "subsets of the Extended Generations rulespace, which is supported by apgsearch"; [[golly-help-generations](pages/golly-help-generations.md)] L73 - "255*2^512 (roughly 3.42x10^156) unique rules"
+[^9]: [[lifewiki-brians-brain](pages/lifewiki-brians-brain.md)] L28 - "No period-2 oscillators exist (as in any Generations rule with more than two states)"
+[^10]: [[lifewiki-brians-brain](pages/lifewiki-brians-brain.md)] L16 - "It is similar to Seeds, but with an additional state"; [[lifewiki-seeds](pages/lifewiki-seeds.md)] L20 - "most patterns are still exploding quadratically"
+[^11]: [[lifewiki-wireworld](pages/lifewiki-wireworld.md)] L22 - "patterns composed of state 1 and state 2 cells in a pure state 3 background behave like /12/3, an explosive Generations rule"
+[^12]: [[lifewiki-generations](pages/lifewiki-generations.md)] L112-115 [synthesis] - adaptation to other neighbourhoods and to non-totalistic and non-isotropic rules; "Larger than Life rules extend Generations rules to larger neighbourhoods"; "Reverse Generations rules (also called 'snoitareneG' rules), in which cells take time to become alive, have been explored"; "subsets of the Extended Generations rulespace, which is supported by apgsearch"; [[golly-help-generations](pages/golly-help-generations.md)] L73 - "255*2^512 (roughly 3.42x10^156) unique rules"

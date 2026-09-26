@@ -1,7 +1,7 @@
 ---
 title: Overview
 tags: [overview, synthesis]
-sources: [lifewiki-generations, lifewiki-star-wars, lifewiki-list-of-generations-rules, golly-help-generations, cgol-ch12-0e0p-metacell, cgol-ch6-periodic-circuitry, cgol-ch5-glider-synthesis, cgol-ch4-spaceships-and-moving-objects, cgol-ch3-oscillators, cgol-ch2-still-lifes, conways-game-of-life-mathematics-and-construction, cgol-ch1-early-life, fantastic-combinations-of-john-conways-life, theory-of-self-reproducing-automata, tsra-editors-introduction, tsra-lecture-2, tsra-lecture-3, tsra-lecture-4, tsra-lecture-5, tsra-part2-ch1, tsra-part2-ch2, tsra-part2-ch3, tsra-part2-ch4, tsra-part2-ch5, endomorphisms-and-automorphisms-of-the-shift-dynamical-system, machine-models-of-self-reproduction, converse-of-moores-garden-of-eden-theorem, statistical-mechanics-of-cellular-automata, planetmath-garden-of-eden-theorem, computation-at-the-edge-of-chaos, theory-of-cellular-automata-a-survey, automata-universality-computation, aucm-ch12-linear-cellular-automata-and-decidability]
+sources: [lifewiki-brians-brain, lifewiki-star-trek, lifewiki-wireworld, lifewiki-seeds, lifewiki-rulestring, lifewiki-life-like-cellular-automaton, lifewiki-von-neumann-neighbourhood, lifewiki-hexagonal-neighbourhood, lifewiki-larger-than-life, lifewiki-higher-range-outer-totalistic-rule, lifewiki-higher-range-isotropic-non-totalistic-rule, lifewiki-ruleloader, lifewiki-unit-cell, lifewiki-apgsearch, lifewiki-catagolue, lifewiki-generations, lifewiki-star-wars, lifewiki-list-of-generations-rules, golly-help-generations, cgol-ch12-0e0p-metacell, cgol-ch6-periodic-circuitry, cgol-ch5-glider-synthesis, cgol-ch4-spaceships-and-moving-objects, cgol-ch3-oscillators, cgol-ch2-still-lifes, conways-game-of-life-mathematics-and-construction, cgol-ch1-early-life, fantastic-combinations-of-john-conways-life, theory-of-self-reproducing-automata, tsra-editors-introduction, tsra-lecture-2, tsra-lecture-3, tsra-lecture-4, tsra-lecture-5, tsra-part2-ch1, tsra-part2-ch2, tsra-part2-ch3, tsra-part2-ch4, tsra-part2-ch5, endomorphisms-and-automorphisms-of-the-shift-dynamical-system, machine-models-of-self-reproduction, converse-of-moores-garden-of-eden-theorem, statistical-mechanics-of-cellular-automata, planetmath-garden-of-eden-theorem, computation-at-the-edge-of-chaos, theory-of-cellular-automata-a-survey, automata-universality-computation, aucm-ch12-linear-cellular-automata-and-decidability]
 updated: 2026-09-25
 ---
 
@@ -39,7 +39,19 @@ looping oscillators and spaceships made of spaceships in isotropic rules, and si
 spaceships in non-isotropic ones. [[generations-rule](pages/generations-rule.md)]s add dying ("refractory") states: a live cell that fails to survive ages through states that neither count as live nor allow birth, which makes small lightspeed spaceships abundant. [[brians-brain](pages/brians-brain.md)] (B2/S/C3) is almost all motion; [[star-wars-rule](pages/star-wars-rule.md)] (B2/S345/C4) adds survival, and gains still lifes, oscillators of every period from 4, guns and a photon logic technology able to emulate Rule 110. Life can host all of them. A [[metacell](pages/metacell.md)] is a Life
 pattern that acts as one cell of another rule; the 0E0P metacell runs any two-state Moore
 rule where empty stays empty, by emulating an 8-state von Neumann rule and building its
-own neighbours.
+own neighbours. Rule 110 unit cells are the standard way to prove a rule universal, which is how
+[[seeds-rule](pages/seeds-rule.md)] (B2/S), where every pattern is a phoenix, and Brian's Brain were both shown
+Turing-complete. [[wireworld](pages/wireworld.md)] confines all activity to fixed wires and runs a whole computer that prints
+the primes; [[star-trek-rule](pages/star-trek-rule.md)] (B3/S0248) shares only a name with Star Wars.
+
+**Writing and widening rules.** A [[rulestring](pages/rulestring.md)] names a rule (B3/S23, /C for Generations, V and H
+suffixes for the [[von-neumann-neighbourhood](pages/von-neumann-neighbourhood.md)] and [[hexagonal-neighbourhood](pages/hexagonal-neighbourhood.md)]). A Life-like rule's lowest birth count
+largely fixes its character: B1 fills the plane at lightspeed, B2 explodes, under B4 and up no pattern leaves its bounding box,
+so chaos lives at B3 or B0. [[larger-than-life](pages/larger-than-life.md)] and [[higher-range-outer-totalistic-rule](pages/higher-range-outer-totalistic-rule.md)]s count
+neighbours out to range 500, and Golly's [[ruleloader](pages/ruleloader.md)] runs any rule written as a table or tree.
+
+**The census.** [[apgsearch](pages/apgsearch.md)] evolves random soups by the trillion and uploads what they leave to
+[[catagolue](pages/catagolue.md)], a peer-reviewed natural history of Life and some twenty thousand other rules.
 
 **Foundations.** Two logical ingredients underlie everything: networks of idealized
 threshold elements ([[mcculloch-pitts-neuron](pages/mcculloch-pitts-neuron.md)]) and Turing's

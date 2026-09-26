@@ -58,6 +58,9 @@ except the knightship, whose rule gives birth on empty neighbourhoods.[^5]
 - [[elementary-cellular-automaton](pages/elementary-cellular-automaton.md)] - the one-dimensional special case
 - [[metacell](pages/metacell.md)] - emulates these rules inside Life
 - [[moore-neighbourhood](pages/moore-neighbourhood.md)] - the neighbourhood the family is defined on
+- [[von-neumann-neighbourhood](pages/von-neumann-neighbourhood.md)], [[hexagonal-neighbourhood](pages/hexagonal-neighbourhood.md)] - smaller neighbourhoods with shorter MAP strings
+- [[rulestring](pages/rulestring.md)] - MAP strings among the other rule notations
+- [[ruleloader](pages/ruleloader.md)] - Golly's rule-table route for rules without a compact notation
 
 [^1]: [[cgol-ch12-0e0p-metacell](pages/cgol-ch12-0e0p-metacell.md)] p.391 - "There are 2^512 different 2D not necessarily isotropic cellular automata"
 [^2]: [[cgol-ch12-0e0p-metacell](pages/cgol-ch12-0e0p-metacell.md)] Appendix B.7, pp.446-448 [synthesis] - "list what happens to the central cell in each of the 2^9 = 512 different possible configurations"; Fig. B.4 weights 256, 128, 64, 32, 16, 8, 4, 2, 1; 512-bit string; Table B.4 base-64 encoding; "a ⌈512/6⌉ = 86-character string"; "prepend this base-64 string with the characters 'MAP'"; n.7 "created by Chris Rowett"; hexagonal 22 characters, von Neumann 6 characters

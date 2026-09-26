@@ -97,6 +97,7 @@ Packing limits are on [[still-life-density](pages/still-life-density.md)].
 - [[still-life-density](pages/still-life-density.md)] - how densely they can pack
 - [[block](pages/block.md)], [[beehive](pages/beehive.md)] - examples
 - [[familiar-fours](pages/familiar-fours.md)] - stable groups of four
+- [[catagolue](pages/catagolue.md)] - the soup census that shows which still lifes arise naturally, and how rarely the large ones do
 
 [^1]: [[cgol-ch1-early-life](pages/cgol-ch1-early-life.md)] p.4 - "A pattern like this that remains unchanged from one generation to the next is called a still life"
 [^2]: [[theory-of-cellular-automata-a-survey](pages/theory-of-cellular-automata-a-survey.md)] pp.10-11 [synthesis] - still life defined as a finite configuration c with G(c) = c

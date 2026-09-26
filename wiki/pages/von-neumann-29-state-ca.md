@@ -5,7 +5,7 @@ summary: The first cellular automaton designed for universal construction and se
 tags: [rule, von-neumann, 29-state, self-reproduction, universal-construction]
 sources: [tsra-part2-ch2, tsra-part2-ch1, tsra-part2-ch3, tsra-part2-ch4, tsra-part2-ch5, computation-at-the-edge-of-chaos]
 created: 2026-09-24
-updated: 2026-09-24
+updated: 2026-09-25
 ---
 
 # Von Neumann's 29-State Cellular Automaton
@@ -16,7 +16,7 @@ Von Neumann's 29-state rule is the [[cellular-automaton](pages/cellular-automato
 which he designed a [[universal-constructor](pages/universal-constructor.md)] and a
 self-reproducing machine. It runs on an infinite square lattice. Each cell updates from its
 own state and those of its four orthogonal neighbours; this five-cell neighbourhood is now
-called the *von Neumann neighbourhood*, in contrast to the nine-cell
+called the *von Neumann neighbourhood* ([[von-neumann-neighbourhood](pages/von-neumann-neighbourhood.md)]), in contrast to the nine-cell
 [[moore-neighbourhood](pages/moore-neighbourhood.md)]. Every cell starts blank except for a finite initial
 pattern.[^1]
 
@@ -107,6 +107,7 @@ are assembled into an unbounded [[cellular-tape](pages/cellular-tape.md)] with i
 - [[signal-coding-organs](pages/signal-coding-organs.md)] — pulsers, decoders, flip-flops
 - [[coded-channel](pages/coded-channel.md)] — wire-crossing by coding
 - [[cellular-automaton](pages/cellular-automaton.md)] — the general model
+- [[von-neumann-neighbourhood](pages/von-neumann-neighbourhood.md)] - the four-neighbour neighbourhood named after it
 - [[construction-arm](pages/construction-arm.md)] — the construction technique the rule supports
 - [[universal-constructor](pages/universal-constructor.md)] — designed in this rule
 - [[mcculloch-pitts-neuron](pages/mcculloch-pitts-neuron.md)] — transmission and confluent cells realize neuron-like logic

@@ -56,6 +56,7 @@ can, though they may need many more gliders.[^2]
 - [[object-synthesis](pages/object-synthesis.md)] - what slow salvos emulate
 - [[block](pages/block.md)] - the usual seed
 - [[reflector](pages/reflector.md)] - a permanent turner, unlike a one-time turner
+- [[catagolue](pages/catagolue.md)] - a pseudo-symmetry there records what slow salvos build
 
 [^1]: [[cgol-ch5-glider-synthesis](pages/cgol-ch5-glider-synthesis.md)] p.136 [synthesis] - slow salvos "are slow: only one glider interacts in the synthesis at a time, and ... form a salvo: all of the gliders come from the same direction"; "another object (called a seed) for it to crash into ... it is typical to use a block"; p1 and p2 slow salvos
 [^2]: [[cgol-ch5-glider-synthesis](pages/cgol-ch5-glider-synthesis.md)] p.136 - "if we can synthesize an object with gliders at all then we can synthesize it with a p2 slow salvo"; n.10 "the slow salvo might contain considerably more gliders"

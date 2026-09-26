@@ -8,7 +8,7 @@ time; entries here are working references, not checked bibliography.
 - [x] Gardner, M. (1970). Mathematical games: The fantastic combinations of John Conway's new solitaire game "life." *Scientific American, 223*(4), 120–123. https://doi.org/10.1038/scientificamerican1070-120
 - [ ] Berlekamp, E. R., Conway, J. H., & Guy, R. K. (1982). *Winning ways for your mathematical plays: Vol. 2. Games in particular*. Academic Press. (Ch. 25, "What Is Life?")
 - [ ] Johnston, N., & Greene, D. (2022). *Conway's Game of Life: Mathematics and construction*. (Free PDF, https://conwaylife.com/book/) Chapter by chapter.
-- [ ] LifeWiki rule pages (https://conwaylife.com/wiki/): [x] Generations, [x] Star Wars, [x] List of Generations rules; still to do: Life-like cellular automaton, Rulestring, Brian's Brain, HighLife, Day & Night, Seeds, Isotropic non-totalistic rule, Larger than Life
+- [ ] LifeWiki rule pages (https://conwaylife.com/wiki/): [x] Generations, [x] Star Wars, [x] List of Generations rules, [x] Life-like cellular automaton, [x] Rulestring, [x] Brian's Brain, [x] Seeds, [x] Star Trek, [x] WireWorld, [x] Larger than Life, [x] Higher-range outer-totalistic rule, [x] Higher-range isotropic non-totalistic rule, [x] von Neumann neighbourhood, [x] Hexagonal neighbourhood, [x] Unit cell, [x] RuleLoader; still to do: HighLife, Day & Night, Isotropic non-totalistic rule
 - [ ] Golly help documentation (https://golly.sourceforge.io/Help/): [x] Generations algorithm; still to do: rule formats, RuleLoader / rule tables, QuickLife vs. HashLife
 - [ ] Gosper, R. W. (1984). Exploiting regularities in large cellular spaces. *Physica D: Nonlinear Phenomena, 10*(1–2), 75–80. (HashLife)
 - [ ] Adamatzky, A. (Ed.). (2010). *Game of Life cellular automata*. Springer. Chapter-picked; start with Eppstein, "Growth and decay in Life-like cellular automata."
@@ -22,5 +22,5 @@ time; entries here are working references, not checked bibliography.
 - [ ] Bak, P., Chen, K., & Creutz, M. (1989). Self-organized criticality in the "Game of Life." *Nature, 342*, 780–782.
 - [ ] Magnier, M., Lattaud, C., & Heudin, J.-C. (1997). Complexity classes in the two-dimensional Life cellular automata space. *Complex Systems, 11*(6).
 - [ ] Wójtowicz, M. *Mirek's Cellebration* rule lexicon, Generations family (source of Star Wars and many named Generations rules).
-- [ ] Catagolue and apgsearch documentation (https://catagolue.hatsya.com/): random-soup census methodology.
+- [ ] Catagolue and apgsearch documentation (https://catagolue.hatsya.com/): random-soup census methodology. [x] LifeWiki apgsearch and Catagolue articles.
 - [ ] Rendell, P. (2002). Turing universality of the Game of Life. In A. Adamatzky (Ed.), *Collision-based computing*. Springer.
