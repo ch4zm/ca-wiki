@@ -3,7 +3,7 @@ title: Spaceship
 category: Patterns
 summary: A finite Life pattern that returns to its original phase shifted across the plane; speeds are fractions of the "speed of light" c, capped at c/4 diagonally and c/2 orthogonally with no lower limit; elementary ships reach ten orthogonal and five diagonal speeds, and engineered ones cover every rational speed below c/4 and every slope
 tags: [pattern-class, life, spaceship, speed-of-light, speed-limit, oblique, tagalong, flotilla]
-sources: [cgol-ch4-spaceships-and-moving-objects, cgol-ch1-early-life, fantastic-combinations-of-john-conways-life, theory-of-cellular-automata-a-survey]
+sources: [cgol-ch12-0e0p-metacell, cgol-ch4-spaceships-and-moving-objects, cgol-ch1-early-life, fantastic-combinations-of-john-conways-life, theory-of-cellular-automata-a-survey]
 created: 2026-09-25
 updated: 2026-09-25
 ---
@@ -66,6 +66,10 @@ is at most (2, 1)c/6.[^10]
 
 The walrus, found in 2023, is the first elementary c/8 diagonal spaceship.[^11]
 
+**Spaceships made of spaceships.** A *SMOS* works by colliding other spaceships. Elementary
+ones exist in [[isotropic-non-totalistic-rule](pages/isotropic-non-totalistic-rule.md)]s, and via the 0E0P [[metacell](pages/metacell.md)]
+Life gained its first SMOS.[^12]
+
 ## Appearances in Sources
 
 - [[cgol-ch4-spaceships-and-moving-objects](pages/cgol-ch4-spaceships-and-moving-objects.md)] - the whole chapter: speed, Theorem 4.1, tagalongs and flotillae, speed and period status
@@ -92,3 +96,4 @@ The walrus, found in 2023, is the first elementary c/8 diagonal spaceship.[^11]
 [^9]: [[cgol-ch4-spaceships-and-moving-objects](pages/cgol-ch4-spaceships-and-moving-objects.md)] pp.106-107 [synthesis] - "an elementary spaceship ... acts 'as a whole' rather than by piecing together many smaller reactions"; engineered spaceships "typically with thousands or millions of live cells"
 [^10]: [[cgol-ch4-spaceships-and-moving-objects](pages/cgol-ch4-spaceships-and-moving-objects.md)] p.107 - "oblique spaceship"; "speed is (x, y)c/n"; "oblique spaceships all have speed no greater than (2, 1)c/6 and period equal to at least 6"; Sir Robin (Goucher, March 2018)
 [^11]: [[cgol-ch4-spaceships-and-moving-objects](pages/cgol-ch4-spaceships-and-moving-objects.md)] pp.106-108, Figs. 4.47-4.48 and Table 4.1 [synthesis] - elementary orthogonal and diagonal speeds; engineered caterpillar, silverfish, caterloopillar, Demonoid, waterbear, Geminoid; https://conwaylife.com/wiki/Spaceship (2024-09-11) - "In 2023, the first elementary c/8 diagonal spaceship was found: the walrus"
+[^12]: [[cgol-ch12-0e0p-metacell](pages/cgol-ch12-0e0p-metacell.md)] pp.389-391 [synthesis] - "a spaceship made of spaceships (or SMOS for short): a spaceship that works by colliding two or more other spaceships"; examples in an isotropic rule; "this method gave the first explicit construction of a spaceship made of spaceships in Life"

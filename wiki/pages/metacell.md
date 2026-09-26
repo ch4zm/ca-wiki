@@ -1,0 +1,103 @@
+---
+title: Metacell
+category: Patterns
+summary: A large Life pattern that behaves as a single cell of some cellular automaton, so tiled copies emulate that rule at a huge scale - the p5760 metacell (Life only), the OTCA metapixel (any Life-like rule), the p1 megacell (any 2-state Moore rule) and the self-constructing 0E0P metacell (any such rule where empty stays empty, with empty space as its off state)
+tags: [pattern-class, life, metacell, 0e0p, otca-metapixel, rule-emulation, universal-construction, self-reproduction]
+sources: [cgol-ch12-0e0p-metacell]
+created: 2026-09-25
+updated: 2026-09-25
+---
+
+# Metacell
+
+## Description
+
+A *metacell* is a pattern larger than 1 × 1 that emulates the behaviour of a single
+cell. Arranged in the shape of any pattern, copies of it evolve at a zoomed-out scale
+the way that pattern would.[^1] A metacell that can be programmed with a rule makes Life a
+host for other [[cellular-automaton](pages/cellular-automaton.md)]s: patterns from those
+rules can be "meta-fied" into Life patterns. Scripts such as isotropic_metafier.py and
+Golly's metafier.lua do this automatically.[^2]
+
+**Lineage.**[^3]
+
+| Metacell | Builder, year | Size | Period | Emulates | Needs dead-cell background? |
+|---|---|---|---|---|---|
+| p5760 metacell | David Bell, 1996 | 500 × 500 | 5,760 | Life only | yes |
+| OTCA metapixel | Brice Due, 2005-2006 | 2048 × 2048 | 35,328 | any of 2^18 Life-like rules | yes |
+| p1 megacell | Adam P. Goucher, 2008 | 2^15 × 2^15 | 2^24 | all 2^512 two-state Moore rules | yes |
+| 0E0P metacell | Adam P. Goucher, 2014-2018 | 2^18 × 2^18 | 2^36 per generation | the 2^511 zero-preserving two-state Moore rules | no |
+
+- **p5760.** It is hard-wired to Life. Its state is a single glider, hard to see from far
+  away. Dead metacells must fill the plane, so a spaceship would need infinitely many.
+- **OTCA metapixel.** Named for "Outer-Totalistic Cellular Automata". Its rule is set by an
+  array of eaters on one edge. Live metapixels fill with streams of lightweight spaceships,
+  so from a distance they *look* alive; a 1 × 3 row makes a blinker 2,048 times larger and
+  35,328 times slower. It is built almost entirely from period-46 circuitry.
+- **p1 megacell.** Built from stable parts, plus one timing gun whose power-of-two period
+  helps HashLife. Up to 512 eaters encode which neighbourhoods give birth. It can even run
+  rules where an empty neighbourhood gives birth, if the plane is tiled with dead
+  megacells.
+- **0E0P.** "State 0 Encoded by 0 Population": a dead cell is empty space. It builds its
+  neighbours by universal construction, made possible by single-channel glider synthesis
+  (2017).
+
+**The 0E0P's key trick.** It never emulates a Moore-neighbourhood rule directly. Doing so
+would mean building up to eight neighbours around live ones, with circuitry reused
+across many generations.[^4]
+- Instead it runs an **8-state von Neumann-neighbourhood rule in which every cell dies
+  every generation**, so every pattern is a [[phoenix](pages/phoenix.md)]. Patterns
+  alternate between the two colours of a checkerboard, so a metacell's four diagonal
+  neighbours are always empty, leaving room to build.
+- Any two-state Moore rule M maps into such a rule at half speed. States 0 and 7 are dead
+  and alive in even generations; states 1-6 are helper states in odd generations.
+- A fixed table sends each 2 × 2 block of 0s and 7s to a helper state. Because that map is
+  one-to-one, the odd-to-even step can recover each 3 × 3 neighbourhood and apply M.
+- Emulated at a 45-degree angle, one generation of the 8-state rule takes 2^35
+  generations, so one generation of M takes 2^36.
+
+**Anatomy and lifecycle of the 0E0P.**[^5]
+- **Shell.** Four symmetric spiral arms that take in a construction recipe from any side.
+  Only one arm is used; symmetry ensures a child is built in the same orientation whichever
+  parent builds it.
+- **Kernel.** Routing to four construction arms and recipe outputs, a control clock gun
+  firing every 2^29 generations, and logic that computes the new state from a lookup table.
+- **Nucleus.** A boustrophedonic glider loop of period 2^29 holding about 3.6 million
+  gliders: a complete single-channel construction recipe for the metacell, plus the
+  lookup table for the emulated rule. Its walls hold 2 × 1,024 two-Snark reflectors, built
+  by two temporary "subroutine loops" that each repeat one reflector recipe 256 times.
+- **Lifecycle.** 64 stages of 2^29 generations:
+  - build the four diagonal neighbours and fill their nuclei;
+  - empty its own nucleus;
+  - send its state as 0 or 2-8 gliders, which the children store as missing blocks;
+  - self-destruct.
+- **Children.** Each child reads its state from the lookup table by delaying a clock gun
+  by an amount set by the parents' states. A child in state 0 then dies early; the rest
+  wait, "looking like a cell", before becoming parents.
+
+The 0E0P was deliberately left unoptimized; its authors estimate that removing the waiting
+stages alone would make it run four times faster.[^6] At 18.6 million cells it was, when
+completed in 2018, the largest interesting Life pattern by population. Simulating a
+metaglider through four metagenerations would take years with HashLife and months with
+Goucher's StreamLife algorithm.[^7]
+
+## Appearances in Sources
+
+- [[cgol-ch12-0e0p-metacell](pages/cgol-ch12-0e0p-metacell.md)] - the whole chapter
+- [[cgol-ch4-spaceships-and-moving-objects](pages/cgol-ch4-spaceships-and-moving-objects.md)] - the 0E0P's population compared with the caterpillar
+
+## Related Concepts
+
+- [[life-like-cellular-automaton](pages/life-like-cellular-automaton.md)], [[isotropic-non-totalistic-rule](pages/isotropic-non-totalistic-rule.md)], [[non-isotropic-rule](pages/non-isotropic-rule.md)] - the rule families it can emulate
+- [[replicator](pages/replicator.md)] - HighLife's replicator, meta-fied into Life
+- [[universal-constructor](pages/universal-constructor.md)], [[self-reproduction](pages/self-reproduction.md)] - the 0E0P builds copies of itself
+- [[reverse-caber-tosser](pages/reverse-caber-tosser.md)] - another single-channel construction
+- [[phoenix](pages/phoenix.md)] - every pattern of the emulated 8-state rule is one
+
+[^1]: [[cgol-ch12-0e0p-metacell](pages/cgol-ch12-0e0p-metacell.md)] pp.385,422 [synthesis] - "metacells--patterns of size larger than 1 × 1 that emulate the behavior of a single cell"; "if we arrange copies of it on the Life plane then, at a zoomed-out macroscopic scale, it evolves in the same way that the corresponding arrangement of cells would evolve"
+[^2]: [[cgol-ch12-0e0p-metacell](pages/cgol-ch12-0e0p-metacell.md)] pp.386-387,423 [synthesis] - "any pattern from one of those other cellular automata can be straightforwardly 'imported' into Life simply by meta-fying it"; n.3 slsparse's isotropic_metafier.py; n.35 Golly's metafier.lua
+[^3]: [[cgol-ch12-0e0p-metacell](pages/cgol-ch12-0e0p-metacell.md)] §12.9, pp.422-424 [synthesis] - p5760 metacell (Bell, January 1996, 500 × 500, period 5 760; hard-wired to Life, single-glider state, needs a dead background); OTCA metapixel (Due, 2005-2006, 2048 × 2048, period 35 328, any of 2^18 outer-totalistic rules, eater array, LWSS streams look alive, metablinker, mostly p46 circuitry); p1 megacell (Goucher, 2008, 2^15 × 2^15, period 2^24, stable components plus one gun, all 2^512 rules via up to 512 eaters, n.37 can emulate all-dead-births with a tiled background); 0E0P (Goucher, 2014-2018) needs no background; "the advent of single-channel glider synthesis in 2017 provided the key breakthrough"
+[^4]: [[cgol-ch12-0e0p-metacell](pages/cgol-ch12-0e0p-metacell.md)] §12.2, pp.391-393 [synthesis] - quantity of neighbours and survival problems; "an 8-state von-Neumann-neighborhood CA in which every cell dies in every generation"; n.13 "every pattern is a phoenix"; checkerboard keeps diagonal neighbours dead; states 0 and 7 for dead and alive, 1-6 as helpers; Equation (12.2) transition table; the map from {0,7}^9 to {0,...,6}^4 is injective; "It takes 2^35 generations ... and therefore 2^36 generations to emulate one generation of the corresponding 2-state Moore-neighborhood rule"; can run the 8^8 − 1 zero-preserving 8-state rules of this type
+[^5]: [[cgol-ch12-0e0p-metacell](pages/cgol-ch12-0e0p-metacell.md)] §§12.3-12.8, pp.393-421 [synthesis] - shell, kernel and nucleus; control clock gun "sends out a single glider every 2^29 generations"; nucleus "a massive boustrophedonic loop that houses roughly 3.6 million gliders" with walls of 2^10 two-Snark reflectors each; subroutine loops CN and CE repeated 256 times; 64 stages of 2^29 generations; state sent "via a sequence of 0 or 2–8 gliders"; lookup table of 8^4 − 1 = 4 095 chunks; state-0 children self-destruct early
+[^6]: [[cgol-ch12-0e0p-metacell](pages/cgol-ch12-0e0p-metacell.md)] pp.406,408 [synthesis] - n.28 "it could be modified to run 4 times as quickly by removing this wait time"; "The 0E0P metacell could be reduced in size and made to run several times faster with these kinds of optimizations"
+[^7]: [[cgol-ch12-0e0p-metacell](pages/cgol-ch12-0e0p-metacell.md)] p.385 [synthesis] - evolving the metaglider through four metagenerations "would take a couple of years on a modern desktop computer via standard Life simulation algorithms"; n.2 HashLife; Goucher's StreamLife "would require several months"; [[cgol-ch4-spaceships-and-moving-objects](pages/cgol-ch4-spaceships-and-moving-objects.md)] p.112 - the caterpillar "was the largest interesting Life pattern by live cell count until being surpassed in 2018 by the 0E0P metacell with 18.6 million live cells"

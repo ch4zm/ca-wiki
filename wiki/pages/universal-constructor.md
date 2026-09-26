@@ -3,7 +3,7 @@ title: Universal Constructor
 category: Concepts
 summary: Von Neumann's automaton that builds any automaton from its description; combined with a description copier and a controller it yields self-reproduction via A + B + C + φ(A + B + C)
 tags: [concept, universal-constructor, self-reproduction, von-neumann]
-sources: [tsra-lecture-5, tsra-part2-ch1, tsra-part2-ch2, tsra-part2-ch4, tsra-part2-ch5]
+sources: [cgol-ch12-0e0p-metacell, tsra-lecture-5, tsra-part2-ch1, tsra-part2-ch2, tsra-part2-ch4, tsra-part2-ch5]
 created: 2026-09-24
 updated: 2026-09-25
 ---
@@ -105,6 +105,7 @@ offspring can also compute.[^13]
 
 ## Related Concepts
 
+- [[metacell](pages/metacell.md)] - the 0E0P metacell uses universal construction to build its neighbours in Life
 - [[initially-quiescent-automaton](pages/initially-quiescent-automaton.md)] — the class it is universal for
 - [[cellular-tape](pages/cellular-tape.md)] — how the description tape is read and written
 - [[signal-coding-organs](pages/signal-coding-organs.md)] — the components its control is built from

@@ -3,7 +3,7 @@ title: Phoenix
 category: Patterns
 summary: A Life pattern in which every live cell dies each generation yet the pattern lives on; every phoenix stays within one cell of its starting bounding box and so is an oscillator (no phoenix spaceships), period-2 phoenices exist, and none exist with period 3 or 5
 tags: [pattern-class, life, phoenix, oscillator, theorem]
-sources: [cgol-ch3-oscillators]
+sources: [cgol-ch12-0e0p-metacell, cgol-ch3-oscillators]
 created: 2026-09-25
 updated: 2026-09-25
 ---
@@ -37,8 +37,12 @@ here is a standard tool; it also bounds spaceship speeds.[^4]
 - No phoenix of period 3 or more has been found, and little else is known for period 4
   and above.
 
+A whole rule can be phoenix-only: in the 8-state von Neumann rule that the 0E0P
+[[metacell](pages/metacell.md)] runs, every cell dies every generation, so every pattern is a
+phoenix.[^6]
+
 Oscillators in which every cell oscillates (no *stator*) without being phoenices do
-exist at higher periods, such as a period-3 example (Jason Summers, 2012).[^6]
+exist at higher periods, such as a period-3 example (Jason Summers, 2012).[^7]
 
 ## Appearances in Sources
 
@@ -54,4 +58,5 @@ exist at higher periods, such as a period-3 example (Jason Summers, 2012).[^6]
 [^3]: [[cgol-ch3-oscillators](pages/cgol-ch3-oscillators.md)] p.82, Ex. 3.30 - asks for "a phoenix that does in fact leave its original bounding box", showing the bound cannot be tightened to zero
 [^4]: [[cgol-ch3-oscillators](pages/cgol-ch3-oscillators.md)] p.76 - "to prove that a pattern with a certain property does not exist, consider what happens to the pattern at one of its far edges ... we will use it again in Section 4.5 to find bounds on how fast spaceships can travel"
 [^5]: [[cgol-ch3-oscillators](pages/cgol-ch3-oscillators.md)] pp.76-77 [synthesis] - "to date no one has found any phoenices with period 3 or higher"; Theorem 3.4 (No Phoenices with Period 3) with proof via cells A, J, K, L, M, X, Y; "A computer-assisted proof has also been used to show that no phoenices of period 5 exist" (n.30 Alex Greason, September 2019); "essentially nothing else is known ... with period 4 or greater"
-[^6]: [[cgol-ch3-oscillators](pages/cgol-ch3-oscillators.md)] p.77 - "every cell in the period 3 oscillator displayed in Figure 3.41 oscillates, even though it is not a phoenix" (Fig. 3.41: found by Jason Summers in August 2012)
+[^6]: [[cgol-ch12-0e0p-metacell](pages/cgol-ch12-0e0p-metacell.md)] p.392, n.13 - the metacell emulates "an 8-state von-Neumann-neighborhood CA in which every cell dies in every generation"; "In other words, every pattern is a phoenix in these cellular automata"
+[^7]: [[cgol-ch3-oscillators](pages/cgol-ch3-oscillators.md)] p.77 - "every cell in the period 3 oscillator displayed in Figure 3.41 oscillates, even though it is not a phoenix" (Fig. 3.41: found by Jason Summers in August 2012)

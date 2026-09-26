@@ -3,7 +3,7 @@ title: Elementary Cellular Automaton
 category: Concepts
 summary: Wolfram's name for the simplest nontrivial cellular automata - a line of two-state cells, each updated from itself and its two nearest neighbours; 256 rules named by their 8-bit rule tables, 32 of them "legal"
 tags: [concept, elementary-ca, wolfram, rule-numbering, one-dimensional]
-sources: [statistical-mechanics-of-cellular-automata, computation-at-the-edge-of-chaos, theory-of-cellular-automata-a-survey]
+sources: [cgol-ch12-0e0p-metacell, statistical-mechanics-of-cellular-automata, computation-at-the-edge-of-chaos, theory-of-cellular-automata-a-survey]
 created: 2026-09-24
 updated: 2026-09-25
 ---
@@ -96,6 +96,12 @@ the 1983 judgement above for the elementary family as a whole. Whether class-4 r
 universal is open.[^15] (Own reasoning: rule 110 maps 100 to 0 and 001 to 1, so it is
 outside the 32 legal rules the 1983 judgement was about.)
 
+
+**As 2D rules.** Every elementary rule is a special case of a two-dimensional
+[[non-isotropic-rule](pages/non-isotropic-rule.md)]: let all cells survive and allow births only directly below live
+cells, and each row evolves from the one above by the 1D rule. A single cell under the
+embedded rule 18 draws a Sierpiński triangle.[^16]
+
 ## Appearances in Sources
 
 - [[computation-at-the-edge-of-chaos](pages/computation-at-the-edge-of-chaos.md)] - why λ works poorly for elementary rules
@@ -104,6 +110,7 @@ outside the 32 legal rules the 1983 judgement was about.)
 
 ## Related Concepts
 
+- [[non-isotropic-rule](pages/non-isotropic-rule.md)] - embeds every elementary rule in 2D
 - [[lambda-parameter](pages/lambda-parameter.md)] - discriminates poorly in this small rule space
 - [[cellular-automaton](pages/cellular-automaton.md)] — the general notion
 - [[additive-cellular-automaton](pages/additive-cellular-automaton.md)] — the exactly solvable subfamily
@@ -132,3 +139,4 @@ outside the 32 legal rules the 1983 judgement was about.)
 [^13]: [[computation-at-the-edge-of-chaos](pages/computation-at-the-edge-of-chaos.md)] p.15 [synthesis] - Sec. 2.4: "for a 1D CA with K = 2, and N = 3, λ is only roughly correlated with dynamical behavior. This may explain why the relationships reported here were not observed in earlier work on classifying CA dynamics"
 [^14]: [[theory-of-cellular-automata-a-survey](pages/theory-of-cellular-automata-a-survey.md)] p.8 [synthesis] - 2⁸ = 256 elementary CA; "the number of essentially different elementary rules is smaller, only 88"; Wolfram's naming scheme "has since become standard"; "called the Wolfram number of the CA"
 [^15]: [[theory-of-cellular-automata-a-survey](pages/theory-of-cellular-automata-a-survey.md)] pp.8, 11-12 [synthesis] - Wolfram classes (W1)-(W4) from [74]; Wolfram conjectured in the 1980s that rule 110 is universal [74], "Recently this result was established by him and Cook [76]"; Theorem 2; Open problem 1: rule 54, "another elementary CA that is in Wolfram class 4"
+[^16]: [[cgol-ch12-0e0p-metacell](pages/cgol-ch12-0e0p-metacell.md)] p.391 - "if we restrict non-isotropic cellular automata to a single dimension (e.g., by having every cell survive and having births only occur to the south of live cells ...) then we get exactly what are called elementary cellular automata ... the Sierpiński-triangle-generating rule works by emulating the one called Rule 18"

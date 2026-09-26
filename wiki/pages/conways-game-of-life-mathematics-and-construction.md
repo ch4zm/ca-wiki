@@ -49,7 +49,7 @@ The wiki covers the book chapter by chapter.[^6]
 | 9 | Universal Computation | 271-310 | - |
 | 10 | Self-Supporting Spaceships | 311-344 | - |
 | 11 | Universal Construction | 345-384 | - |
-| 12 | The 0E0P Metacell | 385-430 | - |
+| 12 | The 0E0P Metacell | 385-430 | [[cgol-ch12-0e0p-metacell](pages/cgol-ch12-0e0p-metacell.md)] |
 
 Appendices: A, Mathematical Miscellany; B, Extra Details (including isotropic and
 non-isotropic rulestrings); C, Solutions to Selected Exercises.[^6]

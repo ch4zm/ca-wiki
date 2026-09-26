@@ -3,7 +3,7 @@ title: Cellular Automaton
 category: Concepts
 summary: A homogeneous lattice of identical finite-state cells, each updating in discrete time from its own state and its neighbours' states under one shared rule; introduced by von Neumann (after Ulam) as a medium for self-reproduction
 tags: [concept, cellular-automata, foundations, homogeneity, lattice]
-sources: [tsra-part2-ch1, tsra-part2-ch2, tsra-part2-ch3, machine-models-of-self-reproduction, endomorphisms-and-automorphisms-of-the-shift-dynamical-system, statistical-mechanics-of-cellular-automata, computation-at-the-edge-of-chaos, theory-of-cellular-automata-a-survey]
+sources: [cgol-ch12-0e0p-metacell, tsra-part2-ch1, tsra-part2-ch2, tsra-part2-ch3, machine-models-of-self-reproduction, endomorphisms-and-automorphisms-of-the-shift-dynamical-system, statistical-mechanics-of-cellular-automata, computation-at-the-edge-of-chaos, theory-of-cellular-automata-a-survey]
 created: 2026-09-24
 updated: 2026-09-25
 ---
@@ -129,7 +129,9 @@ legal two-state type-I rules in 2D and 2⁵⁹ ≈ 6 × 10¹⁷ type-II rules.[^
 *totalistic* if it depends only on the sum of the neighbourhood values. The
 [[game-of-life](pages/game-of-life.md)] is a type-II totalistic rule.[^27] It belongs to the
 [[life-like-cellular-automaton](pages/life-like-cellular-automaton.md)] family, rules on the eight-cell neighbourhood whose
-next state depends only on the count of live neighbours.
+next state depends only on the count of live neighbours. Strictly this is
+*outer-totalistic*, since the cell's own state is kept separate from the count; a
+*totalistic* rule uses only the count including the cell itself.[^28]
 
 **Computers or universes.** Langton distinguishes two ways to see computation in a
 cellular automaton. The CA can *be* a computer, with the initial configuration as data
@@ -137,26 +139,26 @@ and the rule as algorithm. Or the initial configuration can *contain* a computer
 the rule as the physics its parts obey, as in von Neumann's construction. With K states
 and N neighbours there are K^(K^N) rules, and Langton orders this space with the
 [[lambda-parameter](pages/lambda-parameter.md)] to ask which rules can support the second view
-([[edge-of-chaos](pages/edge-of-chaos.md)]).[^28]
+([[edge-of-chaos](pages/edge-of-chaos.md)]).[^29]
 
 **The computer-science formalization.** Kari (2005) fixes the setting used in theoretical
 computer science. A d-dimensional CA is a triple (S, N, f): a finite state set S, a
 neighbourhood vector N of n distinct offsets in ℤᵈ, and a local rule f : Sⁿ → S. The
 global map G sends a configuration c : ℤᵈ → S to the configuration whose value at x is f
 applied to the states at x + x₁, …, x + xₙ. A CA is usually identified with G, but in
-algorithmic questions it is always given by the three finite items S, N and f.[^29] A
+algorithmic questions it is always given by the three finite items S, N and f.[^30] A
 quiescent state q must satisfy f(q, …, q) = q. A configuration is *finite* if only finitely
 many cells are not quiescent, and *spatially periodic* if d independent translations fix
 it. Both kinds are preserved by G, giving restrictions G_F and G_P. The three maps can
 behave differently, so simulations with periodic boundary conditions "may be
-misleading".[^30] Temporal notions are kept separate: c is *temporally periodic* if Gᵏ(c) =
+misleading".[^31] Temporal notions are kept separate: c is *temporally periodic* if Gᵏ(c) =
 c for some k ≥ 1, and every CA has a homogeneous temporally periodic configuration. It is
 *eventually periodic* if its forward orbit is finite, and every spatially periodic
 configuration is eventually periodic. The *phase space* is the infinite directed graph with
 an edge from c to G(c). A CA is
 *nilpotent* if all configurations end at one configuration after some fixed number of
-steps ([[limit-set](pages/limit-set.md)]).[^31] Composing two CA gives a CA, and whether two
-CA are equal is decidable.[^32] Which other properties can be decided is the subject of
+steps ([[limit-set](pages/limit-set.md)]).[^32] Composing two CA gives a CA, and whether two
+CA are equal is decidable.[^33] Which other properties can be decided is the subject of
 [[decidability-in-cellular-automata](pages/decidability-in-cellular-automata.md)].
 
 ## Appearances in Sources
@@ -228,8 +230,9 @@ CA are equal is decidable.[^32] Which other properties can be decided is the sub
 [^25]: [[statistical-mechanics-of-cellular-automata](pages/statistical-mechanics-of-cellular-automata.md)] pp.602-603 [synthesis] — introduced by von Neumann and Ulam as "cellular spaces"; also called tessellation automata, homogeneous structures, cellular structures, tessellation structures, iterative arrays; any system of differential equations may be approximated by finite differences and discrete variables; nontrivial cellular automata arise with nonlinearity such as "growth inhibition"; applications to Ising-type spin systems, chemical reaction-diffusion, dendritic crystal growth, turbulence, biology, parallel computation
 [^26]: [[statistical-mechanics-of-cellular-automata](pages/statistical-mechanics-of-cellular-automata.md)] p.637 and n.14 [synthesis] — type-I neighbourhood of 2d+1 sites, type-II of 3ᵈ sites; identical when d = 1; for d = 2 "known as von Neumann and Moore neighborhoods"; legality includes rotation and reflection invariance; 2¹¹ = 2048 type-I rules for k = 2; 2⁵⁹ ≈ 6 × 10¹⁷ type-II rules
 [^27]: [[statistical-mechanics-of-cellular-automata](pages/statistical-mechanics-of-cellular-automata.md)] p.637 [synthesis] — "totalistic" cellular automata depend only on the sum of neighbourhood values; Life is a type-II example
-[^28]: [[computation-at-the-edge-of-chaos](pages/computation-at-the-edge-of-chaos.md)] pp.13-16 [synthesis] - Sec. 1.4: K^N neighbourhood states and K^(K^N) transition functions; Sec. 2.5: CAs "can be viewed either as computers themselves or as logical universes within which computers may be embedded"; on the second view "the transition function is seen as the 'physics' obeyed by the parts of this embedded computer"; "when is it possible - even necessary - to adopt the second point of view"
-[^29]: [[theory-of-cellular-automata-a-survey](pages/theory-of-cellular-automata-a-survey.md)] pp.4-5 [synthesis] - configurations c : ℤᵈ → S; neighbourhood vector N = (x₁, …, xₙ); local rule f : Sⁿ → S; global transition function G; "A d-dimensional CA is specified by a triple (S, N, f)"; "In algorithmic questions G is, however, always specified using the three finite items S, N and f"
-[^30]: [[theory-of-cellular-automata-a-survey](pages/theory-of-cellular-automata-a-survey.md)] pp.6-7 [synthesis] - quiescent state stable, f(q, q, …, q) = q; finite configurations C_F and G_F; periodic configurations invariant under d linearly independent translations, C_P and G_P; "experiments done with periodic boundary conditions may be misleading"
-[^31]: [[theory-of-cellular-automata-a-survey](pages/theory-of-cellular-automata-a-survey.md)] p.7 [synthesis] - temporally periodic configurations; every CA has a homogeneous temporally periodic configuration; eventually periodic iff the forward orbit is finite; "Every spatially periodic configuration is eventually periodic"; phase space as a directed graph; nilpotent if Gⁿ(C) is a singleton
-[^32]: [[theory-of-cellular-automata-a-survey](pages/theory-of-cellular-automata-a-survey.md)] p.7 [synthesis] - "The composition G₁ ∘ G₂ is also a CA function, and the composition can be formed effectively"; "The equivalence of two given CA G₁ and G₂ is decidable"
+[^28]: [[cgol-ch12-0e0p-metacell](pages/cgol-ch12-0e0p-metacell.md)] p.387, n.4 - outer-totalistic rules depend on "the state of the current cell, as well the number of live neighbors"; "In contrast with totalistic cellular automata, in which the birth and death rules depend only on the number of live neighbors including the cell itself"
+[^29]: [[computation-at-the-edge-of-chaos](pages/computation-at-the-edge-of-chaos.md)] pp.13-16 [synthesis] - Sec. 1.4: K^N neighbourhood states and K^(K^N) transition functions; Sec. 2.5: CAs "can be viewed either as computers themselves or as logical universes within which computers may be embedded"; on the second view "the transition function is seen as the 'physics' obeyed by the parts of this embedded computer"; "when is it possible - even necessary - to adopt the second point of view"
+[^30]: [[theory-of-cellular-automata-a-survey](pages/theory-of-cellular-automata-a-survey.md)] pp.4-5 [synthesis] - configurations c : ℤᵈ → S; neighbourhood vector N = (x₁, …, xₙ); local rule f : Sⁿ → S; global transition function G; "A d-dimensional CA is specified by a triple (S, N, f)"; "In algorithmic questions G is, however, always specified using the three finite items S, N and f"
+[^31]: [[theory-of-cellular-automata-a-survey](pages/theory-of-cellular-automata-a-survey.md)] pp.6-7 [synthesis] - quiescent state stable, f(q, q, …, q) = q; finite configurations C_F and G_F; periodic configurations invariant under d linearly independent translations, C_P and G_P; "experiments done with periodic boundary conditions may be misleading"
+[^32]: [[theory-of-cellular-automata-a-survey](pages/theory-of-cellular-automata-a-survey.md)] p.7 [synthesis] - temporally periodic configurations; every CA has a homogeneous temporally periodic configuration; eventually periodic iff the forward orbit is finite; "Every spatially periodic configuration is eventually periodic"; phase space as a directed graph; nilpotent if Gⁿ(C) is a singleton
+[^33]: [[theory-of-cellular-automata-a-survey](pages/theory-of-cellular-automata-a-survey.md)] p.7 [synthesis] - "The composition G₁ ∘ G₂ is also a CA function, and the composition can be formed effectively"; "The equivalence of two given CA G₁ and G₂ is decidable"

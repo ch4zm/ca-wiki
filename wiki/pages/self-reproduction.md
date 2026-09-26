@@ -3,9 +3,9 @@ title: Self-Reproduction (automata)
 category: Concepts
 summary: The problem of what logical organization lets an automaton construct a copy of itself — von Neumann's founding question for cellular automata
 tags: [concept, self-reproduction, von-neumann, construction]
-sources: [tsra-editors-introduction, tsra-lecture-5, tsra-part2-ch1, tsra-part2-ch2, tsra-part2-ch5, machine-models-of-self-reproduction, statistical-mechanics-of-cellular-automata]
+sources: [cgol-ch12-0e0p-metacell, tsra-editors-introduction, tsra-lecture-5, tsra-part2-ch1, tsra-part2-ch2, tsra-part2-ch5, machine-models-of-self-reproduction, statistical-mechanics-of-cellular-automata]
 created: 2026-09-24
-updated: 2026-09-24
+updated: 2026-09-25
 ---
 
 # Self-Reproduction (automata)
@@ -107,6 +107,8 @@ criterion above, it counts as a trivial case.[^12]
 
 ## Related Concepts
 
+- [[metacell](pages/metacell.md)] - the 0E0P metacell reproduces by building its neighbours
+- [[replicator](pages/replicator.md)] - small self-copying patterns in Life-like rules
 - [[rule-90](pages/rule-90.md)] — self-reproduction without a description, by superposition
 - [[initially-quiescent-automaton](pages/initially-quiescent-automaton.md)] — the form every offspring is built in
 - [[garden-of-eden](pages/garden-of-eden.md)] — patterns no self-reproducer can contain
